@@ -138,7 +138,20 @@ function load_network(
                         return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : transparency;
                     })
                     .attr("r", function(o) {
-                        return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? o.size + node_size_inc : o.size;
+                        if (o.id == hoveredNodeId) {
+                            return o.size + node_size_inc;
+                        }	
+                        // give the link weight as size to the hovered node
+                        if (isConnected(hoveredNodeId, o.id)) {
+                            let link_weight = data.links.find(link => (link.source.id == o.id && link.target.id == hoveredNodeId) || (link.source.id == hoveredNodeId && link.target.id == o.id)).weight;
+                            const connected_nodes = linkedById[hoveredNodeId];
+                            const connected_links = data.links.filter(link => (link.source.id == hoveredNodeId || link.target.id == hoveredNodeId));
+                            const min_connected_link_weight = connected_links.reduce((min, link) => Math.min(min, link.weight), Infinity);
+                            const max_connected_link_weight = connected_links.reduce((max, link) => Math.max(max, link.weight), -Infinity);
+                            const scaled_link_weight = get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, min_node_size, max_node_size);
+                            return scaled_link_weight;
+                        }
+                        return o.size;
                     });
 
                 // Not hovered link less opaque
@@ -157,7 +170,19 @@ function load_network(
                         return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : transparency;
                     })
                     .attr("font-size", function(o) {
-                        return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? o.size + label_size_add + label_size_inc : o.size + label_size_add;
+                        if (o.id == hoveredNodeId) {
+                            return o.size + label_size_inc + label_size_add;
+                        }	
+                        if (isConnected(hoveredNodeId, o.id)) {
+                            let link_weight = data.links.find(link => (link.source.id == o.id && link.target.id == hoveredNodeId) || (link.source.id == hoveredNodeId && link.target.id == o.id)).weight;
+                            const connected_nodes = linkedById[hoveredNodeId];
+                            const connected_links = data.links.filter(link => (link.source.id == hoveredNodeId || link.target.id == hoveredNodeId));
+                            const min_connected_link_weight = connected_links.reduce((min, link) => Math.min(min, link.weight), Infinity);
+                            const max_connected_link_weight = connected_links.reduce((max, link) => Math.max(max, link.weight), -Infinity);
+                            const scaled_link_weight = get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, min_node_size, max_node_size);
+                            return scaled_link_weight + label_size_add;
+                        }
+                        return o.size + label_size_add
                     });
             })
             .on("mouseout", function(d) {
