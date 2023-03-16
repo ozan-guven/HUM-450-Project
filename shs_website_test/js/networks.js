@@ -4,15 +4,15 @@ function load_network(
     exp_node_size_scale = 0.7,      // Exponent for scaling object sizes
     exp_link_weight_scale = 0.7,    // Exponent for scaling link weights
     transparency = 0.1,             // Transparency of non-selected nodes and links
-    min_node_size = 5,              // Minimum size of a node
-    max_node_size = 30,             // Maximum size of a node
+    min_node_size = 7,              // Minimum size of a node
+    max_node_size = 40,             // Maximum size of a node
     min_link_weight = 1,            // Minimum weight of a link
     max_link_weight = 8,            // Maximum weight of a link
     label_size_add = 5,             // Additional size of label
     node_size_inc = 5,              // Increment of node size when hovering
     label_size_inc = 5,             // Increment of label size when hovering
     charge_strength = -700,         // Strength of the charge force
-    collide_size_add = 5,           // Additional size of collision force
+    collide_size_add = 2,           // Additional size of collision force
     transition_duration = 200,      // Duration of transitions
     ) {
     d3.json(data_file).then(function(data) {
@@ -186,6 +186,8 @@ function load_network(
 
         simulation.force("link")
             .links(data.links);
+
+
 
         /**
           * Update node and link positions at every step of the force simulation.
