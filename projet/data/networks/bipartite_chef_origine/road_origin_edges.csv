@@ -1,0 +1,905 @@
+Source,Target,Weight
+ale,argovie (canton),1
+ale,ballaigues,3
+ale,berne (canton),2
+ale,bullet,1
+ale,bussigny-pres-lausanne,1
+ale,chardonne,2
+ale,chateau-d'oex,2
+ale,chexbres,1
+ale,corporation,4
+ale,corporation francaise,1
+ale,corporation vaudoise,5
+ale,cossonay,2
+ale,crissier,1
+ale,daillens,1
+ale,duillier,3
+ale,echichens,4
+ale,epalinges,4
+ale,france,1
+ale,froideville,4
+ale,geneve,1
+ale,guggisberg,1
+ale,jouxtens-mezery,1
+ale,juriens,2
+ale,l'isle,2
+ale,la tour-de-peilz,1
+ale,lausanne,20
+ale,le lieu,1
+ale,le mont-sur-lausanne,5
+ale,lutry,8
+ale,maracon,1
+ale,montaubion-chardonney,2
+ale,montreux,1
+ale,moudon,2
+ale,ormont-dessus,1
+ale,oulens-sous-echallens,4
+ale,paudex,2
+ale,peney-le-jorat,1
+ale,prilly,2
+ale,pully,1
+ale,renens,6
+ale,romanel-sur-lausanne,3
+ale,rougemont,4
+ale,sainte-croix,2
+ale,savigny,2
+ale,vaulion,1
+ale,villars-tiercelin,3
+ale,vuarrens,2
+ale,vulliens,2
+ale,yverdon,1
+barre,allaman,1
+barre,angleterre,1
+barre,aubonne,2
+barre,berne (canton),7
+barre,bullet,2
+barre,bussigny-pres-lausanne,1
+barre,corporation,3
+barre,corporation francaise,2
+barre,corporation vaudoise,1
+barre,crissier,1
+barre,daillens,1
+barre,echichens,1
+barre,epalinges,3
+barre,essertines-sur-yverdon,3
+barre,france,2
+barre,froideville,1
+barre,gessenay,1
+barre,l'abbaye,4
+barre,la tour-de-peilz,1
+barre,lausanne,16
+barre,le mont-sur-lausanne,1
+barre,lutry,5
+barre,maracon,1
+barre,moudon,3
+barre,orbe,1
+barre,prilly,1
+barre,pully,7
+barre,saint-saphorin,2
+barre,sainte-croix,1
+barre,seedorf,1
+barre,thurgovie (canton),1
+barre,tolochenaz,1
+barre,vallorbe,1
+barre,vevey,5
+barre,vuarrens,1
+barre,zurich (canton),3
+bourg,angleterre,2
+bourg,aubonne,1
+bourg,ballaigues,1
+bourg,belmont-sur-lausanne,1
+bourg,bullet,1
+bourg,chardonne,1
+bourg,chexbres,2
+bourg,corporation francaise,4
+bourg,corporation vaudoise,1
+bourg,daillens,3
+bourg,echichens,1
+bourg,epalinges,1
+bourg,france,1
+bourg,geneve,1
+bourg,gessenay,1
+bourg,l'abbaye,1
+bourg,l'isle,3
+bourg,la tour-de-peilz,1
+bourg,lausanne,32
+bourg,lavigny,5
+bourg,le chenit,1
+bourg,lutry,4
+bourg,morges,2
+bourg,nyon,2
+bourg,orbe,1
+bourg,oulens-sous-echallens,1
+bourg,rolle,3
+bourg,rougemont,1
+bourg,thurgovie (canton),2
+bourg,vallorbe,1
+bourg,villette,1
+bourg,vulliens,1
+bourg,zurich (canton),1
+calvaire,lausanne,1
+calvaire,nyon,1
+calvaire,saint-saphorin,2
+calvaire,vaulion,1
+chailly,belmont-sur-lausanne,1
+chailly,chexbres,1
+chailly,corporation francaise,1
+chailly,epalinges,1
+chailly,essertines-sur-yverdon,4
+chailly,guggisberg,1
+chailly,l'isle,2
+chailly,la vallee de joux,1
+chailly,lausanne,12
+chailly,peney-le-jorat,1
+chailly,pully,1
+chailly,seedorf,2
+chaucrau,argovie (canton),2
+chaucrau,ballaigues,2
+chaucrau,belmont-sur-lausanne,1
+chaucrau,bottens,1
+chaucrau,bullet,1
+chaucrau,chateau-d'oex,1
+chaucrau,corporation,1
+chaucrau,corporation francaise,4
+chaucrau,epalinges,2
+chaucrau,france,1
+chaucrau,froideville,2
+chaucrau,geneve,1
+chaucrau,jouxtens-mezery,1
+chaucrau,lausanne,16
+chaucrau,lutry,9
+chaucrau,maracon,1
+chaucrau,montaubion-chardonney,2
+chaucrau,ormont-dessus,1
+chaucrau,peney-le-jorat,1
+chaucrau,pizy,1
+chaucrau,renens,3
+chaucrau,rolle,1
+chaucrau,saint-saphorin,2
+chaucrau,sainte-croix,1
+chaucrau,seedorf,1
+chaucrau,vaulion,3
+chaucrau,villars-tiercelin,1
+chaucrau,vuarrens,1
+chaucrau,yverdon,1
+chauderon,epalinges,4
+chauderon,la vallee de joux,1
+chauderon,lausanne,1
+chavannes,corporation francaise,1
+chavannes,epalinges,1
+chavannes,lausanne,3
+chavannes,peney-le-jorat,2
+chavannes,seedorf,1
+cheneau de bourg,allaman,2
+cheneau de bourg,argovie (canton),1
+cheneau de bourg,belmont-sur-lausanne,1
+cheneau de bourg,berne (canton),1
+cheneau de bourg,bottens,3
+cheneau de bourg,bullet,1
+cheneau de bourg,coinsins,2
+cheneau de bourg,corporation francaise,2
+cheneau de bourg,corporation vaudoise,3
+cheneau de bourg,corsier-sur-vevey,1
+cheneau de bourg,cossonay,1
+cheneau de bourg,crissier,1
+cheneau de bourg,cully,2
+cheneau de bourg,daillens,2
+cheneau de bourg,duillier,2
+cheneau de bourg,echichens,3
+cheneau de bourg,epalinges,3
+cheneau de bourg,etagnieres,2
+cheneau de bourg,gessenay,1
+cheneau de bourg,guggisberg,2
+cheneau de bourg,l'abbaye,1
+cheneau de bourg,l'isle,1
+cheneau de bourg,la vallee de joux,1
+cheneau de bourg,lausanne,20
+cheneau de bourg,lavigny,1
+cheneau de bourg,le chenit,2
+cheneau de bourg,le mont-sur-lausanne,3
+cheneau de bourg,lutry,3
+cheneau de bourg,morges,1
+cheneau de bourg,orbe,1
+cheneau de bourg,oulens-sous-echallens,4
+cheneau de bourg,paudex,1
+cheneau de bourg,pizy,1
+cheneau de bourg,rolle,2
+cheneau de bourg,rougemont,2
+cheneau de bourg,saint-saphorin,1
+cheneau de bourg,sainte-croix,5
+cheneau de bourg,seedorf,1
+cheneau de bourg,tolochenaz,1
+cheneau de bourg,vuarrens,1
+cheneau de bourg,vulliens,1
+cite derriere,allaman,1
+cite derriere,argovie (canton),1
+cite derriere,aubonne,1
+cite derriere,belmont-sur-lausanne,1
+cite derriere,berne (canton),4
+cite derriere,bussigny-pres-lausanne,2
+cite derriere,chateau-d'oex,3
+cite derriere,chexbres,1
+cite derriere,corporation francaise,1
+cite derriere,corsier-sur-vevey,2
+cite derriere,crissier,1
+cite derriere,daillens,1
+cite derriere,epalinges,3
+cite derriere,essertines-sur-yverdon,2
+cite derriere,juriens,1
+cite derriere,l'abbaye,4
+cite derriere,lausanne,19
+cite derriere,le chenit,2
+cite derriere,le lieu,1
+cite derriere,le mont-sur-lausanne,5
+cite derriere,lutry,3
+cite derriere,montaubion-chardonney,3
+cite derriere,moudon,2
+cite derriere,ormont-dessus,1
+cite derriere,paudex,1
+cite derriere,pully,1
+cite derriere,renens,1
+cite derriere,rolle,2
+cite derriere,rougemont,1
+cite derriere,sainte-croix,3
+cite derriere,thurgovie (canton),1
+cite derriere,vallorbe,1
+cite derriere,vaulion,1
+cite derriere,vevey,1
+cite derriere,villette,1
+cite derriere,vuarrens,2
+cite dessous,bottens,2
+cite dessous,bourse francaise,1
+cite dessous,chardonne,1
+cite dessous,coinsins,1
+cite dessous,corporation vaudoise,3
+cite dessous,juriens,1
+cite dessous,la vallee de joux,1
+cite dessous,lausanne,11
+cite dessous,lutry,3
+cite dessous,maracon,1
+cite dessous,orbe,1
+cite dessous,ormont-dessus,1
+cite dessous,rougemont,2
+cite dessous,sainte-croix,1
+cite dessous,tolochenaz,1
+cite dessous,vevey,1
+cite dessous,villette,1
+cite devant,angleterre,2
+cite devant,ballaigues,1
+cite devant,berne (canton),4
+cite devant,chateau-d'oex,1
+cite devant,cheseaux-sur-lausanne,1
+cite devant,cossonay,1
+cite devant,gessenay,2
+cite devant,l'isle,2
+cite devant,la tour-de-peilz,1
+cite devant,la vallee de joux,1
+cite devant,lausanne,22
+cite devant,le lieu,1
+cite devant,le mont-sur-lausanne,2
+cite devant,lutry,1
+cite devant,moudon,1
+cite devant,paudex,7
+cite devant,pizy,1
+cite devant,renens,1
+cite devant,rougemont,1
+cite devant,sainte-croix,2
+cite devant,savigny,1
+cite devant,vaulion,1
+cite devant,villette,3
+cite devant,zurich (canton),1
+cour,angleterre,2
+cour,bussigny-pres-lausanne,1
+cour,corporation francaise,2
+cour,corsier-sur-vevey,1
+cour,geneve,2
+cour,la vallee de joux,2
+cour,lausanne,11
+cour,le mont-sur-lausanne,1
+cour,lutry,1
+cour,payerne,1
+cour,saint-saphorin,1
+cour,villars-tiercelin,2
+cour,villette,9
+cour,vuarrens,1
+cour,yverdon,1
+derriere les terreaux,aubonne,1
+derriere les terreaux,bullet,1
+derriere les terreaux,lausanne,5
+derriere les terreaux,payerne,1
+derriere les terreaux,rolle,1
+derriere les terreaux,vallorbe,1
+escaliers du marche,bourse francaise,3
+escaliers du marche,cheseaux-sur-lausanne,1
+escaliers du marche,chexbres,1
+escaliers du marche,corporation francaise,2
+escaliers du marche,corporation vaudoise,1
+escaliers du marche,daillens,2
+escaliers du marche,duillier,1
+escaliers du marche,epalinges,3
+escaliers du marche,etagnieres,2
+escaliers du marche,geneve,1
+escaliers du marche,gessenay,1
+escaliers du marche,guggisberg,2
+escaliers du marche,la vallee de joux,1
+escaliers du marche,lausanne,10
+escaliers du marche,moudon,2
+escaliers du marche,prilly,1
+escaliers du marche,seedorf,1
+escaliers du marche,vevey,1
+escaliers du marche,vuarrens,1
+etraz,aubonne,2
+etraz,belmont-sur-lausanne,2
+etraz,berne (canton),2
+etraz,coinsins,1
+etraz,corporation francaise,1
+etraz,corporation vaudoise,1
+etraz,cully,2
+etraz,daillens,1
+etraz,echichens,2
+etraz,etagnieres,1
+etraz,france,1
+etraz,geneve,1
+etraz,la vallee de joux,2
+etraz,lausanne,15
+etraz,lavigny,1
+etraz,lutry,5
+etraz,nyon,1
+etraz,payerne,1
+etraz,pizy,2
+etraz,prilly,2
+etraz,rolle,1
+etraz,romanel-sur-lausanne,1
+etraz,rougemont,1
+etraz,sainte-croix,1
+etraz,thurgovie (canton),1
+etraz,villette,1
+etraz,vulliens,2
+etraz,yverdon,2
+etraz,zurich (canton),1
+grand chene,angleterre,2
+grand chene,argovie (canton),1
+grand chene,berne (canton),2
+grand chene,bottens,1
+grand chene,corporation francaise,3
+grand chene,echichens,1
+grand chene,france,2
+grand chene,jouxtens-mezery,1
+grand chene,lausanne,8
+grand chene,lutry,2
+grand chene,oulens-sous-echallens,1
+grand chene,prilly,1
+grand chene,rolle,1
+grand st jean,allaman,1
+grand st jean,angleterre,1
+grand st jean,argovie (canton),1
+grand st jean,aubonne,1
+grand st jean,belmont-sur-lausanne,3
+grand st jean,bottens,1
+grand st jean,bourse francaise,1
+grand st jean,chardonne,1
+grand st jean,coinsins,1
+grand st jean,corporation,1
+grand st jean,corporation francaise,6
+grand st jean,corporation vaudoise,1
+grand st jean,crissier,1
+grand st jean,cully,1
+grand st jean,daillens,1
+grand st jean,duillier,1
+grand st jean,echichens,4
+grand st jean,epalinges,3
+grand st jean,essertines-sur-yverdon,2
+grand st jean,france,1
+grand st jean,froideville,1
+grand st jean,geneve,4
+grand st jean,gessenay,4
+grand st jean,guggisberg,1
+grand st jean,jouxtens-mezery,6
+grand st jean,juriens,1
+grand st jean,l'isle,3
+grand st jean,la tour-de-peilz,1
+grand st jean,lausanne,46
+grand st jean,lavigny,1
+grand st jean,le lieu,3
+grand st jean,lutry,6
+grand st jean,maracon,1
+grand st jean,montaubion-chardonney,1
+grand st jean,morges,1
+grand st jean,moudon,3
+grand st jean,nyon,1
+grand st jean,orbe,2
+grand st jean,ormont-dessus,1
+grand st jean,paudex,2
+grand st jean,payerne,2
+grand st jean,prilly,1
+grand st jean,pully,2
+grand st jean,sainte-croix,1
+grand st jean,thurgovie (canton),2
+grand st jean,tolochenaz,5
+grand st jean,vallorbe,2
+grand st jean,vaulion,4
+grand st jean,vevey,1
+grand st jean,villette,2
+grand st jean,vuarrens,1
+grand st jean,vulliens,1
+grand st jean,yverdon,3
+grange-neuve,corporation vaudoise,2
+grange-neuve,l'abbaye,6
+grange-neuve,lausanne,2
+grange-neuve,le chenit,1
+grange-neuve,vuarrens,1
+grotte,gessenay,1
+grotte,lausanne,11
+grotte,lutry,3
+grotte,vevey,1
+la sallaz,corporation vaudoise,1
+la sallaz,epalinges,1
+la sallaz,la vallee de joux,1
+la sallaz,lausanne,12
+la sallaz,le mont-sur-lausanne,1
+la sallaz,moudon,1
+la sallaz,romanel-sur-lausanne,1
+la sallaz,vaulion,1
+madeleine,allaman,1
+madeleine,berne (canton),4
+madeleine,cheseaux-sur-lausanne,1
+madeleine,cully,1
+madeleine,epalinges,1
+madeleine,guggisberg,1
+madeleine,l'isle,1
+madeleine,lausanne,9
+madeleine,le chenit,1
+madeleine,lutry,1
+madeleine,montreux,1
+madeleine,moudon,1
+madeleine,orbe,1
+madeleine,paudex,1
+madeleine,renens,1
+madeleine,savigny,1
+madeleine,vevey,1
+madeleine,vuarrens,1
+madeleine,vulliens,1
+madeleine,yverdon,2
+marterey,argovie (canton),1
+marterey,belmont-sur-lausanne,1
+marterey,berne (canton),6
+marterey,bottens,3
+marterey,chardonne,2
+marterey,chateau-d'oex,1
+marterey,corporation francaise,6
+marterey,corporation vaudoise,3
+marterey,cossonay,1
+marterey,crissier,1
+marterey,cully,2
+marterey,daillens,2
+marterey,echichens,1
+marterey,epalinges,8
+marterey,etagnieres,1
+marterey,france,1
+marterey,froideville,3
+marterey,geneve,2
+marterey,jouxtens-mezery,2
+marterey,la vallee de joux,1
+marterey,lausanne,38
+marterey,le chenit,2
+marterey,le mont-sur-lausanne,4
+marterey,lutry,16
+marterey,montreux,1
+marterey,moudon,1
+marterey,nyon,1
+marterey,ormont-dessus,3
+marterey,oulens-sous-echallens,2
+marterey,payerne,2
+marterey,pizy,3
+marterey,prilly,3
+marterey,pully,4
+marterey,renens,1
+marterey,rolle,2
+marterey,romanel-sur-lausanne,1
+marterey,rougemont,3
+marterey,saint-saphorin,6
+marterey,sainte-croix,3
+marterey,savigny,3
+marterey,thurgovie (canton),2
+marterey,tolochenaz,1
+marterey,villars-tiercelin,1
+marterey,villette,6
+maupas,angleterre,2
+maupas,corporation vaudoise,1
+maupas,corsier-sur-vevey,1
+maupas,geneve,2
+maupas,lausanne,4
+maupas,lavigny,1
+maupas,pully,1
+maupas,vevey,2
+maupas,villars-tiercelin,1
+mercerie,argovie (canton),1
+mercerie,aubonne,1
+mercerie,belmont-sur-lausanne,1
+mercerie,bourse francaise,4
+mercerie,cheseaux-sur-lausanne,1
+mercerie,corporation francaise,2
+mercerie,corporation vaudoise,1
+mercerie,cossonay,1
+mercerie,crissier,1
+mercerie,cully,1
+mercerie,epalinges,2
+mercerie,gessenay,1
+mercerie,guggisberg,2
+mercerie,jouxtens-mezery,1
+mercerie,juriens,1
+mercerie,l'isle,1
+mercerie,lausanne,6
+mercerie,le mont-sur-lausanne,1
+mercerie,lutry,3
+mercerie,montreux,1
+mercerie,morges,1
+mercerie,moudon,1
+mercerie,oulens-sous-echallens,1
+mercerie,peney-le-jorat,1
+mercerie,renens,1
+mercerie,rolle,1
+mercerie,romanel-sur-lausanne,1
+mercerie,sainte-croix,1
+mercerie,vallorbe,1
+mercerie,villette,1
+mercerie,vulliens,1
+montee de st laurent,aubonne,1
+montee de st laurent,ballaigues,1
+montee de st laurent,belmont-sur-lausanne,1
+montee de st laurent,berne (canton),1
+montee de st laurent,bottens,1
+montee de st laurent,bullet,1
+montee de st laurent,bussigny-pres-lausanne,1
+montee de st laurent,chateau-d'oex,1
+montee de st laurent,cheseaux-sur-lausanne,1
+montee de st laurent,coinsins,2
+montee de st laurent,corporation francaise,5
+montee de st laurent,corsier-sur-vevey,1
+montee de st laurent,cossonay,1
+montee de st laurent,duillier,1
+montee de st laurent,echichens,1
+montee de st laurent,epalinges,1
+montee de st laurent,froideville,1
+montee de st laurent,juriens,1
+montee de st laurent,l'abbaye,2
+montee de st laurent,lausanne,10
+montee de st laurent,lavigny,1
+montee de st laurent,moudon,1
+montee de st laurent,orbe,1
+montee de st laurent,paudex,1
+montee de st laurent,payerne,2
+montee de st laurent,peney-le-jorat,1
+montee de st laurent,pizy,1
+montee de st laurent,renens,1
+montee de st laurent,rougemont,2
+montee de st laurent,sainte-croix,1
+montee de st laurent,vallorbe,1
+montee de st laurent,villette,1
+montee de st laurent,vulliens,1
+montee st francois,coinsins,1
+montee st francois,lausanne,5
+montee st francois,moudon,1
+montee st francois,saint-saphorin,1
+montee st francois,vuarrens,1
+montee st francois,vulliens,1
+montee st francois,zurich (canton),1
+moulin de pepinet,daillens,1
+moulin de pepinet,epalinges,1
+moulin de pepinet,guggisberg,1
+moulin de pepinet,lausanne,2
+moulin de pepinet,le lieu,4
+moulin de pepinet,lutry,1
+moulin de pepinet,pully,2
+moulin de pepinet,seedorf,1
+moulin de pepinet,tolochenaz,1
+moulin de pepinet,villette,1
+moulin de pepinet,yverdon,1
+ouchy,angleterre,4
+ouchy,belmont-sur-lausanne,1
+ouchy,corporation francaise,4
+ouchy,corsier-sur-vevey,2
+ouchy,cossonay,3
+ouchy,daillens,1
+ouchy,geneve,2
+ouchy,l'abbaye,1
+ouchy,lausanne,47
+ouchy,maracon,1
+ouchy,montreux,1
+ouchy,morges,1
+ouchy,ormont-dessus,1
+ouchy,paudex,4
+ouchy,pizy,1
+ouchy,prilly,2
+ouchy,pully,2
+ouchy,renens,2
+ouchy,rolle,1
+ouchy,saint-saphorin,2
+ouchy,tolochenaz,1
+ouchy,villette,5
+palud,aubonne,3
+palud,bottens,1
+palud,bourse francaise,2
+palud,bussigny-pres-lausanne,1
+palud,chardonne,1
+palud,cheseaux-sur-lausanne,1
+palud,chexbres,2
+palud,coinsins,1
+palud,corporation francaise,1
+palud,corporation vaudoise,1
+palud,cossonay,1
+palud,crissier,1
+palud,cully,1
+palud,daillens,1
+palud,etagnieres,1
+palud,geneve,2
+palud,gessenay,2
+palud,jouxtens-mezery,1
+palud,l'isle,1
+palud,la vallee de joux,2
+palud,lausanne,22
+palud,le chenit,2
+palud,le mont-sur-lausanne,1
+palud,lutry,3
+palud,montaubion-chardonney,1
+palud,nyon,2
+palud,orbe,2
+palud,ormont-dessus,1
+palud,prilly,2
+palud,rolle,2
+palud,saint-saphorin,2
+palud,vuarrens,1
+palud,vulliens,1
+petit chene,chateau-d'oex,2
+petit chene,corporation francaise,3
+petit chene,echichens,1
+petit chene,epalinges,1
+petit chene,moudon,1
+petit chene,nyon,1
+petit singe,angleterre,2
+petit singe,lausanne,3
+petit singe,paudex,1
+petit singe,rolle,1
+petit singe,yverdon,1
+petit st jean,belmont-sur-lausanne,1
+petit st jean,berne (canton),2
+petit st jean,corsier-sur-vevey,2
+petit st jean,cossonay,1
+petit st jean,epalinges,1
+petit st jean,etagnieres,2
+petit st jean,guggisberg,1
+petit st jean,jouxtens-mezery,2
+petit st jean,la tour-de-peilz,1
+petit st jean,la vallee de joux,1
+petit st jean,lausanne,4
+petit st jean,le mont-sur-lausanne,1
+petit st jean,lutry,2
+petit st jean,nyon,1
+petit st jean,orbe,1
+petit st jean,paudex,1
+petit st jean,rolle,1
+petit st jean,sainte-croix,3
+petit st jean,yverdon,1
+place du pont,bottens,1
+place du pont,chateau-d'oex,1
+place du pont,lausanne,1
+place du pont,morges,1
+place du pont,pizy,1
+place du pont,prilly,1
+place du pont,renens,1
+place du pont,sainte-croix,1
+place st francois,allaman,1
+place st francois,angleterre,1
+place st francois,lausanne,11
+place st francois,le chenit,2
+place st francois,lutry,2
+place st francois,morges,1
+place st francois,ormont-dessus,1
+place st francois,prilly,2
+place st francois,renens,1
+place st francois,saint-saphorin,1
+place st francois,sainte-croix,1
+place st francois,vevey,5
+rue de l'hopital,bottens,2
+rue de l'hopital,bussigny-pres-lausanne,1
+rue de l'hopital,chardonne,1
+rue de l'hopital,chateau-d'oex,1
+rue de l'hopital,chexbres,1
+rue de l'hopital,corporation francaise,2
+rue de l'hopital,cully,1
+rue de l'hopital,guggisberg,1
+rue de l'hopital,la vallee de joux,2
+rue de l'hopital,lausanne,5
+rue de l'hopital,le lieu,1
+rue de l'hopital,le mont-sur-lausanne,2
+rue de l'hopital,peney-le-jorat,1
+rue de l'hopital,rougemont,1
+rue du pont,aubonne,1
+rue du pont,belmont-sur-lausanne,1
+rue du pont,berne (canton),2
+rue du pont,chardonne,1
+rue du pont,chateau-d'oex,1
+rue du pont,chexbres,2
+rue du pont,corporation,1
+rue du pont,cully,1
+rue du pont,etagnieres,1
+rue du pont,froideville,1
+rue du pont,gessenay,1
+rue du pont,la tour-de-peilz,1
+rue du pont,lausanne,15
+rue du pont,le lieu,2
+rue du pont,lutry,1
+rue du pont,montaubion-chardonney,2
+rue du pont,morges,2
+rue du pont,nyon,1
+rue du pont,prilly,1
+rue du pont,renens,1
+rue du pont,rougemont,1
+rue du pont,savigny,1
+rue du pont,villette,2
+rue du pre,argovie (canton),1
+rue du pre,belmont-sur-lausanne,2
+rue du pre,berne (canton),2
+rue du pre,bottens,4
+rue du pre,chateau-d'oex,2
+rue du pre,cheseaux-sur-lausanne,2
+rue du pre,chexbres,1
+rue du pre,coinsins,2
+rue du pre,corporation,5
+rue du pre,corporation vaudoise,2
+rue du pre,corsier-sur-vevey,1
+rue du pre,crissier,2
+rue du pre,cully,1
+rue du pre,duillier,1
+rue du pre,echichens,4
+rue du pre,epalinges,4
+rue du pre,etagnieres,2
+rue du pre,france,2
+rue du pre,froideville,2
+rue du pre,gessenay,1
+rue du pre,jouxtens-mezery,1
+rue du pre,juriens,1
+rue du pre,l'isle,1
+rue du pre,la vallee de joux,1
+rue du pre,lausanne,22
+rue du pre,le chenit,2
+rue du pre,le mont-sur-lausanne,1
+rue du pre,lutry,6
+rue du pre,montreux,6
+rue du pre,morges,1
+rue du pre,nyon,2
+rue du pre,ormont-dessus,2
+rue du pre,paudex,3
+rue du pre,payerne,1
+rue du pre,peney-le-jorat,2
+rue du pre,prilly,2
+rue du pre,pully,4
+rue du pre,renens,2
+rue du pre,rolle,1
+rue du pre,rougemont,3
+rue du pre,saint-saphorin,3
+rue du pre,sainte-croix,2
+rue du pre,savigny,2
+rue du pre,seedorf,1
+rue du pre,tolochenaz,2
+rue du pre,vallorbe,1
+rue du pre,vevey,1
+rue du pre,villette,2
+rue du pre,vuarrens,1
+rue du pre,zurich (canton),2
+st etienne,aubonne,1
+st etienne,berne (canton),1
+st etienne,bourse francaise,1
+st etienne,bussigny-pres-lausanne,1
+st etienne,coinsins,2
+st etienne,corporation francaise,6
+st etienne,epalinges,2
+st etienne,geneve,1
+st etienne,l'abbaye,1
+st etienne,la tour-de-peilz,1
+st etienne,lausanne,6
+st etienne,lutry,2
+st etienne,ormont-dessus,1
+st etienne,pully,1
+st etienne,rolle,1
+st etienne,rougemont,1
+st francois,allaman,2
+st francois,berne (canton),1
+st francois,bullet,1
+st francois,corporation francaise,3
+st francois,corporation vaudoise,1
+st francois,epalinges,2
+st francois,gessenay,2
+st francois,l'abbaye,1
+st francois,l'isle,1
+st francois,la vallee de joux,1
+st francois,lausanne,10
+st francois,lutry,3
+st francois,maracon,1
+st francois,moudon,1
+st francois,orbe,1
+st francois,ormont-dessus,2
+st francois,prilly,1
+st francois,romanel-sur-lausanne,1
+st francois,sainte-croix,1
+st francois,villette,2
+st laurent,allaman,1
+st laurent,argovie (canton),1
+st laurent,berne (canton),1
+st laurent,bullet,2
+st laurent,chardonne,1
+st laurent,chateau-d'oex,2
+st laurent,chexbres,2
+st laurent,coinsins,1
+st laurent,corporation,2
+st laurent,corporation vaudoise,4
+st laurent,cossonay,1
+st laurent,crissier,1
+st laurent,echichens,2
+st laurent,epalinges,2
+st laurent,france,1
+st laurent,gessenay,3
+st laurent,guggisberg,1
+st laurent,jouxtens-mezery,1
+st laurent,l'isle,1
+st laurent,la tour-de-peilz,1
+st laurent,lausanne,18
+st laurent,le chenit,1
+st laurent,le mont-sur-lausanne,3
+st laurent,lutry,1
+st laurent,morges,1
+st laurent,orbe,1
+st laurent,paudex,1
+st laurent,payerne,1
+st laurent,prilly,2
+st laurent,pully,1
+st laurent,rolle,1
+st laurent,romanel-sur-lausanne,1
+st laurent,saint-saphorin,1
+st laurent,thurgovie (canton),1
+st laurent,vevey,2
+st laurent,villars-tiercelin,1
+st laurent,villette,2
+st laurent,vuarrens,1
+st laurent,yverdon,2
+st laurent,zurich (canton),1
+st pierre,allaman,1
+st pierre,angleterre,3
+st pierre,aubonne,1
+st pierre,belmont-sur-lausanne,1
+st pierre,berne (canton),5
+st pierre,bottens,1
+st pierre,chateau-d'oex,1
+st pierre,chexbres,1
+st pierre,corporation francaise,3
+st pierre,corsier-sur-vevey,1
+st pierre,cully,2
+st pierre,duillier,3
+st pierre,etagnieres,2
+st pierre,gessenay,4
+st pierre,juriens,1
+st pierre,lausanne,18
+st pierre,le lieu,1
+st pierre,le mont-sur-lausanne,1
+st pierre,lutry,4
+st pierre,maracon,1
+st pierre,montreux,1
+st pierre,morges,2
+st pierre,pizy,1
+st pierre,prilly,2
+st pierre,pully,1
+st pierre,rolle,2
+st pierre,rougemont,1
+st pierre,saint-saphorin,1
+st pierre,thurgovie (canton),1
+st pierre,vaulion,1
+st pierre,vevey,6
+st pierre,villette,3
+st pierre,vulliens,1
+st pierre,yverdon,1
+st pierre,zurich (canton),1
+vennes,epalinges,4
+vennes,guggisberg,1
+vennes,lausanne,4
+vennes,romanel-sur-lausanne,1
+vennes,villette,1
