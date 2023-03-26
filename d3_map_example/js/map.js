@@ -5,6 +5,19 @@ class LausanneMap {
         center = [6.65, 46.55],
         min_zoom_dimension = 50,
         default_zone_color = "grey",
+        zone_colors = {
+            "vigne": "#9BA17B",
+            "bois": "#61764B",
+            "buissons": "#61764B",
+            "pré": "#FFD56F",
+            "pâturage": "#FFD56F", 
+            "champ": "#FFD56F",
+            "road_network": "#000000",
+            "water": "#6096B4",
+            "maison": "#CD5888",
+            "cour": "#CD5888",
+            "jardin": "#CD5888",
+        }
     ) {
         this.map_file = map_file;
 
@@ -13,6 +26,7 @@ class LausanneMap {
         this.center = center;
         this.min_zoom_dimension = min_zoom_dimension;
         this.default_zone_color = default_zone_color;
+        this.zone_colors = zone_colors;
         
         // State variables
         this.is_zoomed = false;
@@ -89,12 +103,8 @@ class LausanneMap {
                 })
                 .on("click", d => {
                     if (this.is_zoomed) {
-                        this.removeZoneTitle()
                         this.zoomOut()
                     } else {
-                        const result = this.getZoneCenter(d.target, false, false)
-                        const zone_center = result[0]
-                        this.addZoneTitle(d.target, zone_center[0], zone_center[1])
                         this.zoomOnZone(d.target)
                     }
                     this.is_zoomed = !this.is_zoomed
@@ -107,6 +117,18 @@ class LausanneMap {
         });
     }
 
+    color_zones() {
+        this.g.selectAll("path")
+            .attr("fill", d => {
+                let zone_type = this.getZoneTitle(d)
+                if (zone_type in this.zone_colors) {
+                    return this.zone_colors[zone_type]
+                } else {
+                    return this.default_zone_color
+                }
+            })
+    }
+
     update_data(new_map_file) {
         this.map_file = new_map_file;
         this.g.selectAll("*").remove();
@@ -117,6 +139,10 @@ class LausanneMap {
         if (this.is_zoomed) { return }
 
         this.fadeToColor(zone, "red")
+
+        const result = this.getZoneCenter(zone)
+        const zone_center = result[0]
+        this.addZoneTitle(zone, zone_center[0], zone_center[1])
     }
 
     onMouseOutZone(zone) {
@@ -157,11 +183,26 @@ class LausanneMap {
         return [bottom_left, bottom_right, top_left, top_right]
     }
 
-    addZoneTitle(zone, lat, long) {
-        let zone_title = d3.select(zone).data()[0].properties.use
-        if (zone_title == null || zone_title == "" || zone_title == "nan") {
-            zone_title = d3.select(zone).data()[0].properties.class
+    getZoneTitle(zone) {
+        let zone_obj = zone
+        if (zone_obj.nodeName == "path") {
+            zone_obj = d3.select(zone).data()[0]
         }
+
+        let zone_title = zone_obj.properties.use
+        if (zone_title == null || zone_title == "" || zone_title == "nan") {
+            zone_title = zone_obj.properties.class
+        }
+
+        zone_title = decodeURIComponent(escape(zone_title))
+        zone_title = zone_title.split(" ")[0]
+        zone_title = zone_title.replace(",", "")
+
+        return zone_title
+    }
+
+    addZoneTitle(zone, lat, long) {
+        let zone_title = this.getZoneTitle(zone)
         this.g.append("text")
             .attr("x", this.projection([lat, long])[0])
             .attr("y", this.projection([lat, long])[1])
@@ -216,8 +257,17 @@ class LausanneMap {
     }
 }
 
+let map = null
+
 // run load_network() when page is loaded
 window.onload = function() {
-    const map = new LausanneMap(map_file="data/berney.geojson")
+    map = new LausanneMap(map_file="data/berney.geojson")
     map.load_data()
+}
+
+// on space bar press, zoom out
+document.onkeydown = function(e) {
+    if (e.keyCode == 32) {
+        map.color_zones()
+    }
 }
