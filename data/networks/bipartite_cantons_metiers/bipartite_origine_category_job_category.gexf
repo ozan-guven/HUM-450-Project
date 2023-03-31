@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2023-03-31">
+    <creator>NetworkX 3.0</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="bipartite" type="long" />
+    </attributes>
+    <nodes>
+      <node id="Vaud" label="Vaud">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Suisse_Allemande" label="Suisse_Allemande">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="nan" label="nan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Villette" label="Villette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Romandie" label="Romandie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Epalinges" label="Epalinges">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="France" label="France">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Lutry" label="Lutry">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Angleterre" label="Angleterre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Lausanne" label="Lausanne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Allemagne" label="Allemagne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="Monde" label="Monde">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="artisanat" label="artisanat">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="service" label="service">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="rente" label="rente">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="commerce" label="commerce">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="agricole" label="agricole">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="construction" label="construction">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="administration" label="administration">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="?" label="?">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Vaud" target="?" id="0" weight="22" />
+      <edge source="Vaud" target="administration" id="1" weight="35" />
+      <edge source="Vaud" target="agricole" id="2" weight="283" />
+      <edge source="Vaud" target="artisanat" id="3" weight="359" />
+      <edge source="Vaud" target="commerce" id="4" weight="91" />
+      <edge source="Vaud" target="construction" id="5" weight="162" />
+      <edge source="Vaud" target="rente" id="6" weight="172" />
+      <edge source="Vaud" target="service" id="7" weight="234" />
+      <edge source="Suisse_Allemande" target="?" id="8" weight="8" />
+      <edge source="Suisse_Allemande" target="administration" id="9" weight="2" />
+      <edge source="Suisse_Allemande" target="agricole" id="10" weight="47" />
+      <edge source="Suisse_Allemande" target="artisanat" id="11" weight="56" />
+      <edge source="Suisse_Allemande" target="commerce" id="12" weight="19" />
+      <edge source="Suisse_Allemande" target="construction" id="13" weight="37" />
+      <edge source="Suisse_Allemande" target="rente" id="14" weight="19" />
+      <edge source="Suisse_Allemande" target="service" id="15" weight="30" />
+      <edge source="Villette" target="administration" id="16" weight="1" />
+      <edge source="Villette" target="agricole" id="17" weight="25" />
+      <edge source="Villette" target="artisanat" id="18" weight="7" />
+      <edge source="Villette" target="commerce" id="19" weight="1" />
+      <edge source="Villette" target="construction" id="20" weight="5" />
+      <edge source="Villette" target="rente" id="21" weight="8" />
+      <edge source="Villette" target="service" id="22" weight="7" />
+      <edge source="Romandie" target="?" id="23" weight="2" />
+      <edge source="Romandie" target="administration" id="24" weight="1" />
+      <edge source="Romandie" target="agricole" id="25" weight="9" />
+      <edge source="Romandie" target="artisanat" id="26" weight="7" />
+      <edge source="Romandie" target="commerce" id="27" weight="2" />
+      <edge source="Romandie" target="construction" id="28" weight="10" />
+      <edge source="Romandie" target="rente" id="29" weight="10" />
+      <edge source="Romandie" target="service" id="30" weight="10" />
+      <edge source="Epalinges" target="?" id="31" weight="1" />
+      <edge source="Epalinges" target="administration" id="32" weight="1" />
+      <edge source="Epalinges" target="agricole" id="33" weight="25" />
+      <edge source="Epalinges" target="artisanat" id="34" weight="5" />
+      <edge source="Epalinges" target="construction" id="35" weight="14" />
+      <edge source="Epalinges" target="rente" id="36" weight="3" />
+      <edge source="Epalinges" target="service" id="37" weight="11" />
+      <edge source="France" target="?" id="38" weight="1" />
+      <edge source="France" target="administration" id="39" weight="1" />
+      <edge source="France" target="agricole" id="40" weight="19" />
+      <edge source="France" target="artisanat" id="41" weight="23" />
+      <edge source="France" target="commerce" id="42" weight="9" />
+      <edge source="France" target="construction" id="43" weight="5" />
+      <edge source="France" target="rente" id="44" weight="25" />
+      <edge source="France" target="service" id="45" weight="16" />
+      <edge source="Lutry" target="?" id="46" weight="6" />
+      <edge source="Lutry" target="agricole" id="47" weight="25" />
+      <edge source="Lutry" target="artisanat" id="48" weight="16" />
+      <edge source="Lutry" target="commerce" id="49" weight="6" />
+      <edge source="Lutry" target="construction" id="50" weight="20" />
+      <edge source="Lutry" target="rente" id="51" weight="6" />
+      <edge source="Lutry" target="service" id="52" weight="15" />
+      <edge source="Angleterre" target="administration" id="53" weight="1" />
+      <edge source="Angleterre" target="agricole" id="54" weight="2" />
+      <edge source="Angleterre" target="artisanat" id="55" weight="1" />
+      <edge source="Angleterre" target="rente" id="56" weight="23" />
+      <edge source="Angleterre" target="service" id="57" weight="2" />
+      <edge source="Lausanne" target="?" id="58" weight="2" />
+      <edge source="Lausanne" target="agricole" id="59" weight="26" />
+      <edge source="Lausanne" target="artisanat" id="60" weight="19" />
+      <edge source="Lausanne" target="commerce" id="61" weight="4" />
+      <edge source="Lausanne" target="construction" id="62" weight="10" />
+      <edge source="Lausanne" target="rente" id="63" weight="6" />
+      <edge source="Lausanne" target="service" id="64" weight="10" />
+      <edge source="Allemagne" target="artisanat" id="65" weight="2" />
+      <edge source="Allemagne" target="construction" id="66" weight="1" />
+      <edge source="Monde" target="agricole" id="67" weight="1" />
+      <edge source="Monde" target="construction" id="68" weight="2" />
+      <edge source="Monde" target="service" id="69" weight="2" />
+    </edges>
+  </graph>
+</gexf>
