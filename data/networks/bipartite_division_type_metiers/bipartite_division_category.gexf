@@ -48,17 +48,17 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
+      <node id="1-2" label="1-2">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
       <node id="12" label="12">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="13" label="13">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="14" label="14">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -73,7 +73,7 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="17" label="17">
+      <node id="14" label="14">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -93,7 +93,7 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="1-2" label="1-2">
+      <node id="17" label="17">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -101,6 +101,16 @@
       <node id="7-8" label="7-8">
         <attvalues>
           <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="construction" label="construction">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="administration" label="administration">
+        <attvalues>
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="artisanat" label="artisanat">
@@ -113,32 +123,22 @@
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="rente" label="rente">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
       <node id="?" label="?">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="agricole" label="agricole">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
-      <node id="administration" label="administration">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
-      <node id="construction" label="construction">
+      <node id="rente" label="rente">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="commerce" label="commerce">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="agricole" label="agricole">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
@@ -201,53 +201,53 @@
       <edge source="11" target="construction" id="53" weight="43" />
       <edge source="11" target="rente" id="54" weight="16" />
       <edge source="11" target="service" id="55" weight="42" />
-      <edge source="12" target="?" id="56" weight="4" />
-      <edge source="12" target="administration" id="57" weight="4" />
-      <edge source="12" target="agricole" id="58" weight="73" />
-      <edge source="12" target="artisanat" id="59" weight="30" />
-      <edge source="12" target="commerce" id="60" weight="7" />
-      <edge source="12" target="construction" id="61" weight="38" />
-      <edge source="12" target="rente" id="62" weight="13" />
-      <edge source="12" target="service" id="63" weight="25" />
-      <edge source="13" target="?" id="64" weight="2" />
-      <edge source="13" target="administration" id="65" weight="1" />
-      <edge source="13" target="agricole" id="66" weight="10" />
-      <edge source="13" target="artisanat" id="67" weight="43" />
-      <edge source="13" target="commerce" id="68" weight="22" />
-      <edge source="13" target="construction" id="69" weight="18" />
-      <edge source="13" target="rente" id="70" weight="24" />
-      <edge source="13" target="service" id="71" weight="22" />
-      <edge source="14" target="?" id="72" weight="5" />
-      <edge source="14" target="administration" id="73" weight="2" />
-      <edge source="14" target="agricole" id="74" weight="19" />
-      <edge source="14" target="artisanat" id="75" weight="35" />
-      <edge source="14" target="construction" id="76" weight="19" />
-      <edge source="14" target="rente" id="77" weight="22" />
-      <edge source="14" target="service" id="78" weight="27" />
-      <edge source="15" target="?" id="79" weight="12" />
-      <edge source="15" target="administration" id="80" weight="17" />
-      <edge source="15" target="agricole" id="81" weight="22" />
-      <edge source="15" target="artisanat" id="82" weight="46" />
-      <edge source="15" target="commerce" id="83" weight="6" />
-      <edge source="15" target="construction" id="84" weight="35" />
-      <edge source="15" target="rente" id="85" weight="39" />
-      <edge source="15" target="service" id="86" weight="35" />
-      <edge source="16" target="?" id="87" weight="12" />
-      <edge source="16" target="administration" id="88" weight="3" />
-      <edge source="16" target="agricole" id="89" weight="33" />
-      <edge source="16" target="artisanat" id="90" weight="23" />
-      <edge source="16" target="commerce" id="91" weight="15" />
-      <edge source="16" target="construction" id="92" weight="34" />
-      <edge source="16" target="rente" id="93" weight="13" />
-      <edge source="16" target="service" id="94" weight="30" />
-      <edge source="17" target="?" id="95" weight="2" />
-      <edge source="17" target="administration" id="96" weight="2" />
-      <edge source="17" target="agricole" id="97" weight="122" />
-      <edge source="17" target="artisanat" id="98" weight="10" />
-      <edge source="17" target="commerce" id="99" weight="8" />
-      <edge source="17" target="construction" id="100" weight="5" />
-      <edge source="17" target="rente" id="101" weight="131" />
-      <edge source="17" target="service" id="102" weight="26" />
+      <edge source="1-2" target="?" id="56" weight="7" />
+      <edge source="1-2" target="administration" id="57" weight="5" />
+      <edge source="1-2" target="agricole" id="58" weight="86" />
+      <edge source="1-2" target="artisanat" id="59" weight="89" />
+      <edge source="1-2" target="commerce" id="60" weight="17" />
+      <edge source="1-2" target="construction" id="61" weight="47" />
+      <edge source="1-2" target="rente" id="62" weight="72" />
+      <edge source="1-2" target="service" id="63" weight="84" />
+      <edge source="12" target="?" id="64" weight="4" />
+      <edge source="12" target="administration" id="65" weight="4" />
+      <edge source="12" target="agricole" id="66" weight="73" />
+      <edge source="12" target="artisanat" id="67" weight="30" />
+      <edge source="12" target="commerce" id="68" weight="7" />
+      <edge source="12" target="construction" id="69" weight="38" />
+      <edge source="12" target="rente" id="70" weight="13" />
+      <edge source="12" target="service" id="71" weight="25" />
+      <edge source="13" target="?" id="72" weight="2" />
+      <edge source="13" target="administration" id="73" weight="1" />
+      <edge source="13" target="agricole" id="74" weight="10" />
+      <edge source="13" target="artisanat" id="75" weight="43" />
+      <edge source="13" target="commerce" id="76" weight="22" />
+      <edge source="13" target="construction" id="77" weight="18" />
+      <edge source="13" target="rente" id="78" weight="24" />
+      <edge source="13" target="service" id="79" weight="22" />
+      <edge source="15" target="?" id="80" weight="12" />
+      <edge source="15" target="administration" id="81" weight="17" />
+      <edge source="15" target="agricole" id="82" weight="22" />
+      <edge source="15" target="artisanat" id="83" weight="46" />
+      <edge source="15" target="commerce" id="84" weight="6" />
+      <edge source="15" target="construction" id="85" weight="35" />
+      <edge source="15" target="rente" id="86" weight="39" />
+      <edge source="15" target="service" id="87" weight="35" />
+      <edge source="16" target="?" id="88" weight="12" />
+      <edge source="16" target="administration" id="89" weight="3" />
+      <edge source="16" target="agricole" id="90" weight="33" />
+      <edge source="16" target="artisanat" id="91" weight="23" />
+      <edge source="16" target="commerce" id="92" weight="15" />
+      <edge source="16" target="construction" id="93" weight="34" />
+      <edge source="16" target="rente" id="94" weight="13" />
+      <edge source="16" target="service" id="95" weight="30" />
+      <edge source="14" target="?" id="96" weight="5" />
+      <edge source="14" target="administration" id="97" weight="2" />
+      <edge source="14" target="agricole" id="98" weight="19" />
+      <edge source="14" target="artisanat" id="99" weight="35" />
+      <edge source="14" target="construction" id="100" weight="19" />
+      <edge source="14" target="rente" id="101" weight="22" />
+      <edge source="14" target="service" id="102" weight="27" />
       <edge source="18" target="agricole" id="103" weight="44" />
       <edge source="18" target="artisanat" id="104" weight="7" />
       <edge source="18" target="construction" id="105" weight="5" />
@@ -264,14 +264,14 @@
       <edge source="20" target="artisanat" id="116" weight="2" />
       <edge source="20" target="construction" id="117" weight="1" />
       <edge source="20" target="service" id="118" weight="3" />
-      <edge source="1-2" target="?" id="119" weight="7" />
-      <edge source="1-2" target="administration" id="120" weight="5" />
-      <edge source="1-2" target="agricole" id="121" weight="86" />
-      <edge source="1-2" target="artisanat" id="122" weight="89" />
-      <edge source="1-2" target="commerce" id="123" weight="17" />
-      <edge source="1-2" target="construction" id="124" weight="47" />
-      <edge source="1-2" target="rente" id="125" weight="72" />
-      <edge source="1-2" target="service" id="126" weight="84" />
+      <edge source="17" target="?" id="119" weight="2" />
+      <edge source="17" target="administration" id="120" weight="2" />
+      <edge source="17" target="agricole" id="121" weight="122" />
+      <edge source="17" target="artisanat" id="122" weight="10" />
+      <edge source="17" target="commerce" id="123" weight="8" />
+      <edge source="17" target="construction" id="124" weight="5" />
+      <edge source="17" target="rente" id="125" weight="131" />
+      <edge source="17" target="service" id="126" weight="26" />
       <edge source="7-8" target="?" id="127" weight="1" />
       <edge source="7-8" target="administration" id="128" weight="3" />
       <edge source="7-8" target="agricole" id="129" weight="41" />

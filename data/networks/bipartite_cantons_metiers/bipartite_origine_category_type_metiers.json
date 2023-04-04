@@ -1,115 +1,115 @@
 {
     "nodes": [
         {
-            "Id": "0",
+            "id": "0",
             "label": "Vaud",
             "type": "origine_category",
             "size": 1358
         },
         {
-            "Id": "1",
+            "id": "1",
             "label": "Suisse_Allemande",
             "type": "origine_category",
             "size": 218
         },
         {
-            "Id": "2",
+            "id": "2",
             "label": "Villette",
             "type": "origine_category",
             "size": 54
         },
         {
-            "Id": "3",
+            "id": "3",
             "label": "Romandie",
             "type": "origine_category",
             "size": 51
         },
         {
-            "Id": "4",
+            "id": "4",
             "label": "Epalinges",
             "type": "origine_category",
             "size": 60
         },
         {
-            "Id": "5",
+            "id": "5",
             "label": "France",
             "type": "origine_category",
             "size": 99
         },
         {
-            "Id": "6",
+            "id": "6",
             "label": "Lutry",
             "type": "origine_category",
             "size": 94
         },
         {
-            "Id": "7",
+            "id": "7",
             "label": "Angleterre",
             "type": "origine_category",
             "size": 29
         },
         {
-            "Id": "8",
+            "id": "8",
             "label": "Lausanne",
             "type": "origine_category",
             "size": 77
         },
         {
-            "Id": "9",
+            "id": "9",
             "label": "Allemagne",
             "type": "origine_category",
             "size": 3
         },
         {
-            "Id": "10",
+            "id": "10",
             "label": "Monde",
             "type": "origine_category",
             "size": 5
         },
         {
-            "Id": "?",
+            "id": "?",
             "label": "?",
             "type": "job_category",
             "size": 42
         },
         {
-            "Id": "administration",
+            "id": "administration",
             "label": "administration",
             "type": "job_category",
             "size": 42
         },
         {
-            "Id": "agricole",
+            "id": "agricole",
             "label": "agricole",
             "type": "job_category",
             "size": 462
         },
         {
-            "Id": "artisanat",
+            "id": "artisanat",
             "label": "artisanat",
             "type": "job_category",
             "size": 495
         },
         {
-            "Id": "commerce",
+            "id": "commerce",
             "label": "commerce",
             "type": "job_category",
             "size": 132
         },
         {
-            "Id": "construction",
+            "id": "construction",
             "label": "construction",
             "type": "job_category",
             "size": 266
         },
         {
-            "Id": "rente",
+            "id": "rente",
             "label": "rente",
             "type": "job_category",
             "size": 272
         },
         {
-            "Id": "service",
+            "id": "service",
             "label": "service",
             "type": "job_category",
             "size": 337
@@ -117,354 +117,354 @@
     ],
     "links": [
         {
-            "Source": "0",
-            "Target": "?",
-            "Weight": 22
+            "source": "0",
+            "target": "?",
+            "weight": 22
         },
         {
-            "Source": "0",
-            "Target": "administration",
-            "Weight": 35
+            "source": "0",
+            "target": "administration",
+            "weight": 35
         },
         {
-            "Source": "0",
-            "Target": "agricole",
-            "Weight": 283
+            "source": "0",
+            "target": "agricole",
+            "weight": 283
         },
         {
-            "Source": "0",
-            "Target": "artisanat",
-            "Weight": 359
+            "source": "0",
+            "target": "artisanat",
+            "weight": 359
         },
         {
-            "Source": "0",
-            "Target": "commerce",
-            "Weight": 91
+            "source": "0",
+            "target": "commerce",
+            "weight": 91
         },
         {
-            "Source": "0",
-            "Target": "construction",
-            "Weight": 162
+            "source": "0",
+            "target": "construction",
+            "weight": 162
         },
         {
-            "Source": "0",
-            "Target": "rente",
-            "Weight": 172
+            "source": "0",
+            "target": "rente",
+            "weight": 172
         },
         {
-            "Source": "0",
-            "Target": "service",
-            "Weight": 234
+            "source": "0",
+            "target": "service",
+            "weight": 234
         },
         {
-            "Source": "1",
-            "Target": "?",
-            "Weight": 8
+            "source": "1",
+            "target": "?",
+            "weight": 8
         },
         {
-            "Source": "1",
-            "Target": "administration",
-            "Weight": 2
+            "source": "1",
+            "target": "administration",
+            "weight": 2
         },
         {
-            "Source": "1",
-            "Target": "agricole",
-            "Weight": 47
+            "source": "1",
+            "target": "agricole",
+            "weight": 47
         },
         {
-            "Source": "1",
-            "Target": "artisanat",
-            "Weight": 56
+            "source": "1",
+            "target": "artisanat",
+            "weight": 56
         },
         {
-            "Source": "1",
-            "Target": "commerce",
-            "Weight": 19
+            "source": "1",
+            "target": "commerce",
+            "weight": 19
         },
         {
-            "Source": "1",
-            "Target": "construction",
-            "Weight": 37
+            "source": "1",
+            "target": "construction",
+            "weight": 37
         },
         {
-            "Source": "1",
-            "Target": "rente",
-            "Weight": 19
+            "source": "1",
+            "target": "rente",
+            "weight": 19
         },
         {
-            "Source": "1",
-            "Target": "service",
-            "Weight": 30
+            "source": "1",
+            "target": "service",
+            "weight": 30
         },
         {
-            "Source": "2",
-            "Target": "administration",
-            "Weight": 1
+            "source": "2",
+            "target": "administration",
+            "weight": 1
         },
         {
-            "Source": "2",
-            "Target": "agricole",
-            "Weight": 25
+            "source": "2",
+            "target": "agricole",
+            "weight": 25
         },
         {
-            "Source": "2",
-            "Target": "artisanat",
-            "Weight": 7
+            "source": "2",
+            "target": "artisanat",
+            "weight": 7
         },
         {
-            "Source": "2",
-            "Target": "commerce",
-            "Weight": 1
+            "source": "2",
+            "target": "commerce",
+            "weight": 1
         },
         {
-            "Source": "2",
-            "Target": "construction",
-            "Weight": 5
+            "source": "2",
+            "target": "construction",
+            "weight": 5
         },
         {
-            "Source": "2",
-            "Target": "rente",
-            "Weight": 8
+            "source": "2",
+            "target": "rente",
+            "weight": 8
         },
         {
-            "Source": "2",
-            "Target": "service",
-            "Weight": 7
+            "source": "2",
+            "target": "service",
+            "weight": 7
         },
         {
-            "Source": "3",
-            "Target": "?",
-            "Weight": 2
+            "source": "3",
+            "target": "?",
+            "weight": 2
         },
         {
-            "Source": "3",
-            "Target": "administration",
-            "Weight": 1
+            "source": "3",
+            "target": "administration",
+            "weight": 1
         },
         {
-            "Source": "3",
-            "Target": "agricole",
-            "Weight": 9
+            "source": "3",
+            "target": "agricole",
+            "weight": 9
         },
         {
-            "Source": "3",
-            "Target": "artisanat",
-            "Weight": 7
+            "source": "3",
+            "target": "artisanat",
+            "weight": 7
         },
         {
-            "Source": "3",
-            "Target": "commerce",
-            "Weight": 2
+            "source": "3",
+            "target": "commerce",
+            "weight": 2
         },
         {
-            "Source": "3",
-            "Target": "construction",
-            "Weight": 10
+            "source": "3",
+            "target": "construction",
+            "weight": 10
         },
         {
-            "Source": "3",
-            "Target": "rente",
-            "Weight": 10
+            "source": "3",
+            "target": "rente",
+            "weight": 10
         },
         {
-            "Source": "3",
-            "Target": "service",
-            "Weight": 10
+            "source": "3",
+            "target": "service",
+            "weight": 10
         },
         {
-            "Source": "4",
-            "Target": "?",
-            "Weight": 1
+            "source": "4",
+            "target": "?",
+            "weight": 1
         },
         {
-            "Source": "4",
-            "Target": "administration",
-            "Weight": 1
+            "source": "4",
+            "target": "administration",
+            "weight": 1
         },
         {
-            "Source": "4",
-            "Target": "agricole",
-            "Weight": 25
+            "source": "4",
+            "target": "agricole",
+            "weight": 25
         },
         {
-            "Source": "4",
-            "Target": "artisanat",
-            "Weight": 5
+            "source": "4",
+            "target": "artisanat",
+            "weight": 5
         },
         {
-            "Source": "4",
-            "Target": "construction",
-            "Weight": 14
+            "source": "4",
+            "target": "construction",
+            "weight": 14
         },
         {
-            "Source": "4",
-            "Target": "rente",
-            "Weight": 3
+            "source": "4",
+            "target": "rente",
+            "weight": 3
         },
         {
-            "Source": "4",
-            "Target": "service",
-            "Weight": 11
+            "source": "4",
+            "target": "service",
+            "weight": 11
         },
         {
-            "Source": "5",
-            "Target": "?",
-            "Weight": 1
+            "source": "5",
+            "target": "?",
+            "weight": 1
         },
         {
-            "Source": "5",
-            "Target": "administration",
-            "Weight": 1
+            "source": "5",
+            "target": "administration",
+            "weight": 1
         },
         {
-            "Source": "5",
-            "Target": "agricole",
-            "Weight": 19
+            "source": "5",
+            "target": "agricole",
+            "weight": 19
         },
         {
-            "Source": "5",
-            "Target": "artisanat",
-            "Weight": 23
+            "source": "5",
+            "target": "artisanat",
+            "weight": 23
         },
         {
-            "Source": "5",
-            "Target": "commerce",
-            "Weight": 9
+            "source": "5",
+            "target": "commerce",
+            "weight": 9
         },
         {
-            "Source": "5",
-            "Target": "construction",
-            "Weight": 5
+            "source": "5",
+            "target": "construction",
+            "weight": 5
         },
         {
-            "Source": "5",
-            "Target": "rente",
-            "Weight": 25
+            "source": "5",
+            "target": "rente",
+            "weight": 25
         },
         {
-            "Source": "5",
-            "Target": "service",
-            "Weight": 16
+            "source": "5",
+            "target": "service",
+            "weight": 16
         },
         {
-            "Source": "6",
-            "Target": "?",
-            "Weight": 6
+            "source": "6",
+            "target": "?",
+            "weight": 6
         },
         {
-            "Source": "6",
-            "Target": "agricole",
-            "Weight": 25
+            "source": "6",
+            "target": "agricole",
+            "weight": 25
         },
         {
-            "Source": "6",
-            "Target": "artisanat",
-            "Weight": 16
+            "source": "6",
+            "target": "artisanat",
+            "weight": 16
         },
         {
-            "Source": "6",
-            "Target": "commerce",
-            "Weight": 6
+            "source": "6",
+            "target": "commerce",
+            "weight": 6
         },
         {
-            "Source": "6",
-            "Target": "construction",
-            "Weight": 20
+            "source": "6",
+            "target": "construction",
+            "weight": 20
         },
         {
-            "Source": "6",
-            "Target": "rente",
-            "Weight": 6
+            "source": "6",
+            "target": "rente",
+            "weight": 6
         },
         {
-            "Source": "6",
-            "Target": "service",
-            "Weight": 15
+            "source": "6",
+            "target": "service",
+            "weight": 15
         },
         {
-            "Source": "7",
-            "Target": "administration",
-            "Weight": 1
+            "source": "7",
+            "target": "administration",
+            "weight": 1
         },
         {
-            "Source": "7",
-            "Target": "agricole",
-            "Weight": 2
+            "source": "7",
+            "target": "agricole",
+            "weight": 2
         },
         {
-            "Source": "7",
-            "Target": "artisanat",
-            "Weight": 1
+            "source": "7",
+            "target": "artisanat",
+            "weight": 1
         },
         {
-            "Source": "7",
-            "Target": "rente",
-            "Weight": 23
+            "source": "7",
+            "target": "rente",
+            "weight": 23
         },
         {
-            "Source": "7",
-            "Target": "service",
-            "Weight": 2
+            "source": "7",
+            "target": "service",
+            "weight": 2
         },
         {
-            "Source": "8",
-            "Target": "?",
-            "Weight": 2
+            "source": "8",
+            "target": "?",
+            "weight": 2
         },
         {
-            "Source": "8",
-            "Target": "agricole",
-            "Weight": 26
+            "source": "8",
+            "target": "agricole",
+            "weight": 26
         },
         {
-            "Source": "8",
-            "Target": "artisanat",
-            "Weight": 19
+            "source": "8",
+            "target": "artisanat",
+            "weight": 19
         },
         {
-            "Source": "8",
-            "Target": "commerce",
-            "Weight": 4
+            "source": "8",
+            "target": "commerce",
+            "weight": 4
         },
         {
-            "Source": "8",
-            "Target": "construction",
-            "Weight": 10
+            "source": "8",
+            "target": "construction",
+            "weight": 10
         },
         {
-            "Source": "8",
-            "Target": "rente",
-            "Weight": 6
+            "source": "8",
+            "target": "rente",
+            "weight": 6
         },
         {
-            "Source": "8",
-            "Target": "service",
-            "Weight": 10
+            "source": "8",
+            "target": "service",
+            "weight": 10
         },
         {
-            "Source": "9",
-            "Target": "artisanat",
-            "Weight": 2
+            "source": "9",
+            "target": "artisanat",
+            "weight": 2
         },
         {
-            "Source": "9",
-            "Target": "construction",
-            "Weight": 1
+            "source": "9",
+            "target": "construction",
+            "weight": 1
         },
         {
-            "Source": "10",
-            "Target": "agricole",
-            "Weight": 1
+            "source": "10",
+            "target": "agricole",
+            "weight": 1
         },
         {
-            "Source": "10",
-            "Target": "construction",
-            "Weight": 2
+            "source": "10",
+            "target": "construction",
+            "weight": 2
         },
         {
-            "Source": "10",
-            "Target": "service",
-            "Weight": 2
+            "source": "10",
+            "target": "service",
+            "weight": 2
         }
     ]
 }

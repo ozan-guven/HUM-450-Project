@@ -1,247 +1,5 @@
 street,job_category,Weight
-vuachere,agricole,2
-st etienne,?,1
-st etienne,agricole,2
-st etienne,artisanat,7
-st etienne,construction,4
-st etienne,rente,9
-st etienne,service,7
-verdonnet,agricole,4
-chateau de vennes,service,1
-chalet aux enfants,agricole,1
-la rappaz,?,1
-la rappaz,agricole,1
-la rappaz,service,1
-grangette,agricole,4
-grangette,rente,1
-grangette,service,1
-chauderon,agricole,5
-chauderon,artisanat,1
-chauderon,construction,2
-chauderon,service,1
-devin,agricole,5
-devin,construction,1
-devin,service,1
-cite derriere,?,8
-cite derriere,administration,10
-cite derriere,agricole,13
-cite derriere,artisanat,26
-cite derriere,commerce,3
-cite derriere,construction,30
-cite derriere,rente,15
-cite derriere,service,18
-calvaire,agricole,3
-calvaire,artisanat,1
-calvaire,construction,1
-calvaire,rente,1
-montheron,agricole,5
-montheron,artisanat,1
-rasude,commerce,1
-rasude,rente,4
-rue du pre,?,3
-rue du pre,agricole,26
-rue du pre,artisanat,69
-rue du pre,commerce,20
-rue du pre,construction,25
-rue du pre,rente,8
-rue du pre,service,40
-prelaz,service,1
-les saugealles,agricole,1
-petit singe,agricole,1
-petit singe,commerce,1
-petit singe,rente,6
-petit singe,service,1
-mont-olivet,agricole,1
-mont-olivet,rente,1
-truiblanc,rente,1
-mon regret,agricole,1
-sous le signal,construction,1
-vernand,agricole,3
-vernand,rente,1
-rue de l'hopital,?,2
-rue de l'hopital,agricole,5
-rue de l'hopital,artisanat,8
-rue de l'hopital,construction,5
-rue de l'hopital,rente,2
-rue de l'hopital,service,2
-chailly,agricole,20
-chailly,artisanat,6
-chailly,construction,5
-chailly,rente,3
-chailly,service,1
-mornex,rente,1
-maison des postes,service,1
-beau-soleil,agricole,1
-st laurent,administration,3
-st laurent,agricole,9
-st laurent,artisanat,30
-st laurent,commerce,12
-st laurent,construction,18
-st laurent,rente,10
-st laurent,service,18
-petit st jean,administration,1
-petit st jean,agricole,4
-petit st jean,artisanat,18
-petit st jean,commerce,5
-petit st jean,construction,3
-petit st jean,rente,3
-petit st jean,service,9
-rosemont,rente,3
-valency,agricole,1
-petit chene,agricole,2
-petit chene,artisanat,4
-petit chene,commerce,1
-petit chene,construction,1
-petit chene,rente,2
-petit chene,service,4
-vernand-dessus,agricole,4
-vernand-dessus,rente,3
-bugnon,construction,4
-jordils,rente,2
-pra chillon,agricole,1
-vidy,agricole,1
-montoie,agricole,3
-montoie,rente,3
-montoie,service,1
-montee st francois,artisanat,6
-montee st francois,commerce,6
-montee st francois,rente,4
-montee st francois,service,3
-val-d'angrogne,agricole,3
-val-d'angrogne,artisanat,1
-pontaise,administration,1
-pontaise,rente,3
-barre,?,6
-barre,administration,2
-barre,agricole,32
-barre,artisanat,14
-barre,commerce,3
-barre,construction,31
-barre,rente,7
-barre,service,18
-petite rue,service,3
-chalet a marin,agricole,3
-chaucrau,administration,3
-chaucrau,agricole,18
-chaucrau,artisanat,20
-chaucrau,commerce,3
-chaucrau,construction,24
-chaucrau,rente,1
-chaucrau,service,16
-languedoc,agricole,2
-petit ouchy,agricole,2
-montee de st laurent,?,1
-montee de st laurent,administration,2
-montee de st laurent,agricole,14
-montee de st laurent,artisanat,23
-montee de st laurent,commerce,8
-montee de st laurent,construction,9
-montee de st laurent,rente,4
-montee de st laurent,service,15
-malley,agricole,1
-malley,rente,1
-vernand-dessous,agricole,3
-vernand-dessous,rente,1
-vernand-dessous,service,1
-bourg,administration,3
-bourg,agricole,3
-bourg,artisanat,27
-bourg,commerce,24
-bourg,construction,6
-bourg,rente,31
-bourg,service,27
-marterey,?,2
-marterey,administration,1
-marterey,agricole,54
-marterey,artisanat,49
-marterey,commerce,3
-marterey,construction,35
-marterey,rente,19
-marterey,service,54
-riponne,artisanat,1
-riponne,construction,1
-riponne,service,2
-grange-neuve,?,2
-grange-neuve,agricole,8
-grange-neuve,artisanat,1
-grange-neuve,construction,1
-grange-neuve,service,2
-bel-air,agricole,2
-bel-air,rente,1
-chabliere,agricole,3
-chabliere,rente,1
-madeleine,?,6
-madeleine,administration,1
-madeleine,agricole,1
-madeleine,artisanat,9
-madeleine,commerce,12
-madeleine,construction,2
-madeleine,rente,6
-madeleine,service,12
-palud,administration,1
-palud,agricole,3
-palud,artisanat,19
-palud,commerce,19
-palud,construction,7
-palud,rente,18
-palud,service,11
-petits huttins,rente,1
-la cage ,agricole,2
-ale,?,3
-ale,administration,4
-ale,agricole,58
-ale,artisanat,28
-ale,commerce,6
-ale,construction,32
-ale,rente,5
-ale,service,18
-blecherette,agricole,1
-mon repos,rente,1
-cite dessous,administration,1
-cite dessous,agricole,9
-cite dessous,artisanat,8
-cite dessous,construction,6
-cite dessous,rente,8
-cite dessous,service,9
 denatou,agricole,2
-st pierre,?,2
-st pierre,administration,4
-st pierre,agricole,7
-st pierre,artisanat,33
-st pierre,commerce,15
-st pierre,construction,6
-st pierre,rente,29
-st pierre,service,21
-grotte,?,2
-grotte,agricole,2
-grotte,artisanat,1
-grotte,commerce,2
-grotte,rente,8
-grotte,service,1
-montetan,agricole,1
-montetan,rente,1
-croisette haras,service,1
-petite pontaise,rente,1
-bergieres,agricole,1
-bergieres,rente,1
-escaliers du marche,?,3
-escaliers du marche,administration,1
-escaliers du marche,agricole,3
-escaliers du marche,artisanat,14
-escaliers du marche,construction,5
-escaliers du marche,rente,3
-escaliers du marche,service,7
-rovereaz,agricole,1
-rovereaz,service,1
-villard,agricole,2
-villard,rente,2
-grand chene,administration,1
-grand chene,agricole,1
-grand chene,artisanat,7
-grand chene,commerce,7
-grand chene,construction,1
-grand chene,rente,12
-grand chene,service,10
 grand st jean,?,3
 grand st jean,administration,8
 grand st jean,agricole,16
@@ -250,148 +8,73 @@ grand st jean,commerce,17
 grand st jean,construction,34
 grand st jean,rente,38
 grand st jean,service,35
-bois-gentil,construction,2
-bois-gentil,rente,3
-retraite,agricole,1
-croix rouge,agricole,4
-croix rouge,rente,1
-croix rouge,service,1
-pres de ville,rente,4
-rongimel,administration,1
-rongimel,agricole,1
-rongimel,rente,1
-mousquines,agricole,1
-mousquines,rente,2
-bethusy,agricole,1
-maupas,agricole,7
-maupas,artisanat,1
-maupas,commerce,1
-maupas,construction,2
-maupas,rente,4
-maupas,service,2
-gottettaz,agricole,5
-paleyres,agricole,2
-place st laurent,?,1
-place st laurent,administration,1
-place st laurent,rente,3
-place st laurent,service,3
-georgette,agricole,2
-georgette,rente,1
-moulin de pepinet,agricole,16
-moulin de pepinet,artisanat,3
-moulin de pepinet,construction,4
-moulin de pepinet,rente,1
-moulin de pepinet,service,3
-pepinet,administration,1
-taulau?,rente,7
-villars,agricole,1
-villars,rente,2
-pont des sauge,agricole,3
-pont des sauge,rente,2
-contigny,agricole,2
-contigny,rente,1
-la berallaz,agricole,5
-valentin,agricole,1
-valentin,rente,2
-montbenon,rente,6
-montbenon,service,1
-montagibert,agricole,3
-montagibert,rente,1
-servan,agricole,1
-servan,rente,4
-petit mon repos,rente,1
-st francois,agricole,2
-st francois,artisanat,24
-st francois,commerce,17
-st francois,construction,3
-st francois,rente,12
-st francois,service,8
-craivavers,?,1
-craivavers,agricole,3
-craivavers,construction,1
-derriere les terreaux ferme de m. roguin,agricole,1
-petit clos,administration,1
-petit clos,agricole,3
-petit clos,rente,1
-petit clos,service,1
-montriond,rente,1
+croix de rive,commerce,1
+croix de rive,rente,3
+rue du pre,?,3
+rue du pre,agricole,26
+rue du pre,artisanat,69
+rue du pre,commerce,20
+rue du pre,construction,25
+rue du pre,rente,8
+rue du pre,service,40
+grotte,?,2
+grotte,agricole,2
+grotte,artisanat,1
+grotte,commerce,2
+grotte,rente,8
+grotte,service,1
+chabliere,agricole,3
+chabliere,rente,1
+montchoisi,rente,1
+les saugealles,agricole,1
 place st francois,?,2
 place st francois,administration,2
 place st francois,artisanat,3
 place st francois,commerce,6
 place st francois,rente,14
 place st francois,service,10
-praz-sechaud,agricole,2
-clos de bulle,rente,1
-clos de bulle,service,1
-a la tuerie ?,agricole,1
-sebeilllon,agricole,4
-sebeilllon,rente,2
-singe,agricole,3
-ecole de charite,service,4
-villamont maison de maitres,rente,3
-chalet de vernand,agricole,2
-grey,rente,1
-la sallaz,?,2
-la sallaz,agricole,9
-la sallaz,artisanat,4
-la sallaz,rente,1
-la sallaz,service,3
-beaulieu,agricole,1
-beaulieu,rente,1
-beaulieu,service,1
-derriere les terreaux,?,1
-derriere les terreaux,agricole,1
-derriere les terreaux,construction,2
-derriere les terreaux,rente,3
-derriere les terreaux,service,3
-clos mont,artisanat,2
-mercerie,?,1
-mercerie,agricole,7
-mercerie,artisanat,22
-mercerie,commerce,3
-mercerie,construction,10
-mercerie,rente,6
-mercerie,service,10
-cazard,agricole,1
-violette,rente,2
-collonges,rente,1
-epinette,agricole,1
-epinette,rente,1
-saugettes,agricole,1
-saugettes,rente,1
-rosiere,rente,1
-croix de rive,commerce,1
-croix de rive,rente,3
-villamont,agricole,1
-villamont,artisanat,1
-cite devant,?,4
-cite devant,administration,7
-cite devant,agricole,9
-cite devant,artisanat,20
-cite devant,commerce,3
-cite devant,construction,5
-cite devant,rente,24
-cite devant,service,17
-cour,agricole,23
-cour,rente,23
-cour,service,1
-desert,agricole,1
-desert,rente,1
-riant-mont,rente,1
-toises,administration,1
-toises,agricole,1
-toises,rente,1
+taulau?,rente,7
+pontaise,administration,1
+pontaise,rente,3
+montbenon,rente,6
+montbenon,service,1
+bourg,administration,3
+bourg,agricole,3
+bourg,artisanat,27
+bourg,commerce,24
+bourg,construction,6
+bourg,rente,31
+bourg,service,27
+croix rouge,agricole,4
+croix rouge,rente,1
+croix rouge,service,1
+boston,rente,1
+boston,service,1
+val-d'angrogne,agricole,3
+val-d'angrogne,artisanat,1
+blecherette,agricole,1
+beau-soleil,agricole,1
 ouchy,?,2
 ouchy,agricole,38
 ouchy,artisanat,10
 ouchy,commerce,6
 ouchy,rente,34
 ouchy,service,21
-grand champ,agricole,1
-montchoisi,rente,1
-bois de vaux,agricole,3
-bois de vaux,rente,1
+rue de l'hopital,?,2
+rue de l'hopital,agricole,5
+rue de l'hopital,artisanat,8
+rue de l'hopital,construction,5
+rue de l'hopital,rente,2
+rue de l'hopital,service,2
+la sallaz,?,2
+la sallaz,agricole,9
+la sallaz,artisanat,4
+la sallaz,rente,1
+la sallaz,service,3
+calvaire,agricole,3
+calvaire,artisanat,1
+calvaire,construction,1
+calvaire,rente,1
 rue du pont,?,1
 rue du pont,administration,2
 rue du pont,agricole,1
@@ -400,6 +83,16 @@ rue du pont,commerce,15
 rue du pont,construction,1
 rue du pont,rente,7
 rue du pont,service,14
+petit ouchy,agricole,2
+cite derriere,?,8
+cite derriere,administration,10
+cite derriere,agricole,13
+cite derriere,artisanat,26
+cite derriere,commerce,3
+cite derriere,construction,30
+cite derriere,rente,15
+cite derriere,service,18
+petite rue,service,3
 etraz,?,3
 etraz,agricole,18
 etraz,artisanat,16
@@ -407,27 +100,334 @@ etraz,commerce,3
 etraz,construction,6
 etraz,rente,13
 etraz,service,16
+vennes,agricole,11
+vennes,construction,1
+vennes,rente,4
+epinette,agricole,1
+epinette,rente,1
+st laurent,administration,3
+st laurent,agricole,9
+st laurent,artisanat,30
+st laurent,commerce,12
+st laurent,construction,18
+st laurent,rente,10
+st laurent,service,18
+valency,agricole,1
+collonges,rente,1
+rosiere,rente,1
+toises,administration,1
+toises,agricole,1
+toises,rente,1
+saugettes,agricole,1
+saugettes,rente,1
+cite dessous,administration,1
+cite dessous,agricole,9
+cite dessous,artisanat,8
+cite dessous,construction,6
+cite dessous,rente,8
+cite dessous,service,9
+mousquines,agricole,1
+mousquines,rente,2
+cazard,agricole,1
+croisette haras,service,1
+villamont maison de maitres,rente,3
+montriond,rente,1
+paleyres,agricole,2
+grange-neuve,?,2
+grange-neuve,agricole,8
+grange-neuve,artisanat,1
+grange-neuve,construction,1
+grange-neuve,service,2
+madeleine,?,6
+madeleine,administration,1
+madeleine,agricole,1
+madeleine,artisanat,9
+madeleine,commerce,12
+madeleine,construction,2
+madeleine,rente,6
+madeleine,service,12
+languedoc,agricole,2
+petit st jean,administration,1
+petit st jean,agricole,4
+petit st jean,artisanat,18
+petit st jean,commerce,5
+petit st jean,construction,3
+petit st jean,rente,3
+petit st jean,service,9
+sebeilllon,agricole,4
+sebeilllon,rente,2
+pepinet,administration,1
+cour,agricole,23
+cour,rente,23
+cour,service,1
+bel-air,agricole,2
+bel-air,rente,1
+derriere les terreaux,?,1
+derriere les terreaux,agricole,1
+derriere les terreaux,construction,2
+derriere les terreaux,rente,3
+derriere les terreaux,service,3
+la cage ,agricole,2
+mon repos,rente,1
+grangette,agricole,4
+grangette,rente,1
+grangette,service,1
+chailly,agricole,20
+chailly,artisanat,6
+chailly,construction,5
+chailly,rente,3
+chailly,service,1
+st etienne,?,1
+st etienne,agricole,2
+st etienne,artisanat,7
+st etienne,construction,4
+st etienne,rente,9
+st etienne,service,7
+verdonnet,agricole,4
+gottettaz,agricole,5
+trabandan,agricole,1
+ale,?,3
+ale,administration,4
+ale,agricole,58
+ale,artisanat,28
+ale,commerce,6
+ale,construction,32
+ale,rente,5
+ale,service,18
+escaliers du marche,?,3
+escaliers du marche,administration,1
+escaliers du marche,agricole,3
+escaliers du marche,artisanat,14
+escaliers du marche,construction,5
+escaliers du marche,rente,3
+escaliers du marche,service,7
+derriere les terreaux ferme de m. roguin,agricole,1
+petit singe,agricole,1
+petit singe,commerce,1
+petit singe,rente,6
+petit singe,service,1
+vernand-dessus,agricole,4
+vernand-dessus,rente,3
+chalet a marin,agricole,3
+desert,agricole,1
+desert,rente,1
+montoie,agricole,3
+montoie,rente,3
+montoie,service,1
+rongimel,administration,1
+rongimel,agricole,1
+rongimel,rente,1
+vidy,agricole,1
+sous le signal,construction,1
+petit chene,agricole,2
+petit chene,artisanat,4
+petit chene,commerce,1
+petit chene,construction,1
+petit chene,rente,2
+petit chene,service,4
+villars,agricole,1
+villars,rente,2
+riant-mont,rente,1
+praz-sechaud,agricole,2
+petite pontaise,rente,1
+moulin de pepinet,agricole,16
+moulin de pepinet,artisanat,3
+moulin de pepinet,construction,4
+moulin de pepinet,rente,1
+moulin de pepinet,service,3
+chauderon,agricole,5
+chauderon,artisanat,1
+chauderon,construction,2
+chauderon,service,1
+grand champ,agricole,1
+georgette,agricole,2
+georgette,rente,1
+bois de vaux,agricole,3
+bois de vaux,rente,1
+retraite,agricole,1
+petit clos,administration,1
+petit clos,agricole,3
+petit clos,rente,1
+petit clos,service,1
+bellevue,agricole,2
+bellevue,rente,1
+pra chillon,agricole,1
+loup,construction,3
+truiblanc,rente,1
+singe,agricole,3
+devin,agricole,5
+devin,construction,1
+devin,service,1
+servan,agricole,1
+servan,rente,4
+st francois,agricole,2
+st francois,artisanat,24
+st francois,commerce,17
+st francois,construction,3
+st francois,rente,12
+st francois,service,8
+mont-olivet,agricole,1
+mont-olivet,rente,1
+mornex,rente,1
+mercerie,?,1
+mercerie,agricole,7
+mercerie,artisanat,22
+mercerie,commerce,3
+mercerie,construction,10
+mercerie,rente,6
+mercerie,service,10
+barre,?,6
+barre,administration,2
+barre,agricole,32
+barre,artisanat,14
+barre,commerce,3
+barre,construction,31
+barre,rente,7
+barre,service,18
+bergieres,agricole,1
+bergieres,rente,1
+petits huttins,rente,1
+montee de st laurent,?,1
+montee de st laurent,administration,2
+montee de st laurent,agricole,14
+montee de st laurent,artisanat,23
+montee de st laurent,commerce,8
+montee de st laurent,construction,9
+montee de st laurent,rente,4
+montee de st laurent,service,15
+st pierre,?,2
+st pierre,administration,4
+st pierre,agricole,7
+st pierre,artisanat,33
+st pierre,commerce,15
+st pierre,construction,6
+st pierre,rente,29
+st pierre,service,21
+vuachere,agricole,2
+mon regret,agricole,1
+pont des sauge,agricole,3
+pont des sauge,rente,2
+rosemont,rente,3
 place du pont,agricole,2
 place du pont,artisanat,5
 place du pont,commerce,4
 place du pont,construction,3
 place du pont,service,2
-boston,rente,1
-boston,service,1
-bellevue,agricole,2
-bellevue,rente,1
-vennes,agricole,11
-vennes,construction,1
-vennes,rente,4
+bois-gentil,construction,2
+bois-gentil,rente,3
+marterey,?,2
+marterey,administration,1
+marterey,agricole,54
+marterey,artisanat,49
+marterey,commerce,3
+marterey,construction,35
+marterey,rente,19
+marterey,service,54
+contigny,agricole,2
+contigny,rente,1
+craivavers,?,1
+craivavers,agricole,3
+craivavers,construction,1
+chateau de vennes,service,1
+a la tuerie ?,agricole,1
+place st laurent,?,1
+place st laurent,administration,1
+place st laurent,rente,3
+place st laurent,service,3
+vernand,agricole,3
+vernand,rente,1
+palud,administration,1
+palud,agricole,3
+palud,artisanat,19
+palud,commerce,19
+palud,construction,7
+palud,rente,18
+palud,service,11
+montetan,agricole,1
+montetan,rente,1
+bethusy,agricole,1
+clos de bulle,rente,1
+clos de bulle,service,1
+violette,rente,2
+grand chene,administration,1
+grand chene,agricole,1
+grand chene,artisanat,7
+grand chene,commerce,7
+grand chene,construction,1
+grand chene,rente,12
+grand chene,service,10
+la berallaz,agricole,5
+malley,agricole,1
+malley,rente,1
+bourdonnette,agricole,1
+bourdonnette,rente,1
+chalet de vernand,agricole,2
+rasude,commerce,1
+rasude,rente,4
+cite devant,?,4
+cite devant,administration,7
+cite devant,agricole,9
+cite devant,artisanat,20
+cite devant,commerce,3
+cite devant,construction,5
+cite devant,rente,24
+cite devant,service,17
+montheron,agricole,5
+montheron,artisanat,1
+grey,rente,1
+valentin,agricole,1
+valentin,rente,2
+maupas,agricole,7
+maupas,artisanat,1
+maupas,commerce,1
+maupas,construction,2
+maupas,rente,4
+maupas,service,2
+montee st francois,artisanat,6
+montee st francois,commerce,6
+montee st francois,rente,4
+montee st francois,service,3
+chalet aux enfants,agricole,1
+petit mon repos,rente,1
+prelaz,service,1
+clos mont,artisanat,2
+ecole de charite,service,4
+villard,agricole,2
+villard,rente,2
+jordils,rente,2
+rovereaz,agricole,1
+rovereaz,service,1
+vernand-dessous,agricole,3
+vernand-dessous,rente,1
+vernand-dessous,service,1
+riponne,artisanat,1
+riponne,construction,1
+riponne,service,2
 cheneau de bourg,agricole,34
 cheneau de bourg,artisanat,46
 cheneau de bourg,commerce,2
 cheneau de bourg,construction,22
 cheneau de bourg,rente,7
 cheneau de bourg,service,23
-bourdonnette,agricole,1
-bourdonnette,rente,1
-loup,construction,3
+bugnon,construction,4
+pres de ville,rente,4
+la rappaz,?,1
+la rappaz,agricole,1
+la rappaz,service,1
+villamont,agricole,1
+villamont,artisanat,1
+beaulieu,agricole,1
+beaulieu,rente,1
+beaulieu,service,1
 chavannes,agricole,8
 chavannes,artisanat,1
-trabandan,agricole,1
+maison des postes,service,1
+chaucrau,administration,3
+chaucrau,agricole,18
+chaucrau,artisanat,20
+chaucrau,commerce,3
+chaucrau,construction,24
+chaucrau,rente,1
+chaucrau,service,16
+montagibert,agricole,3
+montagibert,rente,1
