@@ -274,6 +274,7 @@ function load_network(
 window.onload = function() {
     console.log("Loading network...");
     //load_network("#network", "/data/networks/test_data.json");
-    load_network("#network", "/data/networks/bipartite_chef_vocation/road_vocation_data.json");
+    //load_network("#network", "/data/networks/road_vocation_data.json");
+    load_network("#network", "/data/networks/bipartite_division_type_metiers.json");
     console.log("Network loaded.");
 }
