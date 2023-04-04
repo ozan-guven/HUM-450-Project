@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 #network-container {
     position: relative;
 }
