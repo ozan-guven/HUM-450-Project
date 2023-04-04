@@ -108,7 +108,7 @@ function load_network(
 
         // Create text labels
         var labels = gnodes.append("text")
-            .text(function(d) { return d.id; })
+            .text(function(d) { return d.label; })
             .attr("font-size", function(d) { return d.size + label_size_add; })
             .attr("font-family", "sans-serif")
             .attr("font-weight", "bold")
@@ -273,9 +273,36 @@ function load_network(
 
 // run load_network() when page is loaded
 window.onload = function() {
-    console.log("Loading network...");
-    //load_network("#network", "/data/networks/test_data.json");
-    //load_network("#network", "/data/networks/road_vocation_data.json", "vocation");
-    load_network("#network", "/data/networks/bipartite_division_type_metiers.json", "division");
-    console.log("Network loaded.");
+    console.log("Loading networks...");
+    load_network("#road_vocation_data", "/data/networks/road_vocation_data.json", "vocation");
+    load_network("#bipartite_division_type_metiers", "/data/networks/bipartite_division_type_metiers.json", "division");
+    load_network("#bipartite_origine_category_type_metiers", "/data/networks/bipartite_origine_category_type_metiers.json", "origine_category");
+    load_network("#bipartite_street_type_metiers", "/data/networks/bipartite_street_type_metiers.json", "street");
+    console.log("Networks loaded.");
+
+    // get references to the select element and network divs
+    const selector = document.getElementById('graph-selector');
+    const networks = document.querySelectorAll('.network');
+
+    // hide all networks except the initially selected one
+    const selectedNetwork = document.getElementById(selector.value);
+    networks.forEach(network => {
+        if (network !== selectedNetwork) {
+            network.style.visibility = 'hidden';
+        } else {
+            network.style.visibility = 'visible';
+        }
+    });
+
+    // listen for changes in the select element and show the corresponding network
+    selector.addEventListener('change', (event) => {
+        const selectedNetwork = document.getElementById(event.target.value);
+        networks.forEach(network => {
+            if (network === selectedNetwork) {
+                network.style.visibility = 'visible';
+            } else {
+                network.style.visibility = 'hidden';
+            }
+        });
+    });
 }

@@ -8,6 +8,17 @@
     
 </head>
 <body>
-    <div id="network"></div>
+    <select id="graph-selector">
+        <option value="road_vocation_data">Road Vocation Data</option>
+        <option value="bipartite_division_type_metiers">Bipartite Division Type Metiers</option>
+        <option value="bipartite_origine_category_type_metiers">Bipartite Origine Category Type Metiers</option>
+        <option value="bipartite_street_type_metiers">Bipartite Street Type Metiers</option>
+    </select>
+    <div id="network-container"></div>
+        <div id="road_vocation_data" class="network"></div>
+        <div id="bipartite_division_type_metiers" class="network"></div>
+        <div id="bipartite_origine_category_type_metiers" class="network"></div>
+        <div id="bipartite_street_type_metiers" class="network"></div>
+    </div>
 </body>
 </html>
