@@ -118,14 +118,6 @@ division,job_category,Weight
 20,artisanat,2
 20,construction,1
 20,service,3
-7-8,?,1
-7-8,administration,3
-7-8,agricole,41
-7-8,artisanat,87
-7-8,commerce,40
-7-8,construction,29
-7-8,rente,23
-7-8,service,47
 1-2,?,7
 1-2,administration,5
 1-2,agricole,86
@@ -134,3 +126,11 @@ division,job_category,Weight
 1-2,construction,47
 1-2,rente,72
 1-2,service,84
+7-8,?,1
+7-8,administration,3
+7-8,agricole,41
+7-8,artisanat,87
+7-8,commerce,40
+7-8,construction,29
+7-8,rente,23
+7-8,service,47

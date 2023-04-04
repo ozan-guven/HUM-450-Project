@@ -93,12 +93,12 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="7-8" label="7-8">
+      <node id="1-2" label="1-2">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="1-2" label="1-2">
+      <node id="7-8" label="7-8">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -113,7 +113,7 @@
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="administration" label="administration">
+      <node id="rente" label="rente">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
@@ -123,22 +123,22 @@
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
+      <node id="agricole" label="agricole">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="administration" label="administration">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
       <node id="construction" label="construction">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="rente" label="rente">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
       <node id="commerce" label="commerce">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
-      <node id="agricole" label="agricole">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
@@ -264,22 +264,22 @@
       <edge source="20" target="artisanat" id="116" weight="2" />
       <edge source="20" target="construction" id="117" weight="1" />
       <edge source="20" target="service" id="118" weight="3" />
-      <edge source="7-8" target="?" id="119" weight="1" />
-      <edge source="7-8" target="administration" id="120" weight="3" />
-      <edge source="7-8" target="agricole" id="121" weight="41" />
-      <edge source="7-8" target="artisanat" id="122" weight="87" />
-      <edge source="7-8" target="commerce" id="123" weight="40" />
-      <edge source="7-8" target="construction" id="124" weight="29" />
-      <edge source="7-8" target="rente" id="125" weight="23" />
-      <edge source="7-8" target="service" id="126" weight="47" />
-      <edge source="1-2" target="?" id="127" weight="7" />
-      <edge source="1-2" target="administration" id="128" weight="5" />
-      <edge source="1-2" target="agricole" id="129" weight="86" />
-      <edge source="1-2" target="artisanat" id="130" weight="89" />
-      <edge source="1-2" target="commerce" id="131" weight="17" />
-      <edge source="1-2" target="construction" id="132" weight="47" />
-      <edge source="1-2" target="rente" id="133" weight="72" />
-      <edge source="1-2" target="service" id="134" weight="84" />
+      <edge source="1-2" target="?" id="119" weight="7" />
+      <edge source="1-2" target="administration" id="120" weight="5" />
+      <edge source="1-2" target="agricole" id="121" weight="86" />
+      <edge source="1-2" target="artisanat" id="122" weight="89" />
+      <edge source="1-2" target="commerce" id="123" weight="17" />
+      <edge source="1-2" target="construction" id="124" weight="47" />
+      <edge source="1-2" target="rente" id="125" weight="72" />
+      <edge source="1-2" target="service" id="126" weight="84" />
+      <edge source="7-8" target="?" id="127" weight="1" />
+      <edge source="7-8" target="administration" id="128" weight="3" />
+      <edge source="7-8" target="agricole" id="129" weight="41" />
+      <edge source="7-8" target="artisanat" id="130" weight="87" />
+      <edge source="7-8" target="commerce" id="131" weight="40" />
+      <edge source="7-8" target="construction" id="132" weight="29" />
+      <edge source="7-8" target="rente" id="133" weight="23" />
+      <edge source="7-8" target="service" id="134" weight="47" />
     </edges>
   </graph>
 </gexf>

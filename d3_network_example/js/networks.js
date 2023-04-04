@@ -1,6 +1,7 @@
 function load_network(
     container_selector, 
     data_file,
+    type_name,                      // Name of the first type in the bipartite graph
     exp_node_size_scale = 0.7,      // Exponent for scaling object sizes
     exp_link_weight_scale = 0.7,    // Exponent for scaling link weights
     transparency = 0.1,             // Transparency of non-selected nodes and links
@@ -103,7 +104,7 @@ function load_network(
         var node = gnodes.append("circle")
             .attr("class", "node")
             .attr("r", function(d) { return d.size; })
-            .attr("fill", function(d) { return d.type == "vocation" ? "#FF3333" : "#29A329"; });
+            .attr("fill", function(d) { return d.type == type_name ? "#FF3333" : "#29A329"; });
 
         // Create text labels
         var labels = gnodes.append("text")
@@ -274,7 +275,7 @@ function load_network(
 window.onload = function() {
     console.log("Loading network...");
     //load_network("#network", "/data/networks/test_data.json");
-    //load_network("#network", "/data/networks/road_vocation_data.json");
-    load_network("#network", "/data/networks/bipartite_division_type_metiers.json");
+    //load_network("#network", "/data/networks/road_vocation_data.json", "vocation");
+    load_network("#network", "/data/networks/bipartite_division_type_metiers.json", "division");
     console.log("Network loaded.");
 }
