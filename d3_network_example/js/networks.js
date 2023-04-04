@@ -30,6 +30,10 @@ function load_network(
          * @returns 
          */
         function get_scaled_size(size, min_unscaled_size, max_unscaled_size, min_size, max_size) {
+            if (max_unscaled_size - min_unscaled_size == 0) {
+                return (min_size + max_size) / 2;
+            }
+
             return min_size + (size - min_unscaled_size) * (max_size - min_size) / (max_unscaled_size - min_unscaled_size);
         }
 
