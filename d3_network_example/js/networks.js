@@ -208,6 +208,19 @@ function load_network(
                     .attr("fill-opacity", 1)
                     .attr("font-size", function(d) { return d.size + label_size_add; });
             });
+
+        // Zoom
+        const zoom = d3.zoom()
+            .scaleExtent([1, 8])
+            .on("zoom", ({transform}) => {
+                link.attr("transform", transform);
+                node.attr("transform", transform);
+                labels.attr("transform", transform);
+                clickCircle.attr("transform", transform);
+            });
+
+            svg.call(zoom);
+
             
         // Run simulation
         simulation
