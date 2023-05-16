@@ -1,0 +1,122 @@
+job,class
+rentier,rente
+rentiere,rente
+journalier,agricole
+vigneron,agricole
+proprietaire,rente
+rentier,rente
+cordonnier,artisanat
+menuisier,artisanat
+journaliere,agricole
+charpentier,construction
+marchand,commerce
+negociant,commerce
+marchande,commerce
+jardinier,agricole
+lingere,service
+tailleuse,artisanat
+tailleur,artisanat
+fermier,agricole
+laboureur,agricole
+agriculteur,agricole
+macon,construction
+voiturier,service
+garde police,service
+boulanger,artisanat
+manoeuvre,construction
+serrurier,artisanat
+instituteur,service
+tailleur de pierres,construction
+avocat,service
+tonnelier,artisanat
+traiteur,artisanat
+gypseur/gypsier,construction
+marechal-ferrant,artisanat
+couturiere,artisanat
+tisserand,artisanat
+tanneur,artisanat
+carrier,construction
+imprimeur,artisanat
+blanchisseuse,service
+ministre,administration
+domestique,service
+vendeur de vin,commerce
+meunier,agricole
+couvreur,construction
+femme de menage,service
+laitier,agricole
+aubergiste,service
+ouvriere,construction
+fileuse,artisanat
+lessiveuse,service
+institutrice,service
+chapelier,artisanat
+sellier,artisanat
+ecrivain,service
+medecin,service
+charron,artisanat
+repasseuse,service
+tient pension,rente
+boucher,commerce
+sage-femme,service
+professeur,service
+garde-malade,service
+courtepointiere,artisanat
+libraire,service
+ferblantier,construction
+huissier,administration
+juge d'appel,administration
+fondeur,artisanat
+peintre,artisanat
+perruquier,artisanat
+conseiller d'etat,administration
+confiseur,artisanat
+cafetier,service
+teinturier,service
+epicier,commerce
+charretier,service
+bijoutier,artisanat
+fontenier,construction
+horloger,artisanat
+cuisiniere,service
+orfevre,artisanat
+relieur,artisanat
+concierge,service
+tailleur d'habits,artisanat
+secretaire,service
+gendarme,administration
+musicien,service
+notaire,administration
+gantier,artisanat
+ouvrier,construction
+regent,rente
+loueur de chevaux,commerce
+marchand de vin,commerce
+procureur,service
+tuilier,construction
+municipal,service
+armurier,artisanat
+fournier,artisanat
+maitresse d'ecole,service
+tourneur,artisanat
+coiffeur,service
+conducteur de diligence,service
+patissier,artisanat
+garde forestier,service
+chargeur,service
+pecheur,service
+maitre valet,service
+palefrenier,service
+maitre de langue,service
+agent d'affaires,administration
+tapissier,artisanat
+vitrier,construction
+commis des peages,service
+coutelier,artisanat
+marbrier,artisanat
+chaudronnier,artisanat
+architecte,service
+mecanicien,service
+revendeuse,commerce
+ouvrier menuisier,construction
+pintier,artisanat
