@@ -61,6 +61,14 @@ body {
   flex: 0 0 100%;
 }
 
+.flex-95 {
+  flex: 0 0 95%;
+}
+
+.flex-90 {
+  flex: 0 0 90%;
+}
+
 .flex-80 {
   flex: 0 0 80%;
 }
@@ -79,6 +87,14 @@ body {
 
 .flex-20 {
   flex: 0 0 20%;
+}
+
+.flex-10 {
+  flex: 0 0 10%;
+}
+
+.flex-05 {
+  flex: 0 0 5%;
 }
 
 .width-100 {
