@@ -6,7 +6,7 @@ const DATA_FOLDER = "data/networks";
 const DEFAULT_NETWORK = "road_vocation_data";
 const DEFAULT_TYPE = "vocation";
 
-const CONTAINER = "network_graph";
+const CONTAINER_ID = "#network_graph";
 const PARENT_ID = "network_chart";
 
 const WIDHT = 800;
@@ -21,7 +21,7 @@ class Network {
     private type = DEFAULT_TYPE;
     private linkedById!: any;
 
-    private links!: d3.Selection<SVGLineElement, { source: string; target: string; weight: number; }, SVGGElement, unknown>;
+    private link!: d3.Selection<SVGLineElement, { source: string; target: string; weight: number; }, SVGGElement, unknown>;
     private nodes!: d3.Selection<SVGCircleElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
     private gnodes!: d3.Selection<SVGGElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
     private labels!: d3.Selection<SVGTextElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
@@ -73,11 +73,11 @@ class Network {
 
     private initDimensions(): void {
         // Define the container and get its size
-        this.container = d3.select(CONTAINER);
+        this.container = d3.select(CONTAINER_ID);
         const parentElement = document.getElementById(PARENT_ID);
         if (parentElement) {
-            this.width = parentElement.clientWidth;
-            this.height = parentElement.clientHeight / 2;
+            this.width = WIDHT//parentElement.clientWidth;
+            this.height = HEIGHT//parentElement.clientHeight / 2;
         }
     }
 
@@ -86,7 +86,8 @@ class Network {
         this.svg = this.container
             .append("svg")
             .attr("width", this.width)
-            .attr("height", this.height);
+            .attr("height", this.height)
+            .attr("transform", `translate(${this.width/2}, ${this.height/2})`);
 
         // Create the simulation
         this.simulation = d3.forceSimulation()
@@ -145,61 +146,34 @@ class Network {
             .on("start", dragstarted)
             .on("drag", dragged)
             .on("end", dragended);
-    }
-
-    /**
-     * Update node and link positions at every step of the force simulation.
-     */
-    private ticked() {
-        this.link
-            .attr("x1", d => d.source.x)
-            .attr("y1", d => d.source.y)
-            .attr("x2", d => d.target.x)
-            .attr("y2", d => d.target.y);
-
-        this.node
-            .attr("cx", d => d.x)
-            .attr("cy", d => d.y);
-
-        this.clickCircle
-            .attr("cx", d => d.x)
-            .attr("cy", d => d.y);
-
-        this.labels
-            .attr("x", d => d.x + 10)
-            .attr("y", d => d.y + 4)
-            .attr("dx", -9)
-            .attr("dy", "-.15em");
-    }
+    };
 
     private initData(): void {
-        this.data.forEach(d => {
-            // Update each node's size to the scaled size
-            let max_unscaled_node_size = data.nodes.reduce((max, node) => Math.max(max, node.size), 0);
-            let min_unscaled_node_size = data.nodes.reduce((min, node) => Math.min(min, node.size), Infinity);
-            max_unscaled_node_size = Math.pow(max_unscaled_node_size, exp_node_size_scale);
-            min_unscaled_node_size = Math.pow(min_unscaled_node_size, exp_node_size_scale);
+        // Update each node's size to the scaled size
+        let max_unscaled_node_size = this.data.nodes.reduce((max, node) => Math.max(max, node.size), 0);
+        let min_unscaled_node_size = this.data.nodes.reduce((min, node) => Math.min(min, node.size), Infinity);
+        max_unscaled_node_size = Math.pow(max_unscaled_node_size, this.expNodeSizeScale);
+        min_unscaled_node_size = Math.pow(min_unscaled_node_size, this.expNodeSizeScale);
 
-            d.nodes.forEach(node => node.size = get_scaled_size(Math.pow(node.size, exp_node_size_scale), min_unscaled_node_size, max_unscaled_node_size, min_node_size, max_node_size));
+        this.data.nodes.forEach(node => node.size = this.get_scaled_size(Math.pow(node.size, this.expNodeSizeScale), min_unscaled_node_size, max_unscaled_node_size, this.minNodeSize, this.maxNodeSize));
 
-            // Update each link's weight to the scaled weight
-            let max_unscaled_link_weight = data.links.reduce((max, link) => Math.max(max, link.weight), 0);
-            let min_unscaled_link_weight = data.links.reduce((min, link) => Math.min(min, link.weight), Infinity);
-            max_unscaled_link_weight = Math.pow(max_unscaled_link_weight, exp_link_weight_scale);
-            min_unscaled_link_weight = Math.pow(min_unscaled_link_weight, exp_link_weight_scale);
+        // Update each link's weight to the scaled weight
+        let max_unscaled_link_weight = this.data.links.reduce((max, link) => Math.max(max, link.weight), 0);
+        let min_unscaled_link_weight = this.data.links.reduce((min, link) => Math.min(min, link.weight), Infinity);
+        max_unscaled_link_weight = Math.pow(max_unscaled_link_weight, this.expLinkWeightScale);
+        min_unscaled_link_weight = Math.pow(min_unscaled_link_weight, this.expLinkWeightScale);
 
-            d.links.forEach(link => link.weight = get_scaled_size(Math.pow(link.weight, exp_link_weight_scale), min_unscaled_link_weight, max_unscaled_link_weight, min_link_weight, max_link_weight));
+        this.data.links.forEach(link => link.weight = this.get_scaled_size(Math.pow(link.weight, this.expLinkWeightScale), min_unscaled_link_weight, max_unscaled_link_weight, this.minLinkWeight, this.maxLinkWeight));
 
-            // Create linked list of nodes and isConnected function
-            this.linkedById = {};
-            d.links.forEach((dt) => {
-                this.linkedById[dt.source] = []
-                this.linkedById[dt.target] = []
-            });
-            d.links.forEach((dt) => {
-                this.linkedById[dt.source].push(dt.target);
-                this.linkedById[dt.target].push(dt.source);
-            });
+        // Create linked list of nodes and isConnected function
+        this.linkedById = {};
+        this.data.links.forEach((d) => {
+            this.linkedById[d.source] = []
+            this.linkedById[d.target] = []
+        });
+        this.data.links.forEach((d) => {
+            this.linkedById[d.source].push(d.target);
+            this.linkedById[d.target].push(d.source);
         });
     }
 
@@ -217,7 +191,7 @@ class Network {
     private createNodes(): void {
         // Create nodes
         this.gnodes = this.svg.selectAll("g.gnode")
-            .data(data.nodes)
+            .data(this.data.nodes)
             .enter()
             .append("g")
             .classed("gnode", true);
@@ -246,43 +220,40 @@ class Network {
             .attr("class", "node")
             .attr("r", function (d) { return d.size; })
             .attr("fill", "transparent")
-            .call(drag(this.simulation))
+            .call(this.drag(this.simulation))
             .on("mouseover", (that, d) => {
                 if (this.drag_active) {
                     return;
                 }
-
                 // Get the ID of the hovered node
-                const d_node = d3.select(that).node().__data__;
-                const hoveredNodeId = d_node.id;
+                const hoveredNodeId = d.id;
 
                 // Not hovered node less opaque
                 this.node
                     .transition()
                     .duration(200)
                     .attr("fill-opacity", (o) => {
-                        const d_node = d3.select(o).node().__data__;
-                        return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : this.transparency;
+                        return this.isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : this.transparency;
                     })
                     .attr("r", (o) => {
                         if (o.id == hoveredNodeId) {
                             return o.size + this.nodeSizeInc;
                         }
                         // give the link weight as size to the hovered node
-                        if (isConnected(hoveredNodeId, o.id)) {
-                            let link_weight = data.links.find(link => (link.source.id == o.id && link.target.id == hoveredNodeId) || (link.source.id == hoveredNodeId && link.target.id == o.id)).weight;
+                        if (this.isConnected(hoveredNodeId, o.id)) {
+                            let link_weight = this.data.links.find(link => (link.source.id == o.id && link.target.id == hoveredNodeId) || (link.source.id == hoveredNodeId && link.target.id == o.id)).weight;
                             const connected_nodes = this.linkedById[hoveredNodeId];
                             const connected_links = this.data.links.filter(link => (link.source.id == hoveredNodeId || link.target.id == hoveredNodeId));
                             const min_connected_link_weight = connected_links.reduce((min, link) => Math.min(min, link.weight), Infinity);
                             const max_connected_link_weight = connected_links.reduce((max, link) => Math.max(max, link.weight), -Infinity);
-                            const scaled_link_weight = this.get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, min_node_size, max_node_size);
+                            const scaled_link_weight = this.get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, this.minNodeSize, this.maxNodeSize);
                             return scaled_link_weight;
                         }
                         return o.size;
                     });
 
                 // Not hovered link less opaque
-                link
+                this.link
                     .transition()
                     .duration(200)
                     .attr("stroke-opacity", (o) => {
@@ -337,16 +308,40 @@ class Network {
         const zoom = d3.zoom()
             .scaleExtent([1, 8])
             .on("zoom", ({ transform }) => {
-                link.attr("transform", transform);
-                node.attr("transform", transform);
-                labels.attr("transform", transform);
-                clickCircle.attr("transform", transform);
+                this.link.attr("transform", transform);
+                this.node.attr("transform", transform);
+                this.labels.attr("transform", transform);
+                this.clickCircle.attr("transform", transform);
             });
 
         this.svg.call(zoom);
     }
 
     private initSimulation(): void {
+        /**
+         * Update node and link positions at every step of the force simulation.
+         */
+        const ticked = () => {
+            this.link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            this.node
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
+
+            this.clickCircle
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
+
+            this.labels
+                .attr("x", d => d.x + 10)
+                .attr("y", d => d.y + 4)
+                .attr("dx", -9)
+                .attr("dy", "-.15em");
+        }
         // Run simulation
         this.simulation
             .nodes(this.data.nodes)
@@ -376,30 +371,4 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Loading networks...");
     new Network();
     console.log("Networks loaded.");
-
-    // get references to the select element and network divs
-    const selector = document.getElementById('graph-selector');
-    const networks = document.querySelectorAll('.network');
-
-    // hide all networks except the initially selected one
-    const selectedNetwork = document.getElementById(selector.value);
-    networks.forEach(network => {
-        if (network !== selectedNetwork) {
-            network.style.visibility = 'hidden';
-        } else {
-            network.style.visibility = 'visible';
-        }
-    });
-
-    // listen for changes in the select element and show the corresponding network
-    selector.addEventListener('change', (event) => {
-        const selectedNetwork = document.getElementById(event.target.value);
-        networks.forEach(network => {
-            if (network === selectedNetwork) {
-                network.style.visibility = 'visible';
-            } else {
-                network.style.visibility = 'hidden';
-            }
-        });
-    });
 });
