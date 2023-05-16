@@ -9,6 +9,7 @@ const DEFAULT_TYPE = "vocation";
 const CONTAINER_ID = "#network-graph";
 const PARENT_ID = "network-chart";
 
+const DEFAULT_LINK_COLOR = "#cccccc";
 const DEFAULT_NODE_COLOR = "#aaaaaa";
 const DEFAULT_NODE_COLOR_BY_TYPE = {
     "road_vocation_data": {
@@ -17,20 +18,20 @@ const DEFAULT_NODE_COLOR_BY_TYPE = {
     }
 }
 
+const MIN_ZOOM_SCALE = 0.1;
+const MAX_ZOOM_SCALE = 10;
+
 class Network {
     private svg: d3.Selection<SVGGElement, unknown, HTMLElement, any>;
+    private gnodes: any;
+    private glinks: any;
+
     private simulation!: d3.Simulation<{}, undefined>;
     private data!: any[];
     private container!: d3.Selection<HTMLElement, unknown, HTMLElement, any>;
-    private drag_active = false; // Drag behaviour, to skip mouseover events while dragging
+    private dragActive = false; // Drag behaviour, to skip mouseover events while dragging
     private networkName = DEFAULT_TYPE;
     private linkedById!: any;
-
-    private link!: d3.Selection<SVGLineElement, { source: string; target: string; weight: number; }, SVGGElement, unknown>;
-    private nodes!: d3.Selection<SVGCircleElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
-    private gnodes!: d3.Selection<SVGGElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
-    private labels!: d3.Selection<SVGTextElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
-    private clickCircle!: d3.Selection<SVGCircleElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
 
     constructor(                     // Name of the first type in the bipartite graph
         expNodeSizeScale = 0.7,      // Exponent for scaling object sizes
@@ -63,6 +64,7 @@ class Network {
 
         this.initDimensions();
         this.initStaticElements();
+        this.initEvents();
         this.updatePlot(DEFAULT_NETWORK);
     }
 
@@ -105,6 +107,29 @@ class Network {
             .append("svg")
             .attr("width", this.width)
             .attr("height", this.height);
+
+        this.glinks = this.svg
+            .append("g")
+            .attr("class", "links");
+
+        this.gnodes = this.svg
+            .append("g")
+            .attr("class", "nodes");
+    }
+
+    /**
+     * Initialize the update.
+     */
+    private initEvents(): void {
+        // When the users chooses from the graph-selector dropdown,
+        // update the graph
+        const graphSelector = document.getElementById("graph-selector");
+        if (graphSelector) {
+            graphSelector.addEventListener("change", (event) => {
+                const network = event.target.value;
+                this.updatePlot(network);
+            });
+        }
     }
 
     /**
@@ -135,7 +160,7 @@ class Network {
      */
     private drag(simulation) {
         const dragstarted = (event) => {
-            this.drag_active = true;
+            this.dragActive = true;
             if (!event.active) simulation.alphaTarget(0.3).restart();
             event.subject.fx = event.subject.x;
             event.subject.fy = event.subject.y;
@@ -147,7 +172,7 @@ class Network {
         }
 
         const dragended = (event) => {
-            this.drag_active = false;
+            this.dragActive = false;
             if (!event.active) simulation.alphaTarget(0);
             event.subject.fx = null;
             event.subject.fy = null;
@@ -198,13 +223,13 @@ class Network {
      */
     private createLinks(): void {
         // Create links
-        this.link = this.svg
-            .append("g")
-            .attr("stroke", "#BBB")
-            .attr("stroke-opacity", 1.0)
+        this.glinks
+            .attr("stroke", DEFAULT_LINK_COLOR)
+            .attr("stroke-opacity", 1)
             .selectAll("line")
             .data(this.data.links)
-            .enter().append("line")
+            .enter()
+            .append("line")
             .attr("stroke-width", function (d) { return d.weight; });
     }
 
@@ -213,60 +238,36 @@ class Network {
      * @returns {void}
      */
     private createNodes(): void {
-        // Create nodes
-        this.gnodes = this.svg
-            .selectAll("g.gnode")
+        // Create group for each node
+        const nodeEnter = this.gnodes
+            .selectAll('.node')
             .data(this.data.nodes)
             .enter()
             .append("g")
-            .classed("gnode", true);
-
-        // Create visible nodes
-        this.node = this.gnodes.append("circle")
-            .attr("class", "node")
+            .attr("class", "node");
+    
+        // Append a circle to each node
+        nodeEnter
+            .append("circle")
+            .attr("class", "node-circle")
             .attr("r", function (d) { return d.size; })
             .attr("fill", (d) => { 
                 const networkColors = DEFAULT_NODE_COLOR_BY_TYPE[this.networkName];
                 const nodeColor = networkColors ? networkColors[d.type] : DEFAULT_NODE_COLOR;
                 return nodeColor ? nodeColor : DEFAULT_NODE_COLOR;
-            });
-    }
-
-    /**
-     * Create the labels.
-     * @returns {void}
-     */
-    private createLabels(): void {
-        // Create text labels
-        this.labels = this.gnodes.append("text")
-            .text(function (d) { return d.label; })
-            .attr("font-size", (d) => { return d.size + this.labelSizeAdd; })
-            .attr("font-family", "sans-serif")
-            .attr("font-weight", "bold")
-            .attr("text-anchor", "middle")
-            .attr("alignment-baseline", "middle");
-    }
-
-    /**
-     * Create the click circles.
-     * @returns {void}
-     */
-    private initClickCircle(): void {
-        // Create circular zones around nodes to detect mouseover
-        this.clickCircle = this.gnodes.append("circle")
-            .attr("class", "node")
-            .attr("r", function (d) { return d.size; })
-            .attr("fill", "transparent")
+            })
             .call(this.drag(this.simulation))
-            .on("mouseover", (that, d) => {
-                if (this.drag_active) {
+            .on("mouseover", (event, d) => {
+                if (this.dragActive) {
                     return;
                 }
+
                 // Get the ID of the hovered node
                 const hoveredNodeId = d.id;
 
                 // Not hovered node less opaque
-                this.node
+                this.gnodes
+                    .selectAll(".node-circle")
                     .transition()
                     .duration(this.transitionDuration)
                     .attr("fill-opacity", (o) => {
@@ -290,7 +291,8 @@ class Network {
                     });
 
                 // Not hovered link less opaque
-                this.link
+                this.glinks
+                    .selectAll("line")
                     .transition()
                     .duration(this.transitionDuration)
                     .attr("stroke-opacity", (o) => {
@@ -298,7 +300,8 @@ class Network {
                     });
 
                 // Opaque selected nodes and neighbours only
-                this.labels
+                this.gnodes
+                    .selectAll(".node-text")
                     .transition()
                     .duration(this.transitionDuration)
                     .attr("fill-opacity", (o) => {
@@ -321,23 +324,41 @@ class Network {
                     });
             })
             .on("mouseout", (d) => {
-                if (this.drag_active) {
+                if (this.dragActive) {
                     return;
                 }
 
                 // Reset opacity and sizes
-                this.node.transition()
+                this.gnodes
+                    .selectAll(".node-circle")
+                    .transition()
                     .duration(this.transitionDuration)
                     .attr("fill-opacity", 1)
                     .attr("r", function (d) { return d.size; });
-                this.link.transition()
+                this.glinks
+                    .selectAll("line")
+                    .transition()
                     .duration(this.transitionDuration)
                     .attr("stroke-opacity", 1);
-                this.labels.transition()
+                this.gnodes
+                    .selectAll(".node-text")
+                    .transition()
                     .duration(this.transitionDuration)
                     .attr("fill-opacity", 1)
                     .attr("font-size", (d) => { return d.size + this.labelSizeAdd; });
             });
+
+        // Append text to each node
+        nodeEnter
+            .append("text")
+            .attr("class", "node-text")
+            .text(function (d) { return d.label; })
+            .attr("font-size", (d) => { return d.size + this.labelSizeAdd; })
+            .attr("font-family", "sans-serif")
+            .attr("font-weight", "bold")
+            .attr("text-anchor", "middle")
+            .attr("alignment-baseline", "middle")
+            .style("pointer-events", "none");
     }
 
     /**
@@ -347,12 +368,10 @@ class Network {
     private initZoom(): void {
         // Zoom
         const zoom = d3.zoom()
-            .scaleExtent([1, 8])
+            .scaleExtent([MIN_ZOOM_SCALE, MAX_ZOOM_SCALE])
             .on("zoom", ({ transform }) => {
-                this.link.attr("transform", transform);
-                this.node.attr("transform", transform);
-                this.labels.attr("transform", transform);
-                this.clickCircle.attr("transform", transform);
+                this.gnodes.attr("transform", transform);
+                this.glinks.attr("transform", transform);
             });
 
         this.svg.call(zoom);
@@ -369,30 +388,28 @@ class Network {
             .force("charge", d3.forceManyBody().strength(this.chargeStrength))
             .force("center", d3.forceCenter(this.width / 2, this.height / 2))
             .force("collide", d3.forceCollide().radius((d) => { return d.size + this.collideSizeAdd; }));
-            
+
         /**
          * Update node and link positions at every step of the force simulation.
          */
         const ticked = () => {
-            this.link
+            this.glinks
+                .selectAll("line")
                 .attr("x1", d => d.source.x)
                 .attr("y1", d => d.source.y)
                 .attr("x2", d => d.target.x)
                 .attr("y2", d => d.target.y);
 
-            this.node
+            this.gnodes
+                .selectAll(".node-circle")
                 .attr("cx", d => d.x)
                 .attr("cy", d => d.y);
 
-            this.clickCircle
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-
-            this.labels
+            this.gnodes
+                .selectAll(".node-text")
                 .attr("x", d => d.x + 10)
                 .attr("y", d => d.y + 4)
-                .attr("dx", -9)
-                .attr("dy", "-.15em");
+                .attr("dx", -9);
         }
         // Run simulation
         this.simulation
@@ -404,21 +421,6 @@ class Network {
     }
 
     /**
-     * Initialize the update.
-     */
-    private initUpdate(): void {
-        // When the users chooses from the graph-selector dropdown,
-        // update the graph
-        const graphSelector = document.getElementById("graph-selector");
-        if (graphSelector) {
-            graphSelector.addEventListener("change", (event) => {
-                const network = event.target.value;
-                this.updatePlot(network);
-            });
-        }
-    }
-
-    /**
      * Update the plot.
      * @param network The network to update to.
      * @returns {Promise<void>}
@@ -426,6 +428,7 @@ class Network {
     private async updatePlot(network: string): Promise<void> {
         return new Promise((resolve) => {
             this.loadData(network).then((data: any) => {
+                // Define the network name
                 this.networkName = network;
 
                 // Delete the plot
@@ -436,13 +439,10 @@ class Network {
                 this.initData();
 
                 // Initialize the plot with new data
+                this.initSimulation();
                 this.createLinks();
                 this.createNodes();
-                this.createLabels();
-                this.initClickCircle();
                 this.initZoom();
-                this.initSimulation();
-                this.initUpdate();
             });
 
             resolve();
@@ -453,7 +453,8 @@ class Network {
      * Delete the plot.
      */
     private deletePlot(): void {
-        this.svg.selectAll("*").remove();
+        this.gnodes.selectAll("*").remove();
+        this.glinks.selectAll("*").remove();
     }
 }
 
