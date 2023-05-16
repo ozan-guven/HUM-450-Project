@@ -374,7 +374,7 @@ class Network {
 // run when page is loaded
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Loading networks...");
-    new Network("#road_vocation_data", DEFAULT_NETWORK, "vocation");
+    new Network();
     console.log("Networks loaded.");
 
     // get references to the select element and network divs
