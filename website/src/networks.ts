@@ -6,11 +6,16 @@ const DATA_FOLDER = "data/networks";
 const DEFAULT_NETWORK = "road_vocation_data";
 const DEFAULT_TYPE = "vocation";
 
-const CONTAINER_ID = "#network_graph";
-const PARENT_ID = "network_chart";
+const CONTAINER_ID = "#network-graph";
+const PARENT_ID = "network-chart";
 
-const WIDHT = 800;
-const HEIGHT = 800;
+const DEFAULT_NODE_COLOR = "#aaaaaa";
+const DEFAULT_NODE_COLOR_BY_TYPE = {
+    "road_vocation_data": {
+        "road": "#1f77b4",
+        "vocation": "#ff7f0e"
+    }
+}
 
 class Network {
     private svg: d3.Selection<SVGGElement, unknown, HTMLElement, any>;
@@ -18,7 +23,7 @@ class Network {
     private data!: any[];
     private container!: d3.Selection<HTMLElement, unknown, HTMLElement, any>;
     private drag_active = false; // Drag behaviour, to skip mouseover events while dragging
-    private typeName = DEFAULT_TYPE;
+    private networkName = DEFAULT_TYPE;
     private linkedById!: any;
 
     private link!: d3.Selection<SVGLineElement, { source: string; target: string; weight: number; }, SVGGElement, unknown>;
@@ -30,7 +35,7 @@ class Network {
     constructor(                     // Name of the first type in the bipartite graph
         expNodeSizeScale = 0.7,      // Exponent for scaling object sizes
         expLinkWeightScale = 0.7,    // Exponent for scaling link weights
-        transparency = 0.1,             // Transparency of non-selected nodes and links
+        transparency = 0.1,           // Transparency of non-selected nodes and links
         minNodeSize = 7,              // Minimum size of a node
         maxNodeSize = 40,             // Maximum size of a node
         minLinkWeight = 1,            // Minimum weight of a link
@@ -58,19 +63,28 @@ class Network {
 
         this.initDimensions();
         this.initStaticElements();
-        this.initPlot();
+        this.updatePlot(DEFAULT_NETWORK);
     }
 
+    /**
+     * Load the data.
+     * @param network 
+     * @returns {Promise<void>}
+     */
     private async loadData(network: string): Promise<void> {
         const dataPath = `${DATA_FOLDER}/${network}.json`;
 
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
             d3.json(dataPath).then((data: any) => {
                 resolve(data);
             });
         });
     }
 
+    /**
+     * Initialize the dimensions of the plot.
+     * @returns {void}
+     */
     private initDimensions(): void {
         // Define the container and get its size
         this.container = d3.select(CONTAINER_ID);
@@ -81,20 +95,18 @@ class Network {
         }
     }
 
+    /**
+     * Initialize the static elements of the plot.
+     * @returns {void}
+     */
     private initStaticElements(): void {
         // Create the SVG
         this.svg = this.container
             .append("svg")
             .attr("width", this.width)
             .attr("height", this.height);
-
-        // Create the simulation
-        this.simulation = d3.forceSimulation()
-            .force("link", d3.forceLink().id(function (d) { return d.id; }))
-            .force("charge", d3.forceManyBody().strength(this.chargeStrength))
-            .force("center", d3.forceCenter(this.width / 2, this.height / 2))
-            .force("collide", d3.forceCollide().radius((d) => { return d.size + this.collideSizeAdd; }));
     }
+
     /**
      * Map a node size to the given range
      * @param {int} size 
@@ -147,6 +159,10 @@ class Network {
             .on("end", dragended);
     };
 
+    /**
+     * Initialize the data.
+     * @returns {void}
+     */
     private initData(): void {
         // Update each node's size to the scaled size
         let max_unscaled_node_size = this.data.nodes.reduce((max, node) => Math.max(max, node.size), 0);
@@ -176,9 +192,14 @@ class Network {
         });
     }
 
+    /**
+     * Create the links.
+     * @returns {void}
+     */
     private createLinks(): void {
         // Create links
-        this.link = this.svg.append("g")
+        this.link = this.svg
+            .append("g")
             .attr("stroke", "#BBB")
             .attr("stroke-opacity", 1.0)
             .selectAll("line")
@@ -187,9 +208,14 @@ class Network {
             .attr("stroke-width", function (d) { return d.weight; });
     }
 
+    /**
+     * Create the nodes.
+     * @returns {void}
+     */
     private createNodes(): void {
         // Create nodes
-        this.gnodes = this.svg.selectAll("g.gnode")
+        this.gnodes = this.svg
+            .selectAll("g.gnode")
             .data(this.data.nodes)
             .enter()
             .append("g")
@@ -199,9 +225,17 @@ class Network {
         this.node = this.gnodes.append("circle")
             .attr("class", "node")
             .attr("r", function (d) { return d.size; })
-            .attr("fill", (d) => { return d.type == this.typeName ? "#FF3333" : "#29A329"; });
+            .attr("fill", (d) => { 
+                const networkColors = DEFAULT_NODE_COLOR_BY_TYPE[this.networkName];
+                const nodeColor = networkColors ? networkColors[d.type] : DEFAULT_NODE_COLOR;
+                return nodeColor ? nodeColor : DEFAULT_NODE_COLOR;
+            });
     }
 
+    /**
+     * Create the labels.
+     * @returns {void}
+     */
     private createLabels(): void {
         // Create text labels
         this.labels = this.gnodes.append("text")
@@ -213,6 +247,10 @@ class Network {
             .attr("alignment-baseline", "middle");
     }
 
+    /**
+     * Create the click circles.
+     * @returns {void}
+     */
     private initClickCircle(): void {
         // Create circular zones around nodes to detect mouseover
         this.clickCircle = this.gnodes.append("circle")
@@ -230,7 +268,7 @@ class Network {
                 // Not hovered node less opaque
                 this.node
                     .transition()
-                    .duration(200)
+                    .duration(this.transitionDuration)
                     .attr("fill-opacity", (o) => {
                         return this.isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : this.transparency;
                     })
@@ -254,7 +292,7 @@ class Network {
                 // Not hovered link less opaque
                 this.link
                     .transition()
-                    .duration(200)
+                    .duration(this.transitionDuration)
                     .attr("stroke-opacity", (o) => {
                         return o.source.id == hoveredNodeId || o.target.id == hoveredNodeId ? 1 : this.transparency;
                     });
@@ -262,7 +300,7 @@ class Network {
                 // Opaque selected nodes and neighbours only
                 this.labels
                     .transition()
-                    .duration(200)
+                    .duration(this.transitionDuration)
                     .attr("fill-opacity", (o) => {
                         return this.isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : this.transparency;
                     })
@@ -302,6 +340,10 @@ class Network {
             });
     }
 
+    /**
+     * Initialize the zoom.
+     * @returns {void}
+     */
     private initZoom(): void {
         // Zoom
         const zoom = d3.zoom()
@@ -316,7 +358,18 @@ class Network {
         this.svg.call(zoom);
     }
 
+    /**
+     * Initialize the simulation.
+     * @returns {void}
+     */
     private initSimulation(): void {
+        // Create the simulation
+        this.simulation = d3.forceSimulation()
+            .force("link", d3.forceLink().id(function (d) { return d.id; }))
+            .force("charge", d3.forceManyBody().strength(this.chargeStrength))
+            .force("center", d3.forceCenter(this.width / 2, this.height / 2))
+            .force("collide", d3.forceCollide().radius((d) => { return d.size + this.collideSizeAdd; }));
+            
         /**
          * Update node and link positions at every step of the force simulation.
          */
@@ -350,66 +403,57 @@ class Network {
             .links(this.data.links);
     }
 
+    /**
+     * Initialize the update.
+     */
     private initUpdate(): void {
         // When the users chooses from the graph-selector dropdown,
         // update the graph
         const graphSelector = document.getElementById("graph-selector");
         if (graphSelector) {
             graphSelector.addEventListener("change", (event) => {
-                console.log("Updating graph...", event.target.value);
                 const network = event.target.value;
                 this.updatePlot(network);
             });
         }
     }
 
-    private initPlot(): void {
-        this.loadData(DEFAULT_NETWORK).then((data: any) => {
-            this.data = data;
+    /**
+     * Update the plot.
+     * @param network The network to update to.
+     * @returns {Promise<void>}
+     */
+    private async updatePlot(network: string): Promise<void> {
+        return new Promise((resolve) => {
+            this.loadData(network).then((data: any) => {
+                this.networkName = network;
 
-            this.initData();
-            this.createLinks();
-            this.createNodes();
-            this.createLabels();
-            this.initClickCircle();
-            this.initZoom();
-            this.initSimulation();
-            this.initUpdate();
+                // Delete the plot
+                this.deletePlot();
+
+                // Initialize data
+                this.data = data;
+                this.initData();
+
+                // Initialize the plot with new data
+                this.createLinks();
+                this.createNodes();
+                this.createLabels();
+                this.initClickCircle();
+                this.initZoom();
+                this.initSimulation();
+                this.initUpdate();
+            });
+
+            resolve();
         });
     }
 
-    private async updatePlot(network: string): Promise<void> {
-        this.loadData(network).then((data: any) => {
-            this.data = data;
-
-            this.initData();
-
-            // Update the links
-            this.link = this.link
-                .selectAll("line")
-                .data(this.data.links)
-
-            this.link.join(
-                enter => enter
-                    .append("line")
-                    .attr("stroke-width", function (d) { return d.weight; }),
-                update => update,
-                exit => exit.remove()
-            );
-
-            // Update the nodes
-            this.node = this.node
-                .data(this.data.nodes)
-            
-            this.node.join(
-                enter => enter.append("circle")
-                    .attr("class", "node")
-                    .attr("r", function (d) { return d.size; })
-                    .attr("fill", (d) => { return d.type == this.typeName ? "#FF3333" : "#29A329"; }),
-                update => update,
-                exit => exit.remove()
-            );
-        });
+    /**
+     * Delete the plot.
+     */
+    private deletePlot(): void {
+        this.svg.selectAll("*").remove();
     }
 }
 
