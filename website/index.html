@@ -2,12 +2,339 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>The Swiss Transportation System</title>
+    <link rel="stylesheet" href="./src/style2.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="app">
+      <div id="title-container" class="container">
+        <h1 id="title">The Swiss Transportation System</h1>
+        <div id="day-sky"></div>
+        <div id="sun"></div>
+        <div id="bridge"></div>
+        <div id="mountain-left"></div>
+        <div id="mountain-right"></div>
+        <div id="cloud1" class="cloud">
+          <img src="../assets/title/cloud1.png" alt="Cloud 1" />
+        </div>        
+        <div id="cloud2" class="cloud">
+          <img src="../assets/title/cloud2.png" alt="Cloud 2" />
+        </div>
+        <div id="cloud3" class="cloud">
+          <img src="../assets/title/cloud3.png" alt="Cloud 3" />
+        </div>   
+        <div id="train">
+          <img src="../assets/title/train.png" alt="Train" />
+        </div>
+        <div id="particle-container"></div>
+      </div>
+
+      <div id="title-to-p1-container" class="container"></div>
+
+      <div id="p1-container" class="container container-padding pink-grainy-bg">
+        <div class="flex-row flex-100 flex-center">
+          <div class="flex-col text-padding-20 overflow-auto">
+            <div class="flex-col">
+              <p class="light-text medium-text">
+                Welcome aboard! You're about to embark on a fascinating journey through the intricate web of Swiss transportation, a system so well-oiled, it's like the inner workings of a Swiss watch - and just as precise. Picture this: nestled in the heart of Europe, surrounded by majestic mountains and serene lakes, lies a land where trains run like clockwork, buses reach the most remote alpine villages, and even the boats are punctual. Welcome to Switzerland, where getting from A to B is never a hassle, but an experience.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="light-text medium-text">
+                Imagine a country where the public transit system is as diverse as its landscapes. The Swiss Federal Railways, with their unrivaled punctuality, are the lifeblood of the system, threading through bustling cities, quaint towns, and pastoral countryside alike. Then there are the iconic yellow PostBuses, bravely navigating through winding mountainous roads, reaching corners of Switzerland that even the Swiss might not know existed. Cities each have their own transportation networks, complete with trams and buses, while boats glide seamlessly across shimmering lakes. And let's not forget the cable cars and funiculars, whisking you up to dizzying heights where the air is crisp, and the views, breathtaking.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="light-text medium-text">
+                But the <i>pièce de résistance</i>? It's the integrated ticketing system, a marvel of Swiss efficiency. With just one ticket, you can hop from a train to a bus, onto a boat, and then ascend a mountain in a cable car. It's like having an all-access pass to an amusement park, only this park is an entire country. And overseeing this magical ride is the Swiss Federal Office of Transport, the unsung heroes ensuring your journey is as smooth as Swiss chocolate. So buckle up, it's time to explore the Swiss transportation system, where every journey is a story in itself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p1-to-p2-container" class="container"></div>
+
+      <div id="p2-container" class="container container-padding off-white-bg">
+        <div class="flex-row flex-100 flex-center">
+          <div class="flex-col flex-50 overflow-auto">
+            <div class="flex-col text-padding-20">
+              <p class="large-text large-font-weight">
+                Mobility Mosaic
+              </p>
+            </div>
+
+            <div class="flex-col text-padding-20">
+              <p class="medium-text">
+                Feast your eyes on our first visualization - a circle packing chart, beautifully unravels the Swiss transportation tapestry, showcasing not just the various modes of transport but also their distinctive types.
+              </p>
+            </div>
+
+            <div class="flex-col text-padding-20">
+              <p class="medium-text">
+                Picture a universe of circles where each major mode - buses, trains, trams, metros, rack railways, boats - is a solar system in itself, each hosting its own set of planets representing different types within the category.
+              </p>
+            </div>
+
+            <div class="flex-col text-padding-20">
+              <p class="medium-text">
+                The train system, for instance, isn't just a single circle, but a constellation of circles representing intercity trains, regional trains, and more.
+              </p>
+            </div>
+
+            <div class="flex-col text-padding-20">
+              <p class="medium-text">
+                Through this visualization, we delve deeper into the Swiss transportation universe, revealing the layers and complexities of each mode. It's not just about buses or trains; it's about the intricate network within each mode that together makes Swiss transportation so efficient and comprehensive. This is the beauty of Swiss precision - and our circle packing chart captures it perfectly.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex-col flex-50 height-100 overflow-auto">
+            <div class="flex-row flex-80">
+              <div id="circle-packing-plot"></div>
+            </div>
+            <div id="circle-packing-text" class="flex-row flex-20 flex-center">
+              <p class="medium-text text-padding-10 text-center text-italic width-100">
+                Click on each circle to zoom in and explore the different types of transportation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p2-to-p3-container" class="container ow-to-ow-bg"></div>
+
+      <div id="p3-container" class="container container-padding off-white-bg">
+        <div class="flex-col flex-100">
+          <div class="flex-col flex-50 flex-center verflow-auto">
+            <div class="flex-col text-padding-10">
+              <p class="large-text large-font-weight">
+                Stop Insights
+              </p>
+            </div>
+            <div class="flex-col text-padding-10">
+              <p class="medium-text">
+                Introducing our latest feature - an interactive table that delves deep into the beating heart of Swiss transportation: the stops. This isn't just a table, it's a comprehensive dashboard that brings together key facets of the transport system. Here, you can sort by average delays, the number of trains, or even by the unfortunate but inevitable cancelled trips. When sorting, a responsive histogram magically appears, depicting the distribution of stops based on your selected feature. Witness how delays, train frequencies, and cancellations vary across the landscape of Swiss transportation, offering a unique glimpse into the workings of this complex system.
+              </p>
+            </div>
+          </div>
+          <div class="flex-col flex-50">
+            <!-- TABLE GOES HERE -->
+          </div>
+        </div>
+      </div>
+
+      <div id="p3-to-p4-container" class="container ow-to-ow-bg"></div>
+
+      <div id="p4-container" class="container off-white-bg">
+        <div class="flex-row flex-100 flex-center">
+          <div class="flex-col flex-50 height-100">
+            <div class="flex-row flex-80">
+              <div id="hierarchy-plot"></div>
+            </div>
+            <div class="flex-row flex-20">
+              <div id="hierarchy-minimap"></div>
+            </div>
+          </div>
+
+          <div class="flex-col flex-50 overflow-auto">
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="large-text large-font-weight">
+                  Swiss Nexus
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="medium-text">
+                  Behold our third visualization - a mesmerizing hierarchical edge bundling that uncovers the hidden connections between Switzerland's diverse cantons. Picture a miniature map of the country, where each canton is but a click away. With a simple selection, watch as a vibrant, circular layout springs to life, unveiling the transport stops that stitch together the tapestry of Swiss mobility.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="medium-text">
+                  This captivating visualization highlights the intricate web of connections that unite different corners of Switzerland, fostering a sense of unity and cohesion. The myriad lines weaving through the circle, much like the threads of an artisan's loom, reveal the true extent of the country's interconnectedness, showcasing the vital role transportation plays in bridging the gaps between its urban hubs and remote hideaways.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="medium-text">
+                  Step into the shoes of a modern-day explorer, charting the unseen connections that bring the Swiss landscape to life. Through this visual masterpiece, discover the harmony that exists within the Swiss transportation system, and experience the joy of uncovering the ties that bind this small yet mighty nation together.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p4-to-p5-container" class="container ow-to-bk-bg"></div>
+
+      <div id="p5-container" class="container container-padding black-bg">
+        <div class="flex-row flex-100 flex-center">
+          <div class="flex-col text-padding-20 overflow-auto">
+            <div class="flex-col">
+              <p class="pink-text large-text large-font-weight">
+                Connectivity Unveiled
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="pink-text medium-text">
+                Prepare to step into the nerve center of Swiss transportation with our next visualization - a captivating network that maps the intricate connections between transport stops. Picture an expansive, full-screen visual spectacle where each node is a stop, and each edge a lifeline connecting one stop to another. This is the essence of Swiss mobility, the invisible threads that keep the country moving, laid bare for you to explore.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="pink-text medium-text">
+                This is more than a network - it's a dynamic, interactive playground where you can experiment with different layouts, bringing out the unique characteristics of Swiss transport. Choose to highlight features such as degree or betweenness centrality, and watch as the network transforms, revealing new facets of its complex architecture.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="pink-text medium-text">
+                This visualization is your ticket to understanding the inner workings of a system that bridges the diverse landscapes of Switzerland. So take the reins, play around with the features, and watch as the network unfurls the hidden patterns within the Swiss transportation system. This is your journey into the heart of Swiss mobility. Buckle up!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p6-container" class="container container-padding black-bg">
+        <!-- NETWORK GOES HERE -->
+      </div>
+
+      <div id="p6-to-p7-container" class="container bk-to-ow-bg"></div>
+
+      <div id="p7-container" class="container container-padding off-white-bg">
+        <div class="flex-row flex-100 flex-center">
+          <div class="flex-col flex-50 overflow-auto">
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20 text-padding">
+                <p class="large-text large-font-weight">
+                  Mobility Rhythms
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="medium-text">
+                  Welcome to our third visualization, a dynamic histogram that puts the pulse of Swiss transportation right at your fingertips. Picture an elegant graph, its X-axis charting the hours of the day, and its Y-axis representing the bustling frequency of chosen transport types. This is not just a graph, it's a day in the life of Swiss transportation, a rhythmic dance of mobility that never truly rests.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="medium-text">
+                  Choose your mode of transport and watch as the histogram springs to life. Observe how trains, buses, metros, and trams follow the ebb and flow of daily life, their frequencies peaking in the mornings and evenings - the hearty breakfast and dinner of Swiss mobility. These are the unsung heroes getting people to work and back home, a testament to the everyday reliability of the Swiss transport system.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="medium-text">
+                  Then, let's set sail with the boats and rack railways, which defy the typical trend. Their peak at 3pm, like a refreshing afternoon tea, reveals a more leisurely pace, a nod to the leisurely joyrides across serene lakes and breathtaking mountainscapes.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-row flex-center">
+              <div class="flex-col text-padding-20">
+                <p class="medium-text">
+                  With this visualization, we invite you to witness the undulating rhythms of Swiss transportation, to see how each mode of transport dances to its own tune, yet harmonizes perfectly to form a symphony of mobility.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-col flex-50 height-100">
+            <div class="flex-row flex-20">
+              <div id="hourly-bar-buttons" class="width-100"></div>
+            </div>
+            <div class="flex-row flex-80">
+              <div id="hourly-bar-chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p7-to-p8-container" class="container ow-to-bk-bg"></div>
+
+      <div id="p8-container" class="container container-padding black-bg">
+        <div class="flex-row flex-100 flex-center">
+          <div class="flex-col text-padding-20 overflow-auto">
+            <div class="flex-col">
+              <p class="pink-text large-text large-font-weight">
+                Time-Space Odyssey
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="pink-text medium-text">
+                Get ready to embark on a fascinating journey through time and space with our next visualization - an immersive, full-screen map that brings to life an average day in the Swiss transport system. Imagine watching the clock tick as trains crisscross the country, moving in real-time from one stop to another. This isn't just a map; it's a living, breathing simulation of Swiss mobility.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="pink-text medium-text">
+                But there's more. This map doesn't just show trains moving; it breathes life into them. Define features such as delay or speed, and watch as the trains change color, each hue telling a different story of the journey. It's like watching the pulse of Swiss transportation beat across the country.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="pink-text medium-text">
+                And for those who love a twist in the tale, there's the isochronic map feature. With a simple selection, watch as the map morphs, where distances no longer represent miles, but the time it takes to travel from A to B. It's a stunning deformation of space, bending the country to the will of time.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="pink-text medium-text">
+                So step into this dynamic sandbox, where you can manipulate time, space, and the very fabric of Switzerland. Watch, explore, and play. This is more than a map. It's a window into the rhythms of Swiss transportation, unfolding before your eyes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p9-container" class="container container-padding black-bg">
+        <!-- MAP GOES HERE -->
+      </div>
+
+      <div id="p-to-final-container" class="container"></div>
+
+      <div id="final-container" class="container">
+        <div id="maintainers">
+          <div id="maintainers-list">
+          Website published on the <span id="current_date" itemprop="date">7th of May 2023</span> and maintained by
+            <a class="github-link" href="https://github.com/dvculha" target="_blank">Dafne Culha</a>, 
+            <a class="github-link" href="https://github.com/ozan-guven" target="_blank">Ozan Güven</a> and 
+            <a class="github-link" href="https://github.com/ArnaudPoletto" target="_blank">Arnaud Poletto</a>
+          </div>
+          <div id="maintainers-github">
+            <a class="github-link no-decoration" href="https://github.com/com-480-data-visualization/project-2023-choo-choo-data-darlings/tree/master" target="_blank">Take a look at the project's <i class="bi bi-github"></i> GitHub repository!</a>
+          </div>
+        </div>
+        <div id="night-sky"></div>
+        <div id="moon"></div>
+        <div id="night-bridge"></div>
+        <div id="night-mountain-left"></div>
+        <div id="night-mountain-right"></div>
+      </div>
+    </div>
   </body>
+
+  <script type="module" src="/src/main2.ts"></script>
+  <script type="module" src="/src/particles.ts"></script>
+  <script type="module" src="/src/scroll.ts"></script>
 </html>
