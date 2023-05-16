@@ -218,39 +218,26 @@ p {
   z-index: 5;
 }
 
-#bridge {
+#city {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 20vh;
-  background-image: url('../assets/title/bridge.png');
+  background-image: url('../assets/title/city.png');
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: auto 100%;
   z-index: 2;
 }
 
-#mountain-left {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 37vh;
-  background-image: url('../assets/title/mountain_left.png');
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: contain;
-  z-index: 4;
-}
-
-#mountain-right {
+#cathedral {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 37vh;
-  background-image: url('../assets/title/mountain_right.png');
+  height: 80vh;
+  background-image: url('../assets/title/cathedral.png');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -338,46 +325,6 @@ p {
   50% {
     left: 0%;
   }
-}
-
-#train {
-  position: absolute;
-  bottom: 19.7vh;
-  height: 7vh;
-  animation: moveTrain 10s linear infinite;
-  z-index: 2;
-}
-
-#train img {
-  height: 100%;
-  width: auto;
-}
-
-@keyframes moveTrain {
-  0% {
-    transform: translateX(-200%);
-  }
-  50%, 100% {
-    transform: translateX(200%);
-  }
-}
-
-#particle-container {
-  position: absolute;
-  left: 0;
-  bottom: 0vh;
-  height: 100%;
-  z-index: 3;
-}
-
-.particle {
-  position: absolute;
-  width: 0.3vh;
-  height: 0.3vh;
-  bottom: 19.5vh;
-  background-color: #0f1d18;
-  border-radius: 25%;
-  opacity: 1;
 }
 
 /* TITLE TO P1 CONTAINER */
