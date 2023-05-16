@@ -1,4 +1,4 @@
-const SCROLL_DURATION = 3000;
+const SCROLL_DURATION = 100;
 
 document.addEventListener("DOMContentLoaded", () => {
     function isElementInViewport(el: any) {
@@ -54,9 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "p4-container",
         "p5-container",
         "p6-container",
-        "p7-container",
-        "p8-container",
-        "p9-container",
         "final-container"
       ];
 
