@@ -18,7 +18,7 @@ class Network {
     private data!: any[];
     private container!: d3.Selection<HTMLElement, unknown, HTMLElement, any>;
     private drag_active = false; // Drag behaviour, to skip mouseover events while dragging
-    private type = DEFAULT_TYPE;
+    private typeName = DEFAULT_TYPE;
     private linkedById!: any;
 
     private link!: d3.Selection<SVGLineElement, { source: string; target: string; weight: number; }, SVGGElement, unknown>;
@@ -76,8 +76,8 @@ class Network {
         this.container = d3.select(CONTAINER_ID);
         const parentElement = document.getElementById(PARENT_ID);
         if (parentElement) {
-            this.width = WIDHT//parentElement.clientWidth;
-            this.height = HEIGHT//parentElement.clientHeight / 2;
+            this.width = parentElement.clientWidth;
+            this.height = parentElement.clientHeight;
         }
     }
 
@@ -86,8 +86,7 @@ class Network {
         this.svg = this.container
             .append("svg")
             .attr("width", this.width)
-            .attr("height", this.height)
-            .attr("transform", `translate(${this.width/2}, ${this.height/2})`);
+            .attr("height", this.height);
 
         // Create the simulation
         this.simulation = d3.forceSimulation()
@@ -345,7 +344,7 @@ class Network {
         // Run simulation
         this.simulation
             .nodes(this.data.nodes)
-            .on("tick", this.ticked);
+            .on("tick", ticked);
 
         this.simulation.force("link")
             .links(this.data.links);
