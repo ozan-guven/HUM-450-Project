@@ -122,7 +122,7 @@ class Network {
      * The drag simulation.
      */
     private drag(simulation) {
-        const dragstarted = (event) =>  {
+        const dragstarted = (event) => {
             this.drag_active = true;
             if (!event.active) simulation.alphaTarget(0.3).restart();
             event.subject.fx = event.subject.x;
@@ -350,6 +350,19 @@ class Network {
             .links(this.data.links);
     }
 
+    private initUpdate(): void {
+        // When the users chooses from the graph-selector dropdown,
+        // update the graph
+        const graphSelector = document.getElementById("graph-selector");
+        if (graphSelector) {
+            graphSelector.addEventListener("change", (event) => {
+                console.log("Updating graph...", event.target.value);
+                const network = event.target.value;
+                this.updatePlot(network);
+            });
+        }
+    }
+
     private initPlot(): void {
         this.loadData(DEFAULT_NETWORK).then((data: any) => {
             this.data = data;
@@ -361,6 +374,41 @@ class Network {
             this.initClickCircle();
             this.initZoom();
             this.initSimulation();
+            this.initUpdate();
+        });
+    }
+
+    private async updatePlot(network: string): Promise<void> {
+        this.loadData(network).then((data: any) => {
+            this.data = data;
+
+            this.initData();
+
+            // Update the links
+            this.link = this.link
+                .selectAll("line")
+                .data(this.data.links)
+
+            this.link.join(
+                enter => enter
+                    .append("line")
+                    .attr("stroke-width", function (d) { return d.weight; }),
+                update => update,
+                exit => exit.remove()
+            );
+
+            // Update the nodes
+            this.node = this.node
+                .data(this.data.nodes)
+            
+            this.node.join(
+                enter => enter.append("circle")
+                    .attr("class", "node")
+                    .attr("r", function (d) { return d.size; })
+                    .attr("fill", (d) => { return d.type == this.typeName ? "#FF3333" : "#29A329"; }),
+                update => update,
+                exit => exit.remove()
+            );
         });
     }
 }
@@ -369,5 +417,6 @@ class Network {
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Loading networks...");
     new Network();
+
     console.log("Networks loaded.");
 });
