@@ -1,52 +1,105 @@
 //@ts-nocheck
 import * as d3 from 'd3';
 
-const ROAD_VOCATION_FILE = "data/networks/road_vocation_data.json";
-const DIVISION_JOB_FILE = "data/networks/bipartite_division_type_metiers.json";
-const ORIGINE_JOB_FILE = "data/networks/bipartite_origine_category_type_metiers.json";
-const STREET_JOB_FILE = "data/networks/bipartite_street_type_metiers.json";
+const DATA_FOLDER = "data/networks";
+
+const DEFAULT_NETWORK = DATA_FOLDER + "/road_vocation_data.json";
 
 const WIDHT = 800;
 const HEIGHT = 800;
 
-function load_network(
-    container_selector, 
-    data_file,
-    type_name,                      // Name of the first type in the bipartite graph
-    exp_node_size_scale = 0.7,      // Exponent for scaling object sizes
-    exp_link_weight_scale = 0.7,    // Exponent for scaling link weights
-    transparency = 0.1,             // Transparency of non-selected nodes and links
-    min_node_size = 7,              // Minimum size of a node
-    max_node_size = 40,             // Maximum size of a node
-    min_link_weight = 1,            // Minimum weight of a link
-    max_link_weight = 8,            // Maximum weight of a link
-    label_size_add = 5,             // Additional size of label
-    node_size_inc = 5,              // Increment of node size when hovering
-    label_size_inc = 5,             // Increment of label size when hovering
-    charge_strength = -700,         // Strength of the charge force
-    collide_size_add = 2,           // Additional size of collision force
-    transition_duration = 200,      // Duration of transitions
+class Network {
+    private svg: d3.Selection<SVGGElement, unknown, HTMLElement, any>;
+    private data!: any[];
+
+    constructor(
+        private container_selector, 
+        private data_file,
+        private type_name,                      // Name of the first type in the bipartite graph
+        private exp_node_size_scale = 0.7,      // Exponent for scaling object sizes
+        private exp_link_weight_scale = 0.7,    // Exponent for scaling link weights
+        private transparency = 0.1,             // Transparency of non-selected nodes and links
+        private min_node_size = 7,              // Minimum size of a node
+        private max_node_size = 40,             // Maximum size of a node
+        private min_link_weight = 1,            // Minimum weight of a link
+        private max_link_weight = 8,            // Maximum weight of a link
+        private label_size_add = 5,             // Additional size of label
+        private node_size_inc = 5,              // Increment of node size when hovering
+        private label_size_inc = 5,             // Increment of label size when hovering
+        private charge_strength = -700,         // Strength of the charge force
+        private collide_size_add = 2,           // Additional size of collision force
+        private transition_duration = 200,      // Duration of transitions
     ) {
+        this.containerSelector = containerSelector;
+        this.dataFile = dataFile;
+        this.typeName = typeName;
+        this.expNodeSizeScale = expNodeSizeScale;
+        this.expLinkWeightScale = expLinkWeightScale;
+        this.transparency = transparency;
+        this.minNodeSize = minNodeSize;
+        this.maxNodeSize = maxNodeSize;
+        this.minLinkWeight = minLinkWeight;
+        this.maxLinkWeight = maxLinkWeight;
+        this.labelSizeAdd = labelSizeAdd;
+        this.nodeSizeInc = nodeSizeInc;
+        this.labelSizeInc = labelSizeInc;
+        this.chargeStrength = chargeStrength;
+        this.collideSizeAdd = collideSizeAdd;
+        this.transitionDuration = transitionDuration;
+
+        this.initDimensions();
+    }
+
+    private async loadData(network: string): Promise<void> {
+        const data_path = `${DATA_FOLDER}/${network}.json`;
+
+        return new Promise((resolve, reject) => {
+            d3.json(data_path).then((data: any) => {
+                resolve(data);
+            });
+        });
+    }
+
+    private initDimensions(): void {
+        const parentElement = document.getElementById(BAR_ELEMENT_ID);
+        if (parentElement) {
+            this.width = parentElement.clientWidth;
+            this.height = parentElement.clientHeight / 2;
+        }
+    }
+
+    /**
+     * Map a node size to the given range
+     * @param {int} size 
+     * @returns 
+     */
+    private get_scaled_size(size, min_unscaled_size, max_unscaled_size, min_size, max_size) {
+        if (max_unscaled_size - min_unscaled_size == 0) {
+            return (min_size + max_size) / 2;
+        }
+
+        return min_size + (size - min_unscaled_size) * (max_size - min_size) / (max_unscaled_size - min_unscaled_size);
+    }
+
+    private initData(): void {
+        
+    }
+
+    private initPlot(): void {
+        this.loadData(DEFAULT_NETWORK).then((data: any) => {
+            this.data = data;
+        });
+    }
+}
+
+function load_network() {
     d3.json(data_file).then(function(data) {
         // Define the container and get its size
         var container = d3.select(container_selector);
-        var width = WIDHT//container.node().getBoundingClientRect().width;
-        var height = HEIGHT//container.node().getBoundingClientRect().height;
+        var width = container.node().getBoundingClientRect().width;
+        var height = container.node().getBoundingClientRect().height;
 
         let drag_active = false; // Drag behaviour, to skip mouseover events while dragging
-
-        /**
-         * Map a node size to the given range
-         * @param {int} size 
-         * @returns 
-         */
-        function get_scaled_size(size, min_unscaled_size, max_unscaled_size, min_size, max_size) {
-            if (max_unscaled_size - min_unscaled_size == 0) {
-                return (min_size + max_size) / 2;
-            }
-
-            return min_size + (size - min_unscaled_size) * (max_size - min_size) / (max_unscaled_size - min_unscaled_size);
-        }
 
         // Update each node's size to the scaled size
         let max_unscaled_node_size = data.nodes.reduce((max, node) => Math.max(max, node.size), 0);
