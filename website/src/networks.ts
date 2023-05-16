@@ -3,36 +3,45 @@ import * as d3 from 'd3';
 
 const DATA_FOLDER = "data/networks";
 
-const DEFAULT_NETWORK = DATA_FOLDER + "/road_vocation_data.json";
+const DEFAULT_NETWORK = "road_vocation_data";
+const DEFAULT_TYPE = "vocation";
+
+const CONTAINER = "network_graph";
+const PARENT_ID = "network_chart";
 
 const WIDHT = 800;
 const HEIGHT = 800;
 
 class Network {
     private svg: d3.Selection<SVGGElement, unknown, HTMLElement, any>;
+    private simulation!: d3.Simulation<{}, undefined>;
     private data!: any[];
+    private container!: d3.Selection<HTMLElement, unknown, HTMLElement, any>;
+    private drag_active = false; // Drag behaviour, to skip mouseover events while dragging
+    private type = DEFAULT_TYPE;
+    private linkedById!: any;
 
-    constructor(
-        private container_selector, 
-        private data_file,
-        private type_name,                      // Name of the first type in the bipartite graph
-        private exp_node_size_scale = 0.7,      // Exponent for scaling object sizes
-        private exp_link_weight_scale = 0.7,    // Exponent for scaling link weights
-        private transparency = 0.1,             // Transparency of non-selected nodes and links
-        private min_node_size = 7,              // Minimum size of a node
-        private max_node_size = 40,             // Maximum size of a node
-        private min_link_weight = 1,            // Minimum weight of a link
-        private max_link_weight = 8,            // Maximum weight of a link
-        private label_size_add = 5,             // Additional size of label
-        private node_size_inc = 5,              // Increment of node size when hovering
-        private label_size_inc = 5,             // Increment of label size when hovering
-        private charge_strength = -700,         // Strength of the charge force
-        private collide_size_add = 2,           // Additional size of collision force
-        private transition_duration = 200,      // Duration of transitions
+    private links!: d3.Selection<SVGLineElement, { source: string; target: string; weight: number; }, SVGGElement, unknown>;
+    private nodes!: d3.Selection<SVGCircleElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
+    private gnodes!: d3.Selection<SVGGElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
+    private labels!: d3.Selection<SVGTextElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
+    private clickCircle!: d3.Selection<SVGCircleElement, { id: string; label: string; size: number; type: string; }, SVGGElement, unknown>;
+
+    constructor(                     // Name of the first type in the bipartite graph
+        expNodeSizeScale = 0.7,      // Exponent for scaling object sizes
+        expLinkWeightScale = 0.7,    // Exponent for scaling link weights
+        transparency = 0.1,             // Transparency of non-selected nodes and links
+        minNodeSize = 7,              // Minimum size of a node
+        maxNodeSize = 40,             // Maximum size of a node
+        minLinkWeight = 1,            // Minimum weight of a link
+        maxLinkWeight = 8,            // Maximum weight of a link
+        labelSizeAdd = 5,             // Additional size of label
+        nodeSizeInc = 5,              // Increment of node size when hovering
+        labelSizeInc = 5,             // Increment of label size when hovering
+        chargeStrength = -700,         // Strength of the charge force
+        collideSizeAdd = 2,           // Additional size of collision force
+        transitionDuration = 200,      // Duration of transitions
     ) {
-        this.containerSelector = containerSelector;
-        this.dataFile = dataFile;
-        this.typeName = typeName;
         this.expNodeSizeScale = expNodeSizeScale;
         this.expLinkWeightScale = expLinkWeightScale;
         this.transparency = transparency;
@@ -48,32 +57,50 @@ class Network {
         this.transitionDuration = transitionDuration;
 
         this.initDimensions();
+        this.initStaticElements();
+        this.initPlot();
     }
 
     private async loadData(network: string): Promise<void> {
-        const data_path = `${DATA_FOLDER}/${network}.json`;
+        const dataPath = `${DATA_FOLDER}/${network}.json`;
 
         return new Promise((resolve, reject) => {
-            d3.json(data_path).then((data: any) => {
+            d3.json(dataPath).then((data: any) => {
                 resolve(data);
             });
         });
     }
 
     private initDimensions(): void {
-        const parentElement = document.getElementById(BAR_ELEMENT_ID);
+        // Define the container and get its size
+        this.container = d3.select(CONTAINER);
+        const parentElement = document.getElementById(PARENT_ID);
         if (parentElement) {
             this.width = parentElement.clientWidth;
             this.height = parentElement.clientHeight / 2;
         }
     }
 
+    private initStaticElements(): void {
+        // Create the SVG
+        this.svg = this.container
+            .append("svg")
+            .attr("width", this.width)
+            .attr("height", this.height);
+
+        // Create the simulation
+        this.simulation = d3.forceSimulation()
+            .force("link", d3.forceLink().id(function (d) { return d.id; }))
+            .force("charge", d3.forceManyBody().strength(this.chargeStrength))
+            .force("center", d3.forceCenter(this.width / 2, this.height / 2))
+            .force("collide", d3.forceCollide().radius((d) => { return d.size + this.collideSizeAdd; }));
+    }
     /**
      * Map a node size to the given range
      * @param {int} size 
      * @returns 
      */
-    private get_scaled_size(size, min_unscaled_size, max_unscaled_size, min_size, max_size) {
+    private get_scaled_size(size: int, min_unscaled_size, max_unscaled_size, min_size, max_size) {
         if (max_unscaled_size - min_unscaled_size == 0) {
             return (min_size + max_size) / 2;
         }
@@ -81,143 +108,174 @@ class Network {
         return min_size + (size - min_unscaled_size) * (max_size - min_size) / (max_unscaled_size - min_unscaled_size);
     }
 
-    private initData(): void {
-        
+    /**
+     * 
+     * @param {string} a: ID of node a 
+     * @param {string} b: ID of node b
+     * @returns {boolean} True if a and b are connected, false otherwise
+     */
+    private isConnected(a: string, b: string): boolean {
+        return this.linkedById[a].indexOf(b) > -1 || this.linkedById[b].indexOf(a) > -1 || a == b;
     }
 
-    private initPlot(): void {
-        this.loadData(DEFAULT_NETWORK).then((data: any) => {
-            this.data = data;
-        });
-    }
-}
-
-function load_network() {
-    d3.json(data_file).then(function(data) {
-        // Define the container and get its size
-        var container = d3.select(container_selector);
-        var width = container.node().getBoundingClientRect().width;
-        var height = container.node().getBoundingClientRect().height;
-
-        let drag_active = false; // Drag behaviour, to skip mouseover events while dragging
-
-        // Update each node's size to the scaled size
-        let max_unscaled_node_size = data.nodes.reduce((max, node) => Math.max(max, node.size), 0);
-        let min_unscaled_node_size = data.nodes.reduce((min, node) => Math.min(min, node.size), Infinity);
-        max_unscaled_node_size = Math.pow(max_unscaled_node_size, exp_node_size_scale);
-        min_unscaled_node_size = Math.pow(min_unscaled_node_size, exp_node_size_scale);
-
-        data.nodes.forEach(node => node.size = get_scaled_size(Math.pow(node.size, exp_node_size_scale), min_unscaled_node_size, max_unscaled_node_size, min_node_size, max_node_size));
-
-        // Update each link's weight to the scaled weight
-        let max_unscaled_link_weight = data.links.reduce((max, link) => Math.max(max, link.weight), 0);
-        let min_unscaled_link_weight = data.links.reduce((min, link) => Math.min(min, link.weight), Infinity);
-        max_unscaled_link_weight = Math.pow(max_unscaled_link_weight, exp_link_weight_scale);
-        min_unscaled_link_weight = Math.pow(min_unscaled_link_weight, exp_link_weight_scale);
-
-        data.links.forEach(link => link.weight = get_scaled_size(Math.pow(link.weight, exp_link_weight_scale), min_unscaled_link_weight, max_unscaled_link_weight, min_link_weight, max_link_weight));
-
-        // Create linked list of nodes and isConnected function
-        const linkedById = {};
-        data.links.forEach(function(d) {
-            linkedById[d.source] = []
-            linkedById[d.target] = []
-        });
-        data.links.forEach(function(d) {
-            linkedById[d.source].push(d.target);
-            linkedById[d.target].push(d.source);
-        });
-
-        /**
-         * 
-         * @param {string} a: ID of node a 
-         * @param {string} b: ID of node b
-         * @returns {boolean} True if a and b are connected, false otherwise
-         */
-        function isConnected(a, b) {
-            return linkedById[a].indexOf(b) > -1 || linkedById[b].indexOf(a) > -1 || a == b;
+    /**
+     * The drag simulation.
+     */
+    private drag(simulation) {
+        const dragstarted = (event) =>  {
+            this.drag_active = true;
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
         }
 
+        const dragged = (event) => {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
 
+        const dragended = (event) => {
+            this.drag_active = false;
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
 
-        // Create the simulation
-        var simulation = d3.forceSimulation()
-            .force("link", d3.forceLink().id(function(d) { return d.id; }))
-            .force("charge", d3.forceManyBody().strength(charge_strength))
-            .force("center", d3.forceCenter(width / 2, height / 2))
-            .force("collide", d3.forceCollide().radius(function(d) { return d.size + collide_size_add; }));
+        return d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended);
+    }
 
-        // Create the SVG
-        let svg = container.append("svg")
-            .attr("width", width)
-            .attr("height", height);
+    /**
+     * Update node and link positions at every step of the force simulation.
+     */
+    private ticked() {
+        this.link
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
 
+        this.node
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+
+        this.clickCircle
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+
+        this.labels
+            .attr("x", d => d.x + 10)
+            .attr("y", d => d.y + 4)
+            .attr("dx", -9)
+            .attr("dy", "-.15em");
+    }
+
+    private initData(): void {
+        this.data.forEach(d => {
+            // Update each node's size to the scaled size
+            let max_unscaled_node_size = data.nodes.reduce((max, node) => Math.max(max, node.size), 0);
+            let min_unscaled_node_size = data.nodes.reduce((min, node) => Math.min(min, node.size), Infinity);
+            max_unscaled_node_size = Math.pow(max_unscaled_node_size, exp_node_size_scale);
+            min_unscaled_node_size = Math.pow(min_unscaled_node_size, exp_node_size_scale);
+
+            d.nodes.forEach(node => node.size = get_scaled_size(Math.pow(node.size, exp_node_size_scale), min_unscaled_node_size, max_unscaled_node_size, min_node_size, max_node_size));
+
+            // Update each link's weight to the scaled weight
+            let max_unscaled_link_weight = data.links.reduce((max, link) => Math.max(max, link.weight), 0);
+            let min_unscaled_link_weight = data.links.reduce((min, link) => Math.min(min, link.weight), Infinity);
+            max_unscaled_link_weight = Math.pow(max_unscaled_link_weight, exp_link_weight_scale);
+            min_unscaled_link_weight = Math.pow(min_unscaled_link_weight, exp_link_weight_scale);
+
+            d.links.forEach(link => link.weight = get_scaled_size(Math.pow(link.weight, exp_link_weight_scale), min_unscaled_link_weight, max_unscaled_link_weight, min_link_weight, max_link_weight));
+
+            // Create linked list of nodes and isConnected function
+            this.linkedById = {};
+            d.links.forEach((dt) => {
+                this.linkedById[dt.source] = []
+                this.linkedById[dt.target] = []
+            });
+            d.links.forEach((dt) => {
+                this.linkedById[dt.source].push(dt.target);
+                this.linkedById[dt.target].push(dt.source);
+            });
+        });
+    }
+
+    private createLinks(): void {
         // Create links
-        var link = svg.append("g")
+        this.link = this.svg.append("g")
             .attr("stroke", "#BBB")
             .attr("stroke-opacity", 1.0)
             .selectAll("line")
-            .data(data.links)
+            .data(this.data.links)
             .enter().append("line")
-            .attr("stroke-width", function(d) { return d.weight; });
+            .attr("stroke-width", function (d) { return d.weight; });
+    }
 
+    private createNodes(): void {
         // Create nodes
-        var gnodes = svg.selectAll("g.gnode")
+        this.gnodes = this.svg.selectAll("g.gnode")
             .data(data.nodes)
             .enter()
             .append("g")
             .classed("gnode", true);
 
         // Create visible nodes
-        var node = gnodes.append("circle")
+        this.node = this.gnodes.append("circle")
             .attr("class", "node")
-            .attr("r", function(d) { return d.size; })
-            .attr("fill", function(d) { return d.type == type_name ? "#FF3333" : "#29A329"; });
+            .attr("r", function (d) { return d.size; })
+            .attr("fill", (d) => { return d.type == this.typeName ? "#FF3333" : "#29A329"; });
+    }
 
+    private createLabels(): void {
         // Create text labels
-        var labels = gnodes.append("text")
-            .text(function(d) { return d.label; })
-            .attr("font-size", function(d) { return d.size + label_size_add; })
+        this.labels = this.gnodes.append("text")
+            .text(function (d) { return d.label; })
+            .attr("font-size", (d) => { return d.size + this.labelSizeAdd; })
             .attr("font-family", "sans-serif")
             .attr("font-weight", "bold")
             .attr("text-anchor", "middle")
             .attr("alignment-baseline", "middle");
+    }
 
+    private initClickCircle(): void {
         // Create circular zones around nodes to detect mouseover
-        var clickCircle = gnodes.append("circle")
+        this.clickCircle = this.gnodes.append("circle")
             .attr("class", "node")
-            .attr("r", function(d) { return d.size; })
+            .attr("r", function (d) { return d.size; })
             .attr("fill", "transparent")
-            .call(drag(simulation))
-            .on("mouseover", function(d) {
-                if (drag_active) {
+            .call(drag(this.simulation))
+            .on("mouseover", (that, d) => {
+                if (this.drag_active) {
                     return;
                 }
 
                 // Get the ID of the hovered node
-                const d_node = d3.select(this).node().__data__;
+                const d_node = d3.select(that).node().__data__;
                 const hoveredNodeId = d_node.id;
 
                 // Not hovered node less opaque
-                node
+                this.node
                     .transition()
                     .duration(200)
-                    .attr("fill-opacity", function(o) {
+                    .attr("fill-opacity", (o) => {
                         const d_node = d3.select(o).node().__data__;
-                        return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : transparency;
+                        return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : this.transparency;
                     })
-                    .attr("r", function(o) {
+                    .attr("r", (o) => {
                         if (o.id == hoveredNodeId) {
-                            return o.size + node_size_inc;
-                        }	
+                            return o.size + this.nodeSizeInc;
+                        }
                         // give the link weight as size to the hovered node
                         if (isConnected(hoveredNodeId, o.id)) {
                             let link_weight = data.links.find(link => (link.source.id == o.id && link.target.id == hoveredNodeId) || (link.source.id == hoveredNodeId && link.target.id == o.id)).weight;
-                            const connected_nodes = linkedById[hoveredNodeId];
-                            const connected_links = data.links.filter(link => (link.source.id == hoveredNodeId || link.target.id == hoveredNodeId));
+                            const connected_nodes = this.linkedById[hoveredNodeId];
+                            const connected_links = this.data.links.filter(link => (link.source.id == hoveredNodeId || link.target.id == hoveredNodeId));
                             const min_connected_link_weight = connected_links.reduce((min, link) => Math.min(min, link.weight), Infinity);
                             const max_connected_link_weight = connected_links.reduce((max, link) => Math.max(max, link.weight), -Infinity);
-                            const scaled_link_weight = get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, min_node_size, max_node_size);
+                            const scaled_link_weight = this.get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, min_node_size, max_node_size);
                             return scaled_link_weight;
                         }
                         return o.size;
@@ -227,138 +285,96 @@ function load_network() {
                 link
                     .transition()
                     .duration(200)
-                    .attr("stroke-opacity", function(o) {
-                        return o.source.id == hoveredNodeId || o.target.id == hoveredNodeId ? 1 : transparency;
+                    .attr("stroke-opacity", (o) => {
+                        return o.source.id == hoveredNodeId || o.target.id == hoveredNodeId ? 1 : this.transparency;
                     });
 
                 // Opaque selected nodes and neighbours only
-                labels
+                this.labels
                     .transition()
                     .duration(200)
-                    .attr("fill-opacity", function(o) {
-                        return isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : transparency;
+                    .attr("fill-opacity", (o) => {
+                        return this.isConnected(hoveredNodeId, o.id) || o.id == hoveredNodeId ? 1 : this.transparency;
                     })
-                    .attr("font-size", function(o) {
+                    .attr("font-size", (o) => {
                         if (o.id == hoveredNodeId) {
-                            return o.size + label_size_inc + label_size_add;
-                        }	
-                        if (isConnected(hoveredNodeId, o.id)) {
-                            let link_weight = data.links.find(link => (link.source.id == o.id && link.target.id == hoveredNodeId) || (link.source.id == hoveredNodeId && link.target.id == o.id)).weight;
-                            const connected_nodes = linkedById[hoveredNodeId];
-                            const connected_links = data.links.filter(link => (link.source.id == hoveredNodeId || link.target.id == hoveredNodeId));
+                            return o.size + this.labelSizeInc + this.labelSizeAdd;
+                        }
+                        if (this.isConnected(hoveredNodeId, o.id)) {
+                            let link_weight = this.data.links.find(link => (link.source.id == o.id && link.target.id == hoveredNodeId) || (link.source.id == hoveredNodeId && link.target.id == o.id)).weight;
+                            const connected_nodes = this.linkedById[hoveredNodeId];
+                            const connected_links = this.data.links.filter(link => (link.source.id == hoveredNodeId || link.target.id == hoveredNodeId));
                             const min_connected_link_weight = connected_links.reduce((min, link) => Math.min(min, link.weight), Infinity);
                             const max_connected_link_weight = connected_links.reduce((max, link) => Math.max(max, link.weight), -Infinity);
-                            const scaled_link_weight = get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, min_node_size, max_node_size);
-                            return scaled_link_weight + label_size_add;
+                            const scaled_link_weight = this.get_scaled_size(link_weight, min_connected_link_weight, max_connected_link_weight, this.minNodeSize, this.maxNodeSize);
+                            return scaled_link_weight + this.labelSizeAdd;
                         }
-                        return o.size + label_size_add
+                        return o.size + this.labelSizeAdd;
                     });
             })
-            .on("mouseout", function(d) {
-                if (drag_active) {
+            .on("mouseout", (d) => {
+                if (this.drag_active) {
                     return;
                 }
 
                 // Reset opacity and sizes
-                node.transition()
-                    .duration(transition_duration)
+                this.node.transition()
+                    .duration(this.transitionDuration)
                     .attr("fill-opacity", 1)
-                    .attr("r", function(d) { return d.size; });
-                link.transition()
-                    .duration(transition_duration)
+                    .attr("r", function (d) { return d.size; });
+                this.link.transition()
+                    .duration(this.transitionDuration)
                     .attr("stroke-opacity", 1);
-                labels.transition()
-                    .duration(transition_duration)
+                this.labels.transition()
+                    .duration(this.transitionDuration)
                     .attr("fill-opacity", 1)
-                    .attr("font-size", function(d) { return d.size + label_size_add; });
+                    .attr("font-size", (d) => { return d.size + this.labelSizeAdd; });
             });
+    }
 
+    private initZoom(): void {
         // Zoom
         const zoom = d3.zoom()
             .scaleExtent([1, 8])
-            .on("zoom", ({transform}) => {
+            .on("zoom", ({ transform }) => {
                 link.attr("transform", transform);
                 node.attr("transform", transform);
                 labels.attr("transform", transform);
                 clickCircle.attr("transform", transform);
             });
 
-            svg.call(zoom);
+        this.svg.call(zoom);
+    }
 
-            
+    private initSimulation(): void {
         // Run simulation
-        simulation
-            .nodes(data.nodes)
-            .on("tick", ticked);
+        this.simulation
+            .nodes(this.data.nodes)
+            .on("tick", this.ticked);
 
-        simulation.force("link")
-            .links(data.links);
+        this.simulation.force("link")
+            .links(this.data.links);
+    }
 
+    private initPlot(): void {
+        this.loadData(DEFAULT_NETWORK).then((data: any) => {
+            this.data = data;
 
-
-        /**
-          * Update node and link positions at every step of the force simulation.
-          */
-        function ticked() {
-            link
-                .attr("x1", d => d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
-            
-            node
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-
-            clickCircle
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-
-            labels
-                .attr("x", d => d.x + 10)
-                .attr("y", d => d.y + 4)
-                .attr("dx", -9)
-                .attr("dy", "-.15em");
-        }
-
-        /**
-         * The drag simulation.
-         */
-        function drag(simulation) {    
-            function dragstarted(event) {
-                drag_active = true;
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-                event.subject.fx = event.subject.x;
-                event.subject.fy = event.subject.y;
-            }
-            
-            function dragged(event) {
-                event.subject.fx = event.x;
-                event.subject.fy = event.y;
-            }
-            
-            function dragended(event) {
-                drag_active = false;
-            if (!event.active) simulation.alphaTarget(0);
-                event.subject.fx = null;
-                event.subject.fy = null;
-            }
-            
-            return d3.drag()
-              .on("start", dragstarted)
-              .on("drag", dragged)
-              .on("end", dragended);
-        }
-    });
+            this.initData();
+            this.createLinks();
+            this.createNodes();
+            this.createLabels();
+            this.initClickCircle();
+            this.initZoom();
+            this.initSimulation();
+        });
+    }
 }
 
 // run when page is loaded
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Loading networks...");
-    load_network("#road_vocation_data", ROAD_VOCATION_FILE, "vocation");
-    load_network("#bipartite_division_type_metiers", DIVISION_JOB_FILE, "division");
-    load_network("#bipartite_origine_category_type_metiers", ORIGINE_JOB_FILE, "origine_category");
-    load_network("#bipartite_street_type_metiers", STREET_JOB_FILE, "street");
+    new Network("#road_vocation_data", DEFAULT_NETWORK, "vocation");
     console.log("Networks loaded.");
 
     // get references to the select element and network divs
