@@ -178,7 +178,27 @@
       </div>
 
       <div id="p6-container" class="container container-padding black-bg">
-        <!-- NETWORK GOES HERE -->
+        <div class="flex-col flex-100 height-100">
+          <div class="flex-row flex-20">
+            <div id="graph-selector-div" class="width-100">
+              <select id="graph-selector">
+                <option value="road_vocation_data">Road Vocation Data</option>
+                <option value="bipartite_division_type_metiers">Bipartite Division Type Metiers</option>
+                <option value="bipartite_origine_category_type_metiers">Bipartite Origine Category Type Metiers</option>
+                <option value="bipartite_street_type_metiers">Bipartite Street Type Metiers</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex-row flex-80">
+            <div id="hourly-bar-chart">
+              <div id="road_vocation_data" class="network"></div>
+              <div id="bipartite_division_type_metiers" class="network"></div>
+              <div id="bipartite_origine_category_type_metiers" class="network"></div>
+              <div id="bipartite_street_type_metiers" class="network"></div>
+            </div>
+          </div>
+        </div>
       </div>
       
       <div id="p-to-final-container" class="container"></div>
@@ -207,4 +227,5 @@
   <script type="module" src="/src/main2.ts"></script>
   <script type="module" src="/src/particles.ts"></script>
   <script type="module" src="/src/scroll.ts"></script>
+  <script type="module" src="/src/networks.ts"></script>
 </html>
