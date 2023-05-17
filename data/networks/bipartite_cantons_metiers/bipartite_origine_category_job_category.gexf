@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2023-04-04">
+  <meta lastmodifieddate="2023-05-17">
     <creator>NetworkX 3.0</creator>
   </meta>
   <graph defaultedgetype="undirected" mode="static" name="">
@@ -8,62 +8,142 @@
       <attribute id="0" title="bipartite" type="long" />
     </attributes>
     <nodes>
-      <node id="Vaud" label="Vaud">
+      <node id="morges" label="morges">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Suisse_Allemande" label="Suisse_Allemande">
+      <node id="rolle" label="rolle">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="moudon" label="moudon">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="nan" label="nan">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="Villette" label="Villette">
+      <node id="lavaux" label="lavaux">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Romandie" label="Romandie">
+      <node id="nyon" label="nyon">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Epalinges" label="Epalinges">
+      <node id="lausanne" label="lausanne">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="France" label="France">
+      <node id="la_vallee" label="la_vallee">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Lutry" label="Lutry">
+      <node id="vaud" label="vaud">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Angleterre" label="Angleterre">
+      <node id="cossonay" label="cossonay">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Lausanne" label="Lausanne">
+      <node id="payerne" label="payerne">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Allemagne" label="Allemagne">
+      <node id="echallens" label="echallens">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="Monde" label="Monde">
+      <node id="suisse_allemande" label="suisse_allemande">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pays_d_enhaut" label="pays_d_enhaut">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="neuchatel" label="neuchatel">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="aigle" label="aigle">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="france" label="france">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="oron" label="oron">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vevey" label="vevey">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="aubonne" label="aubonne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="orbe" label="orbe">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="yverdon" label="yverdon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="fribourg" label="fribourg">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="geneve" label="geneve">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="italie" label="italie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="angleterre" label="angleterre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="avenches" label="avenches">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grandson" label="grandson">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -103,83 +183,169 @@
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="?" label="?">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
     </nodes>
     <edges>
-      <edge source="Vaud" target="?" id="0" weight="22" />
-      <edge source="Vaud" target="administration" id="1" weight="35" />
-      <edge source="Vaud" target="agricole" id="2" weight="283" />
-      <edge source="Vaud" target="artisanat" id="3" weight="359" />
-      <edge source="Vaud" target="commerce" id="4" weight="91" />
-      <edge source="Vaud" target="construction" id="5" weight="162" />
-      <edge source="Vaud" target="rente" id="6" weight="172" />
-      <edge source="Vaud" target="service" id="7" weight="234" />
-      <edge source="Suisse_Allemande" target="?" id="8" weight="8" />
-      <edge source="Suisse_Allemande" target="administration" id="9" weight="2" />
-      <edge source="Suisse_Allemande" target="agricole" id="10" weight="47" />
-      <edge source="Suisse_Allemande" target="artisanat" id="11" weight="56" />
-      <edge source="Suisse_Allemande" target="commerce" id="12" weight="19" />
-      <edge source="Suisse_Allemande" target="construction" id="13" weight="37" />
-      <edge source="Suisse_Allemande" target="rente" id="14" weight="19" />
-      <edge source="Suisse_Allemande" target="service" id="15" weight="30" />
-      <edge source="Villette" target="administration" id="16" weight="1" />
-      <edge source="Villette" target="agricole" id="17" weight="25" />
-      <edge source="Villette" target="artisanat" id="18" weight="7" />
-      <edge source="Villette" target="commerce" id="19" weight="1" />
-      <edge source="Villette" target="construction" id="20" weight="5" />
-      <edge source="Villette" target="rente" id="21" weight="8" />
-      <edge source="Villette" target="service" id="22" weight="7" />
-      <edge source="Romandie" target="?" id="23" weight="2" />
-      <edge source="Romandie" target="administration" id="24" weight="1" />
-      <edge source="Romandie" target="agricole" id="25" weight="9" />
-      <edge source="Romandie" target="artisanat" id="26" weight="7" />
-      <edge source="Romandie" target="commerce" id="27" weight="2" />
-      <edge source="Romandie" target="construction" id="28" weight="10" />
-      <edge source="Romandie" target="rente" id="29" weight="10" />
-      <edge source="Romandie" target="service" id="30" weight="10" />
-      <edge source="Epalinges" target="?" id="31" weight="1" />
-      <edge source="Epalinges" target="administration" id="32" weight="1" />
-      <edge source="Epalinges" target="agricole" id="33" weight="25" />
-      <edge source="Epalinges" target="artisanat" id="34" weight="5" />
-      <edge source="Epalinges" target="construction" id="35" weight="14" />
-      <edge source="Epalinges" target="rente" id="36" weight="3" />
-      <edge source="Epalinges" target="service" id="37" weight="11" />
-      <edge source="France" target="?" id="38" weight="1" />
-      <edge source="France" target="administration" id="39" weight="1" />
-      <edge source="France" target="agricole" id="40" weight="19" />
-      <edge source="France" target="artisanat" id="41" weight="23" />
-      <edge source="France" target="commerce" id="42" weight="9" />
-      <edge source="France" target="construction" id="43" weight="5" />
-      <edge source="France" target="rente" id="44" weight="25" />
-      <edge source="France" target="service" id="45" weight="16" />
-      <edge source="Lutry" target="?" id="46" weight="6" />
-      <edge source="Lutry" target="agricole" id="47" weight="25" />
-      <edge source="Lutry" target="artisanat" id="48" weight="16" />
-      <edge source="Lutry" target="commerce" id="49" weight="6" />
-      <edge source="Lutry" target="construction" id="50" weight="20" />
-      <edge source="Lutry" target="rente" id="51" weight="6" />
-      <edge source="Lutry" target="service" id="52" weight="15" />
-      <edge source="Angleterre" target="administration" id="53" weight="1" />
-      <edge source="Angleterre" target="agricole" id="54" weight="2" />
-      <edge source="Angleterre" target="artisanat" id="55" weight="1" />
-      <edge source="Angleterre" target="rente" id="56" weight="23" />
-      <edge source="Angleterre" target="service" id="57" weight="2" />
-      <edge source="Lausanne" target="?" id="58" weight="2" />
-      <edge source="Lausanne" target="agricole" id="59" weight="26" />
-      <edge source="Lausanne" target="artisanat" id="60" weight="19" />
-      <edge source="Lausanne" target="commerce" id="61" weight="4" />
-      <edge source="Lausanne" target="construction" id="62" weight="10" />
-      <edge source="Lausanne" target="rente" id="63" weight="6" />
-      <edge source="Lausanne" target="service" id="64" weight="10" />
-      <edge source="Allemagne" target="artisanat" id="65" weight="2" />
-      <edge source="Allemagne" target="construction" id="66" weight="1" />
-      <edge source="Monde" target="agricole" id="67" weight="1" />
-      <edge source="Monde" target="construction" id="68" weight="2" />
-      <edge source="Monde" target="service" id="69" weight="2" />
+      <edge source="morges" target="agricole" id="0" weight="18" />
+      <edge source="morges" target="artisanat" id="1" weight="59" />
+      <edge source="morges" target="commerce" id="2" weight="13" />
+      <edge source="morges" target="construction" id="3" weight="15" />
+      <edge source="morges" target="rente" id="4" weight="14" />
+      <edge source="morges" target="service" id="5" weight="21" />
+      <edge source="rolle" target="administration" id="6" weight="2" />
+      <edge source="rolle" target="agricole" id="7" weight="1" />
+      <edge source="rolle" target="artisanat" id="8" weight="10" />
+      <edge source="rolle" target="commerce" id="9" weight="2" />
+      <edge source="rolle" target="construction" id="10" weight="1" />
+      <edge source="rolle" target="rente" id="11" weight="8" />
+      <edge source="rolle" target="service" id="12" weight="6" />
+      <edge source="moudon" target="administration" id="13" weight="4" />
+      <edge source="moudon" target="agricole" id="14" weight="15" />
+      <edge source="moudon" target="artisanat" id="15" weight="24" />
+      <edge source="moudon" target="commerce" id="16" weight="10" />
+      <edge source="moudon" target="construction" id="17" weight="4" />
+      <edge source="moudon" target="rente" id="18" weight="16" />
+      <edge source="moudon" target="service" id="19" weight="17" />
+      <edge source="lavaux" target="administration" id="20" weight="4" />
+      <edge source="lavaux" target="agricole" id="21" weight="68" />
+      <edge source="lavaux" target="artisanat" id="22" weight="49" />
+      <edge source="lavaux" target="commerce" id="23" weight="12" />
+      <edge source="lavaux" target="construction" id="24" weight="25" />
+      <edge source="lavaux" target="rente" id="25" weight="25" />
+      <edge source="lavaux" target="service" id="26" weight="24" />
+      <edge source="nyon" target="administration" id="27" weight="1" />
+      <edge source="nyon" target="agricole" id="28" weight="3" />
+      <edge source="nyon" target="artisanat" id="29" weight="16" />
+      <edge source="nyon" target="commerce" id="30" weight="3" />
+      <edge source="nyon" target="construction" id="31" weight="3" />
+      <edge source="nyon" target="rente" id="32" weight="15" />
+      <edge source="nyon" target="service" id="33" weight="12" />
+      <edge source="lausanne" target="administration" id="34" weight="14" />
+      <edge source="lausanne" target="agricole" id="35" weight="232" />
+      <edge source="lausanne" target="artisanat" id="36" weight="142" />
+      <edge source="lausanne" target="commerce" id="37" weight="55" />
+      <edge source="lausanne" target="construction" id="38" weight="73" />
+      <edge source="lausanne" target="rente" id="39" weight="254" />
+      <edge source="lausanne" target="service" id="40" weight="132" />
+      <edge source="la_vallee" target="administration" id="41" weight="6" />
+      <edge source="la_vallee" target="agricole" id="42" weight="30" />
+      <edge source="la_vallee" target="artisanat" id="43" weight="9" />
+      <edge source="la_vallee" target="commerce" id="44" weight="3" />
+      <edge source="la_vallee" target="construction" id="45" weight="4" />
+      <edge source="la_vallee" target="rente" id="46" weight="8" />
+      <edge source="la_vallee" target="service" id="47" weight="8" />
+      <edge source="vaud" target="agricole" id="48" weight="7" />
+      <edge source="vaud" target="artisanat" id="49" weight="11" />
+      <edge source="vaud" target="commerce" id="50" weight="2" />
+      <edge source="vaud" target="construction" id="51" weight="5" />
+      <edge source="vaud" target="rente" id="52" weight="2" />
+      <edge source="vaud" target="service" id="53" weight="6" />
+      <edge source="cossonay" target="agricole" id="54" weight="14" />
+      <edge source="cossonay" target="artisanat" id="55" weight="19" />
+      <edge source="cossonay" target="commerce" id="56" weight="14" />
+      <edge source="cossonay" target="construction" id="57" weight="6" />
+      <edge source="cossonay" target="rente" id="58" weight="28" />
+      <edge source="cossonay" target="service" id="59" weight="16" />
+      <edge source="payerne" target="artisanat" id="60" weight="3" />
+      <edge source="payerne" target="construction" id="61" weight="1" />
+      <edge source="payerne" target="rente" id="62" weight="5" />
+      <edge source="payerne" target="service" id="63" weight="1" />
+      <edge source="echallens" target="agricole" id="64" weight="11" />
+      <edge source="echallens" target="artisanat" id="65" weight="19" />
+      <edge source="echallens" target="commerce" id="66" weight="5" />
+      <edge source="echallens" target="construction" id="67" weight="8" />
+      <edge source="echallens" target="rente" id="68" weight="4" />
+      <edge source="echallens" target="service" id="69" weight="10" />
+      <edge source="suisse_allemande" target="administration" id="70" weight="1" />
+      <edge source="suisse_allemande" target="agricole" id="71" weight="27" />
+      <edge source="suisse_allemande" target="artisanat" id="72" weight="42" />
+      <edge source="suisse_allemande" target="commerce" id="73" weight="16" />
+      <edge source="suisse_allemande" target="construction" id="74" weight="25" />
+      <edge source="suisse_allemande" target="rente" id="75" weight="22" />
+      <edge source="suisse_allemande" target="service" id="76" weight="17" />
+      <edge source="pays_d_enhaut" target="administration" id="77" weight="2" />
+      <edge source="pays_d_enhaut" target="agricole" id="78" weight="15" />
+      <edge source="pays_d_enhaut" target="artisanat" id="79" weight="16" />
+      <edge source="pays_d_enhaut" target="commerce" id="80" weight="4" />
+      <edge source="pays_d_enhaut" target="construction" id="81" weight="6" />
+      <edge source="pays_d_enhaut" target="rente" id="82" weight="6" />
+      <edge source="pays_d_enhaut" target="service" id="83" weight="9" />
+      <edge source="neuchatel" target="agricole" id="84" weight="2" />
+      <edge source="neuchatel" target="artisanat" id="85" weight="6" />
+      <edge source="neuchatel" target="commerce" id="86" weight="2" />
+      <edge source="neuchatel" target="construction" id="87" weight="2" />
+      <edge source="neuchatel" target="service" id="88" weight="5" />
+      <edge source="aigle" target="agricole" id="89" weight="8" />
+      <edge source="aigle" target="artisanat" id="90" weight="10" />
+      <edge source="aigle" target="commerce" id="91" weight="2" />
+      <edge source="aigle" target="construction" id="92" weight="2" />
+      <edge source="aigle" target="rente" id="93" weight="6" />
+      <edge source="aigle" target="service" id="94" weight="5" />
+      <edge source="france" target="administration" id="95" weight="1" />
+      <edge source="france" target="agricole" id="96" weight="20" />
+      <edge source="france" target="artisanat" id="97" weight="16" />
+      <edge source="france" target="commerce" id="98" weight="7" />
+      <edge source="france" target="construction" id="99" weight="1" />
+      <edge source="france" target="rente" id="100" weight="38" />
+      <edge source="france" target="service" id="101" weight="15" />
+      <edge source="oron" target="administration" id="102" weight="1" />
+      <edge source="oron" target="agricole" id="103" weight="21" />
+      <edge source="oron" target="artisanat" id="104" weight="17" />
+      <edge source="oron" target="commerce" id="105" weight="5" />
+      <edge source="oron" target="construction" id="106" weight="6" />
+      <edge source="oron" target="rente" id="107" weight="8" />
+      <edge source="oron" target="service" id="108" weight="17" />
+      <edge source="vevey" target="administration" id="109" weight="4" />
+      <edge source="vevey" target="agricole" id="110" weight="14" />
+      <edge source="vevey" target="artisanat" id="111" weight="24" />
+      <edge source="vevey" target="commerce" id="112" weight="2" />
+      <edge source="vevey" target="construction" id="113" weight="6" />
+      <edge source="vevey" target="rente" id="114" weight="15" />
+      <edge source="vevey" target="service" id="115" weight="15" />
+      <edge source="aubonne" target="agricole" id="116" weight="7" />
+      <edge source="aubonne" target="artisanat" id="117" weight="11" />
+      <edge source="aubonne" target="commerce" id="118" weight="3" />
+      <edge source="aubonne" target="construction" id="119" weight="2" />
+      <edge source="aubonne" target="rente" id="120" weight="8" />
+      <edge source="aubonne" target="service" id="121" weight="4" />
+      <edge source="orbe" target="administration" id="122" weight="7" />
+      <edge source="orbe" target="agricole" id="123" weight="9" />
+      <edge source="orbe" target="artisanat" id="124" weight="13" />
+      <edge source="orbe" target="commerce" id="125" weight="3" />
+      <edge source="orbe" target="construction" id="126" weight="2" />
+      <edge source="orbe" target="rente" id="127" weight="11" />
+      <edge source="orbe" target="service" id="128" weight="13" />
+      <edge source="yverdon" target="administration" id="129" weight="5" />
+      <edge source="yverdon" target="agricole" id="130" weight="12" />
+      <edge source="yverdon" target="artisanat" id="131" weight="19" />
+      <edge source="yverdon" target="commerce" id="132" weight="5" />
+      <edge source="yverdon" target="construction" id="133" weight="19" />
+      <edge source="yverdon" target="rente" id="134" weight="11" />
+      <edge source="yverdon" target="service" id="135" weight="10" />
+      <edge source="fribourg" target="administration" id="136" weight="1" />
+      <edge source="fribourg" target="agricole" id="137" weight="6" />
+      <edge source="fribourg" target="artisanat" id="138" weight="5" />
+      <edge source="fribourg" target="commerce" id="139" weight="2" />
+      <edge source="fribourg" target="construction" id="140" weight="3" />
+      <edge source="fribourg" target="rente" id="141" weight="4" />
+      <edge source="fribourg" target="service" id="142" weight="2" />
+      <edge source="geneve" target="agricole" id="143" weight="6" />
+      <edge source="geneve" target="construction" id="144" weight="1" />
+      <edge source="geneve" target="rente" id="145" weight="6" />
+      <edge source="geneve" target="service" id="146" weight="3" />
+      <edge source="italie" target="construction" id="147" weight="3" />
+      <edge source="italie" target="service" id="148" weight="2" />
+      <edge source="angleterre" target="administration" id="149" weight="1" />
+      <edge source="angleterre" target="agricole" id="150" weight="2" />
+      <edge source="angleterre" target="artisanat" id="151" weight="1" />
+      <edge source="angleterre" target="rente" id="152" weight="34" />
+      <edge source="angleterre" target="service" id="153" weight="2" />
+      <edge source="avenches" target="artisanat" id="154" weight="1" />
+      <edge source="avenches" target="construction" id="155" weight="2" />
+      <edge source="avenches" target="rente" id="156" weight="3" />
+      <edge source="grandson" target="agricole" id="157" weight="2" />
+      <edge source="grandson" target="commerce" id="158" weight="2" />
+      <edge source="grandson" target="rente" id="159" weight="3" />
+      <edge source="grandson" target="service" id="160" weight="1" />
     </edges>
   </graph>
 </gexf>

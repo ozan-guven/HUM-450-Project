@@ -9,13 +9,25 @@ const DEFAULT_TYPE = "vocation";
 const CONTAINER_ID = "#network-graph";
 const PARENT_ID = "network-chart";
 
-const DEFAULT_LINK_COLOR = "#cccccc";
+const DEFAULT_LINK_COLOR = "#5c5c5c";
 const DEFAULT_NODE_COLOR = "#aaaaaa";
 const DEFAULT_NODE_COLOR_BY_TYPE = {
     "road_vocation_data": {
-        "road": "#1f77b4",
-        "vocation": "#ff7f0e"
-    }
+        "road": "#289e61",
+        "vocation": "#9e2846"
+    },
+    "bipartite_division_type_metiers": {
+        "division": "#289e61",
+        "job_category": "#9e2846"
+    },
+    "bipartite_origine_category_type_metiers": {
+        "origine_category": "#289e61",
+        "job_category": "#9e2846"
+    },
+    "bipartite_street_type_metiers": {
+        "street": "#289e61",
+        "job_category": "#9e2846"
+    },
 }
 
 const MIN_ZOOM_SCALE = 0.1;

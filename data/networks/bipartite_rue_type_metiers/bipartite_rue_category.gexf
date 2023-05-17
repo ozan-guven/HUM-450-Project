@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2023-04-04">
+  <meta lastmodifieddate="2023-05-17">
     <creator>NetworkX 3.0</creator>
   </meta>
   <graph defaultedgetype="undirected" mode="static" name="">
@@ -8,667 +8,7 @@
       <attribute id="0" title="bipartite" type="long" />
     </attributes>
     <nodes>
-      <node id="denatou" label="denatou">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="grand st jean" label="grand st jean">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="croix de rive" label="croix de rive">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="rue du pre" label="rue du pre">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="grotte" label="grotte">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="chabliere" label="chabliere">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montchoisi" label="montchoisi">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="les saugealles" label="les saugealles">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="place st francois" label="place st francois">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="taulau?" label="taulau?">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="pontaise" label="pontaise">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montbenon" label="montbenon">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bourg" label="bourg">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="croix rouge" label="croix rouge">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="boston" label="boston">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="val-d'angrogne" label="val-d'angrogne">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="blecherette" label="blecherette">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="beau-soleil" label="beau-soleil">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="ouchy" label="ouchy">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="rue de l'hopital" label="rue de l'hopital">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="la sallaz" label="la sallaz">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="calvaire" label="calvaire">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="rue du pont" label="rue du pont">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petit ouchy" label="petit ouchy">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="cite derriere" label="cite derriere">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petite rue" label="petite rue">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="etraz" label="etraz">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="vennes" label="vennes">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="epinette" label="epinette">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="st laurent" label="st laurent">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="valency" label="valency">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="collonges" label="collonges">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="rosiere" label="rosiere">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="toises" label="toises">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="saugettes" label="saugettes">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="cite dessous" label="cite dessous">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="mousquines" label="mousquines">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="cazard" label="cazard">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="croisette haras" label="croisette haras">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="villamont maison de maitres" label="villamont maison de maitres">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="beausite" label="beausite">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montriond" label="montriond">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="paleyres" label="paleyres">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="grange-neuve" label="grange-neuve">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="madeleine" label="madeleine">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="languedoc" label="languedoc">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petit st jean" label="petit st jean">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="sebeilllon" label="sebeilllon">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="maladiere" label="maladiere">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="pepinet" label="pepinet">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="cour" label="cour">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bel-air" label="bel-air">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="derriere les terreaux" label="derriere les terreaux">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="la cage " label="la cage ">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="mon repos" label="mon repos">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="grangette" label="grangette">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="chailly" label="chailly">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="st etienne" label="st etienne">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="verdonnet" label="verdonnet">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="gottettaz" label="gottettaz">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="trabandan" label="trabandan">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="ale" label="ale">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="escaliers du marche" label="escaliers du marche">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="derriere les terreaux ferme de m. roguin" label="derriere les terreaux ferme de m. roguin">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petit singe" label="petit singe">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="vernand-dessus" label="vernand-dessus">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="chalet a marin" label="chalet a marin">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="desert" label="desert">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montoie" label="montoie">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="rongimel" label="rongimel">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
       <node id="vidy" label="vidy">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="sous le signal" label="sous le signal">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petit chene" label="petit chene">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="villars" label="villars">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="riant-mont" label="riant-mont">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="praz-sechaud" label="praz-sechaud">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petite pontaise" label="petite pontaise">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="moulin de pepinet" label="moulin de pepinet">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="chauderon" label="chauderon">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="grand champ" label="grand champ">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="georgette" label="georgette">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bois de vaux" label="bois de vaux">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="retraite" label="retraite">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petit clos" label="petit clos">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bellevue" label="bellevue">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="pra chillon" label="pra chillon">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="loup" label="loup">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="truiblanc" label="truiblanc">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="singe" label="singe">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="devin" label="devin">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="servan" label="servan">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="st francois" label="st francois">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="mont-olivet" label="mont-olivet">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="mornex" label="mornex">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="mercerie" label="mercerie">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="barre" label="barre">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bergieres" label="bergieres">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petits huttins" label="petits huttins">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montee de st laurent" label="montee de st laurent">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="st pierre" label="st pierre">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="vuachere" label="vuachere">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="mon regret" label="mon regret">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="pont des sauge" label="pont des sauge">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="rosemont" label="rosemont">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="place du pont" label="place du pont">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bois-gentil" label="bois-gentil">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="marterey" label="marterey">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="contigny" label="contigny">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="craivavers" label="craivavers">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="chateau de vennes" label="chateau de vennes">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="a la tuerie ?" label="a la tuerie ?">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="place st laurent" label="place st laurent">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="vernand" label="vernand">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="palud" label="palud">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="mont-allegre" label="mont-allegre">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montetan" label="montetan">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bethusy" label="bethusy">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="clos de bulle" label="clos de bulle">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="violette" label="violette">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="grand chene" label="grand chene">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="la berallaz" label="la berallaz">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="malley" label="malley">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="bourdonnette" label="bourdonnette">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="chalet de vernand" label="chalet de vernand">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="rasude" label="rasude">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="cite devant" label="cite devant">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montheron" label="montheron">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="grey" label="grey">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="valentin" label="valentin">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="maupas" label="maupas">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="montee st francois" label="montee st francois">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="chalet aux enfants" label="chalet aux enfants">
-        <attvalues>
-          <attvalue for="0" value="0" />
-        </attvalues>
-      </node>
-      <node id="petit mon repos" label="petit mon repos">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -678,12 +18,382 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="clos mont" label="clos mont">
+      <node id="montriond" label="montriond">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="ecole de charite" label="ecole de charite">
+      <node id="rasude" label="rasude">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montetan" label="montetan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bugnon" label="bugnon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit clos" label="petit clos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit singe" label="petit singe">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place st francois" label="place st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="praz-sechaud" label="praz-sechaud">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand chene" label="grand chene">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="madeleine" label="madeleine">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pont des sauge" label="pont des sauge">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="malley" label="malley">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la rappaz" label="la rappaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="riponne" label="riponne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="truiblanc" label="truiblanc">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand-dessous" label="vernand-dessous">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="val-d'angrogne" label="val-d'angrogne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="denatou" label="denatou">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="st etienne" label="st etienne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="ouchy" label="ouchy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bethusy" label="bethusy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="palud" label="palud">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chabliere" label="chabliere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit chene" label="petit chene">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petits huttins" label="petits huttins">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montchoisi" label="montchoisi">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="epinette" label="epinette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="loup" label="loup">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chavannes" label="chavannes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue du pre" label="rue du pre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="retraite" label="retraite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mon repos" label="mon repos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="les saugealles" label="les saugealles">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montagibert" label="montagibert">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="violette" label="violette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beau-soleil" label="beau-soleil">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="derriere les terreaux ferme de m. roguin" label="derriere les terreaux ferme de m. roguin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maison des postes" label="maison des postes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petite pontaise" label="petite pontaise">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand" label="vernand">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pra chillon" label="pra chillon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue d'etraz" label="rue d'etraz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mercerie" label="mercerie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="sebeilllon" label="sebeilllon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villamont" label="villamont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="valentin" label="valentin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand-dessus" label="vernand-dessus">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="boston" label="boston">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maupas" label="maupas">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croix de rive" label="croix de rive">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vennes" label="vennes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montee de st laurent" label="montee de st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beausite" label="beausite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petite rue" label="petite rue">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grangette" label="grangette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="paleyres" label="paleyres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="sous le signal" label="sous le signal">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de st pierre" label="rue de st pierre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand champ" label="grand champ">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="toises" label="toises">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="collonges" label="collonges">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bourdonnette" label="bourdonnette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="verdonnet" label="verdonnet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chauderon" label="chauderon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vuachere" label="vuachere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bois de vaux" label="bois de vaux">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="riant-mont" label="riant-mont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="blecherette" label="blecherette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rosemont" label="rosemont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place st laurent" label="place st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="servan" label="servan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montheron" label="montheron">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chemin de georgette" label="chemin de georgette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pepinet" label="pepinet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite dessous" label="cite dessous">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet aux enfants" label="chalet aux enfants">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -703,12 +413,242 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="vernand-dessous" label="vernand-dessous">
+      <node id="chalet a marin" label="chalet a marin">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="riponne" label="riponne">
+      <node id="mont-olivet" label="mont-olivet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rosiere" label="rosiere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montoie" label="montoie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place de st francois" label="place de st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bellevue" label="bellevue">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="singe" label="singe">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet de vernand" label="chalet de vernand">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de bourg" label="rue de bourg">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="languedoc" label="languedoc">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de chaucrau" label="rue de chaucrau">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grotte" label="grotte">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pontaise" label="pontaise">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bois-gentil" label="bois-gentil">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="saugettes" label="saugettes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit ouchy" label="petit ouchy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand st jean" label="grand st jean">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="escaliers du marche" label="escaliers du marche">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croix rouge" label="croix rouge">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la cage " label="la cage ">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croisette haras" label="croisette haras">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="trabandan" label="trabandan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mont-allegre" label="mont-allegre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grey" label="grey">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maladiere" label="maladiere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cazard" label="cazard">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mousquines" label="mousquines">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de l'ale" label="rue de l'ale">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit st jean" label="petit st jean">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="moulin de pepinet" label="moulin de pepinet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villars" label="villars">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la sallaz" label="la sallaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rongimel" label="rongimel">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place de st laurent" label="place de st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bergieres" label="bergieres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="clos de bulle" label="clos de bulle">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mon regret" label="mon regret">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de l'hopital" label="rue de l'hopital">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="calvaire" label="calvaire">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mornex" label="mornex">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="craivavers" label="craivavers">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la berallaz" label="la berallaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite derriere" label="cite derriere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="derriere les terreaux" label="derriere les terreaux">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="barre" label="barre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chateau de vennes" label="chateau de vennes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place du pont" label="place du pont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villamont maison de maitres" label="villamont maison de maitres">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -718,7 +658,52 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="bugnon" label="bugnon">
+      <node id="montee st francois" label="montee st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite devant" label="cite devant">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="ecole de charite" label="ecole de charite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="gottettaz" label="gottettaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="desert" label="desert">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="devin" label="devin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bel-air" label="bel-air">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cour" label="cour">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="valency" label="valency">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="taulau?" label="taulau?">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -728,12 +713,27 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="la rappaz" label="la rappaz">
+      <node id="grange-neuve" label="grange-neuve">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="villamont" label="villamont">
+      <node id="petit mon repos" label="petit mon repos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chailly" label="chailly">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="contigny" label="contigny">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montbenon" label="montbenon">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
@@ -743,27 +743,32 @@
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="chavannes" label="chavannes">
+      <node id="clos mont" label="clos mont">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="maison des postes" label="maison des postes">
+      <node id="rue du pont" label="rue du pont">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="chaucrau" label="chaucrau">
+      <node id="a la tuerie ?" label="a la tuerie ?">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="montagibert" label="montagibert">
+      <node id="marterey" label="marterey">
         <attvalues>
           <attvalue for="0" value="0" />
         </attvalues>
       </node>
-      <node id="agricole" label="agricole">
+      <node id="administration" label="administration">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="artisanat" label="artisanat">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
@@ -778,17 +783,7 @@
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="administration" label="administration">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
-      <node id="rente" label="rente">
-        <attvalues>
-          <attvalue for="0" value="1" />
-        </attvalues>
-      </node>
-      <node id="?" label="?">
+      <node id="agricole" label="agricole">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
@@ -798,445 +793,418 @@
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
-      <node id="artisanat" label="artisanat">
+      <node id="rente" label="rente">
         <attvalues>
           <attvalue for="0" value="1" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge source="denatou" target="agricole" id="0" weight="2" />
-      <edge source="grand st jean" target="?" id="1" weight="3" />
-      <edge source="grand st jean" target="administration" id="2" weight="8" />
-      <edge source="grand st jean" target="agricole" id="3" weight="16" />
-      <edge source="grand st jean" target="artisanat" id="4" weight="76" />
-      <edge source="grand st jean" target="commerce" id="5" weight="17" />
-      <edge source="grand st jean" target="construction" id="6" weight="34" />
-      <edge source="grand st jean" target="rente" id="7" weight="38" />
-      <edge source="grand st jean" target="service" id="8" weight="35" />
-      <edge source="croix de rive" target="commerce" id="9" weight="1" />
-      <edge source="croix de rive" target="rente" id="10" weight="3" />
-      <edge source="rue du pre" target="?" id="11" weight="3" />
-      <edge source="rue du pre" target="agricole" id="12" weight="26" />
-      <edge source="rue du pre" target="artisanat" id="13" weight="69" />
-      <edge source="rue du pre" target="commerce" id="14" weight="20" />
-      <edge source="rue du pre" target="construction" id="15" weight="25" />
-      <edge source="rue du pre" target="rente" id="16" weight="8" />
-      <edge source="rue du pre" target="service" id="17" weight="40" />
-      <edge source="grotte" target="?" id="18" weight="2" />
-      <edge source="grotte" target="agricole" id="19" weight="2" />
-      <edge source="grotte" target="artisanat" id="20" weight="1" />
-      <edge source="grotte" target="commerce" id="21" weight="2" />
-      <edge source="grotte" target="rente" id="22" weight="8" />
-      <edge source="grotte" target="service" id="23" weight="1" />
-      <edge source="chabliere" target="agricole" id="24" weight="3" />
-      <edge source="chabliere" target="rente" id="25" weight="1" />
-      <edge source="montchoisi" target="rente" id="26" weight="1" />
-      <edge source="les saugealles" target="agricole" id="27" weight="1" />
-      <edge source="place st francois" target="?" id="28" weight="2" />
-      <edge source="place st francois" target="administration" id="29" weight="2" />
-      <edge source="place st francois" target="artisanat" id="30" weight="3" />
-      <edge source="place st francois" target="commerce" id="31" weight="6" />
-      <edge source="place st francois" target="rente" id="32" weight="14" />
-      <edge source="place st francois" target="service" id="33" weight="10" />
-      <edge source="taulau?" target="rente" id="34" weight="7" />
-      <edge source="pontaise" target="administration" id="35" weight="1" />
-      <edge source="pontaise" target="rente" id="36" weight="3" />
-      <edge source="montbenon" target="rente" id="37" weight="6" />
-      <edge source="montbenon" target="service" id="38" weight="1" />
-      <edge source="bourg" target="administration" id="39" weight="3" />
-      <edge source="bourg" target="agricole" id="40" weight="3" />
-      <edge source="bourg" target="artisanat" id="41" weight="27" />
-      <edge source="bourg" target="commerce" id="42" weight="24" />
-      <edge source="bourg" target="construction" id="43" weight="6" />
-      <edge source="bourg" target="rente" id="44" weight="31" />
-      <edge source="bourg" target="service" id="45" weight="27" />
-      <edge source="croix rouge" target="agricole" id="46" weight="4" />
-      <edge source="croix rouge" target="rente" id="47" weight="1" />
-      <edge source="croix rouge" target="service" id="48" weight="1" />
-      <edge source="boston" target="rente" id="49" weight="1" />
-      <edge source="boston" target="service" id="50" weight="1" />
-      <edge source="val-d'angrogne" target="agricole" id="51" weight="3" />
-      <edge source="val-d'angrogne" target="artisanat" id="52" weight="1" />
-      <edge source="blecherette" target="agricole" id="53" weight="1" />
-      <edge source="beau-soleil" target="agricole" id="54" weight="1" />
-      <edge source="ouchy" target="?" id="55" weight="2" />
-      <edge source="ouchy" target="agricole" id="56" weight="38" />
-      <edge source="ouchy" target="artisanat" id="57" weight="10" />
-      <edge source="ouchy" target="commerce" id="58" weight="6" />
-      <edge source="ouchy" target="rente" id="59" weight="34" />
-      <edge source="ouchy" target="service" id="60" weight="21" />
-      <edge source="rue de l'hopital" target="?" id="61" weight="2" />
-      <edge source="rue de l'hopital" target="agricole" id="62" weight="5" />
-      <edge source="rue de l'hopital" target="artisanat" id="63" weight="8" />
-      <edge source="rue de l'hopital" target="construction" id="64" weight="5" />
-      <edge source="rue de l'hopital" target="rente" id="65" weight="2" />
-      <edge source="rue de l'hopital" target="service" id="66" weight="2" />
-      <edge source="la sallaz" target="?" id="67" weight="2" />
-      <edge source="la sallaz" target="agricole" id="68" weight="9" />
-      <edge source="la sallaz" target="artisanat" id="69" weight="4" />
-      <edge source="la sallaz" target="rente" id="70" weight="1" />
-      <edge source="la sallaz" target="service" id="71" weight="3" />
-      <edge source="calvaire" target="agricole" id="72" weight="3" />
-      <edge source="calvaire" target="artisanat" id="73" weight="1" />
-      <edge source="calvaire" target="construction" id="74" weight="1" />
-      <edge source="calvaire" target="rente" id="75" weight="1" />
-      <edge source="rue du pont" target="?" id="76" weight="1" />
-      <edge source="rue du pont" target="administration" id="77" weight="2" />
-      <edge source="rue du pont" target="agricole" id="78" weight="1" />
-      <edge source="rue du pont" target="artisanat" id="79" weight="17" />
-      <edge source="rue du pont" target="commerce" id="80" weight="15" />
-      <edge source="rue du pont" target="construction" id="81" weight="1" />
-      <edge source="rue du pont" target="rente" id="82" weight="7" />
-      <edge source="rue du pont" target="service" id="83" weight="14" />
-      <edge source="petit ouchy" target="agricole" id="84" weight="2" />
-      <edge source="cite derriere" target="?" id="85" weight="8" />
-      <edge source="cite derriere" target="administration" id="86" weight="10" />
-      <edge source="cite derriere" target="agricole" id="87" weight="13" />
-      <edge source="cite derriere" target="artisanat" id="88" weight="26" />
-      <edge source="cite derriere" target="commerce" id="89" weight="3" />
-      <edge source="cite derriere" target="construction" id="90" weight="30" />
-      <edge source="cite derriere" target="rente" id="91" weight="15" />
-      <edge source="cite derriere" target="service" id="92" weight="18" />
-      <edge source="petite rue" target="service" id="93" weight="3" />
-      <edge source="etraz" target="?" id="94" weight="3" />
-      <edge source="etraz" target="agricole" id="95" weight="18" />
-      <edge source="etraz" target="artisanat" id="96" weight="16" />
-      <edge source="etraz" target="commerce" id="97" weight="3" />
-      <edge source="etraz" target="construction" id="98" weight="6" />
-      <edge source="etraz" target="rente" id="99" weight="13" />
-      <edge source="etraz" target="service" id="100" weight="16" />
-      <edge source="vennes" target="agricole" id="101" weight="11" />
-      <edge source="vennes" target="construction" id="102" weight="1" />
-      <edge source="vennes" target="rente" id="103" weight="4" />
-      <edge source="epinette" target="agricole" id="104" weight="1" />
-      <edge source="epinette" target="rente" id="105" weight="1" />
-      <edge source="st laurent" target="administration" id="106" weight="3" />
-      <edge source="st laurent" target="agricole" id="107" weight="9" />
-      <edge source="st laurent" target="artisanat" id="108" weight="30" />
-      <edge source="st laurent" target="commerce" id="109" weight="12" />
-      <edge source="st laurent" target="construction" id="110" weight="18" />
-      <edge source="st laurent" target="rente" id="111" weight="10" />
-      <edge source="st laurent" target="service" id="112" weight="18" />
-      <edge source="valency" target="agricole" id="113" weight="1" />
-      <edge source="collonges" target="rente" id="114" weight="1" />
-      <edge source="rosiere" target="rente" id="115" weight="1" />
-      <edge source="toises" target="administration" id="116" weight="1" />
-      <edge source="toises" target="agricole" id="117" weight="1" />
-      <edge source="toises" target="rente" id="118" weight="1" />
-      <edge source="saugettes" target="agricole" id="119" weight="1" />
-      <edge source="saugettes" target="rente" id="120" weight="1" />
-      <edge source="cite dessous" target="administration" id="121" weight="1" />
-      <edge source="cite dessous" target="agricole" id="122" weight="9" />
-      <edge source="cite dessous" target="artisanat" id="123" weight="8" />
-      <edge source="cite dessous" target="construction" id="124" weight="6" />
-      <edge source="cite dessous" target="rente" id="125" weight="8" />
-      <edge source="cite dessous" target="service" id="126" weight="9" />
-      <edge source="mousquines" target="agricole" id="127" weight="1" />
-      <edge source="mousquines" target="rente" id="128" weight="2" />
-      <edge source="cazard" target="agricole" id="129" weight="1" />
-      <edge source="croisette haras" target="service" id="130" weight="1" />
-      <edge source="villamont maison de maitres" target="rente" id="131" weight="3" />
-      <edge source="montriond" target="rente" id="132" weight="1" />
-      <edge source="paleyres" target="agricole" id="133" weight="2" />
-      <edge source="grange-neuve" target="?" id="134" weight="2" />
-      <edge source="grange-neuve" target="agricole" id="135" weight="8" />
-      <edge source="grange-neuve" target="artisanat" id="136" weight="1" />
-      <edge source="grange-neuve" target="construction" id="137" weight="1" />
-      <edge source="grange-neuve" target="service" id="138" weight="2" />
-      <edge source="madeleine" target="?" id="139" weight="6" />
-      <edge source="madeleine" target="administration" id="140" weight="1" />
-      <edge source="madeleine" target="agricole" id="141" weight="1" />
-      <edge source="madeleine" target="artisanat" id="142" weight="9" />
-      <edge source="madeleine" target="commerce" id="143" weight="12" />
-      <edge source="madeleine" target="construction" id="144" weight="2" />
-      <edge source="madeleine" target="rente" id="145" weight="6" />
-      <edge source="madeleine" target="service" id="146" weight="12" />
-      <edge source="languedoc" target="agricole" id="147" weight="2" />
-      <edge source="petit st jean" target="administration" id="148" weight="1" />
-      <edge source="petit st jean" target="agricole" id="149" weight="4" />
-      <edge source="petit st jean" target="artisanat" id="150" weight="18" />
-      <edge source="petit st jean" target="commerce" id="151" weight="5" />
-      <edge source="petit st jean" target="construction" id="152" weight="3" />
-      <edge source="petit st jean" target="rente" id="153" weight="3" />
-      <edge source="petit st jean" target="service" id="154" weight="9" />
-      <edge source="sebeilllon" target="agricole" id="155" weight="4" />
-      <edge source="sebeilllon" target="rente" id="156" weight="2" />
-      <edge source="pepinet" target="administration" id="157" weight="1" />
-      <edge source="cour" target="agricole" id="158" weight="23" />
-      <edge source="cour" target="rente" id="159" weight="23" />
-      <edge source="cour" target="service" id="160" weight="1" />
-      <edge source="bel-air" target="agricole" id="161" weight="2" />
-      <edge source="bel-air" target="rente" id="162" weight="1" />
-      <edge source="derriere les terreaux" target="?" id="163" weight="1" />
-      <edge source="derriere les terreaux" target="agricole" id="164" weight="1" />
-      <edge source="derriere les terreaux" target="construction" id="165" weight="2" />
-      <edge source="derriere les terreaux" target="rente" id="166" weight="3" />
-      <edge source="derriere les terreaux" target="service" id="167" weight="3" />
-      <edge source="la cage " target="agricole" id="168" weight="2" />
-      <edge source="mon repos" target="rente" id="169" weight="1" />
-      <edge source="grangette" target="agricole" id="170" weight="4" />
-      <edge source="grangette" target="rente" id="171" weight="1" />
-      <edge source="grangette" target="service" id="172" weight="1" />
-      <edge source="chailly" target="agricole" id="173" weight="20" />
-      <edge source="chailly" target="artisanat" id="174" weight="6" />
-      <edge source="chailly" target="construction" id="175" weight="5" />
-      <edge source="chailly" target="rente" id="176" weight="3" />
-      <edge source="chailly" target="service" id="177" weight="1" />
-      <edge source="st etienne" target="?" id="178" weight="1" />
-      <edge source="st etienne" target="agricole" id="179" weight="2" />
-      <edge source="st etienne" target="artisanat" id="180" weight="7" />
-      <edge source="st etienne" target="construction" id="181" weight="4" />
-      <edge source="st etienne" target="rente" id="182" weight="9" />
-      <edge source="st etienne" target="service" id="183" weight="7" />
-      <edge source="verdonnet" target="agricole" id="184" weight="4" />
-      <edge source="gottettaz" target="agricole" id="185" weight="5" />
-      <edge source="trabandan" target="agricole" id="186" weight="1" />
-      <edge source="ale" target="?" id="187" weight="3" />
-      <edge source="ale" target="administration" id="188" weight="4" />
-      <edge source="ale" target="agricole" id="189" weight="58" />
-      <edge source="ale" target="artisanat" id="190" weight="28" />
-      <edge source="ale" target="commerce" id="191" weight="6" />
-      <edge source="ale" target="construction" id="192" weight="32" />
-      <edge source="ale" target="rente" id="193" weight="5" />
-      <edge source="ale" target="service" id="194" weight="18" />
-      <edge source="escaliers du marche" target="?" id="195" weight="3" />
-      <edge source="escaliers du marche" target="administration" id="196" weight="1" />
-      <edge source="escaliers du marche" target="agricole" id="197" weight="3" />
-      <edge source="escaliers du marche" target="artisanat" id="198" weight="14" />
-      <edge source="escaliers du marche" target="construction" id="199" weight="5" />
-      <edge source="escaliers du marche" target="rente" id="200" weight="3" />
-      <edge source="escaliers du marche" target="service" id="201" weight="7" />
-      <edge source="derriere les terreaux ferme de m. roguin" target="agricole" id="202" weight="1" />
-      <edge source="petit singe" target="agricole" id="203" weight="1" />
-      <edge source="petit singe" target="commerce" id="204" weight="1" />
-      <edge source="petit singe" target="rente" id="205" weight="6" />
-      <edge source="petit singe" target="service" id="206" weight="1" />
-      <edge source="vernand-dessus" target="agricole" id="207" weight="4" />
-      <edge source="vernand-dessus" target="rente" id="208" weight="3" />
-      <edge source="chalet a marin" target="agricole" id="209" weight="3" />
-      <edge source="desert" target="agricole" id="210" weight="1" />
-      <edge source="desert" target="rente" id="211" weight="1" />
-      <edge source="montoie" target="agricole" id="212" weight="3" />
-      <edge source="montoie" target="rente" id="213" weight="3" />
-      <edge source="montoie" target="service" id="214" weight="1" />
-      <edge source="rongimel" target="administration" id="215" weight="1" />
-      <edge source="rongimel" target="agricole" id="216" weight="1" />
-      <edge source="rongimel" target="rente" id="217" weight="1" />
-      <edge source="vidy" target="agricole" id="218" weight="1" />
-      <edge source="sous le signal" target="construction" id="219" weight="1" />
-      <edge source="petit chene" target="agricole" id="220" weight="2" />
-      <edge source="petit chene" target="artisanat" id="221" weight="4" />
-      <edge source="petit chene" target="commerce" id="222" weight="1" />
-      <edge source="petit chene" target="construction" id="223" weight="1" />
-      <edge source="petit chene" target="rente" id="224" weight="2" />
-      <edge source="petit chene" target="service" id="225" weight="4" />
-      <edge source="villars" target="agricole" id="226" weight="1" />
-      <edge source="villars" target="rente" id="227" weight="2" />
-      <edge source="riant-mont" target="rente" id="228" weight="1" />
-      <edge source="praz-sechaud" target="agricole" id="229" weight="2" />
-      <edge source="petite pontaise" target="rente" id="230" weight="1" />
-      <edge source="moulin de pepinet" target="agricole" id="231" weight="16" />
-      <edge source="moulin de pepinet" target="artisanat" id="232" weight="3" />
-      <edge source="moulin de pepinet" target="construction" id="233" weight="4" />
-      <edge source="moulin de pepinet" target="rente" id="234" weight="1" />
-      <edge source="moulin de pepinet" target="service" id="235" weight="3" />
-      <edge source="chauderon" target="agricole" id="236" weight="5" />
-      <edge source="chauderon" target="artisanat" id="237" weight="1" />
-      <edge source="chauderon" target="construction" id="238" weight="2" />
-      <edge source="chauderon" target="service" id="239" weight="1" />
-      <edge source="grand champ" target="agricole" id="240" weight="1" />
-      <edge source="georgette" target="agricole" id="241" weight="2" />
-      <edge source="georgette" target="rente" id="242" weight="1" />
-      <edge source="bois de vaux" target="agricole" id="243" weight="3" />
-      <edge source="bois de vaux" target="rente" id="244" weight="1" />
-      <edge source="retraite" target="agricole" id="245" weight="1" />
-      <edge source="petit clos" target="administration" id="246" weight="1" />
-      <edge source="petit clos" target="agricole" id="247" weight="3" />
-      <edge source="petit clos" target="rente" id="248" weight="1" />
-      <edge source="petit clos" target="service" id="249" weight="1" />
-      <edge source="bellevue" target="agricole" id="250" weight="2" />
-      <edge source="bellevue" target="rente" id="251" weight="1" />
-      <edge source="pra chillon" target="agricole" id="252" weight="1" />
-      <edge source="loup" target="construction" id="253" weight="3" />
-      <edge source="truiblanc" target="rente" id="254" weight="1" />
-      <edge source="singe" target="agricole" id="255" weight="3" />
-      <edge source="devin" target="agricole" id="256" weight="5" />
-      <edge source="devin" target="construction" id="257" weight="1" />
-      <edge source="devin" target="service" id="258" weight="1" />
-      <edge source="servan" target="agricole" id="259" weight="1" />
-      <edge source="servan" target="rente" id="260" weight="4" />
-      <edge source="st francois" target="agricole" id="261" weight="2" />
-      <edge source="st francois" target="artisanat" id="262" weight="24" />
-      <edge source="st francois" target="commerce" id="263" weight="17" />
-      <edge source="st francois" target="construction" id="264" weight="3" />
-      <edge source="st francois" target="rente" id="265" weight="12" />
-      <edge source="st francois" target="service" id="266" weight="8" />
-      <edge source="mont-olivet" target="agricole" id="267" weight="1" />
-      <edge source="mont-olivet" target="rente" id="268" weight="1" />
-      <edge source="mornex" target="rente" id="269" weight="1" />
-      <edge source="mercerie" target="?" id="270" weight="1" />
-      <edge source="mercerie" target="agricole" id="271" weight="7" />
-      <edge source="mercerie" target="artisanat" id="272" weight="22" />
-      <edge source="mercerie" target="commerce" id="273" weight="3" />
-      <edge source="mercerie" target="construction" id="274" weight="10" />
-      <edge source="mercerie" target="rente" id="275" weight="6" />
-      <edge source="mercerie" target="service" id="276" weight="10" />
-      <edge source="barre" target="?" id="277" weight="6" />
-      <edge source="barre" target="administration" id="278" weight="2" />
-      <edge source="barre" target="agricole" id="279" weight="32" />
-      <edge source="barre" target="artisanat" id="280" weight="14" />
-      <edge source="barre" target="commerce" id="281" weight="3" />
-      <edge source="barre" target="construction" id="282" weight="31" />
-      <edge source="barre" target="rente" id="283" weight="7" />
-      <edge source="barre" target="service" id="284" weight="18" />
-      <edge source="bergieres" target="agricole" id="285" weight="1" />
-      <edge source="bergieres" target="rente" id="286" weight="1" />
-      <edge source="petits huttins" target="rente" id="287" weight="1" />
-      <edge source="montee de st laurent" target="?" id="288" weight="1" />
-      <edge source="montee de st laurent" target="administration" id="289" weight="2" />
-      <edge source="montee de st laurent" target="agricole" id="290" weight="14" />
-      <edge source="montee de st laurent" target="artisanat" id="291" weight="23" />
-      <edge source="montee de st laurent" target="commerce" id="292" weight="8" />
-      <edge source="montee de st laurent" target="construction" id="293" weight="9" />
-      <edge source="montee de st laurent" target="rente" id="294" weight="4" />
-      <edge source="montee de st laurent" target="service" id="295" weight="15" />
-      <edge source="st pierre" target="?" id="296" weight="2" />
-      <edge source="st pierre" target="administration" id="297" weight="4" />
-      <edge source="st pierre" target="agricole" id="298" weight="7" />
-      <edge source="st pierre" target="artisanat" id="299" weight="33" />
-      <edge source="st pierre" target="commerce" id="300" weight="15" />
-      <edge source="st pierre" target="construction" id="301" weight="6" />
-      <edge source="st pierre" target="rente" id="302" weight="29" />
-      <edge source="st pierre" target="service" id="303" weight="21" />
-      <edge source="vuachere" target="agricole" id="304" weight="2" />
-      <edge source="mon regret" target="agricole" id="305" weight="1" />
-      <edge source="pont des sauge" target="agricole" id="306" weight="3" />
-      <edge source="pont des sauge" target="rente" id="307" weight="2" />
-      <edge source="rosemont" target="rente" id="308" weight="3" />
-      <edge source="place du pont" target="agricole" id="309" weight="2" />
-      <edge source="place du pont" target="artisanat" id="310" weight="5" />
-      <edge source="place du pont" target="commerce" id="311" weight="4" />
-      <edge source="place du pont" target="construction" id="312" weight="3" />
-      <edge source="place du pont" target="service" id="313" weight="2" />
-      <edge source="bois-gentil" target="construction" id="314" weight="2" />
-      <edge source="bois-gentil" target="rente" id="315" weight="3" />
-      <edge source="marterey" target="?" id="316" weight="2" />
-      <edge source="marterey" target="administration" id="317" weight="1" />
-      <edge source="marterey" target="agricole" id="318" weight="54" />
-      <edge source="marterey" target="artisanat" id="319" weight="49" />
-      <edge source="marterey" target="commerce" id="320" weight="3" />
-      <edge source="marterey" target="construction" id="321" weight="35" />
-      <edge source="marterey" target="rente" id="322" weight="19" />
-      <edge source="marterey" target="service" id="323" weight="54" />
-      <edge source="contigny" target="agricole" id="324" weight="2" />
-      <edge source="contigny" target="rente" id="325" weight="1" />
-      <edge source="craivavers" target="?" id="326" weight="1" />
-      <edge source="craivavers" target="agricole" id="327" weight="3" />
-      <edge source="craivavers" target="construction" id="328" weight="1" />
-      <edge source="chateau de vennes" target="service" id="329" weight="1" />
-      <edge source="a la tuerie ?" target="agricole" id="330" weight="1" />
-      <edge source="place st laurent" target="?" id="331" weight="1" />
-      <edge source="place st laurent" target="administration" id="332" weight="1" />
-      <edge source="place st laurent" target="rente" id="333" weight="3" />
-      <edge source="place st laurent" target="service" id="334" weight="3" />
-      <edge source="vernand" target="agricole" id="335" weight="3" />
-      <edge source="vernand" target="rente" id="336" weight="1" />
-      <edge source="palud" target="administration" id="337" weight="1" />
-      <edge source="palud" target="agricole" id="338" weight="3" />
-      <edge source="palud" target="artisanat" id="339" weight="19" />
-      <edge source="palud" target="commerce" id="340" weight="19" />
-      <edge source="palud" target="construction" id="341" weight="7" />
-      <edge source="palud" target="rente" id="342" weight="18" />
-      <edge source="palud" target="service" id="343" weight="11" />
-      <edge source="montetan" target="agricole" id="344" weight="1" />
-      <edge source="montetan" target="rente" id="345" weight="1" />
-      <edge source="bethusy" target="agricole" id="346" weight="1" />
-      <edge source="clos de bulle" target="rente" id="347" weight="1" />
-      <edge source="clos de bulle" target="service" id="348" weight="1" />
-      <edge source="violette" target="rente" id="349" weight="2" />
-      <edge source="grand chene" target="administration" id="350" weight="1" />
-      <edge source="grand chene" target="agricole" id="351" weight="1" />
-      <edge source="grand chene" target="artisanat" id="352" weight="7" />
-      <edge source="grand chene" target="commerce" id="353" weight="7" />
-      <edge source="grand chene" target="construction" id="354" weight="1" />
-      <edge source="grand chene" target="rente" id="355" weight="12" />
-      <edge source="grand chene" target="service" id="356" weight="10" />
-      <edge source="la berallaz" target="agricole" id="357" weight="5" />
-      <edge source="malley" target="agricole" id="358" weight="1" />
-      <edge source="malley" target="rente" id="359" weight="1" />
-      <edge source="bourdonnette" target="agricole" id="360" weight="1" />
-      <edge source="bourdonnette" target="rente" id="361" weight="1" />
-      <edge source="chalet de vernand" target="agricole" id="362" weight="2" />
-      <edge source="rasude" target="commerce" id="363" weight="1" />
-      <edge source="rasude" target="rente" id="364" weight="4" />
-      <edge source="cite devant" target="?" id="365" weight="4" />
-      <edge source="cite devant" target="administration" id="366" weight="7" />
-      <edge source="cite devant" target="agricole" id="367" weight="9" />
-      <edge source="cite devant" target="artisanat" id="368" weight="20" />
-      <edge source="cite devant" target="commerce" id="369" weight="3" />
-      <edge source="cite devant" target="construction" id="370" weight="5" />
-      <edge source="cite devant" target="rente" id="371" weight="24" />
-      <edge source="cite devant" target="service" id="372" weight="17" />
-      <edge source="montheron" target="agricole" id="373" weight="5" />
-      <edge source="montheron" target="artisanat" id="374" weight="1" />
-      <edge source="grey" target="rente" id="375" weight="1" />
-      <edge source="valentin" target="agricole" id="376" weight="1" />
-      <edge source="valentin" target="rente" id="377" weight="2" />
-      <edge source="maupas" target="agricole" id="378" weight="7" />
-      <edge source="maupas" target="artisanat" id="379" weight="1" />
-      <edge source="maupas" target="commerce" id="380" weight="1" />
-      <edge source="maupas" target="construction" id="381" weight="2" />
-      <edge source="maupas" target="rente" id="382" weight="4" />
-      <edge source="maupas" target="service" id="383" weight="2" />
-      <edge source="montee st francois" target="artisanat" id="384" weight="6" />
-      <edge source="montee st francois" target="commerce" id="385" weight="6" />
-      <edge source="montee st francois" target="rente" id="386" weight="4" />
-      <edge source="montee st francois" target="service" id="387" weight="3" />
-      <edge source="chalet aux enfants" target="agricole" id="388" weight="1" />
-      <edge source="petit mon repos" target="rente" id="389" weight="1" />
-      <edge source="prelaz" target="service" id="390" weight="1" />
-      <edge source="clos mont" target="artisanat" id="391" weight="2" />
-      <edge source="ecole de charite" target="service" id="392" weight="4" />
-      <edge source="villard" target="agricole" id="393" weight="2" />
-      <edge source="villard" target="rente" id="394" weight="2" />
-      <edge source="jordils" target="rente" id="395" weight="2" />
-      <edge source="rovereaz" target="agricole" id="396" weight="1" />
-      <edge source="rovereaz" target="service" id="397" weight="1" />
-      <edge source="vernand-dessous" target="agricole" id="398" weight="3" />
-      <edge source="vernand-dessous" target="rente" id="399" weight="1" />
-      <edge source="vernand-dessous" target="service" id="400" weight="1" />
-      <edge source="riponne" target="artisanat" id="401" weight="1" />
-      <edge source="riponne" target="construction" id="402" weight="1" />
-      <edge source="riponne" target="service" id="403" weight="2" />
-      <edge source="cheneau de bourg" target="agricole" id="404" weight="34" />
-      <edge source="cheneau de bourg" target="artisanat" id="405" weight="46" />
-      <edge source="cheneau de bourg" target="commerce" id="406" weight="2" />
-      <edge source="cheneau de bourg" target="construction" id="407" weight="22" />
-      <edge source="cheneau de bourg" target="rente" id="408" weight="7" />
-      <edge source="cheneau de bourg" target="service" id="409" weight="23" />
-      <edge source="bugnon" target="construction" id="410" weight="4" />
-      <edge source="pres de ville" target="rente" id="411" weight="4" />
-      <edge source="la rappaz" target="?" id="412" weight="1" />
-      <edge source="la rappaz" target="agricole" id="413" weight="1" />
-      <edge source="la rappaz" target="service" id="414" weight="1" />
-      <edge source="villamont" target="agricole" id="415" weight="1" />
-      <edge source="villamont" target="artisanat" id="416" weight="1" />
-      <edge source="beaulieu" target="agricole" id="417" weight="1" />
-      <edge source="beaulieu" target="rente" id="418" weight="1" />
-      <edge source="beaulieu" target="service" id="419" weight="1" />
-      <edge source="chavannes" target="agricole" id="420" weight="8" />
-      <edge source="chavannes" target="artisanat" id="421" weight="1" />
-      <edge source="maison des postes" target="service" id="422" weight="1" />
-      <edge source="chaucrau" target="administration" id="423" weight="3" />
-      <edge source="chaucrau" target="agricole" id="424" weight="18" />
-      <edge source="chaucrau" target="artisanat" id="425" weight="20" />
-      <edge source="chaucrau" target="commerce" id="426" weight="3" />
-      <edge source="chaucrau" target="construction" id="427" weight="24" />
-      <edge source="chaucrau" target="rente" id="428" weight="1" />
-      <edge source="chaucrau" target="service" id="429" weight="16" />
-      <edge source="montagibert" target="agricole" id="430" weight="3" />
-      <edge source="montagibert" target="rente" id="431" weight="1" />
+      <edge source="vidy" target="agricole" id="0" weight="1" />
+      <edge source="prelaz" target="service" id="1" weight="1" />
+      <edge source="montriond" target="rente" id="2" weight="1" />
+      <edge source="rasude" target="commerce" id="3" weight="1" />
+      <edge source="rasude" target="rente" id="4" weight="4" />
+      <edge source="montetan" target="agricole" id="5" weight="1" />
+      <edge source="montetan" target="rente" id="6" weight="1" />
+      <edge source="bugnon" target="construction" id="7" weight="4" />
+      <edge source="petit clos" target="administration" id="8" weight="1" />
+      <edge source="petit clos" target="agricole" id="9" weight="3" />
+      <edge source="petit clos" target="rente" id="10" weight="2" />
+      <edge source="petit clos" target="service" id="11" weight="1" />
+      <edge source="petit singe" target="agricole" id="12" weight="1" />
+      <edge source="petit singe" target="commerce" id="13" weight="1" />
+      <edge source="petit singe" target="rente" id="14" weight="9" />
+      <edge source="petit singe" target="service" id="15" weight="1" />
+      <edge source="place st francois" target="administration" id="16" weight="2" />
+      <edge source="place st francois" target="artisanat" id="17" weight="3" />
+      <edge source="place st francois" target="commerce" id="18" weight="6" />
+      <edge source="place st francois" target="rente" id="19" weight="20" />
+      <edge source="place st francois" target="service" id="20" weight="10" />
+      <edge source="praz-sechaud" target="agricole" id="21" weight="2" />
+      <edge source="grand chene" target="administration" id="22" weight="1" />
+      <edge source="grand chene" target="artisanat" id="23" weight="7" />
+      <edge source="grand chene" target="commerce" id="24" weight="7" />
+      <edge source="grand chene" target="construction" id="25" weight="2" />
+      <edge source="grand chene" target="rente" id="26" weight="17" />
+      <edge source="grand chene" target="service" id="27" weight="9" />
+      <edge source="madeleine" target="administration" id="28" weight="1" />
+      <edge source="madeleine" target="agricole" id="29" weight="1" />
+      <edge source="madeleine" target="artisanat" id="30" weight="10" />
+      <edge source="madeleine" target="commerce" id="31" weight="12" />
+      <edge source="madeleine" target="construction" id="32" weight="1" />
+      <edge source="madeleine" target="rente" id="33" weight="7" />
+      <edge source="madeleine" target="service" id="34" weight="11" />
+      <edge source="pont des sauge" target="agricole" id="35" weight="3" />
+      <edge source="pont des sauge" target="rente" id="36" weight="2" />
+      <edge source="malley" target="agricole" id="37" weight="1" />
+      <edge source="malley" target="rente" id="38" weight="1" />
+      <edge source="la rappaz" target="agricole" id="39" weight="1" />
+      <edge source="la rappaz" target="service" id="40" weight="1" />
+      <edge source="riponne" target="artisanat" id="41" weight="1" />
+      <edge source="riponne" target="service" id="42" weight="2" />
+      <edge source="truiblanc" target="rente" id="43" weight="1" />
+      <edge source="vernand-dessous" target="agricole" id="44" weight="3" />
+      <edge source="vernand-dessous" target="rente" id="45" weight="1" />
+      <edge source="vernand-dessous" target="service" id="46" weight="1" />
+      <edge source="val-d'angrogne" target="agricole" id="47" weight="3" />
+      <edge source="val-d'angrogne" target="artisanat" id="48" weight="1" />
+      <edge source="denatou" target="agricole" id="49" weight="2" />
+      <edge source="st etienne" target="agricole" id="50" weight="2" />
+      <edge source="st etienne" target="artisanat" id="51" weight="6" />
+      <edge source="st etienne" target="construction" id="52" weight="4" />
+      <edge source="st etienne" target="rente" id="53" weight="11" />
+      <edge source="st etienne" target="service" id="54" weight="6" />
+      <edge source="ouchy" target="agricole" id="55" weight="38" />
+      <edge source="ouchy" target="artisanat" id="56" weight="12" />
+      <edge source="ouchy" target="commerce" id="57" weight="6" />
+      <edge source="ouchy" target="rente" id="58" weight="36" />
+      <edge source="ouchy" target="service" id="59" weight="17" />
+      <edge source="bethusy" target="agricole" id="60" weight="1" />
+      <edge source="palud" target="administration" id="61" weight="1" />
+      <edge source="palud" target="agricole" id="62" weight="2" />
+      <edge source="palud" target="artisanat" id="63" weight="18" />
+      <edge source="palud" target="commerce" id="64" weight="19" />
+      <edge source="palud" target="construction" id="65" weight="4" />
+      <edge source="palud" target="rente" id="66" weight="23" />
+      <edge source="palud" target="service" id="67" weight="11" />
+      <edge source="chabliere" target="agricole" id="68" weight="3" />
+      <edge source="chabliere" target="rente" id="69" weight="1" />
+      <edge source="petit chene" target="agricole" id="70" weight="2" />
+      <edge source="petit chene" target="artisanat" id="71" weight="4" />
+      <edge source="petit chene" target="commerce" id="72" weight="1" />
+      <edge source="petit chene" target="rente" id="73" weight="2" />
+      <edge source="petit chene" target="service" id="74" weight="3" />
+      <edge source="petits huttins" target="rente" id="75" weight="1" />
+      <edge source="montchoisi" target="rente" id="76" weight="1" />
+      <edge source="epinette" target="agricole" id="77" weight="1" />
+      <edge source="epinette" target="rente" id="78" weight="1" />
+      <edge source="loup" target="construction" id="79" weight="3" />
+      <edge source="chavannes" target="agricole" id="80" weight="8" />
+      <edge source="chavannes" target="artisanat" id="81" weight="1" />
+      <edge source="rue du pre" target="agricole" id="82" weight="25" />
+      <edge source="rue du pre" target="artisanat" id="83" weight="67" />
+      <edge source="rue du pre" target="commerce" id="84" weight="20" />
+      <edge source="rue du pre" target="construction" id="85" weight="22" />
+      <edge source="rue du pre" target="rente" id="86" weight="11" />
+      <edge source="rue du pre" target="service" id="87" weight="32" />
+      <edge source="retraite" target="agricole" id="88" weight="1" />
+      <edge source="mon repos" target="rente" id="89" weight="2" />
+      <edge source="les saugealles" target="agricole" id="90" weight="1" />
+      <edge source="montagibert" target="agricole" id="91" weight="3" />
+      <edge source="montagibert" target="rente" id="92" weight="2" />
+      <edge source="violette" target="rente" id="93" weight="2" />
+      <edge source="beau-soleil" target="agricole" id="94" weight="1" />
+      <edge source="derriere les terreaux ferme de m. roguin" target="agricole" id="95" weight="1" />
+      <edge source="maison des postes" target="service" id="96" weight="1" />
+      <edge source="petite pontaise" target="rente" id="97" weight="1" />
+      <edge source="vernand" target="agricole" id="98" weight="3" />
+      <edge source="vernand" target="rente" id="99" weight="1" />
+      <edge source="pra chillon" target="agricole" id="100" weight="1" />
+      <edge source="rue d'etraz" target="agricole" id="101" weight="16" />
+      <edge source="rue d'etraz" target="artisanat" id="102" weight="19" />
+      <edge source="rue d'etraz" target="commerce" id="103" weight="3" />
+      <edge source="rue d'etraz" target="construction" id="104" weight="5" />
+      <edge source="rue d'etraz" target="rente" id="105" weight="20" />
+      <edge source="rue d'etraz" target="service" id="106" weight="13" />
+      <edge source="mercerie" target="agricole" id="107" weight="6" />
+      <edge source="mercerie" target="artisanat" id="108" weight="23" />
+      <edge source="mercerie" target="commerce" id="109" weight="3" />
+      <edge source="mercerie" target="construction" id="110" weight="7" />
+      <edge source="mercerie" target="rente" id="111" weight="5" />
+      <edge source="mercerie" target="service" id="112" weight="9" />
+      <edge source="sebeilllon" target="agricole" id="113" weight="4" />
+      <edge source="sebeilllon" target="rente" id="114" weight="2" />
+      <edge source="villamont" target="agricole" id="115" weight="1" />
+      <edge source="villamont" target="artisanat" id="116" weight="1" />
+      <edge source="valentin" target="agricole" id="117" weight="1" />
+      <edge source="valentin" target="rente" id="118" weight="3" />
+      <edge source="vernand-dessus" target="agricole" id="119" weight="4" />
+      <edge source="vernand-dessus" target="rente" id="120" weight="3" />
+      <edge source="boston" target="rente" id="121" weight="2" />
+      <edge source="boston" target="service" id="122" weight="1" />
+      <edge source="maupas" target="agricole" id="123" weight="7" />
+      <edge source="maupas" target="artisanat" id="124" weight="1" />
+      <edge source="maupas" target="commerce" id="125" weight="1" />
+      <edge source="maupas" target="construction" id="126" weight="2" />
+      <edge source="maupas" target="rente" id="127" weight="7" />
+      <edge source="maupas" target="service" id="128" weight="1" />
+      <edge source="croix de rive" target="commerce" id="129" weight="1" />
+      <edge source="croix de rive" target="rente" id="130" weight="3" />
+      <edge source="vennes" target="agricole" id="131" weight="11" />
+      <edge source="vennes" target="construction" id="132" weight="1" />
+      <edge source="vennes" target="rente" id="133" weight="5" />
+      <edge source="montee de st laurent" target="administration" id="134" weight="2" />
+      <edge source="montee de st laurent" target="agricole" id="135" weight="13" />
+      <edge source="montee de st laurent" target="artisanat" id="136" weight="23" />
+      <edge source="montee de st laurent" target="commerce" id="137" weight="8" />
+      <edge source="montee de st laurent" target="construction" id="138" weight="6" />
+      <edge source="montee de st laurent" target="rente" id="139" weight="5" />
+      <edge source="montee de st laurent" target="service" id="140" weight="13" />
+      <edge source="petite rue" target="service" id="141" weight="3" />
+      <edge source="grangette" target="agricole" id="142" weight="4" />
+      <edge source="grangette" target="rente" id="143" weight="1" />
+      <edge source="grangette" target="service" id="144" weight="1" />
+      <edge source="paleyres" target="agricole" id="145" weight="2" />
+      <edge source="sous le signal" target="construction" id="146" weight="1" />
+      <edge source="rue de st pierre" target="administration" id="147" weight="4" />
+      <edge source="rue de st pierre" target="agricole" id="148" weight="4" />
+      <edge source="rue de st pierre" target="artisanat" id="149" weight="34" />
+      <edge source="rue de st pierre" target="commerce" id="150" weight="15" />
+      <edge source="rue de st pierre" target="construction" id="151" weight="5" />
+      <edge source="rue de st pierre" target="rente" id="152" weight="41" />
+      <edge source="rue de st pierre" target="service" id="153" weight="20" />
+      <edge source="grand champ" target="agricole" id="154" weight="1" />
+      <edge source="toises" target="administration" id="155" weight="1" />
+      <edge source="toises" target="agricole" id="156" weight="1" />
+      <edge source="toises" target="rente" id="157" weight="1" />
+      <edge source="collonges" target="rente" id="158" weight="1" />
+      <edge source="bourdonnette" target="agricole" id="159" weight="1" />
+      <edge source="bourdonnette" target="rente" id="160" weight="1" />
+      <edge source="verdonnet" target="agricole" id="161" weight="4" />
+      <edge source="chauderon" target="agricole" id="162" weight="5" />
+      <edge source="chauderon" target="artisanat" id="163" weight="1" />
+      <edge source="chauderon" target="construction" id="164" weight="1" />
+      <edge source="chauderon" target="service" id="165" weight="1" />
+      <edge source="vuachere" target="agricole" id="166" weight="2" />
+      <edge source="bois de vaux" target="agricole" id="167" weight="3" />
+      <edge source="bois de vaux" target="rente" id="168" weight="2" />
+      <edge source="riant-mont" target="rente" id="169" weight="1" />
+      <edge source="blecherette" target="agricole" id="170" weight="1" />
+      <edge source="rosemont" target="rente" id="171" weight="4" />
+      <edge source="place st laurent" target="administration" id="172" weight="1" />
+      <edge source="place st laurent" target="artisanat" id="173" weight="1" />
+      <edge source="place st laurent" target="rente" id="174" weight="4" />
+      <edge source="place st laurent" target="service" id="175" weight="3" />
+      <edge source="servan" target="agricole" id="176" weight="1" />
+      <edge source="servan" target="rente" id="177" weight="4" />
+      <edge source="montheron" target="agricole" id="178" weight="5" />
+      <edge source="montheron" target="artisanat" id="179" weight="1" />
+      <edge source="chemin de georgette" target="agricole" id="180" weight="2" />
+      <edge source="chemin de georgette" target="rente" id="181" weight="2" />
+      <edge source="pepinet" target="administration" id="182" weight="1" />
+      <edge source="cite dessous" target="administration" id="183" weight="1" />
+      <edge source="cite dessous" target="agricole" id="184" weight="9" />
+      <edge source="cite dessous" target="artisanat" id="185" weight="6" />
+      <edge source="cite dessous" target="construction" id="186" weight="5" />
+      <edge source="cite dessous" target="rente" id="187" weight="8" />
+      <edge source="cite dessous" target="service" id="188" weight="8" />
+      <edge source="chalet aux enfants" target="agricole" id="189" weight="1" />
+      <edge source="villard" target="agricole" id="190" weight="2" />
+      <edge source="villard" target="rente" id="191" weight="3" />
+      <edge source="jordils" target="rente" id="192" weight="2" />
+      <edge source="rovereaz" target="agricole" id="193" weight="1" />
+      <edge source="rovereaz" target="service" id="194" weight="1" />
+      <edge source="chalet a marin" target="agricole" id="195" weight="3" />
+      <edge source="mont-olivet" target="agricole" id="196" weight="1" />
+      <edge source="mont-olivet" target="rente" id="197" weight="1" />
+      <edge source="rosiere" target="rente" id="198" weight="2" />
+      <edge source="montoie" target="agricole" id="199" weight="3" />
+      <edge source="montoie" target="rente" id="200" weight="3" />
+      <edge source="montoie" target="service" id="201" weight="1" />
+      <edge source="place de st francois" target="agricole" id="202" weight="2" />
+      <edge source="place de st francois" target="artisanat" id="203" weight="24" />
+      <edge source="place de st francois" target="commerce" id="204" weight="17" />
+      <edge source="place de st francois" target="construction" id="205" weight="3" />
+      <edge source="place de st francois" target="rente" id="206" weight="14" />
+      <edge source="place de st francois" target="service" id="207" weight="7" />
+      <edge source="bellevue" target="agricole" id="208" weight="2" />
+      <edge source="bellevue" target="rente" id="209" weight="2" />
+      <edge source="singe" target="agricole" id="210" weight="3" />
+      <edge source="chalet de vernand" target="agricole" id="211" weight="2" />
+      <edge source="rue de bourg" target="administration" id="212" weight="3" />
+      <edge source="rue de bourg" target="agricole" id="213" weight="3" />
+      <edge source="rue de bourg" target="artisanat" id="214" weight="27" />
+      <edge source="rue de bourg" target="commerce" id="215" weight="24" />
+      <edge source="rue de bourg" target="construction" id="216" weight="4" />
+      <edge source="rue de bourg" target="rente" id="217" weight="47" />
+      <edge source="rue de bourg" target="service" id="218" weight="27" />
+      <edge source="languedoc" target="agricole" id="219" weight="2" />
+      <edge source="rue de chaucrau" target="administration" id="220" weight="3" />
+      <edge source="rue de chaucrau" target="agricole" id="221" weight="18" />
+      <edge source="rue de chaucrau" target="artisanat" id="222" weight="16" />
+      <edge source="rue de chaucrau" target="commerce" id="223" weight="3" />
+      <edge source="rue de chaucrau" target="construction" id="224" weight="19" />
+      <edge source="rue de chaucrau" target="rente" id="225" weight="2" />
+      <edge source="rue de chaucrau" target="service" id="226" weight="14" />
+      <edge source="grotte" target="agricole" id="227" weight="2" />
+      <edge source="grotte" target="artisanat" id="228" weight="1" />
+      <edge source="grotte" target="commerce" id="229" weight="2" />
+      <edge source="grotte" target="rente" id="230" weight="10" />
+      <edge source="grotte" target="service" id="231" weight="1" />
+      <edge source="pontaise" target="administration" id="232" weight="1" />
+      <edge source="pontaise" target="rente" id="233" weight="3" />
+      <edge source="bois-gentil" target="construction" id="234" weight="2" />
+      <edge source="bois-gentil" target="rente" id="235" weight="3" />
+      <edge source="saugettes" target="agricole" id="236" weight="1" />
+      <edge source="saugettes" target="rente" id="237" weight="1" />
+      <edge source="petit ouchy" target="agricole" id="238" weight="2" />
+      <edge source="grand st jean" target="administration" id="239" weight="8" />
+      <edge source="grand st jean" target="agricole" id="240" weight="13" />
+      <edge source="grand st jean" target="artisanat" id="241" weight="76" />
+      <edge source="grand st jean" target="commerce" id="242" weight="17" />
+      <edge source="grand st jean" target="construction" id="243" weight="16" />
+      <edge source="grand st jean" target="rente" id="244" weight="42" />
+      <edge source="grand st jean" target="service" id="245" weight="32" />
+      <edge source="escaliers du marche" target="administration" id="246" weight="1" />
+      <edge source="escaliers du marche" target="agricole" id="247" weight="3" />
+      <edge source="escaliers du marche" target="artisanat" id="248" weight="14" />
+      <edge source="escaliers du marche" target="construction" id="249" weight="2" />
+      <edge source="escaliers du marche" target="rente" id="250" weight="4" />
+      <edge source="escaliers du marche" target="service" id="251" weight="6" />
+      <edge source="croix rouge" target="agricole" id="252" weight="4" />
+      <edge source="croix rouge" target="rente" id="253" weight="1" />
+      <edge source="croix rouge" target="service" id="254" weight="1" />
+      <edge source="la cage " target="agricole" id="255" weight="2" />
+      <edge source="croisette haras" target="service" id="256" weight="1" />
+      <edge source="trabandan" target="agricole" id="257" weight="1" />
+      <edge source="grey" target="rente" id="258" weight="1" />
+      <edge source="cazard" target="agricole" id="259" weight="1" />
+      <edge source="mousquines" target="agricole" id="260" weight="1" />
+      <edge source="mousquines" target="rente" id="261" weight="4" />
+      <edge source="rue de l'ale" target="administration" id="262" weight="4" />
+      <edge source="rue de l'ale" target="agricole" id="263" weight="56" />
+      <edge source="rue de l'ale" target="artisanat" id="264" weight="27" />
+      <edge source="rue de l'ale" target="commerce" id="265" weight="6" />
+      <edge source="rue de l'ale" target="construction" id="266" weight="29" />
+      <edge source="rue de l'ale" target="rente" id="267" weight="5" />
+      <edge source="rue de l'ale" target="service" id="268" weight="13" />
+      <edge source="petit st jean" target="administration" id="269" weight="1" />
+      <edge source="petit st jean" target="agricole" id="270" weight="4" />
+      <edge source="petit st jean" target="artisanat" id="271" weight="18" />
+      <edge source="petit st jean" target="commerce" id="272" weight="5" />
+      <edge source="petit st jean" target="construction" id="273" weight="1" />
+      <edge source="petit st jean" target="rente" id="274" weight="5" />
+      <edge source="petit st jean" target="service" id="275" weight="7" />
+      <edge source="moulin de pepinet" target="agricole" id="276" weight="16" />
+      <edge source="moulin de pepinet" target="artisanat" id="277" weight="3" />
+      <edge source="moulin de pepinet" target="construction" id="278" weight="2" />
+      <edge source="moulin de pepinet" target="rente" id="279" weight="1" />
+      <edge source="moulin de pepinet" target="service" id="280" weight="3" />
+      <edge source="villars" target="agricole" id="281" weight="1" />
+      <edge source="villars" target="rente" id="282" weight="2" />
+      <edge source="la sallaz" target="agricole" id="283" weight="9" />
+      <edge source="la sallaz" target="artisanat" id="284" weight="4" />
+      <edge source="la sallaz" target="rente" id="285" weight="1" />
+      <edge source="la sallaz" target="service" id="286" weight="2" />
+      <edge source="rongimel" target="administration" id="287" weight="1" />
+      <edge source="rongimel" target="agricole" id="288" weight="1" />
+      <edge source="rongimel" target="rente" id="289" weight="1" />
+      <edge source="place de st laurent" target="administration" id="290" weight="3" />
+      <edge source="place de st laurent" target="agricole" id="291" weight="8" />
+      <edge source="place de st laurent" target="artisanat" id="292" weight="29" />
+      <edge source="place de st laurent" target="commerce" id="293" weight="12" />
+      <edge source="place de st laurent" target="construction" id="294" weight="9" />
+      <edge source="place de st laurent" target="rente" id="295" weight="15" />
+      <edge source="place de st laurent" target="service" id="296" weight="18" />
+      <edge source="bergieres" target="agricole" id="297" weight="1" />
+      <edge source="bergieres" target="rente" id="298" weight="1" />
+      <edge source="clos de bulle" target="rente" id="299" weight="2" />
+      <edge source="clos de bulle" target="service" id="300" weight="1" />
+      <edge source="mon regret" target="agricole" id="301" weight="1" />
+      <edge source="rue de l'hopital" target="agricole" id="302" weight="5" />
+      <edge source="rue de l'hopital" target="artisanat" id="303" weight="7" />
+      <edge source="rue de l'hopital" target="construction" id="304" weight="5" />
+      <edge source="rue de l'hopital" target="rente" id="305" weight="2" />
+      <edge source="rue de l'hopital" target="service" id="306" weight="1" />
+      <edge source="calvaire" target="agricole" id="307" weight="3" />
+      <edge source="calvaire" target="artisanat" id="308" weight="1" />
+      <edge source="calvaire" target="construction" id="309" weight="1" />
+      <edge source="calvaire" target="rente" id="310" weight="1" />
+      <edge source="mornex" target="rente" id="311" weight="1" />
+      <edge source="craivavers" target="agricole" id="312" weight="3" />
+      <edge source="craivavers" target="construction" id="313" weight="1" />
+      <edge source="la berallaz" target="agricole" id="314" weight="5" />
+      <edge source="cite derriere" target="administration" id="315" weight="10" />
+      <edge source="cite derriere" target="agricole" id="316" weight="13" />
+      <edge source="cite derriere" target="artisanat" id="317" weight="23" />
+      <edge source="cite derriere" target="commerce" id="318" weight="3" />
+      <edge source="cite derriere" target="construction" id="319" weight="19" />
+      <edge source="cite derriere" target="rente" id="320" weight="16" />
+      <edge source="cite derriere" target="service" id="321" weight="14" />
+      <edge source="derriere les terreaux" target="agricole" id="322" weight="1" />
+      <edge source="derriere les terreaux" target="construction" id="323" weight="2" />
+      <edge source="derriere les terreaux" target="rente" id="324" weight="5" />
+      <edge source="derriere les terreaux" target="service" id="325" weight="3" />
+      <edge source="barre" target="administration" id="326" weight="2" />
+      <edge source="barre" target="agricole" id="327" weight="32" />
+      <edge source="barre" target="artisanat" id="328" weight="14" />
+      <edge source="barre" target="commerce" id="329" weight="3" />
+      <edge source="barre" target="construction" id="330" weight="24" />
+      <edge source="barre" target="rente" id="331" weight="9" />
+      <edge source="barre" target="service" id="332" weight="16" />
+      <edge source="chateau de vennes" target="service" id="333" weight="1" />
+      <edge source="place du pont" target="agricole" id="334" weight="2" />
+      <edge source="place du pont" target="artisanat" id="335" weight="5" />
+      <edge source="place du pont" target="commerce" id="336" weight="4" />
+      <edge source="place du pont" target="construction" id="337" weight="3" />
+      <edge source="place du pont" target="service" id="338" weight="2" />
+      <edge source="villamont maison de maitres" target="rente" id="339" weight="6" />
+      <edge source="cheneau de bourg" target="agricole" id="340" weight="31" />
+      <edge source="cheneau de bourg" target="artisanat" id="341" weight="46" />
+      <edge source="cheneau de bourg" target="commerce" id="342" weight="2" />
+      <edge source="cheneau de bourg" target="construction" id="343" weight="18" />
+      <edge source="cheneau de bourg" target="rente" id="344" weight="9" />
+      <edge source="cheneau de bourg" target="service" id="345" weight="18" />
+      <edge source="montee st francois" target="artisanat" id="346" weight="6" />
+      <edge source="montee st francois" target="commerce" id="347" weight="6" />
+      <edge source="montee st francois" target="rente" id="348" weight="5" />
+      <edge source="montee st francois" target="service" id="349" weight="3" />
+      <edge source="cite devant" target="administration" id="350" weight="7" />
+      <edge source="cite devant" target="agricole" id="351" weight="9" />
+      <edge source="cite devant" target="artisanat" id="352" weight="22" />
+      <edge source="cite devant" target="commerce" id="353" weight="3" />
+      <edge source="cite devant" target="construction" id="354" weight="4" />
+      <edge source="cite devant" target="rente" id="355" weight="27" />
+      <edge source="cite devant" target="service" id="356" weight="16" />
+      <edge source="ecole de charite" target="service" id="357" weight="4" />
+      <edge source="gottettaz" target="agricole" id="358" weight="5" />
+      <edge source="desert" target="agricole" id="359" weight="1" />
+      <edge source="desert" target="rente" id="360" weight="1" />
+      <edge source="devin" target="agricole" id="361" weight="5" />
+      <edge source="devin" target="construction" id="362" weight="1" />
+      <edge source="devin" target="service" id="363" weight="1" />
+      <edge source="bel-air" target="agricole" id="364" weight="2" />
+      <edge source="bel-air" target="rente" id="365" weight="1" />
+      <edge source="cour" target="agricole" id="366" weight="23" />
+      <edge source="cour" target="rente" id="367" weight="26" />
+      <edge source="cour" target="service" id="368" weight="1" />
+      <edge source="valency" target="agricole" id="369" weight="1" />
+      <edge source="taulau?" target="rente" id="370" weight="7" />
+      <edge source="pres de ville" target="rente" id="371" weight="4" />
+      <edge source="grange-neuve" target="agricole" id="372" weight="8" />
+      <edge source="grange-neuve" target="artisanat" id="373" weight="1" />
+      <edge source="grange-neuve" target="construction" id="374" weight="1" />
+      <edge source="grange-neuve" target="service" id="375" weight="2" />
+      <edge source="petit mon repos" target="rente" id="376" weight="1" />
+      <edge source="chailly" target="agricole" id="377" weight="20" />
+      <edge source="chailly" target="artisanat" id="378" weight="6" />
+      <edge source="chailly" target="construction" id="379" weight="4" />
+      <edge source="chailly" target="rente" id="380" weight="3" />
+      <edge source="chailly" target="service" id="381" weight="1" />
+      <edge source="contigny" target="agricole" id="382" weight="2" />
+      <edge source="contigny" target="rente" id="383" weight="1" />
+      <edge source="montbenon" target="rente" id="384" weight="8" />
+      <edge source="montbenon" target="service" id="385" weight="1" />
+      <edge source="beaulieu" target="agricole" id="386" weight="1" />
+      <edge source="beaulieu" target="rente" id="387" weight="1" />
+      <edge source="beaulieu" target="service" id="388" weight="1" />
+      <edge source="clos mont" target="artisanat" id="389" weight="2" />
+      <edge source="rue du pont" target="administration" id="390" weight="2" />
+      <edge source="rue du pont" target="agricole" id="391" weight="1" />
+      <edge source="rue du pont" target="artisanat" id="392" weight="17" />
+      <edge source="rue du pont" target="commerce" id="393" weight="15" />
+      <edge source="rue du pont" target="construction" id="394" weight="1" />
+      <edge source="rue du pont" target="rente" id="395" weight="9" />
+      <edge source="rue du pont" target="service" id="396" weight="14" />
+      <edge source="a la tuerie ?" target="agricole" id="397" weight="1" />
+      <edge source="marterey" target="administration" id="398" weight="1" />
+      <edge source="marterey" target="agricole" id="399" weight="54" />
+      <edge source="marterey" target="artisanat" id="400" weight="49" />
+      <edge source="marterey" target="commerce" id="401" weight="3" />
+      <edge source="marterey" target="construction" id="402" weight="28" />
+      <edge source="marterey" target="rente" id="403" weight="27" />
+      <edge source="marterey" target="service" id="404" weight="51" />
     </edges>
   </graph>
 </gexf>
