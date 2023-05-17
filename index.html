@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Histoire Urbaine Digitale</title>
     
-    <script type="module" crossorigin src="./assets/main-b87dcfb3.js"></script>
-    <link rel="stylesheet" href="./assets/index-90e1ee35.css">
+    <script type="module" crossorigin src="./assets/main-83a3c269.js"></script>
+    <link rel="stylesheet" href="./assets/index-4833f82b.css">
   </head>
   <body>
     <div class="app">
@@ -56,7 +56,7 @@
       <div id="p1-to-p2-container" class="container"></div>
 
       <div id="p2-container" class="container container-padding off-white-bg">
-        <div class="flex-row flex-100 flex-center">
+        <div class="flex-row flex-100">
           <div class="flex-col flex-60 height-100 overflow-auto">
             <div class="flex-col flex-50 overflow-auto">
               <div class="flex-col text-padding-10">
@@ -81,7 +81,7 @@
               <p id="circle-packing-title" class="large-text large-font-weight">
               </p>
               <p id="circle-packing-text" class="medium-text">
-                Cliquez sur les cercles pour explorer les rues de chaque division.
+                Cliquez sur les différentes sections du diagramme pour explorer ces relations en détail. Vous découvrirez comment la diversité des origines et des professions a contribué à la richesse et à la complexité de Lausanne au XIXème siècle, et comment ces facteurs ont joué un rôle déterminant dans la formation des communautés urbaines.
               </p>
             </div>
           </div>
@@ -128,25 +128,25 @@
         <div class="flex-row flex-100 flex-center">
           <div class="flex-col text-padding-20 overflow-auto">
             <div class="flex-col">
-              <p class="beige-text large-text large-font-weight">
+              <p class="light-text large-text large-font-weight">
                 Division Découverte
               </p>
             </div>
 
             <div class="flex-col">
-              <p class="beige-text medium-text">
+              <p class="light-text medium-text">
                 Pour une immersion encore plus poussée dans le Lausanne du XIX<sup>ème</sup> siècle, découvrez notre carte interactive. Chaque division de la ville est délimitée et peut être colorée pour créer une Carte choroplèthe, révélant les concentrations de différentes origines et professions.
               </p>
             </div>
 
             <div class="flex-col">
-              <p class="beige-text medium-text">
+              <p class="light-text medium-text">
                 Cette carte offre une vue d'ensemble saisissante de la composition socio-économique de chaque division, illustrant en un coup d'œil les disparités et les similitudes entre elles. Mais nous ne nous arrêtons pas là.
               </p>
             </div>
 
             <div class="flex-col">
-              <p class="beige-text medium-text">
+              <p class="light-text medium-text">
                 En cliquant sur une division, un graphique à barres apparaît, détaillant la répartition des métiers et des origines au sein de cette division. Il s'agit d'un outil précieux pour comprendre comment les différentes professions et origines se répartissaient dans la ville. Explorez, cliquez, et plongez-vous dans le fascinant tissu social du Lausanne du XIX<sup>ème</sup> siècle.
               </p>
             </div>
@@ -164,25 +164,25 @@
         <div class="flex-row flex-100 flex-center">
           <div class="flex-col text-padding-20 overflow-auto">
             <div class="flex-col">
-              <p class="beige-text large-text large-font-weight">
+              <p class="light-text large-text large-font-weight">
                 Tissage Temporel
               </p>
             </div>
 
             <div class="flex-col">
-              <p class="beige-text medium-text">
+              <p class="light-text medium-text">
                 Découvrez une autre dimension de notre exploration avec nos graphes interactifs. Ces visualisations vous permettent de tisser des liens entre les rues, les métiers et les origines, créant une toile complexe qui reflète la richesse des données historiques de Lausanne au XIX<sup>ème</sup> siècle.
               </p>
             </div>
 
             <div class="flex-col">
-              <p class="beige-text medium-text">
+              <p class="light-text medium-text">
                 En choisissant différents graphes, vous pouvez voir comment ces différents éléments s'articulent ensemble, formant un tableau plus complet de la dynamique socio-spatiale de l'époque. Les rues ne sont plus simplement des voies de circulation, mais deviennent des vecteurs d'histoire, révélant les professions et les origines qui les habitaient.
               </p>
             </div>
 
             <div class="flex-col">
-              <p class="beige-text medium-text">
+              <p class="light-text medium-text">
                 Jouez avec les différentes options, observez comment les liens se forment et se défont en fonction de vos choix. C'est un véritable voyage dans le temps, une plongée dans le Lausanne du XIX<sup>ème</sup> siècle, où chaque connexion vous en apprend un peu plus sur l'histoire de cette ville fascinante.
               </p>
             </div>
@@ -190,7 +190,7 @@
         </div>
       </div>
 
-      <div id="p7-container" class="container container-padding black-bg">
+      <div id="p7-container" class="container black-bg">
         <div class="flex-row flex-100 height-100">
           <div class="flex-row flex-60 height-100">
             <div id="graph-selector-div" class="width-100">
@@ -199,6 +199,8 @@
                 <option value="bipartite_division_type_metiers">Divisions et classes de métiers</option>
                 <option value="bipartite_origine_category_type_metiers">Class d'origines et classes de métiers</option>
                 <option value="bipartite_street_type_metiers">Rues et classes de métiers</option>
+                <option value="bipartite_rue_origines">Rues et classes d'origines</option>
+                <option value="bipartite_divisions_origines">Divisions et classes d'origines</option>
               </select>
             </div>
 
@@ -208,13 +210,9 @@
             </div>
           </div>
 
-          <div class="flex-col flex-40 height-100 white-text">
-            <p id="network-title" class="large-text large-font-weight text-padding-10">
-              Réseau des rues et vocations
-            </p>
-            <p id="network-text" class="medium-text text-padding-10">
-              Cliquez sur les cercles pour explorer les rues de chaque division.
-            </p>
+          <div class="flex-col flex-40 height-100 light-text flex-center">
+            <p id="network-title" class="large-text large-font-weight text-padding-10"></p>
+            <p id="network-text" class="medium-text text-padding-10"></p>
           </div>
         </div>
       </div>
