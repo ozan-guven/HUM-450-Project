@@ -15,7 +15,19 @@ const DEFAULT_NODE_COLOR_BY_TYPE = {
     "road_vocation_data": {
         "road": "#1f77b4",
         "vocation": "#ff7f0e"
-    }
+    },
+    "bipartite_division_type_metiers": {
+        "division": "#1f77b4",
+        "job_category": "#ff7f0e"
+    },
+    "bipartite_origine_category_type_metiers": {
+        "origine_category": "#1f77b4",
+        "job_category": "#ff7f0e"
+    },
+    "bipartite_street_type_metiers": {
+        "street": "#1f77b4",
+        "job_category": "#ff7f0e"
+    },
 }
 
 const MIN_ZOOM_SCALE = 0.1;

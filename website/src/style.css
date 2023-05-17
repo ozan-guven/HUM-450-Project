@@ -532,3 +532,8 @@ p {
   background-size: contain;
   z-index: 4;
 }
+
+/* Network */
+.node-text {
+  fill: var(--off-white);
+}
