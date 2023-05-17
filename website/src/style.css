@@ -188,6 +188,10 @@ p {
   color: var(--beige);
 }
 
+.light-purple-text {
+  color: var(--light-purple);
+}
+
 .purple-text {
   color: var(--purple);
 }
