@@ -121,7 +121,7 @@ export class CirclePacking {
 
         // Define color and font scales for the visualization
         const colorScale = d3.scaleLinear()
-            .domain([0, 1])
+            .domain([0, 2])
             .range([OFF_WHITE_COLOR, PURPLE_COLOR] as Iterable<number>)
 
         const fontSizeScale = d3.scaleSqrt()

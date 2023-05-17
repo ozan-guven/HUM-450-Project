@@ -161,7 +161,7 @@ function SankeyChart({
 const width = 700;
 const height = 500;
 
-d3.json('sankey_djo.json').then(function(data) {
+d3.json('sankey_ddo.json').then(function(data) {
     const chart = SankeyChart({
         links: data
     }, {

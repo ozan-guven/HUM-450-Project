@@ -1,0 +1,152 @@
+[
+    {
+        "source": "bourg",
+        "target": "affaires (division)",
+        "value": 200
+    },
+    {
+        "source": "place st francois",
+        "target": "affaires (division)",
+        "value": 193
+    },
+    {
+        "source": "chailly",
+        "target": "campagne (division)",
+        "value": 69
+    },
+    {
+        "source": "grange-neuve",
+        "target": "campagne (division)",
+        "value": 35
+    },
+    {
+        "source": "la sallaz",
+        "target": "campagne (division)",
+        "value": 87
+    },
+    {
+        "source": "ouchy",
+        "target": "campagne (division)",
+        "value": 339
+    },
+    {
+        "source": "barre",
+        "target": "cathedrale (division)",
+        "value": 199
+    },
+    {
+        "source": "cite derriere",
+        "target": "cathedrale (division)",
+        "value": 209
+    },
+    {
+        "source": "cite dessous",
+        "target": "cathedrale (division)",
+        "value": 184
+    },
+    {
+        "source": "cheneau de bourg",
+        "target": "centre (division)",
+        "value": 198
+    },
+    {
+        "source": "montee st francois",
+        "target": "centre (division)",
+        "value": 341
+    },
+    {
+        "source": "rue du pre",
+        "target": "centre (division)",
+        "value": 148
+    },
+    {
+        "source": "ale",
+        "target": "commerce (division)",
+        "value": 251
+    },
+    {
+        "source": "grand st jean",
+        "target": "commerce (division)",
+        "value": 281
+    },
+    {
+        "source": "montee de st laurent",
+        "target": "commerce (division)",
+        "value": 92
+    },
+    {
+        "source": "palud",
+        "target": "commerce (division)",
+        "value": 220
+    },
+    {
+        "source": "st laurent",
+        "target": "commerce (division)",
+        "value": 253
+    },
+    {
+        "source": "marterey",
+        "target": "culture (division)",
+        "value": 504
+    },
+    {
+        "source": "affaires (division)",
+        "target": "hors_lausanne",
+        "value": 192
+    },
+    {
+        "source": "affaires (division)",
+        "target": "lausanne",
+        "value": 99
+    },
+    {
+        "source": "campagne (division)",
+        "target": "hors_lausanne",
+        "value": 242
+    },
+    {
+        "source": "campagne (division)",
+        "target": "lausanne",
+        "value": 230
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "hors_lausanne",
+        "value": 325
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "lausanne",
+        "value": 173
+    },
+    {
+        "source": "centre (division)",
+        "target": "hors_lausanne",
+        "value": 336
+    },
+    {
+        "source": "centre (division)",
+        "target": "lausanne",
+        "value": 166
+    },
+    {
+        "source": "commerce (division)",
+        "target": "hors_lausanne",
+        "value": 570
+    },
+    {
+        "source": "commerce (division)",
+        "target": "lausanne",
+        "value": 304
+    },
+    {
+        "source": "culture (division)",
+        "target": "hors_lausanne",
+        "value": 288
+    },
+    {
+        "source": "culture (division)",
+        "target": "lausanne",
+        "value": 134
+    }
+]
