@@ -4,7 +4,10 @@
   --default-font-family: 'Nunito', sans-serif;
   --off-white: #FAF4DD;
   --beige: #ecc697;
+
   --light-purple: #9e2846;
+  --light-green: #289e61;
+
   --purple: #531827;
   --dark-purple: #250312;
   --black: #000000;
@@ -540,5 +543,5 @@ p {
 
 /* Network */
 .node-text {
-  fill: var(--off-white);
+  fill: white;
 }
