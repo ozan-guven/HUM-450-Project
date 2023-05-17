@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "p4-container",
         "p5-container",
         "p6-container",
+        "p7-container",
         "final-container"
       ];
 

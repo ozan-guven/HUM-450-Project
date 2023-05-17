@@ -705,21 +705,16 @@
             "name": "7",
             "children": [
                 {
-                    "name": "place du pont",
-                    "value": 22
-                }
-            ]
-        },
-        {
-            "name": "7-8",
-            "children": [
-                {
                     "name": "moulin de pepinet",
                     "value": 29
                 },
                 {
                     "name": "petit st jean",
                     "value": 52
+                },
+                {
+                    "name": "place du pont",
+                    "value": 22
                 },
                 {
                     "name": "rue du pont",
