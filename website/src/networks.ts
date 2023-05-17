@@ -31,6 +31,14 @@ const DEFAULT_NODE_COLOR_BY_TYPE = {
         "street": "#289e61",
         "job_category": "#9e2846"
     },
+    "bipartite_rue_origines": {
+        "street": "#289e61",
+        "origine_category": "#9e2846"
+    },
+    "bipartite_divisions_origines": {
+        "division": "#289e61",
+        "origine_category": "#9e2846"
+    },
 }
 
 const LOREM_IPSUM = `Lorem ipsum dolor sit amet. Et dolores quia et iste cupiditate sit nisi eligendi ab veritatis voluptatem ea omnis autem. Eos dolor modi eum adipisci facere ex dolores fugiat et laboriosam rerum rem nihil dolor. Et dolores iure ut odio voluptas ut nobis nemo.
