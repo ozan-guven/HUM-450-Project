@@ -9,6 +9,9 @@ const DEFAULT_TYPE = "vocation";
 const CONTAINER_ID = "#network-graph";
 const PARENT_ID = "network-chart";
 
+const TITLE_ID = "#network-title";
+const TEXT_ID = "#network-text";
+
 const DEFAULT_LINK_COLOR = "#5c5c5c";
 const DEFAULT_NODE_COLOR = "#aaaaaa";
 const DEFAULT_NODE_COLOR_BY_TYPE = {
@@ -29,6 +32,31 @@ const DEFAULT_NODE_COLOR_BY_TYPE = {
         "job_category": "#9e2846"
     },
 }
+
+const LOREM_IPSUM = `Lorem ipsum dolor sit amet. Et dolores quia et iste cupiditate sit nisi eligendi ab veritatis voluptatem ea omnis autem. Eos dolor modi eum adipisci facere ex dolores fugiat et laboriosam rerum rem nihil dolor. Et dolores iure ut odio voluptas ut nobis nemo.
+
+Est quisquam totam sit illum rerum aut quia labore. Non voluptas libero sed adipisci quia aut voluptatem sint et nihil nihil ut ipsum voluptatem sit galisum reprehenderit.
+
+Qui vero dolore et doloremque omnis ea error labore rem numquam cumque? Et totam alias et adipisci soluta ut excepturi error id quisquam quia sit voluptates voluptatum ut unde recusandae quo explicabo dolor. Qui temporibus consequuntur est alias quaerat vel culpa quia ut maxime ducimus sed esse assumenda a tempora culpa.`
+
+const TEXT_MAP = {
+    "road_vocation_data": {
+        "title": "Réseau des rues et vocations",
+        "text": LOREM_IPSUM
+    },
+    "bipartite_division_type_metiers": {
+        "title": "Réseau de divisions et de catégories de métiers",
+        "text": LOREM_IPSUM,
+    },
+    "bipartite_origine_category_type_metiers": {
+        "title": "Réseau des classes d'origines et de catégories de métiers",
+        "text": LOREM_IPSUM,
+    },
+    "bipartite_street_type_metiers": {
+        "title": "Réseau de rues et de catégories de métiers",
+        "text": LOREM_IPSUM,
+    }
+}   
 
 const MIN_ZOOM_SCALE = 0.1;
 const MAX_ZOOM_SCALE = 10;
@@ -455,6 +483,17 @@ class Network {
                 this.createLinks();
                 this.createNodes();
                 this.initZoom();
+
+                // Modify the title and text
+                const titleElement = document.querySelector(TITLE_ID);
+                const textElement = document.querySelector(TEXT_ID);
+                // Get the text and title from the map
+                const dataText = TEXT_MAP[network];
+
+                if (titleElement && textElement) {
+                    titleElement.innerHTML =  dataText.title;
+                    textElement.innerHTML = dataText.text;
+                }
             });
 
             resolve();

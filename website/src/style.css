@@ -198,6 +198,10 @@ p {
   text-align: center;
 }
 
+.white-text {
+  color: white;
+}
+
 .light-text {
   color: var(--off-white);
 }
@@ -559,4 +563,11 @@ p {
 /* Network */
 .node-text {
   fill: white;
+}
+
+#graph-selector-div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
 }
