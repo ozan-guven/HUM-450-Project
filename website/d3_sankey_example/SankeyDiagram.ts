@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as d3 from 'd3';
 import * as d3Sankey from "d3-sankey"
 
@@ -5,8 +6,8 @@ import * as d3Sankey from "d3-sankey"
 // Released under the ISC license.
 // https://observablehq.com/@d3/sankey-diagram
 function SankeyChart({
-    nodes,
-    links
+    nodes, // an iterable of node objects (typically [{id}, …]); implied by links if missing
+    links // an iterable of link objects (typically [{source, target}, …])
 }, {
     format = ",", // a function or format specifier for values in titles
     align = "justify", // convenience shorthand for nodeAlign
@@ -157,24 +158,18 @@ function SankeyChart({
     return Object.assign(svg.node(), {scales: {color}});
 }
 
-const links: any = [
-    {source: "Brazil", target: "Portugal", value: 5.0},
-    {source: "Brazil", target: "France", value: 1.0},
-    {source: "Brazil", target: "Spain", value: 1.0},
-    {source: "Brazil", target: "England", value: 1.0},
-    {source: "Canada", target: "Portugal", value: 1.0},
-    {source: "Canada", target: "France", value: 5.0},
-    {source: "Canada", target: "England", value: 1.0},
-    {source: "Mexico", target: "Portugal", value: 1.0},
-];
-const width = 500;
+const width = 700;
 const height = 500;
 
-const chart = SankeyChart({
-    links: links
-}, {
-    nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
-    format: (f => d => `${f(d)} TWh`)(d3.format(",.1~f")),
-    width,
-    height,
-})
+d3.json('sankey_djo.json').then(function(data) {
+    const chart = SankeyChart({
+        links: data
+    }, {
+        nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
+        format: (f => d => `${f(d)} TWh`)(d3.format(",.1~f")),
+        width,
+        height,
+        align: "justify",
+        linkColor: "source",
+    })
+});

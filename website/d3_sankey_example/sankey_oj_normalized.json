@@ -1,0 +1,172 @@
+[
+    {
+        "source": "france",
+        "target": "administration",
+        "value": 0.01020408163265306
+    },
+    {
+        "source": "france",
+        "target": "agricole",
+        "value": 0.20408163265306123
+    },
+    {
+        "source": "france",
+        "target": "artisanat",
+        "value": 0.16326530612244897
+    },
+    {
+        "source": "france",
+        "target": "commerce",
+        "value": 0.07142857142857142
+    },
+    {
+        "source": "france",
+        "target": "construction",
+        "value": 0.01020408163265306
+    },
+    {
+        "source": "france",
+        "target": "rente",
+        "value": 0.3877551020408163
+    },
+    {
+        "source": "france",
+        "target": "service",
+        "value": 0.15306122448979592
+    },
+    {
+        "source": "lausanne",
+        "target": "administration",
+        "value": 0.015521064301552107
+    },
+    {
+        "source": "lausanne",
+        "target": "agricole",
+        "value": 0.2572062084257206
+    },
+    {
+        "source": "lausanne",
+        "target": "artisanat",
+        "value": 0.1574279379157428
+    },
+    {
+        "source": "lausanne",
+        "target": "commerce",
+        "value": 0.06097560975609756
+    },
+    {
+        "source": "lausanne",
+        "target": "construction",
+        "value": 0.08093126385809313
+    },
+    {
+        "source": "lausanne",
+        "target": "rente",
+        "value": 0.28159645232815966
+    },
+    {
+        "source": "lausanne",
+        "target": "service",
+        "value": 0.14634146341463414
+    },
+    {
+        "source": "lavaux",
+        "target": "administration",
+        "value": 0.01932367149758454
+    },
+    {
+        "source": "lavaux",
+        "target": "agricole",
+        "value": 0.3285024154589372
+    },
+    {
+        "source": "lavaux",
+        "target": "artisanat",
+        "value": 0.23671497584541062
+    },
+    {
+        "source": "lavaux",
+        "target": "commerce",
+        "value": 0.057971014492753624
+    },
+    {
+        "source": "lavaux",
+        "target": "construction",
+        "value": 0.12077294685990338
+    },
+    {
+        "source": "lavaux",
+        "target": "rente",
+        "value": 0.12077294685990338
+    },
+    {
+        "source": "lavaux",
+        "target": "service",
+        "value": 0.11594202898550725
+    },
+    {
+        "source": "morges",
+        "target": "agricole",
+        "value": 0.12857142857142856
+    },
+    {
+        "source": "morges",
+        "target": "artisanat",
+        "value": 0.42142857142857143
+    },
+    {
+        "source": "morges",
+        "target": "commerce",
+        "value": 0.09285714285714286
+    },
+    {
+        "source": "morges",
+        "target": "construction",
+        "value": 0.10714285714285714
+    },
+    {
+        "source": "morges",
+        "target": "rente",
+        "value": 0.1
+    },
+    {
+        "source": "morges",
+        "target": "service",
+        "value": 0.15
+    },
+    {
+        "source": "suisse_allemande",
+        "target": "administration",
+        "value": 0.006666666666666667
+    },
+    {
+        "source": "suisse_allemande",
+        "target": "agricole",
+        "value": 0.18
+    },
+    {
+        "source": "suisse_allemande",
+        "target": "artisanat",
+        "value": 0.28
+    },
+    {
+        "source": "suisse_allemande",
+        "target": "commerce",
+        "value": 0.10666666666666667
+    },
+    {
+        "source": "suisse_allemande",
+        "target": "construction",
+        "value": 0.16666666666666666
+    },
+    {
+        "source": "suisse_allemande",
+        "target": "rente",
+        "value": 0.14666666666666667
+    },
+    {
+        "source": "suisse_allemande",
+        "target": "service",
+        "value": 0.11333333333333333
+    }
+]

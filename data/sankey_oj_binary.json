@@ -1,0 +1,72 @@
+[
+    {
+        "source": "hors_lausanne",
+        "target": "administration",
+        "value": 0.02378640776699029
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "agricole",
+        "value": 0.18883495145631068
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "artisanat",
+        "value": 0.26019417475728157
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "commerce",
+        "value": 0.08446601941747572
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "construction",
+        "value": 0.09660194174757282
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "rente",
+        "value": 0.18446601941747573
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "service",
+        "value": 0.1616504854368932
+    },
+    {
+        "source": "lausanne",
+        "target": "administration",
+        "value": 0.015521064301552107
+    },
+    {
+        "source": "lausanne",
+        "target": "agricole",
+        "value": 0.2572062084257206
+    },
+    {
+        "source": "lausanne",
+        "target": "artisanat",
+        "value": 0.1574279379157428
+    },
+    {
+        "source": "lausanne",
+        "target": "commerce",
+        "value": 0.06097560975609756
+    },
+    {
+        "source": "lausanne",
+        "target": "construction",
+        "value": 0.08093126385809313
+    },
+    {
+        "source": "lausanne",
+        "target": "rente",
+        "value": 0.28159645232815966
+    },
+    {
+        "source": "lausanne",
+        "target": "service",
+        "value": 0.14634146341463414
+    }
+]

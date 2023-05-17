@@ -56,7 +56,6 @@ body {
 }
 
 .flex-center {
-  align-items: center;
   justify-content: center;
 }
 
@@ -562,7 +561,7 @@ p {
 
 /* Network */
 .node-text {
-  fill: white;
+  fill: var(--off-white);
 }
 
 #graph-selector-div {
