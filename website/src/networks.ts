@@ -53,24 +53,24 @@ const TEXT_MAP = {
         "text": 'Ce premier graphe tisse un lien entre les vocations et les rues. Chaque métier est connecté à une rue, la taille de chaque nœud reflétant le nombre de personnes concernées. Les liens entre les rues et les métiers mettent en lumière des proximités intéressantes : par exemple, les rues de <i>Chavannes</i> et de <i>La Sallaz</i> se retrouvent proches dans notre graphe, illustrant la forte présence de paysans parmi leurs habitants, comme l\'indiquent les liens avec les nœuds \'laboureur\' et \'fermier\'. De plus, des rues géographiquement voisines comme <i>Rue Saint François</i> et <i>Place Saint François</i> se retrouvent également proches dans notre réseau, révélant une similarité dans la composition professionnelle de leurs résidents.'
     },
     "bipartite_division_type_metiers": {
-        "title": "Réseau de divisions et de catégories de métiers",
+        "title": "Métiers Mappés",
         "text": 'Ce graphe met en lumière les liens entre les divisions de la ville de Lausanne et les classes de métiers. Il offre une vue claire sur la répartition des professions à travers la ville. Par exemple, il est évident que la majorité des rentiers proviennent des divisions 17 et 1-2, qui correspondent respectivement à la campagne vers le sud de Lausanne et au quartier de Marterey et ses environs.',
     },
     "bipartite_origine_category_type_metiers": {
-        "title": "Réseau des classes d'origines et de catégories de métiers",
-        "text": 'Le troisième graphe dévoile les interactions entre les classes d\'origine et les classes de vocations On observe une distribution plutôt hétérogène des métiers pour chaque origine. Mais par exemple, Yverdon se distingue par une plus grande concentration de constructeurs et d\'artisans. Le Lavaux, région connue pour son paysage viticole et agricole, présente une majorité de personnes engagées dans l\'agriculture.',
+        "title": "Origines Occupées",
+        "text": 'Cete visualization dévoile les interactions entre les classes d\'origine et les classes de vocations On observe une distribution plutôt homogène des métiers pour chaque origine. Par ailleurs, Yverdon se distingue par une plus grande concentration de constructeurs et d\'artisans. Le Lavaux, région connue pour son paysage viticole et agricole, présente une majorité de personnes engagées dans l\'agriculture.',
     },
     "bipartite_street_type_metiers": {
-        "title": "Réseau de rues et de catégories de métiers",
-        "text": LOREM_IPSUM,
+        "title": "Rues Révélées",
+        "text": "Ce graphe lie les classes de métiers aux rues, offrant une perspective encore plus granulaire de la vie à Lausanne au XIX<sup>ème</sup> siècle. Certaines petites rues présentent une faible diversité de vocations, comme Vidy, Paleyres, et Petit Ouchy, où prédomine l'agriculture en périphérie de la ville.",
     },
     "bipartite_rue_origines": {
-        "title": "Réseau de rues et d'origines",
-        "text": LOREM_IPSUM,
+        "title": "Rues Racines",
+        "text": "Cette nouvelle visualisation lie les rues de Lausanne à leurs classes d'origine, offrant une compréhension encore plus nuancée des dynamiques sociales de la ville. Chaque rue se voit attribuer un spectre d'origines, révélant la diversité et la complexité de la composition démographique de la ville. De cette manière, on peut mieux apprécier l'histoire multiculturelle de Lausanne, où chaque rue porte en elle les traces de nombreuses origines différentes, formant un patchwork unique de cultures et de traditions.",
     },
     "bipartite_divisions_origines": {
-        "title": "Réseau de divisions et d'origines",
-        "text": LOREM_IPSUM,
+        "title": "Origines Organisées",
+        "text": "Cette dernière visualisation établit un lien direct entre les divisions de la ville et les origines de ses habitants. Elle offre une vue panoramique de la diversité culturelle, illustrant comment les différentes origines ont contribué à la formation de chaque division. À travers ce graphe, nous pouvons voir comment Lausanne, même à cette époque, était un creuset de cultures, où chaque division a été façonnée par une mosaïque d'origines différentes, contribuant à l'identité unique de la ville.",
     }
 }   
 
