@@ -80,8 +80,16 @@ body {
   flex: 0 0 70%;
 }
 
+.flex-60 {
+  flex: 0 0 60%;
+}
+
 .flex-50 {
   flex: 0 0 50%;
+}
+
+.flex-40 {
+  flex: 0 0 40%;
 }
 
 .flex-30 {
@@ -163,6 +171,13 @@ body {
 
 .bk-to-ow-bg {
   background-image: url('../assets/backgrounds/bk-to-ow-bg.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100%;
+}
+
+.bk-to-bk-bg {
+  background-image: url('../assets/backgrounds/bk-to-bk-bg.png');
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: auto 100%;

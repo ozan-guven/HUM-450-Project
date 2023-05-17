@@ -55,7 +55,7 @@
 
       <div id="p2-container" class="container container-padding off-white-bg">
         <div class="flex-row flex-100 flex-center">
-          <div class="flex-col flex-50 height-100 overflow-auto">
+          <div class="flex-col flex-60 height-100 overflow-auto">
             <div class="flex-col flex-50 overflow-auto">
               <div class="flex-col text-padding-10">
                 <p class="large-text large-font-weight">
@@ -79,12 +79,12 @@
               <p id="circle-packing-title" class="large-text large-font-weight">
               </p>
               <p id="circle-packing-text" class="medium-text">
-                Click on each circle to zoom in and explore the different types of transportation.
+                Cliquez sur les cercles pour explorer les rues de chaque division.
               </p>
             </div>
           </div>
 
-          <div class="flex-col flex-50 height-100 overflow-auto">
+          <div class="flex-col flex-40 height-100 overflow-auto">
             <div class="flex-row flex-100">
               <div id="circle-packing-plot"></div>
             </div>
@@ -99,12 +99,18 @@
           <div class="flex-col flex-50 flex-center verflow-auto">
             <div class="flex-col text-padding-10">
               <p class="large-text large-font-weight">
-                Sankey insight
+                Sankey et Société
               </p>
             </div>
             <div class="flex-col text-padding-10">
               <p class="medium-text">
-                Introducing our latest feature - an interactive table that delves deep into the beating heart of Swiss transportation: the stops. This isn't just a table, it's a comprehensive dashboard that brings together key facets of the transport system. Here, you can sort by average delays, the number of trains, or even by the unfortunate but inevitable cancelled trips. When sorting, a responsive histogram magically appears, depicting the distribution of stops based on your selected feature. Witness how delays, train frequencies, and cancellations vary across the landscape of Swiss transportation, offering a unique glimpse into the workings of this complex system.
+                Nous continuons notre voyage à travers le temps avec cette visualisation dynamique et interactive : un diagramme de Sankey. Cette représentation graphique nous permet d'analyser les liens entre les origines géographiques des habitants de Lausanne et les métiers qu'ils exerçaient au XIX<sup>ème</sup> siècle. Le diagramme offre un aperçu fascinant de la répartition des professions selon les différentes origines, illustrant les dynamiques socio-économiques de l'époque.
+              </p>
+              <p class="medium-text">
+                En ajoutant la catégorie des divisions urbaines, nous obtenons une perspective encore plus précise de la structuration sociale de la ville. En effet, cette nouvelle dimension illustre la concentration de certaines professions et origines dans des quartiers spécifiques.
+              </p>
+              <p class="medium-text">
+                Cliquez sur les différentes sections du diagramme pour explorer ces relations en détail. Vous découvrirez comment la diversité des origines et des professions a contribué à la richesse et à la complexité de Lausanne au XIX<sup>ème</sup> siècle, et comment ces facteurs ont joué un rôle déterminant dans la formation des communautés urbaines.
               </p>
             </div>
           </div>
@@ -114,75 +120,26 @@
         </div>
       </div>
 
-      <div id="p3-to-p4-container" class="container ow-to-ow-bg"></div>
+      <div id="p3-to-p4-container" class="container ow-to-bk-bg"></div>
 
-      <div id="p4-container" class="container off-white-bg">
-        <div class="flex-row flex-100 flex-center">
-          <div class="flex-col flex-50 height-100">
-            <div class="flex-row flex-80">
-              <div id="hierarchy-plot"></div>
-            </div>
-            <div class="flex-row flex-20">
-              <div id="hierarchy-minimap"></div>
-            </div>
-          </div>
-
-          <div class="flex-col flex-50 overflow-auto">
-            <div class="flex-row flex-center">
-              <div class="flex-col text-padding-20">
-                <p class="large-text large-font-weight">
-                  Lausanne Nexus
-                </p>
-              </div>
-            </div>
-
-            <div class="flex-row flex-center">
-              <div class="flex-col text-padding-20">
-                <p class="medium-text">
-                  Behold our third visualization - a mesmerizing hierarchical edge bundling that uncovers the hidden connections between Switzerland's diverse cantons. Picture a miniature map of the country, where each canton is but a click away. With a simple selection, watch as a vibrant, circular layout springs to life, unveiling the transport stops that stitch together the tapestry of Swiss mobility.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex-row flex-center">
-              <div class="flex-col text-padding-20">
-                <p class="medium-text">
-                  This captivating visualization highlights the intricate web of connections that unite different corners of Switzerland, fostering a sense of unity and cohesion. The myriad lines weaving through the circle, much like the threads of an artisan's loom, reveal the true extent of the country's interconnectedness, showcasing the vital role transportation plays in bridging the gaps between its urban hubs and remote hideaways.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex-row flex-center">
-              <div class="flex-col text-padding-20">
-                <p class="medium-text">
-                  Step into the shoes of a modern-day explorer, charting the unseen connections that bring the Swiss landscape to life. Through this visual masterpiece, discover the harmony that exists within the Swiss transportation system, and experience the joy of uncovering the ties that bind this small yet mighty nation together.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="p4-to-p5-container" class="container ow-to-bk-bg"></div>
-
-      <div id="p5-container" class="container container-padding black-bg">
+      <div id="p4-container" class="container container-padding black-bg">
         <div class="flex-row flex-100 flex-center">
           <div class="flex-col text-padding-20 overflow-auto">
             <div class="flex-col">
               <p class="beige-text large-text large-font-weight">
-                Connectivity Unveiled (Graphs)
+                Division Découverte
               </p>
             </div>
 
             <div class="flex-col">
               <p class="beige-text medium-text">
-                Prepare to step into the nerve center of Swiss transportation with our next visualization - a captivating network that maps the intricate connections between transport stops. Picture an expansive, full-screen visual spectacle where each node is a stop, and each edge a lifeline connecting one stop to another. This is the essence of Swiss mobility, the invisible threads that keep the country moving, laid bare for you to explore.
+                Pour une immersion encore plus poussée dans le Lausanne du XIX<sup>ème</sup> siècle, découvrez notre carte interactive. Chaque division de la ville est délimitée et peut être colorée pour créer une Carte choroplèthe, révélant les concentrations de différentes origines et professions.
               </p>
             </div>
 
             <div class="flex-col">
               <p class="beige-text medium-text">
-                This is more than a network - it's a dynamic, interactive playground where you can experiment with different layouts, bringing out the unique characteristics of Swiss transport. Choose to highlight features such as degree or betweenness centrality, and watch as the network transforms, revealing new facets of its complex architecture.
+                En cliquant sur une division, un graphique à barres apparaît, détaillant la répartition des métiers et des origines au sein de cette division. Il s'agit d'un outil précieux pour comprendre comment les différentes professions et origines se répartissaient dans la ville. Explorez, cliquez, et plongez-vous dans le fascinant tissu social du Lausanne du XIX<sup>ème</sup> siècle.
               </p>
             </div>
 
@@ -195,7 +152,43 @@
         </div>
       </div>
 
+      <div id="p5-container" class="container container-padding black-bg">
+        <!-- MAP GOES HERE -->
+      </div>
+
+      <div id="p5-to-p6-container" class="container bk-to-bk-bg"></div>
+
       <div id="p6-container" class="container container-padding black-bg">
+        <div class="flex-row flex-100 flex-center">
+          <div class="flex-col text-padding-20 overflow-auto">
+            <div class="flex-col">
+              <p class="beige-text large-text large-font-weight">
+                Tissage Temporel
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="beige-text medium-text">
+                Découvrez une autre dimension de notre exploration avec nos graphes interactifs. Ces visualisations vous permettent de tisser des liens entre les rues, les métiers et les origines, créant une toile complexe qui reflète la richesse des données historiques de Lausanne au XIX<sup>ème</sup> siècle.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="beige-text medium-text">
+                En choisissant différents graphes, vous pouvez voir comment ces différents éléments s'articulent ensemble, formant un tableau plus complet de la dynamique socio-spatiale de l'époque. Les rues ne sont plus simplement des voies de circulation, mais deviennent des vecteurs d'histoire, révélant les professions et les origines qui les habitaient.
+              </p>
+            </div>
+
+            <div class="flex-col">
+              <p class="beige-text medium-text">
+                Jouez avec les différentes options, observez comment les liens se forment et se défont en fonction de vos choix. C'est un véritable voyage dans le temps, une plongée dans le Lausanne du XIX<sup>ème</sup> siècle, où chaque connexion vous en apprend un peu plus sur l'histoire de cette ville fascinante.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p7-container" class="container container-padding black-bg">
         <div class="flex-col flex-100 height-100">
           <div class="flex-row flex-05">
             <div id="graph-selector-div" class="width-100">
