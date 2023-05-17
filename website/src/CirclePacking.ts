@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 const PACKING_DATA_PATH = 'data/circle_packing_data.json';
 
 const PACKING_ELEMENT_ID = "circle-packing-plot";
+const PACKING_TITLE_ELEMENT_ID = "circle-packing-title";
 const PACKING_TEXT_ELEMENT_ID = "circle-packing-text";
 
 const OFF_WHITE_COLOR = '#f4efda';
@@ -14,27 +15,49 @@ const CIRCLE_PADDING = 3;
 const MIN_FONT_SIZE = 5;
 const MAX_FONT_SIZE = 100;
 
+const DEFAULT_PACKING_TITLE = '';
+const PACKING_TITLE = {
+    '1-2': 'Division 1-2',
+    '3': 'Division 3',
+    '4': 'Division 4',
+    '5': 'Division 5',
+    '6': 'Division 6',
+    '7': 'Division 7',
+    '7-8': 'Division 7-8',
+    '9': 'Division 9',
+    '10': 'Division 10',
+    '11': 'Division 11',
+    '12': 'Division 12',
+    '13': 'Division 13',
+    '14': 'Division 14',
+    '15': 'Division 15',
+    '16': 'Division 16',
+    '17': 'Division 17',
+    '18': 'Division 18',
+    '19': 'Division 19',
+    '20': 'Division 20'
+}
 const DEFAULT_PACKING_TEXT = 'Click on each circle to zoom in and explore the different types of transportation.';
 const PACKING_TEXT = {
-    '1-2': '1-2',
-    '3': '3',
-    '4': '4',
-    '5': '5',
-    '6': '6',
-    '7': '7',
-    '7-8': '7-8',
-    '9': '9',
-    '10': '10',
-    '11': '11',
-    '12': '12',
-    '13': '13',
-    '14': '14',
-    '15': '15',
-    '16': '16',
-    '17': '17',
-    '18': '18',
-    '19': '19',
-    '20': '20'
+    '1-2': 'Division 1-2',
+    '3': 'Division 3',
+    '4': 'Division 4',
+    '5': 'Division 5',
+    '6': 'Division 6',
+    '7': 'Division 7',
+    '7-8': 'Division 7-8',
+    '9': 'Division 9',
+    '10': 'Division 10',
+    '11': 'Division 11',
+    '12': 'Division 12',
+    '13': 'Division 13',
+    '14': 'Division 14',
+    '15': 'Division 15',
+    '16': 'Division 16',
+    '17': 'Division 17',
+    '18': 'Division 18',
+    '19': 'Division 19',
+    '20': 'Division 20'
 }
 
 /**
@@ -155,13 +178,18 @@ export class CirclePacking {
         zoomTo([root.x, root.y, root.r * 2]);
         
           function zoom(event: any, d: any) {
+            // Write title text
+            const titleText = document.getElementById(PACKING_TITLE_ELEMENT_ID);
+            if (titleText) {
+                const titleStr = (PACKING_TITLE as any)[d.data.name] || DEFAULT_PACKING_TITLE;
+                titleText.innerHTML = titleStr;
+            }
+
             // Write packing text
             const packingText = document.getElementById(PACKING_TEXT_ELEMENT_ID);
             if (packingText) {
-                const p = packingText.getElementsByTagName("p")[0];
-                console.log(d.data.name);
                 const packingStr = (PACKING_TEXT as any)[d.data.name] || DEFAULT_PACKING_TEXT;
-                p.innerHTML = packingStr;
+                packingText.innerHTML = packingStr;
             }
 
             // Zoom to selected circle

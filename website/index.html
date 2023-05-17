@@ -55,34 +55,38 @@
 
       <div id="p2-container" class="container container-padding off-white-bg">
         <div class="flex-row flex-100 flex-center">
-          <div class="flex-col flex-70 height-100 overflow-auto">
-            <div class="flex-col flex-50 height-100 overflow-auto">
+          <div class="flex-col flex-50 height-100 overflow-auto">
+            <div class="flex-col flex-50 overflow-auto">
               <div class="flex-col text-padding-10">
                 <p class="large-text large-font-weight">
                   Concentrique et Historique
                 </p>
               </div>
+
               <div class="flex-col text-padding-10">
                 <p class="medium-text">
                   Cette première visualisation offre une représentation intuitive et visuellement attrayante de la division de Lausanne. Dans ce schéma, chaque cercle représente une division distincte de la ville, telle qu'elle était définie dans le recensement de la population de 1832.
                 </p>
+              </div>
 
+              <div class="flex-col text-padding-10">
                 <p class="medium-text">
                   Plongez-vous encore plus profondément dans l'histoire en découvrant les rues qui composaient chaque division de la ville. Il vous suffit de cliquer sur les cercles pour explorer l'agencement unique de chaque quartier.
                 </p>
               </div>
             </div>
-
-            <div class="flex-row flex-50">
-              <div id="circle-packing-plot"></div>
-            </div>
-          </div>
-          
-          <div class="flex-col flex-50 overflow-auto">
-            <div id="circle-packing-text" class="flex-row flex-30 flex-center">
-              <p class="medium-text text-padding-10 width-100">
+            <div class="flex-col flex-50 overflow-auto text-padding-10">
+              <p id="circle-packing-title" class="large-text large-font-weight">
+              </p>
+              <p id="circle-packing-text" class="medium-text">
                 Click on each circle to zoom in and explore the different types of transportation.
               </p>
+            </div>
+          </div>
+
+          <div class="flex-col flex-50 height-100 overflow-auto">
+            <div class="flex-row flex-100">
+              <div id="circle-packing-plot"></div>
             </div>
           </div>
         </div>
