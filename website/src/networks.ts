@@ -50,11 +50,11 @@ Qui vero dolore et doloremque omnis ea error labore rem numquam cumque? Et totam
 const TEXT_MAP = {
     "road_vocation_data": {
         "title": "Vocations Voisines",
-        "text": 'Ce premier graphe tisse un lien entre les vocations et les rues. Chaque métier est connecté à une rue, la taille de chaque nœud reflétant le nombre de personnes concernées. Les liens entre les rues et les métiers mettent en lumière des proximités intéressantes : par exemple, les rues de <i>Chavannes</i> et de <i>Sallaz</i> se retrouvent proches dans notre graphe, illustrant la forte présence de paysans parmi leurs habitants, comme l\'indiquent les liens avec les nœuds \'laboureur\' et \'fermier\'. De plus, des rues géographiquement voisines comme <i>Rue Saint François</i> et <i>Place Saint François</i> se retrouvent également proches dans notre réseau, révélant une similarité dans la composition professionnelle de leurs résidents.'
+        "text": 'Ce premier graphe tisse un lien entre les vocations et les rues. Chaque métier est connecté à une rue, la taille de chaque nœud reflétant le nombre de personnes concernées. Les liens entre les rues et les métiers mettent en lumière des proximités intéressantes : par exemple, les rues de <i>Chavannes</i> et de <i>La Sallaz</i> se retrouvent proches dans notre graphe, illustrant la forte présence de paysans parmi leurs habitants, comme l\'indiquent les liens avec les nœuds \'laboureur\' et \'fermier\'. De plus, des rues géographiquement voisines comme <i>Rue Saint François</i> et <i>Place Saint François</i> se retrouvent également proches dans notre réseau, révélant une similarité dans la composition professionnelle de leurs résidents.'
     },
     "bipartite_division_type_metiers": {
         "title": "Réseau de divisions et de catégories de métiers",
-        "text": 'Ce graphe met en lumière les liens entre les divisions de la ville de Lausanne et les classes de métiers. Il offre une vue claire sur la répartition des professions à travers la ville. Par exemple, il est évident que la majorité des rentiers proviennent des divisions 17 et 1-2, qui correspondent respectivement à la campagne vers le sud de Lausanne et au quartier du Marterey et ses environs.',
+        "text": 'Ce graphe met en lumière les liens entre les divisions de la ville de Lausanne et les classes de métiers. Il offre une vue claire sur la répartition des professions à travers la ville. Par exemple, il est évident que la majorité des rentiers proviennent des divisions 17 et 1-2, qui correspondent respectivement à la campagne vers le sud de Lausanne et au quartier de Marterey et ses environs.',
     },
     "bipartite_origine_category_type_metiers": {
         "title": "Réseau des classes d'origines et de catégories de métiers",

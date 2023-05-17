@@ -59,6 +59,10 @@ body {
   justify-content: center;
 }
 
+.flex-align-center {
+  align-items: center;
+}
+
 .flex-100 {
   flex: 0 0 100%;
 }
