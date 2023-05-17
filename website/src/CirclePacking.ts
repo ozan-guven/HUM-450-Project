@@ -37,7 +37,7 @@ const PACKING_TITLE = {
     '19': 'Division 19',
     '20': 'Division 20'
 }
-const DEFAULT_PACKING_TEXT = 'Click on each circle to zoom in and explore the different types of transportation.';
+const DEFAULT_PACKING_TEXT = 'Cliquez sur les différentes sections du diagramme pour explorer ces relations en détail. Vous découvrirez comment la diversité des origines et des professions a contribué à la richesse et à la complexité de Lausanne au XIX<sup>ème</sup> siècle, et comment ces facteurs ont joué un rôle déterminant dans la formation des communautés urbaines.';
 const PACKING_TEXT = {
     '1-2': 'Division 1-2',
     '3': 'Division 3',
