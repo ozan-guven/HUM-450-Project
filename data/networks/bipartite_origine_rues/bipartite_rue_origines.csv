@@ -1,0 +1,816 @@
+street,origine_category,Weight
+gottettaz,cossonay,1
+gottettaz,morges,1
+gottettaz,orbe,1
+gottettaz,oron,1
+gottettaz,suisse_allemande,1
+place de st laurent,aubonne,1
+place de st laurent,cossonay,3
+place de st laurent,echallens,2
+place de st laurent,france,1
+place de st laurent,fribourg,1
+place de st laurent,grandson,1
+place de st laurent,la_vallee,1
+place de st laurent,lausanne,35
+place de st laurent,lavaux,9
+place de st laurent,morges,8
+place de st laurent,moudon,2
+place de st laurent,neuchatel,1
+place de st laurent,nyon,2
+place de st laurent,orbe,1
+place de st laurent,oron,7
+place de st laurent,payerne,1
+place de st laurent,pays_d_enhaut,5
+place de st laurent,rolle,1
+place de st laurent,suisse_allemande,8
+place de st laurent,vaud,4
+place de st laurent,vevey,4
+place de st laurent,yverdon,4
+cour,angleterre,3
+cour,cossonay,2
+cour,france,2
+cour,geneve,2
+cour,la_vallee,2
+cour,lausanne,18
+cour,lavaux,11
+cour,morges,1
+cour,moudon,1
+cour,oron,3
+cour,payerne,1
+cour,vevey,2
+cour,yverdon,1
+rue de st pierre,aigle,1
+rue de st pierre,angleterre,4
+rue de st pierre,aubonne,4
+rue de st pierre,avenches,1
+rue de st pierre,cossonay,1
+rue de st pierre,echallens,3
+rue de st pierre,france,4
+rue de st pierre,grandson,1
+rue de st pierre,italie,1
+rue de st pierre,la_vallee,1
+rue de st pierre,lausanne,34
+rue de st pierre,lavaux,14
+rue de st pierre,morges,5
+rue de st pierre,moudon,5
+rue de st pierre,nyon,4
+rue de st pierre,orbe,3
+rue de st pierre,oron,2
+rue de st pierre,pays_d_enhaut,6
+rue de st pierre,rolle,2
+rue de st pierre,suisse_allemande,13
+rue de st pierre,vevey,10
+rue de st pierre,yverdon,1
+montee de st laurent,aigle,3
+montee de st laurent,aubonne,2
+montee de st laurent,cossonay,6
+montee de st laurent,echallens,2
+montee de st laurent,france,5
+montee de st laurent,la_vallee,2
+montee de st laurent,lausanne,21
+montee de st laurent,lavaux,1
+montee de st laurent,morges,4
+montee de st laurent,moudon,5
+montee de st laurent,neuchatel,1
+montee de st laurent,nyon,4
+montee de st laurent,orbe,4
+montee de st laurent,oron,2
+montee de st laurent,payerne,2
+montee de st laurent,pays_d_enhaut,4
+montee de st laurent,suisse_allemande,1
+montee de st laurent,vevey,1
+montee de st laurent,yverdon,2
+vernand-dessous,lausanne,5
+chailly,france,1
+chailly,fribourg,1
+chailly,la_vallee,1
+chailly,lausanne,16
+chailly,lavaux,1
+chailly,morges,2
+chailly,moudon,1
+chailly,oron,2
+chailly,suisse_allemande,4
+chailly,yverdon,4
+truiblanc,lausanne,1
+montoie,lavaux,4
+montoie,moudon,2
+montoie,rolle,1
+chalet a marin,fribourg,1
+chalet a marin,la_vallee,2
+cite dessous,aigle,2
+cite dessous,cossonay,1
+cite dessous,echallens,4
+cite dessous,france,1
+cite dessous,la_vallee,1
+cite dessous,lausanne,13
+cite dessous,lavaux,4
+cite dessous,morges,1
+cite dessous,moudon,1
+cite dessous,neuchatel,1
+cite dessous,nyon,2
+cite dessous,orbe,2
+cite dessous,oron,2
+cite dessous,pays_d_enhaut,2
+cite dessous,vaud,3
+cite dessous,vevey,2
+cite dessous,yverdon,2
+montchoisi,lausanne,1
+contigny,la_vallee,1
+contigny,lausanne,1
+contigny,lavaux,1
+desert,lausanne,1
+palud,aigle,1
+palud,aubonne,3
+palud,cossonay,4
+palud,echallens,3
+palud,france,4
+palud,geneve,2
+palud,la_vallee,4
+palud,lausanne,34
+palud,lavaux,10
+palud,morges,4
+palud,moudon,3
+palud,nyon,6
+palud,orbe,2
+palud,pays_d_enhaut,2
+palud,rolle,2
+palud,suisse_allemande,1
+palud,vaud,1
+palud,vevey,1
+rue de bourg,aigle,1
+rue de bourg,angleterre,4
+rue de bourg,aubonne,1
+rue de bourg,cossonay,4
+rue de bourg,echallens,1
+rue de bourg,france,13
+rue de bourg,fribourg,1
+rue de bourg,geneve,2
+rue de bourg,la_vallee,2
+rue de bourg,lausanne,42
+rue de bourg,lavaux,7
+rue de bourg,morges,13
+rue de bourg,moudon,2
+rue de bourg,nyon,4
+rue de bourg,orbe,5
+rue de bourg,oron,2
+rue de bourg,pays_d_enhaut,2
+rue de bourg,rolle,3
+rue de bourg,suisse_allemande,15
+rue de bourg,vaud,1
+rue de bourg,vevey,3
+rue de bourg,yverdon,2
+derriere les terreaux ferme de m. roguin,lausanne,1
+escaliers du marche,cossonay,6
+escaliers du marche,echallens,1
+escaliers du marche,france,5
+escaliers du marche,fribourg,2
+escaliers du marche,geneve,1
+escaliers du marche,la_vallee,1
+escaliers du marche,lausanne,17
+escaliers du marche,lavaux,1
+escaliers du marche,morges,2
+escaliers du marche,moudon,2
+escaliers du marche,neuchatel,2
+escaliers du marche,nyon,1
+escaliers du marche,oron,2
+escaliers du marche,pays_d_enhaut,2
+escaliers du marche,suisse_allemande,1
+escaliers du marche,vaud,1
+escaliers du marche,vevey,3
+escaliers du marche,yverdon,1
+cite derriere,aigle,1
+cite derriere,aubonne,3
+cite derriere,avenches,2
+cite derriere,cossonay,3
+cite derriere,france,1
+cite derriere,fribourg,2
+cite derriere,italie,2
+cite derriere,la_vallee,7
+cite derriere,lausanne,36
+cite derriere,lavaux,5
+cite derriere,moudon,6
+cite derriere,orbe,4
+cite derriere,oron,2
+cite derriere,pays_d_enhaut,4
+cite derriere,rolle,2
+cite derriere,suisse_allemande,11
+cite derriere,vaud,2
+cite derriere,vevey,3
+cite derriere,yverdon,7
+bois-gentil,la_vallee,1
+bois-gentil,lausanne,4
+retraite,lausanne,1
+croix de rive,france,1
+croix de rive,lausanne,2
+croix de rive,morges,1
+la sallaz,la_vallee,1
+la sallaz,lausanne,15
+la sallaz,moudon,1
+la sallaz,orbe,1
+la sallaz,suisse_allemande,2
+la sallaz,vaud,1
+bellevue,lausanne,3
+place du pont,aubonne,2
+place du pont,echallens,2
+place du pont,fribourg,2
+place du pont,lausanne,3
+place du pont,morges,2
+place du pont,oron,1
+place du pont,pays_d_enhaut,1
+place du pont,yverdon,1
+chalet de vernand,lausanne,2
+rongimel,lausanne,3
+servan,angleterre,4
+servan,lavaux,1
+jordils,lausanne,2
+montagibert,france,1
+montagibert,fribourg,2
+montagibert,oron,1
+la berallaz,la_vallee,5
+st etienne,aigle,1
+st etienne,aubonne,1
+st etienne,france,7
+st etienne,geneve,1
+st etienne,grandson,1
+st etienne,la_vallee,1
+st etienne,lausanne,10
+st etienne,lavaux,3
+st etienne,moudon,2
+st etienne,nyon,2
+st etienne,pays_d_enhaut,1
+st etienne,rolle,1
+st etienne,suisse_allemande,1
+st etienne,vevey,2
+bergieres,aigle,1
+bergieres,lausanne,1
+marterey,aigle,3
+marterey,aubonne,3
+marterey,cossonay,7
+marterey,echallens,7
+marterey,france,9
+marterey,fribourg,2
+marterey,geneve,2
+marterey,la_vallee,3
+marterey,lausanne,77
+marterey,lavaux,31
+marterey,morges,6
+marterey,moudon,7
+marterey,neuchatel,1
+marterey,nyon,2
+marterey,orbe,1
+marterey,oron,8
+marterey,payerne,2
+marterey,pays_d_enhaut,4
+marterey,rolle,3
+marterey,suisse_allemande,18
+marterey,vaud,4
+marterey,vevey,4
+marterey,yverdon,4
+petite rue,la_vallee,1
+petite rue,lausanne,3
+moulin de pepinet,aigle,1
+moulin de pepinet,cossonay,1
+moulin de pepinet,fribourg,1
+moulin de pepinet,grandson,1
+moulin de pepinet,la_vallee,4
+moulin de pepinet,lausanne,7
+moulin de pepinet,lavaux,2
+moulin de pepinet,morges,2
+moulin de pepinet,neuchatel,1
+moulin de pepinet,nyon,1
+moulin de pepinet,suisse_allemande,1
+moulin de pepinet,yverdon,1
+petit ouchy,oron,1
+petit ouchy,vevey,1
+chalet aux enfants,fribourg,2
+rosemont,france,2
+riponne,la_vallee,1
+riponne,lausanne,1
+riponne,morges,1
+cheneau de bourg,aigle,1
+cheneau de bourg,aubonne,3
+cheneau de bourg,cossonay,9
+cheneau de bourg,echallens,8
+cheneau de bourg,france,2
+cheneau de bourg,fribourg,2
+cheneau de bourg,la_vallee,4
+cheneau de bourg,lausanne,33
+cheneau de bourg,lavaux,7
+cheneau de bourg,morges,10
+cheneau de bourg,moudon,1
+cheneau de bourg,neuchatel,2
+cheneau de bourg,nyon,4
+cheneau de bourg,orbe,2
+cheneau de bourg,oron,3
+cheneau de bourg,pays_d_enhaut,4
+cheneau de bourg,rolle,2
+cheneau de bourg,suisse_allemande,6
+cheneau de bourg,vaud,3
+cheneau de bourg,vevey,1
+cheneau de bourg,yverdon,9
+paleyres,france,1
+paleyres,morges,1
+a la tuerie ?,lausanne,1
+petit mon repos,angleterre,1
+rue de chaucrau,aigle,1
+rue de chaucrau,aubonne,1
+rue de chaucrau,cossonay,3
+rue de chaucrau,echallens,2
+rue de chaucrau,france,6
+rue de chaucrau,geneve,1
+rue de chaucrau,lausanne,27
+rue de chaucrau,lavaux,13
+rue de chaucrau,morges,2
+rue de chaucrau,moudon,4
+rue de chaucrau,neuchatel,2
+rue de chaucrau,orbe,5
+rue de chaucrau,oron,7
+rue de chaucrau,pays_d_enhaut,1
+rue de chaucrau,rolle,1
+rue de chaucrau,suisse_allemande,5
+rue de chaucrau,yverdon,3
+mercerie,aigle,1
+mercerie,aubonne,2
+mercerie,cossonay,3
+mercerie,echallens,2
+mercerie,france,7
+mercerie,fribourg,2
+mercerie,lausanne,17
+mercerie,lavaux,6
+mercerie,morges,7
+mercerie,moudon,6
+mercerie,orbe,2
+mercerie,oron,1
+mercerie,pays_d_enhaut,1
+mercerie,rolle,1
+mercerie,suisse_allemande,1
+mercerie,vaud,1
+mercerie,vevey,3
+mercerie,yverdon,1
+chavannes,france,1
+chavannes,lausanne,6
+chavannes,rolle,1
+chavannes,suisse_allemande,1
+toises,lausanne,1
+toises,vevey,1
+trabandan,lausanne,1
+petits huttins,lausanne,1
+languedoc,lausanne,1
+languedoc,lavaux,2
+rue de l'ale,aigle,1
+rue de l'ale,aubonne,1
+rue de l'ale,cossonay,9
+rue de l'ale,echallens,5
+rue de l'ale,france,2
+rue de l'ale,fribourg,2
+rue de l'ale,geneve,1
+rue de l'ale,grandson,1
+rue de l'ale,la_vallee,1
+rue de l'ale,lausanne,57
+rue de l'ale,lavaux,10
+rue de l'ale,morges,10
+rue de l'ale,moudon,9
+rue de l'ale,neuchatel,1
+rue de l'ale,nyon,3
+rue de l'ale,orbe,7
+rue de l'ale,oron,10
+rue de l'ale,pays_d_enhaut,6
+rue de l'ale,suisse_allemande,3
+rue de l'ale,vaud,5
+rue de l'ale,vevey,6
+rue de l'ale,yverdon,4
+pont des sauge,lausanne,2
+pont des sauge,moudon,3
+petit chene,france,3
+petit chene,lausanne,1
+petit chene,morges,3
+petit chene,moudon,1
+petit chene,nyon,1
+petit chene,pays_d_enhaut,2
+petit chene,suisse_allemande,1
+beau-soleil,lausanne,1
+la rappaz,echallens,1
+la rappaz,vaud,1
+petite pontaise,lausanne,1
+pres de ville,cossonay,1
+pres de ville,france,1
+pres de ville,geneve,1
+pres de ville,morges,1
+pres de ville,suisse_allemande,1
+rue de l'hopital,echallens,2
+rue de l'hopital,france,2
+rue de l'hopital,fribourg,1
+rue de l'hopital,grandson,1
+rue de l'hopital,la_vallee,3
+rue de l'hopital,lausanne,10
+rue de l'hopital,lavaux,2
+rue de l'hopital,morges,1
+rue de l'hopital,nyon,1
+rue de l'hopital,oron,1
+rue de l'hopital,pays_d_enhaut,2
+rue de l'hopital,vevey,1
+montetan,lausanne,1
+pontaise,france,1
+pontaise,lausanne,2
+pontaise,lavaux,1
+malley,france,1
+malley,lavaux,1
+riant-mont,lausanne,1
+petit singe,angleterre,3
+petit singe,france,3
+petit singe,lausanne,4
+petit singe,rolle,1
+petit singe,yverdon,1
+mont-olivet,angleterre,1
+mont-olivet,morges,1
+croix rouge,geneve,1
+croix rouge,lausanne,2
+croix rouge,morges,1
+croix rouge,oron,1
+croix rouge,suisse_allemande,1
+collonges,lausanne,1
+ecole de charite,lausanne,3
+ecole de charite,pays_d_enhaut,1
+valentin,angleterre,1
+valentin,france,1
+valentin,lausanne,2
+loup,lausanne,3
+grange-neuve,cossonay,1
+grange-neuve,la_vallee,7
+grange-neuve,lausanne,2
+grange-neuve,vaud,2
+mon repos,vevey,2
+bourdonnette,lausanne,1
+bourdonnette,oron,1
+petit st jean,aigle,1
+petit st jean,cossonay,4
+petit st jean,echallens,1
+petit st jean,fribourg,1
+petit st jean,la_vallee,1
+petit st jean,lausanne,13
+petit st jean,lavaux,2
+petit st jean,nyon,1
+petit st jean,orbe,1
+petit st jean,rolle,1
+petit st jean,suisse_allemande,6
+petit st jean,vevey,3
+petit st jean,yverdon,6
+villamont,morges,2
+grand st jean,aigle,2
+grand st jean,angleterre,1
+grand st jean,aubonne,2
+grand st jean,avenches,1
+grand st jean,cossonay,4
+grand st jean,echallens,4
+grand st jean,france,8
+grand st jean,fribourg,1
+grand st jean,geneve,4
+grand st jean,la_vallee,3
+grand st jean,lausanne,75
+grand st jean,lavaux,10
+grand st jean,morges,26
+grand st jean,moudon,12
+grand st jean,neuchatel,2
+grand st jean,nyon,7
+grand st jean,orbe,9
+grand st jean,oron,7
+grand st jean,payerne,2
+grand st jean,pays_d_enhaut,6
+grand st jean,suisse_allemande,11
+grand st jean,vaud,2
+grand st jean,vevey,5
+grand st jean,yverdon,9
+chauderon,cossonay,1
+chauderon,la_vallee,1
+chauderon,lausanne,5
+chauderon,morges,1
+chauderon,moudon,1
+chauderon,nyon,1
+derriere les terreaux,aubonne,1
+derriere les terreaux,echallens,1
+derriere les terreaux,lausanne,7
+derriere les terreaux,morges,1
+derriere les terreaux,moudon,1
+derriere les terreaux,orbe,1
+derriere les terreaux,payerne,1
+derriere les terreaux,rolle,1
+derriere les terreaux,yverdon,1
+saugettes,lausanne,3
+rovereaz,lausanne,1
+rovereaz,oron,1
+rasude,lausanne,2
+rasude,lavaux,1
+sebeilllon,la_vallee,1
+sebeilllon,lausanne,2
+sebeilllon,lavaux,1
+sebeilllon,pays_d_enhaut,1
+rue du pont,aigle,1
+rue du pont,aubonne,1
+rue du pont,avenches,2
+rue du pont,cossonay,1
+rue du pont,fribourg,1
+rue du pont,grandson,1
+rue du pont,la_vallee,2
+rue du pont,lausanne,24
+rue du pont,lavaux,7
+rue du pont,morges,4
+rue du pont,moudon,2
+rue du pont,nyon,4
+rue du pont,pays_d_enhaut,3
+rue du pont,rolle,1
+rue du pont,suisse_allemande,4
+rue du pont,vevey,3
+praz-sechaud,lausanne,2
+praz-sechaud,yverdon,1
+grangette,france,1
+grangette,lausanne,3
+grangette,moudon,1
+grangette,vevey,1
+montheron,lausanne,5
+montheron,oron,1
+beausite,nyon,1
+la cage ,lausanne,2
+val-d'angrogne,echallens,1
+val-d'angrogne,lausanne,2
+val-d'angrogne,lavaux,1
+bel-air,lausanne,2
+bel-air,payerne,1
+bel-air,suisse_allemande,1
+croisette haras,la_vallee,1
+croisette haras,moudon,1
+grand chene,angleterre,3
+grand chene,cossonay,3
+grand chene,echallens,2
+grand chene,france,12
+grand chene,lausanne,11
+grand chene,lavaux,2
+grand chene,morges,2
+grand chene,moudon,1
+grand chene,orbe,1
+grand chene,oron,1
+grand chene,rolle,1
+grand chene,suisse_allemande,5
+villars,cossonay,1
+villars,lavaux,2
+devin,lausanne,5
+devin,suisse_allemande,2
+ouchy,aigle,2
+ouchy,angleterre,4
+ouchy,aubonne,1
+ouchy,cossonay,5
+ouchy,echallens,1
+ouchy,france,4
+ouchy,geneve,2
+ouchy,la_vallee,1
+ouchy,lausanne,62
+ouchy,lavaux,7
+ouchy,morges,2
+ouchy,neuchatel,1
+ouchy,nyon,4
+ouchy,orbe,2
+ouchy,oron,2
+ouchy,rolle,3
+ouchy,suisse_allemande,2
+ouchy,vevey,3
+cazard,moudon,1
+madeleine,aubonne,1
+madeleine,cossonay,2
+madeleine,fribourg,1
+madeleine,italie,1
+madeleine,la_vallee,1
+madeleine,lausanne,17
+madeleine,lavaux,3
+madeleine,morges,5
+madeleine,moudon,2
+madeleine,nyon,1
+madeleine,orbe,2
+madeleine,oron,3
+madeleine,suisse_allemande,7
+madeleine,vevey,2
+madeleine,yverdon,2
+grand champ,aigle,1
+valency,lausanne,1
+verdonnet,france,3
+verdonnet,lausanne,1
+bois de vaux,angleterre,2
+bois de vaux,pays_d_enhaut,1
+bois de vaux,vevey,1
+bois de vaux,yverdon,1
+place st laurent,lausanne,4
+place st laurent,pays_d_enhaut,1
+place st laurent,rolle,2
+place st laurent,suisse_allemande,1
+place st laurent,vevey,1
+place st laurent,yverdon,1
+villamont maison de maitres,cossonay,2
+villamont maison de maitres,france,3
+villamont maison de maitres,lausanne,2
+calvaire,lausanne,1
+calvaire,lavaux,2
+calvaire,nyon,1
+calvaire,orbe,1
+calvaire,oron,1
+calvaire,suisse_allemande,2
+bugnon,echallens,1
+bugnon,morges,1
+bugnon,suisse_allemande,2
+craivavers,lausanne,3
+chateau de vennes,orbe,1
+mon regret,aigle,1
+rue d'etraz,aubonne,5
+rue d'etraz,cossonay,5
+rue d'etraz,echallens,2
+rue d'etraz,france,3
+rue d'etraz,geneve,1
+rue d'etraz,italie,2
+rue d'etraz,la_vallee,2
+rue d'etraz,lausanne,25
+rue d'etraz,lavaux,8
+rue d'etraz,morges,3
+rue d'etraz,moudon,2
+rue d'etraz,nyon,3
+rue d'etraz,oron,2
+rue d'etraz,payerne,2
+rue d'etraz,pays_d_enhaut,1
+rue d'etraz,rolle,2
+rue d'etraz,suisse_allemande,5
+rue d'etraz,vaud,1
+rue d'etraz,yverdon,5
+singe,lavaux,2
+singe,oron,1
+beaulieu,angleterre,1
+beaulieu,lausanne,2
+rue du pre,aigle,4
+rue du pre,cossonay,6
+rue du pre,echallens,8
+rue du pre,france,3
+rue du pre,la_vallee,3
+rue du pre,lausanne,58
+rue du pre,lavaux,14
+rue du pre,morges,17
+rue du pre,moudon,3
+rue du pre,neuchatel,1
+rue du pre,nyon,6
+rue du pre,orbe,3
+rue du pre,oron,1
+rue du pre,payerne,1
+rue du pre,pays_d_enhaut,6
+rue du pre,rolle,1
+rue du pre,suisse_allemande,14
+rue du pre,vaud,2
+rue du pre,vevey,9
+rue du pre,yverdon,4
+vuachere,lausanne,2
+vennes,fribourg,1
+vennes,lausanne,11
+vennes,lavaux,1
+vennes,moudon,1
+vennes,oron,1
+vennes,pays_d_enhaut,1
+vennes,suisse_allemande,1
+vennes,yverdon,1
+montee st francois,cossonay,2
+montee st francois,lausanne,6
+montee st francois,lavaux,1
+montee st francois,morges,3
+montee st francois,moudon,2
+montee st francois,neuchatel,1
+montee st francois,nyon,1
+montee st francois,suisse_allemande,2
+grey,orbe,1
+pra chillon,yverdon,1
+villard,lausanne,2
+villard,lavaux,1
+villard,orbe,2
+mornex,lausanne,1
+maison des postes,la_vallee,1
+maison des postes,nyon,1
+maison des postes,orbe,1
+clos mont,cossonay,1
+clos mont,lausanne,1
+clos mont,lavaux,1
+clos mont,oron,1
+clos mont,rolle,1
+clos mont,suisse_allemande,1
+boston,cossonay,1
+vernand,lausanne,4
+denatou,lavaux,1
+denatou,yverdon,1
+maupas,angleterre,3
+maupas,cossonay,2
+maupas,geneve,2
+maupas,lausanne,5
+maupas,lavaux,1
+maupas,morges,1
+maupas,moudon,2
+maupas,oron,2
+maupas,suisse_allemande,1
+maupas,vaud,1
+maupas,vevey,3
+barre,angleterre,1
+barre,aubonne,4
+barre,cossonay,3
+barre,echallens,5
+barre,france,4
+barre,fribourg,1
+barre,grandson,2
+barre,italie,1
+barre,la_vallee,4
+barre,lausanne,34
+barre,lavaux,7
+barre,morges,6
+barre,moudon,9
+barre,orbe,2
+barre,oron,3
+barre,pays_d_enhaut,2
+barre,suisse_allemande,13
+barre,vaud,1
+barre,vevey,7
+barre,yverdon,7
+rosiere,rolle,2
+clos de bulle,cossonay,1
+clos de bulle,orbe,1
+montriond,lausanne,1
+montriond,lavaux,1
+montriond,morges,1
+place st francois,aigle,2
+place st francois,angleterre,2
+place st francois,aubonne,1
+place st francois,cossonay,4
+place st francois,la_vallee,2
+place st francois,lausanne,19
+place st francois,lavaux,3
+place st francois,morges,2
+place st francois,moudon,1
+place st francois,nyon,1
+place st francois,vevey,6
+place st francois,yverdon,1
+taulau?,la_vallee,1
+taulau?,lausanne,6
+petit clos,lausanne,4
+petit clos,orbe,2
+prelaz,lausanne,1
+violette,lavaux,1
+cite devant,aigle,5
+cite devant,angleterre,2
+cite devant,aubonne,2
+cite devant,avenches,1
+cite devant,cossonay,1
+cite devant,la_vallee,2
+cite devant,lausanne,34
+cite devant,lavaux,5
+cite devant,morges,3
+cite devant,moudon,3
+cite devant,neuchatel,1
+cite devant,orbe,3
+cite devant,pays_d_enhaut,4
+cite devant,suisse_allemande,6
+cite devant,vevey,1
+cite devant,yverdon,5
+vernand-dessus,aigle,1
+vernand-dessus,la_vallee,2
+vernand-dessus,lausanne,4
+mousquines,angleterre,4
+mousquines,lausanne,1
+grotte,france,2
+grotte,italie,1
+grotte,lausanne,12
+grotte,lavaux,3
+grotte,morges,1
+grotte,moudon,1
+grotte,nyon,1
+grotte,pays_d_enhaut,1
+grotte,suisse_allemande,1
+grotte,vevey,1
+epinette,geneve,1
+maladiere,lausanne,1
+montbenon,angleterre,1
+montbenon,cossonay,1
+montbenon,france,1
+montbenon,la_vallee,1
+montbenon,lausanne,4
+place de st francois,aigle,3
+place de st francois,aubonne,2
+place de st francois,cossonay,1
+place de st francois,france,3
+place de st francois,fribourg,1
+place de st francois,la_vallee,2
+place de st francois,lausanne,18
+place de st francois,lavaux,5
+place de st francois,morges,2
+place de st francois,moudon,3
+place de st francois,neuchatel,1
+place de st francois,orbe,1
+place de st francois,oron,4
+place de st francois,pays_d_enhaut,2
+place de st francois,rolle,1
+place de st francois,suisse_allemande,2
+place de st francois,vaud,1
+place de st francois,vevey,1
+place de st francois,yverdon,3
+chabliere,lausanne,2
+chabliere,nyon,1
+chabliere,oron,1
+les saugealles,pays_d_enhaut,1
+chemin de georgette,cossonay,2
+chemin de georgette,lausanne,1

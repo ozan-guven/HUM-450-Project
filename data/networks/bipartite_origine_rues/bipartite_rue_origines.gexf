@@ -1,0 +1,1720 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2023-05-17">
+    <creator>NetworkX 3.0</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="bipartite" type="long" />
+    </attributes>
+    <nodes>
+      <node id="gottettaz" label="gottettaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place de st laurent" label="place de st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cour" label="cour">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de st pierre" label="rue de st pierre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montee de st laurent" label="montee de st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand-dessous" label="vernand-dessous">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chailly" label="chailly">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="truiblanc" label="truiblanc">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montoie" label="montoie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet a marin" label="chalet a marin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite dessous" label="cite dessous">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montchoisi" label="montchoisi">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="contigny" label="contigny">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="desert" label="desert">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="palud" label="palud">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de bourg" label="rue de bourg">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="derriere les terreaux ferme de m. roguin" label="derriere les terreaux ferme de m. roguin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="escaliers du marche" label="escaliers du marche">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite derriere" label="cite derriere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bois-gentil" label="bois-gentil">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="retraite" label="retraite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croix de rive" label="croix de rive">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la sallaz" label="la sallaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bellevue" label="bellevue">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place du pont" label="place du pont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet de vernand" label="chalet de vernand">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rongimel" label="rongimel">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="servan" label="servan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="jordils" label="jordils">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montagibert" label="montagibert">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la berallaz" label="la berallaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="st etienne" label="st etienne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bergieres" label="bergieres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="marterey" label="marterey">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petite rue" label="petite rue">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="moulin de pepinet" label="moulin de pepinet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit ouchy" label="petit ouchy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet aux enfants" label="chalet aux enfants">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rosemont" label="rosemont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="riponne" label="riponne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cheneau de bourg" label="cheneau de bourg">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="paleyres" label="paleyres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="a la tuerie ?" label="a la tuerie ?">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit mon repos" label="petit mon repos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de chaucrau" label="rue de chaucrau">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mercerie" label="mercerie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mont-allegre" label="mont-allegre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chavannes" label="chavannes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="toises" label="toises">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="trabandan" label="trabandan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petits huttins" label="petits huttins">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="languedoc" label="languedoc">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de l'ale" label="rue de l'ale">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pont des sauge" label="pont des sauge">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit chene" label="petit chene">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beau-soleil" label="beau-soleil">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la rappaz" label="la rappaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petite pontaise" label="petite pontaise">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pres de ville" label="pres de ville">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de l'hopital" label="rue de l'hopital">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montetan" label="montetan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pontaise" label="pontaise">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vidy" label="vidy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="malley" label="malley">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="riant-mont" label="riant-mont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit singe" label="petit singe">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mont-olivet" label="mont-olivet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croix rouge" label="croix rouge">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="collonges" label="collonges">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="ecole de charite" label="ecole de charite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="valentin" label="valentin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="loup" label="loup">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grange-neuve" label="grange-neuve">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mon repos" label="mon repos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bourdonnette" label="bourdonnette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit st jean" label="petit st jean">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villamont" label="villamont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand st jean" label="grand st jean">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chauderon" label="chauderon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="derriere les terreaux" label="derriere les terreaux">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="saugettes" label="saugettes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rovereaz" label="rovereaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rasude" label="rasude">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="sebeilllon" label="sebeilllon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue du pont" label="rue du pont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="praz-sechaud" label="praz-sechaud">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grangette" label="grangette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montheron" label="montheron">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beausite" label="beausite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la cage " label="la cage ">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="val-d'angrogne" label="val-d'angrogne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bel-air" label="bel-air">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croisette haras" label="croisette haras">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand chene" label="grand chene">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villars" label="villars">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="devin" label="devin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="ouchy" label="ouchy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cazard" label="cazard">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="madeleine" label="madeleine">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand champ" label="grand champ">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="valency" label="valency">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="verdonnet" label="verdonnet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bois de vaux" label="bois de vaux">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place st laurent" label="place st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villamont maison de maitres" label="villamont maison de maitres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="calvaire" label="calvaire">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bugnon" label="bugnon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="craivavers" label="craivavers">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chateau de vennes" label="chateau de vennes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mon regret" label="mon regret">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue d'etraz" label="rue d'etraz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="singe" label="singe">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beaulieu" label="beaulieu">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue du pre" label="rue du pre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vuachere" label="vuachere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vennes" label="vennes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montee st francois" label="montee st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grey" label="grey">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pra chillon" label="pra chillon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villard" label="villard">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mornex" label="mornex">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bethusy" label="bethusy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maison des postes" label="maison des postes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="clos mont" label="clos mont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="boston" label="boston">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand" label="vernand">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="sous le signal" label="sous le signal">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="denatou" label="denatou">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maupas" label="maupas">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="barre" label="barre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rosiere" label="rosiere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="clos de bulle" label="clos de bulle">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montriond" label="montriond">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place st francois" label="place st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="taulau?" label="taulau?">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit clos" label="petit clos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="prelaz" label="prelaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="violette" label="violette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite devant" label="cite devant">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand-dessus" label="vernand-dessus">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mousquines" label="mousquines">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grotte" label="grotte">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pepinet" label="pepinet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="epinette" label="epinette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maladiere" label="maladiere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montbenon" label="montbenon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place de st francois" label="place de st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chabliere" label="chabliere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="les saugealles" label="les saugealles">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chemin de georgette" label="chemin de georgette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="blecherette" label="blecherette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="italie" label="italie">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="oron" label="oron">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="suisse_allemande" label="suisse_allemande">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="nyon" label="nyon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="geneve" label="geneve">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="la_vallee" label="la_vallee">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="moudon" label="moudon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fribourg" label="fribourg">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="angleterre" label="angleterre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="vaud" label="vaud">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="yverdon" label="yverdon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="morges" label="morges">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="echallens" label="echallens">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="neuchatel" label="neuchatel">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="avenches" label="avenches">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lausanne" label="lausanne">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pays_d_enhaut" label="pays_d_enhaut">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="france" label="france">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="orbe" label="orbe">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="rolle" label="rolle">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="vevey" label="vevey">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="aigle" label="aigle">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="grandson" label="grandson">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="payerne" label="payerne">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cossonay" label="cossonay">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lavaux" label="lavaux">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="aubonne" label="aubonne">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="gottettaz" target="cossonay" id="0" weight="1" />
+      <edge source="gottettaz" target="morges" id="1" weight="1" />
+      <edge source="gottettaz" target="orbe" id="2" weight="1" />
+      <edge source="gottettaz" target="oron" id="3" weight="1" />
+      <edge source="gottettaz" target="suisse_allemande" id="4" weight="1" />
+      <edge source="place de st laurent" target="aubonne" id="5" weight="1" />
+      <edge source="place de st laurent" target="cossonay" id="6" weight="3" />
+      <edge source="place de st laurent" target="echallens" id="7" weight="2" />
+      <edge source="place de st laurent" target="france" id="8" weight="1" />
+      <edge source="place de st laurent" target="fribourg" id="9" weight="1" />
+      <edge source="place de st laurent" target="grandson" id="10" weight="1" />
+      <edge source="place de st laurent" target="la_vallee" id="11" weight="1" />
+      <edge source="place de st laurent" target="lausanne" id="12" weight="35" />
+      <edge source="place de st laurent" target="lavaux" id="13" weight="9" />
+      <edge source="place de st laurent" target="morges" id="14" weight="8" />
+      <edge source="place de st laurent" target="moudon" id="15" weight="2" />
+      <edge source="place de st laurent" target="neuchatel" id="16" weight="1" />
+      <edge source="place de st laurent" target="nyon" id="17" weight="2" />
+      <edge source="place de st laurent" target="orbe" id="18" weight="1" />
+      <edge source="place de st laurent" target="oron" id="19" weight="7" />
+      <edge source="place de st laurent" target="payerne" id="20" weight="1" />
+      <edge source="place de st laurent" target="pays_d_enhaut" id="21" weight="5" />
+      <edge source="place de st laurent" target="rolle" id="22" weight="1" />
+      <edge source="place de st laurent" target="suisse_allemande" id="23" weight="8" />
+      <edge source="place de st laurent" target="vaud" id="24" weight="4" />
+      <edge source="place de st laurent" target="vevey" id="25" weight="4" />
+      <edge source="place de st laurent" target="yverdon" id="26" weight="4" />
+      <edge source="cour" target="angleterre" id="27" weight="3" />
+      <edge source="cour" target="cossonay" id="28" weight="2" />
+      <edge source="cour" target="france" id="29" weight="2" />
+      <edge source="cour" target="geneve" id="30" weight="2" />
+      <edge source="cour" target="la_vallee" id="31" weight="2" />
+      <edge source="cour" target="lausanne" id="32" weight="18" />
+      <edge source="cour" target="lavaux" id="33" weight="11" />
+      <edge source="cour" target="morges" id="34" weight="1" />
+      <edge source="cour" target="moudon" id="35" weight="1" />
+      <edge source="cour" target="oron" id="36" weight="3" />
+      <edge source="cour" target="payerne" id="37" weight="1" />
+      <edge source="cour" target="vevey" id="38" weight="2" />
+      <edge source="cour" target="yverdon" id="39" weight="1" />
+      <edge source="rue de st pierre" target="aigle" id="40" weight="1" />
+      <edge source="rue de st pierre" target="angleterre" id="41" weight="4" />
+      <edge source="rue de st pierre" target="aubonne" id="42" weight="4" />
+      <edge source="rue de st pierre" target="avenches" id="43" weight="1" />
+      <edge source="rue de st pierre" target="cossonay" id="44" weight="1" />
+      <edge source="rue de st pierre" target="echallens" id="45" weight="3" />
+      <edge source="rue de st pierre" target="france" id="46" weight="4" />
+      <edge source="rue de st pierre" target="grandson" id="47" weight="1" />
+      <edge source="rue de st pierre" target="italie" id="48" weight="1" />
+      <edge source="rue de st pierre" target="la_vallee" id="49" weight="1" />
+      <edge source="rue de st pierre" target="lausanne" id="50" weight="34" />
+      <edge source="rue de st pierre" target="lavaux" id="51" weight="14" />
+      <edge source="rue de st pierre" target="morges" id="52" weight="5" />
+      <edge source="rue de st pierre" target="moudon" id="53" weight="5" />
+      <edge source="rue de st pierre" target="nyon" id="54" weight="4" />
+      <edge source="rue de st pierre" target="orbe" id="55" weight="3" />
+      <edge source="rue de st pierre" target="oron" id="56" weight="2" />
+      <edge source="rue de st pierre" target="pays_d_enhaut" id="57" weight="6" />
+      <edge source="rue de st pierre" target="rolle" id="58" weight="2" />
+      <edge source="rue de st pierre" target="suisse_allemande" id="59" weight="13" />
+      <edge source="rue de st pierre" target="vevey" id="60" weight="10" />
+      <edge source="rue de st pierre" target="yverdon" id="61" weight="1" />
+      <edge source="montee de st laurent" target="aigle" id="62" weight="3" />
+      <edge source="montee de st laurent" target="aubonne" id="63" weight="2" />
+      <edge source="montee de st laurent" target="cossonay" id="64" weight="6" />
+      <edge source="montee de st laurent" target="echallens" id="65" weight="2" />
+      <edge source="montee de st laurent" target="france" id="66" weight="5" />
+      <edge source="montee de st laurent" target="la_vallee" id="67" weight="2" />
+      <edge source="montee de st laurent" target="lausanne" id="68" weight="21" />
+      <edge source="montee de st laurent" target="lavaux" id="69" weight="1" />
+      <edge source="montee de st laurent" target="morges" id="70" weight="4" />
+      <edge source="montee de st laurent" target="moudon" id="71" weight="5" />
+      <edge source="montee de st laurent" target="neuchatel" id="72" weight="1" />
+      <edge source="montee de st laurent" target="nyon" id="73" weight="4" />
+      <edge source="montee de st laurent" target="orbe" id="74" weight="4" />
+      <edge source="montee de st laurent" target="oron" id="75" weight="2" />
+      <edge source="montee de st laurent" target="payerne" id="76" weight="2" />
+      <edge source="montee de st laurent" target="pays_d_enhaut" id="77" weight="4" />
+      <edge source="montee de st laurent" target="suisse_allemande" id="78" weight="1" />
+      <edge source="montee de st laurent" target="vevey" id="79" weight="1" />
+      <edge source="montee de st laurent" target="yverdon" id="80" weight="2" />
+      <edge source="vernand-dessous" target="lausanne" id="81" weight="5" />
+      <edge source="chailly" target="france" id="82" weight="1" />
+      <edge source="chailly" target="fribourg" id="83" weight="1" />
+      <edge source="chailly" target="la_vallee" id="84" weight="1" />
+      <edge source="chailly" target="lausanne" id="85" weight="16" />
+      <edge source="chailly" target="lavaux" id="86" weight="1" />
+      <edge source="chailly" target="morges" id="87" weight="2" />
+      <edge source="chailly" target="moudon" id="88" weight="1" />
+      <edge source="chailly" target="oron" id="89" weight="2" />
+      <edge source="chailly" target="suisse_allemande" id="90" weight="4" />
+      <edge source="chailly" target="yverdon" id="91" weight="4" />
+      <edge source="truiblanc" target="lausanne" id="92" weight="1" />
+      <edge source="montoie" target="lavaux" id="93" weight="4" />
+      <edge source="montoie" target="moudon" id="94" weight="2" />
+      <edge source="montoie" target="rolle" id="95" weight="1" />
+      <edge source="chalet a marin" target="fribourg" id="96" weight="1" />
+      <edge source="chalet a marin" target="la_vallee" id="97" weight="2" />
+      <edge source="cite dessous" target="aigle" id="98" weight="2" />
+      <edge source="cite dessous" target="cossonay" id="99" weight="1" />
+      <edge source="cite dessous" target="echallens" id="100" weight="4" />
+      <edge source="cite dessous" target="france" id="101" weight="1" />
+      <edge source="cite dessous" target="la_vallee" id="102" weight="1" />
+      <edge source="cite dessous" target="lausanne" id="103" weight="13" />
+      <edge source="cite dessous" target="lavaux" id="104" weight="4" />
+      <edge source="cite dessous" target="morges" id="105" weight="1" />
+      <edge source="cite dessous" target="moudon" id="106" weight="1" />
+      <edge source="cite dessous" target="neuchatel" id="107" weight="1" />
+      <edge source="cite dessous" target="nyon" id="108" weight="2" />
+      <edge source="cite dessous" target="orbe" id="109" weight="2" />
+      <edge source="cite dessous" target="oron" id="110" weight="2" />
+      <edge source="cite dessous" target="pays_d_enhaut" id="111" weight="2" />
+      <edge source="cite dessous" target="vaud" id="112" weight="3" />
+      <edge source="cite dessous" target="vevey" id="113" weight="2" />
+      <edge source="cite dessous" target="yverdon" id="114" weight="2" />
+      <edge source="montchoisi" target="lausanne" id="115" weight="1" />
+      <edge source="contigny" target="la_vallee" id="116" weight="1" />
+      <edge source="contigny" target="lausanne" id="117" weight="1" />
+      <edge source="contigny" target="lavaux" id="118" weight="1" />
+      <edge source="desert" target="lausanne" id="119" weight="1" />
+      <edge source="palud" target="aigle" id="120" weight="1" />
+      <edge source="palud" target="aubonne" id="121" weight="3" />
+      <edge source="palud" target="cossonay" id="122" weight="4" />
+      <edge source="palud" target="echallens" id="123" weight="3" />
+      <edge source="palud" target="france" id="124" weight="4" />
+      <edge source="palud" target="geneve" id="125" weight="2" />
+      <edge source="palud" target="la_vallee" id="126" weight="4" />
+      <edge source="palud" target="lausanne" id="127" weight="34" />
+      <edge source="palud" target="lavaux" id="128" weight="10" />
+      <edge source="palud" target="morges" id="129" weight="4" />
+      <edge source="palud" target="moudon" id="130" weight="3" />
+      <edge source="palud" target="nyon" id="131" weight="6" />
+      <edge source="palud" target="orbe" id="132" weight="2" />
+      <edge source="palud" target="pays_d_enhaut" id="133" weight="2" />
+      <edge source="palud" target="rolle" id="134" weight="2" />
+      <edge source="palud" target="suisse_allemande" id="135" weight="1" />
+      <edge source="palud" target="vaud" id="136" weight="1" />
+      <edge source="palud" target="vevey" id="137" weight="1" />
+      <edge source="rue de bourg" target="aigle" id="138" weight="1" />
+      <edge source="rue de bourg" target="angleterre" id="139" weight="4" />
+      <edge source="rue de bourg" target="aubonne" id="140" weight="1" />
+      <edge source="rue de bourg" target="cossonay" id="141" weight="4" />
+      <edge source="rue de bourg" target="echallens" id="142" weight="1" />
+      <edge source="rue de bourg" target="france" id="143" weight="13" />
+      <edge source="rue de bourg" target="fribourg" id="144" weight="1" />
+      <edge source="rue de bourg" target="geneve" id="145" weight="2" />
+      <edge source="rue de bourg" target="la_vallee" id="146" weight="2" />
+      <edge source="rue de bourg" target="lausanne" id="147" weight="42" />
+      <edge source="rue de bourg" target="lavaux" id="148" weight="7" />
+      <edge source="rue de bourg" target="morges" id="149" weight="13" />
+      <edge source="rue de bourg" target="moudon" id="150" weight="2" />
+      <edge source="rue de bourg" target="nyon" id="151" weight="4" />
+      <edge source="rue de bourg" target="orbe" id="152" weight="5" />
+      <edge source="rue de bourg" target="oron" id="153" weight="2" />
+      <edge source="rue de bourg" target="pays_d_enhaut" id="154" weight="2" />
+      <edge source="rue de bourg" target="rolle" id="155" weight="3" />
+      <edge source="rue de bourg" target="suisse_allemande" id="156" weight="15" />
+      <edge source="rue de bourg" target="vaud" id="157" weight="1" />
+      <edge source="rue de bourg" target="vevey" id="158" weight="3" />
+      <edge source="rue de bourg" target="yverdon" id="159" weight="2" />
+      <edge source="derriere les terreaux ferme de m. roguin" target="lausanne" id="160" weight="1" />
+      <edge source="escaliers du marche" target="cossonay" id="161" weight="6" />
+      <edge source="escaliers du marche" target="echallens" id="162" weight="1" />
+      <edge source="escaliers du marche" target="france" id="163" weight="5" />
+      <edge source="escaliers du marche" target="fribourg" id="164" weight="2" />
+      <edge source="escaliers du marche" target="geneve" id="165" weight="1" />
+      <edge source="escaliers du marche" target="la_vallee" id="166" weight="1" />
+      <edge source="escaliers du marche" target="lausanne" id="167" weight="17" />
+      <edge source="escaliers du marche" target="lavaux" id="168" weight="1" />
+      <edge source="escaliers du marche" target="morges" id="169" weight="2" />
+      <edge source="escaliers du marche" target="moudon" id="170" weight="2" />
+      <edge source="escaliers du marche" target="neuchatel" id="171" weight="2" />
+      <edge source="escaliers du marche" target="nyon" id="172" weight="1" />
+      <edge source="escaliers du marche" target="oron" id="173" weight="2" />
+      <edge source="escaliers du marche" target="pays_d_enhaut" id="174" weight="2" />
+      <edge source="escaliers du marche" target="suisse_allemande" id="175" weight="1" />
+      <edge source="escaliers du marche" target="vaud" id="176" weight="1" />
+      <edge source="escaliers du marche" target="vevey" id="177" weight="3" />
+      <edge source="escaliers du marche" target="yverdon" id="178" weight="1" />
+      <edge source="cite derriere" target="aigle" id="179" weight="1" />
+      <edge source="cite derriere" target="aubonne" id="180" weight="3" />
+      <edge source="cite derriere" target="avenches" id="181" weight="2" />
+      <edge source="cite derriere" target="cossonay" id="182" weight="3" />
+      <edge source="cite derriere" target="france" id="183" weight="1" />
+      <edge source="cite derriere" target="fribourg" id="184" weight="2" />
+      <edge source="cite derriere" target="italie" id="185" weight="2" />
+      <edge source="cite derriere" target="la_vallee" id="186" weight="7" />
+      <edge source="cite derriere" target="lausanne" id="187" weight="36" />
+      <edge source="cite derriere" target="lavaux" id="188" weight="5" />
+      <edge source="cite derriere" target="moudon" id="189" weight="6" />
+      <edge source="cite derriere" target="orbe" id="190" weight="4" />
+      <edge source="cite derriere" target="oron" id="191" weight="2" />
+      <edge source="cite derriere" target="pays_d_enhaut" id="192" weight="4" />
+      <edge source="cite derriere" target="rolle" id="193" weight="2" />
+      <edge source="cite derriere" target="suisse_allemande" id="194" weight="11" />
+      <edge source="cite derriere" target="vaud" id="195" weight="2" />
+      <edge source="cite derriere" target="vevey" id="196" weight="3" />
+      <edge source="cite derriere" target="yverdon" id="197" weight="7" />
+      <edge source="bois-gentil" target="la_vallee" id="198" weight="1" />
+      <edge source="bois-gentil" target="lausanne" id="199" weight="4" />
+      <edge source="retraite" target="lausanne" id="200" weight="1" />
+      <edge source="croix de rive" target="france" id="201" weight="1" />
+      <edge source="croix de rive" target="lausanne" id="202" weight="2" />
+      <edge source="croix de rive" target="morges" id="203" weight="1" />
+      <edge source="la sallaz" target="la_vallee" id="204" weight="1" />
+      <edge source="la sallaz" target="lausanne" id="205" weight="15" />
+      <edge source="la sallaz" target="moudon" id="206" weight="1" />
+      <edge source="la sallaz" target="orbe" id="207" weight="1" />
+      <edge source="la sallaz" target="suisse_allemande" id="208" weight="2" />
+      <edge source="la sallaz" target="vaud" id="209" weight="1" />
+      <edge source="bellevue" target="lausanne" id="210" weight="3" />
+      <edge source="place du pont" target="aubonne" id="211" weight="2" />
+      <edge source="place du pont" target="echallens" id="212" weight="2" />
+      <edge source="place du pont" target="fribourg" id="213" weight="2" />
+      <edge source="place du pont" target="lausanne" id="214" weight="3" />
+      <edge source="place du pont" target="morges" id="215" weight="2" />
+      <edge source="place du pont" target="oron" id="216" weight="1" />
+      <edge source="place du pont" target="pays_d_enhaut" id="217" weight="1" />
+      <edge source="place du pont" target="yverdon" id="218" weight="1" />
+      <edge source="chalet de vernand" target="lausanne" id="219" weight="2" />
+      <edge source="rongimel" target="lausanne" id="220" weight="3" />
+      <edge source="servan" target="angleterre" id="221" weight="4" />
+      <edge source="servan" target="lavaux" id="222" weight="1" />
+      <edge source="jordils" target="lausanne" id="223" weight="2" />
+      <edge source="montagibert" target="france" id="224" weight="1" />
+      <edge source="montagibert" target="fribourg" id="225" weight="2" />
+      <edge source="montagibert" target="oron" id="226" weight="1" />
+      <edge source="la berallaz" target="la_vallee" id="227" weight="5" />
+      <edge source="st etienne" target="aigle" id="228" weight="1" />
+      <edge source="st etienne" target="aubonne" id="229" weight="1" />
+      <edge source="st etienne" target="france" id="230" weight="7" />
+      <edge source="st etienne" target="geneve" id="231" weight="1" />
+      <edge source="st etienne" target="grandson" id="232" weight="1" />
+      <edge source="st etienne" target="la_vallee" id="233" weight="1" />
+      <edge source="st etienne" target="lausanne" id="234" weight="10" />
+      <edge source="st etienne" target="lavaux" id="235" weight="3" />
+      <edge source="st etienne" target="moudon" id="236" weight="2" />
+      <edge source="st etienne" target="nyon" id="237" weight="2" />
+      <edge source="st etienne" target="pays_d_enhaut" id="238" weight="1" />
+      <edge source="st etienne" target="rolle" id="239" weight="1" />
+      <edge source="st etienne" target="suisse_allemande" id="240" weight="1" />
+      <edge source="st etienne" target="vevey" id="241" weight="2" />
+      <edge source="bergieres" target="aigle" id="242" weight="1" />
+      <edge source="bergieres" target="lausanne" id="243" weight="1" />
+      <edge source="marterey" target="aigle" id="244" weight="3" />
+      <edge source="marterey" target="aubonne" id="245" weight="3" />
+      <edge source="marterey" target="cossonay" id="246" weight="7" />
+      <edge source="marterey" target="echallens" id="247" weight="7" />
+      <edge source="marterey" target="france" id="248" weight="9" />
+      <edge source="marterey" target="fribourg" id="249" weight="2" />
+      <edge source="marterey" target="geneve" id="250" weight="2" />
+      <edge source="marterey" target="la_vallee" id="251" weight="3" />
+      <edge source="marterey" target="lausanne" id="252" weight="77" />
+      <edge source="marterey" target="lavaux" id="253" weight="31" />
+      <edge source="marterey" target="morges" id="254" weight="6" />
+      <edge source="marterey" target="moudon" id="255" weight="7" />
+      <edge source="marterey" target="neuchatel" id="256" weight="1" />
+      <edge source="marterey" target="nyon" id="257" weight="2" />
+      <edge source="marterey" target="orbe" id="258" weight="1" />
+      <edge source="marterey" target="oron" id="259" weight="8" />
+      <edge source="marterey" target="payerne" id="260" weight="2" />
+      <edge source="marterey" target="pays_d_enhaut" id="261" weight="4" />
+      <edge source="marterey" target="rolle" id="262" weight="3" />
+      <edge source="marterey" target="suisse_allemande" id="263" weight="18" />
+      <edge source="marterey" target="vaud" id="264" weight="4" />
+      <edge source="marterey" target="vevey" id="265" weight="4" />
+      <edge source="marterey" target="yverdon" id="266" weight="4" />
+      <edge source="petite rue" target="la_vallee" id="267" weight="1" />
+      <edge source="petite rue" target="lausanne" id="268" weight="3" />
+      <edge source="moulin de pepinet" target="aigle" id="269" weight="1" />
+      <edge source="moulin de pepinet" target="cossonay" id="270" weight="1" />
+      <edge source="moulin de pepinet" target="fribourg" id="271" weight="1" />
+      <edge source="moulin de pepinet" target="grandson" id="272" weight="1" />
+      <edge source="moulin de pepinet" target="la_vallee" id="273" weight="4" />
+      <edge source="moulin de pepinet" target="lausanne" id="274" weight="7" />
+      <edge source="moulin de pepinet" target="lavaux" id="275" weight="2" />
+      <edge source="moulin de pepinet" target="morges" id="276" weight="2" />
+      <edge source="moulin de pepinet" target="neuchatel" id="277" weight="1" />
+      <edge source="moulin de pepinet" target="nyon" id="278" weight="1" />
+      <edge source="moulin de pepinet" target="suisse_allemande" id="279" weight="1" />
+      <edge source="moulin de pepinet" target="yverdon" id="280" weight="1" />
+      <edge source="petit ouchy" target="oron" id="281" weight="1" />
+      <edge source="petit ouchy" target="vevey" id="282" weight="1" />
+      <edge source="chalet aux enfants" target="fribourg" id="283" weight="2" />
+      <edge source="rosemont" target="france" id="284" weight="2" />
+      <edge source="riponne" target="la_vallee" id="285" weight="1" />
+      <edge source="riponne" target="lausanne" id="286" weight="1" />
+      <edge source="riponne" target="morges" id="287" weight="1" />
+      <edge source="cheneau de bourg" target="aigle" id="288" weight="1" />
+      <edge source="cheneau de bourg" target="aubonne" id="289" weight="3" />
+      <edge source="cheneau de bourg" target="cossonay" id="290" weight="9" />
+      <edge source="cheneau de bourg" target="echallens" id="291" weight="8" />
+      <edge source="cheneau de bourg" target="france" id="292" weight="2" />
+      <edge source="cheneau de bourg" target="fribourg" id="293" weight="2" />
+      <edge source="cheneau de bourg" target="la_vallee" id="294" weight="4" />
+      <edge source="cheneau de bourg" target="lausanne" id="295" weight="33" />
+      <edge source="cheneau de bourg" target="lavaux" id="296" weight="7" />
+      <edge source="cheneau de bourg" target="morges" id="297" weight="10" />
+      <edge source="cheneau de bourg" target="moudon" id="298" weight="1" />
+      <edge source="cheneau de bourg" target="neuchatel" id="299" weight="2" />
+      <edge source="cheneau de bourg" target="nyon" id="300" weight="4" />
+      <edge source="cheneau de bourg" target="orbe" id="301" weight="2" />
+      <edge source="cheneau de bourg" target="oron" id="302" weight="3" />
+      <edge source="cheneau de bourg" target="pays_d_enhaut" id="303" weight="4" />
+      <edge source="cheneau de bourg" target="rolle" id="304" weight="2" />
+      <edge source="cheneau de bourg" target="suisse_allemande" id="305" weight="6" />
+      <edge source="cheneau de bourg" target="vaud" id="306" weight="3" />
+      <edge source="cheneau de bourg" target="vevey" id="307" weight="1" />
+      <edge source="cheneau de bourg" target="yverdon" id="308" weight="9" />
+      <edge source="paleyres" target="france" id="309" weight="1" />
+      <edge source="paleyres" target="morges" id="310" weight="1" />
+      <edge source="a la tuerie ?" target="lausanne" id="311" weight="1" />
+      <edge source="petit mon repos" target="angleterre" id="312" weight="1" />
+      <edge source="rue de chaucrau" target="aigle" id="313" weight="1" />
+      <edge source="rue de chaucrau" target="aubonne" id="314" weight="1" />
+      <edge source="rue de chaucrau" target="cossonay" id="315" weight="3" />
+      <edge source="rue de chaucrau" target="echallens" id="316" weight="2" />
+      <edge source="rue de chaucrau" target="france" id="317" weight="6" />
+      <edge source="rue de chaucrau" target="geneve" id="318" weight="1" />
+      <edge source="rue de chaucrau" target="lausanne" id="319" weight="27" />
+      <edge source="rue de chaucrau" target="lavaux" id="320" weight="13" />
+      <edge source="rue de chaucrau" target="morges" id="321" weight="2" />
+      <edge source="rue de chaucrau" target="moudon" id="322" weight="4" />
+      <edge source="rue de chaucrau" target="neuchatel" id="323" weight="2" />
+      <edge source="rue de chaucrau" target="orbe" id="324" weight="5" />
+      <edge source="rue de chaucrau" target="oron" id="325" weight="7" />
+      <edge source="rue de chaucrau" target="pays_d_enhaut" id="326" weight="1" />
+      <edge source="rue de chaucrau" target="rolle" id="327" weight="1" />
+      <edge source="rue de chaucrau" target="suisse_allemande" id="328" weight="5" />
+      <edge source="rue de chaucrau" target="yverdon" id="329" weight="3" />
+      <edge source="mercerie" target="aigle" id="330" weight="1" />
+      <edge source="mercerie" target="aubonne" id="331" weight="2" />
+      <edge source="mercerie" target="cossonay" id="332" weight="3" />
+      <edge source="mercerie" target="echallens" id="333" weight="2" />
+      <edge source="mercerie" target="france" id="334" weight="7" />
+      <edge source="mercerie" target="fribourg" id="335" weight="2" />
+      <edge source="mercerie" target="lausanne" id="336" weight="17" />
+      <edge source="mercerie" target="lavaux" id="337" weight="6" />
+      <edge source="mercerie" target="morges" id="338" weight="7" />
+      <edge source="mercerie" target="moudon" id="339" weight="6" />
+      <edge source="mercerie" target="orbe" id="340" weight="2" />
+      <edge source="mercerie" target="oron" id="341" weight="1" />
+      <edge source="mercerie" target="pays_d_enhaut" id="342" weight="1" />
+      <edge source="mercerie" target="rolle" id="343" weight="1" />
+      <edge source="mercerie" target="suisse_allemande" id="344" weight="1" />
+      <edge source="mercerie" target="vaud" id="345" weight="1" />
+      <edge source="mercerie" target="vevey" id="346" weight="3" />
+      <edge source="mercerie" target="yverdon" id="347" weight="1" />
+      <edge source="chavannes" target="france" id="348" weight="1" />
+      <edge source="chavannes" target="lausanne" id="349" weight="6" />
+      <edge source="chavannes" target="rolle" id="350" weight="1" />
+      <edge source="chavannes" target="suisse_allemande" id="351" weight="1" />
+      <edge source="toises" target="lausanne" id="352" weight="1" />
+      <edge source="toises" target="vevey" id="353" weight="1" />
+      <edge source="trabandan" target="lausanne" id="354" weight="1" />
+      <edge source="petits huttins" target="lausanne" id="355" weight="1" />
+      <edge source="languedoc" target="lausanne" id="356" weight="1" />
+      <edge source="languedoc" target="lavaux" id="357" weight="2" />
+      <edge source="rue de l'ale" target="aigle" id="358" weight="1" />
+      <edge source="rue de l'ale" target="aubonne" id="359" weight="1" />
+      <edge source="rue de l'ale" target="cossonay" id="360" weight="9" />
+      <edge source="rue de l'ale" target="echallens" id="361" weight="5" />
+      <edge source="rue de l'ale" target="france" id="362" weight="2" />
+      <edge source="rue de l'ale" target="fribourg" id="363" weight="2" />
+      <edge source="rue de l'ale" target="geneve" id="364" weight="1" />
+      <edge source="rue de l'ale" target="grandson" id="365" weight="1" />
+      <edge source="rue de l'ale" target="la_vallee" id="366" weight="1" />
+      <edge source="rue de l'ale" target="lausanne" id="367" weight="57" />
+      <edge source="rue de l'ale" target="lavaux" id="368" weight="10" />
+      <edge source="rue de l'ale" target="morges" id="369" weight="10" />
+      <edge source="rue de l'ale" target="moudon" id="370" weight="9" />
+      <edge source="rue de l'ale" target="neuchatel" id="371" weight="1" />
+      <edge source="rue de l'ale" target="nyon" id="372" weight="3" />
+      <edge source="rue de l'ale" target="orbe" id="373" weight="7" />
+      <edge source="rue de l'ale" target="oron" id="374" weight="10" />
+      <edge source="rue de l'ale" target="pays_d_enhaut" id="375" weight="6" />
+      <edge source="rue de l'ale" target="suisse_allemande" id="376" weight="3" />
+      <edge source="rue de l'ale" target="vaud" id="377" weight="5" />
+      <edge source="rue de l'ale" target="vevey" id="378" weight="6" />
+      <edge source="rue de l'ale" target="yverdon" id="379" weight="4" />
+      <edge source="pont des sauge" target="lausanne" id="380" weight="2" />
+      <edge source="pont des sauge" target="moudon" id="381" weight="3" />
+      <edge source="petit chene" target="france" id="382" weight="3" />
+      <edge source="petit chene" target="lausanne" id="383" weight="1" />
+      <edge source="petit chene" target="morges" id="384" weight="3" />
+      <edge source="petit chene" target="moudon" id="385" weight="1" />
+      <edge source="petit chene" target="nyon" id="386" weight="1" />
+      <edge source="petit chene" target="pays_d_enhaut" id="387" weight="2" />
+      <edge source="petit chene" target="suisse_allemande" id="388" weight="1" />
+      <edge source="beau-soleil" target="lausanne" id="389" weight="1" />
+      <edge source="la rappaz" target="echallens" id="390" weight="1" />
+      <edge source="la rappaz" target="vaud" id="391" weight="1" />
+      <edge source="petite pontaise" target="lausanne" id="392" weight="1" />
+      <edge source="pres de ville" target="cossonay" id="393" weight="1" />
+      <edge source="pres de ville" target="france" id="394" weight="1" />
+      <edge source="pres de ville" target="geneve" id="395" weight="1" />
+      <edge source="pres de ville" target="morges" id="396" weight="1" />
+      <edge source="pres de ville" target="suisse_allemande" id="397" weight="1" />
+      <edge source="rue de l'hopital" target="echallens" id="398" weight="2" />
+      <edge source="rue de l'hopital" target="france" id="399" weight="2" />
+      <edge source="rue de l'hopital" target="fribourg" id="400" weight="1" />
+      <edge source="rue de l'hopital" target="grandson" id="401" weight="1" />
+      <edge source="rue de l'hopital" target="la_vallee" id="402" weight="3" />
+      <edge source="rue de l'hopital" target="lausanne" id="403" weight="10" />
+      <edge source="rue de l'hopital" target="lavaux" id="404" weight="2" />
+      <edge source="rue de l'hopital" target="morges" id="405" weight="1" />
+      <edge source="rue de l'hopital" target="nyon" id="406" weight="1" />
+      <edge source="rue de l'hopital" target="oron" id="407" weight="1" />
+      <edge source="rue de l'hopital" target="pays_d_enhaut" id="408" weight="2" />
+      <edge source="rue de l'hopital" target="vevey" id="409" weight="1" />
+      <edge source="montetan" target="lausanne" id="410" weight="1" />
+      <edge source="pontaise" target="france" id="411" weight="1" />
+      <edge source="pontaise" target="lausanne" id="412" weight="2" />
+      <edge source="pontaise" target="lavaux" id="413" weight="1" />
+      <edge source="malley" target="france" id="414" weight="1" />
+      <edge source="malley" target="lavaux" id="415" weight="1" />
+      <edge source="riant-mont" target="lausanne" id="416" weight="1" />
+      <edge source="petit singe" target="angleterre" id="417" weight="3" />
+      <edge source="petit singe" target="france" id="418" weight="3" />
+      <edge source="petit singe" target="lausanne" id="419" weight="4" />
+      <edge source="petit singe" target="rolle" id="420" weight="1" />
+      <edge source="petit singe" target="yverdon" id="421" weight="1" />
+      <edge source="mont-olivet" target="angleterre" id="422" weight="1" />
+      <edge source="mont-olivet" target="morges" id="423" weight="1" />
+      <edge source="croix rouge" target="geneve" id="424" weight="1" />
+      <edge source="croix rouge" target="lausanne" id="425" weight="2" />
+      <edge source="croix rouge" target="morges" id="426" weight="1" />
+      <edge source="croix rouge" target="oron" id="427" weight="1" />
+      <edge source="croix rouge" target="suisse_allemande" id="428" weight="1" />
+      <edge source="collonges" target="lausanne" id="429" weight="1" />
+      <edge source="ecole de charite" target="lausanne" id="430" weight="3" />
+      <edge source="ecole de charite" target="pays_d_enhaut" id="431" weight="1" />
+      <edge source="valentin" target="angleterre" id="432" weight="1" />
+      <edge source="valentin" target="france" id="433" weight="1" />
+      <edge source="valentin" target="lausanne" id="434" weight="2" />
+      <edge source="loup" target="lausanne" id="435" weight="3" />
+      <edge source="grange-neuve" target="cossonay" id="436" weight="1" />
+      <edge source="grange-neuve" target="la_vallee" id="437" weight="7" />
+      <edge source="grange-neuve" target="lausanne" id="438" weight="2" />
+      <edge source="grange-neuve" target="vaud" id="439" weight="2" />
+      <edge source="mon repos" target="vevey" id="440" weight="2" />
+      <edge source="bourdonnette" target="lausanne" id="441" weight="1" />
+      <edge source="bourdonnette" target="oron" id="442" weight="1" />
+      <edge source="petit st jean" target="aigle" id="443" weight="1" />
+      <edge source="petit st jean" target="cossonay" id="444" weight="4" />
+      <edge source="petit st jean" target="echallens" id="445" weight="1" />
+      <edge source="petit st jean" target="fribourg" id="446" weight="1" />
+      <edge source="petit st jean" target="la_vallee" id="447" weight="1" />
+      <edge source="petit st jean" target="lausanne" id="448" weight="13" />
+      <edge source="petit st jean" target="lavaux" id="449" weight="2" />
+      <edge source="petit st jean" target="nyon" id="450" weight="1" />
+      <edge source="petit st jean" target="orbe" id="451" weight="1" />
+      <edge source="petit st jean" target="rolle" id="452" weight="1" />
+      <edge source="petit st jean" target="suisse_allemande" id="453" weight="6" />
+      <edge source="petit st jean" target="vevey" id="454" weight="3" />
+      <edge source="petit st jean" target="yverdon" id="455" weight="6" />
+      <edge source="villamont" target="morges" id="456" weight="2" />
+      <edge source="grand st jean" target="aigle" id="457" weight="2" />
+      <edge source="grand st jean" target="angleterre" id="458" weight="1" />
+      <edge source="grand st jean" target="aubonne" id="459" weight="2" />
+      <edge source="grand st jean" target="avenches" id="460" weight="1" />
+      <edge source="grand st jean" target="cossonay" id="461" weight="4" />
+      <edge source="grand st jean" target="echallens" id="462" weight="4" />
+      <edge source="grand st jean" target="france" id="463" weight="8" />
+      <edge source="grand st jean" target="fribourg" id="464" weight="1" />
+      <edge source="grand st jean" target="geneve" id="465" weight="4" />
+      <edge source="grand st jean" target="la_vallee" id="466" weight="3" />
+      <edge source="grand st jean" target="lausanne" id="467" weight="75" />
+      <edge source="grand st jean" target="lavaux" id="468" weight="10" />
+      <edge source="grand st jean" target="morges" id="469" weight="26" />
+      <edge source="grand st jean" target="moudon" id="470" weight="12" />
+      <edge source="grand st jean" target="neuchatel" id="471" weight="2" />
+      <edge source="grand st jean" target="nyon" id="472" weight="7" />
+      <edge source="grand st jean" target="orbe" id="473" weight="9" />
+      <edge source="grand st jean" target="oron" id="474" weight="7" />
+      <edge source="grand st jean" target="payerne" id="475" weight="2" />
+      <edge source="grand st jean" target="pays_d_enhaut" id="476" weight="6" />
+      <edge source="grand st jean" target="suisse_allemande" id="477" weight="11" />
+      <edge source="grand st jean" target="vaud" id="478" weight="2" />
+      <edge source="grand st jean" target="vevey" id="479" weight="5" />
+      <edge source="grand st jean" target="yverdon" id="480" weight="9" />
+      <edge source="chauderon" target="cossonay" id="481" weight="1" />
+      <edge source="chauderon" target="la_vallee" id="482" weight="1" />
+      <edge source="chauderon" target="lausanne" id="483" weight="5" />
+      <edge source="chauderon" target="morges" id="484" weight="1" />
+      <edge source="chauderon" target="moudon" id="485" weight="1" />
+      <edge source="chauderon" target="nyon" id="486" weight="1" />
+      <edge source="derriere les terreaux" target="aubonne" id="487" weight="1" />
+      <edge source="derriere les terreaux" target="echallens" id="488" weight="1" />
+      <edge source="derriere les terreaux" target="lausanne" id="489" weight="7" />
+      <edge source="derriere les terreaux" target="morges" id="490" weight="1" />
+      <edge source="derriere les terreaux" target="moudon" id="491" weight="1" />
+      <edge source="derriere les terreaux" target="orbe" id="492" weight="1" />
+      <edge source="derriere les terreaux" target="payerne" id="493" weight="1" />
+      <edge source="derriere les terreaux" target="rolle" id="494" weight="1" />
+      <edge source="derriere les terreaux" target="yverdon" id="495" weight="1" />
+      <edge source="saugettes" target="lausanne" id="496" weight="3" />
+      <edge source="rovereaz" target="lausanne" id="497" weight="1" />
+      <edge source="rovereaz" target="oron" id="498" weight="1" />
+      <edge source="rasude" target="lausanne" id="499" weight="2" />
+      <edge source="rasude" target="lavaux" id="500" weight="1" />
+      <edge source="sebeilllon" target="la_vallee" id="501" weight="1" />
+      <edge source="sebeilllon" target="lausanne" id="502" weight="2" />
+      <edge source="sebeilllon" target="lavaux" id="503" weight="1" />
+      <edge source="sebeilllon" target="pays_d_enhaut" id="504" weight="1" />
+      <edge source="rue du pont" target="aigle" id="505" weight="1" />
+      <edge source="rue du pont" target="aubonne" id="506" weight="1" />
+      <edge source="rue du pont" target="avenches" id="507" weight="2" />
+      <edge source="rue du pont" target="cossonay" id="508" weight="1" />
+      <edge source="rue du pont" target="fribourg" id="509" weight="1" />
+      <edge source="rue du pont" target="grandson" id="510" weight="1" />
+      <edge source="rue du pont" target="la_vallee" id="511" weight="2" />
+      <edge source="rue du pont" target="lausanne" id="512" weight="24" />
+      <edge source="rue du pont" target="lavaux" id="513" weight="7" />
+      <edge source="rue du pont" target="morges" id="514" weight="4" />
+      <edge source="rue du pont" target="moudon" id="515" weight="2" />
+      <edge source="rue du pont" target="nyon" id="516" weight="4" />
+      <edge source="rue du pont" target="pays_d_enhaut" id="517" weight="3" />
+      <edge source="rue du pont" target="rolle" id="518" weight="1" />
+      <edge source="rue du pont" target="suisse_allemande" id="519" weight="4" />
+      <edge source="rue du pont" target="vevey" id="520" weight="3" />
+      <edge source="praz-sechaud" target="lausanne" id="521" weight="2" />
+      <edge source="praz-sechaud" target="yverdon" id="522" weight="1" />
+      <edge source="grangette" target="france" id="523" weight="1" />
+      <edge source="grangette" target="lausanne" id="524" weight="3" />
+      <edge source="grangette" target="moudon" id="525" weight="1" />
+      <edge source="grangette" target="vevey" id="526" weight="1" />
+      <edge source="montheron" target="lausanne" id="527" weight="5" />
+      <edge source="montheron" target="oron" id="528" weight="1" />
+      <edge source="beausite" target="nyon" id="529" weight="1" />
+      <edge source="la cage " target="lausanne" id="530" weight="2" />
+      <edge source="val-d'angrogne" target="echallens" id="531" weight="1" />
+      <edge source="val-d'angrogne" target="lausanne" id="532" weight="2" />
+      <edge source="val-d'angrogne" target="lavaux" id="533" weight="1" />
+      <edge source="bel-air" target="lausanne" id="534" weight="2" />
+      <edge source="bel-air" target="payerne" id="535" weight="1" />
+      <edge source="bel-air" target="suisse_allemande" id="536" weight="1" />
+      <edge source="croisette haras" target="la_vallee" id="537" weight="1" />
+      <edge source="croisette haras" target="moudon" id="538" weight="1" />
+      <edge source="grand chene" target="angleterre" id="539" weight="3" />
+      <edge source="grand chene" target="cossonay" id="540" weight="3" />
+      <edge source="grand chene" target="echallens" id="541" weight="2" />
+      <edge source="grand chene" target="france" id="542" weight="12" />
+      <edge source="grand chene" target="lausanne" id="543" weight="11" />
+      <edge source="grand chene" target="lavaux" id="544" weight="2" />
+      <edge source="grand chene" target="morges" id="545" weight="2" />
+      <edge source="grand chene" target="moudon" id="546" weight="1" />
+      <edge source="grand chene" target="orbe" id="547" weight="1" />
+      <edge source="grand chene" target="oron" id="548" weight="1" />
+      <edge source="grand chene" target="rolle" id="549" weight="1" />
+      <edge source="grand chene" target="suisse_allemande" id="550" weight="5" />
+      <edge source="villars" target="cossonay" id="551" weight="1" />
+      <edge source="villars" target="lavaux" id="552" weight="2" />
+      <edge source="devin" target="lausanne" id="553" weight="5" />
+      <edge source="devin" target="suisse_allemande" id="554" weight="2" />
+      <edge source="ouchy" target="aigle" id="555" weight="2" />
+      <edge source="ouchy" target="angleterre" id="556" weight="4" />
+      <edge source="ouchy" target="aubonne" id="557" weight="1" />
+      <edge source="ouchy" target="cossonay" id="558" weight="5" />
+      <edge source="ouchy" target="echallens" id="559" weight="1" />
+      <edge source="ouchy" target="france" id="560" weight="4" />
+      <edge source="ouchy" target="geneve" id="561" weight="2" />
+      <edge source="ouchy" target="la_vallee" id="562" weight="1" />
+      <edge source="ouchy" target="lausanne" id="563" weight="62" />
+      <edge source="ouchy" target="lavaux" id="564" weight="7" />
+      <edge source="ouchy" target="morges" id="565" weight="2" />
+      <edge source="ouchy" target="neuchatel" id="566" weight="1" />
+      <edge source="ouchy" target="nyon" id="567" weight="4" />
+      <edge source="ouchy" target="orbe" id="568" weight="2" />
+      <edge source="ouchy" target="oron" id="569" weight="2" />
+      <edge source="ouchy" target="rolle" id="570" weight="3" />
+      <edge source="ouchy" target="suisse_allemande" id="571" weight="2" />
+      <edge source="ouchy" target="vevey" id="572" weight="3" />
+      <edge source="cazard" target="moudon" id="573" weight="1" />
+      <edge source="madeleine" target="aubonne" id="574" weight="1" />
+      <edge source="madeleine" target="cossonay" id="575" weight="2" />
+      <edge source="madeleine" target="fribourg" id="576" weight="1" />
+      <edge source="madeleine" target="italie" id="577" weight="1" />
+      <edge source="madeleine" target="la_vallee" id="578" weight="1" />
+      <edge source="madeleine" target="lausanne" id="579" weight="17" />
+      <edge source="madeleine" target="lavaux" id="580" weight="3" />
+      <edge source="madeleine" target="morges" id="581" weight="5" />
+      <edge source="madeleine" target="moudon" id="582" weight="2" />
+      <edge source="madeleine" target="nyon" id="583" weight="1" />
+      <edge source="madeleine" target="orbe" id="584" weight="2" />
+      <edge source="madeleine" target="oron" id="585" weight="3" />
+      <edge source="madeleine" target="suisse_allemande" id="586" weight="7" />
+      <edge source="madeleine" target="vevey" id="587" weight="2" />
+      <edge source="madeleine" target="yverdon" id="588" weight="2" />
+      <edge source="grand champ" target="aigle" id="589" weight="1" />
+      <edge source="valency" target="lausanne" id="590" weight="1" />
+      <edge source="verdonnet" target="france" id="591" weight="3" />
+      <edge source="verdonnet" target="lausanne" id="592" weight="1" />
+      <edge source="bois de vaux" target="angleterre" id="593" weight="2" />
+      <edge source="bois de vaux" target="pays_d_enhaut" id="594" weight="1" />
+      <edge source="bois de vaux" target="vevey" id="595" weight="1" />
+      <edge source="bois de vaux" target="yverdon" id="596" weight="1" />
+      <edge source="place st laurent" target="lausanne" id="597" weight="4" />
+      <edge source="place st laurent" target="pays_d_enhaut" id="598" weight="1" />
+      <edge source="place st laurent" target="rolle" id="599" weight="2" />
+      <edge source="place st laurent" target="suisse_allemande" id="600" weight="1" />
+      <edge source="place st laurent" target="vevey" id="601" weight="1" />
+      <edge source="place st laurent" target="yverdon" id="602" weight="1" />
+      <edge source="villamont maison de maitres" target="cossonay" id="603" weight="2" />
+      <edge source="villamont maison de maitres" target="france" id="604" weight="3" />
+      <edge source="villamont maison de maitres" target="lausanne" id="605" weight="2" />
+      <edge source="calvaire" target="lausanne" id="606" weight="1" />
+      <edge source="calvaire" target="lavaux" id="607" weight="2" />
+      <edge source="calvaire" target="nyon" id="608" weight="1" />
+      <edge source="calvaire" target="orbe" id="609" weight="1" />
+      <edge source="calvaire" target="oron" id="610" weight="1" />
+      <edge source="calvaire" target="suisse_allemande" id="611" weight="2" />
+      <edge source="bugnon" target="echallens" id="612" weight="1" />
+      <edge source="bugnon" target="morges" id="613" weight="1" />
+      <edge source="bugnon" target="suisse_allemande" id="614" weight="2" />
+      <edge source="craivavers" target="lausanne" id="615" weight="3" />
+      <edge source="chateau de vennes" target="orbe" id="616" weight="1" />
+      <edge source="mon regret" target="aigle" id="617" weight="1" />
+      <edge source="rue d'etraz" target="aubonne" id="618" weight="5" />
+      <edge source="rue d'etraz" target="cossonay" id="619" weight="5" />
+      <edge source="rue d'etraz" target="echallens" id="620" weight="2" />
+      <edge source="rue d'etraz" target="france" id="621" weight="3" />
+      <edge source="rue d'etraz" target="geneve" id="622" weight="1" />
+      <edge source="rue d'etraz" target="italie" id="623" weight="2" />
+      <edge source="rue d'etraz" target="la_vallee" id="624" weight="2" />
+      <edge source="rue d'etraz" target="lausanne" id="625" weight="25" />
+      <edge source="rue d'etraz" target="lavaux" id="626" weight="8" />
+      <edge source="rue d'etraz" target="morges" id="627" weight="3" />
+      <edge source="rue d'etraz" target="moudon" id="628" weight="2" />
+      <edge source="rue d'etraz" target="nyon" id="629" weight="3" />
+      <edge source="rue d'etraz" target="oron" id="630" weight="2" />
+      <edge source="rue d'etraz" target="payerne" id="631" weight="2" />
+      <edge source="rue d'etraz" target="pays_d_enhaut" id="632" weight="1" />
+      <edge source="rue d'etraz" target="rolle" id="633" weight="2" />
+      <edge source="rue d'etraz" target="suisse_allemande" id="634" weight="5" />
+      <edge source="rue d'etraz" target="vaud" id="635" weight="1" />
+      <edge source="rue d'etraz" target="yverdon" id="636" weight="5" />
+      <edge source="singe" target="lavaux" id="637" weight="2" />
+      <edge source="singe" target="oron" id="638" weight="1" />
+      <edge source="beaulieu" target="angleterre" id="639" weight="1" />
+      <edge source="beaulieu" target="lausanne" id="640" weight="2" />
+      <edge source="rue du pre" target="aigle" id="641" weight="4" />
+      <edge source="rue du pre" target="cossonay" id="642" weight="6" />
+      <edge source="rue du pre" target="echallens" id="643" weight="8" />
+      <edge source="rue du pre" target="france" id="644" weight="3" />
+      <edge source="rue du pre" target="la_vallee" id="645" weight="3" />
+      <edge source="rue du pre" target="lausanne" id="646" weight="58" />
+      <edge source="rue du pre" target="lavaux" id="647" weight="14" />
+      <edge source="rue du pre" target="morges" id="648" weight="17" />
+      <edge source="rue du pre" target="moudon" id="649" weight="3" />
+      <edge source="rue du pre" target="neuchatel" id="650" weight="1" />
+      <edge source="rue du pre" target="nyon" id="651" weight="6" />
+      <edge source="rue du pre" target="orbe" id="652" weight="3" />
+      <edge source="rue du pre" target="oron" id="653" weight="1" />
+      <edge source="rue du pre" target="payerne" id="654" weight="1" />
+      <edge source="rue du pre" target="pays_d_enhaut" id="655" weight="6" />
+      <edge source="rue du pre" target="rolle" id="656" weight="1" />
+      <edge source="rue du pre" target="suisse_allemande" id="657" weight="14" />
+      <edge source="rue du pre" target="vaud" id="658" weight="2" />
+      <edge source="rue du pre" target="vevey" id="659" weight="9" />
+      <edge source="rue du pre" target="yverdon" id="660" weight="4" />
+      <edge source="vuachere" target="lausanne" id="661" weight="2" />
+      <edge source="vennes" target="fribourg" id="662" weight="1" />
+      <edge source="vennes" target="lausanne" id="663" weight="11" />
+      <edge source="vennes" target="lavaux" id="664" weight="1" />
+      <edge source="vennes" target="moudon" id="665" weight="1" />
+      <edge source="vennes" target="oron" id="666" weight="1" />
+      <edge source="vennes" target="pays_d_enhaut" id="667" weight="1" />
+      <edge source="vennes" target="suisse_allemande" id="668" weight="1" />
+      <edge source="vennes" target="yverdon" id="669" weight="1" />
+      <edge source="montee st francois" target="cossonay" id="670" weight="2" />
+      <edge source="montee st francois" target="lausanne" id="671" weight="6" />
+      <edge source="montee st francois" target="lavaux" id="672" weight="1" />
+      <edge source="montee st francois" target="morges" id="673" weight="3" />
+      <edge source="montee st francois" target="moudon" id="674" weight="2" />
+      <edge source="montee st francois" target="neuchatel" id="675" weight="1" />
+      <edge source="montee st francois" target="nyon" id="676" weight="1" />
+      <edge source="montee st francois" target="suisse_allemande" id="677" weight="2" />
+      <edge source="grey" target="orbe" id="678" weight="1" />
+      <edge source="pra chillon" target="yverdon" id="679" weight="1" />
+      <edge source="villard" target="lausanne" id="680" weight="2" />
+      <edge source="villard" target="lavaux" id="681" weight="1" />
+      <edge source="villard" target="orbe" id="682" weight="2" />
+      <edge source="mornex" target="lausanne" id="683" weight="1" />
+      <edge source="maison des postes" target="la_vallee" id="684" weight="1" />
+      <edge source="maison des postes" target="nyon" id="685" weight="1" />
+      <edge source="maison des postes" target="orbe" id="686" weight="1" />
+      <edge source="clos mont" target="cossonay" id="687" weight="1" />
+      <edge source="clos mont" target="lausanne" id="688" weight="1" />
+      <edge source="clos mont" target="lavaux" id="689" weight="1" />
+      <edge source="clos mont" target="oron" id="690" weight="1" />
+      <edge source="clos mont" target="rolle" id="691" weight="1" />
+      <edge source="clos mont" target="suisse_allemande" id="692" weight="1" />
+      <edge source="boston" target="cossonay" id="693" weight="1" />
+      <edge source="vernand" target="lausanne" id="694" weight="4" />
+      <edge source="denatou" target="lavaux" id="695" weight="1" />
+      <edge source="denatou" target="yverdon" id="696" weight="1" />
+      <edge source="maupas" target="angleterre" id="697" weight="3" />
+      <edge source="maupas" target="cossonay" id="698" weight="2" />
+      <edge source="maupas" target="geneve" id="699" weight="2" />
+      <edge source="maupas" target="lausanne" id="700" weight="5" />
+      <edge source="maupas" target="lavaux" id="701" weight="1" />
+      <edge source="maupas" target="morges" id="702" weight="1" />
+      <edge source="maupas" target="moudon" id="703" weight="2" />
+      <edge source="maupas" target="oron" id="704" weight="2" />
+      <edge source="maupas" target="suisse_allemande" id="705" weight="1" />
+      <edge source="maupas" target="vaud" id="706" weight="1" />
+      <edge source="maupas" target="vevey" id="707" weight="3" />
+      <edge source="barre" target="angleterre" id="708" weight="1" />
+      <edge source="barre" target="aubonne" id="709" weight="4" />
+      <edge source="barre" target="cossonay" id="710" weight="3" />
+      <edge source="barre" target="echallens" id="711" weight="5" />
+      <edge source="barre" target="france" id="712" weight="4" />
+      <edge source="barre" target="fribourg" id="713" weight="1" />
+      <edge source="barre" target="grandson" id="714" weight="2" />
+      <edge source="barre" target="italie" id="715" weight="1" />
+      <edge source="barre" target="la_vallee" id="716" weight="4" />
+      <edge source="barre" target="lausanne" id="717" weight="34" />
+      <edge source="barre" target="lavaux" id="718" weight="7" />
+      <edge source="barre" target="morges" id="719" weight="6" />
+      <edge source="barre" target="moudon" id="720" weight="9" />
+      <edge source="barre" target="orbe" id="721" weight="2" />
+      <edge source="barre" target="oron" id="722" weight="3" />
+      <edge source="barre" target="pays_d_enhaut" id="723" weight="2" />
+      <edge source="barre" target="suisse_allemande" id="724" weight="13" />
+      <edge source="barre" target="vaud" id="725" weight="1" />
+      <edge source="barre" target="vevey" id="726" weight="7" />
+      <edge source="barre" target="yverdon" id="727" weight="7" />
+      <edge source="rosiere" target="rolle" id="728" weight="2" />
+      <edge source="clos de bulle" target="cossonay" id="729" weight="1" />
+      <edge source="clos de bulle" target="orbe" id="730" weight="1" />
+      <edge source="montriond" target="lausanne" id="731" weight="1" />
+      <edge source="montriond" target="lavaux" id="732" weight="1" />
+      <edge source="montriond" target="morges" id="733" weight="1" />
+      <edge source="place st francois" target="aigle" id="734" weight="2" />
+      <edge source="place st francois" target="angleterre" id="735" weight="2" />
+      <edge source="place st francois" target="aubonne" id="736" weight="1" />
+      <edge source="place st francois" target="cossonay" id="737" weight="4" />
+      <edge source="place st francois" target="la_vallee" id="738" weight="2" />
+      <edge source="place st francois" target="lausanne" id="739" weight="19" />
+      <edge source="place st francois" target="lavaux" id="740" weight="3" />
+      <edge source="place st francois" target="morges" id="741" weight="2" />
+      <edge source="place st francois" target="moudon" id="742" weight="1" />
+      <edge source="place st francois" target="nyon" id="743" weight="1" />
+      <edge source="place st francois" target="vevey" id="744" weight="6" />
+      <edge source="place st francois" target="yverdon" id="745" weight="1" />
+      <edge source="taulau?" target="la_vallee" id="746" weight="1" />
+      <edge source="taulau?" target="lausanne" id="747" weight="6" />
+      <edge source="petit clos" target="lausanne" id="748" weight="4" />
+      <edge source="petit clos" target="orbe" id="749" weight="2" />
+      <edge source="prelaz" target="lausanne" id="750" weight="1" />
+      <edge source="violette" target="lavaux" id="751" weight="1" />
+      <edge source="cite devant" target="aigle" id="752" weight="5" />
+      <edge source="cite devant" target="angleterre" id="753" weight="2" />
+      <edge source="cite devant" target="aubonne" id="754" weight="2" />
+      <edge source="cite devant" target="avenches" id="755" weight="1" />
+      <edge source="cite devant" target="cossonay" id="756" weight="1" />
+      <edge source="cite devant" target="la_vallee" id="757" weight="2" />
+      <edge source="cite devant" target="lausanne" id="758" weight="34" />
+      <edge source="cite devant" target="lavaux" id="759" weight="5" />
+      <edge source="cite devant" target="morges" id="760" weight="3" />
+      <edge source="cite devant" target="moudon" id="761" weight="3" />
+      <edge source="cite devant" target="neuchatel" id="762" weight="1" />
+      <edge source="cite devant" target="orbe" id="763" weight="3" />
+      <edge source="cite devant" target="pays_d_enhaut" id="764" weight="4" />
+      <edge source="cite devant" target="suisse_allemande" id="765" weight="6" />
+      <edge source="cite devant" target="vevey" id="766" weight="1" />
+      <edge source="cite devant" target="yverdon" id="767" weight="5" />
+      <edge source="vernand-dessus" target="aigle" id="768" weight="1" />
+      <edge source="vernand-dessus" target="la_vallee" id="769" weight="2" />
+      <edge source="vernand-dessus" target="lausanne" id="770" weight="4" />
+      <edge source="mousquines" target="angleterre" id="771" weight="4" />
+      <edge source="mousquines" target="lausanne" id="772" weight="1" />
+      <edge source="grotte" target="france" id="773" weight="2" />
+      <edge source="grotte" target="italie" id="774" weight="1" />
+      <edge source="grotte" target="lausanne" id="775" weight="12" />
+      <edge source="grotte" target="lavaux" id="776" weight="3" />
+      <edge source="grotte" target="morges" id="777" weight="1" />
+      <edge source="grotte" target="moudon" id="778" weight="1" />
+      <edge source="grotte" target="nyon" id="779" weight="1" />
+      <edge source="grotte" target="pays_d_enhaut" id="780" weight="1" />
+      <edge source="grotte" target="suisse_allemande" id="781" weight="1" />
+      <edge source="grotte" target="vevey" id="782" weight="1" />
+      <edge source="epinette" target="geneve" id="783" weight="1" />
+      <edge source="maladiere" target="lausanne" id="784" weight="1" />
+      <edge source="montbenon" target="angleterre" id="785" weight="1" />
+      <edge source="montbenon" target="cossonay" id="786" weight="1" />
+      <edge source="montbenon" target="france" id="787" weight="1" />
+      <edge source="montbenon" target="la_vallee" id="788" weight="1" />
+      <edge source="montbenon" target="lausanne" id="789" weight="4" />
+      <edge source="place de st francois" target="aigle" id="790" weight="3" />
+      <edge source="place de st francois" target="aubonne" id="791" weight="2" />
+      <edge source="place de st francois" target="cossonay" id="792" weight="1" />
+      <edge source="place de st francois" target="france" id="793" weight="3" />
+      <edge source="place de st francois" target="fribourg" id="794" weight="1" />
+      <edge source="place de st francois" target="la_vallee" id="795" weight="2" />
+      <edge source="place de st francois" target="lausanne" id="796" weight="18" />
+      <edge source="place de st francois" target="lavaux" id="797" weight="5" />
+      <edge source="place de st francois" target="morges" id="798" weight="2" />
+      <edge source="place de st francois" target="moudon" id="799" weight="3" />
+      <edge source="place de st francois" target="neuchatel" id="800" weight="1" />
+      <edge source="place de st francois" target="orbe" id="801" weight="1" />
+      <edge source="place de st francois" target="oron" id="802" weight="4" />
+      <edge source="place de st francois" target="pays_d_enhaut" id="803" weight="2" />
+      <edge source="place de st francois" target="rolle" id="804" weight="1" />
+      <edge source="place de st francois" target="suisse_allemande" id="805" weight="2" />
+      <edge source="place de st francois" target="vaud" id="806" weight="1" />
+      <edge source="place de st francois" target="vevey" id="807" weight="1" />
+      <edge source="place de st francois" target="yverdon" id="808" weight="3" />
+      <edge source="chabliere" target="lausanne" id="809" weight="2" />
+      <edge source="chabliere" target="nyon" id="810" weight="1" />
+      <edge source="chabliere" target="oron" id="811" weight="1" />
+      <edge source="les saugealles" target="pays_d_enhaut" id="812" weight="1" />
+      <edge source="chemin de georgette" target="cossonay" id="813" weight="2" />
+      <edge source="chemin de georgette" target="lausanne" id="814" weight="1" />
+    </edges>
+  </graph>
+</gexf>
