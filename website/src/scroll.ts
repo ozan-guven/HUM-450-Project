@@ -1,4 +1,4 @@
-const SCROLL_DURATION = 2000;
+const SCROLL_DURATION = 100;
 
 document.addEventListener("DOMContentLoaded", () => {
     function isElementInViewport(el: any) {
