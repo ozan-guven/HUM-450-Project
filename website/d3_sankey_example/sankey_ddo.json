@@ -1,151 +1,151 @@
 [
     {
         "source": "bourg",
-        "target": "affaires (division)",
+        "target": "affaires_division",
         "value": 200
     },
     {
         "source": "place_st_francois",
-        "target": "affaires (division)",
+        "target": "affaires_division",
         "value": 193
     },
     {
         "source": "chailly",
-        "target": "campagne (division)",
+        "target": "campagne_division",
         "value": 69
     },
     {
-        "source": "grange-neuve",
-        "target": "campagne (division)",
+        "source": "grange_neuve",
+        "target": "campagne_division",
         "value": 35
     },
     {
         "source": "la_sallaz",
-        "target": "campagne (division)",
+        "target": "campagne_division",
         "value": 87
     },
     {
         "source": "ouchy",
-        "target": "campagne (division)",
+        "target": "campagne_division",
         "value": 339
     },
     {
         "source": "barre",
-        "target": "cathedrale (division)",
+        "target": "cathedrale_division",
         "value": 199
     },
     {
         "source": "cite_derriere",
-        "target": "cathedrale (division)",
+        "target": "cathedrale_division",
         "value": 209
     },
     {
         "source": "cite_dessous",
-        "target": "cathedrale (division)",
+        "target": "cathedrale_division",
         "value": 184
     },
     {
         "source": "cheneau_de_bourg",
-        "target": "centre (division)",
+        "target": "centre_division",
         "value": 198
     },
     {
         "source": "montee_st_francois",
-        "target": "centre (division)",
+        "target": "centre_division",
         "value": 341
     },
     {
         "source": "rue_du_pre",
-        "target": "centre (division)",
+        "target": "centre_division",
         "value": 148
     },
     {
         "source": "ale",
-        "target": "commerce (division)",
+        "target": "commerce_division",
         "value": 251
     },
     {
         "source": "grand_st_jean",
-        "target": "commerce (division)",
+        "target": "commerce_division",
         "value": 281
     },
     {
         "source": "montee_de_st_laurent",
-        "target": "commerce (division)",
+        "target": "commerce_division",
         "value": 92
     },
     {
         "source": "palud",
-        "target": "commerce (division)",
+        "target": "commerce_division",
         "value": 220
     },
     {
         "source": "st_laurent",
-        "target": "commerce (division)",
+        "target": "commerce_division",
         "value": 253
     },
     {
         "source": "marterey",
-        "target": "culture (division)",
+        "target": "culture_division",
         "value": 504
     },
     {
-        "source": "affaires (division)",
+        "source": "affaires_division",
         "target": "hors_lausanne",
         "value": 192
     },
     {
-        "source": "affaires (division)",
+        "source": "affaires_division",
         "target": "lausanne",
         "value": 99
     },
     {
-        "source": "campagne (division)",
+        "source": "campagne_division",
         "target": "hors_lausanne",
         "value": 242
     },
     {
-        "source": "campagne (division)",
+        "source": "campagne_division",
         "target": "lausanne",
         "value": 230
     },
     {
-        "source": "cathedrale (division)",
+        "source": "cathedrale_division",
         "target": "hors_lausanne",
         "value": 325
     },
     {
-        "source": "cathedrale (division)",
+        "source": "cathedrale_division",
         "target": "lausanne",
         "value": 173
     },
     {
-        "source": "centre (division)",
+        "source": "centre_division",
         "target": "hors_lausanne",
         "value": 336
     },
     {
-        "source": "centre (division)",
+        "source": "centre_division",
         "target": "lausanne",
         "value": 166
     },
     {
-        "source": "commerce (division)",
+        "source": "commerce_division",
         "target": "hors_lausanne",
         "value": 570
     },
     {
-        "source": "commerce (division)",
+        "source": "commerce_division",
         "target": "lausanne",
         "value": 304
     },
     {
-        "source": "culture (division)",
+        "source": "culture_division",
         "target": "hors_lausanne",
         "value": 288
     },
     {
-        "source": "culture (division)",
+        "source": "culture_division",
         "target": "lausanne",
         "value": 134
     }
