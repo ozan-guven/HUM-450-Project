@@ -1,5 +1,15 @@
 //@ts-nocheck
 import * as d3 from "d3";
+
+const SELECT_JOB = "select_job";
+const JOBS_SCALE_DOMAINS = {'administration': {'min': 1, 'max': 17},
+'agricole': {'min': 3, 'max': 122},
+'artisanat': {'min': 2, 'max': 93},
+'commerce': {'min': 6, 'max': 44},
+'construction': {'min': 1, 'max': 39},
+'rente': {'min': 5, 'max': 140},
+'service': {'min': 1, 'max': 77}}
+
 export class DivisionsMap {
     constructor(
         map_file,
@@ -8,19 +18,6 @@ export class DivisionsMap {
         center = [6.635, 46.525],
         min_zoom_dimension = 100,
         default_zone_color = "grey",
-        zone_colors = {
-            "vigne": "#9BA17B",
-            "bois": "#61764B",
-            "buissons": "#61764B",
-            "pré": "#FFD56F",
-            "pâturage": "#FFD56F", 
-            "champ": "#FFD56F",
-            "road_network": "#000000",
-            "water": "#6096B4",
-            "maison": "#CD5888",
-            "cour": "#CD5888",
-            "jardin": "#CD5888",
-        }
     ) {
         this.map_file = map_file;
         this.locations_file = locations_file;
@@ -30,12 +27,11 @@ export class DivisionsMap {
         this.center = center;
         this.min_zoom_dimension = min_zoom_dimension;
         this.default_zone_color = default_zone_color;
-        this.zone_colors = zone_colors;
-        
+
         // State variables
         this.is_zoomed = false;
         this.clicked_zone = null;
-        
+
         this.initDimensions();
 
         // Initialize map
@@ -44,6 +40,30 @@ export class DivisionsMap {
         this.layer_2 = this.init_g();
         this.projection = this.init_projection();
         this.zoom = this.init_zoom();
+
+        // Add event listeners
+        const selectLayoutElement = document.getElementById(SELECT_JOB);
+        selectLayoutElement.addEventListener('change', (event) => {
+            this.handleSelectJob(event.target.value);
+        });
+    }
+
+    handleSelectJob(selectedJob) {
+        // Here, you can update the color scale domain based on the selected job
+        // For example, if the selected job is "construction":
+        const selected_domain = JOBS_SCALE_DOMAINS[selectedJob];
+        const colorScale = d3.scaleLinear()
+            .domain([selected_domain.min, selected_domain.max])
+            .range(d3.schemeBlues[7]);
+
+        // Update the fill color of the map zones based on the selected job
+        this.layer_1
+            .selectAll(".zone")
+            // Add a linear transition to the fill color
+            .transition()
+            .duration(500)
+            .attr("fill", d => colorScale(d.properties.jobs[selectedJob] ?? 0));
+
     }
 
     /**
@@ -82,11 +102,11 @@ export class DivisionsMap {
 
     init_zoom() {
         const zoom = d3.zoom()
-        .scaleExtent([1, 8])
-        .on("zoom", ({transform}) => {
-            this.layer_1.attr("transform", transform);
-            this.layer_2.attr("transform", transform);
-        });
+            .scaleExtent([1, 8])
+            .on("zoom", ({ transform }) => {
+                this.layer_1.attr("transform", transform);
+                this.layer_2.attr("transform", transform);
+            });
 
         this.svg.call(zoom);
 
@@ -107,26 +127,6 @@ export class DivisionsMap {
         return d3.geoPath().projection(this.projection);
     }
 
-    /*
-    correctWindingOrder(data) {
-        data.features.forEach(feature => {
-            if (feature == null 
-                || feature.geometry == null 
-                || feature.geometry.coordinates == null
-                || feature.geometry.coordinates[0] == null
-                ) {
-                return;
-            }
-
-            let coordinates = feature.geometry.coordinates[0][0];
-
-            if (!turf.booleanClockwise(coordinates)) {
-                feature.geometry.coordinates[0][0].reverse();
-            }
-        })
-      }
-      */
-
     load_data() {
         d3.json(this.map_file).then(data => {
             //this.correctWindingOrder(data)
@@ -134,12 +134,14 @@ export class DivisionsMap {
                 .data(data.features)
                 .enter()
                 .append("path")
-                .attr("fill", this.default_zone_color)
+                .attr("class", "zone")
+                .attr("id", d => d.properties.id)
+                .attr("fill", d => this.default_zone_color)
                 .attr("d", d3.geoPath()
                     .projection(this.projection)
                 )
                 .style("stroke", "white")
-                .style("stroke-width", 0.2) 
+                .style("stroke-width", 0.2)
                 .on("mouseover", d => {
                     this.onMouseOverZone(d.target)
                 })
@@ -153,7 +155,7 @@ export class DivisionsMap {
                         this.zoomOnZone(d.target)
                     }
                     this.is_zoomed = !this.is_zoomed
-                    this.zoom.filter(() => !this.is_zoomed) 
+                    this.zoom.filter(() => !this.is_zoomed)
                     if (!this.is_zoomed) {
                         this.resetZone(this.clicked_zone)
                     }
@@ -208,6 +210,10 @@ export class DivisionsMap {
     onMouseOverZone(zone) {
         if (this.is_zoomed) { return }
 
+        // Save current fill color in data-old-color attribute
+        const old_color = d3.select(zone).attr("fill")
+        d3.select(zone).attr("data-old-color", old_color)
+
         this.fadeToColor(zone, "red")
 
         const result = this.getZoneCenter(zone)
@@ -218,7 +224,10 @@ export class DivisionsMap {
     onMouseOutZone(zone) {
         if (this.is_zoomed) { return }
 
-        this.fadeToColor(zone, this.default_zone_color)
+        // Restore old fill color
+        const old_color = d3.select(zone).attr("data-old-color")
+
+        this.fadeToColor(zone, old_color)
         this.removeZoneTitle()
     }
 
@@ -235,7 +244,7 @@ export class DivisionsMap {
         const node = d3.select(zone).node()
         const bbox = node.getBBox()
         let center = [bbox.x + bbox.width / 2, bbox.y + bbox.height / 2]
-        if(!project) {
+        if (!project) {
             center = this.projection.invert(center) // invert projection
         }
 
@@ -317,7 +326,7 @@ export class DivisionsMap {
             .translate(translate_x, translate_y)
             .scale(scale_factor)
 
-            this.svg.transition()
+        this.svg.transition()
             .duration(750)
             .call(this.zoom.transform, transform)
     }
@@ -329,7 +338,10 @@ export class DivisionsMap {
     }
 
     resetZone(zone) {
-        this.fadeToColor(zone, this.default_zone_color)
+        // Restore old fill color
+        const old_color = d3.select(zone).attr("data-old-color")
+
+        this.fadeToColor(zone, old_color)
         this.removeZoneTitle()
     }
 }
