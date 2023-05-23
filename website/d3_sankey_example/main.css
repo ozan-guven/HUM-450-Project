@@ -3,7 +3,12 @@
     height: 500px;
 }
 
-#tooltip {
+#sankey-barplot {
+    width: 700px;
+    height: 500px;
+}
+
+#sankey-tooltip {
     position: absolute;
     background-color: #fff;
     border: 1px solid #ccc;
