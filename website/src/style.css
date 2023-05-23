@@ -575,9 +575,18 @@ p {
   z-index: 9999;
 }
 
-#select_node_size {
+#select_job {
   position: absolute;
-  top: 40px;
+  top: 10px;
   right: 10px;
   z-index: 9999;
+  font-family: var(--default-font-family);
+}
+
+#check_proportion {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  z-index: 9999;
+  color: var(--off-white);
 }

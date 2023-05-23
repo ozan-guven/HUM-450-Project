@@ -2,111 +2,111 @@
     "nodes": [
         {
             "id": "0",
-            "label": "4",
-            "type": "division",
-            "size": 150
-        },
-        {
-            "id": "1",
-            "label": "13",
-            "type": "division",
-            "size": 160
-        },
-        {
-            "id": "2",
-            "label": "18",
-            "type": "division",
-            "size": 60
-        },
-        {
-            "id": "3",
-            "label": "5",
-            "type": "division",
-            "size": 141
-        },
-        {
-            "id": "4",
-            "label": "6",
-            "type": "division",
-            "size": 96
-        },
-        {
-            "id": "5",
-            "label": "1-2",
+            "label": "1",
             "type": "division",
             "size": 422
         },
         {
-            "id": "6",
-            "label": "7",
+            "id": "1",
+            "label": "2",
             "type": "division",
-            "size": 256
+            "size": 150
         },
         {
-            "id": "7",
-            "label": "17",
-            "type": "division",
-            "size": 301
-        },
-        {
-            "id": "8",
-            "label": "11",
-            "type": "division",
-            "size": 212
-        },
-        {
-            "id": "9",
-            "label": "19",
-            "type": "division",
-            "size": 81
-        },
-        {
-            "id": "10",
-            "label": "9",
-            "type": "division",
-            "size": 69
-        },
-        {
-            "id": "11",
-            "label": "12",
-            "type": "division",
-            "size": 206
-        },
-        {
-            "id": "12",
-            "label": "20",
-            "type": "division",
-            "size": 30
-        },
-        {
-            "id": "13",
+            "id": "2",
             "label": "3",
             "type": "division",
             "size": 150
         },
         {
-            "id": "14",
-            "label": "10",
+            "id": "3",
+            "label": "4",
+            "type": "division",
+            "size": 141
+        },
+        {
+            "id": "4",
+            "label": "5",
+            "type": "division",
+            "size": 96
+        },
+        {
+            "id": "5",
+            "label": "6",
+            "type": "division",
+            "size": 256
+        },
+        {
+            "id": "6",
+            "label": "7",
+            "type": "division",
+            "size": 69
+        },
+        {
+            "id": "7",
+            "label": "8",
             "type": "division",
             "size": 227
         },
         {
-            "id": "15",
-            "label": "15",
+            "id": "8",
+            "label": "9",
             "type": "division",
-            "size": 181
+            "size": 212
         },
         {
-            "id": "16",
-            "label": "14",
+            "id": "9",
+            "label": "10",
+            "type": "division",
+            "size": 206
+        },
+        {
+            "id": "10",
+            "label": "11",
+            "type": "division",
+            "size": 160
+        },
+        {
+            "id": "11",
+            "label": "12",
             "type": "division",
             "size": 151
         },
         {
-            "id": "17",
-            "label": "16",
+            "id": "12",
+            "label": "13",
+            "type": "division",
+            "size": 181
+        },
+        {
+            "id": "13",
+            "label": "14",
             "type": "division",
             "size": 166
+        },
+        {
+            "id": "14",
+            "label": "15",
+            "type": "division",
+            "size": 301
+        },
+        {
+            "id": "15",
+            "label": "16",
+            "type": "division",
+            "size": 60
+        },
+        {
+            "id": "16",
+            "label": "17",
+            "type": "division",
+            "size": 81
+        },
+        {
+            "id": "17",
+            "label": "18",
+            "type": "division",
+            "size": 30
         },
         {
             "id": "aigle",
@@ -125,6 +125,12 @@
             "label": "aubonne",
             "type": "origine_category",
             "size": 47
+        },
+        {
+            "id": "avenches",
+            "label": "avenches",
+            "type": "origine_category",
+            "size": 7
         },
         {
             "id": "cossonay",
@@ -155,6 +161,12 @@
             "label": "geneve",
             "type": "origine_category",
             "size": 24
+        },
+        {
+            "id": "italie",
+            "label": "italie",
+            "type": "origine_category",
+            "size": 8
         },
         {
             "id": "la_vallee",
@@ -211,6 +223,12 @@
             "size": 92
         },
         {
+            "id": "payerne",
+            "label": "payerne",
+            "type": "origine_category",
+            "size": 13
+        },
+        {
             "id": "pays_d_enhaut",
             "label": "pays_d_enhaut",
             "type": "origine_category",
@@ -247,24 +265,6 @@
             "size": 97
         },
         {
-            "id": "payerne",
-            "label": "payerne",
-            "type": "origine_category",
-            "size": 13
-        },
-        {
-            "id": "italie",
-            "label": "italie",
-            "type": "origine_category",
-            "size": 8
-        },
-        {
-            "id": "avenches",
-            "label": "avenches",
-            "type": "origine_category",
-            "size": 7
-        },
-        {
             "id": "grandson",
             "label": "grandson",
             "type": "origine_category",
@@ -275,67 +275,77 @@
         {
             "source": "0",
             "target": "aigle",
-            "weight": 2
+            "weight": 3
         },
         {
             "source": "0",
             "target": "angleterre",
-            "weight": 4
+            "weight": 12
         },
         {
             "source": "0",
             "target": "aubonne",
+            "weight": 10
+        },
+        {
+            "source": "0",
+            "target": "avenches",
             "weight": 1
         },
         {
             "source": "0",
             "target": "cossonay",
-            "weight": 5
+            "weight": 17
         },
         {
             "source": "0",
             "target": "echallens",
-            "weight": 1
+            "weight": 12
         },
         {
             "source": "0",
             "target": "france",
-            "weight": 16
+            "weight": 21
         },
         {
             "source": "0",
             "target": "fribourg",
-            "weight": 1
+            "weight": 2
         },
         {
             "source": "0",
             "target": "geneve",
-            "weight": 2
-        },
-        {
-            "source": "0",
-            "target": "la_vallee",
             "weight": 3
         },
         {
             "source": "0",
+            "target": "italie",
+            "weight": 3
+        },
+        {
+            "source": "0",
+            "target": "la_vallee",
+            "weight": 6
+        },
+        {
+            "source": "0",
             "target": "lausanne",
-            "weight": 49
+            "weight": 134
         },
         {
             "source": "0",
             "target": "lavaux",
-            "weight": 7
+            "weight": 53
         },
         {
             "source": "0",
             "target": "morges",
-            "weight": 13
+            "weight": 16
         },
         {
             "source": "0",
             "target": "moudon",
-            "weight": 2
+            "weight": 12
         },
         {
             "source": "0",
@@ -345,47 +355,52 @@
         {
             "source": "0",
             "target": "nyon",
-            "weight": 4
+            "weight": 10
         },
         {
             "source": "0",
             "target": "orbe",
-            "weight": 6
+            "weight": 4
         },
         {
             "source": "0",
             "target": "oron",
+            "weight": 12
+        },
+        {
+            "source": "0",
+            "target": "payerne",
             "weight": 4
         },
         {
             "source": "0",
             "target": "pays_d_enhaut",
-            "weight": 2
+            "weight": 11
         },
         {
             "source": "0",
             "target": "rolle",
-            "weight": 4
+            "weight": 8
         },
         {
             "source": "0",
             "target": "suisse_allemande",
-            "weight": 15
+            "weight": 36
         },
         {
             "source": "0",
             "target": "vaud",
-            "weight": 2
+            "weight": 5
         },
         {
             "source": "0",
             "target": "vevey",
-            "weight": 4
+            "weight": 15
         },
         {
             "source": "0",
             "target": "yverdon",
-            "weight": 2
+            "weight": 11
         },
         {
             "source": "1",
@@ -395,32 +410,27 @@
         {
             "source": "1",
             "target": "aubonne",
-            "weight": 5
+            "weight": 6
         },
         {
             "source": "1",
             "target": "cossonay",
-            "weight": 8
+            "weight": 9
         },
         {
             "source": "1",
             "target": "echallens",
-            "weight": 5
+            "weight": 9
         },
         {
             "source": "1",
             "target": "france",
-            "weight": 11
+            "weight": 3
         },
         {
             "source": "1",
             "target": "fribourg",
             "weight": 2
-        },
-        {
-            "source": "1",
-            "target": "geneve",
-            "weight": 3
         },
         {
             "source": "1",
@@ -430,12 +440,12 @@
         {
             "source": "1",
             "target": "lausanne",
-            "weight": 52
+            "weight": 44
         },
         {
             "source": "1",
             "target": "lavaux",
-            "weight": 16
+            "weight": 10
         },
         {
             "source": "1",
@@ -445,7 +455,7 @@
         {
             "source": "1",
             "target": "moudon",
-            "weight": 10
+            "weight": 3
         },
         {
             "source": "1",
@@ -455,52 +465,72 @@
         {
             "source": "1",
             "target": "nyon",
-            "weight": 7
+            "weight": 4
         },
         {
             "source": "1",
             "target": "orbe",
-            "weight": 4
+            "weight": 2
         },
         {
             "source": "1",
             "target": "oron",
-            "weight": 2
+            "weight": 5
         },
         {
             "source": "1",
             "target": "pays_d_enhaut",
-            "weight": 3
-        },
-        {
-            "source": "1",
-            "target": "rolle",
-            "weight": 3
-        },
-        {
-            "source": "1",
-            "target": "suisse_allemande",
-            "weight": 2
-        },
-        {
-            "source": "1",
-            "target": "vaud",
-            "weight": 2
-        },
-        {
-            "source": "1",
-            "target": "vevey",
             "weight": 4
         },
         {
             "source": "1",
+            "target": "rolle",
+            "weight": 4
+        },
+        {
+            "source": "1",
+            "target": "suisse_allemande",
+            "weight": 8
+        },
+        {
+            "source": "1",
+            "target": "vaud",
+            "weight": 3
+        },
+        {
+            "source": "1",
+            "target": "vevey",
+            "weight": 3
+        },
+        {
+            "source": "1",
             "target": "yverdon",
+            "weight": 10
+        },
+        {
+            "source": "1",
+            "target": "grandson",
+            "weight": 1
+        },
+        {
+            "source": "2",
+            "target": "aigle",
+            "weight": 2
+        },
+        {
+            "source": "2",
+            "target": "angleterre",
+            "weight": 4
+        },
+        {
+            "source": "2",
+            "target": "aubonne",
             "weight": 1
         },
         {
             "source": "2",
             "target": "cossonay",
-            "weight": 1
+            "weight": 5
         },
         {
             "source": "2",
@@ -510,42 +540,57 @@
         {
             "source": "2",
             "target": "france",
-            "weight": 5
+            "weight": 16
         },
         {
             "source": "2",
             "target": "fribourg",
-            "weight": 3
-        },
-        {
-            "source": "2",
-            "target": "la_vallee",
             "weight": 1
         },
         {
             "source": "2",
-            "target": "lausanne",
-            "weight": 27
-        },
-        {
-            "source": "2",
-            "target": "lavaux",
+            "target": "geneve",
             "weight": 2
         },
         {
             "source": "2",
-            "target": "morges",
+            "target": "la_vallee",
             "weight": 3
         },
         {
             "source": "2",
+            "target": "lausanne",
+            "weight": 49
+        },
+        {
+            "source": "2",
+            "target": "lavaux",
+            "weight": 7
+        },
+        {
+            "source": "2",
+            "target": "morges",
+            "weight": 13
+        },
+        {
+            "source": "2",
             "target": "moudon",
+            "weight": 2
+        },
+        {
+            "source": "2",
+            "target": "neuchatel",
             "weight": 1
         },
         {
             "source": "2",
+            "target": "nyon",
+            "weight": 4
+        },
+        {
+            "source": "2",
             "target": "orbe",
-            "weight": 1
+            "weight": 6
         },
         {
             "source": "2",
@@ -554,18 +599,33 @@
         },
         {
             "source": "2",
+            "target": "pays_d_enhaut",
+            "weight": 2
+        },
+        {
+            "source": "2",
+            "target": "rolle",
+            "weight": 4
+        },
+        {
+            "source": "2",
             "target": "suisse_allemande",
-            "weight": 5
+            "weight": 15
+        },
+        {
+            "source": "2",
+            "target": "vaud",
+            "weight": 2
+        },
+        {
+            "source": "2",
+            "target": "vevey",
+            "weight": 4
         },
         {
             "source": "2",
             "target": "yverdon",
-            "weight": 5
-        },
-        {
-            "source": "2",
-            "target": "payerne",
-            "weight": 1
+            "weight": 2
         },
         {
             "source": "3",
@@ -600,6 +660,11 @@
         {
             "source": "3",
             "target": "geneve",
+            "weight": 1
+        },
+        {
+            "source": "3",
+            "target": "italie",
             "weight": 1
         },
         {
@@ -665,11 +730,6 @@
         {
             "source": "3",
             "target": "yverdon",
-            "weight": 1
-        },
-        {
-            "source": "3",
-            "target": "italie",
             "weight": 1
         },
         {
@@ -765,202 +825,182 @@
         {
             "source": "5",
             "target": "aigle",
-            "weight": 3
-        },
-        {
-            "source": "5",
-            "target": "angleterre",
-            "weight": 12
-        },
-        {
-            "source": "5",
-            "target": "aubonne",
-            "weight": 10
-        },
-        {
-            "source": "5",
-            "target": "cossonay",
-            "weight": 17
-        },
-        {
-            "source": "5",
-            "target": "echallens",
-            "weight": 12
-        },
-        {
-            "source": "5",
-            "target": "france",
-            "weight": 21
-        },
-        {
-            "source": "5",
-            "target": "fribourg",
-            "weight": 2
-        },
-        {
-            "source": "5",
-            "target": "geneve",
-            "weight": 3
-        },
-        {
-            "source": "5",
-            "target": "la_vallee",
-            "weight": 6
-        },
-        {
-            "source": "5",
-            "target": "lausanne",
-            "weight": 134
-        },
-        {
-            "source": "5",
-            "target": "lavaux",
-            "weight": 53
-        },
-        {
-            "source": "5",
-            "target": "morges",
-            "weight": 16
-        },
-        {
-            "source": "5",
-            "target": "moudon",
-            "weight": 12
-        },
-        {
-            "source": "5",
-            "target": "neuchatel",
-            "weight": 1
-        },
-        {
-            "source": "5",
-            "target": "nyon",
-            "weight": 10
-        },
-        {
-            "source": "5",
-            "target": "orbe",
-            "weight": 4
-        },
-        {
-            "source": "5",
-            "target": "oron",
-            "weight": 12
-        },
-        {
-            "source": "5",
-            "target": "pays_d_enhaut",
-            "weight": 11
-        },
-        {
-            "source": "5",
-            "target": "rolle",
             "weight": 8
         },
         {
             "source": "5",
-            "target": "suisse_allemande",
-            "weight": 36
-        },
-        {
-            "source": "5",
-            "target": "vaud",
-            "weight": 5
-        },
-        {
-            "source": "5",
-            "target": "vevey",
-            "weight": 15
-        },
-        {
-            "source": "5",
-            "target": "yverdon",
-            "weight": 11
-        },
-        {
-            "source": "5",
-            "target": "payerne",
+            "target": "aubonne",
             "weight": 4
-        },
-        {
-            "source": "5",
-            "target": "italie",
-            "weight": 3
         },
         {
             "source": "5",
             "target": "avenches",
-            "weight": 1
+            "weight": 2
         },
         {
-            "source": "6",
-            "target": "aigle",
-            "weight": 8
-        },
-        {
-            "source": "6",
-            "target": "aubonne",
-            "weight": 4
-        },
-        {
-            "source": "6",
+            "source": "5",
             "target": "cossonay",
             "weight": 9
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "echallens",
             "weight": 7
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "france",
             "weight": 2
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "fribourg",
             "weight": 6
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "la_vallee",
             "weight": 7
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "lausanne",
             "weight": 91
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "lavaux",
             "weight": 23
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "morges",
             "weight": 20
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "moudon",
             "weight": 8
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "neuchatel",
             "weight": 2
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "nyon",
             "weight": 9
         },
         {
-            "source": "6",
+            "source": "5",
             "target": "orbe",
             "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "oron",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "payerne",
+            "weight": 1
+        },
+        {
+            "source": "5",
+            "target": "pays_d_enhaut",
+            "weight": 9
+        },
+        {
+            "source": "5",
+            "target": "rolle",
+            "weight": 3
+        },
+        {
+            "source": "5",
+            "target": "suisse_allemande",
+            "weight": 19
+        },
+        {
+            "source": "5",
+            "target": "vevey",
+            "weight": 9
+        },
+        {
+            "source": "5",
+            "target": "yverdon",
+            "weight": 11
+        },
+        {
+            "source": "5",
+            "target": "grandson",
+            "weight": 2
+        },
+        {
+            "source": "6",
+            "target": "aigle",
+            "weight": 3
+        },
+        {
+            "source": "6",
+            "target": "aubonne",
+            "weight": 2
+        },
+        {
+            "source": "6",
+            "target": "cossonay",
+            "weight": 6
+        },
+        {
+            "source": "6",
+            "target": "echallens",
+            "weight": 2
+        },
+        {
+            "source": "6",
+            "target": "france",
+            "weight": 5
+        },
+        {
+            "source": "6",
+            "target": "la_vallee",
+            "weight": 2
+        },
+        {
+            "source": "6",
+            "target": "lausanne",
+            "weight": 20
+        },
+        {
+            "source": "6",
+            "target": "lavaux",
+            "weight": 1
+        },
+        {
+            "source": "6",
+            "target": "morges",
+            "weight": 4
+        },
+        {
+            "source": "6",
+            "target": "moudon",
+            "weight": 5
+        },
+        {
+            "source": "6",
+            "target": "neuchatel",
+            "weight": 1
+        },
+        {
+            "source": "6",
+            "target": "nyon",
+            "weight": 4
+        },
+        {
+            "source": "6",
+            "target": "orbe",
+            "weight": 3
         },
         {
             "source": "6",
@@ -969,153 +1009,153 @@
         },
         {
             "source": "6",
-            "target": "pays_d_enhaut",
-            "weight": 9
+            "target": "payerne",
+            "weight": 2
         },
         {
             "source": "6",
-            "target": "rolle",
+            "target": "pays_d_enhaut",
             "weight": 3
         },
         {
             "source": "6",
             "target": "suisse_allemande",
-            "weight": 19
-        },
-        {
-            "source": "6",
-            "target": "vevey",
-            "weight": 9
-        },
-        {
-            "source": "6",
-            "target": "yverdon",
-            "weight": 11
-        },
-        {
-            "source": "6",
-            "target": "payerne",
             "weight": 1
         },
         {
             "source": "6",
-            "target": "avenches",
-            "weight": 2
+            "target": "vevey",
+            "weight": 1
         },
         {
             "source": "6",
-            "target": "grandson",
+            "target": "yverdon",
             "weight": 2
         },
         {
             "source": "7",
             "target": "aigle",
-            "weight": 5
+            "weight": 2
         },
         {
             "source": "7",
             "target": "angleterre",
-            "weight": 14
+            "weight": 1
         },
         {
             "source": "7",
             "target": "aubonne",
+            "weight": 2
+        },
+        {
+            "source": "7",
+            "target": "avenches",
             "weight": 1
         },
         {
             "source": "7",
             "target": "cossonay",
-            "weight": 10
+            "weight": 4
         },
         {
             "source": "7",
             "target": "echallens",
-            "weight": 1
+            "weight": 4
         },
         {
             "source": "7",
             "target": "france",
-            "weight": 14
-        },
-        {
-            "source": "7",
-            "target": "geneve",
-            "weight": 6
-        },
-        {
-            "source": "7",
-            "target": "la_vallee",
-            "weight": 9
-        },
-        {
-            "source": "7",
-            "target": "lausanne",
-            "weight": 149
-        },
-        {
-            "source": "7",
-            "target": "lavaux",
-            "weight": 36
-        },
-        {
-            "source": "7",
-            "target": "morges",
             "weight": 8
         },
         {
             "source": "7",
-            "target": "moudon",
-            "weight": 7
-        },
-        {
-            "source": "7",
-            "target": "neuchatel",
+            "target": "fribourg",
             "weight": 1
         },
         {
             "source": "7",
-            "target": "nyon",
-            "weight": 5
-        },
-        {
-            "source": "7",
-            "target": "orbe",
-            "weight": 5
-        },
-        {
-            "source": "7",
-            "target": "oron",
-            "weight": 9
-        },
-        {
-            "source": "7",
-            "target": "pays_d_enhaut",
-            "weight": 2
-        },
-        {
-            "source": "7",
-            "target": "rolle",
+            "target": "geneve",
             "weight": 4
         },
         {
             "source": "7",
-            "target": "suisse_allemande",
-            "weight": 4
-        },
-        {
-            "source": "7",
-            "target": "vevey",
-            "weight": 7
-        },
-        {
-            "source": "7",
-            "target": "yverdon",
+            "target": "la_vallee",
             "weight": 3
         },
         {
             "source": "7",
+            "target": "lausanne",
+            "weight": 81
+        },
+        {
+            "source": "7",
+            "target": "lavaux",
+            "weight": 10
+        },
+        {
+            "source": "7",
+            "target": "morges",
+            "weight": 26
+        },
+        {
+            "source": "7",
+            "target": "moudon",
+            "weight": 12
+        },
+        {
+            "source": "7",
+            "target": "neuchatel",
+            "weight": 2
+        },
+        {
+            "source": "7",
+            "target": "nyon",
+            "weight": 7
+        },
+        {
+            "source": "7",
+            "target": "orbe",
+            "weight": 10
+        },
+        {
+            "source": "7",
+            "target": "oron",
+            "weight": 7
+        },
+        {
+            "source": "7",
             "target": "payerne",
-            "weight": 1
+            "weight": 2
+        },
+        {
+            "source": "7",
+            "target": "pays_d_enhaut",
+            "weight": 8
+        },
+        {
+            "source": "7",
+            "target": "rolle",
+            "weight": 2
+        },
+        {
+            "source": "7",
+            "target": "suisse_allemande",
+            "weight": 12
+        },
+        {
+            "source": "7",
+            "target": "vaud",
+            "weight": 2
+        },
+        {
+            "source": "7",
+            "target": "vevey",
+            "weight": 6
+        },
+        {
+            "source": "7",
+            "target": "yverdon",
+            "weight": 10
         },
         {
             "source": "8",
@@ -1204,6 +1244,11 @@
         },
         {
             "source": "8",
+            "target": "payerne",
+            "weight": 1
+        },
+        {
+            "source": "8",
             "target": "pays_d_enhaut",
             "weight": 7
         },
@@ -1234,11 +1279,6 @@
         },
         {
             "source": "8",
-            "target": "payerne",
-            "weight": 1
-        },
-        {
-            "source": "8",
             "target": "grandson",
             "weight": 1
         },
@@ -1249,738 +1289,778 @@
         },
         {
             "source": "9",
-            "target": "cossonay",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "france",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "fribourg",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "la_vallee",
-            "weight": 2
-        },
-        {
-            "source": "9",
-            "target": "lausanne",
-            "weight": 47
-        },
-        {
-            "source": "9",
-            "target": "lavaux",
-            "weight": 3
-        },
-        {
-            "source": "9",
-            "target": "moudon",
-            "weight": 4
-        },
-        {
-            "source": "9",
-            "target": "nyon",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "orbe",
-            "weight": 3
-        },
-        {
-            "source": "9",
-            "target": "oron",
-            "weight": 3
-        },
-        {
-            "source": "9",
-            "target": "pays_d_enhaut",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "rolle",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "suisse_allemande",
-            "weight": 8
-        },
-        {
-            "source": "9",
-            "target": "vaud",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "vevey",
-            "weight": 1
-        },
-        {
-            "source": "9",
-            "target": "yverdon",
-            "weight": 2
-        },
-        {
-            "source": "10",
-            "target": "aigle",
-            "weight": 3
-        },
-        {
-            "source": "10",
-            "target": "aubonne",
-            "weight": 2
-        },
-        {
-            "source": "10",
-            "target": "cossonay",
-            "weight": 6
-        },
-        {
-            "source": "10",
-            "target": "echallens",
-            "weight": 2
-        },
-        {
-            "source": "10",
-            "target": "france",
-            "weight": 5
-        },
-        {
-            "source": "10",
-            "target": "la_vallee",
-            "weight": 2
-        },
-        {
-            "source": "10",
-            "target": "lausanne",
-            "weight": 20
-        },
-        {
-            "source": "10",
-            "target": "lavaux",
-            "weight": 1
-        },
-        {
-            "source": "10",
-            "target": "morges",
-            "weight": 4
-        },
-        {
-            "source": "10",
-            "target": "moudon",
-            "weight": 5
-        },
-        {
-            "source": "10",
-            "target": "neuchatel",
-            "weight": 1
-        },
-        {
-            "source": "10",
-            "target": "nyon",
-            "weight": 4
-        },
-        {
-            "source": "10",
-            "target": "orbe",
-            "weight": 3
-        },
-        {
-            "source": "10",
-            "target": "oron",
-            "weight": 2
-        },
-        {
-            "source": "10",
-            "target": "pays_d_enhaut",
-            "weight": 3
-        },
-        {
-            "source": "10",
-            "target": "suisse_allemande",
-            "weight": 1
-        },
-        {
-            "source": "10",
-            "target": "vevey",
-            "weight": 1
-        },
-        {
-            "source": "10",
-            "target": "yverdon",
-            "weight": 2
-        },
-        {
-            "source": "10",
-            "target": "payerne",
-            "weight": 2
-        },
-        {
-            "source": "11",
-            "target": "aigle",
-            "weight": 1
-        },
-        {
-            "source": "11",
             "target": "angleterre",
             "weight": 4
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "aubonne",
             "weight": 2
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "cossonay",
             "weight": 12
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "echallens",
             "weight": 6
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "france",
             "weight": 2
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "fribourg",
             "weight": 2
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "geneve",
             "weight": 3
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "la_vallee",
             "weight": 2
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "lausanne",
             "weight": 77
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "lavaux",
             "weight": 11
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "morges",
             "weight": 13
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "moudon",
             "weight": 13
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "neuchatel",
             "weight": 1
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "nyon",
             "weight": 4
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "orbe",
             "weight": 8
         },
         {
-            "source": "11",
+            "source": "9",
             "target": "oron",
             "weight": 12
         },
         {
-            "source": "11",
-            "target": "pays_d_enhaut",
-            "weight": 6
-        },
-        {
-            "source": "11",
-            "target": "rolle",
-            "weight": 1
-        },
-        {
-            "source": "11",
-            "target": "suisse_allemande",
-            "weight": 4
-        },
-        {
-            "source": "11",
-            "target": "vaud",
-            "weight": 6
-        },
-        {
-            "source": "11",
-            "target": "vevey",
-            "weight": 9
-        },
-        {
-            "source": "11",
-            "target": "yverdon",
-            "weight": 5
-        },
-        {
-            "source": "11",
+            "source": "9",
             "target": "payerne",
             "weight": 1
         },
         {
-            "source": "11",
+            "source": "9",
+            "target": "pays_d_enhaut",
+            "weight": 6
+        },
+        {
+            "source": "9",
+            "target": "rolle",
+            "weight": 1
+        },
+        {
+            "source": "9",
+            "target": "suisse_allemande",
+            "weight": 4
+        },
+        {
+            "source": "9",
+            "target": "vaud",
+            "weight": 6
+        },
+        {
+            "source": "9",
+            "target": "vevey",
+            "weight": 9
+        },
+        {
+            "source": "9",
+            "target": "yverdon",
+            "weight": 5
+        },
+        {
+            "source": "9",
             "target": "grandson",
             "weight": 1
         },
         {
-            "source": "12",
-            "target": "echallens",
-            "weight": 1
-        },
-        {
-            "source": "12",
-            "target": "fribourg",
-            "weight": 3
-        },
-        {
-            "source": "12",
-            "target": "la_vallee",
-            "weight": 14
-        },
-        {
-            "source": "12",
-            "target": "lausanne",
-            "weight": 7
-        },
-        {
-            "source": "12",
-            "target": "oron",
-            "weight": 1
-        },
-        {
-            "source": "12",
-            "target": "pays_d_enhaut",
-            "weight": 1
-        },
-        {
-            "source": "12",
-            "target": "vaud",
-            "weight": 3
-        },
-        {
-            "source": "13",
+            "source": "10",
             "target": "aigle",
             "weight": 2
         },
         {
-            "source": "13",
+            "source": "10",
             "target": "aubonne",
-            "weight": 6
-        },
-        {
-            "source": "13",
-            "target": "cossonay",
-            "weight": 9
-        },
-        {
-            "source": "13",
-            "target": "echallens",
-            "weight": 9
-        },
-        {
-            "source": "13",
-            "target": "france",
-            "weight": 3
-        },
-        {
-            "source": "13",
-            "target": "fribourg",
-            "weight": 2
-        },
-        {
-            "source": "13",
-            "target": "la_vallee",
             "weight": 5
         },
         {
-            "source": "13",
-            "target": "lausanne",
-            "weight": 44
+            "source": "10",
+            "target": "cossonay",
+            "weight": 8
         },
         {
-            "source": "13",
-            "target": "lavaux",
-            "weight": 10
+            "source": "10",
+            "target": "echallens",
+            "weight": 5
         },
         {
-            "source": "13",
-            "target": "morges",
+            "source": "10",
+            "target": "france",
             "weight": 11
         },
         {
-            "source": "13",
-            "target": "moudon",
+            "source": "10",
+            "target": "fribourg",
+            "weight": 2
+        },
+        {
+            "source": "10",
+            "target": "geneve",
             "weight": 3
         },
         {
-            "source": "13",
-            "target": "neuchatel",
-            "weight": 2
-        },
-        {
-            "source": "13",
-            "target": "nyon",
-            "weight": 4
-        },
-        {
-            "source": "13",
-            "target": "orbe",
-            "weight": 2
-        },
-        {
-            "source": "13",
-            "target": "oron",
+            "source": "10",
+            "target": "la_vallee",
             "weight": 5
         },
         {
-            "source": "13",
-            "target": "pays_d_enhaut",
-            "weight": 4
-        },
-        {
-            "source": "13",
-            "target": "rolle",
-            "weight": 4
-        },
-        {
-            "source": "13",
-            "target": "suisse_allemande",
-            "weight": 8
-        },
-        {
-            "source": "13",
-            "target": "vaud",
-            "weight": 3
-        },
-        {
-            "source": "13",
-            "target": "vevey",
-            "weight": 3
-        },
-        {
-            "source": "13",
-            "target": "yverdon",
-            "weight": 10
-        },
-        {
-            "source": "13",
-            "target": "grandson",
-            "weight": 1
-        },
-        {
-            "source": "14",
-            "target": "aigle",
-            "weight": 2
-        },
-        {
-            "source": "14",
-            "target": "angleterre",
-            "weight": 1
-        },
-        {
-            "source": "14",
-            "target": "aubonne",
-            "weight": 2
-        },
-        {
-            "source": "14",
-            "target": "cossonay",
-            "weight": 4
-        },
-        {
-            "source": "14",
-            "target": "echallens",
-            "weight": 4
-        },
-        {
-            "source": "14",
-            "target": "france",
-            "weight": 8
-        },
-        {
-            "source": "14",
-            "target": "fribourg",
-            "weight": 1
-        },
-        {
-            "source": "14",
-            "target": "geneve",
-            "weight": 4
-        },
-        {
-            "source": "14",
-            "target": "la_vallee",
-            "weight": 3
-        },
-        {
-            "source": "14",
-            "target": "lausanne",
-            "weight": 81
-        },
-        {
-            "source": "14",
-            "target": "lavaux",
-            "weight": 10
-        },
-        {
-            "source": "14",
-            "target": "morges",
-            "weight": 26
-        },
-        {
-            "source": "14",
-            "target": "moudon",
-            "weight": 12
-        },
-        {
-            "source": "14",
-            "target": "neuchatel",
-            "weight": 2
-        },
-        {
-            "source": "14",
-            "target": "nyon",
-            "weight": 7
-        },
-        {
-            "source": "14",
-            "target": "orbe",
-            "weight": 10
-        },
-        {
-            "source": "14",
-            "target": "oron",
-            "weight": 7
-        },
-        {
-            "source": "14",
-            "target": "pays_d_enhaut",
-            "weight": 8
-        },
-        {
-            "source": "14",
-            "target": "rolle",
-            "weight": 2
-        },
-        {
-            "source": "14",
-            "target": "suisse_allemande",
-            "weight": 12
-        },
-        {
-            "source": "14",
-            "target": "vaud",
-            "weight": 2
-        },
-        {
-            "source": "14",
-            "target": "vevey",
-            "weight": 6
-        },
-        {
-            "source": "14",
-            "target": "yverdon",
-            "weight": 10
-        },
-        {
-            "source": "14",
-            "target": "payerne",
-            "weight": 2
-        },
-        {
-            "source": "14",
-            "target": "avenches",
-            "weight": 1
-        },
-        {
-            "source": "15",
-            "target": "aigle",
-            "weight": 6
-        },
-        {
-            "source": "15",
-            "target": "angleterre",
-            "weight": 2
-        },
-        {
-            "source": "15",
-            "target": "aubonne",
-            "weight": 5
-        },
-        {
-            "source": "15",
-            "target": "cossonay",
-            "weight": 4
-        },
-        {
-            "source": "15",
-            "target": "france",
-            "weight": 1
-        },
-        {
-            "source": "15",
-            "target": "fribourg",
-            "weight": 2
-        },
-        {
-            "source": "15",
-            "target": "la_vallee",
-            "weight": 9
-        },
-        {
-            "source": "15",
-            "target": "lausanne",
-            "weight": 70
-        },
-        {
-            "source": "15",
-            "target": "lavaux",
-            "weight": 10
-        },
-        {
-            "source": "15",
-            "target": "morges",
-            "weight": 3
-        },
-        {
-            "source": "15",
-            "target": "moudon",
-            "weight": 9
-        },
-        {
-            "source": "15",
-            "target": "neuchatel",
-            "weight": 1
-        },
-        {
-            "source": "15",
-            "target": "orbe",
-            "weight": 7
-        },
-        {
-            "source": "15",
-            "target": "oron",
-            "weight": 2
-        },
-        {
-            "source": "15",
-            "target": "pays_d_enhaut",
-            "weight": 8
-        },
-        {
-            "source": "15",
-            "target": "rolle",
-            "weight": 2
-        },
-        {
-            "source": "15",
-            "target": "suisse_allemande",
-            "weight": 17
-        },
-        {
-            "source": "15",
-            "target": "vaud",
-            "weight": 2
-        },
-        {
-            "source": "15",
-            "target": "vevey",
-            "weight": 4
-        },
-        {
-            "source": "15",
-            "target": "yverdon",
-            "weight": 12
-        },
-        {
-            "source": "15",
-            "target": "italie",
-            "weight": 2
-        },
-        {
-            "source": "15",
-            "target": "avenches",
-            "weight": 3
-        },
-        {
-            "source": "16",
-            "target": "aigle",
-            "weight": 3
-        },
-        {
-            "source": "16",
-            "target": "aubonne",
-            "weight": 1
-        },
-        {
-            "source": "16",
-            "target": "cossonay",
-            "weight": 6
-        },
-        {
-            "source": "16",
-            "target": "echallens",
-            "weight": 7
-        },
-        {
-            "source": "16",
-            "target": "france",
-            "weight": 15
-        },
-        {
-            "source": "16",
-            "target": "fribourg",
-            "weight": 3
-        },
-        {
-            "source": "16",
-            "target": "geneve",
-            "weight": 1
-        },
-        {
-            "source": "16",
-            "target": "la_vallee",
-            "weight": 6
-        },
-        {
-            "source": "16",
+            "source": "10",
             "target": "lausanne",
             "weight": 52
         },
         {
-            "source": "16",
+            "source": "10",
+            "target": "lavaux",
+            "weight": 16
+        },
+        {
+            "source": "10",
+            "target": "morges",
+            "weight": 11
+        },
+        {
+            "source": "10",
+            "target": "moudon",
+            "weight": 10
+        },
+        {
+            "source": "10",
+            "target": "neuchatel",
+            "weight": 2
+        },
+        {
+            "source": "10",
+            "target": "nyon",
+            "weight": 7
+        },
+        {
+            "source": "10",
+            "target": "orbe",
+            "weight": 4
+        },
+        {
+            "source": "10",
+            "target": "oron",
+            "weight": 2
+        },
+        {
+            "source": "10",
+            "target": "pays_d_enhaut",
+            "weight": 3
+        },
+        {
+            "source": "10",
+            "target": "rolle",
+            "weight": 3
+        },
+        {
+            "source": "10",
+            "target": "suisse_allemande",
+            "weight": 2
+        },
+        {
+            "source": "10",
+            "target": "vaud",
+            "weight": 2
+        },
+        {
+            "source": "10",
+            "target": "vevey",
+            "weight": 4
+        },
+        {
+            "source": "10",
+            "target": "yverdon",
+            "weight": 1
+        },
+        {
+            "source": "11",
+            "target": "aigle",
+            "weight": 3
+        },
+        {
+            "source": "11",
+            "target": "aubonne",
+            "weight": 1
+        },
+        {
+            "source": "11",
+            "target": "cossonay",
+            "weight": 6
+        },
+        {
+            "source": "11",
+            "target": "echallens",
+            "weight": 7
+        },
+        {
+            "source": "11",
+            "target": "france",
+            "weight": 15
+        },
+        {
+            "source": "11",
+            "target": "fribourg",
+            "weight": 3
+        },
+        {
+            "source": "11",
+            "target": "geneve",
+            "weight": 1
+        },
+        {
+            "source": "11",
+            "target": "la_vallee",
+            "weight": 6
+        },
+        {
+            "source": "11",
+            "target": "lausanne",
+            "weight": 52
+        },
+        {
+            "source": "11",
             "target": "lavaux",
             "weight": 10
         },
         {
-            "source": "16",
+            "source": "11",
             "target": "morges",
             "weight": 4
+        },
+        {
+            "source": "11",
+            "target": "moudon",
+            "weight": 4
+        },
+        {
+            "source": "11",
+            "target": "neuchatel",
+            "weight": 1
+        },
+        {
+            "source": "11",
+            "target": "nyon",
+            "weight": 5
+        },
+        {
+            "source": "11",
+            "target": "orbe",
+            "weight": 2
+        },
+        {
+            "source": "11",
+            "target": "oron",
+            "weight": 4
+        },
+        {
+            "source": "11",
+            "target": "pays_d_enhaut",
+            "weight": 7
+        },
+        {
+            "source": "11",
+            "target": "rolle",
+            "weight": 1
+        },
+        {
+            "source": "11",
+            "target": "suisse_allemande",
+            "weight": 2
+        },
+        {
+            "source": "11",
+            "target": "vaud",
+            "weight": 4
+        },
+        {
+            "source": "11",
+            "target": "vevey",
+            "weight": 8
+        },
+        {
+            "source": "11",
+            "target": "yverdon",
+            "weight": 3
+        },
+        {
+            "source": "11",
+            "target": "grandson",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "aigle",
+            "weight": 6
+        },
+        {
+            "source": "12",
+            "target": "angleterre",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "aubonne",
+            "weight": 5
+        },
+        {
+            "source": "12",
+            "target": "avenches",
+            "weight": 3
+        },
+        {
+            "source": "12",
+            "target": "cossonay",
+            "weight": 4
+        },
+        {
+            "source": "12",
+            "target": "france",
+            "weight": 1
+        },
+        {
+            "source": "12",
+            "target": "fribourg",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "italie",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "la_vallee",
+            "weight": 9
+        },
+        {
+            "source": "12",
+            "target": "lausanne",
+            "weight": 70
+        },
+        {
+            "source": "12",
+            "target": "lavaux",
+            "weight": 10
+        },
+        {
+            "source": "12",
+            "target": "morges",
+            "weight": 3
+        },
+        {
+            "source": "12",
+            "target": "moudon",
+            "weight": 9
+        },
+        {
+            "source": "12",
+            "target": "neuchatel",
+            "weight": 1
+        },
+        {
+            "source": "12",
+            "target": "orbe",
+            "weight": 7
+        },
+        {
+            "source": "12",
+            "target": "oron",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "pays_d_enhaut",
+            "weight": 8
+        },
+        {
+            "source": "12",
+            "target": "rolle",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "suisse_allemande",
+            "weight": 17
+        },
+        {
+            "source": "12",
+            "target": "vaud",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "vevey",
+            "weight": 4
+        },
+        {
+            "source": "12",
+            "target": "yverdon",
+            "weight": 12
+        },
+        {
+            "source": "13",
+            "target": "angleterre",
+            "weight": 1
+        },
+        {
+            "source": "13",
+            "target": "aubonne",
+            "weight": 5
+        },
+        {
+            "source": "13",
+            "target": "cossonay",
+            "weight": 5
+        },
+        {
+            "source": "13",
+            "target": "echallens",
+            "weight": 5
+        },
+        {
+            "source": "13",
+            "target": "france",
+            "weight": 4
+        },
+        {
+            "source": "13",
+            "target": "fribourg",
+            "weight": 2
+        },
+        {
+            "source": "13",
+            "target": "italie",
+            "weight": 2
+        },
+        {
+            "source": "13",
+            "target": "la_vallee",
+            "weight": 5
+        },
+        {
+            "source": "13",
+            "target": "lausanne",
+            "weight": 51
+        },
+        {
+            "source": "13",
+            "target": "lavaux",
+            "weight": 10
+        },
+        {
+            "source": "13",
+            "target": "morges",
+            "weight": 11
+        },
+        {
+            "source": "13",
+            "target": "moudon",
+            "weight": 11
+        },
+        {
+            "source": "13",
+            "target": "nyon",
+            "weight": 1
+        },
+        {
+            "source": "13",
+            "target": "orbe",
+            "weight": 4
+        },
+        {
+            "source": "13",
+            "target": "oron",
+            "weight": 6
+        },
+        {
+            "source": "13",
+            "target": "pays_d_enhaut",
+            "weight": 2
+        },
+        {
+            "source": "13",
+            "target": "suisse_allemande",
+            "weight": 20
+        },
+        {
+            "source": "13",
+            "target": "vaud",
+            "weight": 1
+        },
+        {
+            "source": "13",
+            "target": "vevey",
+            "weight": 9
+        },
+        {
+            "source": "13",
+            "target": "yverdon",
+            "weight": 9
+        },
+        {
+            "source": "13",
+            "target": "grandson",
+            "weight": 2
+        },
+        {
+            "source": "14",
+            "target": "aigle",
+            "weight": 5
+        },
+        {
+            "source": "14",
+            "target": "angleterre",
+            "weight": 14
+        },
+        {
+            "source": "14",
+            "target": "aubonne",
+            "weight": 1
+        },
+        {
+            "source": "14",
+            "target": "cossonay",
+            "weight": 10
+        },
+        {
+            "source": "14",
+            "target": "echallens",
+            "weight": 1
+        },
+        {
+            "source": "14",
+            "target": "france",
+            "weight": 14
+        },
+        {
+            "source": "14",
+            "target": "geneve",
+            "weight": 6
+        },
+        {
+            "source": "14",
+            "target": "la_vallee",
+            "weight": 9
+        },
+        {
+            "source": "14",
+            "target": "lausanne",
+            "weight": 149
+        },
+        {
+            "source": "14",
+            "target": "lavaux",
+            "weight": 36
+        },
+        {
+            "source": "14",
+            "target": "morges",
+            "weight": 8
+        },
+        {
+            "source": "14",
+            "target": "moudon",
+            "weight": 7
+        },
+        {
+            "source": "14",
+            "target": "neuchatel",
+            "weight": 1
+        },
+        {
+            "source": "14",
+            "target": "nyon",
+            "weight": 5
+        },
+        {
+            "source": "14",
+            "target": "orbe",
+            "weight": 5
+        },
+        {
+            "source": "14",
+            "target": "oron",
+            "weight": 9
+        },
+        {
+            "source": "14",
+            "target": "payerne",
+            "weight": 1
+        },
+        {
+            "source": "14",
+            "target": "pays_d_enhaut",
+            "weight": 2
+        },
+        {
+            "source": "14",
+            "target": "rolle",
+            "weight": 4
+        },
+        {
+            "source": "14",
+            "target": "suisse_allemande",
+            "weight": 4
+        },
+        {
+            "source": "14",
+            "target": "vevey",
+            "weight": 7
+        },
+        {
+            "source": "14",
+            "target": "yverdon",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "cossonay",
+            "weight": 1
+        },
+        {
+            "source": "15",
+            "target": "echallens",
+            "weight": 1
+        },
+        {
+            "source": "15",
+            "target": "france",
+            "weight": 5
+        },
+        {
+            "source": "15",
+            "target": "fribourg",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "la_vallee",
+            "weight": 1
+        },
+        {
+            "source": "15",
+            "target": "lausanne",
+            "weight": 27
+        },
+        {
+            "source": "15",
+            "target": "lavaux",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "morges",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "moudon",
+            "weight": 1
+        },
+        {
+            "source": "15",
+            "target": "orbe",
+            "weight": 1
+        },
+        {
+            "source": "15",
+            "target": "oron",
+            "weight": 4
+        },
+        {
+            "source": "15",
+            "target": "payerne",
+            "weight": 1
+        },
+        {
+            "source": "15",
+            "target": "suisse_allemande",
+            "weight": 5
+        },
+        {
+            "source": "15",
+            "target": "yverdon",
+            "weight": 5
+        },
+        {
+            "source": "16",
+            "target": "aigle",
+            "weight": 1
+        },
+        {
+            "source": "16",
+            "target": "cossonay",
+            "weight": 1
+        },
+        {
+            "source": "16",
+            "target": "france",
+            "weight": 1
+        },
+        {
+            "source": "16",
+            "target": "fribourg",
+            "weight": 1
+        },
+        {
+            "source": "16",
+            "target": "la_vallee",
+            "weight": 2
+        },
+        {
+            "source": "16",
+            "target": "lausanne",
+            "weight": 47
+        },
+        {
+            "source": "16",
+            "target": "lavaux",
+            "weight": 3
         },
         {
             "source": "16",
@@ -1989,28 +2069,23 @@
         },
         {
             "source": "16",
-            "target": "neuchatel",
+            "target": "nyon",
             "weight": 1
         },
         {
             "source": "16",
-            "target": "nyon",
-            "weight": 5
-        },
-        {
-            "source": "16",
             "target": "orbe",
-            "weight": 2
+            "weight": 3
         },
         {
             "source": "16",
             "target": "oron",
-            "weight": 4
+            "weight": 3
         },
         {
             "source": "16",
             "target": "pays_d_enhaut",
-            "weight": 7
+            "weight": 1
         },
         {
             "source": "16",
@@ -2020,132 +2095,57 @@
         {
             "source": "16",
             "target": "suisse_allemande",
-            "weight": 2
-        },
-        {
-            "source": "16",
-            "target": "vaud",
-            "weight": 4
-        },
-        {
-            "source": "16",
-            "target": "vevey",
             "weight": 8
         },
         {
             "source": "16",
-            "target": "yverdon",
-            "weight": 3
-        },
-        {
-            "source": "16",
-            "target": "grandson",
-            "weight": 2
-        },
-        {
-            "source": "17",
-            "target": "angleterre",
-            "weight": 1
-        },
-        {
-            "source": "17",
-            "target": "aubonne",
-            "weight": 5
-        },
-        {
-            "source": "17",
-            "target": "cossonay",
-            "weight": 5
-        },
-        {
-            "source": "17",
-            "target": "echallens",
-            "weight": 5
-        },
-        {
-            "source": "17",
-            "target": "france",
-            "weight": 4
-        },
-        {
-            "source": "17",
-            "target": "fribourg",
-            "weight": 2
-        },
-        {
-            "source": "17",
-            "target": "la_vallee",
-            "weight": 5
-        },
-        {
-            "source": "17",
-            "target": "lausanne",
-            "weight": 51
-        },
-        {
-            "source": "17",
-            "target": "lavaux",
-            "weight": 10
-        },
-        {
-            "source": "17",
-            "target": "morges",
-            "weight": 11
-        },
-        {
-            "source": "17",
-            "target": "moudon",
-            "weight": 11
-        },
-        {
-            "source": "17",
-            "target": "nyon",
-            "weight": 1
-        },
-        {
-            "source": "17",
-            "target": "orbe",
-            "weight": 4
-        },
-        {
-            "source": "17",
-            "target": "oron",
-            "weight": 6
-        },
-        {
-            "source": "17",
-            "target": "pays_d_enhaut",
-            "weight": 2
-        },
-        {
-            "source": "17",
-            "target": "suisse_allemande",
-            "weight": 20
-        },
-        {
-            "source": "17",
             "target": "vaud",
             "weight": 1
         },
         {
-            "source": "17",
+            "source": "16",
             "target": "vevey",
-            "weight": 9
+            "weight": 1
         },
         {
-            "source": "17",
+            "source": "16",
             "target": "yverdon",
-            "weight": 9
-        },
-        {
-            "source": "17",
-            "target": "italie",
             "weight": 2
         },
         {
             "source": "17",
-            "target": "grandson",
-            "weight": 2
+            "target": "echallens",
+            "weight": 1
+        },
+        {
+            "source": "17",
+            "target": "fribourg",
+            "weight": 3
+        },
+        {
+            "source": "17",
+            "target": "la_vallee",
+            "weight": 14
+        },
+        {
+            "source": "17",
+            "target": "lausanne",
+            "weight": 7
+        },
+        {
+            "source": "17",
+            "target": "oron",
+            "weight": 1
+        },
+        {
+            "source": "17",
+            "target": "pays_d_enhaut",
+            "weight": 1
+        },
+        {
+            "source": "17",
+            "target": "vaud",
+            "weight": 3
         }
     ]
 }

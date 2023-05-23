@@ -2,13 +2,18 @@
 import * as d3 from "d3";
 
 const SELECT_JOB = "select_job";
-const JOBS_SCALE_DOMAINS = {'administration': {'min': 1, 'max': 17},
-'agricole': {'min': 3, 'max': 122},
-'artisanat': {'min': 2, 'max': 93},
-'commerce': {'min': 6, 'max': 44},
-'construction': {'min': 1, 'max': 39},
-'rente': {'min': 5, 'max': 140},
-'service': {'min': 1, 'max': 77}}
+const CHECK_PROPORTION = "check_proportion";
+
+const JOBS_SCALE_DOMAINS = {
+    'no_job': { 'min': 0, 'max': 1 },
+    'administration': { 'min': 1, 'max': 17, 'color': "blue"},
+    'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B" },
+    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282"},
+    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10"},
+    'construction': { 'min': 1, 'max': 39 , 'color': "#FCBB00"},
+    'rente': { 'min': 5, 'max': 140, 'color': "#143A85"},
+    'service': { 'min': 1, 'max': 77, 'color': "#00973B" }
+}
 
 export class DivisionsMap {
     constructor(
@@ -41,20 +46,35 @@ export class DivisionsMap {
         this.projection = this.init_projection();
         this.zoom = this.init_zoom();
 
+        let selectedJob = 'no_job';
+        let selectedProportion = false;
+
+        const edgesOpacityCheckbox = document.getElementById(CHECK_PROPORTION);
+        edgesOpacityCheckbox.addEventListener('change', (event) => {
+            selectedProportion = event.target.checked;
+            // Get the currently selected job option
+            this.handleSelectJob(selectedJob, selectedProportion);
+        });
+
         // Add event listeners
         const selectLayoutElement = document.getElementById(SELECT_JOB);
         selectLayoutElement.addEventListener('change', (event) => {
-            this.handleSelectJob(event.target.value);
+            selectedJob = event.target.value;
+            this.handleSelectJob(event.target.value, selectedProportion);
         });
+
     }
 
-    handleSelectJob(selectedJob) {
+    handleSelectJob(selectedJob, selectedProportion) {
+        console.log(selectedJob, selectedProportion);
         // Here, you can update the color scale domain based on the selected job
         // For example, if the selected job is "construction":
         const selected_domain = JOBS_SCALE_DOMAINS[selectedJob];
         const colorScale = d3.scaleLinear()
-            .domain([selected_domain.min, selected_domain.max])
-            .range(d3.schemeBlues[7]);
+            .domain([
+                selectedProportion ? 0 : selected_domain.min, 
+                selectedProportion ? 1 : selected_domain.max])
+            .range(["white", selected_domain.color]);
 
         // Update the fill color of the map zones based on the selected job
         this.layer_1
@@ -62,9 +82,15 @@ export class DivisionsMap {
             // Add a linear transition to the fill color
             .transition()
             .duration(500)
-            .attr("fill", d => colorScale(d.properties.jobs[selectedJob] ?? 0));
-
+            .attr("fill", d => {
+                console.log(d.properties.jobs);
+                if (!(selectedJob in d.properties.jobs) || selectedJob === "no_job" ) {
+                    return this.default_zone_color;
+                }
+                return colorScale(d.properties.jobs[selectedJob] / (selectedProportion ? d.properties.population : 1))
+            });
     }
+        
 
     /**
      * Initializes the dimensions of the circle packing visualization.
