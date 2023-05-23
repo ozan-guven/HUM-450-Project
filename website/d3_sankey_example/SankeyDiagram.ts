@@ -3,47 +3,12 @@ import * as d3 from 'd3';
 import * as d3Sankey from "d3-sankey"
 
 const SANKEY_ELEMENT_ID = 'sankey';
+const TOOLTIP_ELEMENT_ID = 'sankey-tooltip';
+const BARPLOT_ELEMENT_ID = 'sankey-barplot';
 const LINK_HOVERED_OPACITY = 0.8;
 
 const DEFAULT_NODE_ALIGN = 'justify';
 const DEFAULT_NODE_GROUP = (d: any) => d.id.split(/\W/)[0]; // Take first word for color
-const DEFAULT_COLORS = (id: string) => {
-    const map = {
-        "bourg": '#2081C3',
-        "place_st_francois": '#2081C3',
-        "chailly": '#289e61',
-        "grange": '#289e61',
-        "la_sallaz": '#289e61',
-        "ouchy": '#289e61',
-        "barre": '#725AC1',
-        "cite_derriere": '#725AC1',
-        "cite_dessous": '#725AC1',
-        "cheneau_de_bourg": '#F4743B',
-        "montee_st_francois": '#F4743B',
-        "rue_du_pre": '#F4743B',
-        "ale": '#F4B860',
-        "grand_st_jean": '#F4B860',
-        "montee_de_st_laurent": '#F4B860',
-        "palud": '#F4B860',
-        "st_laurent": '#F4B860',
-        "marterey": '#9E2846',
-        "affaires": '#2081C3',
-        "campagne": '#289e61',
-        "cathedrale": '#725AC1',
-        "centre": '#F4743B',
-        "commerce": '#aaaaaa',
-        "culture": '#9E2846',
-        "administration": '#aaaaaa',
-        "agricole": '#aaaaaa',
-        "artisanat": '#aaaaaa',
-        "commerce": '#F4B860',
-        "construction": '#aaaaaa',
-        "rente": '#aaaaaa',
-        "service": '#aaaaaa'
-    };
-
-    return map[id] ?? '#aaaaaa';
-}
 const DEFAULT_NODE_WIDTH = 15;
 const DEFAULT_NODE_PADDING = 10;
 const DEFAULT_MARGIN_LEFT = 1;
@@ -59,6 +24,85 @@ const DEFAULT_LINK_STROKE_OPACITY = 0.5;
 const DEFAULT_LINK_MIX_BLEND_MODE = 'multiply';
 const DEFAULT_LINK_PATH = d3Sankey.sankeyLinkHorizontal();
 const DEFAULT_NODE_LABEL_PADDING = 6;
+const DEFAULT_UNSELECTED_COLOR = '#aaaaaa';
+const DEFAULT_COLORS = (id: string) => {
+    const map = {
+        "bourg": '#2081C3',
+        "place_st_francois": '#2081C3',
+        "chailly": '#289e61',
+        "grange_neuve": '#289e61',
+        "la_sallaz": '#289e61',
+        "ouchy": '#289e61',
+        "barre": '#725AC1',
+        "cite_derriere": '#725AC1',
+        "cite_dessous": '#725AC1',
+        "cheneau_de_bourg": '#F4743B',
+        "montee_st_francois": '#F4743B',
+        "rue_du_pre": '#F4743B',
+        "ale": '#F4B860',
+        "grand_st_jean": '#F4B860',
+        "montee_de_st_laurent": '#F4B860',
+        "palud": '#F4B860',
+        "st_laurent": '#F4B860',
+        "marterey": '#9E2846',
+        "affaires_division": '#2081C3',
+        "campagne_division": '#289e61',
+        "cathedrale_division": '#725AC1',
+        "centre_division": '#F4743B',
+        "commerce_division": '#F4B860',
+        "culture_division": '#9E2846',
+        "administration": '#ffffff',
+        "agricole": '#ffffff',
+        "artisanat": '#ffffff',
+        "commerce": '#ffffff',
+        "construction": '#ffffff',
+        "rente": '#ffffff',
+        "service": '#ffffff',
+        "hors_lausanne": '#ffffff',
+        "lausanne": '#ffffff'
+    };
+
+    return map[id] ?? '#aaaaaa';
+};
+const NODE_ID_TO_NAME = (id: string) => {
+    const map = {
+        "bourg": 'Bourg',
+        "place_st_francois": 'Place St-François',
+        "chailly": 'Chailly',
+        "grange_neuve": 'Grange-Neuve',
+        "la_sallaz": 'La Sallaz',
+        "ouchy": 'Ouchy',
+        "barre": 'Barre',
+        "cite_derriere": 'Cité Derrière',
+        "cite_dessous": 'Cité Dessous',
+        "cheneau_de_bourg": 'Chêneau-de-Bourg',
+        "montee_st_francois": 'Montée St-François',
+        "rue_du_pre": 'Rue du Pré',
+        "ale": 'Ale',
+        "grand_st_jean": 'Grand St-Jean',
+        "montee_de_st_laurent": 'Montée de St-Laurent',
+        "palud": 'Palud',
+        "st_laurent": 'St-Laurent',
+        "marterey": 'Marterey',
+        "affaires_division": 'Affaires',
+        "campagne_division": 'Campagne',
+        "cathedrale_division": 'Cathédrale',
+        "centre_division": 'Centre',
+        "commerce_division": 'Commerce',
+        "culture_division": 'Culture',
+        "administration": 'Administration',
+        "agricole": 'Agricole',
+        "artisanat": 'Artisanat',
+        "commerce": 'Commerce',
+        "construction": 'Construction',
+        "rente": 'Rente',
+        "service": 'Service',
+        "hors_lausanne": 'Hors Lausanne',
+        "lausanne": 'Lausanne'
+    };
+
+    return map[id] ?? id;
+};
 
 // Copyright 2021 Observable, Inc.
 // Released under the ISC license.
@@ -162,10 +206,18 @@ class Sankey {
         this.links = d3.map(this.data, (_, i) => ({source: LS[i], target: LT[i], value: LV[i]}));
     }
 
+    /**
+     * Initializes the color of the sankey chart.
+     * @returns {void}
+     */
     private initColor(): void {
         this.color = DEFAULT_COLORS
     }
 
+    /**
+     * Computes the sankey layout.
+     * @returns {void}
+     */
     private computeSankeyLayout(): void {
         d3Sankey.sankey()
             .nodeId(({index: i}) => this.N[i])
@@ -176,6 +228,10 @@ class Sankey {
         ({nodes: this.nodes, links: this.links});
     }
 
+    /**
+     * Initializes the svg elements.
+     * @returns {void}
+     */
     private initSvgElements(): void {
         // Compute titles and labels using layout nodes, so as to access aggregate values.
         this.format = d3.format(DEFAULT_FORMAT);
@@ -199,16 +255,54 @@ class Sankey {
         .selectAll("rect")
         .data(this.nodes)
         .join("rect")
+            .attr("id", (d: any) => d.id)
             .attr("x", (d: any) => d.x0)
             .attr("y", (d: any) => d.y0)
             .attr("height", (d: any) => d.y1 - d.y0)
             .attr("width", (d: any) => d.x1 - d.x0);
 
-        this.node.on("mouseover", function() {
-        });
+        this.node
+            .on("mouseover", (event, d) => {
+                // Make all nodes gray
+                d3.selectAll("rect").style("fill", DEFAULT_UNSELECTED_COLOR);
+                d3.selectAll("path").style("stroke", DEFAULT_UNSELECTED_COLOR);
+
+                // Highlight selected node
+                d3.select(`#${d.id}`).style("fill", (node: any) => this.color(node.id));
+
+                // Highlight linked nodes
+                d.sourceLinks.forEach((link: any) => d3.select(`#${link.target.id}`).style("fill", (node: any) => this.color(node.id)));
+                d.targetLinks.forEach((link: any) => d3.select(`#${link.source.id}`).style("fill", (node: any) => this.color(node.id)));
+
+                // Highlight linked links
+                d.sourceLinks.forEach((link: any) => d3.select(`#${link.source.id}-${link.target.id}`).style("stroke", (d: any) => this.color(d.source.id)));
+                d.targetLinks.forEach((link: any) => d3.select(`#${link.source.id}-${link.target.id}`).style("stroke", (d: any) => this.color(d.source.id)));
+            
+                // Show tooltip
+                const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+                tooltip.style("visibility", "visible");
+                tooltip.html(`${d.value}`);
+            })
+            .on("mouseout", (event, d) => {
+                // Make all nodes and links their original color
+                d3.selectAll("rect").style("fill", (node: any) => this.color(node.id));
+                d3.selectAll("path").style("stroke", (d: any) => this.color(d.source.id));
+
+                // Hide tooltip
+                const tooltip = d3.select("#tooltip");
+                tooltip.style("visibility", "hidden");
+            })
+            .on("mousemove", (event) => {
+                // Update tooltip position
+                const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+                tooltip.style("top", (event.pageY - 10) + "px")
+                    .style("left", (event.pageX + 10) + "px");
+            })
+            .on("click", (event, d) => {
+                this.updateBarChart(d);
+            });
 
         if (this.G) this.node.attr("fill", ({index: i}) => this.color(this.G[i]));
-        if (this.Tt) this.node.append("title").text(({index: i}) => Tt[i]);
 
         // Init link element
         this.link = this.svg.append("g")
@@ -221,15 +315,30 @@ class Sankey {
 
         this.link.append("path")
             .attr("d", DEFAULT_LINK_PATH)
+            .attr("id", (d: any) => `${d.source.id}-${d.target.id}`)
             .attr("stroke", ({source: {index: i}}) => this.color(this.G[i]))
             .attr("stroke-width", ({width}) => Math.max(1, width))
-            .call(Lt ? path => path.append("title").text(({index: i}) => Lt[i]) : () => {});
 
-        this.link.on("mouseover", function(d) {
+        this.link.on("mouseover", function(event, d) {
                 d3.select(this).style("stroke-opacity", LINK_HOVERED_OPACITY);
+
+                // Show tooltip
+                const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+                tooltip.style("visibility", "visible");
+                tooltip.html(`${d.value}`);
         })
         .on("mouseout", (d) => {
             this.link.style("stroke-opacity", DEFAULT_LINK_STROKE_OPACITY);
+
+            // Hide tooltip
+            const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+            tooltip.style("visibility", "hidden");
+        })
+        .on("mousemove", (event) => {
+            // Update tooltip position
+            const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
         });
 
         // Init label element
@@ -245,10 +354,75 @@ class Sankey {
                 .attr("dy", "0.35em")
                 .attr("text-anchor", d => d.x0 < this.width / 2 ? "start" : "end")
                 .attr("pointer-events", "none")
-                .text(({index: i}) => Tl[i]);
+                .text(({index: i}) => NODE_ID_TO_NAME(Tl[i]));
         }
+    }
 
-        console.log(this.G)
+    private updateBarChart(d: any): void {
+        // Get child nodes
+        const sourceChildren = d.sourceLinks.map((link: any) => ({
+            id: link.target.id,
+            value: link.value
+        }));
+        const targetChildren = d.targetLinks.map((link: any) => ({
+            id: link.source.id,
+            value: link.value
+        }));
+
+        if (sourceChildren.length === 0 && targetChildren.length === 0) return;
+        
+        let childNodes = targetChildren.length === 0 ? sourceChildren : targetChildren;
+    
+        console.log(childNodes);
+        this.drawBarPlot(childNodes);
+    }
+
+    private drawBarPlot(data: any[]): void {
+        // Remove the old chart
+        d3.select('#barplot').remove();
+    
+        // Define margins
+        const margin = {top: 10, right: 30, bottom: 20, left: 50},
+            width = 460 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+    
+        // Append the svg object to the body of the page
+        const svg = d3.select(`${BARPLOT_ELEMENT_ID}`)
+          .append("svg")
+            .attr("id", "barplot")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+    
+        // X axis
+        const x = d3.scaleBand()
+          .range([0, width])
+          .domain(data.map(d => d.id))
+          .padding(0.2);
+    
+        svg.append("g")
+          .attr("transform", `translate(0,${height})`)
+          .call(d3.axisBottom(x));
+    
+        // Add Y axis
+        const y = d3.scaleLinear()
+          .domain([0, d3.max(data, d => d.value)])
+          .range([height, 0]);
+    
+        svg.append("g")
+          .call(d3.axisLeft(y));
+    
+        // Bars
+        svg.selectAll("mybar")
+          .data(data)
+          .enter()
+          .append("rect")
+            .attr("x", d => x(d.id))
+            .attr("y", d => y(d.value))
+            .attr("width", x.bandwidth())
+            .attr("height", d => height - y(d.value))
+            .attr("fill", "#69b3a2");
     }
 }
-const sankey = new Sankey('sankey_ddj.json');
+const sankey = new Sankey('sankey_ddo.json');
