@@ -1,6 +1,8 @@
 const SCROLL_DURATION = 100;
 
 document.addEventListener("DOMContentLoaded", () => {
+  let startY: any;  // Variable to store Y position at touchstart
+  
     function isElementInViewport(el: any) {
       const rect = el.getBoundingClientRect();
       const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
@@ -43,9 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return event.deltaY > 0 ? "down" : "up";
     }
 
-    function scrollDown(event: any) {
+    function scrollDirection(event: any) {
       event.preventDefault();
-
       const containers = [
         "title-container",
         "p1-container",
@@ -58,23 +59,36 @@ document.addEventListener("DOMContentLoaded", () => {
         "final-container"
       ];
 
+      let direction = null;
+
+      // Get direction from deltaY for wheel events
+    if (event.type === "wheel") {
+      direction = getScrollDirection(event);
+    } 
+    
+    // Get direction from touchmove event
+    if (event.type === "touchmove") {
+      const touch = event.touches[0];
+      direction = touch.pageY > startY ? "up" : "down";
+    }
+
       for (let i = 0; i < containers.length; i++) {
         const upContainer = i >= 1 ? document.getElementById(containers[i - 1]) : null;
         const currentContainer = document.getElementById(containers[i]);
         const downContainer = i < containers.length - 1 ? document.getElementById(containers[i + 1]) : null;
 
-        if (upContainer && isElementInViewport(currentContainer) && getScrollDirection(event) === "up") {
+        if (upContainer && isElementInViewport(currentContainer) && direction === "up") {
           smoothScrollTo(upContainer, SCROLL_DURATION);
         }
 
-        if (downContainer && isElementInViewport(currentContainer) && getScrollDirection(event) === "down") {
+        if (downContainer && isElementInViewport(currentContainer) && direction === "down") {
           smoothScrollTo(downContainer, SCROLL_DURATION);
         }
       }
     }
 
-    document.addEventListener("wheel", scrollDown, { passive: false });
-    document.addEventListener("touchmove", scrollDown, { passive: false });
+    document.addEventListener("wheel", scrollDirection, { passive: false });
+    document.addEventListener("touchmove", scrollDirection, { passive: false });
 
     // Scroll to title on page load
     const titleContainer = document.getElementById("title-container");
