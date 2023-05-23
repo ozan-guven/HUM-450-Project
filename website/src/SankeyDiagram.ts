@@ -109,7 +109,7 @@ const NODE_ID_TO_NAME = (id: string) => {
 // Copyright 2021 Observable, Inc.
 // Released under the ISC license.
 // https://observablehq.com/@d3/sankey-diagram
-class SankeyChart {
+export class SankeyChart {
     private dataPath: string;
     private uid: string; 
 
@@ -377,7 +377,7 @@ class SankeyChart {
     }
 }
 
-class SankeyBarPlot {
+export class SankeyBarPlot {
     private width: number;
     private height: number;
 
@@ -516,6 +516,3 @@ class SankeyBarPlot {
             .attr("y", (d: any) => y(d.value));
     }
 }
-
-const sankeyParPlot = new SankeyBarPlot();
-const sankeyChart = new SankeyChart('sankey_ddo.json', sankeyParPlot);

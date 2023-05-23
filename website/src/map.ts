@@ -3,6 +3,22 @@ import * as d3 from "d3";
 
 const SELECT_JOB = "select_job";
 const CHECK_PROPORTION = "check_proportion";
+const MAP_BARPLOT_ELEMENT_ID = 'bar';
+const MAP_BARPLOT_SVG_ELEMENT_ID = 'bar-svg';
+const BAR_PLOT_TRANSITION_DURATION = 500;
+const DEFAULT_COLORS = (id) => {
+    const map = {
+        'administration': 'blue',
+        'agricole': '#00A59B',
+        'artisanat': '#6F2282',
+        'commerce': '#E84E10',
+        'construction': '#FCBB00',
+        'rente': '#143A85',
+        'service': '#00973B',
+    };
+
+    return map[id] || '#ffffff';
+};
 
 const JOBS_SCALE_DOMAINS = {
     'no_job': { 'min': 0, 'max': 1 },
@@ -19,6 +35,7 @@ export class DivisionsMap {
     constructor(
         map_file,
         locations_file,
+        mapBarPlot,
         scale = 700000,
         center = [6.635, 46.525],
         min_zoom_dimension = 100,
@@ -26,6 +43,7 @@ export class DivisionsMap {
     ) {
         this.map_file = map_file;
         this.locations_file = locations_file;
+        this.mapBarPlot = mapBarPlot;
 
         // Basic render settings
         this.scale = scale;
@@ -162,6 +180,7 @@ export class DivisionsMap {
                 .attr("class", "zone")
                 .attr("id", d => d.properties.id)
                 .attr("fill", d => this.default_zone_color)
+                .attr('data-old-color', d => this.default_zone_color)
                 .attr("d", d3.geoPath()
                     .projection(this.projection)
                 )
@@ -357,64 +376,13 @@ export class DivisionsMap {
         this.svg.transition()
             .duration(750)
             .call(this.zoom.transform, transform)
-// Create the bar plot
-const barContainer = d3.select("#bar");
 
-// Clear previous content
-barContainer.selectAll("*").remove();
-
-// Get the data for the bar plot
-const zoneData = d3.select(zone).data()[0].properties.jobs;
-
-// Convert the data to an array of objects
-const data = Object.entries(zoneData).map(([category, value]) => ({
-  category,
-  value,
-}));
-
-// Set up the dimensions and scales for the bar plot
-const barWidth = 100;
-const barHeight = 20;
-const margin = { top: 10, right: 10, bottom: 10, left: 10 };
-const width = barWidth - margin.left - margin.right;
-const height = barHeight - margin.top - margin.bottom;
-
-const xScale = d3
-  .scaleLinear()
-  .domain([0, d3.max(data, d => d.value)])
-  .range([0, width]);
-
-// Create the SVG container for the bar plot
-const svg = barContainer
-  .append("svg")
-  .attr("width", barWidth)
-  .attr("height", barHeight);
-
-// Create the bars
-const bars = svg
-  .selectAll("rect")
-  .data(data)
-  .enter()
-  .append("rect")
-  .attr("x", margin.left)
-  .attr("y", margin.top)
-  .attr("width", d => xScale(d.value))
-  .attr("height", height)
-  .attr("fill", "steelblue");
-
-// Add labels to the bars
-svg
-  .selectAll("text")
-  .data(data)
-  .enter()
-  .append("text")
-  .text(d => d.category)
-  .attr("x", margin.left)
-  .attr("y", margin.top + height / 2)
-  .attr("dy", "0.35em")
-  .style("font-size", "12px")
-  .style("fill", "white");
-
+        // zone.__data__.properties.jobs json into {id:..., value:...}
+        let data = zone.__data__.properties.jobs
+        data = Object.keys(data).map(function (key) {
+            return { id: key, value: data[key] };
+        });
+        this.mapBarPlot.drawBarPlot(data);
     }
 
     zoomOut() {
@@ -429,5 +397,157 @@ svg
 
         this.fadeToColor(zone, old_color)
         this.removeZoneTitle()
+    }
+}
+
+export class MapBarPlot {
+    private width: number;
+    private height: number;
+
+    private svg: any;
+
+    constructor() {
+        this.initDimensions();
+        this.initColor();
+    }
+
+    /**
+     * Initialize the dimensions of the plot.
+     * @returns {void}
+     */
+    private initDimensions(): void {
+        const parentElement = document.getElementById(MAP_BARPLOT_ELEMENT_ID);
+        if (parentElement) {
+            const dimensions = Math.min(parentElement.clientWidth, parentElement.clientHeight);
+            this.width = dimensions;
+            this.height = dimensions;
+        }
+    }
+
+    /**
+     * Initializes the color of the sankey chart.
+     * @returns {void}
+     */
+    private initColor(): void {
+        this.color = DEFAULT_COLORS
+    }
+
+    /**
+     * Draw the bar plot.
+     * @param data The data to draw the bar plot with.
+     * @returns {void}
+     */
+    public drawBarPlot(data: any[]): void {
+        // Define margins
+        const margin = {top: 10, right: 30, bottom: 100, left: 50},
+            width = this.width - margin.left - margin.right,
+            height = this.height - margin.top - margin.bottom;
+
+        // Create SVG if it doesn't exist
+        let svg = d3.select(`#${MAP_BARPLOT_ELEMENT_ID}`).select("svg");
+        let group: any;
+
+        if (svg.empty()) {
+            svg = d3.select(`#${MAP_BARPLOT_ELEMENT_ID}`)
+                .append("svg")
+                .attr("id", MAP_BARPLOT_SVG_ELEMENT_ID)
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+            
+            group = svg.append("g");
+        } else {
+            group = svg.select("g");
+        }
+
+        // Sort data by value
+        data.sort((a, b) => d3.descending(a.value, b.value));
+
+        // X axis
+        const x = d3.scaleBand()
+            .range([0, width])
+            .domain(data.map(d => d.id))
+            .padding(0.2);
+
+        // Y axis
+        const y = d3.scaleLinear()
+            .domain([0, d3.max(data, d => d.value)])
+            .range([height, 0]);
+
+        // Handle x-axis: create if it doesn't exist, update otherwise
+        let xAxis = svg.select(".x-axis");
+        if (xAxis.empty()) {
+            xAxis = svg.append("g")
+                .attr("class", "x-axis")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x).tickFormat(d => d))
+                .attr("color", "white")
+                .selectAll("text")
+                .style("fill", "white");
+        } else {
+            xAxis.transition()
+                .duration(BAR_PLOT_TRANSITION_DURATION)
+                .call(d3.axisBottom(x).tickFormat(d => d))
+                .attr("color", "white")
+                .selectAll("text")
+                .style("fill", "white");
+        }
+
+        // Handle y-axis: create if it doesn't exist, update otherwise
+        let yAxis = svg.select(".y-axis");
+        if (yAxis.empty()) {
+            yAxis = svg.append("g")
+                .attr("class", "y-axis")
+                .call(d3.axisLeft(y))
+                .attr("color", "white")
+                .selectAll("text")
+                .style("fill", "white");
+        } else {
+            yAxis.transition()
+                .duration(BAR_PLOT_TRANSITION_DURATION)
+                .call(d3.axisLeft(y))
+                .attr("color", "white")
+                .selectAll("text")
+                .style("fill", "white");
+        }
+
+        // Bars
+        const bars = group.selectAll(".sankey-bar")
+            .data(data, (d: any) => d.id);
+
+        // Exit selection
+        bars.exit()
+            .transition()
+            .duration(BAR_PLOT_TRANSITION_DURATION)
+            .attr("height", 0)
+            .attr("y", y(0))
+            .remove();
+
+        // Update selection
+        bars
+            .transition()
+            .duration(BAR_PLOT_TRANSITION_DURATION)
+            .attr("x", (d: any) => x(d.id))
+            .attr("width", x.bandwidth())
+            .attr("y", (d: any) => y(d.value))
+            .attr("height", (d: any) => height - y(d.value));
+
+        // Enter selection
+        const barsEnter = bars
+            .enter()
+            .append("rect")
+            .attr("class", "sankey-bar")
+            .attr("x", (d: any) => x(d.id))
+            .attr("width", x.bandwidth())
+            .attr("y", y(0))
+            .attr("height", 0)
+            .attr("fill", (d: any) => this.color(d.id));
+
+        barsEnter
+            .transition()
+            .duration(BAR_PLOT_TRANSITION_DURATION)
+            .attr("height", (d: any) => height - y(d.value))
+            .attr("y", (d: any) => y(d.value));
     }
 }
