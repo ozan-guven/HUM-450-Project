@@ -6,12 +6,12 @@ const CHECK_PROPORTION = "check_proportion";
 
 const JOBS_SCALE_DOMAINS = {
     'no_job': { 'min': 0, 'max': 1 },
-    'administration': { 'min': 1, 'max': 17, 'color': "blue"},
+    'administration': { 'min': 1, 'max': 17, 'color': "blue" },
     'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B" },
-    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282"},
-    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10"},
-    'construction': { 'min': 1, 'max': 39 , 'color': "#FCBB00"},
-    'rente': { 'min': 5, 'max': 140, 'color': "#143A85"},
+    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282" },
+    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10" },
+    'construction': { 'min': 1, 'max': 39, 'color': "#FCBB00" },
+    'rente': { 'min': 5, 'max': 140, 'color': "#143A85" },
     'service': { 'min': 1, 'max': 77, 'color': "#00973B" }
 }
 
@@ -22,7 +22,7 @@ export class DivisionsMap {
         scale = 700000,
         center = [6.635, 46.525],
         min_zoom_dimension = 100,
-        default_zone_color = "grey",
+        default_zone_color = "rgb(128, 128, 128)",
     ) {
         this.map_file = map_file;
         this.locations_file = locations_file;
@@ -72,7 +72,7 @@ export class DivisionsMap {
         const selected_domain = JOBS_SCALE_DOMAINS[selectedJob];
         const colorScale = d3.scaleLinear()
             .domain([
-                selectedProportion ? 0 : selected_domain.min, 
+                selectedProportion ? 0 : selected_domain.min,
                 selectedProportion ? 1 : selected_domain.max])
             .range(["white", selected_domain.color]);
 
@@ -83,14 +83,13 @@ export class DivisionsMap {
             .transition()
             .duration(500)
             .attr("fill", d => {
-                console.log(d.properties.jobs);
-                if (!(selectedJob in d.properties.jobs) || selectedJob === "no_job" ) {
+                if (!(selectedJob in d.properties.jobs) || selectedJob === "no_job") {
                     return this.default_zone_color;
                 }
                 return colorScale(d.properties.jobs[selectedJob] / (selectedProportion ? d.properties.population : 1))
             });
     }
-        
+
 
     /**
      * Initializes the dimensions of the circle packing visualization.
@@ -239,8 +238,13 @@ export class DivisionsMap {
         // Save current fill color in data-old-color attribute
         const old_color = d3.select(zone).attr("fill")
         d3.select(zone).attr("data-old-color", old_color)
+        // Get the components of the fill color
+        const rgb = old_color.replace(/[^\d,]/g, '').split(',')
+        // Make the color lighter by a factor of 1.5
+        const new_color = `rgb(${rgb[0] * 1.25}, ${rgb[1] * 1.25}, ${rgb[2] * 1.25})`
 
-        this.fadeToColor(zone, "red")
+
+        this.fadeToColor(zone, new_color)
 
         const result = this.getZoneCenter(zone)
         const zone_center = result[0]
@@ -261,8 +265,6 @@ export class DivisionsMap {
         if (this.is_zoomed) { return }
 
         d3.select(zone)
-            .transition()
-            .duration(200)
             .attr("fill", color)
     }
 
@@ -355,6 +357,64 @@ export class DivisionsMap {
         this.svg.transition()
             .duration(750)
             .call(this.zoom.transform, transform)
+// Create the bar plot
+const barContainer = d3.select("#bar");
+
+// Clear previous content
+barContainer.selectAll("*").remove();
+
+// Get the data for the bar plot
+const zoneData = d3.select(zone).data()[0].properties.jobs;
+
+// Convert the data to an array of objects
+const data = Object.entries(zoneData).map(([category, value]) => ({
+  category,
+  value,
+}));
+
+// Set up the dimensions and scales for the bar plot
+const barWidth = 100;
+const barHeight = 20;
+const margin = { top: 10, right: 10, bottom: 10, left: 10 };
+const width = barWidth - margin.left - margin.right;
+const height = barHeight - margin.top - margin.bottom;
+
+const xScale = d3
+  .scaleLinear()
+  .domain([0, d3.max(data, d => d.value)])
+  .range([0, width]);
+
+// Create the SVG container for the bar plot
+const svg = barContainer
+  .append("svg")
+  .attr("width", barWidth)
+  .attr("height", barHeight);
+
+// Create the bars
+const bars = svg
+  .selectAll("rect")
+  .data(data)
+  .enter()
+  .append("rect")
+  .attr("x", margin.left)
+  .attr("y", margin.top)
+  .attr("width", d => xScale(d.value))
+  .attr("height", height)
+  .attr("fill", "steelblue");
+
+// Add labels to the bars
+svg
+  .selectAll("text")
+  .data(data)
+  .enter()
+  .append("text")
+  .text(d => d.category)
+  .attr("x", margin.left)
+  .attr("y", margin.top + height / 2)
+  .attr("dy", "0.35em")
+  .style("font-size", "12px")
+  .style("fill", "white");
+
     }
 
     zoomOut() {
