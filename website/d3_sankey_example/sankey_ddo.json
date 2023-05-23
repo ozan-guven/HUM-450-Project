@@ -5,7 +5,7 @@
         "value": 200
     },
     {
-        "source": "place st francois",
+        "source": "place_st_francois",
         "target": "affaires (division)",
         "value": 193
     },
@@ -20,7 +20,7 @@
         "value": 35
     },
     {
-        "source": "la sallaz",
+        "source": "la_sallaz",
         "target": "campagne (division)",
         "value": 87
     },
@@ -35,27 +35,27 @@
         "value": 199
     },
     {
-        "source": "cite derriere",
+        "source": "cite_derriere",
         "target": "cathedrale (division)",
         "value": 209
     },
     {
-        "source": "cite dessous",
+        "source": "cite_dessous",
         "target": "cathedrale (division)",
         "value": 184
     },
     {
-        "source": "cheneau de bourg",
+        "source": "cheneau_de_bourg",
         "target": "centre (division)",
         "value": 198
     },
     {
-        "source": "montee st francois",
+        "source": "montee_st_francois",
         "target": "centre (division)",
         "value": 341
     },
     {
-        "source": "rue du pre",
+        "source": "rue_du_pre",
         "target": "centre (division)",
         "value": 148
     },
@@ -65,12 +65,12 @@
         "value": 251
     },
     {
-        "source": "grand st jean",
+        "source": "grand_st_jean",
         "target": "commerce (division)",
         "value": 281
     },
     {
-        "source": "montee de st laurent",
+        "source": "montee_de_st_laurent",
         "target": "commerce (division)",
         "value": 92
     },
@@ -80,7 +80,7 @@
         "value": 220
     },
     {
-        "source": "st laurent",
+        "source": "st_laurent",
         "target": "commerce (division)",
         "value": 253
     },
