@@ -1,0 +1,302 @@
+[
+    {
+        "source": "bourg",
+        "target": "affaires (division)",
+        "value": 200
+    },
+    {
+        "source": "place st francois",
+        "target": "affaires (division)",
+        "value": 193
+    },
+    {
+        "source": "chailly",
+        "target": "campagne (division)",
+        "value": 69
+    },
+    {
+        "source": "grange-neuve",
+        "target": "campagne (division)",
+        "value": 35
+    },
+    {
+        "source": "la sallaz",
+        "target": "campagne (division)",
+        "value": 87
+    },
+    {
+        "source": "ouchy",
+        "target": "campagne (division)",
+        "value": 339
+    },
+    {
+        "source": "barre",
+        "target": "cathedrale (division)",
+        "value": 199
+    },
+    {
+        "source": "cite derriere",
+        "target": "cathedrale (division)",
+        "value": 209
+    },
+    {
+        "source": "cite dessous",
+        "target": "cathedrale (division)",
+        "value": 184
+    },
+    {
+        "source": "cheneau de bourg",
+        "target": "centre (division)",
+        "value": 198
+    },
+    {
+        "source": "montee st francois",
+        "target": "centre (division)",
+        "value": 341
+    },
+    {
+        "source": "rue du pre",
+        "target": "centre (division)",
+        "value": 148
+    },
+    {
+        "source": "ale",
+        "target": "commerce (division)",
+        "value": 251
+    },
+    {
+        "source": "grand st jean",
+        "target": "commerce (division)",
+        "value": 281
+    },
+    {
+        "source": "montee de st laurent",
+        "target": "commerce (division)",
+        "value": 92
+    },
+    {
+        "source": "palud",
+        "target": "commerce (division)",
+        "value": 220
+    },
+    {
+        "source": "st laurent",
+        "target": "commerce (division)",
+        "value": 253
+    },
+    {
+        "source": "marterey",
+        "target": "culture (division)",
+        "value": 504
+    },
+    {
+        "source": "affaires (division)",
+        "target": "administration",
+        "value": 7
+    },
+    {
+        "source": "affaires (division)",
+        "target": "agricole",
+        "value": 10
+    },
+    {
+        "source": "affaires (division)",
+        "target": "artisanat",
+        "value": 54
+    },
+    {
+        "source": "affaires (division)",
+        "target": "commerce",
+        "value": 43
+    },
+    {
+        "source": "affaires (division)",
+        "target": "construction",
+        "value": 7
+    },
+    {
+        "source": "affaires (division)",
+        "target": "rente",
+        "value": 108
+    },
+    {
+        "source": "affaires (division)",
+        "target": "service",
+        "value": 56
+    },
+    {
+        "source": "campagne (division)",
+        "target": "administration",
+        "value": 2
+    },
+    {
+        "source": "campagne (division)",
+        "target": "agricole",
+        "value": 237
+    },
+    {
+        "source": "campagne (division)",
+        "target": "artisanat",
+        "value": 27
+    },
+    {
+        "source": "campagne (division)",
+        "target": "commerce",
+        "value": 8
+    },
+    {
+        "source": "campagne (division)",
+        "target": "construction",
+        "value": 14
+    },
+    {
+        "source": "campagne (division)",
+        "target": "rente",
+        "value": 154
+    },
+    {
+        "source": "campagne (division)",
+        "target": "service",
+        "value": 33
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "administration",
+        "value": 22
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "agricole",
+        "value": 74
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "artisanat",
+        "value": 100
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "commerce",
+        "value": 21
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "construction",
+        "value": 65
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "rente",
+        "value": 84
+    },
+    {
+        "source": "cathedrale (division)",
+        "target": "service",
+        "value": 80
+    },
+    {
+        "source": "centre (division)",
+        "target": "administration",
+        "value": 4
+    },
+    {
+        "source": "centre (division)",
+        "target": "agricole",
+        "value": 82
+    },
+    {
+        "source": "centre (division)",
+        "target": "artisanat",
+        "value": 184
+    },
+    {
+        "source": "centre (division)",
+        "target": "commerce",
+        "value": 71
+    },
+    {
+        "source": "centre (division)",
+        "target": "construction",
+        "value": 52
+    },
+    {
+        "source": "centre (division)",
+        "target": "rente",
+        "value": 56
+    },
+    {
+        "source": "centre (division)",
+        "target": "service",
+        "value": 91
+    },
+    {
+        "source": "commerce (division)",
+        "target": "administration",
+        "value": 23
+    },
+    {
+        "source": "commerce (division)",
+        "target": "agricole",
+        "value": 136
+    },
+    {
+        "source": "commerce (division)",
+        "target": "artisanat",
+        "value": 220
+    },
+    {
+        "source": "commerce (division)",
+        "target": "commerce",
+        "value": 69
+    },
+    {
+        "source": "commerce (division)",
+        "target": "construction",
+        "value": 95
+    },
+    {
+        "source": "commerce (division)",
+        "target": "rente",
+        "value": 122
+    },
+    {
+        "source": "commerce (division)",
+        "target": "service",
+        "value": 128
+    },
+    {
+        "source": "culture (division)",
+        "target": "administration",
+        "value": 5
+    },
+    {
+        "source": "culture (division)",
+        "target": "agricole",
+        "value": 82
+    },
+    {
+        "source": "culture (division)",
+        "target": "artisanat",
+        "value": 93
+    },
+    {
+        "source": "culture (division)",
+        "target": "commerce",
+        "value": 17
+    },
+    {
+        "source": "culture (division)",
+        "target": "construction",
+        "value": 39
+    },
+    {
+        "source": "culture (division)",
+        "target": "rente",
+        "value": 110
+    },
+    {
+        "source": "culture (division)",
+        "target": "service",
+        "value": 77
+    }
+]
