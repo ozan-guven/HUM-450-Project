@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Histoire Urbaine Digitale</title>
     
-    <script type="module" crossorigin src="./assets/main-82bd4aa3.js"></script>
-    <link rel="stylesheet" href="./assets/index-4833f82b.css">
+    <script type="module" crossorigin src="./assets/main-a64d3562.js"></script>
+    <link rel="stylesheet" href="./assets/index-495f86a6.css">
   </head>
   <body>
     <div class="app">
@@ -58,7 +58,7 @@
       <div id="p2-container" class="container container-padding off-white-bg">
         <div class="flex-row flex-100">
           <div class="flex-col flex-60 height-100 overflow-auto">
-            <div class="flex-col flex-50 overflow-auto">
+            <div class="flex-col flex-40 overflow-auto">
               <div class="flex-col text-padding-10">
                 <p class="large-text large-font-weight">
                   Concentrique et Historique
@@ -67,21 +67,15 @@
 
               <div class="flex-col text-padding-10">
                 <p class="medium-text">
-                  Cette première visualisation offre une représentation intuitive et visuellement attrayante de la division de Lausanne. Dans ce schéma, chaque cercle représente une division distincte de la ville, telle qu'elle était définie dans le recensement de la population de 1832.
-                </p>
-              </div>
-
-              <div class="flex-col text-padding-10">
-                <p class="medium-text">
-                  Plongez-vous encore plus profondément dans l'histoire en découvrant les rues qui composaient chaque division de la ville. Il vous suffit de cliquer sur les cercles pour explorer l'agencement unique de chaque quartier.
+                  Cette première visualisation intuitive et attrayante illustre la division de la ville en une structure hiérarchique à deux niveaux : les divisions et les quartiers. Lausanne est représentée en six divisions principales, chacune décrivant une partie globale de la ville. Ces divisions sont à leur tour subdivisées en un total de 18 quartiers. Chaque quartier a sa propre identité et son caractère distinct, reflétant la structure unique de la ville à cette époque.
                 </p>
               </div>
             </div>
-            <div class="flex-col flex-50 overflow-auto text-padding-10">
+            <div class="flex-col flex-60 overflow-auto text-padding-10">
               <p id="circle-packing-title" class="large-text large-font-weight">
               </p>
               <p id="circle-packing-text" class="medium-text">
-                Cliquez sur les différentes sections du diagramme pour explorer ces relations en détail. Vous découvrirez comment la diversité des origines et des professions a contribué à la richesse et à la complexité de Lausanne au XIXème siècle, et comment ces facteurs ont joué un rôle déterminant dans la formation des communautés urbaines.
+                Pour vivre une expérience d'exploration historique immersive, nous vous invitons à découvrir les divisions et quartiers qui constituaient la ville. Pour ce faire, il suffit de cliquer sur les cercles correspondant à chaque quartier ou division.
               </p>
             </div>
           </div>
@@ -155,7 +149,44 @@
       </div>
 
       <div id="p5-container" class="container container-padding black-bg">
-        <!-- MAP GOES HERE -->
+        <div id="select_job" class="light-text">
+          Catégories de métiers
+          <select class="network-control">
+            <option value="no_job" selected>
+              Aucuns
+            </option>
+            <option value="administration">
+              Administration
+            </option>
+            <option value="agricole">
+              Agricole
+            </option>
+            <option value="artisanat">
+              Artisanat
+            </option>
+            <option value="commerce">
+              Commerce
+            </option>
+            <option value="construction">
+              Construction
+            </option>
+            <option value="rente">
+              Rente
+            </option>
+            <option value="service">
+              Service
+            </option>
+          </select>
+        </div>
+
+        <div id="check_proportion" class="network-control">
+          <input type="checkbox" name="check_proportion">
+          <label for="check_proportion" class="light-text">Proportions par divisions</label>
+        </div>
+
+        <div id="map-chart" class="width-100 height-100">
+          <div id="map"></div>
+        </div>
       </div>
 
       <div id="p5-to-p6-container" class="container bk-to-bk-bg"></div>
@@ -242,6 +273,7 @@
     </div>
   </body>
 
+  
   
   
   
