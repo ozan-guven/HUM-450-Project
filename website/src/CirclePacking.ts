@@ -17,47 +17,34 @@ const MAX_FONT_SIZE = 100;
 
 const DEFAULT_PACKING_TITLE = '';
 const PACKING_TITLE = {
-    '1-2': 'Division 1-2',
-    '3': 'Division 3',
-    '4': 'Division 4',
-    '5': 'Division 5',
-    '6': 'Division 6',
-    '7': 'Division 7',
-    '7-8': 'Division 7-8',
-    '9': 'Division 9',
-    '10': 'Division 10',
-    '11': 'Division 11',
-    '12': 'Division 12',
-    '13': 'Division 13',
-    '14': 'Division 14',
-    '15': 'Division 15',
-    '16': 'Division 16',
-    '17': 'Division 17',
-    '18': 'Division 18',
-    '19': 'Division 19',
-    '20': 'Division 20'
+    'culture': "Division Culture",
+    'marterey': "Quartier Marterey",
+
+    'campagne': "Division Campagne",
+
+    'commerce': "Division Commerce",
+
+    'centre': "Division Centre",
+
+    'affaires': "Division Affaires",
+
+    'cathedrale': "Division Cathédrale",
+
 }
-const DEFAULT_PACKING_TEXT = 'Cliquez sur les différentes sections du diagramme pour explorer ces relations en détail. Vous découvrirez comment la diversité des origines et des professions a contribué à la richesse et à la complexité de Lausanne au XIX<sup>ème</sup> siècle, et comment ces facteurs ont joué un rôle déterminant dans la formation des communautés urbaines.';
+const DEFAULT_PACKING_TEXT = "Pour vivre une expérience d'exploration historique immersive, nous vous invitons à découvrir les divisions et quartiers qui constituaient la ville. Pour ce faire, il suffit de cliquer sur les cercles correspondant à chaque quartier ou division.";
 const PACKING_TEXT = {
-    '1-2': 'Division 1-2',
-    '3': 'Division 3',
-    '4': 'Division 4',
-    '5': 'Division 5',
-    '6': 'Division 6',
-    '7': 'Division 7',
-    '7-8': 'Division 7-8',
-    '9': 'Division 9',
-    '10': 'Division 10',
-    '11': 'Division 11',
-    '12': 'Division 12',
-    '13': 'Division 13',
-    '14': 'Division 14',
-    '15': 'Division 15',
-    '16': 'Division 16',
-    '17': 'Division 17',
-    '18': 'Division 18',
-    '19': 'Division 19',
-    '20': 'Division 20'
+    'culture': "Dans le domaine culturel, la rue Marterey de Lausanne se distingue. En 1803, un théâtre est initié sur le côté occidental de cette rue, et sa construction s'achève en 1805, renforçant l'identité culturelle de ce secteur de la ville.",
+    'marterey': "Dans le domaine culturel, la rue Marterey de Lausanne se distingue. En 1803, un théâtre est initié sur le côté occidental de cette rue, et sa construction s'achève en 1805, renforçant l'identité culturelle de ce secteur de la ville.",
+    
+    'campagne': "La campagne lausannoise, parsemée de hameaux charmants, offrait un cadre idyllique pour ceux cherchant à échapper à l'agitation urbaine. Cette zone était notamment prisée par les rentiers pour sa tranquillité et se situait également sur des axes stratégiques. Ce contexte attirait les familles aristocratiques qui y établissaient leurs villas suburbaines, symbolisant à la fois un lien étroit avec la nature et un certain statut social. D'autre part, les agriculteurs et vignerons, en tant que paysans, se consacraient à leurs activités agricoles et viticoles dans cette campagne luxuriante.",
+
+    'commerce': "Le dynamisme commercial de Lausanne était palpable dans plusieurs quartiers vibrants de la ville avec des centres actifs comme le Grand St-Jean, St-Laurent, Palud, Ale et la Montée de St-Laurent. La place Chauderon, inaugurée en 1830, servait de point de transfert pour les marchandises, tandis que la place de la Palud, avec l'Hôtel de Ville et son marché de fromages, constituait un autre pôle d'activité.",
+
+    'centre': "Le centre de Lausanne était marqué par des rues pittoresques et animées, comme la Montée St-François, le Chêneau de Bourg et la Rue du Pré. Toutefois, le paysage social était significativement influencé par la présence de la tannerie Mercier dans le quartier du Rôtillon. Malgré son importance économique, la tannerie était associée à des conditions sanitaires défavorables et des odeurs désagréables, ce qui a limité la présence de la bourgeoisie dans ce secteur.",
+
+    'affaires': "Le cœur économique de Lausanne se trouvait dans le quartier du Bourg. Ce dernier, vibrant d'activité, abritait l'Hôtel des postes, créé entre 1806 et 1808 suite à la transformation d'une partie de l'ancien manège. C'était ici que le courrier était centralisé et expédié. De plus, ce quartier jouait un rôle crucial dans le transport. En effet, la place Saint-François était le terminus des diligences en provenance ou à destination de Berne, Genève ou Paris. Le quartier du Bourg était donc un véritable pôle d'affaires, où se croisaient les flux de courriers et de voyageurs, symbolisant le dynamisme économique de Lausanne à cette époque.",
+
+    'cathedrale': "La cathédrale de Lausanne se dressait majestueusement comme un emblème du patrimoine de la ville. Implantée au cœur de la Cité Derrière, son architecture impressionnante dominait l'horizon, attirant l'attention et l'admiration des résidents et des visiteurs. Les quartiers pittoresques de la Cité Dessous et de la Barre enveloppaient la cathédrale dans un tissu urbain dense. En outre, la présence de l'académie dans cette division renforçait le statut de la cathédrale comme centre de l'enseignement et de l'érudition.",
 }
 
 /**
