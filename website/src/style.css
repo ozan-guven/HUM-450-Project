@@ -59,6 +59,12 @@ body {
   justify-content: center;
 }
 
+.div-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-align-center {
   align-items: center;
 }
@@ -573,4 +579,31 @@ p {
   top: 10px;
   left: 10px;
   z-index: 9999;
+}
+
+#select_job {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  font-family: var(--default-font-family);
+}
+
+#check_proportion {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 9999;
+  color: var(--off-white);
+}
+
+#sankey-tooltip {
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 10;
+  position: absolute; 
+  visibility: hidden;
+  padding: 3px;
 }

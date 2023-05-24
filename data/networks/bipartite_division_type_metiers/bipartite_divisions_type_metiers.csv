@@ -1,0 +1,117 @@
+division,job_category,Weight,division_name
+1,administration,5,marterey
+1,agricole,82,marterey
+1,artisanat,93,marterey
+1,commerce,17,marterey
+1,construction,39,marterey
+1,rente,110,marterey
+1,service,77,marterey
+2,administration,1,cheneau de bourg
+2,agricole,32,cheneau de bourg
+2,artisanat,61,cheneau de bourg
+2,commerce,9,cheneau de bourg
+2,construction,21,cheneau de bourg
+2,rente,14,cheneau de bourg
+2,service,27,cheneau de bourg
+3,administration,3,bourg
+3,agricole,3,bourg
+3,artisanat,39,bourg
+3,commerce,27,bourg
+3,construction,5,bourg
+3,rente,50,bourg
+3,service,30,bourg
+4,administration,4,place st francois
+4,agricole,7,place st francois
+4,artisanat,15,place st francois
+4,commerce,16,place st francois
+4,construction,2,place st francois
+4,rente,58,place st francois
+4,service,26,place st francois
+5,agricole,8,rue du pre
+5,artisanat,32,rue du pre
+5,commerce,18,rue du pre
+5,construction,5,rue du pre
+5,rente,12,rue du pre
+5,service,20,rue du pre
+6,administration,3,montee st francois
+6,agricole,42,montee st francois
+6,artisanat,91,montee st francois
+6,commerce,44,montee st francois
+6,construction,26,montee st francois
+6,rente,30,montee st francois
+6,service,44,montee st francois
+7,agricole,13,montee de st laurent
+7,artisanat,23,montee de st laurent
+7,commerce,8,montee de st laurent
+7,construction,6,montee de st laurent
+7,rente,5,montee de st laurent
+7,service,13,montee de st laurent
+8,administration,11,grand st jean
+8,agricole,14,grand st jean
+8,artisanat,77,grand st jean
+8,commerce,17,grand st jean
+8,construction,16,grand st jean
+8,rente,46,grand st jean
+8,service,35,grand st jean
+9,administration,7,st laurent
+9,agricole,30,st laurent
+9,artisanat,48,st laurent
+9,commerce,15,st laurent
+9,construction,28,st laurent
+9,rente,25,st laurent
+9,service,40,st laurent
+10,administration,4,ale
+10,agricole,71,ale
+10,artisanat,29,ale
+10,commerce,7,ale
+10,construction,34,ale
+10,rente,18,ale
+10,service,19,ale
+11,administration,1,palud
+11,agricole,8,palud
+11,artisanat,43,palud
+11,commerce,22,palud
+11,construction,11,palud
+11,rente,28,palud
+11,service,21,palud
+12,administration,2,cite dessous
+12,agricole,19,cite dessous
+12,artisanat,31,cite dessous
+12,construction,16,cite dessous
+12,rente,25,cite dessous
+12,service,23,cite dessous
+13,administration,17,cite derriere
+13,agricole,22,cite derriere
+13,artisanat,45,cite derriere
+13,commerce,6,cite derriere
+13,construction,23,cite derriere
+13,rente,43,cite derriere
+13,service,30,cite derriere
+14,administration,3,barre
+14,agricole,33,barre
+14,artisanat,24,barre
+14,commerce,15,barre
+14,construction,26,barre
+14,rente,16,barre
+14,service,27,barre
+15,administration,2,ouchy
+15,agricole,122,ouchy
+15,artisanat,12,ouchy
+15,commerce,8,ouchy
+15,construction,5,ouchy
+15,rente,140,ouchy
+15,service,22,ouchy
+16,agricole,44,chailly
+16,artisanat,7,chailly
+16,construction,4,chailly
+16,rente,7,chailly
+16,service,1,chailly
+17,agricole,48,la sallaz
+17,artisanat,6,la sallaz
+17,construction,4,la sallaz
+17,rente,7,la sallaz
+17,service,7,la sallaz
+18,agricole,23,grange-neuve
+18,artisanat,2,grange-neuve
+18,construction,1,grange-neuve
+18,service,3,grange-neuve

@@ -4,9 +4,9 @@ def get_recensement():
 
     # Loading data
     recensement = pd.read_excel(io="1832_v4.xlsx", na_values=["·","?"])
-    classes = pd.read_excel(io="histoire urbaine digitale classification metiers.xlsx", sheet_name="data",  na_values="·")
+    classes = pd.read_csv("classification_metiers.csv")
     rues = pd.read_csv("nom_rues_et_coor.csv", sep=",")
-    regions = pd.read_excel("histoire urbaine digitale classification origines.xlsx")
+    regions = pd.read_csv("classification_origines.csv")
     
     # Adding the 'chef_vocation_categorie' column
     classes = classes.rename(columns={"JOB": "chef_vocation_norm_2"})
