@@ -26,44 +26,44 @@ const DEFAULT_COLORS = (id) => {
 
 const JOBS_SCALE_DOMAINS = {
     'no_selection': { 'min': 0, 'max': 1 },
-    'administration': { 'min': 1, 'max': 17, 'color': "blue" },
-    'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B" },
-    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282" },
-    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10" },
-    'construction': { 'min': 1, 'max': 39, 'color': "#FCBB00" },
-    'rente': { 'min': 5, 'max': 140, 'color': "#143A85" },
-    'service': { 'min': 1, 'max': 77, 'color': "#00973B" }
+    'administration': { 'min': 1, 'max': 17, 'color': "blue", 'max_ratio': 0.081340},
+    'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B", 'max_ratio': 0.657143},
+    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282", 'max_ratio': 0.308081},
+    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10", 'max_ratio': 0.135000},
+    'construction': { 'min': 1, 'max': 39, 'color': "#FCBB00", 'max_ratio': 0.135458},
+    'rente': { 'min': 5, 'max': 140, 'color': "#143A85", 'max_ratio': 0.412979},
+    'service': { 'min': 1, 'max': 77, 'color': "#00973B", 'max_ratio': 0.158103}
 }
 
 const ORIGINS_SCALE_DOMAINS = {
-    "not_lausanne": {'max': 370, 'color': 'turquoise'},
-    "aigle": {'max': 8, 'color': 'turquoise'},
-    "angleterre": {'max': 14, 'color': 'turquoise'},
-    "aubonne": {'max': 10, 'color': 'turquoise'},
-    "avenches": {'max': 3, 'color': 'turquoise'},
-    "cossonay": {'max': 17, 'color': 'turquoise'},
-    "echallens": {'max': 12, 'color': 'turquoise'},
-    "france": {'max': 21, 'color': 'turquoise'},
-    "fribourg": {'max': 6, 'color': 'turquoise'},
-    "geneve": {'max': 6, 'color': 'turquoise'},
-    "grandson": {'max': 2, 'color': 'turquoise'},
-    "italie": {'max': 3, 'color': 'turquoise'},
-    "la_vallee": {'max': 14, 'color': 'turquoise'},
-    "lausanne": {'max': 149, 'color': 'turquoise'},
-    "lavaux": {'max': 53, 'color': 'turquoise'},
-    "morges": {'max': 26, 'color': 'turquoise'},
-    "moudon": {'max': 13, 'color': 'turquoise'},
-    "neuchatel": {'max': 3, 'color': 'turquoise'},
-    "nyon": {'max': 10, 'color': 'turquoise'},
-    "orbe": {'max': 10, 'color': 'turquoise'},
-    "oron": {'max': 15, 'color': 'turquoise'},
-    "payerne": {'max': 4, 'color': 'turquoise'},
-    "pays_d_enhaut": {'max': 11, 'color': 'turquoise'},
-    "rolle": {'max': 8, 'color': 'turquoise'},
-    "suisse_allemande": {'max': 36, 'color': 'turquoise'},
-    "vaud": {'max': 6, 'color': 'turquoise'},
-    "vevey": {'max': 15, 'color': 'turquoise'},
-    "yverdon": {'max': 12, 'color': 'turquoise'}
+    "not_lausanne": {'max': 370, 'color': 'turquoise', 'max_ratio': 0.80000},
+    "aigle": {'max': 8, 'color': 'turquoise', 'max_ratio': 0.032609},
+    "angleterre": {'max': 14, 'color': 'turquoise', 'max_ratio': 0.041298},
+    "aubonne": {'max': 10, 'color': 'turquoise', 'max_ratio': 0.030303},
+    "avenches": {'max': 3, 'color': 'turquoise', 'max_ratio': 0.014354},
+    "cossonay": {'max': 17, 'color': 'turquoise', 'max_ratio': 0.065217},
+    "echallens": {'max': 12, 'color': 'turquoise', 'max_ratio': 0.045455},
+    "france": {'max': 21, 'color': 'turquoise', 'max_ratio': 0.093264},
+    "fribourg": {'max': 6, 'color': 'turquoise', 'max_ratio': 0.085714},
+    "geneve": {'max': 6, 'color': 'turquoise', 'max_ratio': 0.017699},
+    "grandson": {'max': 2, 'color': 'turquoise', 'max_ratio': 0.010870},
+    "italie": {'max': 3, 'color': 'turquoise', 'max_ratio': 0.010050},
+    "la_vallee": {'max': 14, 'color': 'turquoise', 'max_ratio': 0.400000},
+    "lausanne": {'max': 149, 'color': 'turquoise', 'max_ratio': 0.540230},
+    "lavaux": {'max': 53, 'color': 'turquoise', 'max_ratio': 0.106195},
+    "morges": {'max': 26, 'color': 'turquoise', 'max_ratio': 0.092527},
+    "moudon": {'max': 13, 'color': 'turquoise', 'max_ratio': 0.055276},
+    "neuchatel": {'max': 3, 'color': 'turquoise', 'max_ratio': 0.011858},
+    "nyon": {'max': 10, 'color': 'turquoise', 'max_ratio': 0.043478},
+    "orbe": {'max': 10, 'color': 'turquoise', 'max_ratio': 0.035587},
+    "oron": {'max': 15, 'color': 'turquoise', 'max_ratio': 0.059289},
+    "payerne": {'max': 4, 'color': 'turquoise', 'max_ratio': 0.021739},
+    "pays_d_enhaut": {'max': 11, 'color': 'turquoise', 'max_ratio': 0.038278},
+    "rolle": {'max': 8, 'color': 'turquoise', 'max_ratio': 0.020202},
+    "suisse_allemande": {'max': 36, 'color': 'turquoise', 'max_ratio': 0.100503},
+    "vaud": {'max': 6, 'color': 'turquoise', 'max_ratio': 0.085714},
+    "vevey": {'max': 15, 'color': 'turquoise', 'max_ratio': 0.045226},
+    "yverdon": {'max': 12, 'color': 'turquoise', 'max_ratio': 0.072464},
 }
 const DEFAULT_OPACITY = 0.3;
 
@@ -163,10 +163,11 @@ export class DivisionsMap {
         // Here, you can update the color scale domain based on the selected job
         // For example, if the selected job is "construction":
         const selected_domain = JOBS_SCALE_DOMAINS[selectedJob];
+
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? 1 : selected_domain.max])
+                selectedProportion ? selected_domain.max_ratio : selected_domain.max])
             .range(["#FAF4DD", selected_domain.color]);
 
         // Update the fill color of the map zones based on the selected job
@@ -197,7 +198,7 @@ export class DivisionsMap {
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? 1 : selected_domain.max])
+                selectedProportion ? selected_domain.max_ratio : selected_domain.max])
             .range(["#FAF4DD", selected_domain.color]);
 
         // Update the fill color of the map zones based on the selected job
