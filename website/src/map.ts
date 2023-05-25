@@ -21,7 +21,7 @@ const DEFAULT_COLORS = (id) => {
         'service': '#00973B',
     };
 
-    return map[id] || "#FAF4DD";
+    return map[id] || "turquoise";//"#FAF4DD";
 };
 
 const JOBS_SCALE_DOMAINS = {
@@ -36,6 +36,7 @@ const JOBS_SCALE_DOMAINS = {
 }
 
 const ORIGINS_SCALE_DOMAINS = {
+    "not_lausanne": {'max': 370, 'color': 'turquoise'},
     "aigle": {'max': 8, 'color': 'turquoise'},
     "angleterre": {'max': 14, 'color': 'turquoise'},
     "aubonne": {'max': 10, 'color': 'turquoise'},
@@ -89,6 +90,9 @@ export class DivisionsMap {
         // State variables
         this.is_zoomed = false;
         this.clicked_zone = null;
+        
+        this.selectedJobsData = null;
+        this.selectedOriginsData = null;
 
         this.initDimensions();
 
@@ -142,6 +146,14 @@ export class DivisionsMap {
                 isOriginSelected = true;
                 selectedOrigin = event.target.value;
                 this.handleSelectOrigin(event.target.value, selectedProportion);
+            }
+
+            // Update the bar plot if the data are not null
+            if (this.selectedJobsData !== null) {
+                this.mapBarPlotJobs.drawBarPlot(this.selectedJobsData, event.target.value);
+            }
+            if (this.selectedOriginsData !== null) {
+                this.mapBarPlotOrigins.drawBarPlot(this.selectedOriginsData, event.target.value);
             }
         });
 
@@ -476,6 +488,7 @@ export class DivisionsMap {
     }
 
     zoomOnZone(zone) {
+        this.selectedZone = zone;
         const result = this.getZoneCenter(zone, true, true)
         const center = result[0]
         const bottom_left = result[1][0]
@@ -500,19 +513,23 @@ export class DivisionsMap {
             .duration(750)
             .call(this.zoom.transform, transform)
 
+        // Get the element currently selected in the job_select dropdown
+        const selected = document.getElementById("selection_option")
+        const selectedOption = selected.options[selected.selectedIndex].value
+
         // zone.__data__.properties.jobs json into {id:..., value:...}
-        let data = zone.__data__.properties.jobs
-        data = Object.keys(data).map(function (key) {
-            return { id: key, value: data[key] };
+        let jobSelect = zone.__data__.properties.jobs
+        this.selectedJobsData = Object.keys(jobSelect).map(function (key) {
+            return { id: key, value: jobSelect[key] };
         });
-        this.mapBarPlotJobs.drawBarPlot(data);
+        this.mapBarPlotJobs.drawBarPlot(this.selectedJobsData, selectedOption);
 
         // zone.__data__.properties.origins json into {id:..., value:...}
-        data = zone.__data__.properties.origins
-        data = Object.keys(data).map(function (key) {
-            return { id: key, value: data[key] };
+        let originsSelect = zone.__data__.properties.origins
+        this.selectedOriginsData = Object.keys(originsSelect).map(function (key) {
+            return { id: key, value: originsSelect[key] };
         });
-        this.mapBarPlotOrigins.drawBarPlot(data);
+        this.mapBarPlotOrigins.drawBarPlot(this.selectedOriginsData, selectedOption);
     }
 
     zoomOut() {
@@ -571,7 +588,7 @@ export class MapBarPlot {
      * @param data The data to draw the bar plot with.
      * @returns {void}
      */
-    public drawBarPlot(data: any[]): void {
+    public drawBarPlot(data: any[], selectedOption: string): void {
         console.log(data);
         // Define margins
         const margin = {top: 10, right: 30, bottom: 100, left: 50},
@@ -610,6 +627,8 @@ export class MapBarPlot {
 
         // Sort data by value
         data.sort((a, b) => d3.descending(a.value, b.value));
+        // Remove the "not_lausanne" from the data
+        data = data.filter(d => d.id !== "not_lausanne");
 
         // X axis
         const x = d3
@@ -638,7 +657,14 @@ export class MapBarPlot {
                 .style("text-anchor", "end")
                 .attr("dx", "-.8em")
                 .attr("dy", ".15em")
-                .attr("transform", "rotate(-45)");
+                .attr("transform", "rotate(-45)")
+                // for the selected option, we want to highlight the text by making it bold and underlined
+                // Reset all text to normal
+                .style("font-weight", "normal")
+                .style("text-decoration", "none")
+                .filter(d => d === selectedOption)
+                .style("font-weight", "bold")
+                .style("text-decoration", "underline");
         } else {
             xAxis
                 .transition()
@@ -650,7 +676,12 @@ export class MapBarPlot {
                 .style("text-anchor", "end")
                 .attr("dx", "-.8em")
                 .attr("dy", ".15em")
-                .attr("transform", "rotate(-45)");
+                .attr("transform", "rotate(-45)")
+                .style("font-weight", "normal")
+                .style("text-decoration", "none")
+                .filter(d => d === selectedOption)
+                .style("font-weight", "bold")
+                .style("text-decoration", "underline");
         }
 
         // Handle y-axis: create if it doesn't exist, update otherwise
@@ -692,7 +723,15 @@ export class MapBarPlot {
             .attr("x", (d: any) => x(d.id))
             .attr("width", x.bandwidth())
             .attr("y", (d: any) => y(d.value))
-            .attr("height", (d: any) => height - y(d.value));
+            .attr("height", (d: any) => height - y(d.value))
+            // If the selected option is the current one, we want to highlight the bar by putting a border around it
+            .attr("stroke", (d: any) => d.id === selectedOption ? "white" : "none")
+            .attr("stroke-width", (d: any) => d.id === selectedOption ? "2px" : "0px")
+            // We also chagne the opacity of the other bars
+            .attr("opacity", (d: any) => {
+                if (selectedOption === "no_selection" || selectedOption === "not_lausanne") return 1;
+                return d.id === selectedOption ? 1 : 0.6
+            });
 
         // Enter selection
         const barsEnter = bars
@@ -709,6 +748,15 @@ export class MapBarPlot {
             .transition()
             .duration(BAR_PLOT_TRANSITION_DURATION)
             .attr("height", (d: any) => height - y(d.value))
-            .attr("y", (d: any) => y(d.value));
+            .attr("y", (d: any) => y(d.value))
+            // If the selected option is the current one, we want to highlight the bar by putting a border around it
+            .attr("stroke", (d: any) => d.id === selectedOption ? "white" : "none")
+            .attr("stroke-width", (d: any) => d.id === selectedOption ? "2px" : "0px")
+            // We also chagne the opacity of the other bars
+            .attr("opacity", (d: any) => {
+                if (selectedOption === "no_selection" || selectedOption === "not_lausanne") return 1;
+                return d.id === selectedOption ? 1 : 0.6
+            });
+            
     }
 }
