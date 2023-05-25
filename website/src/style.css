@@ -616,3 +616,7 @@ p {
   visibility: hidden;
   padding: 3px;
 }
+
+.sankey-rect {
+  cursor: pointer;
+}

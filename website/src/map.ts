@@ -101,6 +101,7 @@ export class DivisionsMap {
         this.layer_1 = this.init_g();
         this.layer_3 = this.init_g();
         this.layer_2 = this.init_g();
+        this.legend = this.init_legend();
         this.projection = this.init_projection();
         this.zoom = this.init_zoom();
 
@@ -272,6 +273,50 @@ export class DivisionsMap {
     init_g() {
         const g = this.svg.append("g");
         return g;
+    }
+
+    init_legend() {
+        const legend = this.svg.append("g")
+            .attr("transform", "translate(20, " + (this.height - 70) + ")");
+
+        // Define color scale: TODO: take from data
+        const colorScale = d3.scaleSequential(d3.interpolateBlues)
+            .domain([0, 100]);
+
+        // Create gradient
+        const defs = this.svg.append("defs");
+
+        const linearGradient = defs.append("linearGradient")
+            .attr("id", "linear-gradient");
+        
+        linearGradient.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", colorScale.range()[0]);
+        
+        linearGradient.append("stop")
+            .attr("offset", "100%")
+            .attr("stop-color", colorScale.range()[1]);
+
+        // Draw legend rectangle
+        legend.append("rect")
+            .attr("width", 200)
+            .attr("height", 20)
+            .style("fill", "url(#linear-gradient)");
+
+        // Draw legend axis
+        const legendScale = d3.scaleLinear()
+            .domain(colorScale.domain())
+            .range([0, 200]);
+          
+          const legendAxis = d3.axisBottom(legendScale)
+            .ticks(5);
+          
+            legend.append("g")
+            .attr("transform", "translate(0, 20)")
+            .style("color", "#fff")
+            .call(legendAxis);
+
+        return legend;
     }
 
     init_zoom() {
@@ -757,6 +802,5 @@ export class MapBarPlot {
                 if (selectedOption === "no_selection" || selectedOption === "not_lausanne") return 1;
                 return d.id === selectedOption ? 1 : 0.6
             });
-            
     }
 }
