@@ -603,7 +603,7 @@ p {
 
 /* Make the mouse curser a pointer when hovering over zone */
 .zone {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 #sankey-tooltip {
