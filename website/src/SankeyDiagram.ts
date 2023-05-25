@@ -433,9 +433,11 @@ export class SankeyBarPlot {
                 .append("g")
                 .attr("transform", `translate(${margin.left},${margin.top})`);
             
-            group = svg.append("g");
+            group = svg
+                .append("g")
+                .attr("class", "bars");
         } else {
-            group = svg.select("g");
+            group = svg.select(".bars");
         }
 
         // Sort data by value

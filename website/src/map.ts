@@ -544,6 +544,7 @@ export class MapBarPlot {
      * @returns {void}
      */
     public drawBarPlot(data: any[]): void {
+        console.log(data);
         // Define margins
         const margin = {top: 10, right: 30, bottom: 100, left: 50},
             width = this.width - margin.left - margin.right,
@@ -562,9 +563,11 @@ export class MapBarPlot {
                 .append("g")
                 .attr("transform", `translate(${margin.left},${margin.top})`);
             
-            group = svg.append("g");
+            group = svg
+                .append("g")
+                .attr("class", "bars");
         } else {
-            group = svg.select("g");
+            group = svg.select(".bars");
         }
 
         // Sort data by value
