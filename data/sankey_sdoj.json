@@ -1,0 +1,222 @@
+[
+    {
+        "source": "bourg",
+        "target": "affaires_division",
+        "value": 200
+    },
+    {
+        "source": "place_st_francois",
+        "target": "affaires_division",
+        "value": 193
+    },
+    {
+        "source": "chailly",
+        "target": "campagne_division",
+        "value": 69
+    },
+    {
+        "source": "grange_neuve",
+        "target": "campagne_division",
+        "value": 35
+    },
+    {
+        "source": "la_sallaz",
+        "target": "campagne_division",
+        "value": 87
+    },
+    {
+        "source": "ouchy",
+        "target": "campagne_division",
+        "value": 339
+    },
+    {
+        "source": "barre",
+        "target": "cathedrale_division",
+        "value": 199
+    },
+    {
+        "source": "cite_derriere",
+        "target": "cathedrale_division",
+        "value": 209
+    },
+    {
+        "source": "cite_dessous",
+        "target": "cathedrale_division",
+        "value": 184
+    },
+    {
+        "source": "cheneau_de_bourg",
+        "target": "centre_division",
+        "value": 198
+    },
+    {
+        "source": "montee_st_francois",
+        "target": "centre_division",
+        "value": 148
+    },
+    {
+        "source": "rue_du_pont",
+        "target": "centre_division",
+        "value": 341
+    },
+    {
+        "source": "ale",
+        "target": "commerce_division",
+        "value": 251
+    },
+    {
+        "source": "grand_st_jean",
+        "target": "commerce_division",
+        "value": 281
+    },
+    {
+        "source": "montee_de_st_laurent",
+        "target": "commerce_division",
+        "value": 92
+    },
+    {
+        "source": "palud",
+        "target": "commerce_division",
+        "value": 220
+    },
+    {
+        "source": "st_laurent",
+        "target": "commerce_division",
+        "value": 253
+    },
+    {
+        "source": "marterey",
+        "target": "culture_division",
+        "value": 504
+    },
+    {
+        "source": "affaires_division",
+        "target": "hors_lausanne",
+        "value": 192
+    },
+    {
+        "source": "affaires_division",
+        "target": "lausanne",
+        "value": 99
+    },
+    {
+        "source": "campagne_division",
+        "target": "hors_lausanne",
+        "value": 242
+    },
+    {
+        "source": "campagne_division",
+        "target": "lausanne",
+        "value": 230
+    },
+    {
+        "source": "cathedrale_division",
+        "target": "hors_lausanne",
+        "value": 325
+    },
+    {
+        "source": "cathedrale_division",
+        "target": "lausanne",
+        "value": 173
+    },
+    {
+        "source": "centre_division",
+        "target": "hors_lausanne",
+        "value": 336
+    },
+    {
+        "source": "centre_division",
+        "target": "lausanne",
+        "value": 166
+    },
+    {
+        "source": "commerce_division",
+        "target": "hors_lausanne",
+        "value": 570
+    },
+    {
+        "source": "commerce_division",
+        "target": "lausanne",
+        "value": 304
+    },
+    {
+        "source": "culture_division",
+        "target": "hors_lausanne",
+        "value": 288
+    },
+    {
+        "source": "culture_division",
+        "target": "lausanne",
+        "value": 134
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "administration",
+        "value": 49
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "agricole",
+        "value": 389
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "artisanat",
+        "value": 536
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "commerce",
+        "value": 174
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "construction",
+        "value": 199
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "rente",
+        "value": 380
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "service",
+        "value": 333
+    },
+    {
+        "source": "lausanne",
+        "target": "administration",
+        "value": 14
+    },
+    {
+        "source": "lausanne",
+        "target": "agricole",
+        "value": 232
+    },
+    {
+        "source": "lausanne",
+        "target": "artisanat",
+        "value": 142
+    },
+    {
+        "source": "lausanne",
+        "target": "commerce",
+        "value": 55
+    },
+    {
+        "source": "lausanne",
+        "target": "construction",
+        "value": 73
+    },
+    {
+        "source": "lausanne",
+        "target": "rente",
+        "value": 254
+    },
+    {
+        "source": "lausanne",
+        "target": "service",
+        "value": 132
+    }
+]
