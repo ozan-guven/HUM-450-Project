@@ -35,7 +35,7 @@ const ID_TO_TITLE: { [key: string]: string } = {
     'centre': 'Centre',
     'rue_du_pont': 'Rue du Pont',
     'cheneau_de_bourg': 'Cheneau de Bourg',
-    'rue_du_pre': 'Rue du Pré',
+    'montee_st_francois': 'Montée St-François',
 
     'affaires': 'Affaires',
     'bourg': 'Bourg',
@@ -68,7 +68,7 @@ const PACKING_TITLE = {
     'centre': "Section Centre",
     'rue_du_pont': 'Division Rue du Pont',
     'cheneau_de_bourg': "Division Cheneau de Bourg",
-    'rue_du_pre': "Division Rue du Pré",
+    'montee_st_francois': "Division Montée St-François",
 
     'affaires': "Section Affaires",
     'bourg': "Division Bourg",
@@ -81,21 +81,21 @@ const PACKING_TITLE = {
 }
 const DEFAULT_PACKING_TEXT = "Pour vivre une expérience d'exploration historique immersive, nous vous invitons à découvrir les divisions et quartiers qui constituaient la ville. Pour ce faire, il suffit de cliquer sur les cercles correspondant à chaque quartier ou division.";
 const PACKING_TEXT = {
-    'culture': "Dans le domaine culturel, la rue Marterey de Lausanne se distingue. En 1803, un théâtre est initié sur le côté occidental de cette rue, et sa construction s'achève en 1805, renforçant l'identité culturelle de ce secteur de la ville.",
-    'marterey': "La rue Marterey était un véritable bastion culturel, se distinguant par son grand théâtre, construit entre 1803 et 1805, et de nombreux autres établissements culturels tels que des salons et des casinos. Ces lieux de divertissement étaient particulièrement attrayants pour les rentiers, faisant de Marterey leur deuxième choix de résidence après Ouchy. De plus, la profusion de ces établissements culturels offrait de nombreuses opportunités d'emploi, attirant ainsi une population travaillant principalement dans les services. L'effervescence culturelle de Marterey contribuait à façonner son identité unique au sein de la ville de Lausanne.",
+    'culture': "La Rue Marterey était un véritable bastion culturel, se distinguant par son grand théâtre, construit entre 1803 et 1805, et de nombreux autres établissements culturels tels que des salons et des casinos. Ces lieux de divertissement étaient particulièrement attrayants pour les rentiers, faisant de Marterey leur deuxième choix de résidence après Ouchy. De plus, la profusion de ces établissements culturels offrait de nombreuses opportunités d'emploi, attirant ainsi une population travaillant principalement dans les services. L'effervescence culturelle de Marterey contribuait à façonner son identité unique au sein de la ville de Lausanne.",
+    'marterey': "La Rue Marterey était un véritable bastion culturel, se distinguant par son grand théâtre, construit entre 1803 et 1805, et de nombreux autres établissements culturels tels que des salons et des casinos. Ces lieux de divertissement étaient particulièrement attrayants pour les rentiers, faisant de Marterey leur deuxième choix de résidence après Ouchy. De plus, la profusion de ces établissements culturels offrait de nombreuses opportunités d'emploi, attirant ainsi une population travaillant principalement dans les services. L'effervescence culturelle de Marterey contribuait à façonner son identité unique au sein de la ville de Lausanne.",
     
-    'campagne': "La campagne lausannoise, parsemée de hameaux charmants, offrait un cadre idyllique pour ceux cherchant à échapper à l'agitation urbaine. Cette zone était notamment prisée par les rentiers pour sa tranquillité et se situait également sur des axes stratégiques. Ce contexte attirait les familles aristocratiques qui y établissaient leurs villas suburbaines, symbolisant à la fois un lien étroit avec la nature et un certain statut social. D'autre part, les agriculteurs et vignerons, en tant que paysans, se consacraient à leurs activités agricoles et viticoles dans cette campagne luxuriante.",
-    'ouchy': "",
-    'la sallaz': "",
-    'chailly': "",
-    'grange-neuve': "",
+    'campagne': "La section Campagne de Lausanne au début du XIX<sup>ème</sup> était caractérisée par une prédominance de l'agriculture, avec toutefois une variété de nuances en fonction des divisions. Ouchy, par exemple, se distinguait comme le havre des rentiers, offrant un refuge pittoresque et serein loin du tumulte urbain, tout en attirant aussi une part de la population impliquée dans l'agriculture grâce à ses champs et vignes. À l'inverse, les divisions dans les hauts de la ville étaient profondément marquées par l'agriculture, avec une économie locale fortement tributaire de cette activité. Toutefois, malgré la présence de structures importantes comme la ferme Rovéréaz à La Sallaz, les conditions de vie dans ces divisions semblaient modestes, voire précaires, illustrant la potentielle fragilité de la condition agricole à cette époque.",
+    'ouchy': "Ouchy émergeait comme le quartier de prédilection des rentiers, offrant une escapade loin de l'effervescence du centre urbain, tout en proposant des panoramas pittoresques du lac. Sa distance par rapport au centre-ville suggère qu'Ouchy aurait été parsemé de champs et de vignes, à l'image du Lavaux contemporain, attirant une population significative liée à l'agriculture. Il est envisageable que certains rentiers aient également été propriétaires de ces terres agricoles environnantes, unissant ainsi ces deux populations apparemment opposées. Cette cohabitation unique aurait pu contribuer à l'épanouissement de ces deux types de population dans cette division.",
+    'la_sallaz': "La division de La Sallaz, en 1832, se caractérisait par une dominante agricole. Il est fort probable que l'économie locale était largement tributaire de la ferme Rovéréaz, qui devait offrir des sources de revenus à une part importante de la population locale. Malgré cela, la population de La Sallaz vivait probablement dans des conditions modestes, voire précaires, ce qui est corroboré par l'établissement ultérieur en 1887 de l'asile pour \"les vieillards pauvres et malheureux de Lausanne\". Par conséquent, cette division pourrait illustrer la précarité de la condition agricole malgré une économie locale visiblement tournée vers cette activité.",
+    'chailly': "Comme les divisions La Sallaz et Grange-Neuve, la division de Chailly se distinguait par une présence agricole très marquée. Cet aspect met en évidence l'importance et la prédominance de l'agriculture dans cette partie de Lausanne à cette époque.",
+    'grange-neuve': "À l'instar des divisions La Sallaz et Chailly, la division de Grange-Neuve était fortement marquée par l'agriculture, encore plus que dans les autres divisions. Cependant, l'absence totale de rentiers suggère que cette division pourrait avoir été moins aisée que ses homologues. Les raisons pourraient être diverses : la grande distance la séparant du centre urbain ou la nature même des cultures, moins prestigieuses peut-être, comme les pommes de terre par opposition au vin. Cette distinction souligne l'hétérogénéité possible des conditions de vie au sein des divisions agricoles de Lausanne à cette époque.",
 
     'commerce': "Le dynamisme commercial de Lausanne était palpable dans plusieurs quartiers vibrants de la ville avec des centres actifs comme la place de la Palud. La place Chauderon, inaugurée en 1830, servait de point de transfert pour les marchandises, tandis que la place de la Palud, avec l'Hôtel de Ville et son marché de fromages, constituait un autre pôle d'activité.",
     'st laurent': "",
     'palud': "",
-    'grand st jean': "",
+    'grand_st_jean': "",
     'ale': "",
-    'montee de st laurent': "",
+    'montee_de_st_laurent': "",
 
     'centre': "Le centre de Lausanne était marqué par des rues pittoresques et animées, comme la Montée St-François, le Cheneau de Bourg et la Rue du Pré. Toutefois, le paysage social était significativement influencé par la présence de la tannerie Mercier dans le quartier du Rôtillon. Malgré son importance économique, la tannerie était associée à des conditions sanitaires défavorables et des odeurs désagréables, ce qui a limité la présence de la bourgeoisie dans ce secteur.",
     'cheneau de bourg': "La division Cheneau de Bourg de Lausanne était principalement peuplée par une population artisanale, tandis que le nombre de personnes aisées, comme les rentiers et le personnel d'administration, était relativement restreint. Cette répartition démographique pourrait être attribuée à la présence passée de la Louve et de la Venoge. Ces deux rivières, propices à de nombreux métiers manuels, avaient probablement aussi contribué à créer une ambiance moins attrayante pour ceux qui ne travaillaient pas dans ces métiers. Les odeurs et la mauvaise réputation associées à ces zones industrielles auraient dissuadé les personnes plus aisées de s'y installer, renforçant ainsi la caractéristique artisanale de cette division.",
