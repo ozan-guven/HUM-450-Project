@@ -6,6 +6,10 @@ const CHECK_PROPORTION = "check_proportion";
 const MAP_BARPLOT_JOBS_ELEMENT_ID = 'bar-jobs';
 const MAP_BARPLOT_ORIGINS_ELEMENT_ID = 'bar-origins';
 const BAR_PLOT_TRANSITION_DURATION = 500;
+
+const TITL_JOBS_GRAPH = "Distribution des catégories de métiers";
+const TITLE_ORIGINS_GRAPH = "Distribution des origines des habitants";
+
 const DEFAULT_COLORS = (id) => {
     const map = {
         'administration': 'blue',
@@ -17,11 +21,11 @@ const DEFAULT_COLORS = (id) => {
         'service': '#00973B',
     };
 
-    return map[id] || '#ffffff';
+    return map[id] || "#FAF4DD";
 };
 
 const JOBS_SCALE_DOMAINS = {
-    'no_job': { 'min': 0, 'max': 1 },
+    'no_selection': { 'min': 0, 'max': 1 },
     'administration': { 'min': 1, 'max': 17, 'color': "blue" },
     'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B" },
     'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282" },
@@ -73,8 +77,8 @@ export class DivisionsMap {
     ) {
         this.map_file = map_file;
         this.locations_file = locations_file;
-        this.mapBarPlotJobs = new MapBarPlot(MAP_BARPLOT_JOBS_ELEMENT_ID);
-        this.mapBarPlotOrigins = new MapBarPlot(MAP_BARPLOT_ORIGINS_ELEMENT_ID);
+        this.mapBarPlotJobs = new MapBarPlot(MAP_BARPLOT_JOBS_ELEMENT_ID, TITL_JOBS_GRAPH);
+        this.mapBarPlotOrigins = new MapBarPlot(MAP_BARPLOT_ORIGINS_ELEMENT_ID, TITLE_ORIGINS_GRAPH);
 
         // Basic render settings
         this.scale = scale;
@@ -96,19 +100,23 @@ export class DivisionsMap {
         this.projection = this.init_projection();
         this.zoom = this.init_zoom();
 
-        let selectedJob = 'no_job';
+        let selectedJob = 'no_selection';
         let selectedOrigin = 'no_origin';
         let selectedProportion = false;
         let isJobSelected = false;
+        let isOriginSelected = false;
 
         const edgesOpacityCheckbox = document.getElementById(CHECK_PROPORTION);
         edgesOpacityCheckbox.addEventListener('change', (event) => {
+            console.log(isJobSelected, isOriginSelected, selectedJob, selectedOrigin, selectedProportion)
             selectedProportion = event.target.checked;
             if (isJobSelected) {
                 // Get the currently selected job option
                 this.handleSelectJob(selectedJob, selectedProportion);
-            } else {
+            } else if (isOriginSelected) {
                 this.handleSelectOrigin(selectedOrigin, selectedProportion);
+            } else {
+                this.hadleNoSelection();
             }
         });
 
@@ -117,6 +125,8 @@ export class DivisionsMap {
         selectLayoutElement.addEventListener('change', (event) => {
             // Check if no_selection
             if (event.target.value === 'no_selection') {
+                isJobSelected = false;
+                isOriginSelected = false;
                 this.hadleNoSelection()
             }
 
@@ -124,10 +134,12 @@ export class DivisionsMap {
             const optgroup = event.target.selectedOptions[0].parentNode.id;
             if (optgroup === 'job_category_optgroup') {
                 isJobSelected = true;
+                isOriginSelected = false;
                 selectedJob = event.target.value;
                 this.handleSelectJob(event.target.value, selectedProportion);
             } else if (optgroup === 'origin_category_optgroup') {
                 isJobSelected = false;
+                isOriginSelected = true;
                 selectedOrigin = event.target.value;
                 this.handleSelectOrigin(event.target.value, selectedProportion);
             }
@@ -152,7 +164,14 @@ export class DivisionsMap {
             .transition()
             .duration(500)
             .attr("fill", d => {
-                if (!(selectedJob in d.properties.jobs) || selectedJob === "no_job") {
+                if (!(selectedJob in d.properties.jobs) || selectedJob === "no_selection") {
+                    return colorScale(0);
+                }
+                return colorScale(d.properties.jobs[selectedJob] / (selectedProportion ? d.properties.population : 1))
+            })
+            // Set data-old-color attribute to the new color
+            .attr("data-old-color", d => {
+                if (!(selectedJob in d.properties.jobs) || selectedJob === "no_selection") {
                     return colorScale(0);
                 }
                 return colorScale(d.properties.jobs[selectedJob] / (selectedProportion ? d.properties.population : 1))
@@ -176,7 +195,13 @@ export class DivisionsMap {
             .transition()
             .duration(500)
             .attr("fill", d => {
-                if (!(selectedOrigin in d.properties.origins) || selectedOrigin === "no_job") {
+                if (!(selectedOrigin in d.properties.origins) || selectedOrigin === "no_selection") {
+                    return colorScale(0);
+                }
+                return colorScale(d.properties.origins[selectedOrigin] / (selectedProportion ? d.properties.population : 1))
+            })
+            .attr("data-old-color", d => {
+                if (!(selectedOrigin in d.properties.origins) || selectedOrigin === "no_selection") {
                     return colorScale(0);
                 }
                 return colorScale(d.properties.origins[selectedOrigin] / (selectedProportion ? d.properties.population : 1))
@@ -189,7 +214,8 @@ export class DivisionsMap {
             // Add a linear transition to the fill color
             .transition()
             .duration(500)
-            .attr("fill", d => this.default_zone_color);
+            .attr("fill", d => this.default_zone_color)
+            .attr("data-old-color", d => this.default_zone_color);
     }
 
 
@@ -508,11 +534,13 @@ export class MapBarPlot {
     private width: number;
     private height: number;
     private barPlotElementId: string = MAP_BARPLOT_JOBS_ELEMENT_ID;
+    private title: string = "Jobs";
 
     private svg: any;
 
-    constructor(barPlotElementId: string) {
+    constructor(barPlotElementId: string, title: string) {
         this.barPlotElementId = barPlotElementId;
+        this.title = title;
         this.initDimensions();
         this.initColor();
     }
@@ -566,6 +594,16 @@ export class MapBarPlot {
             group = svg
                 .append("g")
                 .attr("class", "bars");
+            
+            // Add title to the plot
+            svg
+                .append("text")
+                .attr("x", (width / 2))
+                .attr("y", 20)
+                .attr("text-anchor", "middle")
+                .style("font-size", "1em")
+                .attr("fill", "#FAF4DD")
+                .text(this.title);
         } else {
             group = svg.select(".bars");
         }
@@ -594,9 +632,9 @@ export class MapBarPlot {
                 .attr("class", "x-axis")
                 .attr("transform", `translate(0,${height})`)
                 .call(d3.axisBottom(x).tickFormat(d => d))
-                .attr("color", "white")
+                .attr("color", "#FAF4DD")
                 .selectAll("text")
-                .style("fill", "white")
+                .style("fill", "#FAF4DD")
                 .style("text-anchor", "end")
                 .attr("dx", "-.8em")
                 .attr("dy", ".15em")
@@ -606,9 +644,9 @@ export class MapBarPlot {
                 .transition()
                 .duration(BAR_PLOT_TRANSITION_DURATION)
                 .call(d3.axisBottom(x).tickFormat(d => d))
-                .attr("color", "white")
+                .attr("color", "#FAF4DD")
                 .selectAll("text")
-                .style("fill", "white")
+                .style("fill", "#FAF4DD")
                 .style("text-anchor", "end")
                 .attr("dx", "-.8em")
                 .attr("dy", ".15em")
@@ -622,16 +660,16 @@ export class MapBarPlot {
                 .append("g")
                 .attr("class", "y-axis")
                 .call(d3.axisLeft(y))
-                .attr("color", "white")
+                .attr("color", "#FAF4DD")
                 .selectAll("text")
-                .style("fill", "white");
+                .style("fill", "#FAF4DD");
         } else {
             yAxis.transition()
                 .duration(BAR_PLOT_TRANSITION_DURATION)
                 .call(d3.axisLeft(y))
-                .attr("color", "white")
+                .attr("color", "#FAF4DD")
                 .selectAll("text")
-                .style("fill", "white");
+                .style("fill", "#FAF4DD");
         }
 
         // Bars
