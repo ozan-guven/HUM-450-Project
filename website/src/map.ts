@@ -31,6 +31,36 @@ const JOBS_SCALE_DOMAINS = {
     'service': { 'min': 1, 'max': 77, 'color': "#00973B" }
 }
 
+const ORIGINS_SCALE_DOMAINS = {
+    "aigle": {'max': 8, 'color': 'turquoise'},
+    "angleterre": {'max': 14, 'color': 'turquoise'},
+    "aubonne": {'max': 10, 'color': 'turquoise'},
+    "avenches": {'max': 3, 'color': 'turquoise'},
+    "cossonay": {'max': 17, 'color': 'turquoise'},
+    "echallens": {'max': 12, 'color': 'turquoise'},
+    "france": {'max': 21, 'color': 'turquoise'},
+    "fribourg": {'max': 6, 'color': 'turquoise'},
+    "geneve": {'max': 6, 'color': 'turquoise'},
+    "grandson": {'max': 2, 'color': 'turquoise'},
+    "italie": {'max': 3, 'color': 'turquoise'},
+    "la_vallee": {'max': 14, 'color': 'turquoise'},
+    "lausanne": {'max': 149, 'color': 'turquoise'},
+    "lavaux": {'max': 53, 'color': 'turquoise'},
+    "morges": {'max': 26, 'color': 'turquoise'},
+    "moudon": {'max': 13, 'color': 'turquoise'},
+    "neuchatel": {'max': 3, 'color': 'turquoise'},
+    "nyon": {'max': 10, 'color': 'turquoise'},
+    "orbe": {'max': 10, 'color': 'turquoise'},
+    "oron": {'max': 15, 'color': 'turquoise'},
+    "payerne": {'max': 4, 'color': 'turquoise'},
+    "pays_d_enhaut": {'max': 11, 'color': 'turquoise'},
+    "rolle": {'max': 8, 'color': 'turquoise'},
+    "suisse_allemande": {'max': 36, 'color': 'turquoise'},
+    "vaud": {'max': 6, 'color': 'turquoise'},
+    "vevey": {'max': 15, 'color': 'turquoise'},
+    "yverdon": {'max': 12, 'color': 'turquoise'}
+}
+
 export class DivisionsMap {
     constructor(
         map_file,
@@ -65,20 +95,41 @@ export class DivisionsMap {
         this.zoom = this.init_zoom();
 
         let selectedJob = 'no_job';
+        let selectedOrigin = 'no_origin';
         let selectedProportion = false;
+        let isJobSelected = false;
 
         const edgesOpacityCheckbox = document.getElementById(CHECK_PROPORTION);
         edgesOpacityCheckbox.addEventListener('change', (event) => {
             selectedProportion = event.target.checked;
-            // Get the currently selected job option
-            this.handleSelectJob(selectedJob, selectedProportion);
+            if (isJobSelected) {
+                // Get the currently selected job option
+                this.handleSelectJob(selectedJob, selectedProportion);
+            } else {
+                this.handleSelectOrigin(selectedOrigin, selectedProportion);
+            }
         });
 
         // Add event listeners
         const selectLayoutElement = document.getElementById(SELECT_JOB);
         selectLayoutElement.addEventListener('change', (event) => {
-            selectedJob = event.target.value;
-            this.handleSelectJob(event.target.value, selectedProportion);
+            // Check if no_selection
+            if (event.target.value === 'no_selection') {
+                this.hadleNoSelection()
+            }
+
+            // Get the label of the optgroup that contains the selected option
+            const optgroup = event.target.selectedOptions[0].parentNode.id;
+            console.log(optgroup);
+            if (optgroup === 'job_category_optgroup') {
+                isJobSelected = true;
+                selectedJob = event.target.value;
+                this.handleSelectJob(event.target.value, selectedProportion);
+            } else if (optgroup === 'origin_category_optgroup') {
+                isJobSelected = false;
+                selectedOrigin = event.target.value;
+                this.handleSelectOrigin(event.target.value, selectedProportion);
+            }
         });
 
     }
@@ -90,7 +141,7 @@ export class DivisionsMap {
         const selected_domain = JOBS_SCALE_DOMAINS[selectedJob];
         const colorScale = d3.scaleLinear()
             .domain([
-                selectedProportion ? 0 : selected_domain.min,
+                0,
                 selectedProportion ? 1 : selected_domain.max])
             .range(["white", selected_domain.color]);
 
@@ -102,10 +153,45 @@ export class DivisionsMap {
             .duration(500)
             .attr("fill", d => {
                 if (!(selectedJob in d.properties.jobs) || selectedJob === "no_job") {
-                    return this.default_zone_color;
+                    return colorScale(0);
                 }
                 return colorScale(d.properties.jobs[selectedJob] / (selectedProportion ? d.properties.population : 1))
             });
+    }
+
+    handleSelectOrigin(selectedOrigin, selectedProportion) {
+        console.log(selectedOrigin);
+        console.log(selectedOrigin, selectedProportion);
+        // Here, you can update the color scale domain based on the selected job
+        // For example, if the selected job is "construction":
+        const selected_domain = ORIGINS_SCALE_DOMAINS[selectedOrigin];
+        const colorScale = d3.scaleLinear()
+            .domain([
+                0,
+                selectedProportion ? 1 : selected_domain.max])
+            .range(["white", selected_domain.color]);
+
+        // Update the fill color of the map zones based on the selected job
+        this.layer_1
+            .selectAll(".zone")
+            // Add a linear transition to the fill color
+            .transition()
+            .duration(500)
+            .attr("fill", d => {
+                if (!(selectedOrigin in d.properties.origins) || selectedOrigin === "no_job") {
+                    return colorScale(0);
+                }
+                return colorScale(d.properties.origins[selectedOrigin] / (selectedProportion ? d.properties.population : 1))
+            });
+    }
+
+    hadleNoSelection() {
+        this.layer_1
+            .selectAll(".zone")
+            // Add a linear transition to the fill color
+            .transition()
+            .duration(500)
+            .attr("fill", d => this.default_zone_color);
     }
 
 
@@ -237,18 +323,6 @@ export class DivisionsMap {
                 .style("pointer-events", "none")
                 .style("font-family", "sans-serif");
         });
-    }
-
-    unload_data() {
-        this.layer_1.selectAll("*").remove();
-        this.layer_2.selectAll("*").remove();
-    }
-
-    update_data(new_map_file) {
-        this.map_file = new_map_file;
-        this.layer_1.selectAll("*").remove();
-        this.layer_2.selectAll("*").remove();
-        this.load_data();
     }
 
     onMouseOverZone(zone) {
