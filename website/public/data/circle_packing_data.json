@@ -18,7 +18,7 @@
                     ]
                 },
                 {
-                    "name": "place st francois",
+                    "name": "place_st_francois",
                     "children": [
                         {
                             "name": "croix rouge",
@@ -117,7 +117,7 @@
                     ]
                 },
                 {
-                    "name": "grange-neuve",
+                    "name": "grange_neuve",
                     "children": [
                         {
                             "name": "chalet a marin",
@@ -150,7 +150,7 @@
                     ]
                 },
                 {
-                    "name": "la sallaz",
+                    "name": "la_sallaz",
                     "children": [
                         {
                             "name": "calvaire",
@@ -474,7 +474,7 @@
                     ]
                 },
                 {
-                    "name": "cite derriere",
+                    "name": "cite_derriere",
                     "children": [
                         {
                             "name": "cite derriere",
@@ -487,7 +487,7 @@
                     ]
                 },
                 {
-                    "name": "cite dessous",
+                    "name": "cite_dessous",
                     "children": [
                         {
                             "name": "cite dessous",
@@ -517,7 +517,7 @@
             "name": "centre",
             "children": [
                 {
-                    "name": "cheneau de bourg",
+                    "name": "cheneau_de_bourg",
                     "children": [
                         {
                             "name": "cheneau de bourg",
@@ -534,7 +534,7 @@
                     ]
                 },
                 {
-                    "name": "montee st francois",
+                    "name": "rue_du_pont",
                     "children": [
                         {
                             "name": "moulin de pepinet",
@@ -563,7 +563,7 @@
                     ]
                 },
                 {
-                    "name": "rue du pre",
+                    "name": "rue_du_pre",
                     "children": [
                         {
                             "name": "montee st francois",
@@ -610,7 +610,7 @@
                     ]
                 },
                 {
-                    "name": "grand st jean",
+                    "name": "grand_st_jean",
                     "children": [
                         {
                             "name": "derriere les terreaux ferme de m. roguin",
@@ -631,7 +631,7 @@
                     ]
                 },
                 {
-                    "name": "montee de st laurent",
+                    "name": "montee_st_francois",
                     "children": [
                         {
                             "name": "montee de st laurent",
@@ -657,7 +657,7 @@
                     ]
                 },
                 {
-                    "name": "st laurent",
+                    "name": "st_laurent",
                     "children": [
                         {
                             "name": "chaucrau",

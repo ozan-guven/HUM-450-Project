@@ -21,30 +21,30 @@ const ID_TO_TITLE: { [key: string]: string } = {
 
     'campagne': 'Campagne',
     'ouchy': 'Ouchy',
-    'la sallaz': 'La Sallaz',
+    'la_sallaz': 'La Sallaz',
     'chailly': 'Chailly',
-    'grange-neuve': 'Grange-Neuve',
+    'grange_neuve': 'Grange-Neuve',
 
     'commerce': 'Commerce',
-    'st laurent': 'St-Laurent',
+    'st_laurent': 'St-Laurent',
     'palud': 'Palud',
-    'grand st jean': 'Grand St-Jean',
+    'grand_st_jean': 'Grand St-Jean',
     'ale': 'Ale',
-    'montee de st laurent': 'Montée de St-Laurent',
+    'montee_de_st_laurent': 'Montée de St-Laurent',
 
     'centre': 'Centre',
-    'montee st francois': 'Montée St-François',
-    'cheneau de bourg': 'Cheneau de Bourg',
-    'rue du pre': 'Rue du Pré',
+    'rue_du_pont': 'Rue du Pont',
+    'cheneau_de_bourg': 'Cheneau de Bourg',
+    'rue_du_pre': 'Rue du Pré',
 
     'affaires': 'Affaires',
     'bourg': 'Bourg',
-    'place st francois': 'Place St-François',
+    'place_st_francois': 'Place St-François',
 
     'cathedrale': 'Cathédrale',
     'barre': 'Barre',
-    'cite derriere': 'Cité Derrière',
-    'cite dessous': 'Cité Dessous',
+    'cite_derriere': 'Cité Derrière',
+    'cite_dessous': 'Cité Dessous',
 }
 
 const DEFAULT_PACKING_TITLE = '';
@@ -99,8 +99,8 @@ const PACKING_TEXT = {
 
     'centre': "Le centre de Lausanne était marqué par des rues pittoresques et animées, comme la Montée St-François, le Cheneau de Bourg et la Rue du Pré. Toutefois, le paysage social était significativement influencé par la présence de la tannerie Mercier dans le quartier du Rôtillon. Malgré son importance économique, la tannerie était associée à des conditions sanitaires défavorables et des odeurs désagréables, ce qui a limité la présence de la bourgeoisie dans ce secteur.",
     'cheneau de bourg': "La division Cheneau de Bourg de Lausanne était principalement peuplée par une population artisanale, tandis que le nombre de personnes aisées, comme les rentiers et le personnel d'administration, était relativement restreint. Cette répartition démographique pourrait être attribuée à la présence passée de la Louve et de la Venoge. Ces deux rivières, propices à de nombreux métiers manuels, avaient probablement aussi contribué à créer une ambiance moins attrayante pour ceux qui ne travaillaient pas dans ces métiers. Les odeurs et la mauvaise réputation associées à ces zones industrielles auraient dissuadé les personnes plus aisées de s'y installer, renforçant ainsi la caractéristique artisanale de cette division.",
-    'montee st francois': "",
-    'rue du pre': "",
+    'montee st francois': "La montée St-François se démarquait en tant que quartier de prédilection des commerçants et, conjointement avec la division Marteray, des artisans. Il est indéniable que cette division tenait une place dominante dans le paysage commercial de Lausanne, à l'image de la division Rue du Pré. Ce quartier dynamique était sans aucun doute un moteur économique essentiel de la ville à cette époque.",
+    'rue du pre': "Située en plein cœur de l'activité commerciale et artisanale, la Rue du Pré semble avoir été un lieu clé pour le commerce local et les exportations. Cependant, à l'image de la Place St-François, la Rue du Pré se caractérisait par une faible présence de rentiers, indiquant probablement des conditions de vie et de bien-être moins favorables, malgré un intérêt économique évident. L'absence de personnel administratif dans cette division suggère également qu'elle ne faisait pas partie des priorités principales de la commune à cette époque, renforçant l'idée d'une division plus orientée vers le commerce et l'artisanat que vers le bien-être de ses habitants.",
 
     'affaires': "Le cœur économique de Lausanne se trouvait dans le quartier du Bourg. Ce dernier, vibrant d'activité, abritait l'Hôtel des postes, créé entre 1806 et 1808 suite à la transformation d'une partie de l'ancien manège. C'était ici que le courrier était centralisé et expédié. De plus, ce quartier jouait un rôle crucial dans le transport. En effet, la place Saint-François était le terminus des diligences en provenance ou à destination de Berne, Genève ou Paris. Le quartier du Bourg était donc un véritable pôle d'affaires, où se croisaient les flux de courriers et de voyageurs, symbolisant le dynamisme économique de Lausanne à cette époque.",
     'bourg': "La rue de Bourg et la Place St-François à proximité étaient des lieux prisés par les intellectuels dits \"libéraux\". Leur présence a contribué à l'arrivée de populations moins manuelles, diversifiant ainsi la composition démographique de la division. Par ailleurs, la présence de nombreuses familles patriciennes ajoutait une note de raffinement à cette division, qui était alors considérée comme l'une des plus chics et raffinées de la ville. Malgré la présence notable d'artisans et de travailleurs manuels, le Bourg se distinguait aussi par son attrait pour les intellectuels et son ambiance aristocratique.",
