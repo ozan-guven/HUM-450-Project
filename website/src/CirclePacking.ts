@@ -54,30 +54,30 @@ const PACKING_TITLE = {
 
     'campagne': "Section Campagne",
     'ouchy': "Division Ouchy",
-    'la sallaz': "Division La Sallaz",
+    'la_sallaz': "Division La Sallaz",
     'chailly': "Division Chailly",
-    'grange-neuve': "Division Grange-Neuve",
+    'grange_neuve': "Division Grange-Neuve",
 
     'commerce': "Section Commerce",
-    'st laurent': "Division St-Laurent",
+    'st_laurent': "Division St-Laurent",
     'palud': "Division Palud",
-    'grand st jean': "Division Grand St-Jean",
+    'grand_st_jean': "Division Grand St-Jean",
     'ale': "Division Ale",
-    'montee de st laurent': "Division Montée de St-Laurent",
+    'montee_de_st_laurent': "Division Montée de St-Laurent",
 
     'centre': "Section Centre",
-    'cheneau de bourg': 'Division Cheneau de Bourg',
-    'montee st francois': "Division Montée St-François",
-    'rue du pre': "Division Rue du Pré",
+    'rue_du_pont': 'Division Rue du Pont',
+    'cheneau_de_bourg': "Division Cheneau de Bourg",
+    'rue_du_pre': "Division Rue du Pré",
 
     'affaires': "Section Affaires",
     'bourg': "Division Bourg",
-    'place st francois': "Division Place St-François",
+    'place_st_francois': "Division Place St-François",
 
     'cathedrale': "Section Cathédrale",
     'barre': "Division Barre",
-    'cite derriere': "Division Cité Derrière",
-    'cite dessous': "Division Cité Dessous",
+    'cite_derriere': "Division Cité Derrière",
+    'cite_dessous': "Division Cité Dessous",
 }
 const DEFAULT_PACKING_TEXT = "Pour vivre une expérience d'exploration historique immersive, nous vous invitons à découvrir les divisions et quartiers qui constituaient la ville. Pour ce faire, il suffit de cliquer sur les cercles correspondant à chaque quartier ou division.";
 const PACKING_TEXT = {

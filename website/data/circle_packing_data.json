@@ -534,6 +534,19 @@
                     ]
                 },
                 {
+                    "name": "montee_st_francois",
+                    "children": [
+                        {
+                            "name": "montee st francois",
+                            "value": 30
+                        },
+                        {
+                            "name": "rue du pre",
+                            "value": 118
+                        }
+                    ]
+                },
+                {
                     "name": "rue_du_pont",
                     "children": [
                         {
@@ -559,19 +572,6 @@
                         {
                             "name": "st francois",
                             "value": 41
-                        }
-                    ]
-                },
-                {
-                    "name": "rue_du_pre",
-                    "children": [
-                        {
-                            "name": "montee st francois",
-                            "value": 30
-                        },
-                        {
-                            "name": "rue du pre",
-                            "value": 118
                         }
                     ]
                 }
@@ -631,7 +631,7 @@
                     ]
                 },
                 {
-                    "name": "montee_st_francois",
+                    "name": "montee_de_st_laurent",
                     "children": [
                         {
                             "name": "montee de st laurent",
