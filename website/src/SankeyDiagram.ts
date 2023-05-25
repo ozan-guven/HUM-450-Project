@@ -8,7 +8,7 @@ const BARPLOT_ELEMENT_ID = 'sankey-barplot';
 const BARPLOT_SVG_ELEMENT_ID = 'sankey-barplot-svg';
 const LINK_HOVERED_OPACITY = 0.8;
 
-const DEFAULT_NODE_ALIGN = 'justify';
+const DEFAULT_NODE_ALIGN = 'center';
 const DEFAULT_NODE_GROUP = (d: any) => d.id.split(/\W/)[0]; // Take first word for color
 const DEFAULT_NODE_WIDTH = 15;
 const DEFAULT_NODE_PADDING = 10;
@@ -60,7 +60,7 @@ const DEFAULT_COLORS = (id: string) => {
         "construction": '#cccccc',
         "rente": '#cccccc',
         "service": '#cccccc',
-        "hors_lausanne": '#cccccc',
+        "hors_lausanne": '#333333',
         "lausanne": '#cccccc'
     };
 
@@ -361,19 +361,12 @@ export class SankeyChart {
 
     private updateBarChart(d: any): void {
         // Get child nodes
-        const sourceChildren = d.sourceLinks.map((link: any) => ({
-            id: link.target.id,
-            value: link.value
-        }));
         const targetChildren = d.targetLinks.map((link: any) => ({
             id: link.source.id,
             value: link.value
         }));
-
-        if (sourceChildren.length === 0 && targetChildren.length === 0) return;
-        
-        let childNodes = sourceChildren.length === 0 ? targetChildren : sourceChildren;
-        this.sankeyBarPlot.drawBarPlot(childNodes);
+        if (targetChildren.length === 0) return;
+        this.sankeyBarPlot.drawBarPlot(targetChildren);
     }
 }
 

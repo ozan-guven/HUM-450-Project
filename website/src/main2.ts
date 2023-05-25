@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     map.load_data();
 
     const sankeyParPlot = new SankeyBarPlot();
-    new SankeyChart('data/sankey_ddo.json', sankeyParPlot);
+    new SankeyChart('data/sankey_sdoj.json', sankeyParPlot);
 
 });

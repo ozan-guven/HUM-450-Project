@@ -52,12 +52,12 @@
     {
         "source": "montee_st_francois",
         "target": "centre_division",
-        "value": 341
+        "value": 148
     },
     {
-        "source": "rue_du_pre",
+        "source": "rue_du_pont",
         "target": "centre_division",
-        "value": 148
+        "value": 341
     },
     {
         "source": "ale",
@@ -148,5 +148,75 @@
         "source": "culture_division",
         "target": "lausanne",
         "value": 134
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "administration",
+        "value": 49
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "agricole",
+        "value": 389
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "artisanat",
+        "value": 536
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "commerce",
+        "value": 174
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "construction",
+        "value": 199
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "rente",
+        "value": 380
+    },
+    {
+        "source": "hors_lausanne",
+        "target": "service",
+        "value": 333
+    },
+    {
+        "source": "lausanne",
+        "target": "administration",
+        "value": 14
+    },
+    {
+        "source": "lausanne",
+        "target": "agricole",
+        "value": 232
+    },
+    {
+        "source": "lausanne",
+        "target": "artisanat",
+        "value": 142
+    },
+    {
+        "source": "lausanne",
+        "target": "commerce",
+        "value": 55
+    },
+    {
+        "source": "lausanne",
+        "target": "construction",
+        "value": 73
+    },
+    {
+        "source": "lausanne",
+        "target": "rente",
+        "value": 254
+    },
+    {
+        "source": "lausanne",
+        "target": "service",
+        "value": 132
     }
 ]
