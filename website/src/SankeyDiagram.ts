@@ -40,7 +40,7 @@ const DEFAULT_COLORS = (id: string) => {
         "cite_dessous": '#725AC1',
         "cheneau_de_bourg": '#F4743B',
         "montee_st_francois": '#F4743B',
-        "rue_du_pre": '#F4743B',
+        "rue_du_pont": '#F4743B',
         "ale": '#F4B860',
         "grand_st_jean": '#F4B860',
         "montee_de_st_laurent": '#F4B860',
@@ -79,7 +79,7 @@ const NODE_ID_TO_NAME = (id: string) => {
         "cite_dessous": 'Cité Dessous',
         "cheneau_de_bourg": 'Cheneau-de-Bourg',
         "montee_st_francois": 'Montée St-François',
-        "rue_du_pre": 'Rue du Pré',
+        "rue_du_pont": 'Rue du Pré',
         "ale": 'Ale',
         "grand_st_jean": 'Grand St-Jean',
         "montee_de_st_laurent": 'Montée de St-Laurent',
@@ -410,8 +410,8 @@ export class SankeyBarPlot {
     public drawBarPlot(data: any[]): void {
         // Define margins
         const margin = {top: 10, right: 30, bottom: 100, left: 50},
-            width = this.width - margin.left - margin.right,
-            height = this.height - margin.top - margin.bottom;
+        width = this.width - margin.left - margin.right,
+        height = this.height - margin.top - margin.bottom;
 
         // Create SVG if it doesn't exist
         let svg = d3.select(`#${BARPLOT_ELEMENT_ID}`).select("svg");
@@ -421,12 +421,16 @@ export class SankeyBarPlot {
             svg = d3.select(`#${BARPLOT_ELEMENT_ID}`)
                 .append("svg")
                 .attr("id", BARPLOT_SVG_ELEMENT_ID)
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", `translate(${margin.left},${margin.top})`);
-            
-            group = svg
+                .attr("width", this.width)
+                .attr("height", this.height);
+
+            let gTranslateX = (this.width - width) / 2;
+            let gTranslateY = (this.height - height) / 2;
+                
+            const plotGroup = svg.append("g")
+                .attr("transform", `translate(${gTranslateX},${gTranslateY})`);
+
+            group = plotGroup
                 .append("g")
                 .attr("class", "bars");
         } else {
@@ -448,9 +452,9 @@ export class SankeyBarPlot {
             .range([height, 0]);
 
         // Handle x-axis: create if it doesn't exist, update otherwise
-        let xAxis = svg.select(".x-axis");
+        let xAxis = group.select(".x-axis");
         if (xAxis.empty()) {
-            xAxis = svg.append("g")
+            xAxis = group.append("g")
                 .attr("class", "x-axis")
                 .attr("transform", `translate(0,${height})`)
                 .call(d3.axisBottom(x).tickFormat(d => NODE_ID_TO_NAME(d)));
@@ -461,9 +465,9 @@ export class SankeyBarPlot {
         }
 
         // Handle y-axis: create if it doesn't exist, update otherwise
-        let yAxis = svg.select(".y-axis");
+        let yAxis = group.select(".y-axis");
         if (yAxis.empty()) {
-            yAxis = svg.append("g")
+            yAxis = group.append("g")
                 .attr("class", "y-axis")
                 .call(d3.axisLeft(y));
         } else {
