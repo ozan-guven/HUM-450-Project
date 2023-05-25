@@ -541,6 +541,7 @@ export class DivisionsMap {
                 .attr("x", d => this.projection(d[1])[0])
                 .attr("y", d => this.projection(d[1])[1])
                 .attr("dy", -3)
+                .text(d => d[0])
                 .style("font-size", "6px")
                 .style("text-anchor", "middle")
                 .style("pointer-events", "none")
