@@ -10,6 +10,48 @@ const BAR_PLOT_TRANSITION_DURATION = 500;
 const TITL_JOBS_GRAPH = "Distribution des catégories de métiers";
 const TITLE_ORIGINS_GRAPH = "Distribution des origines des habitants";
 
+const NODE_ID_TO_NAME = (id: string) => {
+    const map = {
+        "bourg": 'Bourg',
+        "place_st_francois": 'Place St-François',
+        "chailly": 'Chailly',
+        "grange-neuve": 'Grange-Neuve',
+        "la_sallaz": 'La Sallaz',
+        "ouchy": 'Ouchy',
+        "barre": 'Barre',
+        "cite_derriere": 'Cité Derrière',
+        "cite_dessous": 'Cité Dessous',
+        "cheneau_de_bourg": 'Cheneau-de-Bourg',
+        "chenneau": 'Cheneau-de-Bourg',
+        "montee_st_francois": 'Montée St-François',
+        "rue_du_pont": 'Rue du Pré',
+        "rue_du_pre": 'Rue du Pré',
+        "ale": 'Ale',
+        "grand_st_jean": 'Grand St-Jean',
+        "montee_de_st_laurent": 'Montée de St-Laurent',
+        "palud": 'Palud',
+        "st_laurent": 'St-Laurent',
+        "marterey": 'Marterey',
+        "affaires_division": 'Affaires',
+        "campagne_division": 'Campagne',
+        "cathedrale_division": 'Cathédrale',
+        "centre_division": 'Centre',
+        "commerce_division": 'Commerce',
+        "culture_division": 'Culture',
+        "administration": 'Administration',
+        "agricole": 'Agricole',
+        "artisanat": 'Artisanat',
+        "commerce": 'Commerce',
+        "construction": 'Construction',
+        "rente": 'Rente',
+        "service": 'Service',
+        "hors_lausanne": 'Hors Lausanne',
+        "lausanne": 'Lausanne'
+    };
+
+    return map[id] ?? id;
+};
+
 const DEFAULT_COLORS = (id) => {
     const map = {
         'administration': 'blue',
@@ -499,7 +541,6 @@ export class DivisionsMap {
                 .attr("x", d => this.projection(d[1])[0])
                 .attr("y", d => this.projection(d[1])[1])
                 .attr("dy", -3)
-                .text(d => d[0])
                 .style("font-size", "6px")
                 .style("text-anchor", "middle")
                 .style("pointer-events", "none")
@@ -612,7 +653,7 @@ export class DivisionsMap {
             .attr("y", this.projection([lat, long])[1])
             .attr("text-anchor", "middle")
             .attr("id", "zone_name")
-            .text(zone_title)
+            .text(NODE_ID_TO_NAME(zone_title))
             .attr("font-family", "sans-serif")
             .attr("font-size", "10px")
             .attr("fill", "black")
