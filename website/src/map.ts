@@ -3,8 +3,8 @@ import * as d3 from "d3";
 
 const SELECT_JOB = "select_job";
 const CHECK_PROPORTION = "check_proportion";
-const MAP_BARPLOT_ELEMENT_ID = 'bar';
-const MAP_BARPLOT_SVG_ELEMENT_ID = 'bar-svg';
+const MAP_BARPLOT_JOBS_ELEMENT_ID = 'bar-jobs';
+const MAP_BARPLOT_ORIGINS_ELEMENT_ID = 'bar-origins';
 const BAR_PLOT_TRANSITION_DURATION = 500;
 const DEFAULT_COLORS = (id) => {
     const map = {
@@ -66,7 +66,6 @@ export class DivisionsMap {
     constructor(
         map_file,
         locations_file,
-        mapBarPlot,
         scale = 700000,
         center = [6.635, 46.525],
         min_zoom_dimension = 100,
@@ -74,7 +73,8 @@ export class DivisionsMap {
     ) {
         this.map_file = map_file;
         this.locations_file = locations_file;
-        this.mapBarPlot = mapBarPlot;
+        this.mapBarPlotJobs = new MapBarPlot(MAP_BARPLOT_JOBS_ELEMENT_ID);
+        this.mapBarPlotOrigins = new MapBarPlot(MAP_BARPLOT_ORIGINS_ELEMENT_ID);
 
         // Basic render settings
         this.scale = scale;
@@ -122,7 +122,6 @@ export class DivisionsMap {
 
             // Get the label of the optgroup that contains the selected option
             const optgroup = event.target.selectedOptions[0].parentNode.id;
-            console.log(optgroup);
             if (optgroup === 'job_category_optgroup') {
                 isJobSelected = true;
                 selectedJob = event.target.value;
@@ -137,7 +136,6 @@ export class DivisionsMap {
     }
 
     handleSelectJob(selectedJob, selectedProportion) {
-        console.log(selectedJob, selectedProportion);
         // Here, you can update the color scale domain based on the selected job
         // For example, if the selected job is "construction":
         const selected_domain = JOBS_SCALE_DOMAINS[selectedJob];
@@ -162,8 +160,6 @@ export class DivisionsMap {
     }
 
     handleSelectOrigin(selectedOrigin, selectedProportion) {
-        console.log(selectedOrigin);
-        console.log(selectedOrigin, selectedProportion);
         // Here, you can update the color scale domain based on the selected job
         // For example, if the selected job is "construction":
         const selected_domain = ORIGINS_SCALE_DOMAINS[selectedOrigin];
@@ -483,7 +479,14 @@ export class DivisionsMap {
         data = Object.keys(data).map(function (key) {
             return { id: key, value: data[key] };
         });
-        this.mapBarPlot.drawBarPlot(data);
+        this.mapBarPlotJobs.drawBarPlot(data);
+
+        // zone.__data__.properties.origins json into {id:..., value:...}
+        data = zone.__data__.properties.origins
+        data = Object.keys(data).map(function (key) {
+            return { id: key, value: data[key] };
+        });
+        this.mapBarPlotOrigins.drawBarPlot(data);
     }
 
     zoomOut() {
@@ -504,10 +507,12 @@ export class DivisionsMap {
 export class MapBarPlot {
     private width: number;
     private height: number;
+    private barPlotElementId: string = MAP_BARPLOT_JOBS_ELEMENT_ID;
 
     private svg: any;
 
-    constructor() {
+    constructor(barPlotElementId: string) {
+        this.barPlotElementId = barPlotElementId;
         this.initDimensions();
         this.initColor();
     }
@@ -517,10 +522,10 @@ export class MapBarPlot {
      * @returns {void}
      */
     private initDimensions(): void {
-        const parentElement = document.getElementById(MAP_BARPLOT_ELEMENT_ID);
+        const parentElement = document.getElementById(this.barPlotElementId);
         if (parentElement) {
             const dimensions = Math.min(parentElement.clientWidth, parentElement.clientHeight);
-            this.width = dimensions;
+            this.width = parentElement.clientWidth;
             this.height = dimensions;
         }
     }
@@ -545,13 +550,13 @@ export class MapBarPlot {
             height = this.height - margin.top - margin.bottom;
 
         // Create SVG if it doesn't exist
-        let svg = d3.select(`#${MAP_BARPLOT_ELEMENT_ID}`).select("svg");
+        let svg = d3.select(`#${this.barPlotElementId}`).select("svg");
         let group: any;
 
         if (svg.empty()) {
-            svg = d3.select(`#${MAP_BARPLOT_ELEMENT_ID}`)
+            svg = d3.select(`#${this.barPlotElementId}`)
                 .append("svg")
-                .attr("id", MAP_BARPLOT_SVG_ELEMENT_ID)
+                .attr("id", `${this.barPlotElementId}-svg`)
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
@@ -566,39 +571,52 @@ export class MapBarPlot {
         data.sort((a, b) => d3.descending(a.value, b.value));
 
         // X axis
-        const x = d3.scaleBand()
+        const x = d3
+            .scaleBand()
             .range([0, width])
             .domain(data.map(d => d.id))
             .padding(0.2);
 
         // Y axis
-        const y = d3.scaleLinear()
+        const y = d3
+            .scaleLinear()
             .domain([0, d3.max(data, d => d.value)])
             .range([height, 0]);
 
         // Handle x-axis: create if it doesn't exist, update otherwise
         let xAxis = svg.select(".x-axis");
         if (xAxis.empty()) {
-            xAxis = svg.append("g")
+            xAxis = svg
+                .append("g")
                 .attr("class", "x-axis")
                 .attr("transform", `translate(0,${height})`)
                 .call(d3.axisBottom(x).tickFormat(d => d))
                 .attr("color", "white")
                 .selectAll("text")
-                .style("fill", "white");
+                .style("fill", "white")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                .attr("transform", "rotate(-45)");
         } else {
-            xAxis.transition()
+            xAxis
+                .transition()
                 .duration(BAR_PLOT_TRANSITION_DURATION)
                 .call(d3.axisBottom(x).tickFormat(d => d))
                 .attr("color", "white")
                 .selectAll("text")
-                .style("fill", "white");
+                .style("fill", "white")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                .attr("transform", "rotate(-45)");
         }
 
         // Handle y-axis: create if it doesn't exist, update otherwise
         let yAxis = svg.select(".y-axis");
         if (yAxis.empty()) {
-            yAxis = svg.append("g")
+            yAxis = svg
+                .append("g")
                 .attr("class", "y-axis")
                 .call(d3.axisLeft(y))
                 .attr("color", "white")
@@ -614,7 +632,8 @@ export class MapBarPlot {
         }
 
         // Bars
-        const bars = group.selectAll(".sankey-bar")
+        const bars = group
+            .selectAll(`.${this.barPlotElementId}-bar`)
             .data(data, (d: any) => d.id);
 
         // Exit selection
@@ -638,7 +657,7 @@ export class MapBarPlot {
         const barsEnter = bars
             .enter()
             .append("rect")
-            .attr("class", "sankey-bar")
+            .attr("class", `${this.barPlotElementId}-bar`)
             .attr("x", (d: any) => x(d.id))
             .attr("width", x.bandwidth())
             .attr("y", y(0))
