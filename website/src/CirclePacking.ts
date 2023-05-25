@@ -15,36 +15,101 @@ const CIRCLE_PADDING = 3;
 const MIN_FONT_SIZE = 5;
 const MAX_FONT_SIZE = 100;
 
+const ID_TO_TITLE: { [key: string]: string } = {
+    'culture': 'Culture',
+    'marterey': 'Marterey',
+
+    'campagne': 'Campagne',
+    'ouchy': 'Ouchy',
+    'la sallaz': 'La Sallaz',
+    'chailly': 'Chailly',
+    'grange-neuve': 'Grange-Neuve',
+
+    'commerce': 'Commerce',
+    'st laurent': 'St-Laurent',
+    'palud': 'Palud',
+    'grand st jean': 'Grand St-Jean',
+    'ale': 'Ale',
+    'montee de st laurent': 'Montée de St-Laurent',
+
+    'centre': 'Centre',
+    'montee st francois': 'Montée St-François',
+    'cheneau de bourg': 'Cheneau de Bourg',
+    'rue du pre': 'Rue du Pré',
+
+    'affaires': 'Affaires',
+    'bourg': 'Bourg',
+    'place st francois': 'Place St-François',
+
+    'cathedrale': 'Cathédrale',
+    'barre': 'Barre',
+    'cite derriere': 'Cité Derrière',
+    'cite dessous': 'Cité Dessous',
+}
+
 const DEFAULT_PACKING_TITLE = '';
 const PACKING_TITLE = {
-    'culture': "Division Culture",
-    'marterey': "Quartier Marterey",
+    'culture': "Section Culture",
+    'marterey': "Division Marterey",
 
-    'campagne': "Division Campagne",
+    'campagne': "Section Campagne",
+    'ouchy': "Division Ouchy",
+    'la sallaz': "Division La Sallaz",
+    'chailly': "Division Chailly",
+    'grange-neuve': "Division Grange-Neuve",
 
-    'commerce': "Division Commerce",
+    'commerce': "Section Commerce",
+    'st laurent': "Division St-Laurent",
+    'palud': "Division Palud",
+    'grand st jean': "Division Grand St-Jean",
+    'ale': "Division Ale",
+    'montee de st laurent': "Division Montée de St-Laurent",
 
-    'centre': "Division Centre",
+    'centre': "Section Centre",
+    'cheneau de bourg': 'Division Cheneau de Bourg',
+    'montee st francois': "Division Montée St-François",
+    'rue du pre': "Division Rue du Pré",
 
-    'affaires': "Division Affaires",
+    'affaires': "Section Affaires",
+    'bourg': "Division Bourg",
+    'place st francois': "Division Place St-François",
 
-    'cathedrale': "Division Cathédrale",
-
+    'cathedrale': "Section Cathédrale",
+    'barre': "Division Barre",
+    'cite derriere': "Division Cité Derrière",
+    'cite dessous': "Division Cité Dessous",
 }
 const DEFAULT_PACKING_TEXT = "Pour vivre une expérience d'exploration historique immersive, nous vous invitons à découvrir les divisions et quartiers qui constituaient la ville. Pour ce faire, il suffit de cliquer sur les cercles correspondant à chaque quartier ou division.";
 const PACKING_TEXT = {
     'culture': "Dans le domaine culturel, la rue Marterey de Lausanne se distingue. En 1803, un théâtre est initié sur le côté occidental de cette rue, et sa construction s'achève en 1805, renforçant l'identité culturelle de ce secteur de la ville.",
-    'marterey': "Dans le domaine culturel, la rue Marterey de Lausanne se distingue. En 1803, un théâtre est initié sur le côté occidental de cette rue, et sa construction s'achève en 1805, renforçant l'identité culturelle de ce secteur de la ville.",
+    'marterey': "La rue Marterey était un véritable bastion culturel, se distinguant par son grand théâtre, construit entre 1803 et 1805, et de nombreux autres établissements culturels tels que des salons et des casinos. Ces lieux de divertissement étaient particulièrement attrayants pour les rentiers, faisant de Marterey leur deuxième choix de résidence après Ouchy. De plus, la profusion de ces établissements culturels offrait de nombreuses opportunités d'emploi, attirant ainsi une population travaillant principalement dans les services. L'effervescence culturelle de Marterey contribuait à façonner son identité unique au sein de la ville de Lausanne.",
     
     'campagne': "La campagne lausannoise, parsemée de hameaux charmants, offrait un cadre idyllique pour ceux cherchant à échapper à l'agitation urbaine. Cette zone était notamment prisée par les rentiers pour sa tranquillité et se situait également sur des axes stratégiques. Ce contexte attirait les familles aristocratiques qui y établissaient leurs villas suburbaines, symbolisant à la fois un lien étroit avec la nature et un certain statut social. D'autre part, les agriculteurs et vignerons, en tant que paysans, se consacraient à leurs activités agricoles et viticoles dans cette campagne luxuriante.",
+    'ouchy': "",
+    'la sallaz': "",
+    'chailly': "",
+    'grange-neuve': "",
 
-    'commerce': "Le dynamisme commercial de Lausanne était palpable dans plusieurs quartiers vibrants de la ville avec des centres actifs comme le Grand St-Jean, St-Laurent, Palud, Ale et la Montée de St-Laurent. La place Chauderon, inaugurée en 1830, servait de point de transfert pour les marchandises, tandis que la place de la Palud, avec l'Hôtel de Ville et son marché de fromages, constituait un autre pôle d'activité.",
+    'commerce': "Le dynamisme commercial de Lausanne était palpable dans plusieurs quartiers vibrants de la ville avec des centres actifs comme la place de la Palud. La place Chauderon, inaugurée en 1830, servait de point de transfert pour les marchandises, tandis que la place de la Palud, avec l'Hôtel de Ville et son marché de fromages, constituait un autre pôle d'activité.",
+    'st laurent': "",
+    'palud': "",
+    'grand st jean': "",
+    'ale': "",
+    'montee de st laurent': "",
 
-    'centre': "Le centre de Lausanne était marqué par des rues pittoresques et animées, comme la Montée St-François, le Chêneau de Bourg et la Rue du Pré. Toutefois, le paysage social était significativement influencé par la présence de la tannerie Mercier dans le quartier du Rôtillon. Malgré son importance économique, la tannerie était associée à des conditions sanitaires défavorables et des odeurs désagréables, ce qui a limité la présence de la bourgeoisie dans ce secteur.",
+    'centre': "Le centre de Lausanne était marqué par des rues pittoresques et animées, comme la Montée St-François, le Cheneau de Bourg et la Rue du Pré. Toutefois, le paysage social était significativement influencé par la présence de la tannerie Mercier dans le quartier du Rôtillon. Malgré son importance économique, la tannerie était associée à des conditions sanitaires défavorables et des odeurs désagréables, ce qui a limité la présence de la bourgeoisie dans ce secteur.",
+    'cheneau de bourg': "La division Cheneau de Bourg de Lausanne était principalement peuplée par une population artisanale, tandis que le nombre de personnes aisées, comme les rentiers et le personnel d'administration, était relativement restreint. Cette répartition démographique pourrait être attribuée à la présence passée de la Louve et de la Venoge. Ces deux rivières, propices à de nombreux métiers manuels, avaient probablement aussi contribué à créer une ambiance moins attrayante pour ceux qui ne travaillaient pas dans ces métiers. Les odeurs et la mauvaise réputation associées à ces zones industrielles auraient dissuadé les personnes plus aisées de s'y installer, renforçant ainsi la caractéristique artisanale de cette division.",
+    'montee st francois': "",
+    'rue du pre': "",
 
     'affaires': "Le cœur économique de Lausanne se trouvait dans le quartier du Bourg. Ce dernier, vibrant d'activité, abritait l'Hôtel des postes, créé entre 1806 et 1808 suite à la transformation d'une partie de l'ancien manège. C'était ici que le courrier était centralisé et expédié. De plus, ce quartier jouait un rôle crucial dans le transport. En effet, la place Saint-François était le terminus des diligences en provenance ou à destination de Berne, Genève ou Paris. Le quartier du Bourg était donc un véritable pôle d'affaires, où se croisaient les flux de courriers et de voyageurs, symbolisant le dynamisme économique de Lausanne à cette époque.",
+    'bourg': "La rue de Bourg et la Place St-François à proximité étaient des lieux prisés par les intellectuels dits \"libéraux\". Leur présence a contribué à l'arrivée de populations moins manuelles, diversifiant ainsi la composition démographique de la division. Par ailleurs, la présence de nombreuses familles patriciennes ajoutait une note de raffinement à cette division, qui était alors considérée comme l'une des plus chics et raffinées de la ville. Malgré la présence notable d'artisans et de travailleurs manuels, le Bourg se distinguait aussi par son attrait pour les intellectuels et son ambiance aristocratique.",
+    'place st francois': "La Place St-François, à l'instar de la Rue de Bourg, était une enclave de libéralisme intellectuel en 1832. Ce havre intellectuel attire un nombre important d'individus dont l'occupation est loin d'être manuelle, ce qui pourrait en partie expliquer la longévité exceptionnelle de ses résidents - l'espérance de vie y était en effet de 48.5 ans en 1838, bien au-dessus de la moyenne lausannoise qui ne dépassait pas la trentaine. Bien que cette mesure ne soit pas directement liée au niveau de vie, elle suggère des conditions de vie probablement supérieures à la moyenne de Lausanne, ce qui est cohérent avec le fait que moins du quart de ses habitants exerçaient des métiers dits \"physiques\". La Place St-François, tout comme la Place de la Palud, était un foyer d'activité urbaine et économique, avec de nombreux travaux d'infrastructure, notamment la construction de routes et de ponts, entrepris pour favoriser le transit et stimuler la croissance.",
 
     'cathedrale': "La cathédrale de Lausanne se dressait majestueusement comme un emblème du patrimoine de la ville. Implantée au cœur de la Cité Derrière, son architecture impressionnante dominait l'horizon, attirant l'attention et l'admiration des résidents et des visiteurs. Les quartiers pittoresques de la Cité Dessous et de la Barre enveloppaient la cathédrale dans un tissu urbain dense. En outre, la présence de l'académie dans cette division renforçait le statut de la cathédrale comme centre de l'enseignement et de l'érudition.",
+    'barre': "",
+    'cite derriere': "",
+    'cite dessous': "",
 }
 
 /**
@@ -149,7 +214,7 @@ export class CirclePacking {
             .style("font-size", (d: any) => `${fontSizeScale(d.r)}px`)
             .style("fill-opacity", d => d.parent === root ? 1 : 0)
             .style("display", d => d.parent === root ? "inline" : "none")
-            .text((d: any) => d.data.name);
+            .text((d: any) => ID_TO_TITLE[d.data.name] ?? d.data.name);
         
         let view: any;
         const zoomTo = (v: any) => {

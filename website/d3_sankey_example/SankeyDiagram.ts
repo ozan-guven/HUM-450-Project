@@ -77,7 +77,7 @@ const NODE_ID_TO_NAME = (id: string) => {
         "barre": 'Barre',
         "cite_derriere": 'Cité Derrière',
         "cite_dessous": 'Cité Dessous',
-        "cheneau_de_bourg": 'Chêneau-de-Bourg',
+        "cheneau_de_bourg": 'Cheneau-de-Bourg',
         "montee_st_francois": 'Montée St-François',
         "rue_du_pre": 'Rue du Pré',
         "ale": 'Ale',
