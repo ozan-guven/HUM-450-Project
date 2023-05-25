@@ -60,7 +60,7 @@ const ORIGINS_SCALE_DOMAINS = {
     "vevey": {'max': 15, 'color': 'turquoise'},
     "yverdon": {'max': 12, 'color': 'turquoise'}
 }
-const DEFAULT_OPACITY = 0.5;
+const DEFAULT_OPACITY = 0.3;
 
 export class DivisionsMap {
     constructor(
@@ -69,7 +69,7 @@ export class DivisionsMap {
         scale = 700000,
         center = [6.635, 46.525],
         min_zoom_dimension = 100,
-        default_zone_color = `rgba(128, 128, 128, ${DEFAULT_OPACITY})`,
+        default_zone_color = `rgba(128, 128, 128, 1)`,
     ) {
         this.map_file = map_file;
         this.locations_file = locations_file;
@@ -90,8 +90,8 @@ export class DivisionsMap {
 
         // Initialize map
         this.svg = this.init_svg();
-        this.layer_3 = this.init_g();
         this.layer_1 = this.init_g();
+        this.layer_3 = this.init_g();
         this.layer_2 = this.init_g();
         this.projection = this.init_projection();
         this.zoom = this.init_zoom();
@@ -143,7 +143,7 @@ export class DivisionsMap {
             .domain([
                 0,
                 selectedProportion ? 1 : selected_domain.max])
-            .range(["white", selected_domain.color]);
+            .range(["#FAF4DD", selected_domain.color]);
 
         // Update the fill color of the map zones based on the selected job
         this.layer_1
@@ -167,7 +167,7 @@ export class DivisionsMap {
             .domain([
                 0,
                 selectedProportion ? 1 : selected_domain.max])
-            .range(["white", selected_domain.color]);
+            .range(["#FAF4DD", selected_domain.color]);
 
         // Update the fill color of the map zones based on the selected job
         this.layer_1
@@ -341,8 +341,8 @@ export class DivisionsMap {
                 .append("path")
                 .attr("class", "building")
                 .attr("d", this.path_generator)
-                .attr("fill", "#FAF4DD")
-                .style("stroke", "#FAF4DD")
+                .attr("fill", `rgba(0, 0, 0, ${DEFAULT_OPACITY})`)
+                .style("stroke", `rgba(0, 0, 0, ${DEFAULT_OPACITY})`) // rgba(250, 244, 221, ${DEFAULT_OPACITY})
                 .style("stroke-width", 0.2)
                 .style("pointer-events", "none");
         });
