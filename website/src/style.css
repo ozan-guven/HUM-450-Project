@@ -588,7 +588,7 @@ p {
 #select_job {
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   z-index: 9999;
   font-family: var(--default-font-family);
 }
@@ -596,9 +596,14 @@ p {
 #check_proportion {
   position: absolute;
   top: 40px;
-  right: 10px;
+  left: 10px;
   z-index: 9999;
   color: var(--off-white);
+}
+
+/* Make the mouse curser a pointer when hovering over zone */
+.zone {
+  cursor: zoom-in;
 }
 
 #sankey-tooltip {
