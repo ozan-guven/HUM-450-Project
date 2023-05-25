@@ -126,7 +126,16 @@ export class DivisionsMap {
             .select("#map")
             .append("svg")
             .attr("width", this.width)
-            .attr("height", this.height);
+            .attr("height", this.height)
+            .attr("viewBox", [0, 0, this.width, this.height])
+            .on("mouseover", function() {
+                // disable fullPage.js scrolling when mouse is over any SVG
+                $.fn.fullpage.setAllowScrolling(false);
+            })
+            .on("mouseout", function() {
+                // re-enable fullPage.js scrolling when mouse leaves any SVG
+                $.fn.fullpage.setAllowScrolling(true);
+            });
         return svg;
     }
 
