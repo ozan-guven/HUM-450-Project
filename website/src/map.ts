@@ -24,46 +24,46 @@ const DEFAULT_COLORS = (id) => {
     return map[id] || "turquoise";//"#FAF4DD";
 };
 
-const JOBS_SCALE_DOMAINS = {
+const SCALE_DOMAINS = {
+    // Jobs
     'no_selection': { 'min': 0, 'max': 1 },
-    'administration': { 'min': 1, 'max': 17, 'color': "blue", 'max_ratio': 0.081340},
-    'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B", 'max_ratio': 0.657143},
-    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282", 'max_ratio': 0.308081},
-    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10", 'max_ratio': 0.135000},
-    'construction': { 'min': 1, 'max': 39, 'color': "#FCBB00", 'max_ratio': 0.135458},
-    'rente': { 'min': 5, 'max': 140, 'color': "#143A85", 'max_ratio': 0.412979},
-    'service': { 'min': 1, 'max': 77, 'color': "#00973B", 'max_ratio': 0.158103}
-}
+    'administration': { 'min': 1, 'max': 17, 'color': "blue", 'max_ratio': 0.081340 },
+    'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B", 'max_ratio': 0.657143 },
+    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282", 'max_ratio': 0.308081 },
+    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10", 'max_ratio': 0.135000 },
+    'construction': { 'min': 1, 'max': 39, 'color': "#FCBB00", 'max_ratio': 0.135458 },
+    'rente': { 'min': 5, 'max': 140, 'color': "#143A85", 'max_ratio': 0.412979 },
+    'service': { 'min': 1, 'max': 77, 'color': "#00973B", 'max_ratio': 0.158103 },
 
-const ORIGINS_SCALE_DOMAINS = {
-    "not_lausanne": {'max': 370, 'color': 'turquoise', 'max_ratio': 0.80000},
-    "aigle": {'max': 8, 'color': 'turquoise', 'max_ratio': 0.032609},
-    "angleterre": {'max': 14, 'color': 'turquoise', 'max_ratio': 0.041298},
-    "aubonne": {'max': 10, 'color': 'turquoise', 'max_ratio': 0.030303},
-    "avenches": {'max': 3, 'color': 'turquoise', 'max_ratio': 0.014354},
-    "cossonay": {'max': 17, 'color': 'turquoise', 'max_ratio': 0.065217},
-    "echallens": {'max': 12, 'color': 'turquoise', 'max_ratio': 0.045455},
-    "france": {'max': 21, 'color': 'turquoise', 'max_ratio': 0.093264},
-    "fribourg": {'max': 6, 'color': 'turquoise', 'max_ratio': 0.085714},
-    "geneve": {'max': 6, 'color': 'turquoise', 'max_ratio': 0.017699},
-    "grandson": {'max': 2, 'color': 'turquoise', 'max_ratio': 0.010870},
-    "italie": {'max': 3, 'color': 'turquoise', 'max_ratio': 0.010050},
-    "la_vallee": {'max': 14, 'color': 'turquoise', 'max_ratio': 0.400000},
-    "lausanne": {'max': 149, 'color': 'turquoise', 'max_ratio': 0.540230},
-    "lavaux": {'max': 53, 'color': 'turquoise', 'max_ratio': 0.106195},
-    "morges": {'max': 26, 'color': 'turquoise', 'max_ratio': 0.092527},
-    "moudon": {'max': 13, 'color': 'turquoise', 'max_ratio': 0.055276},
-    "neuchatel": {'max': 3, 'color': 'turquoise', 'max_ratio': 0.011858},
-    "nyon": {'max': 10, 'color': 'turquoise', 'max_ratio': 0.043478},
-    "orbe": {'max': 10, 'color': 'turquoise', 'max_ratio': 0.035587},
-    "oron": {'max': 15, 'color': 'turquoise', 'max_ratio': 0.059289},
-    "payerne": {'max': 4, 'color': 'turquoise', 'max_ratio': 0.021739},
-    "pays_d_enhaut": {'max': 11, 'color': 'turquoise', 'max_ratio': 0.038278},
-    "rolle": {'max': 8, 'color': 'turquoise', 'max_ratio': 0.020202},
-    "suisse_allemande": {'max': 36, 'color': 'turquoise', 'max_ratio': 0.100503},
-    "vaud": {'max': 6, 'color': 'turquoise', 'max_ratio': 0.085714},
-    "vevey": {'max': 15, 'color': 'turquoise', 'max_ratio': 0.045226},
-    "yverdon": {'max': 12, 'color': 'turquoise', 'max_ratio': 0.072464},
+    // Origins 
+    "not_lausanne": { 'max': 370, 'color': 'turquoise', 'max_ratio': 0.80000 },
+    "aigle": { 'max': 8, 'color': 'turquoise', 'max_ratio': 0.032609 },
+    "angleterre": { 'max': 14, 'color': 'turquoise', 'max_ratio': 0.041298 },
+    "aubonne": { 'max': 10, 'color': 'turquoise', 'max_ratio': 0.030303 },
+    "avenches": { 'max': 3, 'color': 'turquoise', 'max_ratio': 0.014354 },
+    "cossonay": { 'max': 17, 'color': 'turquoise', 'max_ratio': 0.065217 },
+    "echallens": { 'max': 12, 'color': 'turquoise', 'max_ratio': 0.045455 },
+    "france": { 'max': 21, 'color': 'turquoise', 'max_ratio': 0.093264 },
+    "fribourg": { 'max': 6, 'color': 'turquoise', 'max_ratio': 0.085714 },
+    "geneve": { 'max': 6, 'color': 'turquoise', 'max_ratio': 0.017699 },
+    "grandson": { 'max': 2, 'color': 'turquoise', 'max_ratio': 0.010870 },
+    "italie": { 'max': 3, 'color': 'turquoise', 'max_ratio': 0.010050 },
+    "la_vallee": { 'max': 14, 'color': 'turquoise', 'max_ratio': 0.400000 },
+    "lausanne": { 'max': 149, 'color': 'turquoise', 'max_ratio': 0.540230 },
+    "lavaux": { 'max': 53, 'color': 'turquoise', 'max_ratio': 0.106195 },
+    "morges": { 'max': 26, 'color': 'turquoise', 'max_ratio': 0.092527 },
+    "moudon": { 'max': 13, 'color': 'turquoise', 'max_ratio': 0.055276 },
+    "neuchatel": { 'max': 3, 'color': 'turquoise', 'max_ratio': 0.011858 },
+    "nyon": { 'max': 10, 'color': 'turquoise', 'max_ratio': 0.043478 },
+    "orbe": { 'max': 10, 'color': 'turquoise', 'max_ratio': 0.035587 },
+    "oron": { 'max': 15, 'color': 'turquoise', 'max_ratio': 0.059289 },
+    "payerne": { 'max': 4, 'color': 'turquoise', 'max_ratio': 0.021739 },
+    "pays_d_enhaut": { 'max': 11, 'color': 'turquoise', 'max_ratio': 0.038278 },
+    "rolle": { 'max': 8, 'color': 'turquoise', 'max_ratio': 0.020202 },
+    "suisse_allemande": { 'max': 36, 'color': 'turquoise', 'max_ratio': 0.100503 },
+    "vaud": { 'max': 6, 'color': 'turquoise', 'max_ratio': 0.085714 },
+    "vevey": { 'max': 15, 'color': 'turquoise', 'max_ratio': 0.045226 },
+    "yverdon": { 'max': 12, 'color': 'turquoise', 'max_ratio': 0.072464 },
 }
 const DEFAULT_OPACITY = 0.3;
 
@@ -90,7 +90,7 @@ export class DivisionsMap {
         // State variables
         this.is_zoomed = false;
         this.clicked_zone = null;
-        
+
         this.selectedJobsData = null;
         this.selectedOriginsData = null;
 
@@ -118,8 +118,10 @@ export class DivisionsMap {
             if (isJobSelected) {
                 // Get the currently selected job option
                 this.handleSelectJob(selectedJob, selectedProportion);
+                this.update_legend(selectedJob, selectedProportion);
             } else if (isOriginSelected) {
                 this.handleSelectOrigin(selectedOrigin, selectedProportion);
+                this.update_legend(selectedOrigin, selectedProportion);
             } else {
                 this.hadleNoSelection();
             }
@@ -149,6 +151,8 @@ export class DivisionsMap {
                 this.handleSelectOrigin(event.target.value, selectedProportion);
             }
 
+            this.update_legend(event.target.value, selectedProportion);
+
             // Update the bar plot if the data are not null
             if (this.selectedJobsData !== null) {
                 this.mapBarPlotJobs.drawBarPlot(this.selectedJobsData, event.target.value);
@@ -157,13 +161,12 @@ export class DivisionsMap {
                 this.mapBarPlotOrigins.drawBarPlot(this.selectedOriginsData, event.target.value);
             }
         });
-
     }
 
     handleSelectJob(selectedJob, selectedProportion) {
         // Here, you can update the color scale domain based on the selected job
         // For example, if the selected job is "construction":
-        const selected_domain = JOBS_SCALE_DOMAINS[selectedJob];
+        const selected_domain = SCALE_DOMAINS[selectedJob];
 
         const colorScale = d3.scaleLinear()
             .domain([
@@ -195,7 +198,7 @@ export class DivisionsMap {
     handleSelectOrigin(selectedOrigin, selectedProportion) {
         // Here, you can update the color scale domain based on the selected job
         // For example, if the selected job is "construction":
-        const selected_domain = ORIGINS_SCALE_DOMAINS[selectedOrigin];
+        const selected_domain = SCALE_DOMAINS[selectedOrigin];
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
@@ -252,11 +255,11 @@ export class DivisionsMap {
             .attr("width", this.width)
             .attr("height", this.height)
             .attr("viewBox", [0, 0, this.width, this.height])
-            .on("mouseover", function() {
+            .on("mouseover", function () {
                 // disable fullPage.js scrolling when mouse is over any SVG
                 //$.fn.fullpage.setAllowScrolling(false);
             })
-            .on("mouseout", function() {
+            .on("mouseout", function () {
                 // re-enable fullPage.js scrolling when mouse leaves any SVG
                 //$.fn.fullpage.setAllowScrolling(true);
             });
@@ -277,7 +280,9 @@ export class DivisionsMap {
     }
 
     init_legend() {
-        const legend = this.svg.append("g")
+        const legend = this.svg
+            .append("g")
+            .attr("class", "legend")
             .attr("transform", "translate(20, " + (this.height - 70) + ")");
 
         // Define color scale: TODO: take from data
@@ -289,17 +294,20 @@ export class DivisionsMap {
 
         const linearGradient = defs.append("linearGradient")
             .attr("id", "linear-gradient");
-        
+
         linearGradient.append("stop")
+            .attr("id", "gradient-start")
             .attr("offset", "0%")
             .attr("stop-color", colorScale.range()[0]);
-        
+
         linearGradient.append("stop")
+            .attr("id", "gradient-end")
             .attr("offset", "100%")
             .attr("stop-color", colorScale.range()[1]);
 
         // Draw legend rectangle
         legend.append("rect")
+            .attr("id", "legend-rect")
             .attr("width", 200)
             .attr("height", 20)
             .style("fill", "url(#linear-gradient)");
@@ -308,16 +316,98 @@ export class DivisionsMap {
         const legendScale = d3.scaleLinear()
             .domain(colorScale.domain())
             .range([0, 200]);
-          
-          const legendAxis = d3.axisBottom(legendScale)
+
+        const legendAxis = d3.axisBottom(legendScale)
             .ticks(5);
-          
-            legend.append("g")
+
+        legend.append("g")
+            .attr("id", "legend-axis")
             .attr("transform", "translate(0, 20)")
             .style("color", "#fff")
             .call(legendAxis);
+        
+        legend.style("opacity", 0);
+
+        // Add legend title
+        legend.append("text")
+            .attr("id", "legend-title")
+            .attr("x", 0)
+            .attr("y", -10)
+            .style("fill", "#fff")
+            .text("Nombre de personnes");
 
         return legend;
+    }
+
+    update_legend(selection, selectedProportion) {
+        // If selection is "no_selection", we hide the legend
+        if (selection === "no_selection") {
+            this.svg
+                .select(".legend")
+                .transition()
+                .duration(500)
+                .style("opacity", 0);
+            return;
+        }
+
+        if (selectedProportion) {
+            this.svg
+                .select("#legend-title")
+                .text("Proportion de personnes [%]");
+        } else {
+            this.svg
+                .select("#legend-title")
+                .text("Nombre de personnes");
+        }
+
+        // If selection is not "no_selection", we show the legend
+        this.svg
+                .select(".legend")
+                .transition()
+                .duration(500)
+                .style("opacity", 1);
+
+        const selected_domain = SCALE_DOMAINS[selection];
+
+        const colorScale = d3.scaleLinear()
+            .domain([
+                0,
+                selectedProportion ? selected_domain.max_ratio * 100: selected_domain.max])
+            .range(["#FAF4DD", selected_domain.color]);
+
+        // Select the linearGradient to update it with a transition
+        const linearGradient = this.svg.select("#linear-gradient")
+
+        linearGradient.select("#gradient-start")
+            .transition()
+            .duration(500)
+            .attr("stop-color", colorScale.range()[0]);
+
+        linearGradient.select("#gradient-end")
+            .transition()
+            .duration(500)
+            .attr("stop-color", colorScale.range()[1]);
+
+        // Select te legend rectangle to update the color
+        const legendRect = this.svg.select("#legend-rect");
+        legendRect
+            .transition()
+            .duration(500)
+            .style("fill", "url(#linear-gradient)");
+
+        // Draw legend axis
+        const legendScale = d3.scaleLinear()
+            .domain(colorScale.domain())
+            .range([0, 200]);
+
+        const legendAxis = d3.axisBottom(legendScale)
+            .ticks(5);
+
+        this.svg.select("#legend-axis")
+            .transition()
+            .duration(500)
+            .style("color", "#fff")
+            .call(legendAxis);
     }
 
     init_zoom() {
@@ -637,7 +727,7 @@ export class MapBarPlot {
     public drawBarPlot(data: any[], selectedOption: string): void {
         console.log(data);
         // Define margins
-        const margin = {top: 10, right: 30, bottom: 100, left: 50},
+        const margin = { top: 10, right: 30, bottom: 100, left: 50 },
             width = this.width - margin.left - margin.right,
             height = this.height - margin.top - margin.bottom;
 
@@ -653,11 +743,11 @@ export class MapBarPlot {
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
                 .attr("transform", `translate(${margin.left},${margin.top})`);
-            
+
             group = svg
                 .append("g")
                 .attr("class", "bars");
-            
+
             // Add title to the plot
             svg
                 .append("text")
