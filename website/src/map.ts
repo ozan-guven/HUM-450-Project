@@ -60,6 +60,7 @@ const ORIGINS_SCALE_DOMAINS = {
     "vevey": {'max': 15, 'color': 'turquoise'},
     "yverdon": {'max': 12, 'color': 'turquoise'}
 }
+const DEFAULT_OPACITY = 0.5;
 
 export class DivisionsMap {
     constructor(
@@ -69,7 +70,7 @@ export class DivisionsMap {
         scale = 700000,
         center = [6.635, 46.525],
         min_zoom_dimension = 100,
-        default_zone_color = "rgb(128, 128, 128)",
+        default_zone_color = `rgba(128, 128, 128, ${DEFAULT_OPACITY})`,
     ) {
         this.map_file = map_file;
         this.locations_file = locations_file;
@@ -89,6 +90,7 @@ export class DivisionsMap {
 
         // Initialize map
         this.svg = this.init_svg();
+        this.layer_3 = this.init_g();
         this.layer_1 = this.init_g();
         this.layer_2 = this.init_g();
         this.projection = this.init_projection();
@@ -212,7 +214,16 @@ export class DivisionsMap {
             .select("#map")
             .append("svg")
             .attr("width", this.width)
-            .attr("height", this.height);
+            .attr("height", this.height)
+            .attr("viewBox", [0, 0, this.width, this.height])
+            .on("mouseover", function() {
+                // disable fullPage.js scrolling when mouse is over any SVG
+                //$.fn.fullpage.setAllowScrolling(false);
+            })
+            .on("mouseout", function() {
+                // re-enable fullPage.js scrolling when mouse leaves any SVG
+                //$.fn.fullpage.setAllowScrolling(true);
+            });
         return svg;
     }
 
@@ -235,6 +246,7 @@ export class DivisionsMap {
             .on("zoom", ({ transform }) => {
                 this.layer_1.attr("transform", transform);
                 this.layer_2.attr("transform", transform);
+                this.layer_3.attr("transform", transform);
             });
 
         this.svg.call(zoom);
@@ -293,7 +305,8 @@ export class DivisionsMap {
                 });
         });
 
-        this.load_locations()
+        this.load_locations();
+        this.load_buildings();
     }
 
     load_locations() {
@@ -318,10 +331,24 @@ export class DivisionsMap {
                 .attr("dy", -3)
                 .text(d => d[0])
                 .style("font-size", "6px")
-                .style("fill", "black")
                 .style("text-anchor", "middle")
                 .style("pointer-events", "none")
-                .style("font-family", "sans-serif");
+                .style("font-family", "sans-serif")
+        });
+    }
+
+    load_buildings() {
+        d3.json('data/buildings.geojson').then(data => {
+            this.layer_3.selectAll(".building")
+                .data(data.features)
+                .enter()
+                .append("path")
+                .attr("class", "building")
+                .attr("d", this.path_generator)
+                .attr("fill", "#FAF4DD")
+                .style("stroke", "#FAF4DD")
+                .style("stroke-width", 0.2)
+                .style("pointer-events", "none");
         });
     }
 

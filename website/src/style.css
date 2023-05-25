@@ -16,6 +16,10 @@
   --large-font-size: 4.0rem;
 }
 
+#fp-nav ul li span {
+  background: var(--purple) !important;
+}
+
 /* MAIN */
 body {
   margin: 0;
