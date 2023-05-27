@@ -509,7 +509,7 @@ export class DivisionsMap {
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? selected_domain.max_ratio : selected_domain.max
+                selectedProportion ? selected_domain.max_ratio * 100 : selected_domain.max
             ])
             .interpolate(d3.interpolateHcl)
             .range([d3.hcl(DEFAULT_MAP_COLOR), d3.hcl(selected_domain.color)]);
