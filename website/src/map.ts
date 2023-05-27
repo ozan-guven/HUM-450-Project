@@ -1,6 +1,8 @@
 //@ts-nocheck
 import * as d3 from "d3";
 
+const TOOLTIP_ELEMENT_ID = 'sankey-tooltip';
+
 const SELECT_JOB = "select_job";
 const CHECK_PROPORTION = "check_proportion";
 const MAP_BARPLOT_JOBS_ELEMENT_ID = 'bar-jobs';
@@ -75,6 +77,7 @@ const NODE_ID_TO_NAME = (id: string) => {
         "moudon": 'Moudon',
         "oron": 'Oron',
         "lavaux": 'Lavaux',
+        "not_lausanne": 'Hors Lausanne',
     };
 
     return map[id] ?? id;
@@ -530,6 +533,12 @@ export class DivisionsMap {
                 .on("mouseout", d => {
                     this.onMouseOutZone(d.target)
                 })
+                .on("mousemove", (event) => {
+                    // Update tooltip position
+                    const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+                    tooltip.style("top", (event.pageY - 10) + "px")
+                        .style("left", (event.pageX + 10) + "px");
+                })
                 .on("click", d => {
                     if (this.is_zoomed) {
                         this.zoomOut()
@@ -595,6 +604,33 @@ export class DivisionsMap {
     onMouseOverZone(zone) {
         if (this.is_zoomed) { return }
 
+        const population = zone.__data__.properties.population
+
+        // Get the value of the select
+        const select = document.getElementById("selection_option");
+        const value = select.value;
+        let info: string = "";
+        if (value !== "no_selection") {
+            let jobSelect = zone.__data__.properties.jobs
+            let originsSelect = zone.__data__.properties.origins
+            info = '0';
+            // Check if the value is in either dictionary
+            if (value in jobSelect) {
+                info = jobSelect[value]
+            } else if (value in originsSelect) {
+                info = originsSelect[value]
+            }
+            info = `<br>${NODE_ID_TO_NAME(value)}: ${info}<br>Proportion: ${Math.round((info / population) * 100)}%`
+        }
+
+
+        // Show tooltip
+        const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+        tooltip
+            .style("visibility", "visible");
+        console.log(zone)
+        tooltip.html(`<b>${NODE_ID_TO_NAME(this.getZoneTitle(zone))}</b><br>Population: ${population}${info}`);
+
         // Save current fill color in data-old-color attribute
         const old_color = d3.select(zone).attr("fill")
         d3.select(zone).attr("data-old-color", old_color)
@@ -605,14 +641,14 @@ export class DivisionsMap {
 
 
         this.fadeToColor(zone, new_color)
-
-        const result = this.getZoneCenter(zone)
-        const zone_center = result[0]
-        this.addZoneTitle(zone, zone_center[0], zone_center[1])
     }
 
     onMouseOutZone(zone) {
         if (this.is_zoomed) { return }
+
+        // Hide tooltip
+        const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+        tooltip.style("visibility", "hidden");
 
         // Restore old fill color
         const old_color = d3.select(zone).attr("data-old-color")
