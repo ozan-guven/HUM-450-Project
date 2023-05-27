@@ -1,10 +1,13 @@
 //@ts-nocheck
 import * as d3 from "d3";
 
+const TOOLTIP_ELEMENT_ID = 'sankey-tooltip';
+
 const SELECT_JOB = "select_job";
 const CHECK_PROPORTION = "check_proportion";
 const MAP_BARPLOT_JOBS_ELEMENT_ID = 'bar-jobs';
 const MAP_BARPLOT_ORIGINS_ELEMENT_ID = 'bar-origins';
+const MAP_BARPLOT_TITLE_ID = "bar_chart_title";
 const BAR_PLOT_TRANSITION_DURATION = 500;
 
 const TITL_JOBS_GRAPH = "Distribution des catégories de métiers";
@@ -16,6 +19,7 @@ const NODE_ID_TO_NAME = (id: string) => {
         "place_st_francois": 'Place St-François',
         "chailly": 'Chailly',
         "grange-neuve": 'Grange-Neuve',
+        "grange_neuve": 'Grange-Neuve',
         "la_sallaz": 'La Sallaz',
         "ouchy": 'Ouchy',
         "barre": 'Barre',
@@ -46,7 +50,34 @@ const NODE_ID_TO_NAME = (id: string) => {
         "rente": 'Rente',
         "service": 'Service',
         "hors_lausanne": 'Hors Lausanne',
-        "lausanne": 'Lausanne'
+        "lausanne": 'Lausanne',
+        "suisse_allemande": 'Suisse Allemande',
+        "france": 'France',
+        "grandson": 'Grandson',
+        "aubonne": 'Aubonne',
+        "morges": 'Morges',
+        "nyon": 'Nyon',
+        "pays_d_enhaut": 'Pays d\'Enhaut',
+        "vaud": 'Vaud',
+        "angleterre": 'Angleterre',
+        "italie": 'Italie',
+        "rolle": 'Rolle',
+        "geneve": 'Genève',
+        "orbe": 'Orbe',
+        "vevey": 'Vevey',
+        "la_vallee": 'La Vallée',
+        "cossonay": 'Cossonay',
+        "aigle": 'Aigle',
+        "neuchatel": 'Neuchâtel',
+        "payerne": 'Payerne',
+        "yverdon": 'Yverdon',
+        "echallens": 'Echallens',
+        "fribourg": 'Fribourg',
+        "avenches": 'Avenches',
+        "moudon": 'Moudon',
+        "oron": 'Oron',
+        "lavaux": 'Lavaux',
+        "not_lausanne": 'Hors Lausanne',
     };
 
     return map[id] ?? id;
@@ -502,6 +533,12 @@ export class DivisionsMap {
                 .on("mouseout", d => {
                     this.onMouseOutZone(d.target)
                 })
+                .on("mousemove", (event) => {
+                    // Update tooltip position
+                    const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+                    tooltip.style("top", (event.pageY - 10) + "px")
+                        .style("left", (event.pageX + 10) + "px");
+                })
                 .on("click", d => {
                     if (this.is_zoomed) {
                         this.zoomOut()
@@ -567,6 +604,33 @@ export class DivisionsMap {
     onMouseOverZone(zone) {
         if (this.is_zoomed) { return }
 
+        const population = zone.__data__.properties.population
+
+        // Get the value of the select
+        const select = document.getElementById("selection_option");
+        const value = select.value;
+        let info: string = "";
+        if (value !== "no_selection") {
+            let jobSelect = zone.__data__.properties.jobs
+            let originsSelect = zone.__data__.properties.origins
+            info = '0';
+            // Check if the value is in either dictionary
+            if (value in jobSelect) {
+                info = jobSelect[value]
+            } else if (value in originsSelect) {
+                info = originsSelect[value]
+            }
+            info = `<br>${NODE_ID_TO_NAME(value)}: ${info}<br>Proportion: ${Math.round((info / population) * 100)}%`
+        }
+
+
+        // Show tooltip
+        const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+        tooltip
+            .style("visibility", "visible");
+        console.log(zone)
+        tooltip.html(`<b>${NODE_ID_TO_NAME(this.getZoneTitle(zone))}</b><br>Population: ${population}${info}`);
+
         // Save current fill color in data-old-color attribute
         const old_color = d3.select(zone).attr("fill")
         d3.select(zone).attr("data-old-color", old_color)
@@ -577,14 +641,14 @@ export class DivisionsMap {
 
 
         this.fadeToColor(zone, new_color)
-
-        const result = this.getZoneCenter(zone)
-        const zone_center = result[0]
-        this.addZoneTitle(zone, zone_center[0], zone_center[1])
     }
 
     onMouseOutZone(zone) {
         if (this.is_zoomed) { return }
+
+        // Hide tooltip
+        const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
+        tooltip.style("visibility", "hidden");
 
         // Restore old fill color
         const old_color = d3.select(zone).attr("data-old-color")
@@ -672,6 +736,12 @@ export class DivisionsMap {
         const bottom_left = result[1][0]
         const bottom_right = result[1][1]
         const top_left = result[1][2]
+
+        // Select MAP_BARPLOT_TITLE_ID and change the text
+        d3.select(`#${MAP_BARPLOT_TITLE_ID}`)
+            .transition()
+            .duration(500)
+            .text(`Distributions pour ${NODE_ID_TO_NAME(this.getZoneTitle(zone))}`)
 
         let zone_width = Math.abs(bottom_right[0] - bottom_left[0])
         zone_width = Math.max(zone_width, this.min_zoom_dimension)
@@ -812,7 +882,7 @@ export class MapBarPlot {
         const x = d3
             .scaleBand()
             .range([0, width])
-            .domain(data.map(d => d.id))
+            .domain(data.map(d => NODE_ID_TO_NAME(d.id)))
             .padding(0.2);
 
         // Y axis
@@ -884,7 +954,7 @@ export class MapBarPlot {
         // Bars
         const bars = group
             .selectAll(`.${this.barPlotElementId}-bar`)
-            .data(data, (d: any) => d.id);
+            .data(data, (d: any) => NODE_ID_TO_NAME(d.id));
 
         // Exit selection
         bars.exit()
@@ -898,7 +968,7 @@ export class MapBarPlot {
         bars
             .transition()
             .duration(BAR_PLOT_TRANSITION_DURATION)
-            .attr("x", (d: any) => x(d.id))
+            .attr("x", (d: any) => x(NODE_ID_TO_NAME(d.id)))
             .attr("width", x.bandwidth())
             .attr("y", (d: any) => y(d.value))
             .attr("height", (d: any) => height - y(d.value))
@@ -916,7 +986,7 @@ export class MapBarPlot {
             .enter()
             .append("rect")
             .attr("class", `${this.barPlotElementId}-bar`)
-            .attr("x", (d: any) => x(d.id))
+            .attr("x", (d: any) => x(NODE_ID_TO_NAME(d.id)))
             .attr("width", x.bandwidth())
             .attr("y", y(0))
             .attr("height", 0)
