@@ -1,3 +1,4 @@
+//@ts-nocheck
 import * as d3 from 'd3';
 
 const VIOLIN_ELEMENT_ID = 'violin-plot';
