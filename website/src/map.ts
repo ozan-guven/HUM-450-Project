@@ -109,7 +109,7 @@ const SCALE_DOMAINS = {
     'service': { 'min': 1, 'max': 77, 'color': "#00973B", 'max_ratio': 0.158103 },
 
     // Origins 
-    "not_lausanne": { 'max': 370, 'color': 'turquoise', 'max_ratio': 0.80000 },
+    "not_lausanne": { 'max': 288, 'color': 'turquoise', 'max_ratio': 0.6571428571428571 },
     "aigle": { 'max': 8, 'color': 'turquoise', 'max_ratio': 0.032609 },
     "angleterre": { 'max': 14, 'color': 'turquoise', 'max_ratio': 0.041298 },
     "aubonne": { 'max': 10, 'color': 'turquoise', 'max_ratio': 0.030303 },
@@ -186,7 +186,6 @@ export class DivisionsMap {
 
         const edgesOpacityCheckbox = document.getElementById(CHECK_PROPORTION);
         edgesOpacityCheckbox.addEventListener('change', (event) => {
-            console.log(isJobSelected, isOriginSelected, selectedJob, selectedOrigin, selectedProportion)
             selectedProportion = event.target.checked;
             if (isJobSelected) {
                 // Get the currently selected job option
@@ -628,7 +627,6 @@ export class DivisionsMap {
         const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
         tooltip
             .style("visibility", "visible");
-        console.log(zone)
         tooltip.html(`<b>${NODE_ID_TO_NAME(this.getZoneTitle(zone))}</b><br>Population: ${population}${info}`);
 
         // Save current fill color in data-old-color attribute
@@ -837,7 +835,6 @@ export class MapBarPlot {
      * @returns {void}
      */
     public drawBarPlot(data: any[], selectedOption: string): void {
-        console.log(data);
         // Define margins
         const margin = { top: 10, right: 30, bottom: 100, left: 50 },
             width = this.width - margin.left - margin.right,
