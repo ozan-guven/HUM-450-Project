@@ -211,6 +211,9 @@ export class DivisionsMap {
         // Add event listeners
         const selectLayoutElement = document.getElementById(SELECT_JOB);
         selectLayoutElement.addEventListener('change', (event) => {
+            // enable the checkbox
+            document.getElementById(CHECK_PROPORTION).getElementsByTagName('input')[0].disabled = false;
+
             // Check if no_selection
             if (event.target.value === 'no_selection' | event.target.value === 'population') {
                 isJobSelected = false;
@@ -334,9 +337,12 @@ export class DivisionsMap {
                 .duration(500)
                 .attr("fill", d => this.default_zone_color)
                 .attr("data-old-color", d => this.default_zone_color);
+
+            // disable the checkbox
+            document.getElementById(CHECK_PROPORTION).getElementsByTagName('input')[0].disabled = true;
             return;
         }
-// Here, you can update the color scale domain based on the selected job
+        // Here, you can update the color scale domain based on the selected job
         // For example, if the selected job is "construction":
         const selected_domain = SCALE_DOMAINS[value];
         const colorScale = d3.scaleLinear()

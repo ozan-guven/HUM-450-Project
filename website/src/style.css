@@ -653,3 +653,8 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
+
+input[type=checkbox] {
+  accent-color: var(--light-purple);
+}
+
