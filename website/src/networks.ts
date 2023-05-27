@@ -120,7 +120,7 @@ Qui vero dolore et doloremque omnis ea error labore rem numquam cumque? Et totam
 const TEXT_MAP = {
     "road_vocation_data": {
         "title": "Vocations Voisines",
-        "text": 'Ce premier graphe tisse un lien entre les vocations et les rues. Chaque métier est connecté à une rue, la taille de chaque nœud reflétant le nombre de personnes concernées. Les liens entre les rues et les métiers mettent en lumière des proximités intéressantes : par exemple, les métiers liés à l\'agriculture se retrouvent à l\'exterieur du réseau, se connectant à leurs habitant liés à la campagne. On peut aussi remarquer que les propriétaires se retrouvent eux-aussi à l\'exterieur du réseau, ce qui montre que les rentiers ont souvent tendance à vivre à l\'exterieur de la ville dans leur villa.',
+        "text": 'Ce premier graphe tisse un lien entre les vocations et les rues, mettant en évidence les interactions entre eux. Chaque métier est associé à une rue, représentée par la taille des nœuds correspondants qui reflètent le nombre de personnes impliquées. Les connexions entre les rues et les métiers révèlent des proximités intéressantes : par exemple, les métiers liés à l\'agriculture se trouvent à la périphérie du réseau, connectés à leurs habitants vivant à la campagne. Il est également remarquable que les propriétaires se situent également à la périphérie du réseau, indiquant que les rentiers ont souvent tendance à résider en dehors de la ville. Il est également intéressant de voir que des rues qui ont une proximité géographique, comme la <i>Rue du Pré</i>, <i>Marterey</i> et la <i>Rue de l\'Hôpital</i> se retrouvent aussi proche dans le réseau.',
     },
     "bipartite_division_type_metiers": {
         "title": "Métiers Mappés",
