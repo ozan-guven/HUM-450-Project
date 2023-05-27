@@ -632,3 +632,10 @@ p {
   width: 100%;
   margin: 0 15px; /* adjust to suit your needs */
 }
+
+#violin-checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

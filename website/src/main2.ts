@@ -2,6 +2,7 @@ import { CirclePacking } from './CirclePacking.ts';
 import { DivisionsMap } from './map.ts';
 import { SankeyBarPlot, SankeyChart } from './SankeyDiagram.ts';
 import { StatsPlot } from './StatsPlot.ts';
+import { ViolinPlot } from './ViolinPlot.ts';
 import './style.css';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sankeyParPlot = new SankeyBarPlot();
     new SankeyChart('data/sankey_sdoj.json', sankeyParPlot);
 
-    // Create plot
+    // Create stats plot
     const statsPlot = new StatsPlot();
 
     // Checkboxes event listeners
@@ -32,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // Sort features alphabetically
             features.sort().reverse();
             statsPlot.updatePlot(features);
-            statsPlot.drawPlot();
 
             // Block every checkboxes
             inputs.forEach((input: any) => {
@@ -46,5 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }, 800);
         });
+    });
+
+    // Create violin plot
+    const violinPlot = new ViolinPlot();
+
+    // Checkbox event listeners
+    const VIOLIN_CHECKBOXES_ELEMENT_ID = 'violin-checkboxes';
+    const violinCheckboxes: any = document.querySelector(`#${VIOLIN_CHECKBOXES_ELEMENT_ID}`);
+    // GET .form-check checkboxes
+    const violinInput = violinCheckboxes.querySelector('input');
+    violinInput.addEventListener('change', () => {
+        const checked = violinInput.checked;
+        if (checked) {
+            violinPlot.updatePlot('assigned_divisions');
+        } else {
+            violinPlot.updatePlot('divisions');
+        }
     });
 });
