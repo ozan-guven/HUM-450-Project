@@ -98,9 +98,11 @@ const DEFAULT_COLORS = (id) => {
     return map[id] || "turquoise";//"#FAF4DD";
 };
 
+const SQUARED_METER_TO_KM = 1_000_000;
+
 const SCALE_DOMAINS = {
     // Jobs
-    "population": { 'max': 504, 'color': 'purple', 'max_ratio': 0.020217088327393808},
+    "population": { 'max': 504, 'color': 'purple', 'max_ratio': 0.020217088327393808 * SQUARED_METER_TO_KM},
     'no_selection': { 'min': 0, 'max': 1 },
     'administration': { 'min': 1, 'max': 17, 'color': "blue", 'max_ratio': 0.081340 },
     'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B", 'max_ratio': 0.657143 },
@@ -343,10 +345,10 @@ export class DivisionsMap {
             .transition()
             .duration(500)
             .attr("fill", d => {
-                return colorScale(d.properties.population / (selectedProportion ? d.properties.area : 1))
+                return colorScale(d.properties.population / (selectedProportion ? d.properties.area : 1) * (selectedProportion ? SQUARED_METER_TO_KM : 1))
             })
             .attr("data-old-color", d => {
-                return colorScale(d.properties.population / (selectedProportion ? d.properties.area : 1))
+                return colorScale(d.properties.population / (selectedProportion ? d.properties.area : 1) * (selectedProportion ? SQUARED_METER_TO_KM : 1))
             });
     }
 
@@ -583,7 +585,7 @@ export class DivisionsMap {
                 .on("mousemove", (event) => {
                     // Update tooltip position
                     const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
-                    tooltip.style("top", (event.pageY - 10) + "px")
+                    tooltip.style("top", (event.pageY + 20) + "px")
                         .style("left", (event.pageX + 10) + "px");
                 })
                 .on("click", d => {
@@ -670,8 +672,8 @@ export class DivisionsMap {
             info = `<br>${NODE_ID_TO_NAME(value)}: ${info}<br>Proportion: ${Math.round((info / population) * 100)}%`
             if (value === "population") {
                 // How to format float to get 2 significant digits
-                const density = (population / zone.__data__.properties.area).toPrecision(2)
-                info = `<br>Densité: ${density}`
+                const density = Math.round(population / zone.__data__.properties.area * SQUARED_METER_TO_KM)
+                info = `<br>Densité: ${density} [hab/km²]`
             }
         }
 
