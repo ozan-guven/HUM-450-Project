@@ -620,3 +620,15 @@ p {
 .sankey-rect {
   cursor: pointer;
 }
+
+#stats-checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-check {
+  width: 100%;
+  margin: 0 15px; /* adjust to suit your needs */
+}
