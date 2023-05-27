@@ -8,6 +8,7 @@ const CHECK_PROPORTION = "check_proportion";
 const MAP_BARPLOT_JOBS_ELEMENT_ID = 'bar-jobs';
 const MAP_BARPLOT_ORIGINS_ELEMENT_ID = 'bar-origins';
 const MAP_BARPLOT_TITLE_ID = "bar_chart_title";
+const CHECK_PROPORTION_TEXT_ID = "check_proportion_text";
 const BAR_PLOT_TRANSITION_DURATION = 500;
 
 const TITL_JOBS_GRAPH = "Distribution des catégories de métiers";
@@ -99,6 +100,7 @@ const DEFAULT_COLORS = (id) => {
 
 const SCALE_DOMAINS = {
     // Jobs
+    "population": { 'max': 504, 'color': 'purple', 'max_ratio': 0.020217088327393808},
     'no_selection': { 'min': 0, 'max': 1 },
     'administration': { 'min': 1, 'max': 17, 'color': "blue", 'max_ratio': 0.081340 },
     'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B", 'max_ratio': 0.657143 },
@@ -195,18 +197,20 @@ export class DivisionsMap {
                 this.handleSelectOrigin(selectedOrigin, selectedProportion);
                 this.update_legend(selectedOrigin, selectedProportion);
             } else {
-                this.hadleNoSelection();
+                this.hadleNoSelection(selectedProportion);
+                this.update_legend('population', selectedProportion);
             }
+
         });
 
         // Add event listeners
         const selectLayoutElement = document.getElementById(SELECT_JOB);
         selectLayoutElement.addEventListener('change', (event) => {
             // Check if no_selection
-            if (event.target.value === 'no_selection') {
+            if (event.target.value === 'no_selection' | event.target.value === 'population') {
                 isJobSelected = false;
                 isOriginSelected = false;
-                this.hadleNoSelection()
+                this.hadleNoSelection(selectedProportion)
             }
 
             // Get the label of the optgroup that contains the selected option
@@ -232,6 +236,16 @@ export class DivisionsMap {
             if (this.selectedOriginsData !== null) {
                 this.mapBarPlotOrigins.drawBarPlot(this.selectedOriginsData, event.target.value);
             }
+
+                        // Get the value of the select
+                        const value = event.target.value
+                        const checkboxText = document.getElementById(CHECK_PROPORTION_TEXT_ID);
+                        if (value === 'population') {
+                            // Replace the text of the checkbox
+                            checkboxText.innerHTML = 'Densité par divisions';
+                        } else {
+                            checkboxText.innerHTML = 'Proportions par divisions';
+                        }
         });
     }
 
@@ -297,14 +311,43 @@ export class DivisionsMap {
             });
     }
 
-    hadleNoSelection() {
+    hadleNoSelection(selectedProportion) {
+        // Get the value of the select
+        const select = document.getElementById("selection_option");
+        const value = select.value;
+        
+        // If no selection
+        if (value === "no_selection") {
+            this.layer_1
+                .selectAll(".zone")
+                // Add a linear transition to the fill color
+                .transition()
+                .duration(500)
+                .attr("fill", d => this.default_zone_color)
+                .attr("data-old-color", d => this.default_zone_color);
+            return;
+        }
+// Here, you can update the color scale domain based on the selected job
+        // For example, if the selected job is "construction":
+        const selected_domain = SCALE_DOMAINS[value];
+        const colorScale = d3.scaleLinear()
+            .domain([
+                0,
+                selectedProportion ? selected_domain.max_ratio : selected_domain.max])
+            .range(["#FAF4DD", selected_domain.color]);
+
+        // Update the fill color of the map zones based on the selected job
         this.layer_1
             .selectAll(".zone")
             // Add a linear transition to the fill color
             .transition()
             .duration(500)
-            .attr("fill", d => this.default_zone_color)
-            .attr("data-old-color", d => this.default_zone_color);
+            .attr("fill", d => {
+                return colorScale(d.properties.population / (selectedProportion ? d.properties.area : 1))
+            })
+            .attr("data-old-color", d => {
+                return colorScale(d.properties.population / (selectedProportion ? d.properties.area : 1))
+            });
     }
 
 
@@ -423,9 +466,14 @@ export class DivisionsMap {
         }
 
         if (selectedProportion) {
-            this.svg
-                .select("#legend-title")
-                .text("Proportion de personnes [%]");
+            if (selection === "population")
+                this.svg
+                    .select("#legend-title")
+                    .text("Densité de personnes [hab/km²]");
+            else
+                this.svg
+                    .select("#legend-title")
+                    .text("Proportion de personnes [%]");
         } else {
             this.svg
                 .select("#legend-title")
@@ -444,7 +492,7 @@ export class DivisionsMap {
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? selected_domain.max_ratio * 100: selected_domain.max])
+                selectedProportion ? selected_domain.max_ratio * (selection ==="population" ? 1: 100): selected_domain.max])
             .range(["#FAF4DD", selected_domain.color]);
 
         // Select the linearGradient to update it with a transition
@@ -620,6 +668,11 @@ export class DivisionsMap {
                 info = originsSelect[value]
             }
             info = `<br>${NODE_ID_TO_NAME(value)}: ${info}<br>Proportion: ${Math.round((info / population) * 100)}%`
+            if (value === "population") {
+                // How to format float to get 2 significant digits
+                const density = (population / zone.__data__.properties.area).toPrecision(2)
+                info = `<br>Densité: ${density}`
+            }
         }
 
 
