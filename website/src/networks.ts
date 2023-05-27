@@ -124,15 +124,15 @@ const TEXT_MAP = {
     },
     "bipartite_division_type_metiers": {
         "title": "Métiers Mappés",
-        "text": 'Ce graphe met en lumière les liens entre les divisions de la ville de Lausanne et les classes de métiers. Il offre une vue claire sur la répartition des professions à travers la ville. Par exemple, il est évident que la majorité des rentiers proviennent des divisions 17 et 1-2, qui correspondent respectivement à la campagne vers le sud de Lausanne et au quartier de Marterey et ses environs.',
+        "text": 'Ce graphe met en lumière les liens entre les divisions de la ville de Lausanne et les classes de métiers. Il offre une vue claire sur la répartition des professions à travers la ville. Par exemple, il est évident que la majorité des rentiers proviennent des divisions d\'<i>Ouchy</i> et de <i>Marterey</i>.',
     },
     "bipartite_origine_category_type_metiers": {
         "title": "Origines Occupées",
-        "text": 'Cete visualization dévoile les interactions entre les classes d\'origine et les classes de vocations On observe une distribution plutôt homogène des métiers pour chaque origine. Par ailleurs, Yverdon se distingue par une plus grande concentration de constructeurs et d\'artisans. Le Lavaux, région connue pour son paysage viticole et agricole, présente une majorité de personnes engagées dans l\'agriculture.',
+        "text": 'Cette visualisation dévoile les interactions entre les classes d\'origine et les classes de vocations. On peut remarquer qu\'<i>Yverdon</i> se distingue par une plus grande concentration de constructeurs et d\'artisans. <i>Le Lavaux</i>, région connue pour son paysage viticole et agricole, présente une majorité de personnes engagées dans l\'agriculture.',
     },
     "bipartite_street_type_metiers": {
         "title": "Rues Révélées",
-        "text": "Ce graphe lie les classes de métiers aux rues, offrant une perspective encore plus granulaire de la vie à Lausanne au XIX<sup>ème</sup> siècle. Certaines petites rues présentent une faible diversité de vocations, comme Vidy, Paleyres, et Petit Ouchy, où prédomine l'agriculture en périphérie de la ville.",
+        "text": "Ce graphe lie les classes de métiers aux rues, offrant une perspective encore plus granulaire de la vie à Lausanne au XIX<sup>ème</sup> siècle. Certaines petites rues présentent une faible diversité de vocations, comme <i>Vidy</i>, <i>Paleyres</i>, et <i>Petit Ouchy</i>, où prédomine l'agriculture en périphérie de la ville. Les métiers liés à l'agriculture et à la rente sont connectés par des petits hammeau de campagne, tandis que les métiers du commerce et de l'artisanat se placent à l'opposé du réseau par rapport aux métiers de la rente et de l'agriculture, preuve que ces métiers sont présents dans différentes parties de la ville.",
     },
     "bipartite_rue_origines": {
         "title": "Rues Racines",
