@@ -5,6 +5,7 @@ const SELECT_JOB = "select_job";
 const CHECK_PROPORTION = "check_proportion";
 const MAP_BARPLOT_JOBS_ELEMENT_ID = 'bar-jobs';
 const MAP_BARPLOT_ORIGINS_ELEMENT_ID = 'bar-origins';
+const MAP_BARPLOT_TITLE_ID = "bar_chart_title";
 const BAR_PLOT_TRANSITION_DURATION = 500;
 
 const TITL_JOBS_GRAPH = "Distribution des catégories de métiers";
@@ -16,6 +17,7 @@ const NODE_ID_TO_NAME = (id: string) => {
         "place_st_francois": 'Place St-François',
         "chailly": 'Chailly',
         "grange-neuve": 'Grange-Neuve',
+        "grange_neuve": 'Grange-Neuve',
         "la_sallaz": 'La Sallaz',
         "ouchy": 'Ouchy',
         "barre": 'Barre',
@@ -46,7 +48,33 @@ const NODE_ID_TO_NAME = (id: string) => {
         "rente": 'Rente',
         "service": 'Service',
         "hors_lausanne": 'Hors Lausanne',
-        "lausanne": 'Lausanne'
+        "lausanne": 'Lausanne',
+        "suisse_allemande": 'Suisse Allemande',
+        "france": 'France',
+        "grandson": 'Grandson',
+        "aubonne": 'Aubonne',
+        "morges": 'Morges',
+        "nyon": 'Nyon',
+        "pays_d_enhaut": 'Pays d\'Enhaut',
+        "vaud": 'Vaud',
+        "angleterre": 'Angleterre',
+        "italie": 'Italie',
+        "rolle": 'Rolle',
+        "geneve": 'Genève',
+        "orbe": 'Orbe',
+        "vevey": 'Vevey',
+        "la_vallee": 'La Vallée',
+        "cossonay": 'Cossonay',
+        "aigle": 'Aigle',
+        "neuchatel": 'Neuchâtel',
+        "payerne": 'Payerne',
+        "yverdon": 'Yverdon',
+        "echallens": 'Echallens',
+        "fribourg": 'Fribourg',
+        "avenches": 'Avenches',
+        "moudon": 'Moudon',
+        "oron": 'Oron',
+        "lavaux": 'Lavaux',
     };
 
     return map[id] ?? id;
@@ -673,6 +701,12 @@ export class DivisionsMap {
         const bottom_right = result[1][1]
         const top_left = result[1][2]
 
+        // Select MAP_BARPLOT_TITLE_ID and change the text
+        d3.select(`#${MAP_BARPLOT_TITLE_ID}`)
+            .transition()
+            .duration(500)
+            .text(`Distributions pour ${NODE_ID_TO_NAME(this.getZoneTitle(zone))}`)
+
         let zone_width = Math.abs(bottom_right[0] - bottom_left[0])
         zone_width = Math.max(zone_width, this.min_zoom_dimension)
         let zone_height = Math.abs(top_left[1] - bottom_left[1])
@@ -812,7 +846,7 @@ export class MapBarPlot {
         const x = d3
             .scaleBand()
             .range([0, width])
-            .domain(data.map(d => d.id))
+            .domain(data.map(d => NODE_ID_TO_NAME(d.id)))
             .padding(0.2);
 
         // Y axis
@@ -884,7 +918,7 @@ export class MapBarPlot {
         // Bars
         const bars = group
             .selectAll(`.${this.barPlotElementId}-bar`)
-            .data(data, (d: any) => d.id);
+            .data(data, (d: any) => NODE_ID_TO_NAME(d.id));
 
         // Exit selection
         bars.exit()
@@ -898,7 +932,7 @@ export class MapBarPlot {
         bars
             .transition()
             .duration(BAR_PLOT_TRANSITION_DURATION)
-            .attr("x", (d: any) => x(d.id))
+            .attr("x", (d: any) => x(NODE_ID_TO_NAME(d.id)))
             .attr("width", x.bandwidth())
             .attr("y", (d: any) => y(d.value))
             .attr("height", (d: any) => height - y(d.value))
@@ -916,7 +950,7 @@ export class MapBarPlot {
             .enter()
             .append("rect")
             .attr("class", `${this.barPlotElementId}-bar`)
-            .attr("x", (d: any) => x(d.id))
+            .attr("x", (d: any) => x(NODE_ID_TO_NAME(d.id)))
             .attr("width", x.bandwidth())
             .attr("y", y(0))
             .attr("height", 0)

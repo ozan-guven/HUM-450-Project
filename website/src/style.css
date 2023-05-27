@@ -97,8 +97,13 @@ body {
   flex: 0 0 60%;
 }
 
+
 .flex-50 {
   flex: 0 0 50%;
+}
+
+.flex-48 {
+  flex: 0 0 48%;
 }
 
 .flex-40 {
@@ -119,6 +124,10 @@ body {
 
 .flex-05 {
   flex: 0 0 5%;
+}
+
+.flex-04 {
+  flex: 0 0 4%;
 }
 
 .width-100 {
@@ -201,6 +210,10 @@ p {
   margin: 0;
   margin-bottom: 2rem;
   text-align: justify;
+}
+
+.no-bottom {
+  margin-bottom: 0;
 }
 
 .text-italic {
