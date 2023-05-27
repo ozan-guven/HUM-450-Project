@@ -51,7 +51,7 @@ export class StatsPlot {
 
     private async loadData(): Promise<void> {
         return new Promise((resolve) => {
-            const features = this.statsFeatures.sort().reverse().join('_');
+            const features = this.statsFeatures.sort().join('_');
 
             d3.json(`${STATS_DATA_PATH_PREFIX}stats_${features}${STATS_DATA_PATH_SUFFIX}`).then((data) => {
                 this.data = data;
@@ -83,8 +83,9 @@ export class StatsPlot {
             .domain(d3.extent(this.data.xs) as unknown as [number, number])
             .range([0, this.width - MARGINS.left - MARGINS.right]);
     
+        const maxYScale = Math.max(...this.data.non_permuted_ys, ...this.data.permuted_ys);
         const yScale = d3.scaleLinear()
-            .domain([0, Math.max(...this.data.non_permuted_ys, ...this.data.permuted_ys)])
+            .domain([0, maxYScale == 0 ? 1000 : maxYScale])
             .range([this.height - MARGINS.top - MARGINS.bottom, 0]);
     
         const xAxis: any = d3.axisBottom(xScale);
@@ -99,24 +100,20 @@ export class StatsPlot {
             .duration(750)
             .call(yAxis);
     
-        const barsData = [];
+        const barsData: any = [];
         this.data.xs.forEach((x: number, i: number) => {
-            if (this.data.non_permuted_ys[i] !== 0) {
-                barsData.push({
-                    x,
-                    y: this.data.non_permuted_ys[i],
-                    type: 'non_permuted',
-                    key: `non_permuted-${i}`,
-                });
-            }
-            if (this.data.permuted_ys[i] !== 0) {
-                barsData.push({
-                    x,
-                    y: this.data.permuted_ys[i],
-                    type: 'permuted',
-                    key: `permuted-${i}`,
-                });
-            }
+            barsData.push({
+                x,
+                y: this.data.non_permuted_ys[i],
+                type: 'non_permuted',
+                key: `non_permuted-${i}`,
+            });
+            barsData.push({
+                x,
+                y: this.data.permuted_ys[i],
+                type: 'permuted',
+                key: `permuted-${i}`,
+            });
         });
     
         const bars = this.svg.selectAll('.bar')
@@ -141,14 +138,16 @@ export class StatsPlot {
             .duration(750)
             .attr('y', (d: any) => yScale(d.y))
             .attr('height', (d: any) => this.height - MARGINS.top - MARGINS.bottom - yScale(d.y))
-            .attr('fill', NON_PERMUTED_HISTOGRAM_COLOR);
+            .attr('fill', NON_PERMUTED_HISTOGRAM_COLOR)
+            .attr('opacity', HISTOGRAM_OPACITY);
             
         bars.select('rect.permuted')
             .transition()
             .duration(750)
             .attr('y', (d: any) => yScale(d.y))
             .attr('height', (d: any) => this.height - MARGINS.top - MARGINS.bottom - yScale(d.y))
-            .attr('fill', PERMUTED_HISTOGRAM_COLOR);
+            .attr('fill', PERMUTED_HISTOGRAM_COLOR)
+            .attr('opacity', HISTOGRAM_OPACITY);
     
         // Enter new elements
         const newBars = bars.enter().append('g')
@@ -157,7 +156,15 @@ export class StatsPlot {
         newBars.filter((d: any) => d.type === 'non_permuted').append('rect')
             .attr('class', 'non_permuted')
             .attr('x', (d: any) => xScale(d.x))
-            .attr('width', this.width / this.data.xs.length - 1)
+            .attr('width', (d: any, i: number) => {
+                if (i < this.data.xs.length - 1) {
+                    // If it's not the last bar, subtract the current x value from the next one
+                    return xScale(this.data.xs[i+1]) - xScale(d.x);
+                } else {
+                    // For the last bar, return the same width as the previous bar (or any default width)
+                    return xScale(this.data.xs[i]) - xScale(this.data.xs[i-1]);
+                }
+            })
             .attr('y', yScale(0))
             .attr('height', 0)
             .transition()
@@ -170,7 +177,15 @@ export class StatsPlot {
         newBars.filter((d: any) => d.type === 'permuted').append('rect')
             .attr('class', 'permuted')
             .attr('x', (d: any) => xScale(d.x))
-            .attr('width', this.width / this.data.xs.length - 1)
+            .attr('width', (d: any, i: number) => {
+                if (i < this.data.xs.length - 1) {
+                    // If it's not the last bar, subtract the current x value from the next one
+                    return xScale(this.data.xs[i+1]) - xScale(d.x);
+                } else {
+                    // For the last bar, return the same width as the previous bar (or any default width)
+                    return xScale(this.data.xs[i]) - xScale(this.data.xs[i-1]);
+                }
+            })
             .attr('y', yScale(0))
             .attr('height', 0)
             .transition()
