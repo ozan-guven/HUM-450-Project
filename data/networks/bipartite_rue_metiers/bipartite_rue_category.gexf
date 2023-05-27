@@ -1,0 +1,2980 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2023-05-27">
+    <creator>NetworkX 3.0</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="bipartite" type="long" />
+    </attributes>
+    <nodes>
+      <node id="gottettaz" label="gottettaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mercerie" label="mercerie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bugnon" label="bugnon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="saugettes" label="saugettes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="derriere les terreaux" label="derriere les terreaux">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="paleyres" label="paleyres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="sous le signal" label="sous le signal">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="valency" label="valency">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montee de st laurent" label="montee de st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="taulau?" label="taulau?">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villamont maison de maitres" label="villamont maison de maitres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="verdonnet" label="verdonnet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maladiere" label="maladiere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bois-gentil" label="bois-gentil">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="riant-mont" label="riant-mont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pontaise" label="pontaise">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cazard" label="cazard">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bethusy" label="bethusy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="madeleine" label="madeleine">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="boston" label="boston">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="loup" label="loup">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand" label="vernand">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de l'ale" label="rue de l'ale">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bellevue" label="bellevue">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de st pierre" label="rue de st pierre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet a marin" label="chalet a marin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit clos" label="petit clos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="denatou" label="denatou">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montchoisi" label="montchoisi">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bel-air" label="bel-air">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rovereaz" label="rovereaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="truiblanc" label="truiblanc">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit mon repos" label="petit mon repos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grotte" label="grotte">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vuachere" label="vuachere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue d'etraz" label="rue d'etraz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grey" label="grey">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pont des sauge" label="pont des sauge">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chailly" label="chailly">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maupas" label="maupas">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="maison des postes" label="maison des postes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mont-olivet" label="mont-olivet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="epinette" label="epinette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="ecole de charite" label="ecole de charite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montriond" label="montriond">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="contigny" label="contigny">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite derriere" label="cite derriere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vennes" label="vennes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de chaucrau" label="rue de chaucrau">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chateau de vennes" label="chateau de vennes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la sallaz" label="la sallaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="praz-sechaud" label="praz-sechaud">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rosemont" label="rosemont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pepinet" label="pepinet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rasude" label="rasude">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="escaliers du marche" label="escaliers du marche">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chemin de georgette" label="chemin de georgette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croix de rive" label="croix de rive">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="servan" label="servan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="ouchy" label="ouchy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="marterey" label="marterey">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="sebeilllon" label="sebeilllon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="languedoc" label="languedoc">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="a la tuerie ?" label="a la tuerie ?">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand-dessus" label="vernand-dessus">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petite rue" label="petite rue">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue du pre" label="rue du pre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="st etienne" label="st etienne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bourdonnette" label="bourdonnette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villard" label="villard">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beau-soleil" label="beau-soleil">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="calvaire" label="calvaire">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand chene" label="grand chene">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chabliere" label="chabliere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chavannes" label="chavannes">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet aux enfants" label="chalet aux enfants">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la rappaz" label="la rappaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="clos mont" label="clos mont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="devin" label="devin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montheron" label="montheron">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue du pont" label="rue du pont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="trabandan" label="trabandan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beausite" label="beausite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bergieres" label="bergieres">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la cage " label="la cage ">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="retraite" label="retraite">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place de st laurent" label="place de st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="les saugealles" label="les saugealles">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand champ" label="grand champ">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mornex" label="mornex">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place de st francois" label="place de st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petite pontaise" label="petite pontaise">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place st laurent" label="place st laurent">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cheneau de bourg" label="cheneau de bourg">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montetan" label="montetan">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grand st jean" label="grand st jean">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="prelaz" label="prelaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pra chillon" label="pra chillon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="toises" label="toises">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place st francois" label="place st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="pres de ville" label="pres de ville">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grangette" label="grangette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villamont" label="villamont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="collonges" label="collonges">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rosiere" label="rosiere">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="palud" label="palud">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite devant" label="cite devant">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="villars" label="villars">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="moulin de pepinet" label="moulin de pepinet">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rongimel" label="rongimel">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="beaulieu" label="beaulieu">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chauderon" label="chauderon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="clos de bulle" label="clos de bulle">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vidy" label="vidy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="bois de vaux" label="bois de vaux">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="blecherette" label="blecherette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="barre" label="barre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="malley" label="malley">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mont-allegre" label="mont-allegre">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mon repos" label="mon repos">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mousquines" label="mousquines">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="derriere les terreaux ferme de m. roguin" label="derriere les terreaux ferme de m. roguin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="craivavers" label="craivavers">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit singe" label="petit singe">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petits huttins" label="petits huttins">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montee st francois" label="montee st francois">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="jordils" label="jordils">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croisette haras" label="croisette haras">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="place du pont" label="place du pont">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="desert" label="desert">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="val-d'angrogne" label="val-d'angrogne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montagibert" label="montagibert">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cour" label="cour">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="croix rouge" label="croix rouge">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="grange-neuve" label="grange-neuve">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="la berallaz" label="la berallaz">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="violette" label="violette">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chalet de vernand" label="chalet de vernand">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de l'hopital" label="rue de l'hopital">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit ouchy" label="petit ouchy">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="vernand-dessous" label="vernand-dessous">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="cite dessous" label="cite dessous">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="rue de bourg" label="rue de bourg">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="mon regret" label="mon regret">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit chene" label="petit chene">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="riponne" label="riponne">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="singe" label="singe">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montoie" label="montoie">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="petit st jean" label="petit st jean">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="valentin" label="valentin">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="montbenon" label="montbenon">
+        <attvalues>
+          <attvalue for="0" value="0" />
+        </attvalues>
+      </node>
+      <node id="chamoiseur" label="chamoiseur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pensionnaire" label="pensionnaire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="avocat" label="avocat">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="malade alitee" label="malade alitee">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tapissier" label="tapissier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="distillateur" label="distillateur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="marbrier" label="marbrier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="serrurier" label="serrurier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="professeur" label="professeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="inspecteur" label="inspecteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="bazar vaudois" label="bazar vaudois">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="livreuse" label="livreuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="sans vocation" label="sans vocation">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="libraire" label="libraire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="confiseur" label="confiseur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chancelier" label="chancelier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cuss d'appel" label="cuss d'appel">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pecheur" label="pecheur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="son mari chez pittet a vidy" label="son mari chez pittet a vidy">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="som mari employe a la maison de force" label="som mari employe a la maison de force">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="directeur general des forets" label="directeur general des forets">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="infirmier" label="infirmier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="concierge" label="concierge">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pelletier" label="pelletier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cordonnier" label="cordonnier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tient pension" label="tient pension">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="menur de sable" label="menur de sable">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="capitaine" label="capitaine">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="apothicaire|institutrice" label="apothicaire|institutrice">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="sous-commis" label="sous-commis">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chef de bureau au chateau" label="chef de bureau au chateau">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fondeur" label="fondeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lunetier" label="lunetier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="marhand" label="marhand">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="som mari fermier au champ de l'air" label="som mari fermier au champ de l'air">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="paralyse" label="paralyse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tanneur" label="tanneur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="charpentier" label="charpentier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="assiste" label="assiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="buraliste" label="buraliste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="marechal-ferrant" label="marechal-ferrant">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ex boulanger" label="ex boulanger">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lessiveuse" label="lessiveuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fermier" label="fermier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="imprimeur" label="imprimeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lavandiere" label="lavandiere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="teinturier" label="teinturier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="changeur" label="changeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de vin" label="fabricant de vin">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="boucher" label="boucher">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="commissaire" label="commissaire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="voiturier" label="voiturier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="femme de menage" label="femme de menage">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="en chambre" label="en chambre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ex traiteur" label="ex traiteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="gendarme" label="gendarme">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="juif marchand" label="juif marchand">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="juge" label="juge">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="intendant" label="intendant">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de cuir verni" label="fabricant de cuir verni">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="employe a la force" label="employe a la force">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="arpenteur" label="arpenteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="empailleuse" label="empailleuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="etudiant" label="etudiant">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="peintre" label="peintre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pionnier" label="pionnier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="couvreur" label="couvreur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant" label="fabricant">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="courtepointiere" label="courtepointiere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="gantier" label="gantier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de rubatiers" label="fabricant de rubatiers">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="liquoriste" label="liquoriste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="timbreur" label="timbreur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chef du bureau de comptabilite" label="chef du bureau de comptabilite">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="proprietaire" label="proprietaire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="proprietaire|juge de paix" label="proprietaire|juge de paix">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="corroyeur" label="corroyeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="prieur" label="prieur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lithographe" label="lithographe">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="courtier" label="courtier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tuilier" label="tuilier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="potier" label="potier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="dentiste" label="dentiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="bandagiste" label="bandagiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de babouches" label="fabricant de babouches">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ferblantier" label="ferblantier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="charcutier" label="charcutier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tailleur" label="tailleur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="employe sur le leman" label="employe sur le leman">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="petite marchande" label="petite marchande">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="macon" label="macon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="blanchisseur" label="blanchisseur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="crieur public" label="crieur public">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="couverturier" label="couverturier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="voyageur" label="voyageur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="architecte" label="architecte">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="vetarinaire" label="vetarinaire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="monnayeur" label="monnayeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="traiteur" label="traiteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="secretaire" label="secretaire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pe" label="pe">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="relieur" label="relieur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="luthier" label="luthier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="revendeuse" label="revendeuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="mere de banchaud" label="mere de banchaud">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="faiseur de socques" label="faiseur de socques">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="les gase" label="les gase">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="teneur" label="teneur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="homme de menage" label="homme de menage">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cure" label="cure">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="sergent de la gare" label="sergent de la gare">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="journaliere|imprimeur" label="journaliere|imprimeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de ouattes" label="fabricant de ouattes">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="son mari chez ch. de cerjat au petit ouchy" label="son mari chez ch. de cerjat au petit ouchy">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="greffier" label="greffier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ouvrier" label="ouvrier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lingere|manoeuvre" label="lingere|manoeuvre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="banquier" label="banquier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="instituteur" label="instituteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="membre du grand conseil" label="membre du grand conseil">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cabaretier" label="cabaretier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="mecanicien" label="mecanicien">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="menier" label="menier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tisserand" label="tisserand">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fontenier" label="fontenier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tailleur d'habits" label="tailleur d'habits">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="galocher" label="galocher">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="de vin" label="de vin">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="huilier" label="huilier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant d'instruments" label="fabricant d'instruments">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ecuyer" label="ecuyer">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de casquettes" label="fabricant de casquettes">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de brosses" label="fabricant de brosses">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="petite boutique" label="petite boutique">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="carrossier" label="carrossier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chaudronnier" label="chaudronnier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tient des chevaux en pension" label="tient des chevaux en pension">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="rempailleur" label="rempailleur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cafetier" label="cafetier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tient billard" label="tient billard">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="menuisier" label="menuisier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="charretier" label="charretier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="marcon" label="marcon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de bas" label="fabricant de bas">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de socques" label="fabricant de socques">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="parfumeur" label="parfumeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fruitier" label="fruitier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="directeur" label="directeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ecrivain" label="ecrivain">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chimiste" label="chimiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="notaire" label="notaire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="rentier" label="rentier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chirurgien" label="chirurgien">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="municipal" label="municipal">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="metral" label="metral">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="traducteur" label="traducteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="manoeuvre" label="manoeuvre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="syndic" label="syndic">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="maitre" label="maitre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="blatier" label="blatier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="coutelier" label="coutelier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="gantiere|macon" label="gantiere|macon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ingenieur" label="ingenieur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="charron" label="charron">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="commis" label="commis">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="laboureur" label="laboureur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="bucheron" label="bucheron">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pasteur" label="pasteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="meunier" label="meunier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="serrurier|tailleur de pierre" label="serrurier|tailleur de pierre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant des labouches" label="fabricant des labouches">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="carrier" label="carrier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tripier" label="tripier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="egayeur" label="egayeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="inier" label="inier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de crin" label="fabricant de crin">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabrican de chand" label="fabrican de chand">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="petite rentiere" label="petite rentiere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de cartons" label="fabricant de cartons">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricante de dentelles" label="fabricante de dentelles">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="laitier" label="laitier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="sellier" label="sellier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="agriculteur" label="agriculteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de couvertures" label="fabricant de couvertures">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="marchand" label="marchand">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de peignes" label="fabricant de peignes">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="douanier" label="douanier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="locataire" label="locataire">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="maisonneur" label="maisonneur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de corsets" label="fabricant de corsets">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="bijoutier" label="bijoutier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="passementier" label="passementier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="mouleur" label="mouleur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="megisseur" label="megisseur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="employe a l'hospice" label="employe a l'hospice">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de bretelles" label="fabricant de bretelles">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de paniers" label="fabricant de paniers">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="coloriste" label="coloriste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="taillandier" label="taillandier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de coton" label="fabricant de coton">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="vitrier" label="vitrier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="jardinier" label="jardinier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="couturiere" label="couturiere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant d'amadou" label="fabricant d'amadou">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="mathematicien" label="mathematicien">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="detacheur" label="detacheur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="epicier" label="epicier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="loueur de chevaux" label="loueur de chevaux">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="eperonnier" label="eperonnier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="brodeuse" label="brodeuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="armurier" label="armurier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tient ecole" label="tient ecole">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ouatier" label="ouatier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="toilier" label="toilier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cartonnier" label="cartonnier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="boulanger" label="boulanger">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="huissier" label="huissier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="patissier" label="patissier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="president du conseil d'etat" label="president du conseil d'etat">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="sage-femme" label="sage-femme">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="gagne-denier" label="gagne-denier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="faircuiltier" label="faircuiltier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="postillon" label="postillon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="journaliste" label="journaliste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="garcon voiturier" label="garcon voiturier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="agent d'affaires" label="agent d'affaires">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ancienne domestique" label="ancienne domestique">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chargeur" label="chargeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="garde" label="garde">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="journaliere|vigneron" label="journaliere|vigneron">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="repasseuse" label="repasseuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="docteur" label="docteur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="son mari est procureur a lutry" label="son mari est procureur a lutry">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fournier" label="fournier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fripier" label="fripier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ex officier au service de France" label="ex officier au service de France">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="vernisseur" label="vernisseur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="emloye au chateau" label="emloye au chateau">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cloutier" label="cloutier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="son mari au champ de l'air" label="son mari au champ de l'air">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="courrier" label="courrier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="faiseur de cartes" label="faiseur de cartes">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ancien conseiller d'etat" label="ancien conseiller d'etat">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pilote du vink." label="pilote du vink.">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tailleur de pierres" label="tailleur de pierres">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="du commerce" label="du commerce">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tonnelier" label="tonnelier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="perruquier" label="perruquier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="officier retraite" label="officier retraite">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id=" de ville" label=" de ville">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="agent de change" label="agent de change">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lingere" label="lingere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="marguillier" label="marguillier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="bricolleuse" label="bricolleuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="vendeur" label="vendeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tailleur de marbre" label="tailleur de marbre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de chau" label="fabricant de chau">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="colonel" label="colonel">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tisseraud" label="tisseraud">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="serrurier|tient pension" label="serrurier|tient pension">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="degraisseur" label="degraisseur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cuisiniere" label="cuisiniere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="commandant" label="commandant">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="charon" label="charon">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="garcon d'ecurie a la couronne" label="garcon d'ecurie a la couronne">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fileur" label="fileur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="employe au château" label="employe au château">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chapelier" label="chapelier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pharmacien" label="pharmacien">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="aubergiste" label="aubergiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="conseiller d'etat" label="conseiller d'etat">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="receveur" label="receveur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de parapluies" label="fabricant de parapluies">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="procureur" label="procureur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="herboriste" label="herboriste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="san mari employe au champ de l'air" label="san mari employe au champ de l'air">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tisserand et marchand" label="tisserand et marchand">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ancien municipal" label="ancien municipal">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="au benefice de la lettre de son beau-pere" label="au benefice de la lettre de son beau-pere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pintier" label="pintier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="coupeur de bois" label="coupeur de bois">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="biscomier" label="biscomier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="son mari est gendarme" label="son mari est gendarme">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="brasseur de biere" label="brasseur de biere">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="calottier" label="calottier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ancien voiturier" label="ancien voiturier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="journalier" label="journalier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="gypseur" label="gypseur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="palefrenier" label="palefrenier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="lampiste" label="lampiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="conducteur de diligence" label="conducteur de diligence">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="militaire retire de fce" label="militaire retire de fce">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ex boucher" label="ex boucher">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="maintre mineur" label="maintre mineur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="suffragant" label="suffragant">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ste du timbre" label="ste du timbre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="femme de chambre" label="femme de chambre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tourneur" label="tourneur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ex perruquier" label="ex perruquier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="regit son domaine" label="regit son domaine">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de toile ciree" label="fabricant de toile ciree">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ex marchand" label="ex marchand">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="orfevre" label="orfevre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="musicien" label="musicien">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="prevot" label="prevot">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="vigneron" label="vigneron">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="portier" label="portier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="coiffeur" label="coiffeur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de chaud" label="fabricant de chaud">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="batelier" label="batelier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="truiteur du leman" label="truiteur du leman">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="scieur" label="scieur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fabricant de chapeaux de paille" label="fabricant de chapeaux de paille">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="modiste" label="modiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="appreteur de chap." label="appreteur de chap.">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="negociant" label="negociant">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="bedeau" label="bedeau">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="piqueur" label="piqueur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fumiste" label="fumiste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="graveur" label="graveur">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="regent" label="regent">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ministre" label="ministre">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="chocolatier" label="chocolatier">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="manoeuvre|lessiveuse" label="manoeuvre|lessiveuse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="horloger" label="horloger">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ebeniste" label="ebeniste">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="domestique" label="domestique">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="infirme" label="infirme">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="gottettaz" target="jardinier" id="0" weight="3" />
+      <edge source="gottettaz" target="journalier" id="1" weight="2" />
+      <edge source="mercerie" target="cordonnier" id="2" weight="9" />
+      <edge source="mercerie" target="couvreur" id="3" weight="2" />
+      <edge source="mercerie" target="instituteur" id="4" weight="2" />
+      <edge source="mercerie" target="journalier" id="5" weight="4" />
+      <edge source="mercerie" target="marchand" id="6" weight="2" />
+      <edge source="mercerie" target="menuisier" id="7" weight="4" />
+      <edge source="mercerie" target="ouvrier" id="8" weight="4" />
+      <edge source="mercerie" target="petite marchande" id="9" weight="2" />
+      <edge source="mercerie" target="rentier" id="10" weight="4" />
+      <edge source="mercerie" target="tailleur" id="11" weight="4" />
+      <edge source="mercerie" target="tient pension" id="12" weight="2" />
+      <edge source="bugnon" target="charpentier" id="13" weight="2" />
+      <edge source="bugnon" target="manoeuvre" id="14" weight="2" />
+      <edge source="derriere les terreaux" target="charpentier" id="15" weight="2" />
+      <edge source="derriere les terreaux" target="rentier" id="16" weight="5" />
+      <edge source="paleyres" target="vigneron" id="17" weight="2" />
+      <edge source="montee de st laurent" target="boulanger" id="18" weight="2" />
+      <edge source="montee de st laurent" target="cordonnier" id="19" weight="2" />
+      <edge source="montee de st laurent" target="couturiere" id="20" weight="2" />
+      <edge source="montee de st laurent" target="ferblantier" id="21" weight="2" />
+      <edge source="montee de st laurent" target="garde" id="22" weight="3" />
+      <edge source="montee de st laurent" target="journalier" id="23" weight="9" />
+      <edge source="montee de st laurent" target="juge" id="24" weight="2" />
+      <edge source="montee de st laurent" target="laitier" id="25" weight="2" />
+      <edge source="montee de st laurent" target="lingere" id="26" weight="3" />
+      <edge source="montee de st laurent" target="marchand" id="27" weight="6" />
+      <edge source="montee de st laurent" target="menuisier" id="28" weight="3" />
+      <edge source="montee de st laurent" target="perruquier" id="29" weight="2" />
+      <edge source="montee de st laurent" target="proprietaire" id="30" weight="2" />
+      <edge source="montee de st laurent" target="rentier" id="31" weight="3" />
+      <edge source="montee de st laurent" target="tailleur" id="32" weight="4" />
+      <edge source="montee de st laurent" target="tient ecole" id="33" weight="2" />
+      <edge source="montee de st laurent" target="tonnelier" id="34" weight="2" />
+      <edge source="montee de st laurent" target="traiteur" id="35" weight="2" />
+      <edge source="montee de st laurent" target="vendeur" id="36" weight="2" />
+      <edge source="taulau?" target="proprietaire" id="37" weight="7" />
+      <edge source="villamont maison de maitres" target="rentier" id="38" weight="6" />
+      <edge source="verdonnet" target="laboureur" id="39" weight="3" />
+      <edge source="bois-gentil" target="proprietaire" id="40" weight="3" />
+      <edge source="bois-gentil" target="tuilier" id="41" weight="2" />
+      <edge source="pontaise" target="proprietaire" id="42" weight="3" />
+      <edge source="madeleine" target="marchand" id="43" weight="10" />
+      <edge source="madeleine" target="peintre" id="44" weight="2" />
+      <edge source="madeleine" target="rentier" id="45" weight="6" />
+      <edge source="madeleine" target="sans vocation" id="46" weight="5" />
+      <edge source="madeleine" target="serrurier" id="47" weight="2" />
+      <edge source="madeleine" target="vendeur" id="48" weight="2" />
+      <edge source="madeleine" target="voiturier" id="49" weight="2" />
+      <edge source="boston" target="rentier" id="50" weight="2" />
+      <edge source="loup" target="tuilier" id="51" weight="3" />
+      <edge source="vernand" target="agriculteur" id="52" weight="2" />
+      <edge source="rue de l'ale" target="agriculteur" id="53" weight="2" />
+      <edge source="rue de l'ale" target="carrier" id="54" weight="2" />
+      <edge source="rue de l'ale" target="charpentier" id="55" weight="8" />
+      <edge source="rue de l'ale" target="charretier" id="56" weight="2" />
+      <edge source="rue de l'ale" target="charron" id="57" weight="3" />
+      <edge source="rue de l'ale" target="cordonnier" id="58" weight="2" />
+      <edge source="rue de l'ale" target="fileur" id="59" weight="4" />
+      <edge source="rue de l'ale" target="fontenier" id="60" weight="3" />
+      <edge source="rue de l'ale" target="garde" id="61" weight="5" />
+      <edge source="rue de l'ale" target="gypseur" id="62" weight="2" />
+      <edge source="rue de l'ale" target="jardinier" id="63" weight="6" />
+      <edge source="rue de l'ale" target="journalier" id="64" weight="18" />
+      <edge source="rue de l'ale" target="laboureur" id="65" weight="3" />
+      <edge source="rue de l'ale" target="macon" id="66" weight="3" />
+      <edge source="rue de l'ale" target="manoeuvre" id="67" weight="4" />
+      <edge source="rue de l'ale" target="marchand" id="68" weight="10" />
+      <edge source="rue de l'ale" target="marechal-ferrant" id="69" weight="2" />
+      <edge source="rue de l'ale" target="menuisier" id="70" weight="5" />
+      <edge source="rue de l'ale" target="ouvrier" id="71" weight="7" />
+      <edge source="rue de l'ale" target="rentier" id="72" weight="7" />
+      <edge source="rue de l'ale" target="sans vocation" id="73" weight="2" />
+      <edge source="rue de l'ale" target="serrurier" id="74" weight="3" />
+      <edge source="rue de l'ale" target="tisserand" id="75" weight="2" />
+      <edge source="rue de l'ale" target="tourneur" id="76" weight="2" />
+      <edge source="rue de l'ale" target="vigneron" id="77" weight="27" />
+      <edge source="rue de l'ale" target="voiturier" id="78" weight="2" />
+      <edge source="bellevue" target="fermier" id="79" weight="2" />
+      <edge source="bellevue" target="rentier" id="80" weight="2" />
+      <edge source="rue de st pierre" target="aubergiste" id="81" weight="2" />
+      <edge source="rue de st pierre" target="boulanger" id="82" weight="3" />
+      <edge source="rue de st pierre" target="confiseur" id="83" weight="2" />
+      <edge source="rue de st pierre" target="conseiller d'etat" id="84" weight="2" />
+      <edge source="rue de st pierre" target="cordonnier" id="85" weight="5" />
+      <edge source="rue de st pierre" target="docteur" id="86" weight="3" />
+      <edge source="rue de st pierre" target="gypseur" id="87" weight="3" />
+      <edge source="rue de st pierre" target="journalier" id="88" weight="3" />
+      <edge source="rue de st pierre" target="libraire" id="89" weight="2" />
+      <edge source="rue de st pierre" target="lingere" id="90" weight="2" />
+      <edge source="rue de st pierre" target="maitre" id="91" weight="2" />
+      <edge source="rue de st pierre" target="marchand" id="92" weight="10" />
+      <edge source="rue de st pierre" target="negociant" id="93" weight="5" />
+      <edge source="rue de st pierre" target="rentier" id="94" weight="41" />
+      <edge source="rue de st pierre" target="sellier" id="95" weight="3" />
+      <edge source="rue de st pierre" target="tailleur" id="96" weight="11" />
+      <edge source="rue de st pierre" target="voiturier" id="97" weight="3" />
+      <edge source="chalet a marin" target="agriculteur" id="98" weight="2" />
+      <edge source="petit clos" target="rentier" id="99" weight="2" />
+      <edge source="petit clos" target="vigneron" id="100" weight="2" />
+      <edge source="bel-air" target="fermier" id="101" weight="2" />
+      <edge source="grotte" target="jardinier" id="102" weight="2" />
+      <edge source="grotte" target="locataire" id="103" weight="2" />
+      <edge source="grotte" target="negociant" id="104" weight="2" />
+      <edge source="grotte" target="rentier" id="105" weight="9" />
+      <edge source="rue d'etraz" target="avocat" id="106" weight="2" />
+      <edge source="rue d'etraz" target="charpentier" id="107" weight="2" />
+      <edge source="rue d'etraz" target="charron" id="108" weight="2" />
+      <edge source="rue d'etraz" target="cordonnier" id="109" weight="2" />
+      <edge source="rue d'etraz" target="femme de menage" id="110" weight="2" />
+      <edge source="rue d'etraz" target="gypseur" id="111" weight="2" />
+      <edge source="rue d'etraz" target="jardinier" id="112" weight="2" />
+      <edge source="rue d'etraz" target="journalier" id="113" weight="8" />
+      <edge source="rue d'etraz" target="lingere" id="114" weight="3" />
+      <edge source="rue d'etraz" target="maitre" id="115" weight="2" />
+      <edge source="rue d'etraz" target="marchand" id="116" weight="3" />
+      <edge source="rue d'etraz" target="menuisier" id="117" weight="2" />
+      <edge source="rue d'etraz" target="pintier" id="118" weight="3" />
+      <edge source="rue d'etraz" target="rentier" id="119" weight="20" />
+      <edge source="rue d'etraz" target="vigneron" id="120" weight="6" />
+      <edge source="rue d'etraz" target="voiturier" id="121" weight="3" />
+      <edge source="pont des sauge" target="agriculteur" id="122" weight="2" />
+      <edge source="pont des sauge" target="proprietaire" id="123" weight="2" />
+      <edge source="chailly" target="agriculteur" id="124" weight="2" />
+      <edge source="chailly" target="carrier" id="125" weight="4" />
+      <edge source="chailly" target="fermier" id="126" weight="2" />
+      <edge source="chailly" target="journalier" id="127" weight="6" />
+      <edge source="chailly" target="laboureur" id="128" weight="7" />
+      <edge source="chailly" target="tisserand" id="129" weight="2" />
+      <edge source="chailly" target="vigneron" id="130" weight="3" />
+      <edge source="maupas" target="charpentier" id="131" weight="2" />
+      <edge source="maupas" target="jardinier" id="132" weight="3" />
+      <edge source="maupas" target="journalier" id="133" weight="2" />
+      <edge source="maupas" target="rentier" id="134" weight="7" />
+      <edge source="ecole de charite" target="instituteur" id="135" weight="4" />
+      <edge source="contigny" target="vigneron" id="136" weight="2" />
+      <edge source="cite derriere" target="avocat" id="137" weight="2" />
+      <edge source="cite derriere" target="charpentier" id="138" weight="5" />
+      <edge source="cite derriere" target="domestique" id="139" weight="2" />
+      <edge source="cite derriere" target="fontenier" id="140" weight="2" />
+      <edge source="cite derriere" target="gendarme" id="141" weight="4" />
+      <edge source="cite derriere" target="huissier" id="142" weight="2" />
+      <edge source="cite derriere" target="instituteur" id="143" weight="3" />
+      <edge source="cite derriere" target="journalier" id="144" weight="12" />
+      <edge source="cite derriere" target="macon" id="145" weight="6" />
+      <edge source="cite derriere" target="manoeuvre" id="146" weight="2" />
+      <edge source="cite derriere" target="marchand" id="147" weight="2" />
+      <edge source="cite derriere" target="menuisier" id="148" weight="10" />
+      <edge source="cite derriere" target="ministre" id="149" weight="3" />
+      <edge source="cite derriere" target="rentier" id="150" weight="15" />
+      <edge source="cite derriere" target="sans vocation" id="151" weight="8" />
+      <edge source="cite derriere" target="tailleur" id="152" weight="2" />
+      <edge source="cite derriere" target="tailleur de pierres" id="153" weight="3" />
+      <edge source="vennes" target="agriculteur" id="154" weight="2" />
+      <edge source="vennes" target="jardinier" id="155" weight="2" />
+      <edge source="vennes" target="laboureur" id="156" weight="5" />
+      <edge source="vennes" target="proprietaire" id="157" weight="2" />
+      <edge source="vennes" target="rentier" id="158" weight="3" />
+      <edge source="rue de chaucrau" target="charpentier" id="159" weight="2" />
+      <edge source="rue de chaucrau" target="charron" id="160" weight="2" />
+      <edge source="rue de chaucrau" target="cordonnier" id="161" weight="2" />
+      <edge source="rue de chaucrau" target="femme de menage" id="162" weight="2" />
+      <edge source="rue de chaucrau" target="fileur" id="163" weight="2" />
+      <edge source="rue de chaucrau" target="garde" id="164" weight="4" />
+      <edge source="rue de chaucrau" target="journalier" id="165" weight="10" />
+      <edge source="rue de chaucrau" target="juge" id="166" weight="2" />
+      <edge source="rue de chaucrau" target="lingere" id="167" weight="3" />
+      <edge source="rue de chaucrau" target="maitre" id="168" weight="2" />
+      <edge source="rue de chaucrau" target="manoeuvre" id="169" weight="2" />
+      <edge source="rue de chaucrau" target="marchand" id="170" weight="3" />
+      <edge source="rue de chaucrau" target="menuisier" id="171" weight="5" />
+      <edge source="rue de chaucrau" target="ouvrier" id="172" weight="8" />
+      <edge source="rue de chaucrau" target="rentier" id="173" weight="2" />
+      <edge source="rue de chaucrau" target="tailleur" id="174" weight="2" />
+      <edge source="rue de chaucrau" target="tailleur de pierres" id="175" weight="4" />
+      <edge source="rue de chaucrau" target="vigneron" id="176" weight="8" />
+      <edge source="rue de chaucrau" target="voiturier" id="177" weight="2" />
+      <edge source="la sallaz" target="fermier" id="178" weight="2" />
+      <edge source="la sallaz" target="journalier" id="179" weight="3" />
+      <edge source="la sallaz" target="laboureur" id="180" weight="4" />
+      <edge source="la sallaz" target="locataire" id="181" weight="2" />
+      <edge source="la sallaz" target="tisserand" id="182" weight="2" />
+      <edge source="rosemont" target="proprietaire" id="183" weight="2" />
+      <edge source="rosemont" target="rentier" id="184" weight="2" />
+      <edge source="rasude" target="rentier" id="185" weight="3" />
+      <edge source="escaliers du marche" target="cordonnier" id="186" weight="2" />
+      <edge source="escaliers du marche" target="domestique" id="187" weight="2" />
+      <edge source="escaliers du marche" target="garde" id="188" weight="2" />
+      <edge source="escaliers du marche" target="instituteur" id="189" weight="2" />
+      <edge source="escaliers du marche" target="journalier" id="190" weight="3" />
+      <edge source="escaliers du marche" target="maitre" id="191" weight="2" />
+      <edge source="escaliers du marche" target="peintre" id="192" weight="2" />
+      <edge source="escaliers du marche" target="rentier" id="193" weight="4" />
+      <edge source="escaliers du marche" target="sans vocation" id="194" weight="2" />
+      <edge source="escaliers du marche" target="tailleur d'habits" id="195" weight="2" />
+      <edge source="chemin de georgette" target="rentier" id="196" weight="2" />
+      <edge source="croix de rive" target="proprietaire" id="197" weight="2" />
+      <edge source="servan" target="rentier" id="198" weight="4" />
+      <edge source="ouchy" target="aubergiste" id="199" weight="2" />
+      <edge source="ouchy" target="batelier" id="200" weight="5" />
+      <edge source="ouchy" target="blanchisseur" id="201" weight="2" />
+      <edge source="ouchy" target="boucher" id="202" weight="2" />
+      <edge source="ouchy" target="chargeur" id="203" weight="5" />
+      <edge source="ouchy" target="journalier" id="204" weight="33" />
+      <edge source="ouchy" target="negociant" id="205" weight="4" />
+      <edge source="ouchy" target="ouvrier" id="206" weight="2" />
+      <edge source="ouchy" target="pecheur" id="207" weight="5" />
+      <edge source="ouchy" target="pintier" id="208" weight="2" />
+      <edge source="ouchy" target="proprietaire" id="209" weight="27" />
+      <edge source="ouchy" target="rentier" id="210" weight="8" />
+      <edge source="ouchy" target="tailleur" id="211" weight="3" />
+      <edge source="ouchy" target="tonnelier" id="212" weight="4" />
+      <edge source="ouchy" target="vigneron" id="213" weight="4" />
+      <edge source="marterey" target="chapelier" id="214" weight="3" />
+      <edge source="marterey" target="charpentier" id="215" weight="16" />
+      <edge source="marterey" target="charretier" id="216" weight="3" />
+      <edge source="marterey" target="cloutier" id="217" weight="2" />
+      <edge source="marterey" target="cordonnier" id="218" weight="6" />
+      <edge source="marterey" target="couvreur" id="219" weight="2" />
+      <edge source="marterey" target="domestique" id="220" weight="4" />
+      <edge source="marterey" target="femme de menage" id="221" weight="2" />
+      <edge source="marterey" target="fournier" id="222" weight="2" />
+      <edge source="marterey" target="garde" id="223" weight="3" />
+      <edge source="marterey" target="inspecteur" id="224" weight="2" />
+      <edge source="marterey" target="instituteur" id="225" weight="2" />
+      <edge source="marterey" target="jardinier" id="226" weight="6" />
+      <edge source="marterey" target="journalier" id="227" weight="26" />
+      <edge source="marterey" target="lessiveuse" id="228" weight="5" />
+      <edge source="marterey" target="lingere" id="229" weight="12" />
+      <edge source="marterey" target="macon" id="230" weight="3" />
+      <edge source="marterey" target="manoeuvre" id="231" weight="4" />
+      <edge source="marterey" target="marchand" id="232" weight="2" />
+      <edge source="marterey" target="marechal-ferrant" id="233" weight="6" />
+      <edge source="marterey" target="menuisier" id="234" weight="6" />
+      <edge source="marterey" target="municipal" id="235" weight="2" />
+      <edge source="marterey" target="palefrenier" id="236" weight="3" />
+      <edge source="marterey" target="pintier" id="237" weight="2" />
+      <edge source="marterey" target="proprietaire" id="238" weight="2" />
+      <edge source="marterey" target="rentier" id="239" weight="24" />
+      <edge source="marterey" target="sellier" id="240" weight="3" />
+      <edge source="marterey" target="tailleur" id="241" weight="6" />
+      <edge source="marterey" target="tailleur d'habits" id="242" weight="2" />
+      <edge source="marterey" target="tailleur de pierres" id="243" weight="2" />
+      <edge source="marterey" target="tisserand" id="244" weight="3" />
+      <edge source="marterey" target="vigneron" id="245" weight="21" />
+      <edge source="marterey" target="voiturier" id="246" weight="13" />
+      <edge source="sebeilllon" target="proprietaire" id="247" weight="2" />
+      <edge source="sebeilllon" target="vigneron" id="248" weight="3" />
+      <edge source="languedoc" target="vigneron" id="249" weight="2" />
+      <edge source="vernand-dessus" target="fermier" id="250" weight="4" />
+      <edge source="vernand-dessus" target="proprietaire" id="251" weight="3" />
+      <edge source="petite rue" target="garde" id="252" weight="3" />
+      <edge source="rue du pre" target="assiste" id="253" weight="2" />
+      <edge source="rue du pre" target="boucher" id="254" weight="9" />
+      <edge source="rue du pre" target="boulanger" id="255" weight="3" />
+      <edge source="rue du pre" target="carrier" id="256" weight="2" />
+      <edge source="rue du pre" target="chamoiseur" id="257" weight="2" />
+      <edge source="rue du pre" target="charpentier" id="258" weight="7" />
+      <edge source="rue du pre" target="cordonnier" id="259" weight="15" />
+      <edge source="rue du pre" target="corroyeur" id="260" weight="2" />
+      <edge source="rue du pre" target="couvreur" id="261" weight="3" />
+      <edge source="rue du pre" target="domestique" id="262" weight="4" />
+      <edge source="rue du pre" target="fabricant d'instruments" id="263" weight="2" />
+      <edge source="rue du pre" target="femme de menage" id="264" weight="5" />
+      <edge source="rue du pre" target="gantier" id="265" weight="5" />
+      <edge source="rue du pre" target="garde" id="266" weight="4" />
+      <edge source="rue du pre" target="imprimeur" id="267" weight="7" />
+      <edge source="rue du pre" target="journalier" id="268" weight="19" />
+      <edge source="rue du pre" target="laboureur" id="269" weight="2" />
+      <edge source="rue du pre" target="laitier" id="270" weight="3" />
+      <edge source="rue du pre" target="lessiveuse" id="271" weight="3" />
+      <edge source="rue du pre" target="lingere" id="272" weight="9" />
+      <edge source="rue du pre" target="macon" id="273" weight="3" />
+      <edge source="rue du pre" target="manoeuvre" id="274" weight="4" />
+      <edge source="rue du pre" target="marchand" id="275" weight="10" />
+      <edge source="rue du pre" target="menuisier" id="276" weight="3" />
+      <edge source="rue du pre" target="ouvrier" id="277" weight="4" />
+      <edge source="rue du pre" target="proprietaire" id="278" weight="3" />
+      <edge source="rue du pre" target="rentier" id="279" weight="6" />
+      <edge source="rue du pre" target="tailleur" id="280" weight="13" />
+      <edge source="rue du pre" target="tailleur de pierres" id="281" weight="2" />
+      <edge source="rue du pre" target="tanneur" id="282" weight="10" />
+      <edge source="rue du pre" target="tient pension" id="283" weight="2" />
+      <edge source="rue du pre" target="tisserand" id="284" weight="2" />
+      <edge source="rue du pre" target="traiteur" id="285" weight="2" />
+      <edge source="rue du pre" target="tripier" id="286" weight="2" />
+      <edge source="st etienne" target="cordonnier" id="287" weight="4" />
+      <edge source="st etienne" target="journalier" id="288" weight="2" />
+      <edge source="st etienne" target="rentier" id="289" weight="9" />
+      <edge source="st etienne" target="tailleur de pierres" id="290" weight="2" />
+      <edge source="st etienne" target="teinturier" id="291" weight="2" />
+      <edge source="st etienne" target="tient pension" id="292" weight="2" />
+      <edge source="villard" target="rentier" id="293" weight="2" />
+      <edge source="villard" target="vigneron" id="294" weight="2" />
+      <edge source="calvaire" target="cordonnier" id="295" weight="2" />
+      <edge source="calvaire" target="laboureur" id="296" weight="2" />
+      <edge source="grand chene" target="docteur" id="297" weight="2" />
+      <edge source="grand chene" target="loueur de chevaux" id="298" weight="2" />
+      <edge source="grand chene" target="maitre" id="299" weight="2" />
+      <edge source="grand chene" target="marchand" id="300" weight="4" />
+      <edge source="grand chene" target="proprietaire" id="301" weight="3" />
+      <edge source="grand chene" target="rentier" id="302" weight="14" />
+      <edge source="grand chene" target="sage-femme" id="303" weight="2" />
+      <edge source="grand chene" target="traiteur" id="304" weight="2" />
+      <edge source="chabliere" target="fermier" id="305" weight="2" />
+      <edge source="chavannes" target="laboureur" id="306" weight="7" />
+      <edge source="devin" target="laboureur" id="307" weight="3" />
+      <edge source="montheron" target="agriculteur" id="308" weight="2" />
+      <edge source="montheron" target="meunier" id="309" weight="2" />
+      <edge source="rue du pont" target="bijoutier" id="310" weight="3" />
+      <edge source="rue du pont" target="chapelier" id="311" weight="2" />
+      <edge source="rue du pont" target="chaudronnier" id="312" weight="2" />
+      <edge source="rue du pont" target="cordonnier" id="313" weight="2" />
+      <edge source="rue du pont" target="epicier" id="314" weight="3" />
+      <edge source="rue du pont" target="garde" id="315" weight="4" />
+      <edge source="rue du pont" target="libraire" id="316" weight="2" />
+      <edge source="rue du pont" target="marchand" id="317" weight="6" />
+      <edge source="rue du pont" target="negociant" id="318" weight="5" />
+      <edge source="rue du pont" target="rentier" id="319" weight="8" />
+      <edge source="rue du pont" target="revendeuse" id="320" weight="2" />
+      <edge source="rue du pont" target="tailleur" id="321" weight="6" />
+      <edge source="la cage " target="laboureur" id="322" weight="2" />
+      <edge source="place de st laurent" target="avocat" id="323" weight="2" />
+      <edge source="place de st laurent" target="confiseur" id="324" weight="2" />
+      <edge source="place de st laurent" target="cordonnier" id="325" weight="5" />
+      <edge source="place de st laurent" target="fondeur" id="326" weight="2" />
+      <edge source="place de st laurent" target="horloger" id="327" weight="2" />
+      <edge source="place de st laurent" target="instituteur" id="328" weight="3" />
+      <edge source="place de st laurent" target="journalier" id="329" weight="4" />
+      <edge source="place de st laurent" target="juge" id="330" weight="3" />
+      <edge source="place de st laurent" target="lingere" id="331" weight="3" />
+      <edge source="place de st laurent" target="macon" id="332" weight="2" />
+      <edge source="place de st laurent" target="marchand" id="333" weight="8" />
+      <edge source="place de st laurent" target="menuisier" id="334" weight="8" />
+      <edge source="place de st laurent" target="negociant" id="335" weight="2" />
+      <edge source="place de st laurent" target="ouvrier" id="336" weight="4" />
+      <edge source="place de st laurent" target="rentier" id="337" weight="14" />
+      <edge source="place de st laurent" target="tailleur" id="338" weight="2" />
+      <edge source="place de st laurent" target="vigneron" id="339" weight="3" />
+      <edge source="place de st francois" target="coiffeur" id="340" weight="2" />
+      <edge source="place de st francois" target="conducteur de diligence" id="341" weight="2" />
+      <edge source="place de st francois" target="confiseur" id="342" weight="2" />
+      <edge source="place de st francois" target="cordonnier" id="343" weight="7" />
+      <edge source="place de st francois" target="couturiere" id="344" weight="3" />
+      <edge source="place de st francois" target="journalier" id="345" weight="2" />
+      <edge source="place de st francois" target="marchand" id="346" weight="10" />
+      <edge source="place de st francois" target="negociant" id="347" weight="7" />
+      <edge source="place de st francois" target="orfevre" id="348" weight="2" />
+      <edge source="place de st francois" target="rentier" id="349" weight="14" />
+      <edge source="place de st francois" target="tailleur" id="350" weight="6" />
+      <edge source="place st laurent" target="rentier" id="351" weight="4" />
+      <edge source="cheneau de bourg" target="agriculteur" id="352" weight="5" />
+      <edge source="cheneau de bourg" target="boulanger" id="353" weight="2" />
+      <edge source="cheneau de bourg" target="charpentier" id="354" weight="7" />
+      <edge source="cheneau de bourg" target="cordonnier" id="355" weight="5" />
+      <edge source="cheneau de bourg" target="couturiere" id="356" weight="2" />
+      <edge source="cheneau de bourg" target="fumiste" id="357" weight="2" />
+      <edge source="cheneau de bourg" target="garde" id="358" weight="2" />
+      <edge source="cheneau de bourg" target="gypseur" id="359" weight="3" />
+      <edge source="cheneau de bourg" target="huissier" id="360" weight="2" />
+      <edge source="cheneau de bourg" target="imprimeur" id="361" weight="2" />
+      <edge source="cheneau de bourg" target="journalier" id="362" weight="23" />
+      <edge source="cheneau de bourg" target="lingere" id="363" weight="4" />
+      <edge source="cheneau de bourg" target="macon" id="364" weight="5" />
+      <edge source="cheneau de bourg" target="marechal-ferrant" id="365" weight="2" />
+      <edge source="cheneau de bourg" target="menuisier" id="366" weight="7" />
+      <edge source="cheneau de bourg" target="ouvrier" id="367" weight="3" />
+      <edge source="cheneau de bourg" target="rentier" id="368" weight="9" />
+      <edge source="cheneau de bourg" target="repasseuse" id="369" weight="2" />
+      <edge source="cheneau de bourg" target="serrurier" id="370" weight="2" />
+      <edge source="cheneau de bourg" target="tailleur" id="371" weight="6" />
+      <edge source="cheneau de bourg" target="tanneur" id="372" weight="5" />
+      <edge source="cheneau de bourg" target="vendeur" id="373" weight="2" />
+      <edge source="cheneau de bourg" target="vigneron" id="374" weight="3" />
+      <edge source="cheneau de bourg" target="voiturier" id="375" weight="5" />
+      <edge source="grand st jean" target="assiste" id="376" weight="2" />
+      <edge source="grand st jean" target="blanchisseur" id="377" weight="5" />
+      <edge source="grand st jean" target="boulanger" id="378" weight="5" />
+      <edge source="grand st jean" target="chapelier" id="379" weight="2" />
+      <edge source="grand st jean" target="charpentier" id="380" weight="5" />
+      <edge source="grand st jean" target="conseiller d'etat" id="381" weight="2" />
+      <edge source="grand st jean" target="cordonnier" id="382" weight="8" />
+      <edge source="grand st jean" target="courtepointiere" id="383" weight="3" />
+      <edge source="grand st jean" target="couturiere" id="384" weight="2" />
+      <edge source="grand st jean" target="docteur" id="385" weight="3" />
+      <edge source="grand st jean" target="domestique" id="386" weight="2" />
+      <edge source="grand st jean" target="ecrivain" id="387" weight="2" />
+      <edge source="grand st jean" target="femme de menage" id="388" weight="2" />
+      <edge source="grand st jean" target="fileur" id="389" weight="2" />
+      <edge source="grand st jean" target="fondeur" id="390" weight="7" />
+      <edge source="grand st jean" target="garde" id="391" weight="2" />
+      <edge source="grand st jean" target="gypseur" id="392" weight="3" />
+      <edge source="grand st jean" target="instituteur" id="393" weight="2" />
+      <edge source="grand st jean" target="jardinier" id="394" weight="2" />
+      <edge source="grand st jean" target="journalier" id="395" weight="9" />
+      <edge source="grand st jean" target="juge" id="396" weight="3" />
+      <edge source="grand st jean" target="libraire" id="397" weight="2" />
+      <edge source="grand st jean" target="lingere" id="398" weight="3" />
+      <edge source="grand st jean" target="macon" id="399" weight="2" />
+      <edge source="grand st jean" target="maitre" id="400" weight="4" />
+      <edge source="grand st jean" target="marchand" id="401" weight="11" />
+      <edge source="grand st jean" target="menuisier" id="402" weight="11" />
+      <edge source="grand st jean" target="negociant" id="403" weight="5" />
+      <edge source="grand st jean" target="notaire" id="404" weight="2" />
+      <edge source="grand st jean" target="ouvrier" id="405" weight="8" />
+      <edge source="grand st jean" target="procureur" id="406" weight="2" />
+      <edge source="grand st jean" target="proprietaire" id="407" weight="4" />
+      <edge source="grand st jean" target="rentier" id="408" weight="36" />
+      <edge source="grand st jean" target="repasseuse" id="409" weight="2" />
+      <edge source="grand st jean" target="sage-femme" id="410" weight="3" />
+      <edge source="grand st jean" target="serrurier" id="411" weight="5" />
+      <edge source="grand st jean" target="tailleur" id="412" weight="14" />
+      <edge source="grand st jean" target="tient pension" id="413" weight="2" />
+      <edge source="grand st jean" target="tonnelier" id="414" weight="3" />
+      <edge source="grand st jean" target="traiteur" id="415" weight="3" />
+      <edge source="grand st jean" target="vitrier" id="416" weight="2" />
+      <edge source="place st francois" target="cafetier" id="417" weight="2" />
+      <edge source="place st francois" target="concierge" id="418" weight="2" />
+      <edge source="place st francois" target="loueur de chevaux" id="419" weight="2" />
+      <edge source="place st francois" target="marchand" id="420" weight="6" />
+      <edge source="place st francois" target="notaire" id="421" weight="2" />
+      <edge source="place st francois" target="rentier" id="422" weight="20" />
+      <edge source="pres de ville" target="proprietaire" id="423" weight="2" />
+      <edge source="pres de ville" target="rentier" id="424" weight="2" />
+      <edge source="grangette" target="laboureur" id="425" weight="4" />
+      <edge source="rosiere" target="rentier" id="426" weight="2" />
+      <edge source="palud" target="boulanger" id="427" weight="2" />
+      <edge source="palud" target="instituteur" id="428" weight="4" />
+      <edge source="palud" target="lingere" id="429" weight="2" />
+      <edge source="palud" target="marchand" id="430" weight="14" />
+      <edge source="palud" target="menuisier" id="431" weight="3" />
+      <edge source="palud" target="negociant" id="432" weight="5" />
+      <edge source="palud" target="orfevre" id="433" weight="2" />
+      <edge source="palud" target="passementier" id="434" weight="2" />
+      <edge source="palud" target="patissier" id="435" weight="3" />
+      <edge source="palud" target="rentier" id="436" weight="24" />
+      <edge source="palud" target="tailleur" id="437" weight="4" />
+      <edge source="palud" target="vendeur" id="438" weight="2" />
+      <edge source="cite devant" target="charpentier" id="439" weight="2" />
+      <edge source="cite devant" target="concierge" id="440" weight="2" />
+      <edge source="cite devant" target="cordonnier" id="441" weight="8" />
+      <edge source="cite devant" target="docteur" id="442" weight="2" />
+      <edge source="cite devant" target="gendarme" id="443" weight="2" />
+      <edge source="cite devant" target="huissier" id="444" weight="3" />
+      <edge source="cite devant" target="journalier" id="445" weight="3" />
+      <edge source="cite devant" target="laitier" id="446" weight="2" />
+      <edge source="cite devant" target="marchand" id="447" weight="2" />
+      <edge source="cite devant" target="pintier" id="448" weight="2" />
+      <edge source="cite devant" target="professeur" id="449" weight="4" />
+      <edge source="cite devant" target="rentier" id="450" weight="26" />
+      <edge source="cite devant" target="sans vocation" id="451" weight="2" />
+      <edge source="cite devant" target="serrurier" id="452" weight="2" />
+      <edge source="cite devant" target="tisserand" id="453" weight="2" />
+      <edge source="cite devant" target="vigneron" id="454" weight="2" />
+      <edge source="villars" target="proprietaire" id="455" weight="2" />
+      <edge source="moulin de pepinet" target="concierge" id="456" weight="2" />
+      <edge source="moulin de pepinet" target="jardinier" id="457" weight="5" />
+      <edge source="moulin de pepinet" target="journalier" id="458" weight="4" />
+      <edge source="moulin de pepinet" target="marbrier" id="459" weight="2" />
+      <edge source="moulin de pepinet" target="meunier" id="460" weight="4" />
+      <edge source="moulin de pepinet" target="vigneron" id="461" weight="2" />
+      <edge source="chauderon" target="vigneron" id="462" weight="2" />
+      <edge source="clos de bulle" target="rentier" id="463" weight="2" />
+      <edge source="bois de vaux" target="rentier" id="464" weight="2" />
+      <edge source="bois de vaux" target="vigneron" id="465" weight="3" />
+      <edge source="barre" target=" de ville" id="466" weight="2" />
+      <edge source="barre" target="agriculteur" id="467" weight="7" />
+      <edge source="barre" target="carrier" id="468" weight="2" />
+      <edge source="barre" target="charpentier" id="469" weight="6" />
+      <edge source="barre" target="cordonnier" id="470" weight="2" />
+      <edge source="barre" target="fermier" id="471" weight="5" />
+      <edge source="barre" target="fileur" id="472" weight="2" />
+      <edge source="barre" target="garde" id="473" weight="3" />
+      <edge source="barre" target="instituteur" id="474" weight="5" />
+      <edge source="barre" target="journalier" id="475" weight="10" />
+      <edge source="barre" target="lingere" id="476" weight="2" />
+      <edge source="barre" target="macon" id="477" weight="11" />
+      <edge source="barre" target="manoeuvre" id="478" weight="2" />
+      <edge source="barre" target="menuisier" id="479" weight="8" />
+      <edge source="barre" target="meunier" id="480" weight="5" />
+      <edge source="barre" target="ministre" id="481" weight="2" />
+      <edge source="barre" target="professeur" id="482" weight="2" />
+      <edge source="barre" target="rentier" id="483" weight="10" />
+      <edge source="barre" target="sans vocation" id="484" weight="6" />
+      <edge source="barre" target="taillandier" id="485" weight="2" />
+      <edge source="barre" target="teinturier" id="486" weight="3" />
+      <edge source="barre" target="vendeur" id="487" weight="2" />
+      <edge source="barre" target="vigneron" id="488" weight="5" />
+      <edge source="mon repos" target="rentier" id="489" weight="2" />
+      <edge source="mousquines" target="rentier" id="490" weight="4" />
+      <edge source="craivavers" target="laboureur" id="491" weight="2" />
+      <edge source="petit singe" target="rentier" id="492" weight="9" />
+      <edge source="montee st francois" target="chapelier" id="493" weight="3" />
+      <edge source="montee st francois" target="fabricant de parapluies" id="494" weight="2" />
+      <edge source="montee st francois" target="marchand" id="495" weight="6" />
+      <edge source="montee st francois" target="rentier" id="496" weight="4" />
+      <edge source="montee st francois" target="tailleur" id="497" weight="2" />
+      <edge source="jordils" target="proprietaire" id="498" weight="2" />
+      <edge source="place du pont" target="ferblantier" id="499" weight="2" />
+      <edge source="place du pont" target="marchand" id="500" weight="2" />
+      <edge source="place du pont" target="meunier" id="501" weight="2" />
+      <edge source="montagibert" target="rentier" id="502" weight="2" />
+      <edge source="cour" target="fermier" id="503" weight="3" />
+      <edge source="cour" target="jardinier" id="504" weight="6" />
+      <edge source="cour" target="journalier" id="505" weight="3" />
+      <edge source="cour" target="proprietaire" id="506" weight="16" />
+      <edge source="cour" target="rentier" id="507" weight="10" />
+      <edge source="cour" target="vigneron" id="508" weight="11" />
+      <edge source="croix rouge" target="fermier" id="509" weight="2" />
+      <edge source="grange-neuve" target="agriculteur" id="510" weight="7" />
+      <edge source="grange-neuve" target="gagne-denier" id="511" weight="2" />
+      <edge source="grange-neuve" target="garde" id="512" weight="2" />
+      <edge source="la berallaz" target="agriculteur" id="513" weight="4" />
+      <edge source="violette" target="proprietaire" id="514" weight="2" />
+      <edge source="chalet de vernand" target="fermier" id="515" weight="2" />
+      <edge source="rue de l'hopital" target="assiste" id="516" weight="2" />
+      <edge source="rue de l'hopital" target="charpentier" id="517" weight="2" />
+      <edge source="rue de l'hopital" target="cordonnier" id="518" weight="2" />
+      <edge source="rue de l'hopital" target="couvreur" id="519" weight="2" />
+      <edge source="rue de l'hopital" target="domestique" id="520" weight="2" />
+      <edge source="rue de l'hopital" target="journalier" id="521" weight="4" />
+      <edge source="rue de l'hopital" target="serrurier" id="522" weight="2" />
+      <edge source="petit ouchy" target="vigneron" id="523" weight="2" />
+      <edge source="vernand-dessous" target="fermier" id="524" weight="2" />
+      <edge source="cite dessous" target="cordonnier" id="525" weight="2" />
+      <edge source="cite dessous" target="femme de menage" id="526" weight="2" />
+      <edge source="cite dessous" target="instituteur" id="527" weight="2" />
+      <edge source="cite dessous" target="journalier" id="528" weight="10" />
+      <edge source="cite dessous" target="rentier" id="529" weight="7" />
+      <edge source="cite dessous" target="tailleur" id="530" weight="2" />
+      <edge source="cite dessous" target="tailleur de pierres" id="531" weight="2" />
+      <edge source="rue de bourg" target="aubergiste" id="532" weight="3" />
+      <edge source="rue de bourg" target="avocat" id="533" weight="2" />
+      <edge source="rue de bourg" target="bijoutier" id="534" weight="2" />
+      <edge source="rue de bourg" target="boulanger" id="535" weight="2" />
+      <edge source="rue de bourg" target="coiffeur" id="536" weight="2" />
+      <edge source="rue de bourg" target="confiseur" id="537" weight="2" />
+      <edge source="rue de bourg" target="cordonnier" id="538" weight="3" />
+      <edge source="rue de bourg" target="docteur" id="539" weight="2" />
+      <edge source="rue de bourg" target="horloger" id="540" weight="2" />
+      <edge source="rue de bourg" target="instituteur" id="541" weight="2" />
+      <edge source="rue de bourg" target="journalier" id="542" weight="2" />
+      <edge source="rue de bourg" target="marchand" id="543" weight="7" />
+      <edge source="rue de bourg" target="negociant" id="544" weight="17" />
+      <edge source="rue de bourg" target="ouvrier" id="545" weight="3" />
+      <edge source="rue de bourg" target="rentier" id="546" weight="47" />
+      <edge source="rue de bourg" target="secretaire" id="547" weight="2" />
+      <edge source="rue de bourg" target="sellier" id="548" weight="2" />
+      <edge source="rue de bourg" target="tailleur" id="549" weight="8" />
+      <edge source="rue de bourg" target="traiteur" id="550" weight="2" />
+      <edge source="rue de bourg" target="voiturier" id="551" weight="5" />
+      <edge source="petit chene" target="repasseuse" id="552" weight="2" />
+      <edge source="singe" target="vigneron" id="553" weight="3" />
+      <edge source="montoie" target="proprietaire" id="554" weight="3" />
+      <edge source="montoie" target="vigneron" id="555" weight="3" />
+      <edge source="petit st jean" target="boulanger" id="556" weight="2" />
+      <edge source="petit st jean" target="cordonnier" id="557" weight="4" />
+      <edge source="petit st jean" target="imprimeur" id="558" weight="2" />
+      <edge source="petit st jean" target="instituteur" id="559" weight="2" />
+      <edge source="petit st jean" target="journalier" id="560" weight="3" />
+      <edge source="petit st jean" target="marchand" id="561" weight="5" />
+      <edge source="petit st jean" target="menuisier" id="562" weight="2" />
+      <edge source="petit st jean" target="meunier" id="563" weight="2" />
+      <edge source="petit st jean" target="potier" id="564" weight="2" />
+      <edge source="petit st jean" target="rentier" id="565" weight="5" />
+      <edge source="petit st jean" target="tailleur" id="566" weight="5" />
+      <edge source="valentin" target="rentier" id="567" weight="3" />
+      <edge source="montbenon" target="proprietaire" id="568" weight="3" />
+      <edge source="montbenon" target="rentier" id="569" weight="4" />
+    </edges>
+  </graph>
+</gexf>

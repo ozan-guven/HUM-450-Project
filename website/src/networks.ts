@@ -14,10 +14,80 @@ const TEXT_ID = "#network-text";
 
 const DEFAULT_LINK_COLOR = "#979487";
 const DEFAULT_NODE_COLOR = "#aaaaaa";
+
+const NODE_ID_TO_NAME = (id: string) => {
+    const map = {
+        "bourg": 'Bourg',
+        "place_st_francois": 'Place St-François',
+        "chailly": 'Chailly',
+        "grange-neuve": 'Grange-Neuve',
+        "grange_neuve": 'Grange-Neuve',
+        "la_sallaz": 'La Sallaz',
+        "ouchy": 'Ouchy',
+        "barre": 'Barre',
+        "cite_derriere": 'Cité Derrière',
+        "cite_dessous": 'Cité Dessous',
+        "cheneau_de_bourg": 'Cheneau-de-Bourg',
+        "chenneau": 'Cheneau-de-Bourg',
+        "montee_st_francois": 'Montée St-François',
+        "rue_du_pont": 'Rue du Pré',
+        "rue_du_pre": 'Rue du Pré',
+        "ale": 'Ale',
+        "grand_st_jean": 'Grand St-Jean',
+        "montee_de_st_laurent": 'Montée de St-Laurent',
+        "palud": 'Palud',
+        "st_laurent": 'St-Laurent',
+        "marterey": 'Marterey',
+        "affaires_division": 'Affaires',
+        "campagne_division": 'Campagne',
+        "cathedrale_division": 'Cathédrale',
+        "centre_division": 'Centre',
+        "commerce_division": 'Commerce',
+        "culture_division": 'Culture',
+        "administration": 'Administration',
+        "agricole": 'Agricole',
+        "artisanat": 'Artisanat',
+        "commerce": 'Commerce',
+        "construction": 'Construction',
+        "rente": 'Rente',
+        "service": 'Service',
+        "hors_lausanne": 'Hors Lausanne',
+        "lausanne": 'Lausanne',
+        "suisse_allemande": 'Suisse Allemande',
+        "france": 'France',
+        "grandson": 'Grandson',
+        "aubonne": 'Aubonne',
+        "morges": 'Morges',
+        "nyon": 'Nyon',
+        "pays_d_enhaut": 'Pays d\'Enhaut',
+        "vaud": 'Vaud',
+        "angleterre": 'Angleterre',
+        "italie": 'Italie',
+        "rolle": 'Rolle',
+        "geneve": 'Genève',
+        "orbe": 'Orbe',
+        "vevey": 'Vevey',
+        "la_vallee": 'La Vallée',
+        "cossonay": 'Cossonay',
+        "aigle": 'Aigle',
+        "neuchatel": 'Neuchâtel',
+        "payerne": 'Payerne',
+        "yverdon": 'Yverdon',
+        "echallens": 'Echallens',
+        "fribourg": 'Fribourg',
+        "avenches": 'Avenches',
+        "moudon": 'Moudon',
+        "oron": 'Oron',
+        "lavaux": 'Lavaux',
+    };
+
+    return map[id] ?? id;
+};
+
 const DEFAULT_NODE_COLOR_BY_TYPE = {
     "road_vocation_data": {
-        "road": "#289e61",
-        "vocation": "#9e2846"
+        "street": "#289e61",
+        "job": "#9e2846"
     },
     "bipartite_division_type_metiers": {
         "division": "#289e61",
@@ -408,7 +478,7 @@ class Network {
         nodeEnter
             .append("text")
             .attr("class", "node-text")
-            .text(function (d) { return d.label; })
+            .text(function (d) { return NODE_ID_TO_NAME(d.label) })
             .attr("font-size", (d) => { return d.size + this.labelSizeAdd; })
             .attr("font-family", "sans-serif")
             .attr("font-weight", "bold")

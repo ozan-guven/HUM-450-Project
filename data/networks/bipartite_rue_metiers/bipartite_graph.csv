@@ -1,0 +1,571 @@
+street,job,Weight
+gottettaz,jardinier,3
+gottettaz,journalier,2
+mercerie,cordonnier,9
+mercerie,couvreur,2
+mercerie,instituteur,2
+mercerie,journalier,4
+mercerie,marchand,2
+mercerie,menuisier,4
+mercerie,ouvrier,4
+mercerie,petite marchande,2
+mercerie,rentier,4
+mercerie,tailleur,4
+mercerie,tient pension,2
+bugnon,charpentier,2
+bugnon,manoeuvre,2
+derriere les terreaux,charpentier,2
+derriere les terreaux,rentier,5
+paleyres,vigneron,2
+montee de st laurent,boulanger,2
+montee de st laurent,cordonnier,2
+montee de st laurent,couturiere,2
+montee de st laurent,ferblantier,2
+montee de st laurent,garde,3
+montee de st laurent,journalier,9
+montee de st laurent,juge,2
+montee de st laurent,laitier,2
+montee de st laurent,lingere,3
+montee de st laurent,marchand,6
+montee de st laurent,menuisier,3
+montee de st laurent,perruquier,2
+montee de st laurent,proprietaire,2
+montee de st laurent,rentier,3
+montee de st laurent,tailleur,4
+montee de st laurent,tient ecole,2
+montee de st laurent,tonnelier,2
+montee de st laurent,traiteur,2
+montee de st laurent,vendeur,2
+taulau?,proprietaire,7
+villamont maison de maitres,rentier,6
+verdonnet,laboureur,3
+bois-gentil,proprietaire,3
+bois-gentil,tuilier,2
+pontaise,proprietaire,3
+madeleine,marchand,10
+madeleine,peintre,2
+madeleine,rentier,6
+madeleine,sans vocation,5
+madeleine,serrurier,2
+madeleine,vendeur,2
+madeleine,voiturier,2
+boston,rentier,2
+loup,tuilier,3
+vernand,agriculteur,2
+rue de l'ale,agriculteur,2
+rue de l'ale,carrier,2
+rue de l'ale,charpentier,8
+rue de l'ale,charretier,2
+rue de l'ale,charron,3
+rue de l'ale,cordonnier,2
+rue de l'ale,fileur,4
+rue de l'ale,fontenier,3
+rue de l'ale,garde,5
+rue de l'ale,gypseur,2
+rue de l'ale,jardinier,6
+rue de l'ale,journalier,18
+rue de l'ale,laboureur,3
+rue de l'ale,macon,3
+rue de l'ale,manoeuvre,4
+rue de l'ale,marchand,10
+rue de l'ale,marechal-ferrant,2
+rue de l'ale,menuisier,5
+rue de l'ale,ouvrier,7
+rue de l'ale,rentier,7
+rue de l'ale,sans vocation,2
+rue de l'ale,serrurier,3
+rue de l'ale,tisserand,2
+rue de l'ale,tourneur,2
+rue de l'ale,vigneron,27
+rue de l'ale,voiturier,2
+bellevue,fermier,2
+bellevue,rentier,2
+rue de st pierre,aubergiste,2
+rue de st pierre,boulanger,3
+rue de st pierre,confiseur,2
+rue de st pierre,conseiller d'etat,2
+rue de st pierre,cordonnier,5
+rue de st pierre,docteur,3
+rue de st pierre,gypseur,3
+rue de st pierre,journalier,3
+rue de st pierre,libraire,2
+rue de st pierre,lingere,2
+rue de st pierre,maitre,2
+rue de st pierre,marchand,10
+rue de st pierre,negociant,5
+rue de st pierre,rentier,41
+rue de st pierre,sellier,3
+rue de st pierre,tailleur,11
+rue de st pierre,voiturier,3
+chalet a marin,agriculteur,2
+petit clos,rentier,2
+petit clos,vigneron,2
+bel-air,fermier,2
+grotte,jardinier,2
+grotte,locataire,2
+grotte,negociant,2
+grotte,rentier,9
+rue d'etraz,avocat,2
+rue d'etraz,charpentier,2
+rue d'etraz,charron,2
+rue d'etraz,cordonnier,2
+rue d'etraz,femme de menage,2
+rue d'etraz,gypseur,2
+rue d'etraz,jardinier,2
+rue d'etraz,journalier,8
+rue d'etraz,lingere,3
+rue d'etraz,maitre,2
+rue d'etraz,marchand,3
+rue d'etraz,menuisier,2
+rue d'etraz,pintier,3
+rue d'etraz,rentier,20
+rue d'etraz,vigneron,6
+rue d'etraz,voiturier,3
+pont des sauge,agriculteur,2
+pont des sauge,proprietaire,2
+chailly,agriculteur,2
+chailly,carrier,4
+chailly,fermier,2
+chailly,journalier,6
+chailly,laboureur,7
+chailly,tisserand,2
+chailly,vigneron,3
+maupas,charpentier,2
+maupas,jardinier,3
+maupas,journalier,2
+maupas,rentier,7
+ecole de charite,instituteur,4
+contigny,vigneron,2
+cite derriere,avocat,2
+cite derriere,charpentier,5
+cite derriere,domestique,2
+cite derriere,fontenier,2
+cite derriere,gendarme,4
+cite derriere,huissier,2
+cite derriere,instituteur,3
+cite derriere,journalier,12
+cite derriere,macon,6
+cite derriere,manoeuvre,2
+cite derriere,marchand,2
+cite derriere,menuisier,10
+cite derriere,ministre,3
+cite derriere,rentier,15
+cite derriere,sans vocation,8
+cite derriere,tailleur,2
+cite derriere,tailleur de pierres,3
+vennes,agriculteur,2
+vennes,jardinier,2
+vennes,laboureur,5
+vennes,proprietaire,2
+vennes,rentier,3
+rue de chaucrau,charpentier,2
+rue de chaucrau,charron,2
+rue de chaucrau,cordonnier,2
+rue de chaucrau,femme de menage,2
+rue de chaucrau,fileur,2
+rue de chaucrau,garde,4
+rue de chaucrau,journalier,10
+rue de chaucrau,juge,2
+rue de chaucrau,lingere,3
+rue de chaucrau,maitre,2
+rue de chaucrau,manoeuvre,2
+rue de chaucrau,marchand,3
+rue de chaucrau,menuisier,5
+rue de chaucrau,ouvrier,8
+rue de chaucrau,rentier,2
+rue de chaucrau,tailleur,2
+rue de chaucrau,tailleur de pierres,4
+rue de chaucrau,vigneron,8
+rue de chaucrau,voiturier,2
+la sallaz,fermier,2
+la sallaz,journalier,3
+la sallaz,laboureur,4
+la sallaz,locataire,2
+la sallaz,tisserand,2
+rosemont,proprietaire,2
+rosemont,rentier,2
+rasude,rentier,3
+escaliers du marche,cordonnier,2
+escaliers du marche,domestique,2
+escaliers du marche,garde,2
+escaliers du marche,instituteur,2
+escaliers du marche,journalier,3
+escaliers du marche,maitre,2
+escaliers du marche,peintre,2
+escaliers du marche,rentier,4
+escaliers du marche,sans vocation,2
+escaliers du marche,tailleur d'habits,2
+chemin de georgette,rentier,2
+croix de rive,proprietaire,2
+servan,rentier,4
+ouchy,aubergiste,2
+ouchy,batelier,5
+ouchy,blanchisseur,2
+ouchy,boucher,2
+ouchy,chargeur,5
+ouchy,journalier,33
+ouchy,negociant,4
+ouchy,ouvrier,2
+ouchy,pecheur,5
+ouchy,pintier,2
+ouchy,proprietaire,27
+ouchy,rentier,8
+ouchy,tailleur,3
+ouchy,tonnelier,4
+ouchy,vigneron,4
+marterey,chapelier,3
+marterey,charpentier,16
+marterey,charretier,3
+marterey,cloutier,2
+marterey,cordonnier,6
+marterey,couvreur,2
+marterey,domestique,4
+marterey,femme de menage,2
+marterey,fournier,2
+marterey,garde,3
+marterey,inspecteur,2
+marterey,instituteur,2
+marterey,jardinier,6
+marterey,journalier,26
+marterey,lessiveuse,5
+marterey,lingere,12
+marterey,macon,3
+marterey,manoeuvre,4
+marterey,marchand,2
+marterey,marechal-ferrant,6
+marterey,menuisier,6
+marterey,municipal,2
+marterey,palefrenier,3
+marterey,pintier,2
+marterey,proprietaire,2
+marterey,rentier,24
+marterey,sellier,3
+marterey,tailleur,6
+marterey,tailleur d'habits,2
+marterey,tailleur de pierres,2
+marterey,tisserand,3
+marterey,vigneron,21
+marterey,voiturier,13
+sebeilllon,proprietaire,2
+sebeilllon,vigneron,3
+languedoc,vigneron,2
+vernand-dessus,fermier,4
+vernand-dessus,proprietaire,3
+petite rue,garde,3
+rue du pre,assiste,2
+rue du pre,boucher,9
+rue du pre,boulanger,3
+rue du pre,carrier,2
+rue du pre,chamoiseur,2
+rue du pre,charpentier,7
+rue du pre,cordonnier,15
+rue du pre,corroyeur,2
+rue du pre,couvreur,3
+rue du pre,domestique,4
+rue du pre,fabricant d'instruments,2
+rue du pre,femme de menage,5
+rue du pre,gantier,5
+rue du pre,garde,4
+rue du pre,imprimeur,7
+rue du pre,journalier,19
+rue du pre,laboureur,2
+rue du pre,laitier,3
+rue du pre,lessiveuse,3
+rue du pre,lingere,9
+rue du pre,macon,3
+rue du pre,manoeuvre,4
+rue du pre,marchand,10
+rue du pre,menuisier,3
+rue du pre,ouvrier,4
+rue du pre,proprietaire,3
+rue du pre,rentier,6
+rue du pre,tailleur,13
+rue du pre,tailleur de pierres,2
+rue du pre,tanneur,10
+rue du pre,tient pension,2
+rue du pre,tisserand,2
+rue du pre,traiteur,2
+rue du pre,tripier,2
+st etienne,cordonnier,4
+st etienne,journalier,2
+st etienne,rentier,9
+st etienne,tailleur de pierres,2
+st etienne,teinturier,2
+st etienne,tient pension,2
+villard,rentier,2
+villard,vigneron,2
+calvaire,cordonnier,2
+calvaire,laboureur,2
+grand chene,docteur,2
+grand chene,loueur de chevaux,2
+grand chene,maitre,2
+grand chene,marchand,4
+grand chene,proprietaire,3
+grand chene,rentier,14
+grand chene,sage-femme,2
+grand chene,traiteur,2
+chabliere,fermier,2
+chavannes,laboureur,7
+devin,laboureur,3
+montheron,agriculteur,2
+montheron,meunier,2
+rue du pont,bijoutier,3
+rue du pont,chapelier,2
+rue du pont,chaudronnier,2
+rue du pont,cordonnier,2
+rue du pont,epicier,3
+rue du pont,garde,4
+rue du pont,libraire,2
+rue du pont,marchand,6
+rue du pont,negociant,5
+rue du pont,rentier,8
+rue du pont,revendeuse,2
+rue du pont,tailleur,6
+la cage ,laboureur,2
+place de st laurent,avocat,2
+place de st laurent,confiseur,2
+place de st laurent,cordonnier,5
+place de st laurent,fondeur,2
+place de st laurent,horloger,2
+place de st laurent,instituteur,3
+place de st laurent,journalier,4
+place de st laurent,juge,3
+place de st laurent,lingere,3
+place de st laurent,macon,2
+place de st laurent,marchand,8
+place de st laurent,menuisier,8
+place de st laurent,negociant,2
+place de st laurent,ouvrier,4
+place de st laurent,rentier,14
+place de st laurent,tailleur,2
+place de st laurent,vigneron,3
+place de st francois,coiffeur,2
+place de st francois,conducteur de diligence,2
+place de st francois,confiseur,2
+place de st francois,cordonnier,7
+place de st francois,couturiere,3
+place de st francois,journalier,2
+place de st francois,marchand,10
+place de st francois,negociant,7
+place de st francois,orfevre,2
+place de st francois,rentier,14
+place de st francois,tailleur,6
+place st laurent,rentier,4
+cheneau de bourg,agriculteur,5
+cheneau de bourg,boulanger,2
+cheneau de bourg,charpentier,7
+cheneau de bourg,cordonnier,5
+cheneau de bourg,couturiere,2
+cheneau de bourg,fumiste,2
+cheneau de bourg,garde,2
+cheneau de bourg,gypseur,3
+cheneau de bourg,huissier,2
+cheneau de bourg,imprimeur,2
+cheneau de bourg,journalier,23
+cheneau de bourg,lingere,4
+cheneau de bourg,macon,5
+cheneau de bourg,marechal-ferrant,2
+cheneau de bourg,menuisier,7
+cheneau de bourg,ouvrier,3
+cheneau de bourg,rentier,9
+cheneau de bourg,repasseuse,2
+cheneau de bourg,serrurier,2
+cheneau de bourg,tailleur,6
+cheneau de bourg,tanneur,5
+cheneau de bourg,vendeur,2
+cheneau de bourg,vigneron,3
+cheneau de bourg,voiturier,5
+grand st jean,assiste,2
+grand st jean,blanchisseur,5
+grand st jean,boulanger,5
+grand st jean,chapelier,2
+grand st jean,charpentier,5
+grand st jean,conseiller d'etat,2
+grand st jean,cordonnier,8
+grand st jean,courtepointiere,3
+grand st jean,couturiere,2
+grand st jean,docteur,3
+grand st jean,domestique,2
+grand st jean,ecrivain,2
+grand st jean,femme de menage,2
+grand st jean,fileur,2
+grand st jean,fondeur,7
+grand st jean,garde,2
+grand st jean,gypseur,3
+grand st jean,instituteur,2
+grand st jean,jardinier,2
+grand st jean,journalier,9
+grand st jean,juge,3
+grand st jean,libraire,2
+grand st jean,lingere,3
+grand st jean,macon,2
+grand st jean,maitre,4
+grand st jean,marchand,11
+grand st jean,menuisier,11
+grand st jean,negociant,5
+grand st jean,notaire,2
+grand st jean,ouvrier,8
+grand st jean,procureur,2
+grand st jean,proprietaire,4
+grand st jean,rentier,36
+grand st jean,repasseuse,2
+grand st jean,sage-femme,3
+grand st jean,serrurier,5
+grand st jean,tailleur,14
+grand st jean,tient pension,2
+grand st jean,tonnelier,3
+grand st jean,traiteur,3
+grand st jean,vitrier,2
+place st francois,cafetier,2
+place st francois,concierge,2
+place st francois,loueur de chevaux,2
+place st francois,marchand,6
+place st francois,notaire,2
+place st francois,rentier,20
+pres de ville,proprietaire,2
+pres de ville,rentier,2
+grangette,laboureur,4
+rosiere,rentier,2
+palud,boulanger,2
+palud,instituteur,4
+palud,lingere,2
+palud,marchand,14
+palud,menuisier,3
+palud,negociant,5
+palud,orfevre,2
+palud,passementier,2
+palud,patissier,3
+palud,rentier,24
+palud,tailleur,4
+palud,vendeur,2
+cite devant,charpentier,2
+cite devant,concierge,2
+cite devant,cordonnier,8
+cite devant,docteur,2
+cite devant,gendarme,2
+cite devant,huissier,3
+cite devant,journalier,3
+cite devant,laitier,2
+cite devant,marchand,2
+cite devant,pintier,2
+cite devant,professeur,4
+cite devant,rentier,26
+cite devant,sans vocation,2
+cite devant,serrurier,2
+cite devant,tisserand,2
+cite devant,vigneron,2
+villars,proprietaire,2
+moulin de pepinet,concierge,2
+moulin de pepinet,jardinier,5
+moulin de pepinet,journalier,4
+moulin de pepinet,marbrier,2
+moulin de pepinet,meunier,4
+moulin de pepinet,vigneron,2
+chauderon,vigneron,2
+clos de bulle,rentier,2
+bois de vaux,rentier,2
+bois de vaux,vigneron,3
+barre, de ville,2
+barre,agriculteur,7
+barre,carrier,2
+barre,charpentier,6
+barre,cordonnier,2
+barre,fermier,5
+barre,fileur,2
+barre,garde,3
+barre,instituteur,5
+barre,journalier,10
+barre,lingere,2
+barre,macon,11
+barre,manoeuvre,2
+barre,menuisier,8
+barre,meunier,5
+barre,ministre,2
+barre,professeur,2
+barre,rentier,10
+barre,sans vocation,6
+barre,taillandier,2
+barre,teinturier,3
+barre,vendeur,2
+barre,vigneron,5
+mon repos,rentier,2
+mousquines,rentier,4
+craivavers,laboureur,2
+petit singe,rentier,9
+montee st francois,chapelier,3
+montee st francois,fabricant de parapluies,2
+montee st francois,marchand,6
+montee st francois,rentier,4
+montee st francois,tailleur,2
+jordils,proprietaire,2
+place du pont,ferblantier,2
+place du pont,marchand,2
+place du pont,meunier,2
+montagibert,rentier,2
+cour,fermier,3
+cour,jardinier,6
+cour,journalier,3
+cour,proprietaire,16
+cour,rentier,10
+cour,vigneron,11
+croix rouge,fermier,2
+grange-neuve,agriculteur,7
+grange-neuve,gagne-denier,2
+grange-neuve,garde,2
+la berallaz,agriculteur,4
+violette,proprietaire,2
+chalet de vernand,fermier,2
+rue de l'hopital,assiste,2
+rue de l'hopital,charpentier,2
+rue de l'hopital,cordonnier,2
+rue de l'hopital,couvreur,2
+rue de l'hopital,domestique,2
+rue de l'hopital,journalier,4
+rue de l'hopital,serrurier,2
+petit ouchy,vigneron,2
+vernand-dessous,fermier,2
+cite dessous,cordonnier,2
+cite dessous,femme de menage,2
+cite dessous,instituteur,2
+cite dessous,journalier,10
+cite dessous,rentier,7
+cite dessous,tailleur,2
+cite dessous,tailleur de pierres,2
+rue de bourg,aubergiste,3
+rue de bourg,avocat,2
+rue de bourg,bijoutier,2
+rue de bourg,boulanger,2
+rue de bourg,coiffeur,2
+rue de bourg,confiseur,2
+rue de bourg,cordonnier,3
+rue de bourg,docteur,2
+rue de bourg,horloger,2
+rue de bourg,instituteur,2
+rue de bourg,journalier,2
+rue de bourg,marchand,7
+rue de bourg,negociant,17
+rue de bourg,ouvrier,3
+rue de bourg,rentier,47
+rue de bourg,secretaire,2
+rue de bourg,sellier,2
+rue de bourg,tailleur,8
+rue de bourg,traiteur,2
+rue de bourg,voiturier,5
+petit chene,repasseuse,2
+singe,vigneron,3
+montoie,proprietaire,3
+montoie,vigneron,3
+petit st jean,boulanger,2
+petit st jean,cordonnier,4
+petit st jean,imprimeur,2
+petit st jean,instituteur,2
+petit st jean,journalier,3
+petit st jean,marchand,5
+petit st jean,menuisier,2
+petit st jean,meunier,2
+petit st jean,potier,2
+petit st jean,rentier,5
+petit st jean,tailleur,5
+valentin,rentier,3
+montbenon,proprietaire,3
+montbenon,rentier,4
