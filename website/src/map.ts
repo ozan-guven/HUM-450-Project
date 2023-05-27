@@ -3,6 +3,9 @@ import * as d3 from "d3";
 
 const TOOLTIP_ELEMENT_ID = 'sankey-tooltip';
 
+const DEFAULT_COLOR = "#FAF4DD";
+const DEFAULT_MAP_COLOR = "#FFFFFF";
+
 const SELECT_JOB = "select_job";
 const CHECK_PROPORTION = "check_proportion";
 const MAP_BARPLOT_JOBS_ELEMENT_ID = 'bar-jobs';
@@ -86,13 +89,13 @@ const NODE_ID_TO_NAME = (id: string) => {
 
 const DEFAULT_COLORS = (id) => {
     const map = {
-        'administration': 'blue',
-        'agricole': '#00A59B',
-        'artisanat': '#6F2282',
-        'commerce': '#E84E10',
-        'construction': '#FCBB00',
-        'rente': '#143A85',
-        'service': '#00973B',
+        'administration': '#2081C3',
+        'agricole': '#289e61',
+        'artisanat': '#5136a8',
+        'commerce': '#edb724',
+        'construction': '#C45AB3',
+        'rente': '#9E2846',
+        'service': '#F4743B',
     };
 
     return map[id] || "turquoise";//"#FAF4DD";
@@ -104,13 +107,13 @@ const SCALE_DOMAINS = {
     // Jobs
     "population": { 'max': 504, 'color': 'purple', 'max_ratio': 0.020217088327393808 * SQUARED_METER_TO_KM},
     'no_selection': { 'min': 0, 'max': 1 },
-    'administration': { 'min': 1, 'max': 17, 'color': "blue", 'max_ratio': 0.081340 },
-    'agricole': { 'min': 3, 'max': 122, 'color': "#00A59B", 'max_ratio': 0.657143 },
-    'artisanat': { 'min': 2, 'max': 93, 'color': "#6F2282", 'max_ratio': 0.308081 },
-    'commerce': { 'min': 6, 'max': 44, 'color': "#E84E10", 'max_ratio': 0.135000 },
-    'construction': { 'min': 1, 'max': 39, 'color': "#FCBB00", 'max_ratio': 0.135458 },
-    'rente': { 'min': 5, 'max': 140, 'color': "#143A85", 'max_ratio': 0.412979 },
-    'service': { 'min': 1, 'max': 77, 'color': "#00973B", 'max_ratio': 0.158103 },
+    'administration': { 'min': 1, 'max': 17, 'color': "#2081C3", 'max_ratio': 0.081340 },
+    'agricole': { 'min': 3, 'max': 122, 'color': "#289e61", 'max_ratio': 0.657143 },
+    'artisanat': { 'min': 2, 'max': 93, 'color': "#725AC1", 'max_ratio': 0.308081 },
+    'commerce': { 'min': 6, 'max': 44, 'color': "#F4B860", 'max_ratio': 0.135000 },
+    'construction': { 'min': 1, 'max': 39, 'color': "#C45AB3", 'max_ratio': 0.135458 },
+    'rente': { 'min': 5, 'max': 140, 'color': "#9E2846", 'max_ratio': 0.412979 },
+    'service': { 'min': 1, 'max': 77, 'color': "#F4743B", 'max_ratio': 0.158103 },
 
     // Origins 
     "not_lausanne": { 'max': 288, 'color': 'turquoise', 'max_ratio': 0.6571428571428571 },
@@ -259,8 +262,10 @@ export class DivisionsMap {
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? selected_domain.max_ratio : selected_domain.max])
-            .range(["#FAF4DD", selected_domain.color]);
+                selectedProportion ? selected_domain.max_ratio : selected_domain.max
+            ])
+            .interpolate(d3.interpolateHcl)
+            .range([d3.hcl(DEFAULT_MAP_COLOR), d3.hcl(selected_domain.color)]);
 
         // Update the fill color of the map zones based on the selected job
         this.layer_1
@@ -290,8 +295,10 @@ export class DivisionsMap {
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? selected_domain.max_ratio : selected_domain.max])
-            .range(["#FAF4DD", selected_domain.color]);
+                selectedProportion ? selected_domain.max_ratio : selected_domain.max
+            ])
+            .interpolate(d3.interpolateHcl)
+            .range([d3.hcl(DEFAULT_MAP_COLOR), d3.hcl(selected_domain.color)]);
 
         // Update the fill color of the map zones based on the selected job
         this.layer_1
@@ -335,8 +342,10 @@ export class DivisionsMap {
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? selected_domain.max_ratio : selected_domain.max])
-            .range(["#FAF4DD", selected_domain.color]);
+                selectedProportion ? selected_domain.max_ratio : selected_domain.max
+            ])
+            .interpolate(d3.interpolateHcl)
+            .range([d3.hcl(DEFAULT_MAP_COLOR), d3.hcl(selected_domain.color)]);
 
         // Update the fill color of the map zones based on the selected job
         this.layer_1
@@ -494,8 +503,10 @@ export class DivisionsMap {
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? selected_domain.max_ratio * (selection ==="population" ? 1: 100): selected_domain.max])
-            .range(["#FAF4DD", selected_domain.color]);
+                selectedProportion ? selected_domain.max_ratio : selected_domain.max
+            ])
+            .interpolate(d3.interpolateHcl)
+            .range([d3.hcl(DEFAULT_MAP_COLOR), d3.hcl(selected_domain.color)]);
 
         // Select the linearGradient to update it with a transition
         const linearGradient = this.svg.select("#linear-gradient")
@@ -503,12 +514,12 @@ export class DivisionsMap {
         linearGradient.select("#gradient-start")
             .transition()
             .duration(500)
-            .attr("stop-color", colorScale.range()[0]);
+            .attr("stop-color", colorScale(0));
 
         linearGradient.select("#gradient-end")
             .transition()
             .duration(500)
-            .attr("stop-color", colorScale.range()[1]);
+            .attr("stop-color", colorScale(selectedProportion ? selected_domain.max_ratio : selected_domain.max));
 
         // Select te legend rectangle to update the color
         const legendRect = this.svg.select("#legend-rect");
