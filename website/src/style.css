@@ -628,6 +628,7 @@ p {
   position: absolute; 
   visibility: hidden;
   padding: 3px;
+  pointer-events: none;
 }
 
 .sankey-rect {

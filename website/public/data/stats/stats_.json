@@ -428,14 +428,19 @@
         0,
         0
     ],
-    "non_permuted_ci_lower": 0.15486887030375418,
-    "non_permuted_ci_upper": 0.20499326711564145,
-    "permuted_ci_lower": 0.08205905168393092,
-    "permuted_ci_upper": 0.10021212729480321,
-    "p_value": 0.0,
-    "t_stat": 202.89998164440797,
-    "t_p_value": 0.0,
+    "non_permuted_ci_lower": 0.20300515252721138,
+    "non_permuted_ci_upper": 0.39843646468258476,
+    "permuted_ci_lower": 0.21123301624172705,
+    "permuted_ci_upper": 0.4383214828779344,
+    "p_value": 0.58,
+    "t_stat": -2.0010264661569495,
+    "t_p_value": 0.04812706347075809,
     "features": [
-        "chef_annee_arrivee"
+        "chef_vocation_class",
+        "chef_origine_class",
+        "chef_annee_naissance",
+        "enfants",
+        "pensionnaires",
+        "chef_origine_bin"
     ]
 }

@@ -51,7 +51,7 @@ export class StatsPlot {
 
     private async loadData(): Promise<void> {
         return new Promise((resolve) => {
-            const features = this.statsFeatures.sort().reverse().join('_');
+            const features = this.statsFeatures.sort().join('_');
 
             d3.json(`${STATS_DATA_PATH_PREFIX}stats_${features}${STATS_DATA_PATH_SUFFIX}`).then((data) => {
                 this.data = data;
