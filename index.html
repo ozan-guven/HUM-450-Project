@@ -1,388 +1,506 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Histoire Urbaine Digitale</title>
-    
-    <script type="module" crossorigin src="./assets/main-83f6e6f7.js"></script>
-    <link rel="stylesheet" href="./assets/index-518ffdcf.css">
-  </head>
-  <body>
-    <div id="sankey-tooltip"></div>
 
-    <div class="app">
-      <div id="title-container" class="container">
-        <h1 id="title">Les communautés de Lausanne au XIX<sup>ème</sup> siècle</h1>
-        <div id="day-sky"></div>
-        <div id="sun"></div>
-        <div id="city"></div>
-        <div id="cathedral"></div>
-        <div id="cloud1" class="cloud">
-          <img src="data:image/png;base64,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" alt="Cloud 1" />
-        </div>        
-        <div id="cloud2" class="cloud">
-          <img src="data:image/png;base64,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" alt="Cloud 2" />
-        </div>
-        <div id="cloud3" class="cloud">
-          <img src="data:image/png;base64,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" alt="Cloud 3" />
-        </div> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Histoire Urbaine Digitale</title>
+  
+  <script type="module" crossorigin src="./assets/main-a45c936e.js"></script>
+  <link rel="stylesheet" href="./assets/index-e5702430.css">
+</head>
+
+<body>
+  <div id="sankey-tooltip"></div>
+
+  <div class="app">
+    <div id="title-container" class="container">
+      <h1 id="title">Les communautés de Lausanne au XIX<sup>ème</sup> siècle</h1>
+      <div id="day-sky"></div>
+      <div id="sun"></div>
+      <div id="city"></div>
+      <div id="cathedral"></div>
+      <div id="cloud1" class="cloud">
+        <img src="data:image/png;base64,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" alt="Cloud 1" />
       </div>
-
-      <div id="title-to-p1-container" class="container"></div>
-
-      <div id="p1-container" class="container container-padding beige-grainy-bg">
-        <div class="flex-row flex-100 flex-center flex-align-center">
-          <div class="flex-col text-padding-20 overflow-auto">
-            <div class="flex-col">
-              <p class="purple-text medium-text">
-                Bienvenue au Lausanne du XIX<sup>ème</sup> siècle: une période de transformations radicales et de défis sans précédent pour Lausanne, une ville qui aujourd'hui rayonne par sa richesse culturelle et historique. C'est cette période passionnante que nous allons explorer à travers ce projet d'histoire urbaine digitale, basé sur le recensement de la population Lausannoise de 1832 et le cadastre de Berney de 1831.
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="purple-text medium-text">
-                Notre problématique est simple, mais révélatrice : Les communautés étaient-elles regroupées dans le Lausanne du XIX<sup>ème</sup> siècle ? À travers l'analyse rigoureuse de sources historiques, nous souhaitons vous emmener dans un voyage à travers le temps, où vous pourrez découvrir la structure sociale et spatiale de Lausanne à cette époque.
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="purple-text medium-text">
-                En naviguant à travers ce site, vous aurez l'opportunité de vous plonger dans la réalité historique de l'époque. Chaque élément visuel est conçu pour vous aider à comprendre comment les communautés se sont développées et regroupées, façonnant ainsi la structure socio-spatiale de Lausanne.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div id="cloud2" class="cloud">
+        <img src="data:image/png;base64,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" alt="Cloud 2" />
       </div>
-
-      <div id="p1-to-p2-container" class="container"></div>
-
-      <div id="p2-container" class="container container-padding off-white-bg">
-        <div class="flex-row flex-100">
-          <div class="flex-col flex-60 height-100 overflow-auto">
-            <div class="flex-col flex-40 overflow-auto">
-              <div class="flex-col text-padding-10">
-                <p class="large-text large-font-weight">
-                  Concentrique et Historique
-                </p>
-              </div>
-
-              <div class="flex-col text-padding-10">
-                <p class="medium-text">
-                  Cette première visualisation intuitive et attrayante illustre la division de la ville en une structure hiérarchique à deux niveaux : les sections et les divisions. Lausanne est représentée en six sections principales, chacune décrivant une partie globale de la ville. Ces sections sont à leur tour subdivisées en un total de 18 divisions. Chaque quartier a sa propre identité et son caractère distinct, reflétant la structure unique de la ville à cette époque.
-                </p>
-              </div>
-            </div>
-            <div class="flex-col flex-60 overflow-auto text-padding-10">
-              <p id="circle-packing-title" class="medium-text large-font-weight">
-              </p>
-              <p id="circle-packing-text" class="medium-text">
-                Pour vivre une expérience d'exploration historique immersive, nous vous invitons à découvrir les sections et divisions qui constituaient la ville. Pour ce faire, il suffit de cliquer sur les cercles correspondant à chaque section ou division.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex-col flex-40 height-100 overflow-auto">
-            <div class="flex-row flex-100">
-              <div id="circle-packing-plot"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="p2-to-p3-container" class="container ow-to-ow-bg"></div>
-
-      <div id="p3-container" class="container container-padding off-white-bg">
-        <div class="flex-col flex-100">
-          <div class="flex-col flex-50 flex-center overflow-auto">
-            <div class="flex-col text-padding-10">
-              <p class="large-text large-font-weight">
-                Sankey et Société
-              </p>
-            </div>
-            <div class="flex-col text-padding-10">
-              <p class="medium-text">
-                Nous continuons notre voyage à travers le temps avec cette visualisation dynamique et interactive : un diagramme de Sankey. Cette représentation nous permet d'analyser les liens entre les sections, les origines des habitants et les métiers qu'ils exerçaient. Le diagramme offre un aperçu fascinant de la répartition des professions selon les différentes origines, illustrant les dynamiques socio-économiques de l'époque.
-              </p>
-              <p class="medium-text">
-                Cliquez sur les différentes sections du diagramme pour explorer ces relations en détail. Vous découvrirez comment la diversité des origines et des professions a contribué à la richesse et à la complexité de Lausanne au XIX<sup>ème</sup> siècle, et comment ces facteurs ont joué un rôle déterminant dans la formation des communautés urbaines.
-              </p>
-            </div>
-          </div>
-          <div class="flex-row flex-50">
-            <div class="flex-row flex-50">
-              <div id="sankey" class="width-100 height-100 div-center"></div>
-            </div>
-            <div class="flex-row flex-50">
-              <div id="sankey-barplot" class="width-100 height-100 div-center"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="p3-to-p4-container" class="container ow-to-bk-bg"></div>
-
-      <div id="p4-container" class="container container-padding black-bg">
-        <div class="flex-row flex-100 flex-center flex-align-center">
-          <div class="flex-col text-padding-20 overflow-auto">
-            <div class="flex-col">
-              <p class="light-text large-text large-font-weight">
-                Cartographie Interactive
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="light-text medium-text">
-                Pour une immersion encore plus poussée dans le Lausanne du XIX<sup>ème</sup> siècle, découvrez notre carte interactive. Chaque division de la ville est délimitée et peut être colorée pour créer une Carte choroplèthe, révélant les concentrations de différentes origines et professions.
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="light-text medium-text">
-                Cette carte offre une vue d'ensemble saisissante de la composition socio-économique de chaque division, illustrant en un coup d'œil les disparités et les similitudes entre elles. Mais nous ne nous arrêtons pas là.
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="light-text medium-text">
-                En cliquant sur une division, un graphique à barres apparaît, détaillant la répartition des métiers et des origines au sein de cette division. Il s'agit d'un outil précieux pour comprendre comment les différentes professions et origines se répartissaient dans la ville. Explorez, cliquez, et plongez-vous dans le fascinant tissu social du Lausanne du XIX<sup>ème</sup> siècle.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="p5-container" class="container black-bg">
-        <div id="select_job" class="light-text">
-          <label for="categroy">Choissez une catégorie:</label>
-          <select class="network-control" id="selection_option">
-            <option value="no_selection" selected>
-              Aucuns
-            </option>
-            <optgroup label="Catégories de métiers" id="job_category_optgroup">
-              <option value="administration">
-                Administration
-              </option>
-              <option value="agricole">
-                Agricole
-              </option>
-              <option value="artisanat">
-                Artisanat
-              </option>
-              <option value="commerce">
-                Commerce
-              </option>
-              <option value="construction">
-                Construction
-              </option>
-              <option value="rente">
-                Rente
-              </option>
-              <option value="service">
-                Service
-              </option>
-            </optgroup>
-            <optgroup label="Catégories d'origines" id="origin_category_optgroup">
-              <option value="lausanne">
-                Lausanne
-              </option>
-              <option value="not_lausanne">
-                Hors Lausanne
-              </option>
-              <option disabled>──────────</option>
-              <option value="aigle">
-                Aigle
-              </option>
-              <option value="angleterre">
-                Angleterre
-              </option>
-              <option value="aubonne">
-                Aubonne
-              </option>
-              <option value="avenches">
-                Avenches
-              </option>
-              <option value="cossonay">
-                Cossonay
-              </option>
-              <option value="echallens">
-                Echallens
-              </option>
-              <option value="france">
-                France
-              </option>
-              <option value="fribourg">
-                Fribourg
-              </option>
-              <option value="geneve">
-                Genève
-              </option>
-              <option value="grandson">
-                Grandson
-              </option>
-              <option value="italie">
-                Italie
-              </option>
-              <option value="la_vallee">
-                La Vallée
-              </option>
-              <option value="lavaux">
-                Lavaux
-              </option>
-              <option value="morges">
-                Morges
-              </option>
-              <option value="moudon">
-                Moudon
-              </option>
-              <option value="neuchatel">
-                Neuchâtel
-              </option>
-              <option value="nyon">
-                Nyon
-              </option>
-              <option value="orbe">
-                Orbe
-              </option>
-              <option value="oron">
-                Oron
-              </option>
-              <option value="payerne">
-                Payerne
-              </option>
-              <option value="pays_d_enhaut">
-                Pays d'Enhaut
-              </option>
-              <option value="rolle">
-                Rolle
-              </option>
-              <option value="suisse_allemande">
-                Suisse allemande
-              </option>
-              <option value="vaud">
-                Vaud
-              </option>
-              <option value="vevey">
-                Vevey
-              </option>
-              <option value="yverdon">
-                Yverdon
-              </option>
-            </optgroup>
-          </select>
-        </div>
-
-        <div id="check_proportion" class="network-control">
-          <input type="checkbox" name="check_proportion">
-          <label for="check_proportion" class="light-text">Proportions par divisions</label>
-        </div>
-        <div class="flex-row flex-100 height-100">
-          <div class="flex-col flex-60 height-100">
-            <div id="map-chart" class="width-100 height-100">
-              <div id="map"></div>
-            </div>
-          </div>
-          <div class="flex-col flex-40 height-100">
-            <div class="flex-row flex-50">
-              <div id="bar-chart-jobs" class="width-100 height-100">
-                <div id="bar-jobs" class="width-100 height-100"></div>
-              </div>
-            </div>
-            <div class="flex-row flex-50">
-              <div id="bar-chart-origins" class="width-100 height-100">
-                <div id="bar-origins" class="width-100 height-100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="p5-to-p6-container" class="container bk-to-bk-bg"></div>
-
-      <div id="p6-container" class="container container-padding black-bg">
-        <div class="flex-row flex-100 flex-center flex-align-center">
-          <div class="flex-col text-padding-20 overflow-auto">
-            <div class="flex-col">
-              <p class="light-text large-text large-font-weight">
-                Tissage Temporel
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="light-text medium-text">
-                Découvrez une autre dimension de notre exploration avec nos graphes interactifs. Ces visualisations vous permettent de tisser des liens entre les rues, les métiers et les origines, créant une toile complexe qui reflète la richesse des données historiques de Lausanne au XIX<sup>ème</sup> siècle.
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="light-text medium-text">
-                En choisissant différents graphes, vous pouvez voir comment ces différents éléments s'articulent ensemble, formant un tableau plus complet de la dynamique socio-spatiale de l'époque. Les rues ne sont plus simplement des voies de circulation, mais deviennent des vecteurs d'histoire, révélant les professions et les origines qui les habitaient.
-              </p>
-            </div>
-
-            <div class="flex-col">
-              <p class="light-text medium-text">
-                Jouez avec les différentes options, observez comment les liens se forment et se défont en fonction de vos choix. C'est un véritable voyage dans le temps, une plongée dans le Lausanne du XIX<sup>ème</sup> siècle, où chaque connexion vous en apprend un peu plus sur l'histoire de cette ville fascinante.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="p7-container" class="container black-bg">
-        <div class="flex-row flex-100 height-100">
-          <div class="flex-row flex-60 height-100">
-            <div id="graph-selector-div" class="width-100">
-              <select id="graph-selector">
-                <option value="road_vocation_data">Rues et vocations</option>
-                <option value="bipartite_division_type_metiers">Divisions et classes de métiers</option>
-                <option value="bipartite_origine_category_type_metiers">Class d'origines et classes de métiers</option>
-                <option value="bipartite_street_type_metiers">Rues et classes de métiers</option>
-                <option value="bipartite_rue_origines">Rues et classes d'origines</option>
-                <option value="bipartite_divisions_origines">Divisions et classes d'origines</option>
-              </select>
-            </div>
-
-          
-            <div id="network-chart" class="width-100">
-              <div id="network-graph" class="network"></div>
-            </div>
-          </div>
-
-          <div class="flex-col flex-40 height-100 light-text flex-center">
-            <p id="network-title" class="large-text large-font-weight text-padding-10"></p>
-            <p id="network-text" class="medium-text text-padding-10"></p>
-          </div>
-        </div>
-      </div>
-      
-      <div id="p-to-final-container" class="container"></div>
-
-      <div id="final-container" class="container">
-        <div id="maintainers">
-          <div id="maintainers-list">
-            Site web publié le <span id="current_date" itemprop="date">17 mai 2023</span> et maintenu par
-            <a class="github-link" href="https://github.com/ozan-guven" target="_blank">Ozan Güven</a>,
-            <a class="github-link" href="https://github.com/SoleilVermeil" target="_blank">Julien Leuenberger</a>,
-            <a class="github-link" href="https://github.com/admuel" target="_blank">Adrian Müller</a>,
-            <a class="github-link" href="https://github.com/ArnaudPoletto" target="_blank">Arnaud Poletto</a> et
-            <a class="github-link" href="https://github.com/Lucky1805" target="_blank">Luc Villarejo</a>.
-          </div>
-          <div id="maintainers-github">
-            <a class="github-link no-decoration" href="https://github.com/ozan-guven/HUM-450-Project" target="_blank">Jeter un coup d'œil au <i class="bi bi-github"></i>dépôt GitHub du projet!</a>
-          </div>
-        </div>
-        <div id="night-sky"></div>
-        <div id="moon"></div>
-        <div id="night-bridge"></div>
-        <div id="night-mountain-left"></div>
-        <div id="night-mountain-right"></div>
+      <div id="cloud3" class="cloud">
+        <img src="data:image/png;base64,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" alt="Cloud 3" />
       </div>
     </div>
-  </body>
 
-  
-  
-  
-  
+    <div id="title-to-p1-container" class="container"></div>
+
+    <div id="p1-container" class="container container-padding beige-grainy-bg">
+      <div class="flex-row flex-100 flex-center flex-align-center">
+        <div class="flex-col text-padding-10 overflow-auto">
+          <div class="flex-col">
+            <p class="purple-text medium-text">
+              Bienvenue au Lausanne du XIX<sup>ème</sup> siècle: une période de transformations radicales et de défis
+              sans précédent pour Lausanne, une ville qui aujourd'hui rayonne par sa richesse culturelle et historique.
+              C'est cette période passionnante que nous allons explorer à travers ce projet d'histoire urbaine digitale,
+              basé sur le recensement de la population Lausannoise de 1832 et le cadastre de Berney de 1831.
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="purple-text medium-text">
+              Notre problématique est simple, mais révélatrice : Les communautés étaient-elles regroupées dans le
+              Lausanne du XIX<sup>ème</sup> siècle ? À travers l'analyse rigoureuse de sources historiques, nous
+              souhaitons vous emmener dans un voyage à travers le temps, où vous pourrez découvrir la structure sociale
+              et spatiale de Lausanne à cette époque.
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="purple-text medium-text">
+              En naviguant à travers ce site, vous aurez l'opportunité de vous plonger dans la réalité historique de
+              l'époque. Chaque élément visuel est conçu pour vous aider à comprendre comment les communautés se sont
+              développées et regroupées, façonnant ainsi la structure socio-spatiale de Lausanne.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p1-to-p2-container" class="container"></div>
+
+    <div id="p2-container" class="container container-padding off-white-bg">
+      <div class="flex-row flex-100">
+        <div class="flex-col flex-60 height-100 overflow-auto">
+          <div class="flex-col flex-40 overflow-auto">
+            <div class="flex-col text-padding-5">
+              <p class="large-text large-font-weight">
+                Concentrique et Historique
+              </p>
+            </div>
+
+            <div class="flex-col text-padding-5">
+              <p class="medium-text">
+                Cette première visualisation intuitive et attrayante illustre la division de la ville en une structure
+                hiérarchique à deux niveaux : les sections et les divisions. Lausanne est représentée en six sections
+                principales, chacune décrivant une partie globale de la ville. Ces sections sont à leur tour subdivisées
+                en un total de 18 divisions. Chaque quartier a sa propre identité et son caractère distinct, reflétant
+                la structure unique de la ville à cette époque.
+              </p>
+            </div>
+          </div>
+          <div class="flex-col flex-60 overflow-auto text-padding-5">
+            <p id="circle-packing-title" class="medium-text large-font-weight">
+            </p>
+            <p id="circle-packing-text" class="medium-text">
+              Pour vivre une expérience d'exploration historique immersive, nous vous invitons à découvrir les sections
+              et divisions qui constituaient la ville. Pour ce faire, il suffit de cliquer sur les cercles correspondant
+              à chaque section ou division.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-col flex-40 height-100 overflow-auto">
+          <div class="flex-row flex-100">
+            <div id="circle-packing-plot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p2-to-p3-container" class="container ow-to-ow-bg"></div>
+
+    <div id="p3-container" class="container container-padding off-white-bg">
+      <div class="flex-col flex-100">
+        <div class="flex-col flex-50 flex-center overflow-auto">
+          <div class="flex-col text-padding-5">
+            <p class="large-text large-font-weight">
+              Sankey et Société
+            </p>
+          </div>
+          <div class="flex-col text-padding-5">
+            <p class="medium-text">
+              Nous continuons notre voyage à travers le temps avec cette visualisation dynamique et interactive : un
+              diagramme de Sankey. Cette représentation nous permet d'analyser les liens entre les sections, les
+              origines des habitants et les métiers qu'ils exerçaient. Le diagramme offre un aperçu fascinant de la
+              répartition des professions selon les différentes origines, illustrant les dynamiques socio-économiques de
+              l'époque.
+            </p>
+            <p class="medium-text">
+              Cliquez sur les différentes sections du diagramme pour explorer ces relations en détail. Vous découvrirez
+              comment la diversité des origines et des professions a contribué à la richesse et à la complexité de
+              Lausanne au XIX<sup>ème</sup> siècle, et comment ces facteurs ont joué un rôle déterminant dans la
+              formation des communautés urbaines.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row flex-50">
+          <div class="flex-row flex-50">
+            <div id="sankey" class="width-100 height-100 div-center"></div>
+          </div>
+          <div class="flex-row flex-50">
+            <div id="sankey-barplot" class="width-100 height-100 div-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p3-to-p4-container" class="container ow-to-bk-bg"></div>
+
+    <div id="p4-container" class="container container-padding black-bg">
+      <div class="flex-row flex-100 flex-center flex-align-center">
+        <div class="flex-col text-padding-10 overflow-auto">
+          <div class="flex-col">
+            <p class="light-text large-text large-font-weight">
+              Cartographie Interactive
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="light-text medium-text">
+              Pour une immersion encore plus poussée dans le Lausanne du XIX<sup>ème</sup> siècle, découvrez notre carte
+              interactive. Chaque division de la ville est délimitée et peut être colorée pour créer une Carte
+              choroplèthe, révélant les concentrations de différentes origines et professions.
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="light-text medium-text">
+              Cette carte offre une vue d'ensemble saisissante de la composition socio-économique de chaque division,
+              illustrant en un coup d'œil les disparités et les similitudes entre elles. Mais nous ne nous arrêtons pas
+              là.
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="light-text medium-text">
+              En cliquant sur une division, un graphique à barres apparaît, détaillant la répartition des métiers et des
+              origines au sein de cette division. Il s'agit d'un outil précieux pour comprendre comment les différentes
+              professions et origines se répartissaient dans la ville. Explorez, cliquez, et plongez-vous dans le
+              fascinant tissu social du Lausanne du XIX<sup>ème</sup> siècle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p5-container" class="container black-bg">
+      <div id="select_job" class="light-text">
+        <label for="categroy">Choissez une catégorie:</label>
+        <select class="network-control" id="selection_option">
+          <option value="no_selection" selected>
+            Aucuns
+          </option>
+          <option value="population">
+            Population
+          </option>
+          <optgroup label="Catégories de métiers" id="job_category_optgroup">
+            <option value="administration">
+              Administration
+            </option>
+            <option value="agricole">
+              Agricole
+            </option>
+            <option value="artisanat">
+              Artisanat
+            </option>
+            <option value="commerce">
+              Commerce
+            </option>
+            <option value="construction">
+              Construction
+            </option>
+            <option value="rente">
+              Rente
+            </option>
+            <option value="service">
+              Service
+            </option>
+          </optgroup>
+          <optgroup label="Catégories d'origines" id="origin_category_optgroup">
+            <option value="lausanne">
+              Lausanne
+            </option>
+            <option value="not_lausanne">
+              Hors Lausanne
+            </option>
+            <option disabled>──────────</option>
+            <option value="aigle">
+              Aigle
+            </option>
+            <option value="angleterre">
+              Angleterre
+            </option>
+            <option value="aubonne">
+              Aubonne
+            </option>
+            <option value="avenches">
+              Avenches
+            </option>
+            <option value="cossonay">
+              Cossonay
+            </option>
+            <option value="echallens">
+              Echallens
+            </option>
+            <option value="france">
+              France
+            </option>
+            <option value="fribourg">
+              Fribourg
+            </option>
+            <option value="geneve">
+              Genève
+            </option>
+            <option value="grandson">
+              Grandson
+            </option>
+            <option value="italie">
+              Italie
+            </option>
+            <option value="la_vallee">
+              La Vallée
+            </option>
+            <option value="lavaux">
+              Lavaux
+            </option>
+            <option value="morges">
+              Morges
+            </option>
+            <option value="moudon">
+              Moudon
+            </option>
+            <option value="neuchatel">
+              Neuchâtel
+            </option>
+            <option value="nyon">
+              Nyon
+            </option>
+            <option value="orbe">
+              Orbe
+            </option>
+            <option value="oron">
+              Oron
+            </option>
+            <option value="payerne">
+              Payerne
+            </option>
+            <option value="pays_d_enhaut">
+              Pays d'Enhaut
+            </option>
+            <option value="rolle">
+              Rolle
+            </option>
+            <option value="suisse_allemande">
+              Suisse allemande
+            </option>
+            <option value="vaud">
+              Vaud
+            </option>
+            <option value="vevey">
+              Vevey
+            </option>
+            <option value="yverdon">
+              Yverdon
+            </option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div id="check_proportion" class="network-control">
+        <input type="checkbox" name="check_proportion" disabled>
+        <label for="check_proportion" class="light-text" id="check_proportion_text">Proportions par divisions</label>
+      </div>
+      <div class="flex-row flex-100 height-100">
+        <div class="flex-col flex-60 height-100">
+          <div id="map-chart" class="width-100 height-100">
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="flex-col flex-40 height-100">
+          <div class="flex-row flex-04 flex-center flex-align-center">
+            <p class="light-text medium-text no-bottom" id="bar_chart_title">
+            </p>
+          </div>
+          <div class="flex-row flex-48">
+            <div id="bar-chart-jobs" class="width-100 height-100">
+              <div id="bar-jobs" class="width-100 height-100"></div>
+            </div>
+          </div>
+          <div class="flex-row flex-48">
+            <div id="bar-chart-origins" class="width-100 height-100">
+              <div id="bar-origins" class="width-100 height-100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p5-to-p6-container" class="container bk-to-bk-bg"></div>
+
+    <div id="p6-container" class="container container-padding black-bg">
+      <div class="flex-row flex-100 flex-center flex-align-center">
+        <div class="flex-col text-padding-10 overflow-auto">
+          <div class="flex-col">
+            <p class="light-text large-text large-font-weight">
+              Tissage Temporel
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="light-text medium-text">
+              Découvrez une autre dimension de notre exploration avec nos graphes interactifs. Ces visualisations vous
+              permettent de tisser des liens entre les rues, les métiers et les origines, créant une toile complexe qui
+              reflète la richesse des données historiques de Lausanne au XIX<sup>ème</sup> siècle.
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="light-text medium-text">
+              En choisissant différents graphes, vous pouvez voir comment ces différents éléments s'articulent ensemble,
+              formant un tableau plus complet de la dynamique socio-spatiale de l'époque. Les rues ne sont plus
+              simplement des voies de circulation, mais deviennent des vecteurs d'histoire, révélant les professions et
+              les origines qui les habitaient.
+            </p>
+          </div>
+
+          <div class="flex-col">
+            <p class="light-text medium-text">
+              Jouez avec les différentes options, observez comment les liens se forment et se défont en fonction de vos
+              choix. C'est un véritable voyage dans le temps, une plongée dans le Lausanne du XIX<sup>ème</sup> siècle,
+              où chaque connexion vous en apprend un peu plus sur l'histoire de cette ville fascinante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p7-container" class="container black-bg">
+      <div class="flex-row flex-100 height-100">
+        <div class="flex-row flex-60 height-100">
+          <div id="graph-selector-div" class="width-100">
+            <select id="graph-selector">
+              <option value="road_vocation_data">Rues et vocations</option>
+              <option value="bipartite_division_type_metiers">Divisions et classes de métiers</option>
+              <option value="bipartite_origine_category_type_metiers">Class d'origines et classes de métiers</option>
+              <option value="bipartite_street_type_metiers">Rues et classes de métiers</option>
+              <option value="bipartite_rue_origines">Rues et classes d'origines</option>
+              <option value="bipartite_divisions_origines">Divisions et classes d'origines</option>
+            </select>
+          </div>
+
+
+          <div id="network-chart" class="width-100">
+            <div id="network-graph" class="network"></div>
+          </div>
+        </div>
+
+        <div class="flex-col flex-40 height-100 light-text flex-center">
+          <p id="network-title" class="large-text large-font-weight text-padding-5"></p>
+          <p id="network-text" class="medium-text text-padding-5"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="p8-container" class="container off-white-bg">
+      <div class="flex-col flex-100 height-100">
+        <div class="flex-col flex-60 height-100 overflow-auto">
+          <div class="flex-row text-padding-5">
+            <p class="large-text large-font-weight">
+              Analyse K-Moyennes
+            </p>
+          </div>
+          <div class="flex-row text-padding-5">
+            <p class="medium-text">
+              Terminons notre exploration avec une dose solide de statistiques - l'application de l'algorithme K-moyennes pour explorer le regroupement des communautés à Lausanne au XIX<sup>ème</sup> siècle. En utilisant les données du recensement de Berney, nous avons examiné des variables clés telles que l'origine du chef de ménage, son métier, le nombre d'enfants et le nombre de pensionnaires pour créer des groupes distincts.
+            </p>
+          </div>
+          <div class="flex-row text-padding-5">
+            <p class="medium-text">
+              Mais comment savoir si notre modèle capture réellement une structure significative dans les données, et ne se contente pas de créer des groupes aléatoires ? C'est là que notre modèle null entre en jeu. En mélangeant toutes les données avant d'appliquer l'algorithme K-means, nous avons créé un modèle de référence contre lequel comparer nos résultats.
+            </p>
+          </div>
+          <div class="flex-row text-padding-5">
+            <p class="medium-text">
+              Nos histogrammes présentent le score F1 - une mesure de l'exactitude de notre modèle - pour chaque cluster. En comparant ces scores avec ceux obtenus à partir du modèle null, nous pouvons voir si notre modèle d'origine parvient à déceler une structure significative dans les données. Si les distributions des scores F1 sont plus dispersés, cela suggère que notre modèle n'est pas le résultat du hasard, mais qu'il révèle bien un regroupement distinct des communautés de Lausanne au XIX<sup>ème</sup> siècle. Sélectionnez différentes variables pour voir comment les scores F1 changent en fonction de vos choix.
+            </p>
+          </div>
+        </div>
+        <div class="flex-row flex-40 height-100">
+          <div class="flex-col flex-20 height-100">
+            <div id="stats-checkboxes">
+              <div class="form-check">
+                <input type="checkbox" value="nai" id="annee-naissance">
+                <label class="form-check-label" for="annee-naissance">
+                  Année de naissance
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="orc" id="origine">
+                <label class="form-check-label" for="origine">
+                  Origine
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="voc" id="metier">
+                <label class="form-check-label" for="metier">
+                  Métier
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="enf" id="metier">
+                <label class="form-check-label" for="metier">
+                  Nombre d'enfants
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="pen" id="metier">
+                <label class="form-check-label" for="metier">
+                  Nombre de pensionnaires
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="orb" id="metier">
+                <label class="form-check-label" for="metier">
+                  Originaire de Lausanne
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col flex-80 height-100">
+            <div id="stats-plot" class="width-100 height-100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p-to-final-container" class="container"></div>
+
+    <div id="final-container" class="container">
+      <div id="maintainers">
+        <div id="maintainers-list">
+          Site web publié le <span id="current_date" itemprop="date">17 mai 2023</span> et maintenu par
+          <a class="github-link" href="https://github.com/ozan-guven" target="_blank">Ozan Güven</a>,
+          <a class="github-link" href="https://github.com/SoleilVermeil" target="_blank">Julien Leuenberger</a>,
+          <a class="github-link" href="https://github.com/admuel" target="_blank">Adrian Müller</a>,
+          <a class="github-link" href="https://github.com/ArnaudPoletto" target="_blank">Arnaud Poletto</a> et
+          <a class="github-link" href="https://github.com/Lucky1805" target="_blank">Luc Villarejo</a>.
+        </div>
+        <div id="maintainers-github">
+          <a class="github-link no-decoration" href="https://github.com/ozan-guven/HUM-450-Project"
+            target="_blank">Jeter un coup d'œil au <i class="bi bi-github"></i>dépôt GitHub du projet!</a>
+        </div>
+      </div>
+      <div id="night-sky"></div>
+      <div id="moon"></div>
+      <div id="night-bridge"></div>
+      <div id="night-mountain-left"></div>
+      <div id="night-mountain-right"></div>
+    </div>
+  </div>
+</body>
+
+
+
+
+
+
 </html>

@@ -1,1 +1,4134 @@
-{"nodes": [{"id": "ale", "label": "ale", "type": "road", "size": 1}, {"id": "barre", "label": "barre", "type": "road", "size": 1}, {"id": "bourg", "label": "bourg", "type": "road", "size": 1}, {"id": "calvaire", "label": "calvaire", "type": "road", "size": 1}, {"id": "chailly", "label": "chailly", "type": "road", "size": 1}, {"id": "chaucrau", "label": "chaucrau", "type": "road", "size": 1}, {"id": "chauderon", "label": "chauderon", "type": "road", "size": 1}, {"id": "chavannes", "label": "chavannes", "type": "road", "size": 1}, {"id": "cheneau de bourg", "label": "cheneau de bourg", "type": "road", "size": 1}, {"id": "cite derriere", "label": "cite derriere", "type": "road", "size": 1}, {"id": "cite dessous", "label": "cite dessous", "type": "road", "size": 1}, {"id": "cite devant", "label": "cite devant", "type": "road", "size": 1}, {"id": "cour", "label": "cour", "type": "road", "size": 1}, {"id": "derriere les terreaux", "label": "derriere les terreaux", "type": "road", "size": 1}, {"id": "escaliers du marche", "label": "escaliers du marche", "type": "road", "size": 1}, {"id": "etraz", "label": "etraz", "type": "road", "size": 1}, {"id": "grand chene", "label": "grand chene", "type": "road", "size": 1}, {"id": "grand st jean", "label": "grand st jean", "type": "road", "size": 1}, {"id": "grange-neuve", "label": "grange-neuve", "type": "road", "size": 1}, {"id": "grotte", "label": "grotte", "type": "road", "size": 1}, {"id": "la sallaz", "label": "la sallaz", "type": "road", "size": 1}, {"id": "madeleine", "label": "madeleine", "type": "road", "size": 1}, {"id": "marterey", "label": "marterey", "type": "road", "size": 1}, {"id": "maupas", "label": "maupas", "type": "road", "size": 1}, {"id": "mercerie", "label": "mercerie", "type": "road", "size": 1}, {"id": "montee de st laurent", "label": "montee de st laurent", "type": "road", "size": 1}, {"id": "montee st francois", "label": "montee st francois", "type": "road", "size": 1}, {"id": "moulin de pepinet", "label": "moulin de pepinet", "type": "road", "size": 1}, {"id": "ouchy", "label": "ouchy", "type": "road", "size": 1}, {"id": "palud", "label": "palud", "type": "road", "size": 1}, {"id": "petit chene", "label": "petit chene", "type": "road", "size": 1}, {"id": "petit singe", "label": "petit singe", "type": "road", "size": 1}, {"id": "petit st jean", "label": "petit st jean", "type": "road", "size": 1}, {"id": "place du pont", "label": "place du pont", "type": "road", "size": 1}, {"id": "place st francois", "label": "place st francois", "type": "road", "size": 1}, {"id": "rue de l'hopital", "label": "rue de l'hopital", "type": "road", "size": 1}, {"id": "rue du pont", "label": "rue du pont", "type": "road", "size": 1}, {"id": "rue du pre", "label": "rue du pre", "type": "road", "size": 1}, {"id": "st etienne", "label": "st etienne", "type": "road", "size": 1}, {"id": "st francois", "label": "st francois", "type": "road", "size": 1}, {"id": "st laurent", "label": "st laurent", "type": "road", "size": 1}, {"id": "st pierre", "label": "st pierre", "type": "road", "size": 1}, {"id": "vennes", "label": "vennes", "type": "road", "size": 1}, {"id": "agriculteur", "label": "agriculteur", "type": "vocation", "size": 28}, {"id": "aubergiste", "label": "aubergiste", "type": "vocation", "size": 15}, {"id": "boulanger", "label": "boulanger", "type": "vocation", "size": 32}, {"id": "carrier", "label": "carrier", "type": "vocation", "size": 15}, {"id": "charpentier", "label": "charpentier", "type": "vocation", "size": 71}, {"id": "charron", "label": "charron", "type": "vocation", "size": 12}, {"id": "cordonnier", "label": "cordonnier", "type": "vocation", "size": 102}, {"id": "couturiere", "label": "couturiere", "type": "vocation", "size": 18}, {"id": "ecrivain", "label": "ecrivain", "type": "vocation", "size": 14}, {"id": "fileuse", "label": "fileuse", "type": "vocation", "size": 15}, {"id": "garde police", "label": "garde police", "type": "vocation", "size": 28}, {"id": "gypseur/gypsier", "label": "gypseur/gypsier", "type": "vocation", "size": 19}, {"id": "huissier", "label": "huissier", "type": "vocation", "size": 9}, {"id": "jardinier", "label": "jardinier", "type": "vocation", "size": 43}, {"id": "journalier", "label": "journalier", "type": "vocation", "size": 163}, {"id": "journaliere", "label": "journaliere", "type": "vocation", "size": 77}, {"id": "juge d'appel", "label": "juge d'appel", "type": "vocation", "size": 9}, {"id": "laboureur", "label": "laboureur", "type": "vocation", "size": 32}, {"id": "laitier", "label": "laitier", "type": "vocation", "size": 14}, {"id": "lessiveuse", "label": "lessiveuse", "type": "vocation", "size": 14}, {"id": "macon", "label": "macon", "type": "vocation", "size": 44}, {"id": "man\u0153uvre", "label": "man\u0153uvre", "type": "vocation", "size": 27}, {"id": "marchand", "label": "marchand", "type": "vocation", "size": 59}, {"id": "marchande", "label": "marchande", "type": "vocation", "size": 58}, {"id": "marechal-ferrant", "label": "marechal-ferrant", "type": "vocation", "size": 16}, {"id": "menuisier", "label": "menuisier", "type": "vocation", "size": 83}, {"id": "ouvriere", "label": "ouvriere", "type": "vocation", "size": 15}, {"id": "rentiere", "label": "rentiere", "type": "vocation", "size": 209}, {"id": "repasseuse", "label": "repasseuse", "type": "vocation", "size": 12}, {"id": "sans vocation", "label": "sans vocation", "type": "vocation", "size": 27}, {"id": "sellier", "label": "sellier", "type": "vocation", "size": 14}, {"id": "serrurier", "label": "serrurier", "type": "vocation", "size": 25}, {"id": "tailleur de pierres", "label": "tailleur de pierres", "type": "vocation", "size": 20}, {"id": "tailleuse", "label": "tailleuse", "type": "vocation", "size": 55}, {"id": "tisserand", "label": "tisserand", "type": "vocation", "size": 17}, {"id": "traiteur", "label": "traiteur", "type": "vocation", "size": 19}, {"id": "vigneron", "label": "vigneron", "type": "vocation", "size": 100}, {"id": "voiturier", "label": "voiturier", "type": "vocation", "size": 41}, {"id": "couvreur", "label": "couvreur", "type": "vocation", "size": 15}, {"id": "fermier", "label": "fermier", "type": "vocation", "size": 15}, {"id": "instituteur", "label": "instituteur", "type": "vocation", "size": 18}, {"id": "lingere", "label": "lingere", "type": "vocation", "size": 55}, {"id": "medecin", "label": "medecin", "type": "vocation", "size": 13}, {"id": "meunier", "label": "meunier", "type": "vocation", "size": 14}, {"id": "ministre", "label": "ministre", "type": "vocation", "size": 13}, {"id": "professeur", "label": "professeur", "type": "vocation", "size": 10}, {"id": "rentier", "label": "rentier", "type": "vocation", "size": 109}, {"id": "tonnelier", "label": "tonnelier", "type": "vocation", "size": 19}, {"id": "vendeur de vin", "label": "vendeur de vin", "type": "vocation", "size": 16}, {"id": "avocat", "label": "avocat", "type": "vocation", "size": 17}, {"id": "blanchisseuse", "label": "blanchisseuse", "type": "vocation", "size": 17}, {"id": "domestique", "label": "domestique", "type": "vocation", "size": 16}, {"id": "ferblantier", "label": "ferblantier", "type": "vocation", "size": 10}, {"id": "garde-malade", "label": "garde-malade", "type": "vocation", "size": 10}, {"id": "institutrice", "label": "institutrice", "type": "vocation", "size": 14}, {"id": "libraire", "label": "libraire", "type": "vocation", "size": 10}, {"id": "negociant", "label": "negociant", "type": "vocation", "size": 57}, {"id": "tailleur", "label": "tailleur", "type": "vocation", "size": 53}, {"id": "proprietaire", "label": "proprietaire", "type": "vocation", "size": 68}, {"id": "femme de menage", "label": "femme de menage", "type": "vocation", "size": 15}, {"id": "courtepointiere", "label": "courtepointiere", "type": "vocation", "size": 10}, {"id": "imprimeur", "label": "imprimeur", "type": "vocation", "size": 17}, {"id": "tanneur", "label": "tanneur", "type": "vocation", "size": 17}, {"id": "tient pension", "label": "tient pension", "type": "vocation", "size": 11}, {"id": "pintier", "label": "pintier", "type": "vocation", "size": 14}, {"id": "chapelier", "label": "chapelier", "type": "vocation", "size": 14}, {"id": "sage-femme", "label": "sage-femme", "type": "vocation", "size": 11}, {"id": "fondeur", "label": "fondeur", "type": "vocation", "size": 10}, {"id": "boucher", "label": "boucher", "type": "vocation", "size": 12}], "links": [{"source": "ale", "target": "agriculteur", "weight": 1}, {"source": "ale", "target": "aubergiste", "weight": 1}, {"source": "ale", "target": "boulanger", "weight": 1}, {"source": "ale", "target": "carrier", "weight": 2}, {"source": "ale", "target": "charpentier", "weight": 8}, {"source": "ale", "target": "charron", "weight": 3}, {"source": "ale", "target": "cordonnier", "weight": 2}, {"source": "ale", "target": "couturiere", "weight": 1}, {"source": "ale", "target": "ecrivain", "weight": 1}, {"source": "ale", "target": "fileuse", "weight": 4}, {"source": "ale", "target": "garde police", "weight": 5}, {"source": "ale", "target": "gypseur/gypsier", "weight": 2}, {"source": "ale", "target": "huissier", "weight": 1}, {"source": "ale", "target": "jardinier", "weight": 6}, {"source": "ale", "target": "journalier", "weight": 10}, {"source": "ale", "target": "journaliere", "weight": 8}, {"source": "ale", "target": "juge d'appel", "weight": 1}, {"source": "ale", "target": "laboureur", "weight": 3}, {"source": "ale", "target": "laitier", "weight": 1}, {"source": "ale", "target": "lessiveuse", "weight": 1}, {"source": "ale", "target": "macon", "weight": 3}, {"source": "ale", "target": "man\u0153uvre", "weight": 4}, {"source": "ale", "target": "marchand", "weight": 1}, {"source": "ale", "target": "marchande", "weight": 5}, {"source": "ale", "target": "marechal-ferrant", "weight": 2}, {"source": "ale", "target": "menuisier", "weight": 5}, {"source": "ale", "target": "ouvriere", "weight": 4}, {"source": "ale", "target": "rentiere", "weight": 5}, {"source": "ale", "target": "repasseuse", "weight": 1}, {"source": "ale", "target": "sans vocation", "weight": 2}, {"source": "ale", "target": "sellier", "weight": 1}, {"source": "ale", "target": "serrurier", "weight": 3}, {"source": "ale", "target": "tailleur de pierres", "weight": 1}, {"source": "ale", "target": "tailleuse", "weight": 1}, {"source": "ale", "target": "tisserand", "weight": 2}, {"source": "ale", "target": "traiteur", "weight": 1}, {"source": "ale", "target": "vigneron", "weight": 27}, {"source": "ale", "target": "voiturier", "weight": 1}, {"source": "barre", "target": "agriculteur", "weight": 6}, {"source": "barre", "target": "boulanger", "weight": 1}, {"source": "barre", "target": "carrier", "weight": 2}, {"source": "barre", "target": "charpentier", "weight": 6}, {"source": "barre", "target": "cordonnier", "weight": 2}, {"source": "barre", "target": "couturiere", "weight": 1}, {"source": "barre", "target": "couvreur", "weight": 1}, {"source": "barre", "target": "ecrivain", "weight": 1}, {"source": "barre", "target": "fermier", "weight": 5}, {"source": "barre", "target": "garde police", "weight": 2}, {"source": "barre", "target": "instituteur", "weight": 4}, {"source": "barre", "target": "jardinier", "weight": 1}, {"source": "barre", "target": "journalier", "weight": 8}, {"source": "barre", "target": "journaliere", "weight": 2}, {"source": "barre", "target": "lingere", "weight": 2}, {"source": "barre", "target": "macon", "weight": 11}, {"source": "barre", "target": "man\u0153uvre", "weight": 2}, {"source": "barre", "target": "marchand", "weight": 1}, {"source": "barre", "target": "marechal-ferrant", "weight": 1}, {"source": "barre", "target": "medecin", "weight": 1}, {"source": "barre", "target": "menuisier", "weight": 7}, {"source": "barre", "target": "meunier", "weight": 5}, {"source": "barre", "target": "ministre", "weight": 2}, {"source": "barre", "target": "professeur", "weight": 1}, {"source": "barre", "target": "rentier", "weight": 3}, {"source": "barre", "target": "rentiere", "weight": 3}, {"source": "barre", "target": "sans vocation", "weight": 6}, {"source": "barre", "target": "tisserand", "weight": 1}, {"source": "barre", "target": "tonnelier", "weight": 1}, {"source": "barre", "target": "vendeur de vin", "weight": 2}, {"source": "barre", "target": "vigneron", "weight": 5}, {"source": "bourg", "target": "agriculteur", "weight": 1}, {"source": "bourg", "target": "aubergiste", "weight": 3}, {"source": "bourg", "target": "avocat", "weight": 2}, {"source": "bourg", "target": "blanchisseuse", "weight": 1}, {"source": "bourg", "target": "boulanger", "weight": 2}, {"source": "bourg", "target": "cordonnier", "weight": 3}, {"source": "bourg", "target": "domestique", "weight": 1}, {"source": "bourg", "target": "ecrivain", "weight": 1}, {"source": "bourg", "target": "ferblantier", "weight": 1}, {"source": "bourg", "target": "fileuse", "weight": 1}, {"source": "bourg", "target": "garde-malade", "weight": 1}, {"source": "bourg", "target": "huissier", "weight": 1}, {"source": "bourg", "target": "institutrice", "weight": 2}, {"source": "bourg", "target": "journalier", "weight": 1}, {"source": "bourg", "target": "journaliere", "weight": 1}, {"source": "bourg", "target": "libraire", "weight": 1}, {"source": "bourg", "target": "marchand", "weight": 3}, {"source": "bourg", "target": "marchande", "weight": 3}, {"source": "bourg", "target": "medecin", "weight": 2}, {"source": "bourg", "target": "negociant", "weight": 17}, {"source": "bourg", "target": "ouvriere", "weight": 3}, {"source": "bourg", "target": "rentier", "weight": 16}, {"source": "bourg", "target": "rentiere", "weight": 15}, {"source": "bourg", "target": "sellier", "weight": 2}, {"source": "bourg", "target": "tailleur", "weight": 5}, {"source": "bourg", "target": "tailleuse", "weight": 3}, {"source": "bourg", "target": "traiteur", "weight": 1}, {"source": "bourg", "target": "vendeur de vin", "weight": 1}, {"source": "bourg", "target": "voiturier", "weight": 5}, {"source": "calvaire", "target": "charpentier", "weight": 1}, {"source": "calvaire", "target": "cordonnier", "weight": 1}, {"source": "calvaire", "target": "journalier", "weight": 1}, {"source": "calvaire", "target": "laboureur", "weight": 2}, {"source": "calvaire", "target": "rentiere", "weight": 1}, {"source": "chailly", "target": "agriculteur", "weight": 1}, {"source": "chailly", "target": "carrier", "weight": 4}, {"source": "chailly", "target": "cordonnier", "weight": 1}, {"source": "chailly", "target": "fermier", "weight": 2}, {"source": "chailly", "target": "journalier", "weight": 5}, {"source": "chailly", "target": "journaliere", "weight": 1}, {"source": "chailly", "target": "laboureur", "weight": 7}, {"source": "chailly", "target": "laitier", "weight": 1}, {"source": "chailly", "target": "lingere", "weight": 1}, {"source": "chailly", "target": "marechal-ferrant", "weight": 1}, {"source": "chailly", "target": "menuisier", "weight": 1}, {"source": "chailly", "target": "proprietaire", "weight": 1}, {"source": "chailly", "target": "rentiere", "weight": 1}, {"source": "chailly", "target": "tailleur", "weight": 1}, {"source": "chailly", "target": "tisserand", "weight": 2}, {"source": "chailly", "target": "vigneron", "weight": 3}, {"source": "chaucrau", "target": "boulanger", "weight": 1}, {"source": "chaucrau", "target": "charpentier", "weight": 2}, {"source": "chaucrau", "target": "charron", "weight": 2}, {"source": "chaucrau", "target": "cordonnier", "weight": 2}, {"source": "chaucrau", "target": "couvreur", "weight": 1}, {"source": "chaucrau", "target": "ecrivain", "weight": 1}, {"source": "chaucrau", "target": "femme de menage", "weight": 2}, {"source": "chaucrau", "target": "ferblantier", "weight": 1}, {"source": "chaucrau", "target": "fileuse", "weight": 2}, {"source": "chaucrau", "target": "garde police", "weight": 4}, {"source": "chaucrau", "target": "journalier", "weight": 6}, {"source": "chaucrau", "target": "journaliere", "weight": 4}, {"source": "chaucrau", "target": "juge d'appel", "weight": 2}, {"source": "chaucrau", "target": "lingere", "weight": 3}, {"source": "chaucrau", "target": "macon", "weight": 1}, {"source": "chaucrau", "target": "man\u0153uvre", "weight": 2}, {"source": "chaucrau", "target": "marchand", "weight": 1}, {"source": "chaucrau", "target": "marchande", "weight": 2}, {"source": "chaucrau", "target": "menuisier", "weight": 5}, {"source": "chaucrau", "target": "ministre", "weight": 1}, {"source": "chaucrau", "target": "ouvriere", "weight": 5}, {"source": "chaucrau", "target": "rentier", "weight": 1}, {"source": "chaucrau", "target": "tailleur de pierres", "weight": 4}, {"source": "chaucrau", "target": "tailleuse", "weight": 2}, {"source": "chaucrau", "target": "vigneron", "weight": 8}, {"source": "chaucrau", "target": "voiturier", "weight": 2}, {"source": "chauderon", "target": "agriculteur", "weight": 1}, {"source": "chauderon", "target": "charpentier", "weight": 1}, {"source": "chauderon", "target": "journaliere", "weight": 1}, {"source": "chauderon", "target": "laitier", "weight": 1}, {"source": "chauderon", "target": "lessiveuse", "weight": 1}, {"source": "chauderon", "target": "menuisier", "weight": 1}, {"source": "chauderon", "target": "vigneron", "weight": 2}, {"source": "chavannes", "target": "journalier", "weight": 1}, {"source": "chavannes", "target": "laboureur", "weight": 7}, {"source": "chavannes", "target": "marechal-ferrant", "weight": 1}, {"source": "cheneau de bourg", "target": "agriculteur", "weight": 5}, {"source": "cheneau de bourg", "target": "boulanger", "weight": 2}, {"source": "cheneau de bourg", "target": "charpentier", "weight": 7}, {"source": "cheneau de bourg", "target": "charron", "weight": 1}, {"source": "cheneau de bourg", "target": "cordonnier", "weight": 5}, {"source": "cheneau de bourg", "target": "courtepointiere", "weight": 1}, {"source": "cheneau de bourg", "target": "couturiere", "weight": 2}, {"source": "cheneau de bourg", "target": "garde police", "weight": 1}, {"source": "cheneau de bourg", "target": "garde-malade", "weight": 1}, {"source": "cheneau de bourg", "target": "gypseur/gypsier", "weight": 3}, {"source": "cheneau de bourg", "target": "imprimeur", "weight": 2}, {"source": "cheneau de bourg", "target": "instituteur", "weight": 1}, {"source": "cheneau de bourg", "target": "journalier", "weight": 16}, {"source": "cheneau de bourg", "target": "journaliere", "weight": 7}, {"source": "cheneau de bourg", "target": "laitier", "weight": 1}, {"source": "cheneau de bourg", "target": "lessiveuse", "weight": 1}, {"source": "cheneau de bourg", "target": "lingere", "weight": 4}, {"source": "cheneau de bourg", "target": "macon", "weight": 5}, {"source": "cheneau de bourg", "target": "man\u0153uvre", "weight": 1}, {"source": "cheneau de bourg", "target": "marechal-ferrant", "weight": 2}, {"source": "cheneau de bourg", "target": "menuisier", "weight": 7}, {"source": "cheneau de bourg", "target": "ouvriere", "weight": 1}, {"source": "cheneau de bourg", "target": "rentier", "weight": 2}, {"source": "cheneau de bourg", "target": "rentiere", "weight": 5}, {"source": "cheneau de bourg", "target": "repasseuse", "weight": 2}, {"source": "cheneau de bourg", "target": "sellier", "weight": 1}, {"source": "cheneau de bourg", "target": "serrurier", "weight": 2}, {"source": "cheneau de bourg", "target": "tailleur", "weight": 2}, {"source": "cheneau de bourg", "target": "tailleuse", "weight": 4}, {"source": "cheneau de bourg", "target": "tanneur", "weight": 5}, {"source": "cheneau de bourg", "target": "tisserand", "weight": 1}, {"source": "cheneau de bourg", "target": "tonnelier", "weight": 1}, {"source": "cheneau de bourg", "target": "traiteur", "weight": 1}, {"source": "cheneau de bourg", "target": "vendeur de vin", "weight": 1}, {"source": "cheneau de bourg", "target": "vigneron", "weight": 2}, {"source": "cheneau de bourg", "target": "voiturier", "weight": 5}, {"source": "cite derriere", "target": "avocat", "weight": 2}, {"source": "cite derriere", "target": "blanchisseuse", "weight": 1}, {"source": "cite derriere", "target": "charpentier", "weight": 5}, {"source": "cite derriere", "target": "cordonnier", "weight": 1}, {"source": "cite derriere", "target": "couturiere", "weight": 1}, {"source": "cite derriere", "target": "couvreur", "weight": 1}, {"source": "cite derriere", "target": "domestique", "weight": 2}, {"source": "cite derriere", "target": "ecrivain", "weight": 1}, {"source": "cite derriere", "target": "fileuse", "weight": 1}, {"source": "cite derriere", "target": "garde police", "weight": 1}, {"source": "cite derriere", "target": "huissier", "weight": 2}, {"source": "cite derriere", "target": "imprimeur", "weight": 1}, {"source": "cite derriere", "target": "instituteur", "weight": 1}, {"source": "cite derriere", "target": "journalier", "weight": 7}, {"source": "cite derriere", "target": "journaliere", "weight": 5}, {"source": "cite derriere", "target": "lessiveuse", "weight": 1}, {"source": "cite derriere", "target": "macon", "weight": 6}, {"source": "cite derriere", "target": "man\u0153uvre", "weight": 2}, {"source": "cite derriere", "target": "marchand", "weight": 2}, {"source": "cite derriere", "target": "marechal-ferrant", "weight": 1}, {"source": "cite derriere", "target": "menuisier", "weight": 10}, {"source": "cite derriere", "target": "ministre", "weight": 3}, {"source": "cite derriere", "target": "professeur", "weight": 1}, {"source": "cite derriere", "target": "rentier", "weight": 1}, {"source": "cite derriere", "target": "rentiere", "weight": 13}, {"source": "cite derriere", "target": "sans vocation", "weight": 8}, {"source": "cite derriere", "target": "serrurier", "weight": 1}, {"source": "cite derriere", "target": "tailleur", "weight": 1}, {"source": "cite derriere", "target": "tailleur de pierres", "weight": 3}, {"source": "cite derriere", "target": "tailleuse", "weight": 1}, {"source": "cite derriere", "target": "tisserand", "weight": 1}, {"source": "cite derriere", "target": "tonnelier", "weight": 1}, {"source": "cite derriere", "target": "vendeur de vin", "weight": 1}, {"source": "cite derriere", "target": "vigneron", "weight": 1}, {"source": "cite dessous", "target": "carrier", "weight": 1}, {"source": "cite dessous", "target": "charpentier", "weight": 1}, {"source": "cite dessous", "target": "cordonnier", "weight": 2}, {"source": "cite dessous", "target": "ecrivain", "weight": 1}, {"source": "cite dessous", "target": "femme de menage", "weight": 2}, {"source": "cite dessous", "target": "imprimeur", "weight": 1}, {"source": "cite dessous", "target": "instituteur", "weight": 1}, {"source": "cite dessous", "target": "journalier", "weight": 5}, {"source": "cite dessous", "target": "journaliere", "weight": 4}, {"source": "cite dessous", "target": "lingere", "weight": 1}, {"source": "cite dessous", "target": "man\u0153uvre", "weight": 1}, {"source": "cite dessous", "target": "menuisier", "weight": 1}, {"source": "cite dessous", "target": "professeur", "weight": 1}, {"source": "cite dessous", "target": "rentiere", "weight": 7}, {"source": "cite dessous", "target": "tailleur", "weight": 1}, {"source": "cite dessous", "target": "tailleur de pierres", "weight": 2}, {"source": "cite dessous", "target": "tailleuse", "weight": 1}, {"source": "cite dessous", "target": "tient pension", "weight": 1}, {"source": "cite devant", "target": "avocat", "weight": 1}, {"source": "cite devant", "target": "boulanger", "weight": 1}, {"source": "cite devant", "target": "charpentier", "weight": 2}, {"source": "cite devant", "target": "cordonnier", "weight": 8}, {"source": "cite devant", "target": "couvreur", "weight": 1}, {"source": "cite devant", "target": "domestique", "weight": 1}, {"source": "cite devant", "target": "fileuse", "weight": 1}, {"source": "cite devant", "target": "garde police", "weight": 1}, {"source": "cite devant", "target": "huissier", "weight": 3}, {"source": "cite devant", "target": "jardinier", "weight": 1}, {"source": "cite devant", "target": "journalier", "weight": 1}, {"source": "cite devant", "target": "journaliere", "weight": 2}, {"source": "cite devant", "target": "laboureur", "weight": 1}, {"source": "cite devant", "target": "laitier", "weight": 2}, {"source": "cite devant", "target": "libraire", "weight": 1}, {"source": "cite devant", "target": "lingere", "weight": 1}, {"source": "cite devant", "target": "marchand", "weight": 2}, {"source": "cite devant", "target": "medecin", "weight": 2}, {"source": "cite devant", "target": "menuisier", "weight": 1}, {"source": "cite devant", "target": "ministre", "weight": 1}, {"source": "cite devant", "target": "pintier", "weight": 2}, {"source": "cite devant", "target": "professeur", "weight": 4}, {"source": "cite devant", "target": "rentier", "weight": 3}, {"source": "cite devant", "target": "rentiere", "weight": 20}, {"source": "cite devant", "target": "sans vocation", "weight": 2}, {"source": "cite devant", "target": "serrurier", "weight": 2}, {"source": "cite devant", "target": "tailleur", "weight": 1}, {"source": "cite devant", "target": "tient pension", "weight": 1}, {"source": "cite devant", "target": "tisserand", "weight": 2}, {"source": "cite devant", "target": "vendeur de vin", "weight": 1}, {"source": "cite devant", "target": "vigneron", "weight": 2}, {"source": "cour", "target": "fermier", "weight": 3}, {"source": "cour", "target": "jardinier", "weight": 6}, {"source": "cour", "target": "journalier", "weight": 2}, {"source": "cour", "target": "journaliere", "weight": 1}, {"source": "cour", "target": "proprietaire", "weight": 16}, {"source": "cour", "target": "rentier", "weight": 3}, {"source": "cour", "target": "rentiere", "weight": 4}, {"source": "cour", "target": "vigneron", "weight": 11}, {"source": "derriere les terreaux", "target": "aubergiste", "weight": 1}, {"source": "derriere les terreaux", "target": "charpentier", "weight": 2}, {"source": "derriere les terreaux", "target": "instituteur", "weight": 1}, {"source": "derriere les terreaux", "target": "jardinier", "weight": 1}, {"source": "derriere les terreaux", "target": "rentier", "weight": 2}, {"source": "derriere les terreaux", "target": "rentiere", "weight": 1}, {"source": "derriere les terreaux", "target": "sans vocation", "weight": 1}, {"source": "escaliers du marche", "target": "avocat", "weight": 1}, {"source": "escaliers du marche", "target": "charpentier", "weight": 1}, {"source": "escaliers du marche", "target": "cordonnier", "weight": 2}, {"source": "escaliers du marche", "target": "courtepointiere", "weight": 1}, {"source": "escaliers du marche", "target": "garde-malade", "weight": 2}, {"source": "escaliers du marche", "target": "huissier", "weight": 1}, {"source": "escaliers du marche", "target": "imprimeur", "weight": 1}, {"source": "escaliers du marche", "target": "instituteur", "weight": 2}, {"source": "escaliers du marche", "target": "journalier", "weight": 1}, {"source": "escaliers du marche", "target": "journaliere", "weight": 2}, {"source": "escaliers du marche", "target": "lingere", "weight": 1}, {"source": "escaliers du marche", "target": "man\u0153uvre", "weight": 1}, {"source": "escaliers du marche", "target": "menuisier", "weight": 1}, {"source": "escaliers du marche", "target": "rentier", "weight": 1}, {"source": "escaliers du marche", "target": "rentiere", "weight": 2}, {"source": "escaliers du marche", "target": "sans vocation", "weight": 2}, {"source": "escaliers du marche", "target": "tailleur", "weight": 1}, {"source": "etraz", "target": "avocat", "weight": 2}, {"source": "etraz", "target": "boulanger", "weight": 1}, {"source": "etraz", "target": "carrier", "weight": 1}, {"source": "etraz", "target": "chapelier", "weight": 1}, {"source": "etraz", "target": "charpentier", "weight": 2}, {"source": "etraz", "target": "charron", "weight": 2}, {"source": "etraz", "target": "cordonnier", "weight": 2}, {"source": "etraz", "target": "courtepointiere", "weight": 1}, {"source": "etraz", "target": "domestique", "weight": 1}, {"source": "etraz", "target": "ecrivain", "weight": 1}, {"source": "etraz", "target": "femme de menage", "weight": 2}, {"source": "etraz", "target": "gypseur/gypsier", "weight": 2}, {"source": "etraz", "target": "jardinier", "weight": 2}, {"source": "etraz", "target": "journalier", "weight": 7}, {"source": "etraz", "target": "journaliere", "weight": 1}, {"source": "etraz", "target": "lingere", "weight": 3}, {"source": "etraz", "target": "marchand", "weight": 2}, {"source": "etraz", "target": "marchande", "weight": 1}, {"source": "etraz", "target": "menuisier", "weight": 2}, {"source": "etraz", "target": "pintier", "weight": 3}, {"source": "etraz", "target": "rentier", "weight": 7}, {"source": "etraz", "target": "rentiere", "weight": 6}, {"source": "etraz", "target": "sellier", "weight": 1}, {"source": "etraz", "target": "serrurier", "weight": 1}, {"source": "etraz", "target": "tailleur", "weight": 1}, {"source": "etraz", "target": "tonnelier", "weight": 1}, {"source": "etraz", "target": "vigneron", "weight": 6}, {"source": "etraz", "target": "voiturier", "weight": 3}, {"source": "grand chene", "target": "charron", "weight": 1}, {"source": "grand chene", "target": "gypseur/gypsier", "weight": 1}, {"source": "grand chene", "target": "institutrice", "weight": 1}, {"source": "grand chene", "target": "libraire", "weight": 1}, {"source": "grand chene", "target": "man\u0153uvre", "weight": 1}, {"source": "grand chene", "target": "marchand", "weight": 2}, {"source": "grand chene", "target": "marchande", "weight": 1}, {"source": "grand chene", "target": "medecin", "weight": 1}, {"source": "grand chene", "target": "ministre", "weight": 1}, {"source": "grand chene", "target": "negociant", "weight": 1}, {"source": "grand chene", "target": "proprietaire", "weight": 3}, {"source": "grand chene", "target": "rentier", "weight": 5}, {"source": "grand chene", "target": "rentiere", "weight": 4}, {"source": "grand chene", "target": "sage-femme", "weight": 2}, {"source": "grand chene", "target": "sellier", "weight": 1}, {"source": "grand chene", "target": "serrurier", "weight": 1}, {"source": "grand chene", "target": "tailleuse", "weight": 1}, {"source": "grand chene", "target": "traiteur", "weight": 2}, {"source": "grand chene", "target": "voiturier", "weight": 1}, {"source": "grand st jean", "target": "agriculteur", "weight": 1}, {"source": "grand st jean", "target": "blanchisseuse", "weight": 4}, {"source": "grand st jean", "target": "boulanger", "weight": 5}, {"source": "grand st jean", "target": "chapelier", "weight": 2}, {"source": "grand st jean", "target": "charpentier", "weight": 5}, {"source": "grand st jean", "target": "cordonnier", "weight": 8}, {"source": "grand st jean", "target": "courtepointiere", "weight": 3}, {"source": "grand st jean", "target": "couturiere", "weight": 2}, {"source": "grand st jean", "target": "domestique", "weight": 1}, {"source": "grand st jean", "target": "ecrivain", "weight": 2}, {"source": "grand st jean", "target": "femme de menage", "weight": 2}, {"source": "grand st jean", "target": "fileuse", "weight": 2}, {"source": "grand st jean", "target": "fondeur", "weight": 7}, {"source": "grand st jean", "target": "garde police", "weight": 1}, {"source": "grand st jean", "target": "garde-malade", "weight": 1}, {"source": "grand st jean", "target": "gypseur/gypsier", "weight": 3}, {"source": "grand st jean", "target": "instituteur", "weight": 1}, {"source": "grand st jean", "target": "institutrice", "weight": 1}, {"source": "grand st jean", "target": "jardinier", "weight": 2}, {"source": "grand st jean", "target": "journalier", "weight": 7}, {"source": "grand st jean", "target": "journaliere", "weight": 2}, {"source": "grand st jean", "target": "juge d'appel", "weight": 2}, {"source": "grand st jean", "target": "laitier", "weight": 1}, {"source": "grand st jean", "target": "lessiveuse", "weight": 1}, {"source": "grand st jean", "target": "libraire", "weight": 2}, {"source": "grand st jean", "target": "lingere", "weight": 3}, {"source": "grand st jean", "target": "macon", "weight": 2}, {"source": "grand st jean", "target": "man\u0153uvre", "weight": 1}, {"source": "grand st jean", "target": "marchand", "weight": 7}, {"source": "grand st jean", "target": "marchande", "weight": 2}, {"source": "grand st jean", "target": "medecin", "weight": 2}, {"source": "grand st jean", "target": "menuisier", "weight": 11}, {"source": "grand st jean", "target": "ministre", "weight": 1}, {"source": "grand st jean", "target": "negociant", "weight": 5}, {"source": "grand st jean", "target": "pintier", "weight": 1}, {"source": "grand st jean", "target": "proprietaire", "weight": 4}, {"source": "grand st jean", "target": "rentier", "weight": 4}, {"source": "grand st jean", "target": "rentiere", "weight": 28}, {"source": "grand st jean", "target": "repasseuse", "weight": 2}, {"source": "grand st jean", "target": "sage-femme", "weight": 3}, {"source": "grand st jean", "target": "serrurier", "weight": 5}, {"source": "grand st jean", "target": "tailleur", "weight": 5}, {"source": "grand st jean", "target": "tailleur de pierres", "weight": 1}, {"source": "grand st jean", "target": "tailleuse", "weight": 9}, {"source": "grand st jean", "target": "tient pension", "weight": 2}, {"source": "grand st jean", "target": "tonnelier", "weight": 3}, {"source": "grand st jean", "target": "traiteur", "weight": 3}, {"source": "grand st jean", "target": "vendeur de vin", "weight": 1}, {"source": "grand st jean", "target": "voiturier", "weight": 1}, {"source": "grange-neuve", "target": "agriculteur", "weight": 7}, {"source": "grange-neuve", "target": "carrier", "weight": 1}, {"source": "grange-neuve", "target": "laboureur", "weight": 1}, {"source": "grange-neuve", "target": "tailleur", "weight": 1}, {"source": "grotte", "target": "fileuse", "weight": 1}, {"source": "grotte", "target": "jardinier", "weight": 2}, {"source": "grotte", "target": "negociant", "weight": 2}, {"source": "grotte", "target": "proprietaire", "weight": 1}, {"source": "grotte", "target": "rentier", "weight": 2}, {"source": "grotte", "target": "rentiere", "weight": 5}, {"source": "la sallaz", "target": "aubergiste", "weight": 1}, {"source": "la sallaz", "target": "charron", "weight": 1}, {"source": "la sallaz", "target": "fermier", "weight": 2}, {"source": "la sallaz", "target": "journalier", "weight": 3}, {"source": "la sallaz", "target": "laboureur", "weight": 4}, {"source": "la sallaz", "target": "marechal-ferrant", "weight": 1}, {"source": "la sallaz", "target": "proprietaire", "weight": 1}, {"source": "la sallaz", "target": "tisserand", "weight": 2}, {"source": "madeleine", "target": "avocat", "weight": 1}, {"source": "madeleine", "target": "blanchisseuse", "weight": 1}, {"source": "madeleine", "target": "boulanger", "weight": 1}, {"source": "madeleine", "target": "cordonnier", "weight": 1}, {"source": "madeleine", "target": "couturiere", "weight": 1}, {"source": "madeleine", "target": "ecrivain", "weight": 1}, {"source": "madeleine", "target": "garde police", "weight": 1}, {"source": "madeleine", "target": "instituteur", "weight": 1}, {"source": "madeleine", "target": "journalier", "weight": 1}, {"source": "madeleine", "target": "macon", "weight": 1}, {"source": "madeleine", "target": "marchand", "weight": 5}, {"source": "madeleine", "target": "marchande", "weight": 5}, {"source": "madeleine", "target": "medecin", "weight": 1}, {"source": "madeleine", "target": "ministre", "weight": 1}, {"source": "madeleine", "target": "pintier", "weight": 1}, {"source": "madeleine", "target": "professeur", "weight": 1}, {"source": "madeleine", "target": "rentier", "weight": 1}, {"source": "madeleine", "target": "rentiere", "weight": 4}, {"source": "madeleine", "target": "repasseuse", "weight": 1}, {"source": "madeleine", "target": "sans vocation", "weight": 5}, {"source": "madeleine", "target": "sellier", "weight": 1}, {"source": "madeleine", "target": "serrurier", "weight": 2}, {"source": "madeleine", "target": "tailleur", "weight": 1}, {"source": "madeleine", "target": "tonnelier", "weight": 1}, {"source": "madeleine", "target": "vendeur de vin", "weight": 1}, {"source": "madeleine", "target": "voiturier", "weight": 2}, {"source": "marterey", "target": "agriculteur", "weight": 1}, {"source": "marterey", "target": "avocat", "weight": 1}, {"source": "marterey", "target": "boulanger", "weight": 1}, {"source": "marterey", "target": "chapelier", "weight": 3}, {"source": "marterey", "target": "charpentier", "weight": 16}, {"source": "marterey", "target": "charron", "weight": 1}, {"source": "marterey", "target": "cordonnier", "weight": 6}, {"source": "marterey", "target": "courtepointiere", "weight": 1}, {"source": "marterey", "target": "couturiere", "weight": 1}, {"source": "marterey", "target": "couvreur", "weight": 2}, {"source": "marterey", "target": "domestique", "weight": 3}, {"source": "marterey", "target": "ecrivain", "weight": 1}, {"source": "marterey", "target": "femme de menage", "weight": 2}, {"source": "marterey", "target": "garde police", "weight": 1}, {"source": "marterey", "target": "garde-malade", "weight": 1}, {"source": "marterey", "target": "institutrice", "weight": 2}, {"source": "marterey", "target": "jardinier", "weight": 6}, {"source": "marterey", "target": "journalier", "weight": 21}, {"source": "marterey", "target": "journaliere", "weight": 5}, {"source": "marterey", "target": "lessiveuse", "weight": 5}, {"source": "marterey", "target": "lingere", "weight": 12}, {"source": "marterey", "target": "macon", "weight": 3}, {"source": "marterey", "target": "man\u0153uvre", "weight": 4}, {"source": "marterey", "target": "marchand", "weight": 1}, {"source": "marterey", "target": "marchande", "weight": 1}, {"source": "marterey", "target": "marechal-ferrant", "weight": 6}, {"source": "marterey", "target": "menuisier", "weight": 6}, {"source": "marterey", "target": "ministre", "weight": 1}, {"source": "marterey", "target": "negociant", "weight": 1}, {"source": "marterey", "target": "pintier", "weight": 2}, {"source": "marterey", "target": "professeur", "weight": 1}, {"source": "marterey", "target": "proprietaire", "weight": 2}, {"source": "marterey", "target": "rentier", "weight": 8}, {"source": "marterey", "target": "rentiere", "weight": 8}, {"source": "marterey", "target": "repasseuse", "weight": 1}, {"source": "marterey", "target": "sage-femme", "weight": 1}, {"source": "marterey", "target": "sellier", "weight": 3}, {"source": "marterey", "target": "serrurier", "weight": 1}, {"source": "marterey", "target": "tailleur", "weight": 1}, {"source": "marterey", "target": "tailleur de pierres", "weight": 2}, {"source": "marterey", "target": "tailleuse", "weight": 5}, {"source": "marterey", "target": "tanneur", "weight": 1}, {"source": "marterey", "target": "tisserand", "weight": 3}, {"source": "marterey", "target": "tonnelier", "weight": 1}, {"source": "marterey", "target": "traiteur", "weight": 1}, {"source": "marterey", "target": "vigneron", "weight": 21}, {"source": "marterey", "target": "voiturier", "weight": 13}, {"source": "maupas", "target": "carrier", "weight": 1}, {"source": "maupas", "target": "charpentier", "weight": 1}, {"source": "maupas", "target": "fermier", "weight": 1}, {"source": "maupas", "target": "garde police", "weight": 1}, {"source": "maupas", "target": "jardinier", "weight": 3}, {"source": "maupas", "target": "journalier", "weight": 1}, {"source": "maupas", "target": "journaliere", "weight": 1}, {"source": "maupas", "target": "marchand", "weight": 1}, {"source": "maupas", "target": "rentier", "weight": 3}, {"source": "maupas", "target": "rentiere", "weight": 1}, {"source": "maupas", "target": "tonnelier", "weight": 1}, {"source": "maupas", "target": "vigneron", "weight": 1}, {"source": "mercerie", "target": "avocat", "weight": 1}, {"source": "mercerie", "target": "blanchisseuse", "weight": 1}, {"source": "mercerie", "target": "boulanger", "weight": 1}, {"source": "mercerie", "target": "charpentier", "weight": 1}, {"source": "mercerie", "target": "cordonnier", "weight": 9}, {"source": "mercerie", "target": "couturiere", "weight": 1}, {"source": "mercerie", "target": "couvreur", "weight": 2}, {"source": "mercerie", "target": "domestique", "weight": 1}, {"source": "mercerie", "target": "ferblantier", "weight": 1}, {"source": "mercerie", "target": "fermier", "weight": 1}, {"source": "mercerie", "target": "gypseur/gypsier", "weight": 1}, {"source": "mercerie", "target": "instituteur", "weight": 1}, {"source": "mercerie", "target": "institutrice", "weight": 1}, {"source": "mercerie", "target": "jardinier", "weight": 1}, {"source": "mercerie", "target": "journalier", "weight": 4}, {"source": "mercerie", "target": "libraire", "weight": 1}, {"source": "mercerie", "target": "lingere", "weight": 1}, {"source": "mercerie", "target": "macon", "weight": 1}, {"source": "mercerie", "target": "marchand", "weight": 1}, {"source": "mercerie", "target": "marchande", "weight": 1}, {"source": "mercerie", "target": "menuisier", "weight": 4}, {"source": "mercerie", "target": "pintier", "weight": 1}, {"source": "mercerie", "target": "rentiere", "weight": 3}, {"source": "mercerie", "target": "repasseuse", "weight": 1}, {"source": "mercerie", "target": "tailleur", "weight": 3}, {"source": "mercerie", "target": "tailleuse", "weight": 1}, {"source": "mercerie", "target": "tient pension", "weight": 2}, {"source": "mercerie", "target": "tisserand", "weight": 1}, {"source": "mercerie", "target": "tonnelier", "weight": 1}, {"source": "mercerie", "target": "traiteur", "weight": 1}, {"source": "mercerie", "target": "vendeur de vin", "weight": 1}, {"source": "montee de st laurent", "target": "aubergiste", "weight": 1}, {"source": "montee de st laurent", "target": "boulanger", "weight": 2}, {"source": "montee de st laurent", "target": "chapelier", "weight": 1}, {"source": "montee de st laurent", "target": "charpentier", "weight": 1}, {"source": "montee de st laurent", "target": "cordonnier", "weight": 2}, {"source": "montee de st laurent", "target": "courtepointiere", "weight": 1}, {"source": "montee de st laurent", "target": "couturiere", "weight": 1}, {"source": "montee de st laurent", "target": "couvreur", "weight": 1}, {"source": "montee de st laurent", "target": "ecrivain", "weight": 1}, {"source": "montee de st laurent", "target": "ferblantier", "weight": 2}, {"source": "montee de st laurent", "target": "garde police", "weight": 2}, {"source": "montee de st laurent", "target": "garde-malade", "weight": 1}, {"source": "montee de st laurent", "target": "gypseur/gypsier", "weight": 1}, {"source": "montee de st laurent", "target": "instituteur", "weight": 1}, {"source": "montee de st laurent", "target": "jardinier", "weight": 1}, {"source": "montee de st laurent", "target": "journalier", "weight": 4}, {"source": "montee de st laurent", "target": "journaliere", "weight": 5}, {"source": "montee de st laurent", "target": "juge d'appel", "weight": 2}, {"source": "montee de st laurent", "target": "laitier", "weight": 2}, {"source": "montee de st laurent", "target": "lingere", "weight": 3}, {"source": "montee de st laurent", "target": "marchand", "weight": 2}, {"source": "montee de st laurent", "target": "marchande", "weight": 3}, {"source": "montee de st laurent", "target": "menuisier", "weight": 3}, {"source": "montee de st laurent", "target": "negociant", "weight": 1}, {"source": "montee de st laurent", "target": "proprietaire", "weight": 2}, {"source": "montee de st laurent", "target": "rentier", "weight": 1}, {"source": "montee de st laurent", "target": "rentiere", "weight": 1}, {"source": "montee de st laurent", "target": "sage-femme", "weight": 1}, {"source": "montee de st laurent", "target": "sans vocation", "weight": 1}, {"source": "montee de st laurent", "target": "serrurier", "weight": 1}, {"source": "montee de st laurent", "target": "tailleur", "weight": 2}, {"source": "montee de st laurent", "target": "tailleuse", "weight": 2}, {"source": "montee de st laurent", "target": "tonnelier", "weight": 2}, {"source": "montee de st laurent", "target": "traiteur", "weight": 2}, {"source": "montee de st laurent", "target": "vendeur de vin", "weight": 2}, {"source": "montee de st laurent", "target": "vigneron", "weight": 1}, {"source": "montee st francois", "target": "avocat", "weight": 1}, {"source": "montee st francois", "target": "chapelier", "weight": 3}, {"source": "montee st francois", "target": "marchand", "weight": 3}, {"source": "montee st francois", "target": "marchande", "weight": 3}, {"source": "montee st francois", "target": "proprietaire", "weight": 1}, {"source": "montee st francois", "target": "rentier", "weight": 1}, {"source": "montee st francois", "target": "rentiere", "weight": 2}, {"source": "montee st francois", "target": "tailleur", "weight": 1}, {"source": "montee st francois", "target": "tailleuse", "weight": 1}, {"source": "montee st francois", "target": "traiteur", "weight": 1}, {"source": "moulin de pepinet", "target": "agriculteur", "weight": 1}, {"source": "moulin de pepinet", "target": "avocat", "weight": 1}, {"source": "moulin de pepinet", "target": "blanchisseuse", "weight": 1}, {"source": "moulin de pepinet", "target": "carrier", "weight": 1}, {"source": "moulin de pepinet", "target": "couvreur", "weight": 1}, {"source": "moulin de pepinet", "target": "institutrice", "weight": 1}, {"source": "moulin de pepinet", "target": "jardinier", "weight": 5}, {"source": "moulin de pepinet", "target": "journalier", "weight": 3}, {"source": "moulin de pepinet", "target": "journaliere", "weight": 1}, {"source": "moulin de pepinet", "target": "marechal-ferrant", "weight": 1}, {"source": "moulin de pepinet", "target": "meunier", "weight": 4}, {"source": "moulin de pepinet", "target": "rentiere", "weight": 1}, {"source": "moulin de pepinet", "target": "vigneron", "weight": 2}, {"source": "ouchy", "target": "agriculteur", "weight": 1}, {"source": "ouchy", "target": "aubergiste", "weight": 2}, {"source": "ouchy", "target": "blanchisseuse", "weight": 2}, {"source": "ouchy", "target": "boucher", "weight": 2}, {"source": "ouchy", "target": "cordonnier", "weight": 1}, {"source": "ouchy", "target": "journalier", "weight": 24}, {"source": "ouchy", "target": "journaliere", "weight": 9}, {"source": "ouchy", "target": "negociant", "weight": 4}, {"source": "ouchy", "target": "pintier", "weight": 2}, {"source": "ouchy", "target": "proprietaire", "weight": 27}, {"source": "ouchy", "target": "rentier", "weight": 2}, {"source": "ouchy", "target": "rentiere", "weight": 4}, {"source": "ouchy", "target": "sage-femme", "weight": 1}, {"source": "ouchy", "target": "tailleur", "weight": 1}, {"source": "ouchy", "target": "tailleuse", "weight": 2}, {"source": "ouchy", "target": "tonnelier", "weight": 4}, {"source": "ouchy", "target": "traiteur", "weight": 1}, {"source": "ouchy", "target": "vigneron", "weight": 4}, {"source": "palud", "target": "boulanger", "weight": 2}, {"source": "palud", "target": "chapelier", "weight": 1}, {"source": "palud", "target": "cordonnier", "weight": 1}, {"source": "palud", "target": "couturiere", "weight": 1}, {"source": "palud", "target": "ecrivain", "weight": 1}, {"source": "palud", "target": "gypseur/gypsier", "weight": 1}, {"source": "palud", "target": "institutrice", "weight": 3}, {"source": "palud", "target": "journalier", "weight": 1}, {"source": "palud", "target": "laitier", "weight": 1}, {"source": "palud", "target": "lingere", "weight": 2}, {"source": "palud", "target": "macon", "weight": 1}, {"source": "palud", "target": "man\u0153uvre", "weight": 1}, {"source": "palud", "target": "marchand", "weight": 4}, {"source": "palud", "target": "marchande", "weight": 6}, {"source": "palud", "target": "medecin", "weight": 1}, {"source": "palud", "target": "menuisier", "weight": 3}, {"source": "palud", "target": "negociant", "weight": 5}, {"source": "palud", "target": "professeur", "weight": 1}, {"source": "palud", "target": "rentier", "weight": 5}, {"source": "palud", "target": "rentiere", "weight": 13}, {"source": "palud", "target": "tailleur", "weight": 3}, {"source": "palud", "target": "tailleur de pierres", "weight": 1}, {"source": "palud", "target": "tailleuse", "weight": 1}, {"source": "palud", "target": "vendeur de vin", "weight": 2}, {"source": "petit chene", "target": "boulanger", "weight": 1}, {"source": "petit chene", "target": "cordonnier", "weight": 1}, {"source": "petit chene", "target": "jardinier", "weight": 1}, {"source": "petit chene", "target": "lingere", "weight": 1}, {"source": "petit chene", "target": "menuisier", "weight": 1}, {"source": "petit chene", "target": "proprietaire", "weight": 1}, {"source": "petit chene", "target": "repasseuse", "weight": 2}, {"source": "petit chene", "target": "tient pension", "weight": 1}, {"source": "petit chene", "target": "tonnelier", "weight": 1}, {"source": "petit chene", "target": "vigneron", "weight": 1}, {"source": "petit singe", "target": "jardinier", "weight": 1}, {"source": "petit singe", "target": "negociant", "weight": 1}, {"source": "petit singe", "target": "rentier", "weight": 3}, {"source": "petit singe", "target": "rentiere", "weight": 3}, {"source": "petit singe", "target": "voiturier", "weight": 1}, {"source": "petit st jean", "target": "aubergiste", "weight": 1}, {"source": "petit st jean", "target": "blanchisseuse", "weight": 1}, {"source": "petit st jean", "target": "boulanger", "weight": 2}, {"source": "petit st jean", "target": "cordonnier", "weight": 4}, {"source": "petit st jean", "target": "couturiere", "weight": 1}, {"source": "petit st jean", "target": "garde police", "weight": 1}, {"source": "petit st jean", "target": "huissier", "weight": 1}, {"source": "petit st jean", "target": "imprimeur", "weight": 2}, {"source": "petit st jean", "target": "institutrice", "weight": 2}, {"source": "petit st jean", "target": "journalier", "weight": 1}, {"source": "petit st jean", "target": "journaliere", "weight": 1}, {"source": "petit st jean", "target": "macon", "weight": 1}, {"source": "petit st jean", "target": "marchand", "weight": 1}, {"source": "petit st jean", "target": "marchande", "weight": 3}, {"source": "petit st jean", "target": "menuisier", "weight": 2}, {"source": "petit st jean", "target": "meunier", "weight": 2}, {"source": "petit st jean", "target": "rentier", "weight": 2}, {"source": "petit st jean", "target": "rentiere", "weight": 1}, {"source": "petit st jean", "target": "serrurier", "weight": 1}, {"source": "petit st jean", "target": "tailleur", "weight": 2}, {"source": "petit st jean", "target": "tailleuse", "weight": 3}, {"source": "petit st jean", "target": "voiturier", "weight": 1}, {"source": "place du pont", "target": "blanchisseuse", "weight": 1}, {"source": "place du pont", "target": "boucher", "weight": 1}, {"source": "place du pont", "target": "ferblantier", "weight": 2}, {"source": "place du pont", "target": "macon", "weight": 1}, {"source": "place du pont", "target": "marchand", "weight": 2}, {"source": "place du pont", "target": "meunier", "weight": 2}, {"source": "place du pont", "target": "sage-femme", "weight": 1}, {"source": "place du pont", "target": "tailleur", "weight": 1}, {"source": "place du pont", "target": "tanneur", "weight": 1}, {"source": "place du pont", "target": "traiteur", "weight": 1}, {"source": "place st francois", "target": "avocat", "weight": 1}, {"source": "place st francois", "target": "lingere", "weight": 1}, {"source": "place st francois", "target": "marchande", "weight": 2}, {"source": "place st francois", "target": "proprietaire", "weight": 1}, {"source": "place st francois", "target": "rentier", "weight": 6}, {"source": "place st francois", "target": "rentiere", "weight": 7}, {"source": "place st francois", "target": "traiteur", "weight": 1}, {"source": "place st francois", "target": "vendeur de vin", "weight": 1}, {"source": "place st francois", "target": "voiturier", "weight": 1}, {"source": "rue de l'hopital", "target": "charpentier", "weight": 2}, {"source": "rue de l'hopital", "target": "cordonnier", "weight": 2}, {"source": "rue de l'hopital", "target": "couvreur", "weight": 1}, {"source": "rue de l'hopital", "target": "domestique", "weight": 1}, {"source": "rue de l'hopital", "target": "fileuse", "weight": 1}, {"source": "rue de l'hopital", "target": "imprimeur", "weight": 1}, {"source": "rue de l'hopital", "target": "journalier", "weight": 3}, {"source": "rue de l'hopital", "target": "journaliere", "weight": 1}, {"source": "rue de l'hopital", "target": "laitier", "weight": 1}, {"source": "rue de l'hopital", "target": "man\u0153uvre", "weight": 1}, {"source": "rue de l'hopital", "target": "proprietaire", "weight": 1}, {"source": "rue de l'hopital", "target": "rentiere", "weight": 1}, {"source": "rue de l'hopital", "target": "serrurier", "weight": 2}, {"source": "rue de l'hopital", "target": "tailleur de pierres", "weight": 1}, {"source": "rue de l'hopital", "target": "tailleuse", "weight": 1}, {"source": "rue du pont", "target": "avocat", "weight": 1}, {"source": "rue du pont", "target": "blanchisseuse", "weight": 1}, {"source": "rue du pont", "target": "boulanger", "weight": 1}, {"source": "rue du pont", "target": "chapelier", "weight": 2}, {"source": "rue du pont", "target": "cordonnier", "weight": 2}, {"source": "rue du pont", "target": "couturiere", "weight": 1}, {"source": "rue du pont", "target": "ferblantier", "weight": 1}, {"source": "rue du pont", "target": "garde police", "weight": 2}, {"source": "rue du pont", "target": "garde-malade", "weight": 2}, {"source": "rue du pont", "target": "instituteur", "weight": 1}, {"source": "rue du pont", "target": "journalier", "weight": 1}, {"source": "rue du pont", "target": "libraire", "weight": 2}, {"source": "rue du pont", "target": "lingere", "weight": 1}, {"source": "rue du pont", "target": "marchand", "weight": 3}, {"source": "rue du pont", "target": "marchande", "weight": 2}, {"source": "rue du pont", "target": "ministre", "weight": 1}, {"source": "rue du pont", "target": "negociant", "weight": 5}, {"source": "rue du pont", "target": "proprietaire", "weight": 1}, {"source": "rue du pont", "target": "rentier", "weight": 2}, {"source": "rue du pont", "target": "rentiere", "weight": 4}, {"source": "rue du pont", "target": "sage-femme", "weight": 1}, {"source": "rue du pont", "target": "tailleur", "weight": 4}, {"source": "rue du pont", "target": "tailleuse", "weight": 1}, {"source": "rue du pre", "target": "aubergiste", "weight": 1}, {"source": "rue du pre", "target": "blanchisseuse", "weight": 1}, {"source": "rue du pre", "target": "boucher", "weight": 9}, {"source": "rue du pre", "target": "boulanger", "weight": 3}, {"source": "rue du pre", "target": "carrier", "weight": 2}, {"source": "rue du pre", "target": "charpentier", "weight": 7}, {"source": "rue du pre", "target": "cordonnier", "weight": 15}, {"source": "rue du pre", "target": "courtepointiere", "weight": 1}, {"source": "rue du pre", "target": "couturiere", "weight": 1}, {"source": "rue du pre", "target": "couvreur", "weight": 3}, {"source": "rue du pre", "target": "domestique", "weight": 3}, {"source": "rue du pre", "target": "femme de menage", "weight": 5}, {"source": "rue du pre", "target": "fileuse", "weight": 1}, {"source": "rue du pre", "target": "fondeur", "weight": 1}, {"source": "rue du pre", "target": "garde police", "weight": 3}, {"source": "rue du pre", "target": "garde-malade", "weight": 1}, {"source": "rue du pre", "target": "gypseur/gypsier", "weight": 1}, {"source": "rue du pre", "target": "imprimeur", "weight": 7}, {"source": "rue du pre", "target": "jardinier", "weight": 1}, {"source": "rue du pre", "target": "journalier", "weight": 10}, {"source": "rue du pre", "target": "journaliere", "weight": 9}, {"source": "rue du pre", "target": "laboureur", "weight": 2}, {"source": "rue du pre", "target": "laitier", "weight": 2}, {"source": "rue du pre", "target": "lessiveuse", "weight": 3}, {"source": "rue du pre", "target": "lingere", "weight": 9}, {"source": "rue du pre", "target": "macon", "weight": 3}, {"source": "rue du pre", "target": "man\u0153uvre", "weight": 4}, {"source": "rue du pre", "target": "marchand", "weight": 5}, {"source": "rue du pre", "target": "marchande", "weight": 3}, {"source": "rue du pre", "target": "menuisier", "weight": 3}, {"source": "rue du pre", "target": "meunier", "weight": 1}, {"source": "rue du pre", "target": "negociant", "weight": 1}, {"source": "rue du pre", "target": "proprietaire", "weight": 3}, {"source": "rue du pre", "target": "rentier", "weight": 3}, {"source": "rue du pre", "target": "repasseuse", "weight": 1}, {"source": "rue du pre", "target": "sage-femme", "weight": 1}, {"source": "rue du pre", "target": "serrurier", "weight": 1}, {"source": "rue du pre", "target": "tailleur", "weight": 6}, {"source": "rue du pre", "target": "tailleur de pierres", "weight": 2}, {"source": "rue du pre", "target": "tailleuse", "weight": 7}, {"source": "rue du pre", "target": "tanneur", "weight": 10}, {"source": "rue du pre", "target": "tient pension", "weight": 2}, {"source": "rue du pre", "target": "tisserand", "weight": 2}, {"source": "rue du pre", "target": "tonnelier", "weight": 1}, {"source": "rue du pre", "target": "traiteur", "weight": 2}, {"source": "rue du pre", "target": "voiturier", "weight": 1}, {"source": "st etienne", "target": "cordonnier", "weight": 2}, {"source": "st etienne", "target": "fileuse", "weight": 1}, {"source": "st etienne", "target": "garde police", "weight": 1}, {"source": "st etienne", "target": "imprimeur", "weight": 1}, {"source": "st etienne", "target": "instituteur", "weight": 1}, {"source": "st etienne", "target": "journalier", "weight": 2}, {"source": "st etienne", "target": "lingere", "weight": 1}, {"source": "st etienne", "target": "macon", "weight": 1}, {"source": "st etienne", "target": "man\u0153uvre", "weight": 1}, {"source": "st etienne", "target": "pintier", "weight": 1}, {"source": "st etienne", "target": "rentier", "weight": 2}, {"source": "st etienne", "target": "rentiere", "weight": 5}, {"source": "st etienne", "target": "serrurier", "weight": 1}, {"source": "st etienne", "target": "tailleur de pierres", "weight": 2}, {"source": "st etienne", "target": "tient pension", "weight": 2}, {"source": "st francois", "target": "aubergiste", "weight": 1}, {"source": "st francois", "target": "blanchisseuse", "weight": 1}, {"source": "st francois", "target": "boulanger", "weight": 1}, {"source": "st francois", "target": "cordonnier", "weight": 7}, {"source": "st francois", "target": "couturiere", "weight": 3}, {"source": "st francois", "target": "ferblantier", "weight": 1}, {"source": "st francois", "target": "imprimeur", "weight": 1}, {"source": "st francois", "target": "journalier", "weight": 2}, {"source": "st francois", "target": "macon", "weight": 1}, {"source": "st francois", "target": "man\u0153uvre", "weight": 1}, {"source": "st francois", "target": "marchand", "weight": 5}, {"source": "st francois", "target": "marchande", "weight": 2}, {"source": "st francois", "target": "negociant", "weight": 7}, {"source": "st francois", "target": "rentier", "weight": 2}, {"source": "st francois", "target": "rentiere", "weight": 10}, {"source": "st francois", "target": "tailleur", "weight": 3}, {"source": "st francois", "target": "tailleuse", "weight": 3}, {"source": "st francois", "target": "vendeur de vin", "weight": 1}, {"source": "st laurent", "target": "aubergiste", "weight": 1}, {"source": "st laurent", "target": "avocat", "weight": 2}, {"source": "st laurent", "target": "blanchisseuse", "weight": 1}, {"source": "st laurent", "target": "cordonnier", "weight": 5}, {"source": "st laurent", "target": "courtepointiere", "weight": 1}, {"source": "st laurent", "target": "couvreur", "weight": 1}, {"source": "st laurent", "target": "domestique", "weight": 1}, {"source": "st laurent", "target": "fondeur", "weight": 2}, {"source": "st laurent", "target": "garde police", "weight": 1}, {"source": "st laurent", "target": "gypseur/gypsier", "weight": 1}, {"source": "st laurent", "target": "instituteur", "weight": 2}, {"source": "st laurent", "target": "institutrice", "weight": 1}, {"source": "st laurent", "target": "jardinier", "weight": 1}, {"source": "st laurent", "target": "journalier", "weight": 2}, {"source": "st laurent", "target": "journaliere", "weight": 2}, {"source": "st laurent", "target": "juge d'appel", "weight": 2}, {"source": "st laurent", "target": "lessiveuse", "weight": 1}, {"source": "st laurent", "target": "lingere", "weight": 3}, {"source": "st laurent", "target": "macon", "weight": 2}, {"source": "st laurent", "target": "marchand", "weight": 3}, {"source": "st laurent", "target": "marchande", "weight": 5}, {"source": "st laurent", "target": "menuisier", "weight": 8}, {"source": "st laurent", "target": "negociant", "weight": 2}, {"source": "st laurent", "target": "ouvriere", "weight": 2}, {"source": "st laurent", "target": "proprietaire", "weight": 1}, {"source": "st laurent", "target": "rentier", "weight": 5}, {"source": "st laurent", "target": "rentiere", "weight": 4}, {"source": "st laurent", "target": "sellier", "weight": 1}, {"source": "st laurent", "target": "serrurier", "weight": 1}, {"source": "st laurent", "target": "tailleur", "weight": 2}, {"source": "st laurent", "target": "tailleur de pierres", "weight": 1}, {"source": "st laurent", "target": "vendeur de vin", "weight": 1}, {"source": "st laurent", "target": "vigneron", "weight": 3}, {"source": "st laurent", "target": "voiturier", "weight": 1}, {"source": "st pierre", "target": "aubergiste", "weight": 2}, {"source": "st pierre", "target": "boulanger", "weight": 3}, {"source": "st pierre", "target": "chapelier", "weight": 1}, {"source": "st pierre", "target": "charron", "weight": 1}, {"source": "st pierre", "target": "cordonnier", "weight": 5}, {"source": "st pierre", "target": "domestique", "weight": 1}, {"source": "st pierre", "target": "ecrivain", "weight": 1}, {"source": "st pierre", "target": "ferblantier", "weight": 1}, {"source": "st pierre", "target": "gypseur/gypsier", "weight": 3}, {"source": "st pierre", "target": "journalier", "weight": 1}, {"source": "st pierre", "target": "journaliere", "weight": 2}, {"source": "st pierre", "target": "laitier", "weight": 1}, {"source": "st pierre", "target": "libraire", "weight": 2}, {"source": "st pierre", "target": "lingere", "weight": 2}, {"source": "st pierre", "target": "marchand", "weight": 2}, {"source": "st pierre", "target": "marchande", "weight": 8}, {"source": "st pierre", "target": "medecin", "weight": 3}, {"source": "st pierre", "target": "menuisier", "weight": 1}, {"source": "st pierre", "target": "ministre", "weight": 1}, {"source": "st pierre", "target": "negociant", "weight": 5}, {"source": "st pierre", "target": "pintier", "weight": 1}, {"source": "st pierre", "target": "rentier", "weight": 12}, {"source": "st pierre", "target": "rentiere", "weight": 16}, {"source": "st pierre", "target": "repasseuse", "weight": 1}, {"source": "st pierre", "target": "sellier", "weight": 3}, {"source": "st pierre", "target": "tailleur", "weight": 4}, {"source": "st pierre", "target": "tailleuse", "weight": 6}, {"source": "st pierre", "target": "traiteur", "weight": 1}, {"source": "st pierre", "target": "voiturier", "weight": 3}, {"source": "vennes", "target": "agriculteur", "weight": 2}, {"source": "vennes", "target": "fermier", "weight": 1}, {"source": "vennes", "target": "jardinier", "weight": 2}, {"source": "vennes", "target": "journalier", "weight": 1}, {"source": "vennes", "target": "laboureur", "weight": 5}, {"source": "vennes", "target": "macon", "weight": 1}, {"source": "vennes", "target": "proprietaire", "weight": 2}, {"source": "vennes", "target": "rentier", "weight": 1}, {"source": "vennes", "target": "rentiere", "weight": 1}]}
+{
+    "nodes": [
+        {
+            "id": "0",
+            "label": "gottettaz",
+            "type": "street",
+            "size": 5
+        },
+        {
+            "id": "1",
+            "label": "mercerie",
+            "type": "street",
+            "size": 39
+        },
+        {
+            "id": "2",
+            "label": "bugnon",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "3",
+            "label": "derriere les terreaux",
+            "type": "street",
+            "size": 7
+        },
+        {
+            "id": "4",
+            "label": "paleyres",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "5",
+            "label": "montee de st laurent",
+            "type": "street",
+            "size": 55
+        },
+        {
+            "id": "6",
+            "label": "taulau?",
+            "type": "street",
+            "size": 7
+        },
+        {
+            "id": "7",
+            "label": "villamont maison de maitres",
+            "type": "street",
+            "size": 6
+        },
+        {
+            "id": "8",
+            "label": "verdonnet",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "9",
+            "label": "bois-gentil",
+            "type": "street",
+            "size": 5
+        },
+        {
+            "id": "10",
+            "label": "pontaise",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "11",
+            "label": "madeleine",
+            "type": "street",
+            "size": 29
+        },
+        {
+            "id": "12",
+            "label": "boston",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "13",
+            "label": "loup",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "14",
+            "label": "vernand",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "15",
+            "label": "rue de l'ale",
+            "type": "street",
+            "size": 136
+        },
+        {
+            "id": "16",
+            "label": "bellevue",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "17",
+            "label": "rue de st pierre",
+            "type": "street",
+            "size": 102
+        },
+        {
+            "id": "18",
+            "label": "chalet a marin",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "19",
+            "label": "petit clos",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "20",
+            "label": "bel-air",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "21",
+            "label": "grotte",
+            "type": "street",
+            "size": 15
+        },
+        {
+            "id": "22",
+            "label": "rue d'etraz",
+            "type": "street",
+            "size": 64
+        },
+        {
+            "id": "23",
+            "label": "pont des sauge",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "24",
+            "label": "chailly",
+            "type": "street",
+            "size": 26
+        },
+        {
+            "id": "25",
+            "label": "maupas",
+            "type": "street",
+            "size": 14
+        },
+        {
+            "id": "26",
+            "label": "ecole de charite",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "27",
+            "label": "contigny",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "28",
+            "label": "cite derriere",
+            "type": "street",
+            "size": 83
+        },
+        {
+            "id": "29",
+            "label": "vennes",
+            "type": "street",
+            "size": 14
+        },
+        {
+            "id": "30",
+            "label": "rue de chaucrau",
+            "type": "street",
+            "size": 67
+        },
+        {
+            "id": "31",
+            "label": "la sallaz",
+            "type": "street",
+            "size": 13
+        },
+        {
+            "id": "32",
+            "label": "rosemont",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "33",
+            "label": "rasude",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "34",
+            "label": "escaliers du marche",
+            "type": "street",
+            "size": 23
+        },
+        {
+            "id": "35",
+            "label": "chemin de georgette",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "36",
+            "label": "croix de rive",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "37",
+            "label": "servan",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "38",
+            "label": "ouchy",
+            "type": "street",
+            "size": 108
+        },
+        {
+            "id": "39",
+            "label": "marterey",
+            "type": "street",
+            "size": 200
+        },
+        {
+            "id": "40",
+            "label": "sebeilllon",
+            "type": "street",
+            "size": 5
+        },
+        {
+            "id": "41",
+            "label": "languedoc",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "42",
+            "label": "vernand-dessus",
+            "type": "street",
+            "size": 7
+        },
+        {
+            "id": "43",
+            "label": "petite rue",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "44",
+            "label": "rue du pre",
+            "type": "street",
+            "size": 174
+        },
+        {
+            "id": "45",
+            "label": "st etienne",
+            "type": "street",
+            "size": 21
+        },
+        {
+            "id": "46",
+            "label": "villard",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "47",
+            "label": "calvaire",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "48",
+            "label": "grand chene",
+            "type": "street",
+            "size": 31
+        },
+        {
+            "id": "49",
+            "label": "chabliere",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "50",
+            "label": "chavannes",
+            "type": "street",
+            "size": 7
+        },
+        {
+            "id": "51",
+            "label": "devin",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "52",
+            "label": "montheron",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "53",
+            "label": "rue du pont",
+            "type": "street",
+            "size": 45
+        },
+        {
+            "id": "54",
+            "label": "la cage ",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "55",
+            "label": "place de st laurent",
+            "type": "street",
+            "size": 69
+        },
+        {
+            "id": "56",
+            "label": "place de st francois",
+            "type": "street",
+            "size": 57
+        },
+        {
+            "id": "57",
+            "label": "place st laurent",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "58",
+            "label": "cheneau de bourg",
+            "type": "street",
+            "size": 110
+        },
+        {
+            "id": "59",
+            "label": "grand st jean",
+            "type": "street",
+            "size": 197
+        },
+        {
+            "id": "60",
+            "label": "place st francois",
+            "type": "street",
+            "size": 34
+        },
+        {
+            "id": "61",
+            "label": "pres de ville",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "62",
+            "label": "grangette",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "63",
+            "label": "rosiere",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "64",
+            "label": "palud",
+            "type": "street",
+            "size": 67
+        },
+        {
+            "id": "65",
+            "label": "cite devant",
+            "type": "street",
+            "size": 66
+        },
+        {
+            "id": "66",
+            "label": "villars",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "67",
+            "label": "moulin de pepinet",
+            "type": "street",
+            "size": 19
+        },
+        {
+            "id": "68",
+            "label": "chauderon",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "69",
+            "label": "clos de bulle",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "70",
+            "label": "bois de vaux",
+            "type": "street",
+            "size": 5
+        },
+        {
+            "id": "71",
+            "label": "barre",
+            "type": "street",
+            "size": 104
+        },
+        {
+            "id": "72",
+            "label": "mon repos",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "73",
+            "label": "mousquines",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "74",
+            "label": "craivavers",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "75",
+            "label": "petit singe",
+            "type": "street",
+            "size": 9
+        },
+        {
+            "id": "76",
+            "label": "montee st francois",
+            "type": "street",
+            "size": 17
+        },
+        {
+            "id": "77",
+            "label": "jordils",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "78",
+            "label": "place du pont",
+            "type": "street",
+            "size": 6
+        },
+        {
+            "id": "79",
+            "label": "montagibert",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "80",
+            "label": "cour",
+            "type": "street",
+            "size": 49
+        },
+        {
+            "id": "81",
+            "label": "croix rouge",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "82",
+            "label": "grange-neuve",
+            "type": "street",
+            "size": 11
+        },
+        {
+            "id": "83",
+            "label": "la berallaz",
+            "type": "street",
+            "size": 4
+        },
+        {
+            "id": "84",
+            "label": "violette",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "85",
+            "label": "chalet de vernand",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "86",
+            "label": "rue de l'hopital",
+            "type": "street",
+            "size": 16
+        },
+        {
+            "id": "87",
+            "label": "petit ouchy",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "88",
+            "label": "vernand-dessous",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "89",
+            "label": "cite dessous",
+            "type": "street",
+            "size": 27
+        },
+        {
+            "id": "90",
+            "label": "rue de bourg",
+            "type": "street",
+            "size": 117
+        },
+        {
+            "id": "91",
+            "label": "petit chene",
+            "type": "street",
+            "size": 2
+        },
+        {
+            "id": "92",
+            "label": "singe",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "93",
+            "label": "montoie",
+            "type": "street",
+            "size": 6
+        },
+        {
+            "id": "94",
+            "label": "petit st jean",
+            "type": "street",
+            "size": 34
+        },
+        {
+            "id": "95",
+            "label": "valentin",
+            "type": "street",
+            "size": 3
+        },
+        {
+            "id": "96",
+            "label": "montbenon",
+            "type": "street",
+            "size": 7
+        },
+        {
+            "id": "jardinier",
+            "label": "jardinier",
+            "type": "job",
+            "size": 37
+        },
+        {
+            "id": "journalier",
+            "label": "journalier",
+            "type": "job",
+            "size": 237
+        },
+        {
+            "id": "cordonnier",
+            "label": "cordonnier",
+            "type": "job",
+            "size": 99
+        },
+        {
+            "id": "couvreur",
+            "label": "couvreur",
+            "type": "job",
+            "size": 9
+        },
+        {
+            "id": "instituteur",
+            "label": "instituteur",
+            "type": "job",
+            "size": 33
+        },
+        {
+            "id": "marchand",
+            "label": "marchand",
+            "type": "job",
+            "size": 139
+        },
+        {
+            "id": "menuisier",
+            "label": "menuisier",
+            "type": "job",
+            "size": 77
+        },
+        {
+            "id": "ouvrier",
+            "label": "ouvrier",
+            "type": "job",
+            "size": 43
+        },
+        {
+            "id": "petite marchande",
+            "label": "petite marchande",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "rentier",
+            "label": "rentier",
+            "type": "job",
+            "size": 482
+        },
+        {
+            "id": "tailleur",
+            "label": "tailleur",
+            "type": "job",
+            "size": 100
+        },
+        {
+            "id": "tient pension",
+            "label": "tient pension",
+            "type": "job",
+            "size": 8
+        },
+        {
+            "id": "charpentier",
+            "label": "charpentier",
+            "type": "job",
+            "size": 68
+        },
+        {
+            "id": "manoeuvre",
+            "label": "manoeuvre",
+            "type": "job",
+            "size": 20
+        },
+        {
+            "id": "vigneron",
+            "label": "vigneron",
+            "type": "job",
+            "size": 121
+        },
+        {
+            "id": "boulanger",
+            "label": "boulanger",
+            "type": "job",
+            "size": 21
+        },
+        {
+            "id": "couturiere",
+            "label": "couturiere",
+            "type": "job",
+            "size": 9
+        },
+        {
+            "id": "ferblantier",
+            "label": "ferblantier",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "garde",
+            "label": "garde",
+            "type": "job",
+            "size": 37
+        },
+        {
+            "id": "juge",
+            "label": "juge",
+            "type": "job",
+            "size": 10
+        },
+        {
+            "id": "laitier",
+            "label": "laitier",
+            "type": "job",
+            "size": 7
+        },
+        {
+            "id": "lingere",
+            "label": "lingere",
+            "type": "job",
+            "size": 46
+        },
+        {
+            "id": "perruquier",
+            "label": "perruquier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "proprietaire",
+            "label": "proprietaire",
+            "type": "job",
+            "size": 97
+        },
+        {
+            "id": "tient ecole",
+            "label": "tient ecole",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "tonnelier",
+            "label": "tonnelier",
+            "type": "job",
+            "size": 9
+        },
+        {
+            "id": "traiteur",
+            "label": "traiteur",
+            "type": "job",
+            "size": 11
+        },
+        {
+            "id": "vendeur",
+            "label": "vendeur",
+            "type": "job",
+            "size": 10
+        },
+        {
+            "id": "laboureur",
+            "label": "laboureur",
+            "type": "job",
+            "size": 44
+        },
+        {
+            "id": "tuilier",
+            "label": "tuilier",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "peintre",
+            "label": "peintre",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "sans vocation",
+            "label": "sans vocation",
+            "type": "job",
+            "size": 25
+        },
+        {
+            "id": "serrurier",
+            "label": "serrurier",
+            "type": "job",
+            "size": 16
+        },
+        {
+            "id": "voiturier",
+            "label": "voiturier",
+            "type": "job",
+            "size": 35
+        },
+        {
+            "id": "agriculteur",
+            "label": "agriculteur",
+            "type": "job",
+            "size": 37
+        },
+        {
+            "id": "carrier",
+            "label": "carrier",
+            "type": "job",
+            "size": 10
+        },
+        {
+            "id": "charretier",
+            "label": "charretier",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "charron",
+            "label": "charron",
+            "type": "job",
+            "size": 7
+        },
+        {
+            "id": "fileur",
+            "label": "fileur",
+            "type": "job",
+            "size": 10
+        },
+        {
+            "id": "fontenier",
+            "label": "fontenier",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "gypseur",
+            "label": "gypseur",
+            "type": "job",
+            "size": 13
+        },
+        {
+            "id": "macon",
+            "label": "macon",
+            "type": "job",
+            "size": 35
+        },
+        {
+            "id": "marechal-ferrant",
+            "label": "marechal-ferrant",
+            "type": "job",
+            "size": 10
+        },
+        {
+            "id": "tisserand",
+            "label": "tisserand",
+            "type": "job",
+            "size": 13
+        },
+        {
+            "id": "tourneur",
+            "label": "tourneur",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "fermier",
+            "label": "fermier",
+            "type": "job",
+            "size": 28
+        },
+        {
+            "id": "aubergiste",
+            "label": "aubergiste",
+            "type": "job",
+            "size": 7
+        },
+        {
+            "id": "confiseur",
+            "label": "confiseur",
+            "type": "job",
+            "size": 8
+        },
+        {
+            "id": "conseiller d'etat",
+            "label": "conseiller d'etat",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "docteur",
+            "label": "docteur",
+            "type": "job",
+            "size": 12
+        },
+        {
+            "id": "libraire",
+            "label": "libraire",
+            "type": "job",
+            "size": 6
+        },
+        {
+            "id": "maitre",
+            "label": "maitre",
+            "type": "job",
+            "size": 14
+        },
+        {
+            "id": "negociant",
+            "label": "negociant",
+            "type": "job",
+            "size": 52
+        },
+        {
+            "id": "sellier",
+            "label": "sellier",
+            "type": "job",
+            "size": 8
+        },
+        {
+            "id": "locataire",
+            "label": "locataire",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "avocat",
+            "label": "avocat",
+            "type": "job",
+            "size": 8
+        },
+        {
+            "id": "femme de menage",
+            "label": "femme de menage",
+            "type": "job",
+            "size": 15
+        },
+        {
+            "id": "pintier",
+            "label": "pintier",
+            "type": "job",
+            "size": 9
+        },
+        {
+            "id": "domestique",
+            "label": "domestique",
+            "type": "job",
+            "size": 16
+        },
+        {
+            "id": "gendarme",
+            "label": "gendarme",
+            "type": "job",
+            "size": 6
+        },
+        {
+            "id": "huissier",
+            "label": "huissier",
+            "type": "job",
+            "size": 7
+        },
+        {
+            "id": "ministre",
+            "label": "ministre",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "tailleur de pierres",
+            "label": "tailleur de pierres",
+            "type": "job",
+            "size": 15
+        },
+        {
+            "id": "tailleur d'habits",
+            "label": "tailleur d'habits",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "batelier",
+            "label": "batelier",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "blanchisseur",
+            "label": "blanchisseur",
+            "type": "job",
+            "size": 7
+        },
+        {
+            "id": "boucher",
+            "label": "boucher",
+            "type": "job",
+            "size": 11
+        },
+        {
+            "id": "chargeur",
+            "label": "chargeur",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "pecheur",
+            "label": "pecheur",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "chapelier",
+            "label": "chapelier",
+            "type": "job",
+            "size": 10
+        },
+        {
+            "id": "cloutier",
+            "label": "cloutier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "fournier",
+            "label": "fournier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "inspecteur",
+            "label": "inspecteur",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "lessiveuse",
+            "label": "lessiveuse",
+            "type": "job",
+            "size": 8
+        },
+        {
+            "id": "municipal",
+            "label": "municipal",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "palefrenier",
+            "label": "palefrenier",
+            "type": "job",
+            "size": 3
+        },
+        {
+            "id": "assiste",
+            "label": "assiste",
+            "type": "job",
+            "size": 6
+        },
+        {
+            "id": "chamoiseur",
+            "label": "chamoiseur",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "corroyeur",
+            "label": "corroyeur",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "fabricant d'instruments",
+            "label": "fabricant d'instruments",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "gantier",
+            "label": "gantier",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "imprimeur",
+            "label": "imprimeur",
+            "type": "job",
+            "size": 11
+        },
+        {
+            "id": "tanneur",
+            "label": "tanneur",
+            "type": "job",
+            "size": 15
+        },
+        {
+            "id": "tripier",
+            "label": "tripier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "teinturier",
+            "label": "teinturier",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "loueur de chevaux",
+            "label": "loueur de chevaux",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "sage-femme",
+            "label": "sage-femme",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "meunier",
+            "label": "meunier",
+            "type": "job",
+            "size": 15
+        },
+        {
+            "id": "bijoutier",
+            "label": "bijoutier",
+            "type": "job",
+            "size": 5
+        },
+        {
+            "id": "chaudronnier",
+            "label": "chaudronnier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "epicier",
+            "label": "epicier",
+            "type": "job",
+            "size": 3
+        },
+        {
+            "id": "revendeuse",
+            "label": "revendeuse",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "fondeur",
+            "label": "fondeur",
+            "type": "job",
+            "size": 9
+        },
+        {
+            "id": "horloger",
+            "label": "horloger",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "coiffeur",
+            "label": "coiffeur",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "conducteur de diligence",
+            "label": "conducteur de diligence",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "orfevre",
+            "label": "orfevre",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "fumiste",
+            "label": "fumiste",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "repasseuse",
+            "label": "repasseuse",
+            "type": "job",
+            "size": 6
+        },
+        {
+            "id": "courtepointiere",
+            "label": "courtepointiere",
+            "type": "job",
+            "size": 3
+        },
+        {
+            "id": "ecrivain",
+            "label": "ecrivain",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "notaire",
+            "label": "notaire",
+            "type": "job",
+            "size": 4
+        },
+        {
+            "id": "procureur",
+            "label": "procureur",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "vitrier",
+            "label": "vitrier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "cafetier",
+            "label": "cafetier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "concierge",
+            "label": "concierge",
+            "type": "job",
+            "size": 6
+        },
+        {
+            "id": "passementier",
+            "label": "passementier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "patissier",
+            "label": "patissier",
+            "type": "job",
+            "size": 3
+        },
+        {
+            "id": "professeur",
+            "label": "professeur",
+            "type": "job",
+            "size": 6
+        },
+        {
+            "id": "marbrier",
+            "label": "marbrier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": " de ville",
+            "label": " de ville",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "taillandier",
+            "label": "taillandier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "fabricant de parapluies",
+            "label": "fabricant de parapluies",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "gagne-denier",
+            "label": "gagne-denier",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "secretaire",
+            "label": "secretaire",
+            "type": "job",
+            "size": 2
+        },
+        {
+            "id": "potier",
+            "label": "potier",
+            "type": "job",
+            "size": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "0",
+            "target": "jardinier",
+            "weight": 3
+        },
+        {
+            "source": "0",
+            "target": "journalier",
+            "weight": 2
+        },
+        {
+            "source": "1",
+            "target": "journalier",
+            "weight": 4
+        },
+        {
+            "source": "1",
+            "target": "cordonnier",
+            "weight": 9
+        },
+        {
+            "source": "1",
+            "target": "couvreur",
+            "weight": 2
+        },
+        {
+            "source": "1",
+            "target": "instituteur",
+            "weight": 2
+        },
+        {
+            "source": "1",
+            "target": "marchand",
+            "weight": 2
+        },
+        {
+            "source": "1",
+            "target": "menuisier",
+            "weight": 4
+        },
+        {
+            "source": "1",
+            "target": "ouvrier",
+            "weight": 4
+        },
+        {
+            "source": "1",
+            "target": "petite marchande",
+            "weight": 2
+        },
+        {
+            "source": "1",
+            "target": "rentier",
+            "weight": 4
+        },
+        {
+            "source": "1",
+            "target": "tailleur",
+            "weight": 4
+        },
+        {
+            "source": "1",
+            "target": "tient pension",
+            "weight": 2
+        },
+        {
+            "source": "2",
+            "target": "charpentier",
+            "weight": 2
+        },
+        {
+            "source": "2",
+            "target": "manoeuvre",
+            "weight": 2
+        },
+        {
+            "source": "3",
+            "target": "rentier",
+            "weight": 5
+        },
+        {
+            "source": "3",
+            "target": "charpentier",
+            "weight": 2
+        },
+        {
+            "source": "4",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "journalier",
+            "weight": 9
+        },
+        {
+            "source": "5",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "marchand",
+            "weight": 6
+        },
+        {
+            "source": "5",
+            "target": "menuisier",
+            "weight": 3
+        },
+        {
+            "source": "5",
+            "target": "rentier",
+            "weight": 3
+        },
+        {
+            "source": "5",
+            "target": "tailleur",
+            "weight": 4
+        },
+        {
+            "source": "5",
+            "target": "boulanger",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "couturiere",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "ferblantier",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "garde",
+            "weight": 3
+        },
+        {
+            "source": "5",
+            "target": "juge",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "laitier",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "lingere",
+            "weight": 3
+        },
+        {
+            "source": "5",
+            "target": "perruquier",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "tient ecole",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "tonnelier",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "traiteur",
+            "weight": 2
+        },
+        {
+            "source": "5",
+            "target": "vendeur",
+            "weight": 2
+        },
+        {
+            "source": "6",
+            "target": "proprietaire",
+            "weight": 7
+        },
+        {
+            "source": "7",
+            "target": "rentier",
+            "weight": 6
+        },
+        {
+            "source": "8",
+            "target": "laboureur",
+            "weight": 3
+        },
+        {
+            "source": "9",
+            "target": "proprietaire",
+            "weight": 3
+        },
+        {
+            "source": "9",
+            "target": "tuilier",
+            "weight": 2
+        },
+        {
+            "source": "10",
+            "target": "proprietaire",
+            "weight": 3
+        },
+        {
+            "source": "11",
+            "target": "marchand",
+            "weight": 10
+        },
+        {
+            "source": "11",
+            "target": "rentier",
+            "weight": 6
+        },
+        {
+            "source": "11",
+            "target": "vendeur",
+            "weight": 2
+        },
+        {
+            "source": "11",
+            "target": "peintre",
+            "weight": 2
+        },
+        {
+            "source": "11",
+            "target": "sans vocation",
+            "weight": 5
+        },
+        {
+            "source": "11",
+            "target": "serrurier",
+            "weight": 2
+        },
+        {
+            "source": "11",
+            "target": "voiturier",
+            "weight": 2
+        },
+        {
+            "source": "12",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "13",
+            "target": "tuilier",
+            "weight": 3
+        },
+        {
+            "source": "14",
+            "target": "agriculteur",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "jardinier",
+            "weight": 6
+        },
+        {
+            "source": "15",
+            "target": "journalier",
+            "weight": 18
+        },
+        {
+            "source": "15",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "marchand",
+            "weight": 10
+        },
+        {
+            "source": "15",
+            "target": "menuisier",
+            "weight": 5
+        },
+        {
+            "source": "15",
+            "target": "ouvrier",
+            "weight": 7
+        },
+        {
+            "source": "15",
+            "target": "rentier",
+            "weight": 7
+        },
+        {
+            "source": "15",
+            "target": "charpentier",
+            "weight": 8
+        },
+        {
+            "source": "15",
+            "target": "manoeuvre",
+            "weight": 4
+        },
+        {
+            "source": "15",
+            "target": "vigneron",
+            "weight": 27
+        },
+        {
+            "source": "15",
+            "target": "garde",
+            "weight": 5
+        },
+        {
+            "source": "15",
+            "target": "laboureur",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "sans vocation",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "serrurier",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "voiturier",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "agriculteur",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "carrier",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "charretier",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "charron",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "fileur",
+            "weight": 4
+        },
+        {
+            "source": "15",
+            "target": "fontenier",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "gypseur",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "macon",
+            "weight": 3
+        },
+        {
+            "source": "15",
+            "target": "marechal-ferrant",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "tisserand",
+            "weight": 2
+        },
+        {
+            "source": "15",
+            "target": "tourneur",
+            "weight": 2
+        },
+        {
+            "source": "16",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "16",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "17",
+            "target": "journalier",
+            "weight": 3
+        },
+        {
+            "source": "17",
+            "target": "cordonnier",
+            "weight": 5
+        },
+        {
+            "source": "17",
+            "target": "marchand",
+            "weight": 10
+        },
+        {
+            "source": "17",
+            "target": "rentier",
+            "weight": 41
+        },
+        {
+            "source": "17",
+            "target": "tailleur",
+            "weight": 11
+        },
+        {
+            "source": "17",
+            "target": "boulanger",
+            "weight": 3
+        },
+        {
+            "source": "17",
+            "target": "lingere",
+            "weight": 2
+        },
+        {
+            "source": "17",
+            "target": "voiturier",
+            "weight": 3
+        },
+        {
+            "source": "17",
+            "target": "gypseur",
+            "weight": 3
+        },
+        {
+            "source": "17",
+            "target": "aubergiste",
+            "weight": 2
+        },
+        {
+            "source": "17",
+            "target": "confiseur",
+            "weight": 2
+        },
+        {
+            "source": "17",
+            "target": "conseiller d'etat",
+            "weight": 2
+        },
+        {
+            "source": "17",
+            "target": "docteur",
+            "weight": 3
+        },
+        {
+            "source": "17",
+            "target": "libraire",
+            "weight": 2
+        },
+        {
+            "source": "17",
+            "target": "maitre",
+            "weight": 2
+        },
+        {
+            "source": "17",
+            "target": "negociant",
+            "weight": 5
+        },
+        {
+            "source": "17",
+            "target": "sellier",
+            "weight": 3
+        },
+        {
+            "source": "18",
+            "target": "agriculteur",
+            "weight": 2
+        },
+        {
+            "source": "19",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "19",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "20",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "21",
+            "target": "jardinier",
+            "weight": 2
+        },
+        {
+            "source": "21",
+            "target": "rentier",
+            "weight": 9
+        },
+        {
+            "source": "21",
+            "target": "negociant",
+            "weight": 2
+        },
+        {
+            "source": "21",
+            "target": "locataire",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "jardinier",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "journalier",
+            "weight": 8
+        },
+        {
+            "source": "22",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "marchand",
+            "weight": 3
+        },
+        {
+            "source": "22",
+            "target": "menuisier",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "rentier",
+            "weight": 20
+        },
+        {
+            "source": "22",
+            "target": "charpentier",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "vigneron",
+            "weight": 6
+        },
+        {
+            "source": "22",
+            "target": "lingere",
+            "weight": 3
+        },
+        {
+            "source": "22",
+            "target": "voiturier",
+            "weight": 3
+        },
+        {
+            "source": "22",
+            "target": "charron",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "gypseur",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "maitre",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "avocat",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "femme de menage",
+            "weight": 2
+        },
+        {
+            "source": "22",
+            "target": "pintier",
+            "weight": 3
+        },
+        {
+            "source": "23",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "23",
+            "target": "agriculteur",
+            "weight": 2
+        },
+        {
+            "source": "24",
+            "target": "journalier",
+            "weight": 6
+        },
+        {
+            "source": "24",
+            "target": "vigneron",
+            "weight": 3
+        },
+        {
+            "source": "24",
+            "target": "laboureur",
+            "weight": 7
+        },
+        {
+            "source": "24",
+            "target": "agriculteur",
+            "weight": 2
+        },
+        {
+            "source": "24",
+            "target": "carrier",
+            "weight": 4
+        },
+        {
+            "source": "24",
+            "target": "tisserand",
+            "weight": 2
+        },
+        {
+            "source": "24",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "25",
+            "target": "jardinier",
+            "weight": 3
+        },
+        {
+            "source": "25",
+            "target": "journalier",
+            "weight": 2
+        },
+        {
+            "source": "25",
+            "target": "rentier",
+            "weight": 7
+        },
+        {
+            "source": "25",
+            "target": "charpentier",
+            "weight": 2
+        },
+        {
+            "source": "26",
+            "target": "instituteur",
+            "weight": 4
+        },
+        {
+            "source": "27",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "journalier",
+            "weight": 12
+        },
+        {
+            "source": "28",
+            "target": "instituteur",
+            "weight": 3
+        },
+        {
+            "source": "28",
+            "target": "marchand",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "menuisier",
+            "weight": 10
+        },
+        {
+            "source": "28",
+            "target": "rentier",
+            "weight": 15
+        },
+        {
+            "source": "28",
+            "target": "tailleur",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "charpentier",
+            "weight": 5
+        },
+        {
+            "source": "28",
+            "target": "manoeuvre",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "sans vocation",
+            "weight": 8
+        },
+        {
+            "source": "28",
+            "target": "fontenier",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "macon",
+            "weight": 6
+        },
+        {
+            "source": "28",
+            "target": "avocat",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "domestique",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "gendarme",
+            "weight": 4
+        },
+        {
+            "source": "28",
+            "target": "huissier",
+            "weight": 2
+        },
+        {
+            "source": "28",
+            "target": "ministre",
+            "weight": 3
+        },
+        {
+            "source": "28",
+            "target": "tailleur de pierres",
+            "weight": 3
+        },
+        {
+            "source": "29",
+            "target": "jardinier",
+            "weight": 2
+        },
+        {
+            "source": "29",
+            "target": "rentier",
+            "weight": 3
+        },
+        {
+            "source": "29",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "29",
+            "target": "laboureur",
+            "weight": 5
+        },
+        {
+            "source": "29",
+            "target": "agriculteur",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "journalier",
+            "weight": 10
+        },
+        {
+            "source": "30",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "marchand",
+            "weight": 3
+        },
+        {
+            "source": "30",
+            "target": "menuisier",
+            "weight": 5
+        },
+        {
+            "source": "30",
+            "target": "ouvrier",
+            "weight": 8
+        },
+        {
+            "source": "30",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "tailleur",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "charpentier",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "manoeuvre",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "vigneron",
+            "weight": 8
+        },
+        {
+            "source": "30",
+            "target": "garde",
+            "weight": 4
+        },
+        {
+            "source": "30",
+            "target": "juge",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "lingere",
+            "weight": 3
+        },
+        {
+            "source": "30",
+            "target": "voiturier",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "charron",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "fileur",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "maitre",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "femme de menage",
+            "weight": 2
+        },
+        {
+            "source": "30",
+            "target": "tailleur de pierres",
+            "weight": 4
+        },
+        {
+            "source": "31",
+            "target": "journalier",
+            "weight": 3
+        },
+        {
+            "source": "31",
+            "target": "laboureur",
+            "weight": 4
+        },
+        {
+            "source": "31",
+            "target": "tisserand",
+            "weight": 2
+        },
+        {
+            "source": "31",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "31",
+            "target": "locataire",
+            "weight": 2
+        },
+        {
+            "source": "32",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "32",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "33",
+            "target": "rentier",
+            "weight": 3
+        },
+        {
+            "source": "34",
+            "target": "journalier",
+            "weight": 3
+        },
+        {
+            "source": "34",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "34",
+            "target": "instituteur",
+            "weight": 2
+        },
+        {
+            "source": "34",
+            "target": "rentier",
+            "weight": 4
+        },
+        {
+            "source": "34",
+            "target": "garde",
+            "weight": 2
+        },
+        {
+            "source": "34",
+            "target": "peintre",
+            "weight": 2
+        },
+        {
+            "source": "34",
+            "target": "sans vocation",
+            "weight": 2
+        },
+        {
+            "source": "34",
+            "target": "maitre",
+            "weight": 2
+        },
+        {
+            "source": "34",
+            "target": "domestique",
+            "weight": 2
+        },
+        {
+            "source": "34",
+            "target": "tailleur d'habits",
+            "weight": 2
+        },
+        {
+            "source": "35",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "36",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "37",
+            "target": "rentier",
+            "weight": 4
+        },
+        {
+            "source": "38",
+            "target": "journalier",
+            "weight": 33
+        },
+        {
+            "source": "38",
+            "target": "ouvrier",
+            "weight": 2
+        },
+        {
+            "source": "38",
+            "target": "rentier",
+            "weight": 8
+        },
+        {
+            "source": "38",
+            "target": "tailleur",
+            "weight": 3
+        },
+        {
+            "source": "38",
+            "target": "vigneron",
+            "weight": 4
+        },
+        {
+            "source": "38",
+            "target": "proprietaire",
+            "weight": 27
+        },
+        {
+            "source": "38",
+            "target": "tonnelier",
+            "weight": 4
+        },
+        {
+            "source": "38",
+            "target": "aubergiste",
+            "weight": 2
+        },
+        {
+            "source": "38",
+            "target": "negociant",
+            "weight": 4
+        },
+        {
+            "source": "38",
+            "target": "pintier",
+            "weight": 2
+        },
+        {
+            "source": "38",
+            "target": "batelier",
+            "weight": 5
+        },
+        {
+            "source": "38",
+            "target": "blanchisseur",
+            "weight": 2
+        },
+        {
+            "source": "38",
+            "target": "boucher",
+            "weight": 2
+        },
+        {
+            "source": "38",
+            "target": "chargeur",
+            "weight": 5
+        },
+        {
+            "source": "38",
+            "target": "pecheur",
+            "weight": 5
+        },
+        {
+            "source": "39",
+            "target": "jardinier",
+            "weight": 6
+        },
+        {
+            "source": "39",
+            "target": "journalier",
+            "weight": 26
+        },
+        {
+            "source": "39",
+            "target": "cordonnier",
+            "weight": 6
+        },
+        {
+            "source": "39",
+            "target": "couvreur",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "instituteur",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "marchand",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "menuisier",
+            "weight": 6
+        },
+        {
+            "source": "39",
+            "target": "rentier",
+            "weight": 24
+        },
+        {
+            "source": "39",
+            "target": "tailleur",
+            "weight": 6
+        },
+        {
+            "source": "39",
+            "target": "charpentier",
+            "weight": 16
+        },
+        {
+            "source": "39",
+            "target": "manoeuvre",
+            "weight": 4
+        },
+        {
+            "source": "39",
+            "target": "vigneron",
+            "weight": 21
+        },
+        {
+            "source": "39",
+            "target": "garde",
+            "weight": 3
+        },
+        {
+            "source": "39",
+            "target": "lingere",
+            "weight": 12
+        },
+        {
+            "source": "39",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "voiturier",
+            "weight": 13
+        },
+        {
+            "source": "39",
+            "target": "charretier",
+            "weight": 3
+        },
+        {
+            "source": "39",
+            "target": "macon",
+            "weight": 3
+        },
+        {
+            "source": "39",
+            "target": "marechal-ferrant",
+            "weight": 6
+        },
+        {
+            "source": "39",
+            "target": "tisserand",
+            "weight": 3
+        },
+        {
+            "source": "39",
+            "target": "sellier",
+            "weight": 3
+        },
+        {
+            "source": "39",
+            "target": "femme de menage",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "pintier",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "domestique",
+            "weight": 4
+        },
+        {
+            "source": "39",
+            "target": "tailleur de pierres",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "tailleur d'habits",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "chapelier",
+            "weight": 3
+        },
+        {
+            "source": "39",
+            "target": "cloutier",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "fournier",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "inspecteur",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "lessiveuse",
+            "weight": 5
+        },
+        {
+            "source": "39",
+            "target": "municipal",
+            "weight": 2
+        },
+        {
+            "source": "39",
+            "target": "palefrenier",
+            "weight": 3
+        },
+        {
+            "source": "40",
+            "target": "vigneron",
+            "weight": 3
+        },
+        {
+            "source": "40",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "41",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "42",
+            "target": "proprietaire",
+            "weight": 3
+        },
+        {
+            "source": "42",
+            "target": "fermier",
+            "weight": 4
+        },
+        {
+            "source": "43",
+            "target": "garde",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "journalier",
+            "weight": 19
+        },
+        {
+            "source": "44",
+            "target": "cordonnier",
+            "weight": 15
+        },
+        {
+            "source": "44",
+            "target": "couvreur",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "marchand",
+            "weight": 10
+        },
+        {
+            "source": "44",
+            "target": "menuisier",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "ouvrier",
+            "weight": 4
+        },
+        {
+            "source": "44",
+            "target": "rentier",
+            "weight": 6
+        },
+        {
+            "source": "44",
+            "target": "tailleur",
+            "weight": 13
+        },
+        {
+            "source": "44",
+            "target": "tient pension",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "charpentier",
+            "weight": 7
+        },
+        {
+            "source": "44",
+            "target": "manoeuvre",
+            "weight": 4
+        },
+        {
+            "source": "44",
+            "target": "boulanger",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "garde",
+            "weight": 4
+        },
+        {
+            "source": "44",
+            "target": "laitier",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "lingere",
+            "weight": 9
+        },
+        {
+            "source": "44",
+            "target": "proprietaire",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "traiteur",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "laboureur",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "carrier",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "macon",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "tisserand",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "femme de menage",
+            "weight": 5
+        },
+        {
+            "source": "44",
+            "target": "domestique",
+            "weight": 4
+        },
+        {
+            "source": "44",
+            "target": "tailleur de pierres",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "boucher",
+            "weight": 9
+        },
+        {
+            "source": "44",
+            "target": "lessiveuse",
+            "weight": 3
+        },
+        {
+            "source": "44",
+            "target": "assiste",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "chamoiseur",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "corroyeur",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "fabricant d'instruments",
+            "weight": 2
+        },
+        {
+            "source": "44",
+            "target": "gantier",
+            "weight": 5
+        },
+        {
+            "source": "44",
+            "target": "imprimeur",
+            "weight": 7
+        },
+        {
+            "source": "44",
+            "target": "tanneur",
+            "weight": 10
+        },
+        {
+            "source": "44",
+            "target": "tripier",
+            "weight": 2
+        },
+        {
+            "source": "45",
+            "target": "journalier",
+            "weight": 2
+        },
+        {
+            "source": "45",
+            "target": "cordonnier",
+            "weight": 4
+        },
+        {
+            "source": "45",
+            "target": "rentier",
+            "weight": 9
+        },
+        {
+            "source": "45",
+            "target": "tient pension",
+            "weight": 2
+        },
+        {
+            "source": "45",
+            "target": "tailleur de pierres",
+            "weight": 2
+        },
+        {
+            "source": "45",
+            "target": "teinturier",
+            "weight": 2
+        },
+        {
+            "source": "46",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "46",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "47",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "47",
+            "target": "laboureur",
+            "weight": 2
+        },
+        {
+            "source": "48",
+            "target": "marchand",
+            "weight": 4
+        },
+        {
+            "source": "48",
+            "target": "rentier",
+            "weight": 14
+        },
+        {
+            "source": "48",
+            "target": "proprietaire",
+            "weight": 3
+        },
+        {
+            "source": "48",
+            "target": "traiteur",
+            "weight": 2
+        },
+        {
+            "source": "48",
+            "target": "docteur",
+            "weight": 2
+        },
+        {
+            "source": "48",
+            "target": "maitre",
+            "weight": 2
+        },
+        {
+            "source": "48",
+            "target": "loueur de chevaux",
+            "weight": 2
+        },
+        {
+            "source": "48",
+            "target": "sage-femme",
+            "weight": 2
+        },
+        {
+            "source": "49",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "50",
+            "target": "laboureur",
+            "weight": 7
+        },
+        {
+            "source": "51",
+            "target": "laboureur",
+            "weight": 3
+        },
+        {
+            "source": "52",
+            "target": "agriculteur",
+            "weight": 2
+        },
+        {
+            "source": "52",
+            "target": "meunier",
+            "weight": 2
+        },
+        {
+            "source": "53",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "53",
+            "target": "marchand",
+            "weight": 6
+        },
+        {
+            "source": "53",
+            "target": "rentier",
+            "weight": 8
+        },
+        {
+            "source": "53",
+            "target": "tailleur",
+            "weight": 6
+        },
+        {
+            "source": "53",
+            "target": "garde",
+            "weight": 4
+        },
+        {
+            "source": "53",
+            "target": "libraire",
+            "weight": 2
+        },
+        {
+            "source": "53",
+            "target": "negociant",
+            "weight": 5
+        },
+        {
+            "source": "53",
+            "target": "chapelier",
+            "weight": 2
+        },
+        {
+            "source": "53",
+            "target": "bijoutier",
+            "weight": 3
+        },
+        {
+            "source": "53",
+            "target": "chaudronnier",
+            "weight": 2
+        },
+        {
+            "source": "53",
+            "target": "epicier",
+            "weight": 3
+        },
+        {
+            "source": "53",
+            "target": "revendeuse",
+            "weight": 2
+        },
+        {
+            "source": "54",
+            "target": "laboureur",
+            "weight": 2
+        },
+        {
+            "source": "55",
+            "target": "journalier",
+            "weight": 4
+        },
+        {
+            "source": "55",
+            "target": "cordonnier",
+            "weight": 5
+        },
+        {
+            "source": "55",
+            "target": "instituteur",
+            "weight": 3
+        },
+        {
+            "source": "55",
+            "target": "marchand",
+            "weight": 8
+        },
+        {
+            "source": "55",
+            "target": "menuisier",
+            "weight": 8
+        },
+        {
+            "source": "55",
+            "target": "ouvrier",
+            "weight": 4
+        },
+        {
+            "source": "55",
+            "target": "rentier",
+            "weight": 14
+        },
+        {
+            "source": "55",
+            "target": "tailleur",
+            "weight": 2
+        },
+        {
+            "source": "55",
+            "target": "vigneron",
+            "weight": 3
+        },
+        {
+            "source": "55",
+            "target": "juge",
+            "weight": 3
+        },
+        {
+            "source": "55",
+            "target": "lingere",
+            "weight": 3
+        },
+        {
+            "source": "55",
+            "target": "macon",
+            "weight": 2
+        },
+        {
+            "source": "55",
+            "target": "confiseur",
+            "weight": 2
+        },
+        {
+            "source": "55",
+            "target": "negociant",
+            "weight": 2
+        },
+        {
+            "source": "55",
+            "target": "avocat",
+            "weight": 2
+        },
+        {
+            "source": "55",
+            "target": "fondeur",
+            "weight": 2
+        },
+        {
+            "source": "55",
+            "target": "horloger",
+            "weight": 2
+        },
+        {
+            "source": "56",
+            "target": "journalier",
+            "weight": 2
+        },
+        {
+            "source": "56",
+            "target": "cordonnier",
+            "weight": 7
+        },
+        {
+            "source": "56",
+            "target": "marchand",
+            "weight": 10
+        },
+        {
+            "source": "56",
+            "target": "rentier",
+            "weight": 14
+        },
+        {
+            "source": "56",
+            "target": "tailleur",
+            "weight": 6
+        },
+        {
+            "source": "56",
+            "target": "couturiere",
+            "weight": 3
+        },
+        {
+            "source": "56",
+            "target": "confiseur",
+            "weight": 2
+        },
+        {
+            "source": "56",
+            "target": "negociant",
+            "weight": 7
+        },
+        {
+            "source": "56",
+            "target": "coiffeur",
+            "weight": 2
+        },
+        {
+            "source": "56",
+            "target": "conducteur de diligence",
+            "weight": 2
+        },
+        {
+            "source": "56",
+            "target": "orfevre",
+            "weight": 2
+        },
+        {
+            "source": "57",
+            "target": "rentier",
+            "weight": 4
+        },
+        {
+            "source": "58",
+            "target": "journalier",
+            "weight": 23
+        },
+        {
+            "source": "58",
+            "target": "cordonnier",
+            "weight": 5
+        },
+        {
+            "source": "58",
+            "target": "menuisier",
+            "weight": 7
+        },
+        {
+            "source": "58",
+            "target": "ouvrier",
+            "weight": 3
+        },
+        {
+            "source": "58",
+            "target": "rentier",
+            "weight": 9
+        },
+        {
+            "source": "58",
+            "target": "tailleur",
+            "weight": 6
+        },
+        {
+            "source": "58",
+            "target": "charpentier",
+            "weight": 7
+        },
+        {
+            "source": "58",
+            "target": "vigneron",
+            "weight": 3
+        },
+        {
+            "source": "58",
+            "target": "boulanger",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "couturiere",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "garde",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "lingere",
+            "weight": 4
+        },
+        {
+            "source": "58",
+            "target": "vendeur",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "serrurier",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "voiturier",
+            "weight": 5
+        },
+        {
+            "source": "58",
+            "target": "agriculteur",
+            "weight": 5
+        },
+        {
+            "source": "58",
+            "target": "gypseur",
+            "weight": 3
+        },
+        {
+            "source": "58",
+            "target": "macon",
+            "weight": 5
+        },
+        {
+            "source": "58",
+            "target": "marechal-ferrant",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "huissier",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "imprimeur",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "tanneur",
+            "weight": 5
+        },
+        {
+            "source": "58",
+            "target": "fumiste",
+            "weight": 2
+        },
+        {
+            "source": "58",
+            "target": "repasseuse",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "jardinier",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "journalier",
+            "weight": 9
+        },
+        {
+            "source": "59",
+            "target": "cordonnier",
+            "weight": 8
+        },
+        {
+            "source": "59",
+            "target": "instituteur",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "marchand",
+            "weight": 11
+        },
+        {
+            "source": "59",
+            "target": "menuisier",
+            "weight": 11
+        },
+        {
+            "source": "59",
+            "target": "ouvrier",
+            "weight": 8
+        },
+        {
+            "source": "59",
+            "target": "rentier",
+            "weight": 36
+        },
+        {
+            "source": "59",
+            "target": "tailleur",
+            "weight": 14
+        },
+        {
+            "source": "59",
+            "target": "tient pension",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "charpentier",
+            "weight": 5
+        },
+        {
+            "source": "59",
+            "target": "boulanger",
+            "weight": 5
+        },
+        {
+            "source": "59",
+            "target": "couturiere",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "garde",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "juge",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "lingere",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "proprietaire",
+            "weight": 4
+        },
+        {
+            "source": "59",
+            "target": "tonnelier",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "traiteur",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "serrurier",
+            "weight": 5
+        },
+        {
+            "source": "59",
+            "target": "fileur",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "gypseur",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "macon",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "conseiller d'etat",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "docteur",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "libraire",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "maitre",
+            "weight": 4
+        },
+        {
+            "source": "59",
+            "target": "negociant",
+            "weight": 5
+        },
+        {
+            "source": "59",
+            "target": "femme de menage",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "domestique",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "blanchisseur",
+            "weight": 5
+        },
+        {
+            "source": "59",
+            "target": "chapelier",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "assiste",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "sage-femme",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "fondeur",
+            "weight": 7
+        },
+        {
+            "source": "59",
+            "target": "repasseuse",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "courtepointiere",
+            "weight": 3
+        },
+        {
+            "source": "59",
+            "target": "ecrivain",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "notaire",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "procureur",
+            "weight": 2
+        },
+        {
+            "source": "59",
+            "target": "vitrier",
+            "weight": 2
+        },
+        {
+            "source": "60",
+            "target": "marchand",
+            "weight": 6
+        },
+        {
+            "source": "60",
+            "target": "rentier",
+            "weight": 20
+        },
+        {
+            "source": "60",
+            "target": "loueur de chevaux",
+            "weight": 2
+        },
+        {
+            "source": "60",
+            "target": "notaire",
+            "weight": 2
+        },
+        {
+            "source": "60",
+            "target": "cafetier",
+            "weight": 2
+        },
+        {
+            "source": "60",
+            "target": "concierge",
+            "weight": 2
+        },
+        {
+            "source": "61",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "61",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "62",
+            "target": "laboureur",
+            "weight": 4
+        },
+        {
+            "source": "63",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "64",
+            "target": "instituteur",
+            "weight": 4
+        },
+        {
+            "source": "64",
+            "target": "marchand",
+            "weight": 14
+        },
+        {
+            "source": "64",
+            "target": "menuisier",
+            "weight": 3
+        },
+        {
+            "source": "64",
+            "target": "rentier",
+            "weight": 24
+        },
+        {
+            "source": "64",
+            "target": "tailleur",
+            "weight": 4
+        },
+        {
+            "source": "64",
+            "target": "boulanger",
+            "weight": 2
+        },
+        {
+            "source": "64",
+            "target": "lingere",
+            "weight": 2
+        },
+        {
+            "source": "64",
+            "target": "vendeur",
+            "weight": 2
+        },
+        {
+            "source": "64",
+            "target": "negociant",
+            "weight": 5
+        },
+        {
+            "source": "64",
+            "target": "orfevre",
+            "weight": 2
+        },
+        {
+            "source": "64",
+            "target": "passementier",
+            "weight": 2
+        },
+        {
+            "source": "64",
+            "target": "patissier",
+            "weight": 3
+        },
+        {
+            "source": "65",
+            "target": "journalier",
+            "weight": 3
+        },
+        {
+            "source": "65",
+            "target": "cordonnier",
+            "weight": 8
+        },
+        {
+            "source": "65",
+            "target": "marchand",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "rentier",
+            "weight": 26
+        },
+        {
+            "source": "65",
+            "target": "charpentier",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "laitier",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "sans vocation",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "serrurier",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "tisserand",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "docteur",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "pintier",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "gendarme",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "huissier",
+            "weight": 3
+        },
+        {
+            "source": "65",
+            "target": "concierge",
+            "weight": 2
+        },
+        {
+            "source": "65",
+            "target": "professeur",
+            "weight": 4
+        },
+        {
+            "source": "66",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "67",
+            "target": "jardinier",
+            "weight": 5
+        },
+        {
+            "source": "67",
+            "target": "journalier",
+            "weight": 4
+        },
+        {
+            "source": "67",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "67",
+            "target": "meunier",
+            "weight": 4
+        },
+        {
+            "source": "67",
+            "target": "concierge",
+            "weight": 2
+        },
+        {
+            "source": "67",
+            "target": "marbrier",
+            "weight": 2
+        },
+        {
+            "source": "68",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "69",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "70",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "70",
+            "target": "vigneron",
+            "weight": 3
+        },
+        {
+            "source": "71",
+            "target": "journalier",
+            "weight": 10
+        },
+        {
+            "source": "71",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "instituteur",
+            "weight": 5
+        },
+        {
+            "source": "71",
+            "target": "menuisier",
+            "weight": 8
+        },
+        {
+            "source": "71",
+            "target": "rentier",
+            "weight": 10
+        },
+        {
+            "source": "71",
+            "target": "charpentier",
+            "weight": 6
+        },
+        {
+            "source": "71",
+            "target": "manoeuvre",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "vigneron",
+            "weight": 5
+        },
+        {
+            "source": "71",
+            "target": "garde",
+            "weight": 3
+        },
+        {
+            "source": "71",
+            "target": "lingere",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "vendeur",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "sans vocation",
+            "weight": 6
+        },
+        {
+            "source": "71",
+            "target": "agriculteur",
+            "weight": 7
+        },
+        {
+            "source": "71",
+            "target": "carrier",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "fileur",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "macon",
+            "weight": 11
+        },
+        {
+            "source": "71",
+            "target": "fermier",
+            "weight": 5
+        },
+        {
+            "source": "71",
+            "target": "ministre",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "teinturier",
+            "weight": 3
+        },
+        {
+            "source": "71",
+            "target": "meunier",
+            "weight": 5
+        },
+        {
+            "source": "71",
+            "target": "professeur",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": " de ville",
+            "weight": 2
+        },
+        {
+            "source": "71",
+            "target": "taillandier",
+            "weight": 2
+        },
+        {
+            "source": "72",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "73",
+            "target": "rentier",
+            "weight": 4
+        },
+        {
+            "source": "74",
+            "target": "laboureur",
+            "weight": 2
+        },
+        {
+            "source": "75",
+            "target": "rentier",
+            "weight": 9
+        },
+        {
+            "source": "76",
+            "target": "marchand",
+            "weight": 6
+        },
+        {
+            "source": "76",
+            "target": "rentier",
+            "weight": 4
+        },
+        {
+            "source": "76",
+            "target": "tailleur",
+            "weight": 2
+        },
+        {
+            "source": "76",
+            "target": "chapelier",
+            "weight": 3
+        },
+        {
+            "source": "76",
+            "target": "fabricant de parapluies",
+            "weight": 2
+        },
+        {
+            "source": "77",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "78",
+            "target": "marchand",
+            "weight": 2
+        },
+        {
+            "source": "78",
+            "target": "ferblantier",
+            "weight": 2
+        },
+        {
+            "source": "78",
+            "target": "meunier",
+            "weight": 2
+        },
+        {
+            "source": "79",
+            "target": "rentier",
+            "weight": 2
+        },
+        {
+            "source": "80",
+            "target": "jardinier",
+            "weight": 6
+        },
+        {
+            "source": "80",
+            "target": "journalier",
+            "weight": 3
+        },
+        {
+            "source": "80",
+            "target": "rentier",
+            "weight": 10
+        },
+        {
+            "source": "80",
+            "target": "vigneron",
+            "weight": 11
+        },
+        {
+            "source": "80",
+            "target": "proprietaire",
+            "weight": 16
+        },
+        {
+            "source": "80",
+            "target": "fermier",
+            "weight": 3
+        },
+        {
+            "source": "81",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "82",
+            "target": "garde",
+            "weight": 2
+        },
+        {
+            "source": "82",
+            "target": "agriculteur",
+            "weight": 7
+        },
+        {
+            "source": "82",
+            "target": "gagne-denier",
+            "weight": 2
+        },
+        {
+            "source": "83",
+            "target": "agriculteur",
+            "weight": 4
+        },
+        {
+            "source": "84",
+            "target": "proprietaire",
+            "weight": 2
+        },
+        {
+            "source": "85",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "86",
+            "target": "journalier",
+            "weight": 4
+        },
+        {
+            "source": "86",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "86",
+            "target": "couvreur",
+            "weight": 2
+        },
+        {
+            "source": "86",
+            "target": "charpentier",
+            "weight": 2
+        },
+        {
+            "source": "86",
+            "target": "serrurier",
+            "weight": 2
+        },
+        {
+            "source": "86",
+            "target": "domestique",
+            "weight": 2
+        },
+        {
+            "source": "86",
+            "target": "assiste",
+            "weight": 2
+        },
+        {
+            "source": "87",
+            "target": "vigneron",
+            "weight": 2
+        },
+        {
+            "source": "88",
+            "target": "fermier",
+            "weight": 2
+        },
+        {
+            "source": "89",
+            "target": "journalier",
+            "weight": 10
+        },
+        {
+            "source": "89",
+            "target": "cordonnier",
+            "weight": 2
+        },
+        {
+            "source": "89",
+            "target": "instituteur",
+            "weight": 2
+        },
+        {
+            "source": "89",
+            "target": "rentier",
+            "weight": 7
+        },
+        {
+            "source": "89",
+            "target": "tailleur",
+            "weight": 2
+        },
+        {
+            "source": "89",
+            "target": "femme de menage",
+            "weight": 2
+        },
+        {
+            "source": "89",
+            "target": "tailleur de pierres",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "journalier",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "cordonnier",
+            "weight": 3
+        },
+        {
+            "source": "90",
+            "target": "instituteur",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "marchand",
+            "weight": 7
+        },
+        {
+            "source": "90",
+            "target": "ouvrier",
+            "weight": 3
+        },
+        {
+            "source": "90",
+            "target": "rentier",
+            "weight": 47
+        },
+        {
+            "source": "90",
+            "target": "tailleur",
+            "weight": 8
+        },
+        {
+            "source": "90",
+            "target": "boulanger",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "traiteur",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "voiturier",
+            "weight": 5
+        },
+        {
+            "source": "90",
+            "target": "aubergiste",
+            "weight": 3
+        },
+        {
+            "source": "90",
+            "target": "confiseur",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "docteur",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "negociant",
+            "weight": 17
+        },
+        {
+            "source": "90",
+            "target": "sellier",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "avocat",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "bijoutier",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "horloger",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "coiffeur",
+            "weight": 2
+        },
+        {
+            "source": "90",
+            "target": "secretaire",
+            "weight": 2
+        },
+        {
+            "source": "91",
+            "target": "repasseuse",
+            "weight": 2
+        },
+        {
+            "source": "92",
+            "target": "vigneron",
+            "weight": 3
+        },
+        {
+            "source": "93",
+            "target": "vigneron",
+            "weight": 3
+        },
+        {
+            "source": "93",
+            "target": "proprietaire",
+            "weight": 3
+        },
+        {
+            "source": "94",
+            "target": "journalier",
+            "weight": 3
+        },
+        {
+            "source": "94",
+            "target": "cordonnier",
+            "weight": 4
+        },
+        {
+            "source": "94",
+            "target": "instituteur",
+            "weight": 2
+        },
+        {
+            "source": "94",
+            "target": "marchand",
+            "weight": 5
+        },
+        {
+            "source": "94",
+            "target": "menuisier",
+            "weight": 2
+        },
+        {
+            "source": "94",
+            "target": "rentier",
+            "weight": 5
+        },
+        {
+            "source": "94",
+            "target": "tailleur",
+            "weight": 5
+        },
+        {
+            "source": "94",
+            "target": "boulanger",
+            "weight": 2
+        },
+        {
+            "source": "94",
+            "target": "imprimeur",
+            "weight": 2
+        },
+        {
+            "source": "94",
+            "target": "meunier",
+            "weight": 2
+        },
+        {
+            "source": "94",
+            "target": "potier",
+            "weight": 2
+        },
+        {
+            "source": "95",
+            "target": "rentier",
+            "weight": 3
+        },
+        {
+            "source": "96",
+            "target": "rentier",
+            "weight": 4
+        },
+        {
+            "source": "96",
+            "target": "proprietaire",
+            "weight": 3
+        }
+    ]
+}
