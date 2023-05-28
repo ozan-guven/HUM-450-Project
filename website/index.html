@@ -111,7 +111,7 @@
         <div class="flex-col flex-50 flex-center overflow-auto">
           <div class="flex-col text-padding-5">
             <p class="large-text large-font-weight">
-              Sankey et Société
+              Sankey & Société
             </p>
           </div>
           <div class="flex-col text-padding-5">
@@ -155,7 +155,7 @@
           <div class="flex-col">
             <p class="light-text medium-text">
               Pour une immersion encore plus poussée dans le Lausanne du XIX<sup>ème</sup> siècle, découvrez notre carte
-              interactive. Chaque division de la ville est délimitée et peut être colorée pour créer une Carte
+              interactive. Chaque division de la ville est délimitée et peut être colorée pour créer une carte
               choroplèthe, révélant les concentrations de différentes origines et professions.
             </p>
           </div>
@@ -163,7 +163,7 @@
           <div class="flex-col">
             <p class="light-text medium-text">
               Cette carte offre une vue d'ensemble saisissante de la composition socio-économique de chaque division,
-              illustrant en un coup d'œil les disparités et les similitudes entre elles. Mais nous ne nous arrêtons pas
+              illustrant en un coup d'œil les disparités et les similitudes entre elles. Mais ne nous arrêtons pas
               là.
             </p>
           </div>
@@ -173,7 +173,7 @@
               En cliquant sur une division, un graphique à barres apparaît, détaillant la répartition des métiers et des
               origines au sein de cette division. Il s'agit d'un outil précieux pour comprendre comment les différentes
               professions et origines se répartissaient dans la ville. Explorez, cliquez, et plongez-vous dans le
-              fascinant tissu social du Lausanne du XIX<sup>ème</sup> siècle.
+              fascinant tissu social du Lausanne.
             </p>
           </div>
         </div>
@@ -339,32 +339,25 @@
         <div class="flex-col text-padding-10 overflow-auto">
           <div class="flex-col">
             <p class="light-text large-text large-font-weight">
-              Tissage Temporel
+              Réseaux Interactifs
             </p>
           </div>
 
           <div class="flex-col">
             <p class="light-text medium-text">
-              Découvrez une autre dimension de notre exploration avec nos graphes interactifs. Ces visualisations vous
-              permettent de tisser des liens entre les rues, les métiers et les origines, créant une toile complexe qui
-              reflète la richesse des données historiques de Lausanne au XIX<sup>ème</sup> siècle.
+              Découvrez une autre dimension de notre exploration avec nos réseaux interactifs. Ces visualisations vous permettent de tisser des liens entre les rues, les métiers et les origines, créant une toile complexe qui reflète la richesse des données historiques de Lausanne.
             </p>
           </div>
 
           <div class="flex-col">
             <p class="light-text medium-text">
-              En choisissant différents graphes, vous pouvez voir comment ces différents éléments s'articulent ensemble,
-              formant un tableau plus complet de la dynamique socio-spatiale de l'époque. Les rues ne sont plus
-              simplement des voies de circulation, mais deviennent des vecteurs d'histoire, révélant les professions et
-              les origines qui les habitaient.
+              En choisissant différents graphes, vous pouvez voir comment ces différents éléments s'articulent ensemble, formant un tableau plus complet de la dynamique socio-spatiale de l'époque. Les rues ne sont plus simplement des voies de circulation, mais deviennent des vecteurs d'histoire, révélant les professions et les origines qui les habitaient.
             </p>
           </div>
 
           <div class="flex-col">
             <p class="light-text medium-text">
-              Jouez avec les différentes options, observez comment les liens se forment et se défont en fonction de vos
-              choix. C'est un véritable voyage dans le temps, une plongée dans le Lausanne du XIX<sup>ème</sup> siècle,
-              où chaque connexion vous en apprend un peu plus sur l'histoire de cette ville fascinante.
+              Jouez avec les différentes options, observez comment les liens se forment et se défont en fonction de vos choix. C'est un véritable voyage dans le temps, une plongée dans le Lausanne de cette époque, où chaque connexion vous en apprend un peu plus sur l'histoire de cette ville fascinante.
             </p>
           </div>
         </div>
@@ -398,6 +391,8 @@
       </div>
     </div>
 
+    <div id="p7-to-p8-container" class="container bk-to-ow-bg"></div>
+
     <div id="p8-container" class="container off-white-bg">
       <div class="flex-col flex-100 height-100">
         <div class="flex-col flex-60 height-100 overflow-auto">
@@ -408,22 +403,22 @@
           </div>
           <div class="flex-row text-padding-5">
             <p class="medium-text">
-              Terminons notre exploration avec une dose solide de statistiques - l'application de l'algorithme K-moyennes pour explorer le regroupement des communautés à Lausanne au XIX<sup>ème</sup> siècle. En utilisant les données du recensement de Berney, nous avons examiné des variables clés telles que l'origine du chef de ménage, son métier, le nombre d'enfants et le nombre de pensionnaires pour créer des groupes distincts.
+              Terminons notre exploration avec une dose solide de statistiques - l'application de l'algorithme K-moyennes pour explorer le regroupement des communautés à Lausanne. En utilisant les données du recensement de la population de 1832, nous avons examiné des variables clés telles que l'origine du chef de ménage, son métier, le nombre d'enfants et le nombre de pensionnaires pour créer des groupes distincts.
             </p>
           </div>
           <div class="flex-row text-padding-5">
             <p class="medium-text">
-              Mais comment savoir si notre modèle capture réellement une structure significative dans les données, et ne se contente pas de créer des groupes aléatoires ? C'est là que notre modèle null entre en jeu. En mélangeant toutes les données avant d'appliquer l'algorithme K-means, nous avons créé un modèle de référence contre lequel comparer nos résultats.
+              Mais comment savoir si notre modèle capture réellement une structure significative dans les données, et ne se contente pas de créer des groupes aléatoires ? C'est là que notre modèle null entre en jeu. En mélangeant toutes les données avant d'appliquer l'algorithme K-moyennes, nous avons créé un modèle de référence contre lequel comparer nos résultats.
             </p>
           </div>
           <div class="flex-row text-padding-5">
             <p class="medium-text">
-              Nos histogrammes présentent le score F1 - une mesure de l'exactitude de notre modèle - pour chaque cluster. En comparant ces scores avec ceux obtenus à partir du modèle null, nous pouvons voir si notre modèle d'origine parvient à déceler une structure significative dans les données. Si les distributions des scores F1 sont plus dispersés, cela suggère que notre modèle n'est pas le résultat du hasard, mais qu'il révèle bien un regroupement distinct des communautés de Lausanne au XIX<sup>ème</sup> siècle. Sélectionnez différentes variables pour voir comment les scores F1 changent en fonction de vos choix.
+              Nos histogrammes présentent le score F1 - une mesure de l'exactitude de notre modèle. En comparant ces scores avec ceux obtenus à partir du modèle null, nous pouvons voir si notre modèle d'origine parvient à déceler une structure significative dans les données. Si les distributions des scores F1 sont plus dispersés, cela suggère que notre modèle n'est pas le résultat du hasard, mais qu'il révèle bien un regroupement distinct des communautés de Lausanne au XIX<sup>ème</sup> siècle. Sélectionnez différentes variables pour voir comment les scores F1 changent en fonction de vos choix.
             </p>
           </div>
         </div>
         <div class="flex-row flex-40 height-100">
-          <div class="flex-col flex-20 height-100">
+          <div class="flex-col flex-20 height-100 flex-center">
             <div id="stats-checkboxes">
               <div class="form-check">
                 <input type="checkbox" value="nai" id="annee-naissance">
@@ -470,12 +465,44 @@
       </div>
     </div>
 
+    <div id="p8-to-p9-container" class="container ow-to-beige-bg"></div>
+
+    <div id="p9-container" class="container beige-grainy-bg">
+      <div class="flex-col flex-100 height-100 flex-center flex-align-center">
+        <div class="flex-row text-padding-10">
+          <p class="purple-text medium-text">
+            Après un voyage passionnant à travers Lausanne au XIXème siècle, il est temps de dresser le bilan de nos découvertes. En utilisant des outils d'analyse et de visualisation modernes, nous avons réussi à jeter un éclairage neuf sur la façon dont la ville était organisée à cette époque.
+          </p>
+        </div>
+        <div class="flex-row text-padding-10">
+          <p class="purple-text medium-text">
+            Nous avons commencé par une analyse structurelle de la ville, en utilisant des divisions et des sections pour comprendre comment la population était répartie. Cela nous a permis de réaliser des études ciblées sur des groupes spécifiques, enrichissant notre compréhension de la dynamique urbaine. Grâce au diagramme de Sankey, nous avons découvert que les Lausannois natifs étaient plus susceptibles de vivre à la campagne, alors que ceux venus d'ailleurs se concentraient davantage dans des professions non agricoles. Cela souligne une dichotomie intéressante dans la structure sociale de la ville.
+          </p>
+        </div>
+        <div class="flex-row text-padding-10">
+          <p class="purple-text medium-text">
+            En utilisant une cartographie interactive, nous avons mis en lumière les concentrations de population et les disparités professionnelles entre les divisions de la ville. Cette approche nous a permis d'explorer la répartition géographique de la population et la diversité des métiers. Les réseaux interactifs ont révélé une structure générale de la population et mis en évidence des similitudes entre certaines rues ou divisions en termes de professions. Cette analyse confirme nos hypothèses de départ sur l'organisation socio-spatiale de Lausanne.
+          </p>
+        </div>
+        <div class="flex-row text-padding-10">
+          <p class="purple-text medium-text">
+            Enfin, grâce à une analyse statistique rigoureuse, nous avons démontré que les origines et les professions étaient des facteurs clés de division de la population de la ville. En revanche, d'autres caractéristiques comme le nombre d'enfants ou de pensionnaires n'étaient pas significativement discriminantes.
+          </p>
+        </div>
+        <div class="flex-row text-padding-10">
+          <p class="purple-text medium-text">
+            En somme, nous avons offert une vision renouvelée de Lausanne au XIXème siècle, une ville en pleine transformation, où les communautés étaient clairement structurées et interconnectées. Nous espérons que ce voyage à travers le temps a enrichi votre compréhension de cette période fascinante de l'histoire de Lausanne.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div id="p-to-final-container" class="container"></div>
 
     <div id="final-container" class="container">
       <div id="maintainers">
-        <div id="maintainers-list">
-          Site web publié le <span id="current_date" itemprop="date">17 mai 2023</span> et maintenu par
+        <div id="maintainers-list" class="light-text">
+          Site web publié le <span id="current_date" itemprop="date">31 mai 2023</span> et maintenu par
           <a class="github-link" href="https://github.com/ozan-guven" target="_blank">Ozan Güven</a>,
           <a class="github-link" href="https://github.com/SoleilVermeil" target="_blank">Julien Leuenberger</a>,
           <a class="github-link" href="https://github.com/admuel" target="_blank">Adrian Müller</a>,
@@ -489,9 +516,8 @@
       </div>
       <div id="night-sky"></div>
       <div id="moon"></div>
-      <div id="night-bridge"></div>
-      <div id="night-mountain-left"></div>
-      <div id="night-mountain-right"></div>
+      <div id="night-city"></div>
+      <div id="night-cathedral"></div>
     </div>
   </div>
 </body>

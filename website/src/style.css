@@ -184,6 +184,20 @@ body {
   background-size: auto 100%;
 }
 
+.ow-to-beige-bg {
+  background-image: url('../assets/backgrounds/ow-to-beige-bg.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100%;
+}
+
+.beige-to-final-bg {
+  background-image: url('../assets/backgrounds/beige-to-final-bg.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100%;
+}
+
 .ow-to-bk-bg {
   background-image: url('../assets/backgrounds/ow-to-bk-bg.png');
   background-repeat: repeat-x;
@@ -299,6 +313,19 @@ p {
   z-index: 2;
 }
 
+#night-city {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  background-image: url('../assets/title/night-city.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100%;
+  z-index: 2;
+}
+
 #cathedral {
   position: absolute;
   right: 0;
@@ -306,6 +333,19 @@ p {
   width: 100%;
   height: 80vh;
   background-image: url('../assets/title/cathedral.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  z-index: 4;
+}
+
+#night-cathedral {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80vh;
+  background-image: url('../assets/title/night-cathedral.png');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -441,7 +481,7 @@ p {
 
 /* P3 TO FINAL CONTAINER */
 #p-to-final-container {
-  background-image: url('../assets/backgrounds/p-to-final-bg.png');
+  background-image: url('../assets/backgrounds/beige-to-final-bg.png');
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: auto 100%;

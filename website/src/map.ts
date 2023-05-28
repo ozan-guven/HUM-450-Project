@@ -506,10 +506,11 @@ export class DivisionsMap {
 
         const selected_domain = SCALE_DOMAINS[selection];
 
+        const max_ratio = selected_domain.max_ratio > 1 ? selected_domain.max_ratio : selected_domain.max_ratio * 100;
         const colorScale = d3.scaleLinear()
             .domain([
                 0,
-                selectedProportion ? selected_domain.max_ratio * 100 : selected_domain.max
+                selectedProportion ? max_ratio : selected_domain.max
             ])
             .interpolate(d3.interpolateHcl)
             .range([d3.hcl(DEFAULT_MAP_COLOR), d3.hcl(selected_domain.color)]);
@@ -525,7 +526,7 @@ export class DivisionsMap {
         linearGradient.select("#gradient-end")
             .transition()
             .duration(500)
-            .attr("stop-color", colorScale(selectedProportion ? selected_domain.max_ratio : selected_domain.max));
+            .attr("stop-color", colorScale(selectedProportion ? max_ratio : selected_domain.max));
 
         // Select te legend rectangle to update the color
         const legendRect = this.svg.select("#legend-rect");
