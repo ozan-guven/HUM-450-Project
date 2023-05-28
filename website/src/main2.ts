@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { CirclePacking } from './CirclePacking.ts';
 import { DivisionsMap } from './map.ts';
 import { SankeyBarPlot, SankeyChart } from './SankeyDiagram.ts';
