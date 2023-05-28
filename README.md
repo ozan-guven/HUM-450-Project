@@ -1,8 +1,10 @@
-<div style="text-align: justify">
 # Projet de cours: Histoire urbaine digitale: Lausanne Time Machine
 
 ## Introduction
+<div style="text-align: justify">
 Ce répertoire contient l'ensemble des fichiers et du code utilisés pour notre site web. Il s'agit d'un projet réalisé dans le cadre du cours interdisciplinaire _Histoire urbaine digitale: Lausanne Time Machine_ offert par l'École Polytechnique Fédérale de Lausanne et l'Université de Lausanne.
+</div>
+
 ## Description du projet
 
 Notre projet s'est concentré sur l'histoire urbaine de Lausanne, en particulier pendant le XIXème siècle. En utilisant des données du recensement de la population Lausannoise de 1832 et le cadastre de Berney de 1831, nous avons analysé la structure socio-spatiale de la ville de Lausanne.
