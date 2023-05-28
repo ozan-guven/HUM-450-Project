@@ -2,8 +2,10 @@ import { CirclePacking } from './CirclePacking.ts';
 import { DivisionsMap } from './map.ts';
 import { SankeyBarPlot, SankeyChart } from './SankeyDiagram.ts';
 import { StatsPlot } from './StatsPlot.ts';
-// import { ViolinPlot } from './ViolinPlot.ts';
+import fullpage from 'fullpage.js';
+
 import './style.css';
+import 'fullpage.js/dist/fullpage.css';
 
 document.addEventListener("DOMContentLoaded", () => {
     new CirclePacking();
@@ -48,20 +50,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // // Create violin plot
-    // const violinPlot = new ViolinPlot();
+    const SCROLL_DURATION = 1000;
+    new fullpage('#fullpage', {
+        navigation: true,
+        navigationTooltips: [
+            'Title',
+            'Introduction',
+            'Concentrique & Historique',
+            'Sankey & Société',
+            'Cartographie Interactive',
+            'Carte',
+            'Réseaux Interactifs',
+            'Réseaux',
+            'Analyse K-Moyennes',
+            'Conclusion',
+            'Crédits'
 
-    // // Checkbox event listeners
-    // const VIOLIN_CHECKBOXES_ELEMENT_ID = 'violin-checkboxes';
-    // const violinCheckboxes: any = document.querySelector(`#${VIOLIN_CHECKBOXES_ELEMENT_ID}`);
-    // // GET .form-check checkboxes
-    // const violinInput = violinCheckboxes.querySelector('input');
-    // violinInput.addEventListener('change', () => {
-    //     const checked = violinInput.checked;
-    //     if (checked) {
-    //         violinPlot.updatePlot('assigned_divisions');
-    //     } else {
-    //         violinPlot.updatePlot('divisions');
-    //     }
-    // });
+        ],
+        slidesNavigation: false,
+        controlArrows: false,
+        verticalCentered: false,
+        scrollingSpeed: SCROLL_DURATION,
+        scrollOverflow: true,
+    });
 });

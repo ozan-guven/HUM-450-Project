@@ -17,7 +17,13 @@
 }
 
 #fp-nav ul li span {
-  background: var(--purple) !important;
+  background: var(--light-purple) !important;
+}
+
+#fp-nav ul li div {
+  font-family: var(--default-font-family) !important;
+  font-weight: 800 !important;
+  color: var(--light-purple) !important;
 }
 
 /* MAIN */

@@ -551,16 +551,40 @@ export class DivisionsMap {
     }
 
     init_zoom() {
+        // Flag to indicate whether the zoom transformation is being set programmatically
+        let settingZoom = false;
+    
         const zoom = d3.zoom()
             .scaleExtent([1, 8])
-            .on("zoom", ({ transform }) => {
-                this.layer_1.attr("transform", transform);
-                this.layer_2.attr("transform", transform);
-                this.layer_3.attr("transform", transform);
+            .on("zoom", (event) => {
+                if (settingZoom) {
+                    // Ignore this event, as it was caused by programmatically setting the zoom transform
+                    return;
+                }
+    
+                if (event.sourceEvent instanceof WheelEvent) {
+                    // Restrict zooming for Firefox as it has a bug with d3 zooming and fullpage.js
+                    const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+                    if (isFirefox) {
+                        // Set the flag to true, as we are about to set the zoom transform programmatically
+                        settingZoom = true;
+    
+                        // Set zoom transform back to initial state
+                        zoom.transform(this.svg, d3.zoomIdentity);
+    
+                        // Set the flag back to false after the zoom transformation has been set
+                        settingZoom = false;
+    
+                        return; // Avoid zooming
+                    }
+                }
+                this.layer_1.attr("transform", event.transform);
+                this.layer_2.attr("transform", event.transform);
+                this.layer_3.attr("transform", event.transform);
             });
-
+    
         this.svg.call(zoom);
-
+    
         return zoom;
     }
 

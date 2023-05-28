@@ -492,14 +492,36 @@ class Network {
      * @returns {void}
      */
     private initZoom(): void {
+        // Flag to indicate whether the zoom transformation is being set programmatically
+        let settingZoom = false;
+    
         // Zoom
         const zoom = d3.zoom()
             .scaleExtent([MIN_ZOOM_SCALE, MAX_ZOOM_SCALE])
-            .on("zoom", ({ transform }) => {
-                this.gnodes.attr("transform", transform);
-                this.glinks.attr("transform", transform);
+            .on("zoom", (event) => {
+                if (settingZoom) {
+                    // Ignore this event, as it was caused by programmatically setting the zoom transform
+                    return;
+                }
+    
+                const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+                if (isFirefox && event.sourceEvent instanceof WheelEvent) {
+                    // Set the flag to true, as we are about to set the zoom transform programmatically
+                    settingZoom = true;
+    
+                    // Set zoom transform back to initial state
+                    zoom.transform(this.svg, d3.zoomIdentity);
+    
+                    // Set the flag back to false after the zoom transformation has been set
+                    settingZoom = false;
+    
+                    return;
+                }
+    
+                this.gnodes.attr("transform", event.transform);
+                this.glinks.attr("transform", event.transform);
             });
-
+    
         this.svg.call(zoom);
     }
 
