@@ -14,10 +14,10 @@ Notre question de recherche principale était : "Les communautés étaient-elles
 
 Ce répertoire contient les codes source pour la réalisation du site web, les bases de données utilisées pour l'analyse, les scripts pour la visualisation de données et les documents relatifs au projet.
 
-- [📁 data](/data) Contient les données utilisées pour l'analyse et la mise en place du site web.
-- [📁 notebooks](/notebooks) Contient les notebooks Jupyter utilisés pour l'analyse et la visualisation.
-- [📁 other](/other) Contient les fichiers et textes utilisés pour la réalisation du site web.
-- [📁 website](/website) Contient les fichiers et codes source pour la réalisation du site web.
+- [📁 data](/data): Contient les données utilisées pour l'analyse et la mise en place du site web.
+- [📁 notebooks](/notebooks): Contient les notebooks Jupyter utilisés pour l'analyse et la visualisation.
+- [📁 other](/other): Contient les fichiers et textes utilisés pour la réalisation du site web.
+- [📁 website](/website): Contient les fichiers et codes source pour la réalisation du site web.
 
 ## Équipe de projet
 
