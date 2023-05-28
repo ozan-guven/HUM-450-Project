@@ -1,9 +1,9 @@
 # Projet de cours: Histoire urbaine digitale: Lausanne Time Machine
 
 ## Introduction
-<div style="text-align: justify">
+<p style="text-align: justify">
 Ce répertoire contient l'ensemble des fichiers et du code utilisés pour notre site web. Il s'agit d'un projet réalisé dans le cadre du cours interdisciplinaire _Histoire urbaine digitale: Lausanne Time Machine_ offert par l'École Polytechnique Fédérale de Lausanne et l'Université de Lausanne.
-</div>
+</p>
 
 ## Description du projet
 
