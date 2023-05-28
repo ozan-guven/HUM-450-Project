@@ -693,8 +693,6 @@ export class DivisionsMap {
     }
 
     onMouseOverZone(zone) {
-        if (this.is_zoomed) { return }
-
         const population = zone.__data__.properties.population
 
         // Get the value of the select
@@ -726,6 +724,8 @@ export class DivisionsMap {
             .style("visibility", "visible");
         tooltip.html(`<b>${NODE_ID_TO_NAME(this.getZoneTitle(zone))}</b><br>Population: ${population}${info}`);
 
+        if (this.is_zoomed) { return }
+
         // Save current fill color in data-old-color attribute
         const old_color = d3.select(zone).attr("fill")
         d3.select(zone).attr("data-old-color", old_color)
@@ -734,16 +734,16 @@ export class DivisionsMap {
         // Make the color lighter by a factor of 1.5
         const new_color = `rgb(${rgb[0] * 1.25}, ${rgb[1] * 1.25}, ${rgb[2] * 1.25})`
 
-
         this.fadeToColor(zone, new_color)
     }
 
     onMouseOutZone(zone) {
-        if (this.is_zoomed) { return }
 
         // Hide tooltip
         const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
         tooltip.style("visibility", "hidden");
+
+        if (this.is_zoomed) { return }
 
         // Restore old fill color
         const old_color = d3.select(zone).attr("data-old-color")
@@ -753,7 +753,7 @@ export class DivisionsMap {
     }
 
     fadeToColor(zone, color) {
-        if (this.is_zoomed) { return }
+        //if (this.is_zoomed) { return }
 
         d3.select(zone)
             .attr("fill", color)
