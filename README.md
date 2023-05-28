@@ -9,6 +9,10 @@ Notre projet s'est concentré sur l'histoire urbaine de Lausanne, en particulier
 
 Notre question de recherche principale était : "Les communautés étaient-elles regroupées dans le Lausanne du XIXème siècle ?". Pour répondre à cette question, nous avons utilisé des méthodes d'analyse et de visualisation de données numériques, y compris la cartographie interactive et l'analyse de réseaux, pour découvrir les modèles de peuplement, les différences professionnelles entre les sections de la ville et la structure générale de la population.
 
+## Accès au site web
+
+Accédez au site web à l'adresse suivante : [https://ozan-guven.github.io/HUM-450-Project/](https://ozan-guven.github.io/HUM-450-Project/)
+
 ## Contenu du répertoire
 
 Ce répertoire contient les codes source pour la réalisation du site web, les bases de données utilisées pour l'analyse, les scripts pour la visualisation de données et les documents relatifs au projet.
