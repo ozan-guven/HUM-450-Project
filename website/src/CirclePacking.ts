@@ -59,11 +59,11 @@ const PACKING_TITLE = {
     'grange_neuve': "Division Grange-Neuve",
 
     'commerce': "Section Commerce",
-    'st_laurent': "",
+    'st_laurent': "Division St-Laurent",
     'palud': "Division Palud",
     'grand_st_jean': "Division Grand St-Jean",
     'ale': "Division Ale",
-    'montee_de_st_laurent': "",
+    'montee_de_st_laurent': "Division Montée de St-Laurent",
 
     'centre': "Section Centre",
     'rue_du_pont': 'Division Rue du Pont',
@@ -75,7 +75,7 @@ const PACKING_TITLE = {
     'place_st_francois': "Division Place St-François",
 
     'cathedrale': "Section Cathédrale",
-    'barre': "",
+    'barre': "Division Barre",
     'cite_derriere': "Division Cité Derrière",
     'cite_dessous': "Division Cité Dessous",
 }
@@ -91,11 +91,11 @@ const PACKING_TEXT = {
     'grange_neuve': "À l'instar des divisions de La Sallaz et de Chailly, la division de Grange-Neuve était fortement marquée par l'agriculture, encore plus que dans les autres divisions. Cependant, l'absence totale de rentiers suggère que cette division pourrait avoir été moins aisée que ses homologues. Les raisons pourraient être diverses : la grande distance la séparant du centre urbain ou la nature même des cultures, moins prestigieuses peut-être, comme les pommes de terre par opposition au vin. Cette distinction souligne l'hétérogénéité possible des conditions de vie au sein des divisions agricoles de Lausanne à cette époque.",
 
     'commerce': "Le dynamisme commercial de Lausanne était palpable dans plusieurs quartiers vibrants de la ville avec des centres actifs comme la place de la Palud. La place Chauderon, inaugurée en 1830, servait de point de transfert pour les marchandises, tandis que la place de la Palud, avec l'Hôtel de Ville et son marché de fromages, constituait un autre pôle d'activité.",
-    'st_laurent': "",
+    'st_laurent': "La division St-Laurent, située à la frontière entre le centre urbain et la campagne, accueillait une population diversifiée, composée d'artisans, de rentiers et de paysans. Cette mixité professionnelle pourrait être liée à la présence de la Halle aux blés, qui, en tant que centre d'activités agricoles, commerciales et éventuellement administratives, créait un point de convergence pour différents secteurs d'activité. Ainsi, St-Laurent illustre la diversité socio-économique possible au sein d'une même division, et l'influence des infrastructures locales sur la composition de la population.",
     'palud': "La division de la Palud, tout comme la Place St-François, se distinguait par une espérance de vie élevée parmi ses habitants. Malgré le fait que la moitié de sa population exerçait des métiers dits \"physiques\", les conditions de vie devaient y être suffisamment bonnes pour permettre une telle longévité.",
     'grand_st_jean': "Proche de l'Hôtel de Ville, la division du Grand St-Jean était particulièrement prisée par ceux travaillant dans l'administration. Son emplacement stratégique, à proximité des institutions municipales, en faisait un lieu de résidence privilégié pour ces professionnels, la plaçant juste après la division de la Cité Derrière en termes de concentration d'administrateurs.",
     'ale': "Éloignée du centre urbain, la division d'Ale en 1832 offrait probablement un cadre idéal pour l'agriculture, comme le suggère la forte présence de travailleurs agricoles. Cependant, la faible présence de rentiers et d'autres catégories plus aisées indique que cette division était principalement peuplée par les classes populaires.",
-    'montee_de_st_laurent': "",
+    'montee_de_st_laurent': "La division de la Montée St-Laurent, bien que très similaire démographiquement à la division voisine de St-Laurent, présentait une baisse notable du nombre d'artisans à cette époque. Il est plausible que ces derniers aient préféré s'installer dans le centre urbain, reflétant ainsi les préférences des artisans pour les zones plus densément peuplées et économiquement actives.",
 
     'centre': "Le centre de Lausanne était marqué par des rues pittoresques et animées, comme la Montée St-François, le Cheneau de Bourg et la Rue du Pré. Toutefois, le paysage social était significativement influencé par la présence de la tannerie Mercier dans le quartier du Rôtillon. Malgré son importance économique, la tannerie était associée à des conditions sanitaires défavorables et des odeurs désagréables, ce qui a limité la présence de la bourgeoisie dans ce secteur.",
     'cheneau_de_bourg': "La division Cheneau de Bourg de Lausanne était principalement peuplée par une population artisanale, tandis que le nombre de personnes aisées, comme les rentiers et le personnel d'administration, était relativement restreint. Cette répartition démographique pourrait être attribuée à la présence passée de la Louve et de la Venoge. Ces deux rivières, propices à de nombreux métiers manuels, avaient probablement aussi contribué à créer une ambiance moins attrayante pour ceux qui ne travaillaient pas dans ces métiers. Les odeurs et la mauvaise réputation associées à ces zones industrielles auraient dissuadé les personnes plus aisées de s'y installer, renforçant ainsi la caractéristique artisanale de cette division.",
@@ -107,7 +107,7 @@ const PACKING_TEXT = {
     'place_st_francois': "La Place St-François, à l'instar de la Rue du Bourg, était une enclave de libéralisme intellectuel. Ce havre intellectuel attire un nombre important d'individus dont l'occupation est loin d'être manuelle, ce qui pourrait en partie expliquer la longévité exceptionnelle de ses résidents - l'espérance de vie y était en effet de 48.5 ans en 1838, bien au-dessus de la moyenne lausannoise qui ne dépassait pas la trentaine. Bien que cette mesure ne soit pas directement liée au niveau de vie, elle suggère des conditions de vie probablement supérieures à la moyenne de Lausanne, ce qui est cohérent avec le fait que moins du quart de ses habitants exerçaient des métiers dits \"physiques\". La Place St-François, tout comme la Place de la Palud, était un foyer d'activité urbaine et économique, avec de nombreux travaux d'infrastructure, notamment la construction de routes et de ponts, entrepris pour favoriser le transit et stimuler la croissance.",
 
     'cathedrale': "La Cathédrale de Lausanne se dressait majestueusement comme un emblème du patrimoine de la ville. Implantée au cœur de la Cité Derrière, son architecture impressionnante dominait l'horizon, attirant l'attention et l'admiration des résidents et des visiteurs. Les quartiers pittoresques de la Cité Dessous et de la Barre enveloppaient la Cathédrale dans un tissu urbain dense. En outre, la présence de l'académie dans cette division renforçait le statut de la Cathédrale comme centre de l'enseignement et de l'érudition.",
-    'barre': "",
+    'barre': "La division de la Barre, tout comme St-Laurent et la montée de St-Laurent, jouait un rôle particulier à cette période, se situant à mi-chemin entre la ville et la campagne et abritant donc une population mixte. Située au nord de la ville, cette division présentait probablement un terrain plus accidenté et boisé, ce qui aurait pu attirer des professions spécifiques, comme celle de la construction. Cette hypothèse est renforcée par la présence relativement élevée d'Allemands et de Suisses allemands dans la division, dont les métiers d'ouvriers étaient traditionnellement réservés, soulignant l'interrelation entre la géographie, l'immigration et l'emploi à cette époque.",
     'cite_derriere': "Abritant des bâtiments importants tels que le Tribunal cantonal et la Maison cantonale, la division de la Cité Derrière était probablement un pôle majeur de l'administration de Lausanne, accueillant le plus grand nombre de personnes travaillant dans ce secteur. De plus, sa richesse culturelle, illustrée par la présence de l'Académie et de sa proximité avec la Cathédrale, en faisait un lieu d'intérêt pour les rentiers. Ce mélange d'activités administratives et d'attraits culturels a sans doute contribué à attirer une part significative de rentiers.",
     'cite_dessous': "La division de la Cité Dessous abritait l'Hôpital, autrefois connu sous le nom d'\"Hospice des aliénés\", qui était le principal établissement de santé de Lausanne. La présence de cette institution attirait un nombre important de médecins du canton, rendant cette division particulièrement attrayante pour ceux travaillant dans le domaine des services médicaux.",
 }
