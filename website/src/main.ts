@@ -1,12 +1,12 @@
 //@ts-nocheck
+import fullpage from 'fullpage.js';
 import { CirclePacking } from './CirclePacking.ts';
 import { DivisionsMap } from './map.ts';
 import { SankeyBarPlot, SankeyChart } from './SankeyDiagram.ts';
 import { StatsPlot } from './StatsPlot.ts';
-import fullpage from 'fullpage.js';
 
-import './style.css';
 import 'fullpage.js/dist/fullpage.css';
+import './style.css';
 
 document.addEventListener("DOMContentLoaded", () => {
     new CirclePacking();
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new fullpage('#fullpage', {
         navigation: true,
         navigationTooltips: [
-            'Title',
+            'Titre',
             'Introduction',
             'Concentrique & Historique',
             'Sankey & Société',
