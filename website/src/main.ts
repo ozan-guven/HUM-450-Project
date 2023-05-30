@@ -1,9 +1,9 @@
 //@ts-nocheck
 import fullpage from 'fullpage.js';
 import { CirclePacking } from './CirclePacking.ts';
-import { DivisionsMap } from './map.ts';
 import { SankeyBarPlot, SankeyChart } from './SankeyDiagram.ts';
 import { StatsPlot } from './StatsPlot.ts';
+import { DivisionsMap } from './map.ts';
 
 import 'fullpage.js/dist/fullpage.css';
 import './style.css';
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const SCROLL_DURATION = 1000;
     new fullpage('#fullpage', {
+        licenseKey: "gplv3-license",
         navigation: true,
         navigationTooltips: [
             'Titre',
