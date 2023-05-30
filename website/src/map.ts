@@ -486,15 +486,20 @@ export class DivisionsMap {
             if (selection === "population")
                 this.svg
                     .select("#legend-title")
-                    .text("Densité de personnes [hab/km²]");
+                    .text("Densité de foyers [foyers/km²]");
             else
                 this.svg
                     .select("#legend-title")
                     .text("Proportion de personnes [%]");
         } else {
-            this.svg
-                .select("#legend-title")
-                .text("Nombre de personnes");
+            if (selection === "population")
+                this.svg
+                    .select("#legend-title")
+                    .text("Nombre de foyers");
+            else        
+                this.svg
+                    .select("#legend-title")
+                    .text("Nombre de personnes");
         }
 
         // If selection is not "no_selection", we show the legend
@@ -713,7 +718,7 @@ export class DivisionsMap {
             if (value === "population") {
                 // How to format float to get 2 significant digits
                 const density = Math.round(population / zone.__data__.properties.area * SQUARED_METER_TO_KM)
-                info = `<br>Densité: ${density} [hab/km²]`
+                info = `<br>Densité: ${density} [foyers/km²]`
             }
         }
 
@@ -722,7 +727,7 @@ export class DivisionsMap {
         const tooltip = d3.select(`#${TOOLTIP_ELEMENT_ID}`);
         tooltip
             .style("visibility", "visible");
-        tooltip.html(`<b>${NODE_ID_TO_NAME(this.getZoneTitle(zone))}</b><br>Population: ${population}${info}`);
+        tooltip.html(`<b>${NODE_ID_TO_NAME(this.getZoneTitle(zone))}</b><br>Foyers: ${population}${info}`);
 
         if (this.is_zoomed) { return }
 
